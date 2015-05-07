@@ -204,7 +204,7 @@
 	  an Internet protocol. This draft suggests that similar considerations may apply for other human rights such as freedom of expression or freedom of association. A proposal is made for work in the IRTF researching the possible connections between human rights and Internet standards and protocols. The goal is to create an informational RFC concerning human rights protocol considerations.
 	 </t>
 	 <t>
-	 Discussion on this draft at: hrpc@article19.io 
+	 Discussion on this draft at: hrpc@irtf.org 
 	 </t>
    </abstract>
  </front>
@@ -221,8 +221,8 @@
 	 Standards and protocols form the basis of the human rights enabling infrastructure of the Internet. It needs to be determined whether there is a causal relationship between Internet protocols and standards, and human rights such as freedom of expression. To study the relationship between the two one would need to carefully consider structural and architectural considerations, as well as specific protocols. The Internet Society paper "Human Rights and Internet Protocols" <xref target="HRIP"/> "explores human rights and Internet protocols comparing the processes for their making and the principles by which they operate and concludes that there are some shared principles between the two." Though that paper does not go into possible reasons, dependencies or guidelines, it initiates the discussion. More research is needed to map human rights concerns to protocol elements and to frame possible approaches towards protocols that satisfy the implications of human rights standards.  
 	 </t>
 	 <t>
-	 To move this debate further, a list has been created for discussion of this draft: hrpc@article19.io and related ideas - information or subscriptions at:
-	https://lists.ghserv.net/mailman/listinfo/hrpc	
+	 To move this debate further, a list has been created for discussion of this draft: hrpc@irtf.org and related ideas - information or subscriptions at:
+	https://www.irtf.org/mailman/listinfo/hrpc	
 	 </t>
 	 
      <section title="Requirements Language">
@@ -255,7 +255,7 @@
 	
 	<section title="Protocol and Standard Examples">
 	<t>
-	Some initial topics that need exploration are indicated in this section. Most of this work has yet to move beyond speculation and casual conversation. Continuing releases of this draft will develop these foundational discussions further, based on discussions to be held on the hrpc@article19.io email list and the work of researchers working on the project.
+	Some initial topics that need exploration are indicated in this section. Most of this work has yet to move beyond speculation and casual conversation. Continuing releases of this draft will develop these foundational discussions further, based on discussions to be held on the hrpc@irtf.org email list and the work of researchers working on the project.
 	</t>
 	
 	<section title="Architecture">
