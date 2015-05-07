@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<!-- This template is for creating an Internet Draft using xml2rfc,
+    which is available here: http://xml.resource.org. -->
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!-- One method to get references from the online citation libraries.
+    There has to be one entity for each item to be referenced. 
+    An alternate method (rfc include) is described in the references. 
+	-->
+
+<!ENTITY RFC1958 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1958.xml">
+<!ENTITY RFC1984 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1984.xml">
+<!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+<!ENTITY RFC2014 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2014.xml">
+<!ENTITY RFC2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
+<!ENTITY RFC2919 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2919.xml">
+<!ENTITY RFC3365 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3365.xml">
+<!ENTITY RFC3552 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3552.xml">
+<!ENTITY RFC3869 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3869.xml">
+<!ENTITY RFC4440 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4440.xml">
+<!ENTITY RFC5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
+<!ENTITY RFC1958 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1958.xml">
+<!ENTITY RFC2369 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2369.xml">
+<!ENTITY RFC4924 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4924.xml">
+<!ENTITY RFC5564 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5564.xml">
+<!ENTITY RFC5890 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5890.xml">
+<!ENTITY RFC5891 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5891.xml">
+<!ENTITY RFC5892 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5892.xml">
+<!ENTITY RFC5893 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5893.xml">
+<!ENTITY RFC6162 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6162.xml">
+<!ENTITY RFC6783 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6783.xml">
+<!ENTITY RFC6973 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6973.xml">
+<!ENTITY RFC7230 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7230.xml">
+<!ENTITY RFC7231 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7231.xml">
+<!ENTITY RFC7232 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7232.xml">
+<!ENTITY RFC7233 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7233.xml">
+<!ENTITY RFC7234 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7234.xml">
+<!ENTITY RFC7235 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7235.xml">
+<!ENTITY RFC7236 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7236.xml">
+<!ENTITY RFC7237 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7237.xml">
+<!ENTITY RFC7258 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7258.xml">
+
+<!-- declare nbsp and friends -->
+  <!ENTITY nbsp    "&#xa0;">
+  <!ENTITY nbhy    "&#x2011;">
+  <!ENTITY wj      "&#x2060;">
+]>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- used by XSLT processors -->
+<!-- For a complete list and description of processing instructions (PIs), 
+    please see http://xml.resource.org/authoring/README.html. -->
+<!-- Below are generally applicable Processing Instructions (PIs) that most I-Ds might want to use.
+    (Here they are set differently than their defaults in xml2rfc v1.32) -->
+<?rfc strict="yes" ?>
+<!-- give errors regarding ID-nits and DTD validation -->
+<!-- control the table of contents (ToC) -->
+<?rfc toc="yes"?>
+<!-- generate a ToC -->
+<?rfc tocdepth="4"?>
+<!-- the number of levels of subsections in ToC. default: 3 -->
+<!-- control references -->
+<?rfc symrefs="yes"?>
+<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
+<?rfc sortrefs="yes" ?>
+<!-- sort the reference entries alphabetically -->
+<!-- control vertical white space 
+    (using these PIs as follows is recommended by the RFC Editor) -->
+<?rfc compact="yes" ?>
+<!-- do not start each main section on a new page -->
+<?rfc subcompact="no" ?>
+<!-- keep one blank line between list items -->
+<!-- end of list of popular I-D processing instructions -->
+<rfc category="info" docName="draft-doria-hrpc-proposal-01" ipr="trust200902">
+ <!-- category values: std, bcp, info, exp, and historic
+    ipr values: trust200902, noModificationTrust200902, noDerivativesTrust200902,
+       or pre5378Trust200902
+    you can add the attributes updates="NNNN" and obsoletes="NNNN" 
+    they will automatically be output with "(if approved)" -->
+
+ <!-- ***** FRONT MATTER ***** -->
+
+ <front>
+   <!-- The abbreviated title is used in the page header - it is only necessary if the 
+        full title is longer than 39 characters -->
+
+   <title abbrev="Human Rights Protocol Considerations">Proposal for research on human rights protocol 
+   considerations</title>
+
+     <author fullname="Avri Doria" initials="A" 
+            surname="Doria">
+      <organization>dotgay LLC</organization>
+
+      <address>
+        <postal>
+          <street></street>
+
+          <!-- Reorder these if your country does things differently -->
+
+          <city>Providence</city>
+
+          <region></region>
+
+          <code></code>
+
+          <country>USA</country>
+        </postal>
+
+        <phone></phone>
+
+        <email>avri@acm.org</email>
+
+        <!-- uri and facsimile elements may also be added -->
+      </address>
+    </author>
+	
+	
+	
+	 <author fullname="Niels ten Oever" initials="N" 
+            surname="ten Oever">
+      <organization>Article 19</organization>
+
+      <address>
+        <postal>
+          <street></street>
+
+          <!-- Reorder these if your country does things differently -->
+
+          <city></city>
+
+          <region></region>
+
+          <code></code>
+
+          <country>Netherlands</country>
+        </postal>
+
+        <phone></phone>
+
+        <email>niels@article19.org</email>
+
+        <!-- uri and facsimile elements may also be added -->
+      </address>
+    </author>
+	
+	<author fullname="Joana Varon" initials="J" 
+            surname="Varon">
+      <organization></organization>
+
+      <address>
+        <postal>
+          <street></street>
+
+          <!-- Reorder these if your country does things differently -->
+
+          <city></city>
+
+          <region></region>
+
+          <code></code>
+
+          <country>Brazil</country>
+        </postal>
+
+        <phone></phone>
+
+        <email>joana@varonferraz.com</email>
+
+        <!-- uri and facsimile elements may also be added -->
+      </address>
+    </author>
+
+    <date month="March" year="2015" />
+
+
+   <!-- If the month and year are both specified and are the current ones, xml2rfc will fill 
+        in the current day for you. If only the current year is specified, xml2rfc will fill 
+	 in the current day and month for you. If the year is not the current one, it is 
+	 necessary to specify at least a month (xml2rfc assumes day="1" if not specified for the 
+	 purpose of calculating the expiry date).  With drafts it is normally sufficient to 
+	 specify just the year. -->
+
+   <!-- Meta-data Declarations -->
+
+   <area>IRTF</area>
+
+   <workgroup>Human Rights Protocol Considerations</workgroup>
+
+   <!-- WG name at the upperleft corner of the doc,
+        IETF is fine for individual submissions.  
+	 If this element is not present, the default is "Network Working Group",
+        which is used by the RFC Editor as a nod to the history of the IETF. -->
+
+   <keyword>proposal</keyword>
+   <keyword>human rights</keyword>
+   <keyword>protocol considerations</keyword>
+
+   <!-- Keywords will be incorporated into HTML output
+        files in a meta tag but they have no effect on text or nroff
+        output. If you submit your draft to the RFC Editor, the
+        keywords will be used for the search engine. -->
+
+   <abstract>
+     <t>
+	 Work has been done on privacy issues that should be considered when creating 
+	  an Internet protocol. This draft suggests that similar considerations may apply for other human rights such as freedom of expression or freedom of association. A proposal is made for work in the IRTF researching the possible connections between human rights and Internet standards and protocols. The goal is to create an informational RFC concerning human rights protocol considerations.
+	 </t>
+	 <t>
+	 Discussion on this draft at: hrpc@article19.io 
+	 </t>
+   </abstract>
+ </front>
+
+ <middle>
+   <section title="Introduction">
+     <t>
+	 The recognition that human rights have a role in Internet policies is slowly becoming part of the general discourse. Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" <xref target="HRC2012"/> at the UN Human Rights Council (HRC). More recently, to the resolution "The right to privacy in the digital age" <xref target="UNGA2013"/> at the UN General Assembly. The NETmundial outcome document <xref target="NETmundial"/>  affirms that human rights, as reflected in the Universal Declaration of Human Rights <xref target="UDHR"/>, should underpin Internet governance principles. Nevertheless, a direct relation between Internet Standards and human rights is still something to be explored and more clearly evidenced. 
+	 </t>
+	 <t>
+	Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols. Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values. But as the scale and the industrialization of the Internet has grown greatly, the influence of such world-views started to compete with other values. The belief of the authors is that as the Internet continues to grow, the linkage of Internet protocols to human rights needs to become explicit, structured, and intentional. 
+	 </t>
+	 <t>
+	 Standards and protocols form the basis of the human rights enabling infrastructure of the Internet. It needs to be determined whether there is a causal relationship between Internet protocols and standards, and human rights such as freedom of expression. To study the relationship between the two one would need to carefully consider structural and architectural considerations, as well as specific protocols. The Internet Society paper "Human Rights and Internet Protocols" <xref target="HRIP"/> "explores human rights and Internet protocols comparing the processes for their making and the principles by which they operate and concludes that there are some shared principles between the two." Though that paper does not go into possible reasons, dependencies or guidelines, it initiates the discussion. More research is needed to map human rights concerns to protocol elements and to frame possible approaches towards protocols that satisfy the implications of human rights standards.  
+	 </t>
+	 <t>
+	 To move this debate further, a list has been created for discussion of this draft: hrpc@article19.io and related ideas - information or subscriptions at:
+	https://lists.ghserv.net/mailman/listinfo/hrpc	
+	 </t>
+	 
+     <section title="Requirements Language">
+       <t>
+		As this is an informational document describing a research effort,
+		it will not make use of requirements language as defined in
+		<xref target="RFC2119">RFC&nbsp;2119</xref>.
+		</t>
+     </section>
+   </section>
+
+	<section title="Research topic">
+	<t>
+	In a manner similar to the work done for <xref target="RFC6973">RFC&nbsp;6973</xref> on Privacy Consideration Guidelines, the premise of this research is that some standards and protocols can solidify, enable or threaten user rights. 
+	</t>
+	<t>
+	As stated in <xref target="RFC1958">RFC&nbsp;1958</xref>, the Internet aims to be the global network of networks that  provides unfettered connectivity to all users at all times and for any content. Open, secure and reliable  connectivity is essential for rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights <xref target="UDHR"></xref>. Therefore, considering connectivity as the ultimate objective of the Internet, this makes a clear case that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+	</t>
+
+	<t>
+	An essential part of maintaining the Internet as a tool for communication and connectivity is security. Indeed, "development of security mechanisms is seen as a key factor in the future growth of the Internet as a motor for international commerce and communication" <xref target="RFC1984">RFC&nbsp;1984</xref> and according to the Danvers Doctrine <xref target="RFC3365">RFC&nbsp;3365</xref>, there is an overwhelming consensus in the IETF that the best security should be used and standardized.
+	</t>
+	
+	<t>
+	In <xref target="RFC1984">RFC&nbsp;1984</xref>, the Internet Architecture Board (IAB) and the Internet Engineering Steering Group (IESG), the bodies which oversee architecture and standards for the Internet, expressed: "concern by the need for increased protection of international commercial transactions on the Internet, and by the need to offer all Internet users an adequate degree of privacy." Indeed, the IETF has been doing a significant job in this area <xref target="RFC6973"></xref> <xref target="RFC7258"></xref>, considering privacy concerns as a subset of security concerns. <xref target="RFC6973"></xref>
+	</t>
+	<t>
+	Besides privacy, it should be possible to highlight other aspects of connectivity embedded  in standards and protocols that can have human rights considerations, such as freedom of expression and the right to association and assembly online. This research is working to develop a methodology that enables us to extract these considerations. 
+	</t>
+	
+	<section title="Protocol and Standard Examples">
+	<t>
+	Some initial topics that need exploration are indicated in this section. Most of this work has yet to move beyond speculation and casual conversation. Continuing releases of this draft will develop these foundational discussions further, based on discussions to be held on the hrpc@article19.io email list and the work of researchers working on the project.
+	</t>
+	
+	<section title="Architecture">
+	<t>
+	<xref target="RFC1958">RFC&nbsp;1958</xref>  mentions "the community believes that the goal [of the Internet] is connectivity, the tool is the Internet Protocol." It continues a bit further: "The current exponential growth of the network seems to show that connectivity is its own reward, and is more valuable than any individual application such as mail or the World-Wide Web." This marks the intrinsic value of connectivity, which is facilitated by the Internet, both in its principle, and in practice. This shows that the underlying principles of the Internet aim to preserve connectivity, which is fundamental and similar to the part of Article 19 of the Universal Declaration of Human Rights <xref target="UDHR"/>, which defines a right to receive and to impart information.
+	<list style="hanging">
+	<t hangText="Article 19"><vspace/>
+		Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
+	</t>
+	</list>
+	</t>
+	</section>
+	
+	<section title="Transparency">
+	<t>
+	Another part of Article 19 of the Universal Declaration of Human Rights <xref target="UDHR"/> mentions that one has the right to hold opinions _without interference_ (emphasis added). This same sentiment can be found in IAB RFC4924 <xref target="RFC4924"/> - Reflection on Internet Transparency where it states:  "A network that does not filter or transform the data that it carries  may be said to be transparent" or "oblivious" to the content of packets. Networks that provide oblivious transport enable the deployment of new services without requiring changes to the core. It is this flexibility that is perhaps both the Internet's most essential characteristic as well as one of the most important contributors to its success."
+	</t>
+	</section>
+
+	<section title="HTTP">
+	<t>
+	Websites made it extremely easy for individuals to publish their ideas, opinions and thoughts. Never before has the world seen an infrastructure that made it this easy to share information and ideas with such a large group of other people. The HTTP architecture and standards, including <xref target="RFC7230">RFC&nbsp;7230</xref>, <xref target="RFC7231">RFC&nbsp;7231</xref>, <xref target="RFC7232">RFC&nbsp;7232</xref>, <xref target="RFC7234">RFC&nbsp;7234</xref>, <xref target="RFC7235">RFC&nbsp;7235</xref>, <xref target="RFC7236">RFC&nbsp;7236</xref>, and <xref target="RFC7237">RFC&nbsp;7327</xref>, are essential for the publishing of information. The HTTP protocol, therefore, forms an crucial enabler for freedom of expression, but also for the right to freely participate in the culture life of the community (<xref target="UDHR">Article&nbsp;27)</xref>, to enjoy the arts and to share in scientific advancement and its benefits.
+	</t>
+	</section>
+	
+	<section title="Mailing lists">
+	<t>
+	Collaboration and cooperation have been part of the Internet since its early beginning, one of the instruments of facilitating working together in groups are mailing lists (as described in <xref target="RFC2919">RFC&nbsp;2369</xref>, <xref target="RFC2919">RFC&nbsp;2919</xref>, and <xref target="RFC6783">RFC&nbsp;6783</xref>. Mailing lists are critical instruments and enablers for group communication and organization, and therefore form early artefacts of the (standardized) ability of Internet standards to enable the right to freedom of assembly and association. 
+	</t>
+	
+	</section>
+	
+	<section title="Real time communications">
+	<t>
+	Collaborations and cooperation via the Internet have take a large step forward with the progress of chat and other other real time communications protocols.  The work on XMPP <xref target="RFC6162">RFC&nbsp;6162</xref> has enabled new methods of global interactions, cooperation and human right advocacy.  The WebRTC work being done to standardize the API and protocol elements to support real-time communications for browsers, mobile applications and IoT  by the World Wide Consortium (W3C) and the IETF is another artefact enabling human rights globally on the Internet.
+	</t>
+	</section>
+	
+	<section title="IDNs">
+	<t>
+	English has been the lingua franca of the Internet, but for many Internet user English is not their first language. To have a true global Internet, one that serves the whole world, it would need to reflect the languages of these different communities. The Internationalized Domain Names IDNA2008 (<xref target="RFC5890">RFC&nbsp;5890</xref>, <xref target="RFC5891">RFC&nbsp;5891</xref>, <xref target="RFC5892">RFC&nbsp;5892</xref>, and <xref target="RFC5893">RFC&nbsp;5893</xref>), describes standards for the use of a broad range of strings and characters (some also written from right to left). This enables users who use other characters than the standard LDH ascii typeset to have their own URLs. This shows the ambition of the Internet community to reflect the diversity of users and to be in line with Article 2 of the Universal Declaration of Human Rights which clearly stipulates that "everyone is entitles to all rights and freedoms [..], without distinction of any kind, such as [..] language [..]."<xref target="UDHR"/>
+
+	</t>
+	
+	</section>
+	</section>
+	</section>
+
+	<section title="Proposal">
+	<t>
+	To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis possible impact on human rights needs is being undertaken.
+	</t>
+	<t>
+	As part of the research, interviews will be requested with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group(IESG) and chairs of selected working groups and RFC authors. 
+	</t>
+	<t>
+	Mapping the relation between human rights and protocols and architectures is a new research challenge, which requires a good amount of cross organizational cooperation to develop a consistent methodology. While the authors of this first draft are involved in both human rights advocacy and research on Internet technologies -  we believe that bringing this work into the IRTF facilitates and improves this work by bringing human rights experts together with the community of researchers and developers of Internet standards and technologies.
+	</t>
+	
+	<t>
+	Assuming that the research produces useful results, the objective will evolve into the creation of a set of recommended considerations for the protection of applicable human rights.
+	</t>
+	
+	<section title="Working Assumptions">
+	<t>
+	In the analysis of existing RFCs central design and technical concepts have been found which impact human rights.  These concepts, working assumptions, will form the lens for the analysis of RFCs and will be further described vis a vis their impact on human rights. 
+	</t>
+	<t>
+	The  combination of content agnosticism, connectivity, security (as defined in <xref target="RFC3365">RFC&nbsp;3365</xref> and privacy (as defined in <xref target="RFC6973">RFC&nbsp;6973</xref>)  are the technical principles that underlay freedom of expression on the Internet. 
+	</t>
+	<t>
+	Privacy and security are defined, so here we focus on concepts that have not been defined as considerations that are relevant for freedom of expression.
+	</t>
+	<t>
+	This is a first list of concepts, which definitions should be improved and further aligned with existing RFCs.
+	<list style="hanging">
+		<t hangText="Connectivity:"><vspace/>
+		The Internet is the tool for providing global connectivity that conforms with <xref target="RFC1958">RFC&nbsp;1958</xref>. Therefore all protocols and standards should aim to improve connectivity, and not to limit it.
+		</t>
+		<t hangText=" Distributed:"> <vspace/>
+		To  enable and strengthen connectivity, stability, and sustainability of  the network, protocols and standards should be developed in a way that can be implemented in a distributed way. If they are not instrumented in a distributed manner, other 'accountability mechanisms' should be in place. Accountability mechanisms might include features such as access control, logging and other protocol management.
+		</t>
+		<t hangText="Inter-operable:"> <vspace/>
+		Standards exist to design systems that allow for other systems to interact freely and openly. 
+		</t>
+		<t hangText="Reliable:"><vspace/>
+		Reliability ensures that a protocol will execute its function consistently and  error resistant as described and function without unexpected result.  This includes factors such as throughput, middle boxes, and delay/disruption tolerance. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It will also have mechanisms to recover from failure.
+		</t>
+		<t hangText="Scalable:"><vspace/>
+		Any  solution should support growth of the network with more hosts, users and traffic. And have clear definition of its scope and ideally a proposition how it can be expanded in order to support greater capacity. Any limits in scalability should be defined.
+		</t>
+		<t hangText="Stateless">/ state-full: <vspace/>
+		If  possible protocols should be implemented stateless for reliability and privacy considerations. If not, they should keep as little state as possible.
+		</t>
+		<t hangText="Content agnostic:"><vspace/>
+		Protocols should not treat packets/datagrams differently based on their content. 
+		</t>
+		<t hangText="Transparent:"><vspace/>
+		Protocols should be transparent in what they can do and can not do and how it is  done. 
+		
+		<!--
+		[Implementation of protocols should advertise its policies on data retention for the service and which jurisdiction it falls under.]
+		-->
+		
+		</t>
+		<t hangText="Debugging:"><vspace/>
+		A protocol should allow a user to troubleshoot and debug possible causes of malfunction and loss of reliability.
+		</t>
+		<t hangText="Robust:"><vspace/>
+		Protocols should be resistant to errors, and to involuntary, legal or malicious attempts  to disrupt its mode of operations. Protocols should be developed in a  way that there is no hidden back doors or kill switches. There should also be a clear description on how a protocol recovers from potential failures. 
+		</t>
+		<t hangText="End user-centric"> / representing  stakeholder rights: <vspace/>
+		As proposed in draft-nottingham-stakeholder-rights-00: 
+			<list style="empty">
+			<t>
+			Protocols MUST document relevant primary stakeholders and their interrelationships.
+			[..]
+			</t>
+			<t>
+			End-user-facing application protocols MUST prioritise their users higher than any other stakeholders.
+			</t>
+			<t>
+			Extensions to existing protocols MUST document how they interact with the extended protocol's stakeholders.  If the extended protocol's stakeholders are not yet documented, the extension MAY estimate its impact, in coordination with that protocol's community and the IESG.
+			</t>
+			<t>
+			The burden of this documentation need not be high; if HTML can do it in a paragraph, so can most protocols.  While it might be appropriate in a separate document (e.g., a requirements or use cases draft) or the protocol specification itself, documenting stakeholders in the WG charter has considerable benefits, since it clarifies their relationships up-front.
+			</t>
+			</list>
+		</t>
+		</list>
+	</t>
+		</section>
+	</section>
+	
+   <section anchor="Acknowledgements" title="Acknowledgements">
+	<t>
+	This builds on work done by <xref target="RFC6973">RFC&nbsp;6973</xref>.
+	</t>
+
+    <t>
+	Thanks go to those who have discussed and edited the ideas in this draft. 
+	Special thanks go to Joy Liddicoat as the co-author of  <xref target="HRIP">Human&nbsp;Rights&nbsp;and&nbsp;Internet&nbsp;Protocols</xref>
+	 </t>
+   </section>
+
+   <!-- Possibly a 'Contributors' section ... -->
+
+   <section anchor="IANA" title="IANA Considerations">
+     <t>
+	 This memo includes no request to IANA.
+	 </t>
+
+   </section>
+
+   <section anchor="Security" title="Security Considerations">
+     <t>
+	 As this draft concerns a research proposal, there are no security considerations.
+	 </t>
+   </section>
+ </middle>
+
+ <!--  *****BACK MATTER ***** -->
+
+ <back>
+   <!-- References split into informative and normative -->
+
+   <!-- There are 2 ways to insert reference entries from the citation libraries:
+    1. define an ENTITY at the top, and use "ampersand character"RFC2629; here (as shown)
+    2. simply use a PI "less than character"?rfc include="reference.RFC.2119.xml"?> here
+       (for I-Ds: include="reference.I-D.narten-iana-considerations-rfc2434bis.xml")
+
+    Both are cited textually in the same manner: by using xref elements.
+    If you use the PI option, xml2rfc will, by default, try to find included files in the same
+    directory as the including file. You can also define the XML_LIBRARY environment variable
+    with a value containing a set of directories to search.  These can be either in the local
+    filing system or remote ones accessed by http (http://domain/dir/... ).-->
+
+   <references title="Normative References">
+     <!--
+	 ?rfc include="http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml"?
+	 -->
+     &RFC2119;
+	
+	<!--
+     <reference anchor="min_ref">
+       the following is the minimum to make xml2rfc happy
+       <front>
+         <title>Minimal Reference</title>
+
+         <author initials="authInitials" surname="authSurName">
+           <organization></organization>
+         </author>
+
+         <date year="2006" />
+       </front>
+     </reference>
+	 -->
+	 
+   </references>
+
+   <references title="Informative References">
+     <!-- Here we use entities that we defined at the beginning. 
+		Some need to be removed, I just stuff them all in 
+	 -->
+
+	 &RFC1958; &RFC1984;
+	 &RFC2014; &RFC2369; &RFC2629; &RFC2919;
+	 &RFC3365; &RFC3552; &RFC3869;
+	 &RFC4440; &RFC4924;
+     &RFC5226; &RFC5564; &RFC5890; &RFC5891; &RFC5892; &RFC5893;
+	 &RFC6162; &RFC6783; &RFC6973;
+	 &RFC7230; &RFC7231; &RFC7232; &RFC7233; &RFC7234; &RFC7235; &RFC7236; &RFC7237; &RFC7258;
+
+     <!-- A reference written by by an organization not a person. -->
+
+	  <reference anchor="NETmundial"
+                target="http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf">
+       <front>
+         <title>NETmundial Multistakeholder Statement</title>
+		<author initials="" surname="NetMundial">  
+           <organization>NetMundial</organization>
+         </author>
+         <date year="2014" />
+       </front>
+     </reference>
+	 
+     <reference anchor="HRIP"
+                target="https://www.Internetsociety.org/sites/default/files/Human%20Rights%20and%20Internet%20Protocols-%20Comparing%20Processes%20and%20Principles.pdf">
+       <front>
+         <title>Human Rights and Internet Protocols: Comparing Processes and Principles</title>
+		<author initials="JL" surname="Joy Liddicoat">  
+           <organization>APC</organization>
+         </author>
+		<author initials="AD" surname="Avri Doria">  
+           <organization>Technicalities</organization>
+         </author>
+         <date year="2012" />
+       </front>
+     </reference>
+ 
+   
+    <reference anchor="UDHR"
+                target="http://www.un.org/en/documents/udhr/index.shtmlhttp://www.ohchr.org/en/udhr/pages/introduction.aspx">
+       <front>
+         <title>Universal Declaration of Human Rights</title>
+		<author initials="UN" surname="General Assembly">  
+           <organization>UN</organization>
+         </author>
+         <date year="1948" />
+       </front>
+     </reference>
+	 
+    <reference anchor="ICCPR"
+                target="http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx">
+       <front>
+         <title>International Covenant on Civil and Political Rights</title>
+		<author initials="UN" surname="General Assembly">  
+           <organization>UN</organization>
+         </author>
+         <date year="1966" />
+       </front>
+     </reference>
+	 
+	  <reference anchor="HRC2012"
+                target="http://daccess-ods.un.org/TMP/554342.120885849.html">
+       <front>
+         <title>Human Rights Council Resolution on the promotion, protection and enjoyment of human rights on the Internet</title>
+		<author initials="UN" surname="General Assembly">  
+           <organization>UN</organization>
+         </author>
+         <date year="2011" />
+       </front>
+     </reference>
+	 
+	 <reference anchor="UNGA2013"
+                target="http://daccess-ods.un.org/TMP/1133732.05065727.html">
+       <front>
+         <title>UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)</title>
+		<author initials="UN" surname="General Assembly">  
+           <organization>UN</organization>
+         </author>
+         <date year="2013" />
+       </front>
+     </reference>
+	 
+	 <reference anchor="HRC2011"
+                target="">
+       <front>
+         <title>Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Human Rights Council, May 2011</title>
+		<author initials="" surname="Human Rights Council">  
+           <organization>UN</organization>
+         </author>
+         <date year="2011" />
+       </front>
+     </reference>
+	 <reference anchor="HRC2013"
+                target="">
+       <front>
+         <title>Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Human Rights Council, April 2013</title>
+		<author initials="UN" surname="General Assembly">  
+           <organization>UN</organization>
+         </author>
+         <date year="2013" />
+       </front>
+     </reference>
+	 
+	 
+   </references>
+
+   <!-- Other possible references
+   
+	Human Rights Council Resolution on the promotion, protection and enjoyment of human rights on the Internet (A/HRC/20/L.13
+	
+	UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)
+	
+	Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Human Rights Council, May 2011
+	
+	Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Human Rights Council, April 2013
+	
+    -->
+	
+   <section anchor="app-additional" title="Additional Stuff">
+     <t>This is a place holder for an Appendix if it is needed.</t>
+   </section>
+
+<!--
+ 
+ <section anchor=changelog" Title="Change Log"
+
+v00 20140916	Avri Doria - Initial version
+    20141014    Avri Doria - prep for -00, Includes content from Niels and Joana
+v01 201503015	Avri Doria - updates to research topic and proposal sections
+
+	/section>	
+	-->
+ </back>
+</rfc>
