@@ -1,8 +1,18 @@
-draft-glossary.html: draft-glossary.xml
+DRAFTS = glossary
+OUTPUTS = $(foreach draft,$(DRAFTS),draft-${draft}.html draft-${draft}.xml draft-${draft}.txt)
+
+all: $(OUTPUTS)
+
+clean:
+	rm -f $(OUTPUTS)
+
+draft-%.html: draft-%.xml
 	xml2rfc $< --html
 
-draft-glossary.xml: draft-glossary.md
+draft-%.xml: draft-%.md
 	kramdown-rfc2629 $< >$@
 
-draft-glossary.txt: draft-glossary.xml
+draft-%.txt: draft-%.xml
 	xml2rfc $< --text
+
+.PHONY: all clean
