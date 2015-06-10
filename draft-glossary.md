@@ -29,7 +29,7 @@ author:
  -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: Article 19
+       organization: Article19
        email: niels@article19.org
 
 normative:
@@ -84,7 +84,7 @@ Introduction
 The Human Rights Protocol Consideration Proposed Research Group aims
 to research whether standards and protocols can enable, strengthen or
 threaten human rights, as defined in the Universal Declaration of
-Human Rights {{UDHR}} and the International Covenant on Civil and
+Human Rights {{UDHR}} and the International Covenant ons Civil and
 Political Rights {{ICCPR}}, specifically, but not limited to the
 right to freedom of expression and the right to freedom of assembly.
 
@@ -97,6 +97,103 @@ protocol design.
 
 Glossary
 ========
+
+In the analysis of existing RFCs central design and technical concepts have been found which impact human rights.  This is an initial glossary of concepts that could bridge human rights discourse and technical vocabulary. Thesee definitions should be improved and further aligned with existing RFCs.
+
+Accessibility
+: Full Internet Connectivity as described in {{RFC4084}} to provide unfettered access to the Internet 
+
+: The design of protocols, services or implementation that provide an enabling environment for people with disabilities.
+
+: The ability to use information found on the Internet
+
+Connectivity
+: The Internet is the tool for providing global connectivity {{RFC1958}}. It is the ability to either send and or receive packets.
+
+Content-agnosticism
+: Treating packets identically regardless of their user content.
+
+--- comment: Distributed vs. Decentralized 
+http://networkcultures.org/unlikeus/resources/articles/what-is-a-federated-network/
+
+Distributed
+: A distributed architecture is a system in which not all processes reside in a single host.
+
+Decentralized
+: Opportunity for implementation of standards or protocols without a main point of control.
+
+Federation
+: The possibility of of transparenty connecting autonomous systems into a single service
+
+Inter-operable
+: A property of a documented standard or protocol which allows different implementations to work with each other without any restricted access or negotiation. 
+
+Reliable
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable allow for partial healing. 
+
+Scalable
+: There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
+
+Stateless / stateful 
+: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs ofrequest and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{Wikipedia [https://en.wikipedia.org/wiki/Stateless_protocol] }}
+
+Transparent:
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC 2775}}
+
+Debugging:
+: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{Based on Wikipedia [https://en.wikipedia.org/wiki/Debugging] }}
+
+End-to-End
+: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark [1][2]. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in [3]; concerns that were not part of the original articulation of the end-to-end principle. {{RFC 3724}}
+
+   [1]  Saltzer, J.H., Reed, D.P., and Clark, D.D., "End-to-End
+        Arguments in System Design," ACM TOCS, Vol 2, Number 4, November
+        1984, pp 277-288.
+
+   [2]  Clark, D., "The Design Philosophy of the DARPA Internet
+        Protocols," Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
+        1988, pp. 106-114.
+
+   [3]  Blumenthal, M., Clark, D.D., "Rethinking the design of the
+        Internet: The end-to-end arguments vs. the brave new world", ACM
+        Transactions on Internet Technology, Vol. 1, No. 1, August 2001,
+        pp 70-109.
+
+Internationalization
+: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
+    
+Openness
+: The quality of the unfiltered Internet that allows for free access to other hosts
+
+Permissionless innovation
+:  The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
+    
+Autonomy
+: Autonomous System approach
+
+Privacy
+: Please see {{ RFC6973 }}
+
+Security 
+: reliability, confidentiality, integrity, anonymity, authenticity
+
+Robust
+: The resistantance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
+
+
+The combination of content agnosticism, connectivity, security, and privacy (as defined in RFC 6973 are the technical principles that underlay freedom of expression on the Internet.
+
+
+
+  (  ( End-to-End      )               )                            
+ (  (  Interoperability )               )                           
+(   (  Resilience       )  Connectivity  )                          
+(   (  Reliability      )                )   = freedom of expression
+(    ( Robustness      )                 )                          
+(              Privacy                   )                          
+ (             Security                 )                           
+  (            Content agnosticism     )                            
+
 
 
 Research Group Information
