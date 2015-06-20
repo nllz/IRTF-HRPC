@@ -32,6 +32,13 @@ author:
        organization: Article19
        email: niels@article19.org
 
+- 
+       ins: A. Doria
+       name: Avri Doria
+       organization: dotgay LLC
+       email: avri@acm.org
+
+
 normative:
   
 informative:
@@ -51,6 +58,7 @@ informative:
      author:
         org: United Nations General Assembly
      target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
+   
    Berners-Lee:
      title: Weaving the Web,
      author:
@@ -60,6 +68,31 @@ informative:
        HarperCollins: p 208
      date: 1999
 
+   Saltzer:
+     title: End-to-End Arguments in System Design
+     author: 
+       - ins: J.H. Saltzer
+       - ins: D.P. Reed
+       - ins: D.D. Clark
+     seriesinfo: ACM TOCS, Vol 2, Number 4, November
+        1984, pp 277-288.
+     date: 1984
+
+   Clark:     
+     title: The Design Philosophy of the DARPA Internet Protocols
+     author:
+       - ins D. Clark
+     seriesinfo: Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
+        1988, pp. 106-114.
+     date: 1988
+
+   Blumenthal:
+     title: Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world
+     author:
+       - ins: M. Blumenthal
+       - ins: D.D. Clark
+      seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
+      date: 2001
 
 --- abstract
 
@@ -138,26 +171,13 @@ Stateless / stateful
 : In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs ofrequest and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{Wikipedia [https://en.wikipedia.org/wiki/Stateless_protocol] }}
 
 Transparent:
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC 2775}}
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
 Debugging:
 : Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{Based on Wikipedia [https://en.wikipedia.org/wiki/Debugging] }}
 
 End-to-End
-: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark [1][2]. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in [3]; concerns that were not part of the original articulation of the end-to-end principle. {{RFC 3724}}
-
-   [1]  Saltzer, J.H., Reed, D.P., and Clark, D.D., "End-to-End
-        Arguments in System Design," ACM TOCS, Vol 2, Number 4, November
-        1984, pp 277-288.
-
-   [2]  Clark, D., "The Design Philosophy of the DARPA Internet
-        Protocols," Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
-        1988, pp. 106-114.
-
-   [3]  Blumenthal, M., Clark, D.D., "Rethinking the design of the
-        Internet: The end-to-end arguments vs. the brave new world", ACM
-        Transactions on Internet Technology, Vol. 1, No. 1, August 2001,
-        pp 70-109.
+: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC 3724}}
 
 Internationalization
 : The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
