@@ -236,7 +236,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
     (              Privacy                   )                          
     (              Security                  )                           
      (             Content agnosticism      )
-      (	           Open Standards          )                            
+      (	       Open Standards          )                            
 
 
 The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
