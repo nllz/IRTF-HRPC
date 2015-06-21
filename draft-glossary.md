@@ -80,7 +80,7 @@ informative:
    Clark:     
      title: The Design Philosophy of the DARPA Internet Protocols
      author:
-       - ins D. Clark
+       - ins: D. Clark
      seriesinfo: Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
         1988, pp. 106-114.
      date: 1988
