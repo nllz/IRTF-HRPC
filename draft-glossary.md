@@ -228,15 +228,15 @@ Robust
 The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
 
 
-  (  ( End-to-End      )               )                            
- (  (  Interoperability )               )                           
-(   (  Resilience       )  Connectivity  )                          
-(   (  Reliability      )                )   = freedom of expression
-(    ( Robustness      )                 )                          
-(              Privacy                   )                          
-(              Security                  )                           
- (             Content agnosticism      )
-  (	       Open Standards          )                            
+      (  ( End-to-End      )               )                            
+     (  (  Interoperability )               )                           
+    (   (  Resilience       )  Connectivity  )                          
+    (   (  Reliability      )                )   = freedom of expression
+    (    ( Robustness      )                 )                          
+    (              Privacy                   )                          
+    (              Security                  )                           
+     (             Content agnosticism      )
+      (	           Open Standards          )                            
 
 
 The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
