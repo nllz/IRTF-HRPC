@@ -228,13 +228,13 @@ The combination of content agnosticism, connectivity, security, and privacy (as 
       (            Content agnosticism     )                            
 
 
-The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
+The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
 
-                 ( Reliability  ) 	
-    security =  (  Resilience    )	  
-                (  Integrity     )
-                (  Authenticity  )
-                 ( Anonymity    )
+                 ( Reliability    ) 	
+    security =  (  Confidentiality )	  
+                (  Integrity       )
+                (  Authenticity    )
+                 ( Anonymity      )
 
 
 Research Group Information
