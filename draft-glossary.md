@@ -41,6 +41,7 @@ normative:
   
 informative:
    RFC1958:
+   RFC2606:	
    RFC2775:
    RFC3365:
    RFC3724:
@@ -170,6 +171,17 @@ Inter-operable
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable allow for partial healing. 
 
+Open standards
+: Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
+      ISO, IEEE, and ITU-T, develop a variety of protocol and service
+      specifications that are similar to Technical Specifications
+      defined here.  National and international groups also publish
+      "implementors' agreements" that are analogous to Applicability
+      Statements, capturing a body of implementation-specific detail
+      concerned with the practical application of their standards.  All
+      of these are considered to be "open external standards" for the
+      purposes of the Internet Standards Process.
+
 Scalable
 : There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
 
@@ -212,8 +224,15 @@ Authenticity
 Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
 
+The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
 
-The combination of content agnosticism, connectivity, security, and privacy (as defined in {{RFC6973}} are the technical principles that underlay freedom of expression on the Internet.
+	     ( Reliability  ) 	
+security =  (  Resilience    )	  
+  	    (  Integrity     )
+	    (  Authenticity  )
+	     ( Anonymity    )
+
+The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
 
 
 
@@ -223,17 +242,10 @@ The combination of content agnosticism, connectivity, security, and privacy (as 
 (   (  Reliability      )                )   = freedom of expression
 (    ( Robustness      )                 )                          
 (              Privacy                   )                          
- (             Security                 )                           
-  (            Content agnosticism     )                            
+(              Security                  )                           
+ (             Content agnosticism      )
+  (	       Open Standards          )                            
 
-
-The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
-
-	     ( Reliability  ) 	
-security =  (  Resilience    )	  
-  	    (  Integrity     )
-	    (  Authenticity  )
-	     ( Anonymity    )
 
 
 Research Group Information
