@@ -218,23 +218,23 @@ The combination of content agnosticism, connectivity, security, and privacy (as 
 
 
 
-  (  ( End-to-End      )               )                            
- (  (  Interoperability )               )                           
-(   (  Resilience       )  Connectivity  )                          
-(   (  Reliability      )                )   = freedom of expression
-(    ( Robustness      )                 )                          
-(              Privacy                   )                          
- (             Security                 )                           
-  (            Content agnosticism     )                            
+      (  ( End-to-End      )               )                            
+     (  (  Interoperability )               )                           
+    (   (  Resilience       )  Connectivity  )                          
+    (   (  Reliability      )                )   = freedom of expression
+    (    ( Robustness      )                 )                          
+    (              Privacy                   )                          
+     (             Security                 )                           
+      (            Content agnosticism     )                            
 
 
 The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
 
-	     ( Reliability  ) 	
-security =  (  Resilience    )	  
-  	    (  Integrity     )
-	    (  Authenticity  )
-	     ( Anonymity    )
+                 ( Reliability  ) 	
+    security =  (  Resilience    )	  
+                (  Integrity     )
+                (  Authenticity  )
+                 ( Anonymity    )
 
 
 Research Group Information
