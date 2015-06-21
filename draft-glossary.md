@@ -86,7 +86,7 @@ informative:
      date: 1988
 
    Blumenthal:
-     title: Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world
+     title: "Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world"
      author:
        - ins: M. Blumenthal
        - ins: D.D. Clark
