@@ -90,8 +90,8 @@ informative:
      author:
        - ins: M. Blumenthal
        - ins: D.D. Clark
-      seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
-      date: 2001
+     seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
+     date: 2001
 
 --- abstract
 
