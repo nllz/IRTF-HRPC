@@ -1,4 +1,3 @@
----
 title: Human Rights Protocol Considerations Glossary
 abbrev: hrpcg
 docname: draft-dkg-hrpc-glossary
@@ -8,7 +7,6 @@ ipr: trust200902
 area: General
 workgroup: Human Rights Protocol Considerations Research Group
 keyword: Internet-Draft
-
 stand_alone: yes
 pi:
   rfcedstyle: yes
@@ -20,6 +18,7 @@ pi:
   comments: yes
   inline: yes
   text-list-symbols: -o*+
+
 author:
  -
        ins: D. K. Gillmor
@@ -224,6 +223,4 @@ subscribe to the list is at
 
 Archives of the list can be found at:
 <https://www.irtf.org/mail-archive/web/hrpc/current/index.html>
-
-
 
