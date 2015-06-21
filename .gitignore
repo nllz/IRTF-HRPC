@@ -2,5 +2,5 @@ draft-*.html
 draft-*.xml
 draft-*.txt
 *~
-staging.xml
+*.staging.xml
 .refcache/
