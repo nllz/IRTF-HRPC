@@ -31,8 +31,7 @@ author:
        name: Niels ten Oever
        organization: Article19
        email: niels@article19.org
-
-- 
+ - 
        ins: A. Doria
        name: Avri Doria
        organization: dotgay LLC
