@@ -30,8 +30,7 @@ author:
        name: Niels ten Oever
        organization: Article19
        email: niels@article19.org
-
-- 
+ - 
        ins: A. Doria
        name: Avri Doria
        organization: dotgay LLC
@@ -41,9 +40,12 @@ author:
 normative:
   
 informative:
-   RFC3365:
-   RFC6973:
    RFC1958:
+   RFC2775:
+   RFC3365:
+   RFC3724:
+   RFC4084:
+   RFC6973:
    UDHR:
      title: The Universal Declaration of Human Rights
      date: 1948
@@ -80,18 +82,26 @@ informative:
    Clark:     
      title: The Design Philosophy of the DARPA Internet Protocols
      author:
-       - ins D. Clark
+       - ins: D. Clark
      seriesinfo: Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
         1988, pp. 106-114.
      date: 1988
 
    Blumenthal:
-     title: Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world
+     title: "Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world"
      author:
        - ins: M. Blumenthal
        - ins: D.D. Clark
-      seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
-      date: 2001
+     seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
+     date: 2001
+
+   WP-Stateless:
+     title: Stateless protocol
+     target: https://en.wikipedia.org/wiki/Stateless_protocol
+
+   WP-Debugging:
+     title: Debugging
+     target: https://en.wikipedia.org/wiki/Debugging
 
 --- abstract
 
@@ -164,16 +174,16 @@ Scalable
 : There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
 
 Stateless / stateful 
-: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{Wikipedia [https://en.wikipedia.org/wiki/Stateless_protocol] }}
+: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
 
 Transparent:
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC 2775}}
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
 Debugging:
-: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{Based on Wikipedia [https://en.wikipedia.org/wiki/Debugging] }}
+: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
 
 End-to-End
-: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC 3724}}
+: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
 
 Internationalization
 : The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
@@ -197,7 +207,7 @@ Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 
-The combination of content agnosticism, connectivity, security, and privacy (as defined in RFC 6973 are the technical principles that underlay freedom of expression on the Internet.
+The combination of content agnosticism, connectivity, security, and privacy (as defined in {{RFC6973}} are the technical principles that underlay freedom of expression on the Internet.
 
 
 
