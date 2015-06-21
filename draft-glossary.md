@@ -41,9 +41,12 @@ author:
 normative:
   
 informative:
-   RFC3365:
-   RFC6973:
    RFC1958:
+   RFC2775:
+   RFC3365:
+   RFC3724:
+   RFC4084:
+   RFC6973:
    UDHR:
      title: The Universal Declaration of Human Rights
      date: 1948
@@ -167,13 +170,13 @@ Stateless / stateful
 : In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{Wikipedia [https://en.wikipedia.org/wiki/Stateless_protocol] }}
 
 Transparent:
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC 2775}}
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
 Debugging:
 : Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{Based on Wikipedia [https://en.wikipedia.org/wiki/Debugging] }}
 
 End-to-End
-: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC 3724}}
+: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
 
 Internationalization
 : The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
@@ -197,7 +200,7 @@ Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 
-The combination of content agnosticism, connectivity, security, and privacy (as defined in RFC 6973 are the technical principles that underlay freedom of expression on the Internet.
+The combination of content agnosticism, connectivity, security, and privacy (as defined in {{RFC6973}} are the technical principles that underlay freedom of expression on the Internet.
 
 
 
