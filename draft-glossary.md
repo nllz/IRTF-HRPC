@@ -1,3 +1,4 @@
+--- 
 title: Human Rights Protocol Considerations Glossary
 abbrev: hrpcg
 docname: draft-dkg-hrpc-glossary
@@ -224,16 +225,7 @@ Authenticity
 Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
 
-The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
-
-	     ( Reliability  ) 	
-security =  (  Resilience    )	  
-  	    (  Integrity     )
-	    (  Authenticity  )
-	     ( Anonymity    )
-
 The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
-
 
 
   (  ( End-to-End      )               )                            
@@ -247,6 +239,13 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
   (	       Open Standards          )                            
 
 
+The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
+
+                 ( Reliability    ) 	
+    security =  (  Confidentiality )	  
+                (  Integrity       )
+                (  Authenticity    )
+                 ( Anonymity      )
 
 Research Group Information
 ==========================
