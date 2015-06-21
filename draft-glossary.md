@@ -194,14 +194,20 @@ Openness
 Permissionless innovation
 :  The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
     
-Autonomy
-: Autonomous System approach
-
 Privacy
 : Please see {{ RFC6973 }}
 
-Security 
-: reliability, confidentiality, integrity, anonymity, authenticity
+Confidentiality
+: The non-disclosure of information to any unintended person or host or party
+
+Integrity
+: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
+
+Anonymity
+: The fact of not being identified
+
+Authenticity
+: The act of confirming the truth of an attribute of a single piece of data or entity.
 
 Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
@@ -220,6 +226,14 @@ The combination of content agnosticism, connectivity, security, and privacy (as 
  (             Security                 )                           
   (            Content agnosticism     )                            
 
+
+The combination of reliability, resilience, anonymity and authenticity is what makes up security on the Internet
+
+	     ( Reliability  ) 	
+security =  (  Resilience    )	  
+  	    (  Integrity     )
+	    (  Authenticity  )
+	     ( Anonymity    )
 
 
 Research Group Information
