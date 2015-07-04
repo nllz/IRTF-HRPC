@@ -152,26 +152,48 @@ Accessibility
 
 : The ability to receive information available on the Internet
 
+Anonymity
+: The fact of not being identified
+
+Authenticity
+: The act of confirming the truth of an attribute of a single piece of data or entity.
+
+Confidentiality
+: The non-disclosure of information to any unintended person or host or party
+
 Connectivity
 : The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. 
 
 Content-agnosticism
 : Treating network traffic identically regardless of content.
 
-Distributed
-: A distributed architecture is a system in which not all processes reside in a single host.
+Debugging:
+: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
+
+: The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations.
 
 Decentralized
-: Opportunity for implementation of standards or protocols without a single point of control.
+: Opportunity for implementation of standards, protocols or systems without a single point of control.
+
+Distributed
+: A distributed architecture is a system in which not all processes reside in a single computer.
+
+End-to-End
+:The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+
+: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
 
 Federation
 : The possibility of connecting autonomous systems into a single distributed system.
 
+Integrity
+: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
+
 Inter-operable
 : A property of a documented standard or protocol which allows different implementations to work with each other without any restricted negotiation, access or functionality. 
 
-Reliable
-: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable allow for partial healing. 
+Internationalization
+: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
 
 Open standards
 : Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
@@ -184,28 +206,6 @@ Open standards
       of these are considered to be "open external standards" for the
       purposes of the Internet Standards Process.
 
-Scalable
-: The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
-
-Stateless / stateful 
-: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
-
-Transparent:
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
-
-Debugging:
-: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
-
-: The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations.
-
-End-to-End
-:The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
-
-: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
-
-Internationalization
-: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
-    
 Openness
 : The quality of the unfiltered Internet that allows for free access to other hosts
 
@@ -215,20 +215,23 @@ Permissionless innovation
 Privacy
 : Please see {{ RFC6973 }}
 
-Confidentiality
-: The non-disclosure of information to any unintended person or host or party
+Reliable
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable allow for partial healing. 
 
-Integrity
-: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
-
-Anonymity
-: The fact of not being identified
-
-Authenticity
-: The act of confirming the truth of an attribute of a single piece of data or entity.
+Resilience
+: The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
 
 Robust
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
+
+Scalable
+: The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
+
+Stateless / stateful 
+: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
+
+Transparent:
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
 The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
 

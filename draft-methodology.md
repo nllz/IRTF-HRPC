@@ -77,13 +77,13 @@ informative:
         - ins: D. K. Gillmor
 
    ID:
-     title: 
+     title: Proposal for research on human rights protocol considerations
      date: 2015
      author:
+        - ins: N. ten Oever
         - ins: A. Doria
-	- ins: J. Varon
-	- ins: N. ten Oever
-     target: tools.ietf.org/html/draft-doria-hrpc-proposal
+        - ins: J. Varon
+     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal     
       
 
 --- abstract
