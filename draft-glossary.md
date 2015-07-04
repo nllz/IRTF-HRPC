@@ -34,8 +34,8 @@ author:
  - 
        ins: A. Doria
        name: Avri Doria
-       organization: dotgay LLC
-       email: avri@acm.org
+       organization: APC
+       email: avri@apc.org
 
 
 normative:
@@ -106,6 +106,15 @@ informative:
      title: Debugging
      target: https://en.wikipedia.org/wiki/Debugging
 
+   ID:
+     title: Proposal for research on human rights protocol considerations
+     date: 2015
+     author:
+        - ins: N. ten Oever
+        - ins: A. Doria
+        - ins: J. Varon
+     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
+
 --- abstract
 
 This document presents a glossary of terms used to map between
@@ -140,6 +149,10 @@ This document aims to provide a shared vocabulary to facilitate
 understanding of the intersection between human rights and Internet
 protocol design.
 
+Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admindb/hrpc
+
+This document builds on the previous IDs published within the framework of the proposed hrpc research group {{ID}}
+
 Glossary
 ========
 
@@ -170,10 +183,10 @@ Content-agnosticism
 Debugging:
 : Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
 
-: The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations.
+: The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations. Can also include tracing or monitoring packet flow.
 
 Decentralized
-: Opportunity for implementation of standards, protocols or systems without a single point of control.
+: Opportunity for implementation or deployment of standards, protocols or systems without a single point of control.
 
 Distributed
 : A distributed architecture is a system in which not all processes reside in a single computer.
@@ -190,10 +203,10 @@ Integrity
 : Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
 
 Inter-operable
-: A property of a documented standard or protocol which allows different implementations to work with each other without any restricted negotiation, access or functionality. 
+: A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted negotiation, access or functionality. 
 
 Internationalization
-: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages.
+: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages and scripts.
 
 Open standards
 : Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
@@ -216,7 +229,7 @@ Privacy
 : Please see {{ RFC6973 }}
 
 Reliable
-: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable allow for partial healing. 
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. 
 
 Resilience
 : The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
