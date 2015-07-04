@@ -88,13 +88,13 @@ informative:
 
 --- abstract
 
-This document presents the first steps undertaken for developing a methodology to map how some engineering concepts on the protocol level can be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It feeds upon and is intended to facilitate the work done by the proposed Human Rights Protocol Considerations research group, as well as other authors within the IETF.
+This document presents steps undertaken for developing a methodology to map  engineering concepts at the protocol level that may be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It feeds upon and is intended to facilitate the work done by the proposed Human Rights Protocol Considerations research group, as well as other authors within the IETF.
 
-As stated in {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content. Our research hypothesis is that Internet's objective of connectivity makes it an enabler of human rights and that its architectural design tend to converge in protecting and promoting the human rights framework. 
+As stated in {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content. The research hypothesis is that Internet's objective of connectivity makes it an enabler of human rights and that its architectural design tends to converge in protecting and promoting the human rights framework. 
 
 But, while the Internet was designed with freedom and openness of communications as core values, as the scale and the commercialization of the Internet has grown greatly, the influence of such world-views started to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, on the other way around, not protecting these characteristics could also result in (partial) loss of functionality and connectivity, thus, in the internet architecture design itself.
 
-Based on similar assumptions, remarkable work {{RFC1984}} {{RFC6973}} {{RFC7258}} has already been done in the IETF on privacy issues that should be considered when creating an Internet protocol. But, beyond privacy considerations, concerns for freedom of expression and association were also a strong part of the world-view of the community involved in developing the first Internet protocols. Indeed, promoting open, secure and reliable connectivity is essential for this rights. But how are this concepts addressed in the protocol level? Are there others? This ID is willing to explain research work done so far and explore possible methodological approaches to move further on exploring and exposing these relations between standards and protocols and the promotion and protection of the rights to freedom of expression and association. 
+Exemplary work {{RFC1984}} {{RFC6973}} {{RFC7258}} has already been done in the IETF on privacy issues that should be considered when creating an Internet protocol. But, beyond privacy considerations, concerns for freedom of expression and association were also a strong part of the world-view of the community involved in developing the first Internet protocols. Indeed, promoting open, secure and reliable connectivity is essential for these rights. But how are this concepts addressed in the protocol level? Are there others? This ID is intended to explain research work done so far and to explore possible methodological approaches to move further on exploring and exposing the relations between standards and protocols and the promotion and protection of the rights to freedom of expression and association. 
 
 Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admindb/hrpc
 
@@ -126,10 +126,10 @@ The growing impact of the Internet on the lives of individuals makes Internet st
 These two rights are described in the Universal Declaration of Human Rights:
 
 
-Article 19 - Freedom of Expression 
+Article 19 - Freedom of Expression (FoE)
 "Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and  to seek, receive and impart information and ideas through any  media and regardless of frontiers."
 
-Article 20 - Freedom of Association 
+Article 20 - Freedom of Association (FoA)
 "Everyone has the right to freedom of peaceful assembly and association."
 
 But how to talk about human rights in an engineering context? 
@@ -180,13 +180,13 @@ Expected Outcome: a Glossary for human rights protocol considerations with a lis
 Map cases of protocols being exploited or enablers 
 ------------------------------------------------------
 
-Sep 1.1 - Cases of protocols being exploited
-Activity 1: Map cases in which users rights have been exploited, violated or compromised, analyze which protocols or vulnerabilities in protocols are key to this.
+Step 1.1 - Cases of protocols being exploited
+Activity 1: Map cases in which users rights have been exploited, violated or compromised, analyze which protocols or vulnerabilities in protocols are invovled with this.
 Activity 2: Understand technical rational for the use of particular protocols that undermine human rights. 
 Expected Outcome: list of protocols that have been exploited to expose users to rights violation and rationale.
 
 Step 1.2 - Cases of protocols being enablers
-Activity: Map cases in which users rights have been enabled, promoted and protected and analyze which characteristics in the protocols are key to this.
+Activity: Map cases in which users rights have been enabled, promoted and protected and analyze which characteristics in the protocols are involved with this.
 Expected Outcome: list of characteristics in the protocols that have been key to promote and protect the rights to freedom of expression and association that could be added to our glossary
 
 
@@ -196,7 +196,7 @@ Apply human rights technical definitions to the cases mapped
 Step 1 - Glossary and Cases
 Activity: Investigate alternative technical options from within list of technical design principle (see {{HRPC-GLOSSARY}}) that could have been applied in the mapped cases to strengthen our technical definition of FoE and FoA, and hence human rights and connectivity of the network.
 
-Expected Outcome: Identify best (and worst) practices. Develop procedures to systematically evaluate protocols for potential human rights impact.
+Expected Outcome: Identify best (and worst) current practices. Develop procedures to systematically evaluate protocols for potential human rights impact.
 
 
 
@@ -287,7 +287,7 @@ Apply human rights technical definitions to the cases mapped
 ------------------------------------------------------------
 
 
-Nex Steps of the Methodology still to be developedFuture research questions
+Nex Steps of the Methodology still to be developed Future research questions
 ===========================================================================
 
 Future research questions
