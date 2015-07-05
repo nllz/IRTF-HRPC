@@ -192,7 +192,7 @@ Distributed
 : A distributed architecture is a system in which not all processes reside in a single computer.
 
 End-to-End
-:The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+: The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
 
@@ -223,7 +223,7 @@ Openness
 : The quality of the unfiltered Internet that allows for free access to other hosts
 
 Permissionless innovation
-:  The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
+: The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
     
 Privacy
 : Please see {{ RFC6973 }}
@@ -267,6 +267,19 @@ The combination of reliability, confidentiality, integrity, anonymity, and authe
                 (  Integrity       )
                 (  Authenticity    )
                  ( Anonymity      )
+
+
+Security Considerations
+========================
+
+As this draft concerns a research document, there are no security considerations.
+
+
+IANA Considerations
+==========================
+
+This document has no actions for IANA.
+
 
 Research Group Information
 ==========================
