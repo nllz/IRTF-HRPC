@@ -1,7 +1,7 @@
 --- 
 title: Human Rights Protocol Considerations Glossary
 abbrev: hrpcg
-docname: draft-dkg-hrpc-glossary
+docname: draft-dkg-hrpc-glossary-00
 category: info
 
 ipr: trust200902
