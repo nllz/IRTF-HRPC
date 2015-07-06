@@ -1,7 +1,7 @@
 ---
 title: Human Rights Protocol Considerations Methodology
 abbrev: hrpcm
-docname: draft-hrpc-methodology
+docname: draft-varon-hrpc-methodology-00
 category: info
 
 ipr: trust200902
@@ -75,6 +75,7 @@ informative:
         - ins: N. ten Oever
         - ins: A. Doria
         - ins: D. K. Gillmor
+     target: https://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
 
    ID:
      title: Proposal for research on human rights protocol considerations
@@ -83,16 +84,12 @@ informative:
         - ins: N. ten Oever
         - ins: A. Doria
         - ins: J. Varon
-     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal     
+     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
       
 
 --- abstract
 
-This document presents steps undertaken for developing a methodology to map  engineering concepts at the protocol level that may be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It feeds upon and is intended to facilitate the work done by the proposed Human Rights Protocol Considerations research group, as well as other authors within the IETF.
-
-As stated in {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content. The research hypothesis is that Internet's objective of connectivity makes it an enabler of human rights and that its architectural design tends to converge in protecting and promoting the human rights framework. 
-
-But, while the Internet was designed with freedom and openness of communications as core values, as the scale and the commercialization of the Internet has grown greatly, the influence of such world-views started to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, on the other way around, not protecting these characteristics could also result in (partial) loss of functionality and connectivity, thus, in the internet architecture design itself.
+This document presents steps undertaken for developing a methodology to map engineering concepts at the protocol level that may be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It feeds upon and is intended to facilitate the work done by the proposed Human Rights Protocol Considerations research group, as well as other authors within the IETF.
 
 Exemplary work {{RFC1984}} {{RFC6973}} {{RFC7258}} has already been done in the IETF on privacy issues that should be considered when creating an Internet protocol. But, beyond privacy considerations, concerns for freedom of expression and association were also a strong part of the world-view of the community involved in developing the first Internet protocols. Indeed, promoting open, secure and reliable connectivity is essential for these rights. But how are this concepts addressed in the protocol level? Are there others? This ID is intended to explain research work done so far and to explore possible methodological approaches to move further on exploring and exposing the relations between standards and protocols and the promotion and protection of the rights to freedom of expression and association. 
 
@@ -106,7 +103,11 @@ Introduction
 
 In a manner similar to the work done for {{RFC6973}} on Privacy Consideration Guidelines, the premise of this research is that some standards and protocols can solidify, enable or threaten human rights.
 
-As stated in {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content.  Open, secure and reliable connectivity is essential for human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}.  Therefore, considering connectivity as the ultimate objective of the Internet, this makes a clear case that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+As stated in {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content. Our research hypothesis is that Internet's objective of connectivity makes it an enabler of human rights and that its architectural design tends to converge in protecting and promoting the human rights framework. 
+
+Open, secure and reliable connectivity is essential for human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}.  Therefore, considering connectivity as the ultimate objective of the Internet, makes a clear case that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+
+But, while the Internet was designed with freedom and openness of communications as core values, as the scale and the commercialization of the Internet has grown greatly, the influence of such world-views started to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, on the other way around, not protecting these characteristics could also result in (partial) loss of functionality and connectivity, thus, in the internet architecture design itself.
 
 An essential part of maintaining the Internet as a tool for communication and connectivity is security. Indeed, "development of security mechanisms is seen as a key factor in the future growth of the Internet as a motor for international commerce and communication" {{RFC1984}} and according to the Danvers Doctrine {{RFC3365}}, there is an overwhelming consensus in the IETF that the best security should be used and standardized.
 
@@ -273,7 +274,7 @@ Step 1.3 - Build a common glossary
 
 Current status: 
 ---------------
-Expected Outcome: A first list of concepts, which definitions should be improved and further aligned with existing RFCs, is being publish as ID: []
+Expected Outcome: A first list of concepts, which definitions should be improved and further aligned with existing RFCs, is being publish as {{ID}}
 
 
 
@@ -287,8 +288,8 @@ Apply human rights technical definitions to the cases mapped
 ------------------------------------------------------------
 
 
-Nex Steps of the Methodology still to be developed Future research questions
-===========================================================================
+Next Steps of the Methodology still to be developed
+===================================================
 
 Future research questions
 -------------------------
@@ -302,5 +303,29 @@ Can we propose guidelines to protect the Internet as a human-rights-enabling env
 
 Assuming that the research produces useful results, can the objective evolve into the creation of a set of recommended considerations for the protection of applicable human rights?
 
+
+Security Considerations
+========================
+
+As this draft concerns a research document, there are no security considerations.
+
+
+IANA Considerations
+==========================
+
+This document has no actions for IANA.
+
+
+Research Group Information
+==========================
+
+The discussion list for the IRTF Human Rights Protocol Considerations
+proposed working group is located at the e-mail address
+<hrpc@ietf.org>. Information on the group and information on how to
+subscribe to the list is at
+<https://www.irtf.org/mailman/listinfo/hrpc>
+
+Archives of the list can be found at:
+<https://www.irtf.org/mail-archive/web/hrpc/current/index.html>
 
 
