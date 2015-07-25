@@ -180,7 +180,7 @@ Connectivity
 Content-agnosticism
 : Treating network traffic identically regardless of content.
 
-Debugging:
+Debugging
 : Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected and analyse the consequences that might have emanated from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
 
 : The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations. Can also include tracing or monitoring packet flow.
