@@ -1,7 +1,7 @@
 ---
 title: Human Rights Protocol Considerations Methodology
 abbrev: hrpcm
-docname: draft-varon-hrpc-methodology-00
+docname: draft-varon-hrpc-methodology-01
 category: info
 
 ipr: trust200902
@@ -22,16 +22,22 @@ pi:
   text-list-symbols: -o*+
 
 author:
- -
+-
        ins: J. Varon 
        name: Joana Varon 
        organization: Coding Rights
        email: joana@codingrights.org
- -
+-
        ins: C.J.N. Cath
        name: Corinne Cath
        organization: Oxford Internet Institute
        email: corinne.cath@oii.ox.ac.uk
+
+-
+       ins: N. ten Oever
+       name: Niels ten Oever
+       organization: Article19
+       email: niels@article19.org
 
 
 normative:
@@ -252,8 +258,10 @@ Expected Outcome 1:  a list of  technical terms that combined create the enablin
      =    Good enough  |          Transparency       =                  |
      =     principle   |       Data minimization     =                  |
      =                 |  Permissionless innovation  =                  |
-     =                 |     Graceful degradation    =                  |
+     =    Simplicity   |     Graceful degradation    =                  |
      =                 |          Connectivity       =                  |
+     =                 |          Heterogenity       =                  |
+     =                 |                             =                  |
      =                 |                             =                  |
      =                 \------------------------------------------------/
      =                                               =
@@ -261,20 +269,66 @@ Expected Outcome 1:  a list of  technical terms that combined create the enablin
 
 Current status: 
 ---------------
-Expected Outcome 2: Translating human rights to technical terms. This analysis points to translating the concept of freedom of expression as follows:
+Expected Outcome 2: Translating human rights to technical terms. This analysis points to translating human rights that impact or are impacted by the Internet as follows:
 
-                             +--
-                             |  content agnosticism
-     freedom of expression = |  connectivity
-                             |  privacy
-                             |  security
-                             +--
+The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
+
+      (        Connectivity         ) 
+     (         Privacy               )
+     (         Security              )   = freedom of expression
+     (         Content agnosticism   )
+     (	      Internationalization   )
+     (        Censorship resistance  )
+     (	      Open Standards         )
+      (       Heterogeneity support )
+	                           
+
+     (		Anonymity           )
+    (		Privacy              )   = Non-discrimination
+    (		Pseudonymity         )
+     (		Content agnosticism )	
+
+			
+    ( 	      Content Agnosticism  )
+    (	      Security             ) 	= Equal protection
+
+    
+     (	      Anonymity       ) 
+    (	      Privacy          )   = Right to be presumed innocent
+     (	      Security        )	
+
+
+	 (	Accessibility         )
+	(	Internationalization   ) = Right to political participation
+	(	Censorship resistance  )
+	 (      
+
+					
+	 (  Open standards         )
+	(   Localization            ) = Rights for cultural life, 
+	(   Internationalization    )             arts and science
+	 (  Censorship resistance  )
+
+
+	 (	Connectivity         )  
+	(	Decentralization      )
+	(     Censorship resistance ) = Right to freedom of assembly 
+	(  	Pseudonymity          )                   and association     
+	(	Anonymity             )
+	 ( 	Security             )
+	
+        ( Reliability    ) 
+       (  Confidentiality )	  
+       (  Integrity       ) = Right to security
+       (  Authenticity    )
+        ( Anonymity      )
+
 
 Step 1.3 - Build a common glossary
 
 Current status: 
 ---------------
-Expected Outcome: A first list of concepts, which definitions should be improved and further aligned with existing RFCs, is being publish as {{ID}}
+Expected Outcome: A first list of concepts, which definitions should be improved and further aligned with existing RFCs, is published as {{ID}}
 
 
 
@@ -283,6 +337,9 @@ Next Steps of the Methodology still to be applied
 
 Map cases of protocols being exploited or enablers 
 ---------------------------------------------------
+
+UPCOMING BEFORE YOKOHAMA
+
 
 Apply human rights technical definitions to the cases mapped
 ------------------------------------------------------------

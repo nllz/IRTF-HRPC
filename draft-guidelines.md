@@ -1,7 +1,7 @@
 --- 
-title: Human Rights Protocol Considerations Glossary
-abbrev: hrpcg
-docname: draft-dkg-hrpc-glossary-01
+title: Human Rights Protocol Considerations Guidelines
+abbrev: hrpcgl
+docname: draft-tenoever-hrpc-guidelines-00
 category: info
 
 ipr: trust200902
@@ -21,36 +21,21 @@ pi:
   text-list-symbols: -o*+
 
 author:
--
-       ins: D. K. Gillmor
-       name: Daniel Kahn Gillmor
-       organization: ACLU
-       email: dkg@fifthhorseman.net
--
+ 
+ -
        ins: N. ten Oever
        name: Niels ten Oever
        organization: Article19
        email: niels@article19.org
-- 
-       ins: A. Doria
-       name: Avri Doria
-       organization: APC
-       email: avri@apc.org
-
 
 normative:
   
 informative:
-   RFC0760:
-   RFC0791:
-   RFC0793:
-   RFC1122:
    RFC1958:
    RFC2606:	
    RFC2775:
    RFC3724:
    RFC4084:
-   RFC4949:
    RFC6973:
 
 
@@ -120,19 +105,6 @@ informative:
         - ins: J. Varon
      target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
 
-   FIArch:
-     title: Future Internet Design Principles
-     date: January 2012
-     target: http://www.future-internet.eu/uploads/media/FIArch_Design_Principles_V1.0.pdf
-
-   Elahi:
-     title: "CORDON - A taxonomy of Internet Censorship Resistance Strategies"
-     author:
-       - ins: T. Elahi
-       - ins: I. Goldberg
-     target: http://cacr.uwaterloo.ca/techreports/2012/cacr2012-33.pdf
-     date: 2012
-
 --- abstract
 
 This document presents a glossary of terms used to map between
@@ -186,14 +158,8 @@ Accessibility
 Anonymity
 : The condition of an identity being unknown or concealed. {{RFC4949}}
 
-Anonymous
-: A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
-
 Authenticity
 : The act of confirming the truth of an attribute of a single piece of data or entity.
-
-Censorship resistance
-: Methods and measures to prevent Internet censorship.
 
 Confidentiality
 : The non-disclosure of information to any unintended person or host or party
@@ -212,28 +178,19 @@ Debugging
 Decentralized
 : Opportunity for implementation or deployment of standards, protocols or systems without a single point of control.
 
+Distributed
+: A distributed architecture is a system in which not all processes reside in a single computer.
+
 End-to-End
 : The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
 
-: communication that takes place between communication end-points of the same physical or logical functional level
-
 Federation
 : The possibility of connecting autonomous systems into a single distributed system.
 
-Heterogenity
-:  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous
-organizations and internet service providers, each with their own separate policy concerns,
-there is a large heterogeneity of administrative domains and pricing structures.
-As a result, heterogeneity principle is proposed in {{RFC1958}} to be supported by design. {{FIArch}}
-
 Integrity
 : Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
-
-Internet censorship
-:  Internet censorship is the intentional suppression of information originating, flowing
-or stored on systems connected to the Internet where that information is relevant for decision making to some entity. {{Elahi}}
 
 Inter-operable
 : A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted negotiation, access or functionality. 
@@ -259,13 +216,7 @@ Permissionless innovation
 : The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
     
 Privacy
-: The right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}
-
-: The right of individuals to control or influence what information related to them may be collected and stored and by whom and to whom that information may be disclosed.
-
-: Privacy is a broad concept relating to the protection of individual autonomy and the relationship between an individual and society, including government, companies and private individuals. It is often summarized as “the right to be left alone” but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.   
-
-The right to privacy is also recognized in nearly every national constitution  and in most international human rights treaties.  It has been adjudicated upon both by international and regional bodies.  The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.  
+: Please see {{ RFC6973 }}
 
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. 
@@ -273,8 +224,8 @@ Reliable
 Resilience
 : The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
 
-Robustness
-: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}
+Robust
+: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 Scalable
 : The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability.  The limits of a systems scalability should be defined. 
@@ -282,32 +233,79 @@ Scalable
 Stateless / stateful 
 : In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
 
-Strong encryption / cryptography
-: Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
-
 Transparent:
 : "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
+
+The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
+
+
+      (        Connectivity         )   
+     (         Privacy               )                          
+    (         Security                )   = freedom of expression                         
+   (         Content agnosticism       )
+    (	      Internationalization    )
+     (        Censorship resistance  )
+      (	      Open Standards        ) 
+	                           
+
+     (        Anonymity           )
+    (	      Privacy              )   = Non-discrimination
+    (	      Pseudonymity         )
+     (	      Content agnosticism )	
+
+			
+    ( 	      Content Agnosticism  )
+    (	      Security             ) 	= Equal protection
+
+    
+     (	      Anonymity       ) 
+    (	      Privacy          )   = Right to be presumed innocent
+     (	      Security        )	
+
+
+     	 (	Accessibility         )
+	(	Internationalization   ) = Right to political participation
+	(	Censorship resistance  )
+	 (      
+
+					
+	 (	Open standards         )
+	(	Localization            ) = Rights for cultural life, arts and science
+	(	Internationalization    )
+	 (	Censorship resistance  )
+
+
+	(	Connectivity            )  
+       (	Dcentralization	         )
+      (         Censorship resistance     ) = Right to freedom of assembly and association
+      (  	Pseudonymity		  )
+       (	Anonymity		 )
+	(	Security		)
+	
+
+
 
 
 The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
 
-	 ( Reliability    )
-	(  Confidentiality )
-	(  Integrity       ) =  communication and information security (technical)
-	(  Authenticity    )
-	 ( Anonymity      )
+                 ( Reliability    ) 	
+    security =  (  Confidentiality )	  
+                (  Integrity       )
+                (  Authenticity    )
+                 ( Anonymity      )
 
 
 The combination of End-to-End, Interoperability, resilience, reliability and robustness is what makes us connectivity on the Internet
 
 
-                         ( End-to-End      )   
-     connectivity =     (  Interoperability )  
-                       (   Resilience        )  
-                       (   Reliability       )   
-                       (   Robustness        )
-                        (  Autonomy         ) 
-                         ( Simplicity      )   
+                        ( End-to-End      )   
+     connectivity =    (  Interoperability )  
+                       (  Resilience        )  
+                       (  Reliability        )   
+                       (  Robustness        )
+			( Autonomy         ) 
+			( Simplicity      )   
+
 
 Security Considerations
 ========================
