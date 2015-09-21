@@ -219,6 +219,9 @@ End-to-End
 
 : communication that takes place between communication end-points of the same physical or logical functional level
 
+Evolving System
+:
+
 Federation
 : The possibility of connecting autonomous systems into a single distributed system.
 
@@ -237,6 +240,9 @@ or stored on systems connected to the Internet where that information is relevan
 
 Inter-operable
 : A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted negotiation, access or functionality. 
+
+Internet Standards as an Arena for Conflict
+: Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications’ impact on the Internet’s users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be  appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC226}} {{RFC3724}}
 
 Internationalization
 : The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages and scripts.
@@ -267,6 +273,9 @@ Privacy
 
 The right to privacy is also recognized in nearly every national constitution  and in most international human rights treaties.  It has been adjudicated upon both by international and regional bodies.  The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.  
 
+Relevance
+:
+
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. 
 
@@ -287,6 +296,9 @@ Strong encryption / cryptography
 
 Transparent:
 : "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
+
+Quality
+:
 
 
 The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
