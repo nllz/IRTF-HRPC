@@ -211,7 +211,7 @@ Preliminary findings achieved by applying current proposed methodology
 =======================================================================
 
 
-Translating Human Rights Concept into Technical Definitions
+Current status: Translating Human Rights Concept into Technical Definitions
 -----------------------------------------------------------
 
 Step 1.1 - Mapping protocols and standards related to FoE and FoA
@@ -232,17 +232,18 @@ Collaboration  and cooperation have been part of the Internet since its early  b
 IDNs
 English has been the lingua franca of the Internet, but for many Internet user English is not their first language.  To have a true global Internet, one that serves the whole world, it would need to reflect the languages of these different communities.  The Internationalized Domain Names IDNA2008 ({{RFC5890}}, {{RFC5891}}, {{RFC5892}}, and {{RFC5893}}), describes standards for the use of a broad range of strings and characters (some also written from right to left).  This enables users who use other characters than the standard LDH ascii typeset to have their own URLs.  This shows the ambition of the Internet community to reflect the diversity of users and to be in line with Article 2 of the Universal Declaration of Human Rights which clearly stipulates that "everyone is entitles to all rights and freedoms `[...]`, without distinction of any kind, such as `[...]` language `[...]`." {{UDHR}}
 
-Current Status: 
----------------
-Based on these standards and protocols, a raw list of RFCs that describe standards and protocols that are potentially related to FoE and FoA is available here: https://github.com/nllz/IRTF-HRPC/blob/master/RFC%20overview.ods
 
+Current Status: Mapping protocols and standards related to FoE and FoA
+---------------
+
+Based on these standards and protocols as well as an analysis of existing RFCs and literature, a listing of architectural concepts has been made. 
 
 Step 1.2 - Extracting concepts from mapped RFCs
-The list of RFCs compiled above has used to extract our key concepts. 
+The list of RFCs as well as relevant literature has used to extract key architectural principles. The main architectural concepts were subsequently listed in the glossary {{HRPC-GLOSSARY}}. 
 
-Current Status: 
+Current Status: Extracting concepts from mapped RFCs
 ---------------
-Expected Outcome 1:  a list of  technical terms that combined create the enabling environment for human rights, such a freedom  of expression and freedom of association.
+Expected Outcome 1:  a list of  technical terms that combined create the enabling environment for human rights, such a freedom of expression and freedom of association.
 
       Architectural principles                    Enabling features
         and characteristics                        for user rights
@@ -267,9 +268,10 @@ Expected Outcome 1:  a list of  technical terms that combined create the enablin
      =                                               =
      +===============================================+
 
-Current status: 
+Current status: Translating human rights to technical terms
 ---------------
-Expected Outcome 2: Translating human rights to technical terms. This analysis points to translating human rights that impact or are impacted by the Internet as follows:
+
+Expected outcome 2: This analysis aims to translate human rights concepts that impact or are impacted by the Internet as follows:
 
 The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
 
@@ -326,23 +328,19 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
 Step 1.3 - Build a common glossary
 
-Current status: 
+Current status: Building of a common glossary
 ---------------
-Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}})
+Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}}). This document aims to provide a description of relevant architectural principals as well as technical concepts that are relevant for describing the impact of protocols on human rights. 
 
 
-
-Next Steps of the Methodology still to be applied
-=================================================
-
-Map cases of protocols being exploited or enablers 
----------------------------------------------------
+Current status: Map cases of protocols being exploited or enablers 
+------------------------------------------------------------------
 
 IP
 upcoming
 
 DNS
-under discussion on the list now
+under discussion on the list nosupw
 
 HTTP
 under discussion on the list now
@@ -353,6 +351,9 @@ under discussion on the list now
 PPSPP
 upcoming
 
+
+Next Steps of the Methodology still to be applied
+=================================================
 
 Apply human rights technical definitions to the cases mapped
 ------------------------------------------------------------
