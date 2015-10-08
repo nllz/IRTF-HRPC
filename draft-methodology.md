@@ -189,7 +189,7 @@ Map cases of protocols being exploited or enablers
 
 Step 1.1 - Cases of protocols being exploited
 Activity 1: Map cases in which users rights have been exploited, violated or compromised, analyze which protocols or vulnerabilities in protocols are invovled with this.
-Activity 2: Understand technical rational for the use of particular protocols that undermine human rights. 
+Activity 2: Understand technical rationale for the use of particular protocols that undermine human rights. 
 Expected Outcome: list of protocols that have been exploited to expose users to rights violation and rationale.
 
 Step 1.2 - Cases of protocols being enablers
@@ -328,7 +328,7 @@ Step 1.3 - Build a common glossary
 
 Current status: 
 ---------------
-Expected Outcome: A first list of concepts, which definitions should be improved and further aligned with existing RFCs, is published as {{ID}}
+Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}})
 
 
 
@@ -338,7 +338,20 @@ Next Steps of the Methodology still to be applied
 Map cases of protocols being exploited or enablers 
 ---------------------------------------------------
 
-UPCOMING BEFORE YOKOHAMA
+IP
+upcoming
+
+DNS
+under discussion on the list now
+
+HTTP
+under discussion on the list now
+
+XMPP
+under discussion on the list now
+
+PPSPP
+upcoming
 
 
 Apply human rights technical definitions to the cases mapped
@@ -350,7 +363,7 @@ Next Steps of the Methodology still to be developed
 
 Future research questions
 -------------------------
-All of the steps taken above raise the following question that need to be addressed after the research methodological steps outlined above have been completed:
+All of the steps mentioned above raise the following question that need to be addressed after the research methodological steps outlined above have been completed:
 
 How can the rights enabling environment be safeguarded in (future) protocol development?
 
