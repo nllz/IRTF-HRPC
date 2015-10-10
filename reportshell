@@ -37,7 +37,7 @@ This document present an overview of the project to map engineering concepts at 
 
 Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admindb/hrpc
 --- middle
-* Background
+# Background
 
 The recognition that human rights have a role in Internet policies has become part of the general discourse.  Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC).  And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly.  The NETmundial outcome document affirms that human rights, as reflected in the Universal Declaration of Human Rights [UDHR], should underpin Internet governance principles.
 
@@ -46,33 +46,58 @@ Nevertheless, the direct relation between Internet Standards and human rights is
 Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols.  Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values.  But as the scale and the commercialization of the
 Internet has grown, the influence of such world-views had to compete with other values, such as ease of development and cost. The purose of this research is to discover and document the consideration invovled in taking human rights into account when creating protocols.
 
-* Link Between procols and human rights 
+# Terminology
 
-** Discussion of International Bill of Rights and Internet Architecture
+Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 
-*** Theory
+# Link Between procols and human rights 
 
-When looking at human rights procols consideration, several perspectives are possible:
+## Discussion of International Bill of Rights and Internet Architecture
+
+## Theory
+
+When looking at protocols the considerations can apply from several perspectives. 
+
++   The protocol's effects on human rights on the Internet.
++   The protocol's effect  on humanr rights in combination with other protocols
++   The effect of specific protocol elemements, seperately or in combination with other protocl elements on human rights on the Internet
++   The ability to determine when various effects are occuring
++   The effect of deployment or non deployment.  While this may be may seem beyond the protocl itself, often the design of protocol, its difficulty in implementation and the degree to which it contain poison pills or other protocol artifacts that discourse implementation or deployment can be signifant in the over human rights affect of a protocol.
+
+Each 
+
+## Other relevant research
+
+# Methodology
+
+Currently defined in detaiil in draft-varon-hrpc-methodolgy to be folded in at appropriate time
+
+Briefly methodolgy has included:
++ scoping the research problem
++ determining terminology to be use linking engineering and human rights concepts
++ establoshing methology
++ case studies on a set of protocols
++ derivation of possible considerations
+
+# Case Studies
+
+In each of the case studies, the behavior of the protocols is anlysed for its postive and negative effects.  In some case these effects are due to the design of the protocol itself, in others they are due to existing or absent features.
+
+Early versions of the analysis on the following protocols are currently being discussed on list.  Once the discussion have matured those discussions will be folded in this section.
+
+## DNS
+
+## IP
+
+## HTTP
+
+## XMPP
+
+
+# Possible areas for protocol considerations
+
+# Next Steps
 
 
 
-*** Evidence from research
-
-* Methodology
-
-Currently in draft- to be folded in at appropriate time
-
-* Case Studies
-** DNS
-** IP
-** HTTP
-** XMPP
-
-** Possible areas for protocol considerations
-
-* Next Steps
-
-* Terminology
-
-Currently in draft-  to be folded in at appropriate time
 --- back
