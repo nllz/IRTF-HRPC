@@ -211,7 +211,7 @@ Debugging
 : The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations. Can also include tracing or monitoring packet flow.
 
 Decentralized
-: Opportunity for implementation or deployment of standards, protocols or systems without a single point of control.
+: Opportunity for implementation or deployment of standards, protocols or systems without one single point of control.
 
 End-to-End
 : The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
@@ -245,7 +245,7 @@ Inter-operable
 Internet Standards as an Arena for Conflict
 : Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications’ impact on the Internet’s users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be  appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
 
-Internationalization
+Internationalization (i13n)
 : The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages and scripts.
 
 Open standards
