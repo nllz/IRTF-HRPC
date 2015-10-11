@@ -1,9 +1,14 @@
+(::comment}
+syntax based on reference: http://kramdown.gettalong.org/quickref.html
+just learning kramdown
+{:/comment}
+
 ---
 coding: utf-8
 
 title:
-docname: draft-doria-hprc-reportshell
-date: 2015-10-5
+docname: draft-doria-hprc-report
+date: 2015-10-11
 category: 
 
 ipr: trust200902
@@ -24,33 +29,51 @@ Normative:
 Informative:
 RFC1958: RFC1984: RFC2026: RFC2639: RFC2919: RFC3365: RFC5890: RFC5891: RFC5892: RFC5893: RFC6162: RFC6783: RFC6973: RFC7230: RFC7231: RFC7232: RFC7234: RFC7235: RFC7236: RFC7237: RFC7258:
 
+Cath: title: 
+
 UDHR: title: The Universal Declaration of Human Rights date: 1948 author: org: United Nations General Assembly target: http://www.un.org/en/documents/udhr/
 
 HRPC-GLOSSARY: title: Human Rights Protocol Considerations Glossary date: 2015 author: - ins: N. ten Oever - ins: A. Doria - ins: D. K. Gillmor target: https://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
 
+HRPC-Method : title: Human Rights Protocol Considerations Methodology date 2015 author : - ins J. Varon - ins: C. Cath target : https://www.ietf.org/id/draft-varon-hrpc-methodology-00.txt
+
 ID: title: Proposal for research on human rights protocol considerations date: 2015 author: - ins: N. ten Oever - ins: A. Doria - ins: J. Varon target: http://tools.ietf.org/html/draft-doria-hrpc-proposal
+
+Cath : title : A case study of codeing rights date : 2015 author : Corrinne J.N. Cath
 
 
 --- abstract
 
-This document present an overview of the project to map engineering concepts at the protocol level that may be related to promotion and protection of the freedom of expression and association. It is intended to provide the framework for the study and initial results. At a later stage it will fold in the work being done in the Methodology and Glossary drafts.
+This document present an overview of the project to map engineering concepts at the protocol level that may be related to promotion and protection of the freedom of expression and association. It is intended to provide the framework for reporting on the study, initial results and basic considerations. At a later stage it will fold in the work being done in the Methodology and Glossary drafts as weel as the work being done in the case studies. It also folds in some of the text included in the original proposal for the HRPC.
 
 Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admindb/hrpc
 --- middle
 # Background
 
-The recognition that human rights have a role in Internet policies has become part of the general discourse.  Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC).  And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly.  The NETmundial outcome document affirms that human rights, as reflected in the Universal Declaration of Human Rights [UDHR], should underpin Internet governance principles.
+The recognition that human rights have a role in Internet policies has become part of the general discourse.  Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC).  And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly.  The NETmundial outcome document affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
 
 Nevertheless, the direct relation between Internet Standards and human rights is still something to be explored and more clearly demonstrated. 
 
 Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols.  Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values.  But as the scale and the commercialization of the
 Internet has grown, the influence of such world-views had to compete with other values, such as ease of development and cost. The purose of this research is to discover and document the consideration invovled in taking human rights into account when creating protocols.
 
+In a manner similar to the work done for RFC 6973 {{RFC6973}} on Privacy Consideration Guidelines, the premise of this research is that some standards and protocols can solidify, enable or threaten user rights.
+
+As stated in RFC 1958 {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content.  Open, secure and reliable  connectivity is essential for rights such as freedom of expression and freedom of association, as defined in the Universal Declaration   of Human Rights {{UDHR}}.  Therefore, considering connectivity as the ultimate objective of the Internet, this makes a clear case that the   Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of   the network.
+
+An essential part of maintaining the Internet as a tool for communication and connectivity is security.  Indeed, "development of security mechanisms is seen as a key factor in the future growth of  the Internet as a motor for international commerce and communication"   RFC 1984 [RFC1984] and according to the Danvers Doctrine RFC 3365  {{RFC3365}}, there is an overwhelming consensus in the IETF that the  best security should be used and standardized.
+
+In RFC 1984 {{RFC1984}}, the Internet Architecture Board (IAB) and the  Internet Engineering Steering Group (IESG), the bodies which oversee   architecture and standards for the Internet, expressed: "concern by  the need for increased protection of international commercial   transactions on the Internet, and by the need to offer all Internet   users an adequate degree of privacy."  Indeed, the IETF has been   doing a significant job in this area {{RFC6973}} {{RFC7258}}, considering  privacy concerns as a subset of security concerns.  {{RFC6973}}
+
+Besides privacy, it should be possible to highlight other aspects of  connectivity embedded in standards and protocols that can have human rights considerations. This report focuses on freedom of expression and the right to association and assembly online.  
+
 # Terminology
 
 Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 
 # Link Between procols and human rights 
+
+Include discussion of value laden engineering as discussed in {{Cath}} 
 
 ## Discussion of International Bill of Rights and Internet Architecture
 
@@ -59,7 +82,7 @@ Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 When looking at protocols the considerations can apply from several perspectives. 
 
 +   The protocol's effects on human rights on the Internet.
-+   The protocol's effect  on humanr rights in combination with other protocols
++   The protocol's effect  on human rights in combination with other protocols
 +   The effect of specific protocol elemements, seperately or in combination with other protocl elements on human rights on the Internet
 +   The ability to determine when various effects are occuring
 +   The effect of deployment or non deployment.  While this may be may seem beyond the protocl itself, often the design of protocol, its difficulty in implementation and the degree to which it contain poison pills or other protocol artifacts that discourse implementation or deployment can be signifant in the over human rights affect of a protocol.
@@ -83,18 +106,47 @@ Briefly methodolgy has included:
 
 In each of the case studies, the behavior of the protocols is anlysed for its postive and negative effects.  In some case these effects are due to the design of the protocol itself, in others they are due to existing or absent features.
 
-Early versions of the analysis on the following protocols are currently being discussed on list.  Once the discussion have matured those discussions will be folded in this section.
+Early versions of the analysis on the following protocols are currently being discussed on HRPC list.  Once the discussions have matured those discussions will be folded in this section.
 
 ## DNS
 
+Text being done by Will Scott on the HRPC list.
+
 ## IP
+
+Text being done by Will Scott on HRPC list.
 
 ## HTTP
 
+Text being done by Nex / Claudio on HRPC list.
+
 ## XMPP
+
+Text being done by Will Scott on HRPC list.
+
+## P2P
+
+Text being done by Nex on HRPC List.
 
 
 # Possible areas for protocol considerations
+
+The case studies point to several areas of protocol behavior that may be apprpriate for considerations:  
+
++ Charcter encoding for internationalization 
+- DNS Record
+  - Distortion
+  - Injection
+  - Removal
+- Network Poisoning
+- Traffic
+  - Interception
+  - Manipulation
+  - Throttling
+- User Identification
+  - Source and Destination visibilty
+  - Tracking
+- 
 
 # Next Steps
 
