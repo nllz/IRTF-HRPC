@@ -394,15 +394,15 @@ Expected Outcome: A glossary has been developed, which aims to build on other re
 Current status: Map cases of protocols being exploited or enablers 
 ------------------------------------------------------------------
 
-IP
-----
+# IP
+
 The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by RFC 791. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in RFC 2460. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
 
 The internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of these human rights.
 
 Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options, so that protocol extensions promoting assembly and expression like Mobility and Multicasting can fail to receive support from IP compatible devices. This lack of forward compatibility where extensions can receive a baseline level of support needed to extend the design has stymied forms of expression which could have been extended to support these human rights.
 
-	Network visibility of Source and Destination
+## Network visibility of Source and Destination
 
 The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [2] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
 
@@ -413,7 +413,7 @@ Documentation of this form of harm: {{RFC0791}},
 [2] http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
 [3] http://www.ipjustice.org/digital-rights/internet-infrastructure-and-ip-censorship-by-david-post/
 
-	Protocols
+## Protocols
 
 The other major feature of the IP protocol header is that it specifies the protocol encapsulated in each message in an easily observable form, and does not encourage a design where the encapsulated protocol is not available to a network observer.  This design has resulted in a proliferation of routers which inspect the inner protocol, and has resulted in a stagnation where only the TCP and UDP protocols are widely supported across the Internet. While the IP protocol was designed as the entire set of metadata needed for routing, subsequent enhanced routers have found value on making policy decisions based on the contents of TCP and UDP headers as well, and are encoded with the assumption that only these protocols will be used for data transfer. [1] This has prevented development of more secure protocols, since there’s a need to provide sufficient metadata with each message for routers to make positive policy decisions if you hope the protocol will be available to all users.
 
@@ -422,7 +422,7 @@ Documentation of this form of harm:
 [2] https://www.chromium.org/quic
 [3] https://tools.ietf.org/html/rfc4960
 
-	Address Translation and Mobility
+## Address Translation and Mobility
 
 A major structural shift in the Internet which has undermined the protocol design of IPv4, and has significantly reduced the freedom of end users to communicate and assemble in the introduction network address translation. {{RFC1631}} Network address translation is a process whereby organizations and autonomous systems to connect two networks by translating the IPv4 source and destination addresses between the two. This process puts the router performing the translation into a privileged position, where it can decide which subset of communications are worthy of translation, and whether an unknown request for communication will be correctly forwarded to a host on the other network.
 
@@ -434,8 +434,8 @@ Documentation of this form of harm:
 [3] https://tools.ietf.org/html/rfc5944
 
 
-DNS
-====
+# DNS
+
 The Domain Name System (DNS), as specified in RFC 1035, acts as a core switchboard for the internet - associating human readable names with services. The DNS system operates a centralized core of ‘Root Resolvers’ , servers run by a set of organizations trusted by IANA to enact the organization’s decisions by accurately communicating which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by IANA, and have evolved to encompass several classes of
 services. Some, like ‘.Com’ and ‘.Net’, provide a common space for expression of ideas, though their policies are enacted through US based countries. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with the addition of “generic TLDs”, name spaces with accompanying regulations aimed to promote expression
 around specific topics, for instance ‘.travel’ and ‘.ninja’.
@@ -446,7 +446,7 @@ both the freedom of expression of the publisher to offer their content, and the 
 
 There have been several mechanisms used impose these limitations based on the technical design of the DNS protocol. These have led to a number of situations where limits on expression have been imposed through subversion of the DNS protocol. Each of these situations has accompanying aspects of protocol design enabling those limitations.
 
-	Removal of records
+## Removal of records
 
 There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal include ‘seizure’ of names of illegally operating gambling operations by the United States ICE unit by compelling the
 US-based registrar in charge of the .com TLD to hand ownership of those domains over to the government. The same technique has been notably used by Libya to remove sites in violation of “our Country’s Law and Morality [which] do not allow any kind of pornography or its
@@ -461,7 +461,7 @@ Documentation of this form of harm:
 http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libya
 n-government/
 
-	Distortion of records
+## Distortion of records
 
 The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses
 rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted.
@@ -485,7 +485,7 @@ https://www.usenix.org/system/files/conference/foci15/foci15-paper-verve
 ris-update.pdf
 [4] https://tools.ietf.org/html/draft-hall-censorship-tech-01
 
-	Injection of records
+## Injection of records
 
 Responding incorrectly to requests for name lookups is the most common mechanism that in-network devices use to limit the ability of end users to discover services. A deviation which accomplishes a similar objective, though may be seen as different from a freedom of expression perspective, is the injection of incorrect responses to queries.  The most prominent example of this behavior occurs in China, where requests for lookups of sites which have been deemed inappropriate will trigger the network to respond with a bogus
 response, causing the client to ignore the real response when it subsequently arrives. Unlike the other forms of discussion discussed above, injection does not stifle the ability of a server to announce it’s name, it instead provides another voice which answers sooner.
@@ -497,8 +497,8 @@ https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.p
 df
 
 
-HTTP
-====
+# HTTP
+
 The Hypertext Transfer Protocol (HTTP), described in its version 1.1 in RFC2616, is a request-response application protocol developed throughout the 1990s, and factually contributed to the exponential growth of the Internet and the inter-connection of populations around
 the world. Because of its simple design, HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP has radically revolutionized the course of technological development and the ways people interact with online content and with each other. 
 However, HTTP is also a fundamentally insecure protocol, that doesn't natively provide encryption properties. While the definition of the Secure Sockets Layer (SSL), and later of Transport Layer Security (TLS), also happened during the 1990s, the fact that HTTP doesn't
@@ -509,7 +509,7 @@ of control over the Internet.
 
 Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer.
 
-	Traffic Interception
+## Traffic Interception
 
 
 While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of
@@ -525,7 +525,7 @@ utilized by oppressive regimes in order to monitor entire segments of population
 messages ad a country level. The use of such systems, especially in the context of the Arab
 Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
-	Traffic Manipulation
+## Traffic Manipulation
 
 The lack of a secure transport layer over HTTP connections not only exposes the users to interception of the content of their communications, but is more and more commonly abused as a vehicle for active compromises of computers and mobile devices. If an HTTP session travels in clear over the network, any node positioned at any point in the network is able to perform man-in-the-middle attacks and observe, manipulate, and hijack the session and modify the content of the communication in order to trigger unexpected behavior by the application
 generating the traffic. For example, in the case of a browser the attacker would be able to inject malicious code in order to exploit vulnerabilities in the browser or any of its plugins. Similarly, the attacker would be able to intercept, trojanize, and repackage binary
@@ -573,20 +573,20 @@ t/
 http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-comp
 any-hacked
 
-XMPP
-====
+# XMPP
+
 The Extensible Messaging and Presence Protocol (XMPP), specified in RFC 3920, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
 
 None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. In addition to issues of user registration and a lack of protocol specification of the registration policy, the protocol also has facets that may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves naturally.
 
-	User Identification
+## User Identification
 
 The XMPP specification specifies that clients are identified with a resource (<node@domain/home> / <node@domain/work>) to distinguish the conversations to specific devices. This has the side effect of enabling tracking of user behavior by a remote friend or server, who are able to track presence not only of the user, but of each individual device. This has proven to be misleading to many users, since many clients only expose user level rather than device level presence. Likewise, user invisibility so that communication can occur while users don’t notify all buddies and other servers of their availability is not part of the formal protocol, and has only been added as an extension within the XML stream rather than enforced by the protocol.
 
 Documentation of this form of harm:
 [1] https://developer.pidgin.im/ticket/4322
 
-	Character Encoding
+## Character Encoding
 
 Localization is a source of frustration in many protocols, and appears in some forms of XMPP. The XMPP protocol specifies a requirement for UTF-8 and UTF-16 support [1], though documentation admits that many implementations may not support UTF-16 [2]. In practice, this leads to cases where text encoded outside of a standard english language ascii encoding will fail to render on all clients, limiting the ability of users to communicate in their native languages. Some examples are failure of XMPP servers to handle non-ascii passwords [3], and gateways which simply strip all non-ascii from the conversation stream.
 
@@ -598,7 +598,7 @@ Documentation of this form of harm:
 [3] https://support.process-one.net/browse/EJAB-476
 [4] https://wiki.bitlbee.org/HowtoFacebookXMPP
 
-	Surveillance of Communication
+## Surveillance of Communication
 
 The XMPP protocol specifies the standard by which communication of channels may be encrypted, but it does not provide visibility to clients of whether their communications are encrypted on each link. In particular, even when both clients ensure that they have an encrypted connection to their XMPP server to ensure that their local network is unable to read or disrupt the messages they send, the protocol does not provide visibility into the encryption status between the two servers. As such, clients may be subject to selective disruption of communications by an intermediate network which disrupts communications based on keywords found through Deep Packet Inspection.
 
@@ -609,7 +609,7 @@ Documentation of this form of harm:
 [2] https://www.ietf.org/rfc/rfc6120.txt
 
 
-	Group Chat Limitations
+## Group Chat Limitations
 
 Group chat in the XMPP protocol is defined as an extension within the XML specification of the XMPP protocol [1]. However, it is not encoded or required at a protocol level, and not uniformly implemented by clients.
 
@@ -621,27 +621,27 @@ Multi-user chat rooms are identified by a name specified on a specific server, s
 
 
 
-Peer to Peer
-====
+# Peer to Peer
+
 Peer-to-Peer (P2P) is a network architecture (defined in RFC7574) in which all the participant nodes are equally responsible engaged into the storage and dissemination of information. A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is increasingly becoming a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Skype, Spotify and other proprietary multimedia applications.
 
 In a time of heavily centralized online services, peer-to-peer is often seen as an alternative, more democratic, and resistant architecture that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains critical to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
 
 
-	Network Poisoning
+## Network Poisoning
 
 Since content, and in some occasions peer lists, are safeguarded and distributed by its members, P2P networks are prone to what are generally defined as "poisoning attacks". Poisoning attacks might be directed directly at the data that is being distributed, for example by intentionally corrupting it, or at the index tables used to instruct the
 peers where to fetch the data, or at routing tables, with the attempt of providing connecting peers with lists of rogue or non-existing peers, with the intention to effectively cause a Denial of Service on the network.
 
 
-	Throttling
+## Throttling
 
 Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage [torrentfreak1] and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities [wikileaks].
 
 Throttling the peer-to-peer traffic makes some uses of P2P networks ineffective and it might be coupled with stricter inspection of users' Internet traffic through Deep Packet Inspection techniques which might pose additional security and privacy risks.
 
 
-	Tracking and Identification
+## Tracking and Identification
 
 
 One of the fundamental and most problematic issues with traditional peer-to-peer networks is a complete lack of anonymization of its users. For example, in the case of BitTorrent, all peers' IP addresses are openly available to the other peers. This has lead to an ever-increasing tracking of peer-to-peer and file-sharing users [ars]. As the geographical
@@ -652,7 +652,7 @@ It is worth nothing that there are varieties of P2P networks that implement cryp
 example is FreeNet [freenet1], a free software application designed to significantly increase the difficulty of users and content identification, and dedicated to foster freedom of speech online[freenet2].
 
 
-	Conclusions
+## Conclusions
 
 Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material, publish content anonymously, and communicate securely [bitmessage]. If adopted at large, well-designed and resistant P2P networks might represent a critical component of a futuresecure and distributed Internet, enabling freedom of speech and freedom
 of information at scale.
