@@ -1,89 +1,86 @@
 ---
-title:
+title: Human Rights Protocol Considerations - Research Report
 docname: draft-doria-hprc-report
 date: 2015-10-11
-category: 
+category: info
 
 ipr: trust200902
  
 area: IRTF
-wg: Human Rights Protocol Consideration RG
-
-stand_alone: yes 
-pi: 
-	rfcedstyle: yes 
-	toc: yes 
-	tocindent: yes 
-	sortrefs: yes 
-	symrefs: yes 
-	strict: yes 
-	comments: yes 
-	inline: yes 
-	text-list-symbols: -o*+
+workgroup: Human Rights Protocol Consideration RG
+keyword: Internet-Draft
+stand_alone: yes
+pi:
+  rfcedstyle: yes
+  toc: yes
+  tocindent: yes
+  sortrefs: yes
+  symrefs: yes
+  strict: yes
+  comments: yes
+  inline: yes
+  text-list-symbols: -o*+
 
 author:
-	-
-		ins: A. Doria (ed)
-		name: Avri Doria
-		org: Technicalities (APC, dotgay)
-		email: avri@acm.org
+-
+  ins: A. Doria 
+  name: Avri Doria
+  org: Technicalities 
+  email: avri@acm.org
 
+normative:
 
+informative:
+  RFC1958: 
+  RFC1984: 
+  RFC2026: 
+  RFC2639: 
+  RFC2919: 
+  RFC3365: 
+  RFC5890: 
+  RFC5891: 
+  RFC5892: 
+  RFC5893: 
+  RFC6162: 
+  RFC6783: 
+  RFC6973: 
+  RFC7230: 
+  RFC7231: 
+  RFC7232: 
+  RFC7234: 
+  RFC7235: 
+  RFC7236: 
+  RFC7237: 
+  RFC7258:
+  UDHR: 
+    title: The Universal Declaration of Human Rights 
+    date: 1948 
+    author: 
+      org: United Nations General Assembly 
+    target: http://www.un.org/en/documents/udhr/
+  
+  HRPC-GLOSSARY: 
+    title: Human Rights Protocol Considerations Glossary 
+    date: 2015 
+    author: 
+      - ins: N. ten Oever 
+      - ins: A. Doria 
+      - ins: D. K. Gillmor 
+    target: https://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
+  
+  HRPC-Method: 
+    title: Human Rights Protocol Considerations Methodology 
+    date: 2015
+    author: 
+      - ins: J. Varon 
+      - ins: C. Cath 
+    target: https://www.ietf.org/id/draft-varon-hrpc-methodology-00.txt
 
-Normative:
-
-Informative:
-
-RFC1958: 
-RFC1984: 
-RFC2026: 
-RFC2639: 
-RFC2919: 
-RFC3365: 
-RFC5890: 
-RFC5891: 
-RFC5892: 
-RFC5893: 
-RFC6162: 
-RFC6783: 
-RFC6973: 
-RFC7230: 
-RFC7231: 
-RFC7232: 
-RFC7234: 
-RFC7235: 
-RFC7236: 
-RFC7237: 
-RFC7258:
-
-UDHR: 
-	title: The Universal Declaration of Human Rights 
-	date: 1948 
-	author: 
-	org: United Nations General Assembly 
-	target: http://www.un.org/en/documents/udhr/
-
-HRPC-GLOSSARY: 
-	title: Human Rights Protocol Considerations Glossary 
-	date: 2015 
-	author: 
-		- ins: N. ten Oever 
-		- ins: A. Doria 
-		- ins: D. K. Gillmor 
-	target: https://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
-
-HRPC-Method: 
-	title: Human Rights Protocol Considerations Methodology 
-	date 2015
-	author: 
-		- ins J. Varon 
-		- ins: C. Cath 
-	target: https://www.ietf.org/id/draft-varon-hrpc-methodology-00.txt
-
-Cath: 
-	title: A case study of codeing rights 
-	date: 2015
-	author: Corrinne J.N. Cath
+  Cath: 
+    title: A case study of codeing rights 
+    date: 2015
+    author:
+       - ins: C. Cath
 
 
 --- abstract
