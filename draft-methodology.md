@@ -424,12 +424,322 @@ Documentation of this form of harm:
 [3] https://tools.ietf.org/html/rfc5944
 
 
-
 DNS
-under discussion on the list nosupw
+====
+The Domain Name System (DNS), as specified in RFC 1035, acts as a core
+switchboard for the internet - associating human readable names with
+services. The DNS system operates a centralized core of ‘Root
+Resolvers’ , servers run by a set of organizations trusted by IANA to
+enact the organization’s decisions by accurately communicating which
+organizations have been delegated to manage registration under each
+Top Level Domain (TLD). Top Level domains are maintained and
+determined by IANA, and have evolved to encompass several classes of
+services. Some, like ‘.Com’ and ‘.Net’, provide a common space for
+expression of ideas, though their policies are enacted through US
+based countries. Other name spaces are delegated to specific
+nationalities, and may impose limits designed to focus speech in those
+forums both to promote speech from that nationality, and to comply
+with local limits on expression and social norms. Finally, the system
+has been recently expanded with the addition of “generic TLDs”, name
+spaces with accompanying regulations aimed to promote expression
+around specific topics, for instance ‘.travel’ and ‘.ninja’.
+
+DNS has significant privacy issues, as described in RFC 7626. Notably
+amongst these, the protocol does not offer either encryption to limit
+the visibility of requests for domain resolution from several
+intermediary parties, nor does it offer authentication, allowing the
+client to know that they have received a correct, “authoritative”,
+answer to a query. Together, these decisions have resulted in ongoing
+harm to freedom of expression as the DNS protocol has become one of
+the central mechanisms used to block access to websites - limiting
+both the freedom of expression of the publisher to offer their
+content, and the freedom of assembly for clients to congregate in a
+shared virtual space.
+
+There have been several mechanisms used impose these limitations based
+on the technical design of the DNS protocol. These have led to a
+number of situations where limits on expression have been imposed
+through subversion of the DNS protocol. Each of these situations has
+accompanying aspects of protocol design enabling those limitations.
+
+Removal of records
+-----
+There have been a number of cases where the records for a domain are
+removed from the name system due to real-world events. Examples of
+this removal include ‘seizure’ of names of illegally operating
+gambling operations by the United States ICE unit by compelling the
+US-based registrar in charge of the .com TLD to hand ownership of
+those domains over to the government. The same technique has been
+notably used by Libya to remove sites in violation of “our Country’s
+Law and Morality [which] do not allow any kind of pornography or its
+promotion.”
+
+At a protocol level, the ability to seize domain names is enabled by
+the lack of transparency into DNS transfers, or any technical encoding
+of name ownership. Name ownership is purely a policy decision of
+registrars. While DNSSEC addresses distortion events described below,
+it does not tackle this problem, which is has the cooperation of (or
+compels) the registrar.
+
+Documentation of this form of harm:
+[1] http://news.bbc.co.uk/2/hi/technology/7250916.stm
+[2]
+http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libya
+n-government/
+
+Distortion of records
+-----
+The most common mechanism by which the DNS system is abused to limit
+freedom of expression is through manipulation of protocol messages by
+the network. One form occurs at an organizational level, where client
+computers are instructed to use a local DNS resolver controlled by the
+organization. The DNS resolver will then selectively distort responses
+rather than request the authoritative lookup from the upstream system.
+The second form occurs through the use of deep packet inspection,
+where all DNS protocol messages are inspected by the network, and
+objectionable content is distorted.
+
+At the national level, there are additional considerations. The most
+notable is the interactions between DNS distortion and internet
+routing. A study on collateral damage showed that the restrictions
+imposed by China on DNS responses in its network also affected the
+availability of sites to users in Germany, since some fraction of
+requests would transit through the Chinese network, even though none
+of the participants were located there.
+
+A notable instance of distortion has occurred in Greece [3], where a
+study found evidence of both of deep packet inspection to distort DNS
+replies, and overblocking of content, where ISPs prevented clients
+from resolving the names of domains which they were not instructed to
+do through the governmental order prompting the blocking systems there.
+
+At a protocol level, the effectiveness of these attacks is made
+possible by a lack of authentication in the DNS protocol. The DNSSEC
+protocol is not widely in use, but provides an extension allowing the
+client to know that a response is ‘Authoritative’ - that it has been
+generated by the server which has technical ownership of the name
+requested. Even still, there are a range of downgrade attacks, where a
+client may continue to follow the resolution of an injected message
+without such a signature, since it may not know that it should expect
+the response to be signed. Selective distortion of records has also
+been made possible by the predictable structure of DNS messages, which
+make it computationally easy for a network device to watch all passing
+messages even at high speeds, and the lack of encryption, which allows
+the network to distort only an objectionable subset of protocol messages
+.
+
+Documentation of this form of harm:
+[1] http://conferences.sigcomm.org/sigcomm/2012/paper/ccr-paper266.pdf
+[2] http://policyreview.info/articles/analysis/internet-censorship-turke
+y
+[3]
+https://www.usenix.org/system/files/conference/foci15/foci15-paper-verve
+ris-update.pdf
+[4] https://tools.ietf.org/html/draft-hall-censorship-tech-01
+
+Injection of records
+-----
+Responding incorrectly to requests for name lookups is the most common
+mechanism that in-network devices use to limit the ability of end
+users to discover services. A deviation which accomplishes a similar
+objective, though may be seen as different from a freedom of
+expression perspective, is the injection of incorrect responses to
+queries.  The most prominent example of this behavior occurs in China,
+where requests for lookups of sites which have been deemed
+inappropriate will trigger the network to respond with a bogus
+response, causing the client to ignore the real response when it
+subsequently arrives. Unlike the other forms of discussion discussed
+above, injection does not stifle the ability of a server to announce
+it’s name, it instead provides another voice which answers sooner.
+This is effective because of the DNS protocol’s decision to provide
+whatever answer it receives first, and stop listening for subsequent
+answers, and enabled by the lack of authentication or encryption in
+the protocol.
+
+Documentation of this form of harm:
+[1]
+https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.p
+df
+
 
 HTTP
-under discussion on the list now
+====
+The Hypertext Transfer Protocol (HTTP), described in its version 1.1
+in RFC2616, is a request-response application protocol developed
+throughout the 1990s, and factually contributed to the exponential
+growth of the Internet and the inter-connection of populations around
+the world. Because of its simple design, HTTP has become the
+foundation of most modern Internet platforms and communication
+systems, from websites, to chat systems, and computer-to-computer
+applications. In its manifestation with the World Wide Web, HTTP has
+radically revolutionized the course of technological development and
+the ways people interact with online content and with each other.
+
+However, HTTP is also a fundamentally insecure protocol, that doesn't
+natively provide encryption properties. While the definition of the
+Secure Sockets Layer (SSL), and later of Transport Layer Security
+(TLS), also happened during the 1990s, the fact that HTTP doesn't
+mandate the use of such encryption layers to developers and service
+providers, caused a very late adoption. Only in the middle of the
+2000s we observed big Internet service providers, such as Google,
+starting to provide encrypted access to their web services.
+
+The lack of sensitivity and understanding of the critical importance
+of securing web traffic incentivized malicious and offensive actors to
+develop, deploy and utilize at large interception systems and later
+active injection attacks, in order to swipe large amounts of data,
+compromise Internet-enabled devices. The commercial availability of
+systems and tools to perform these types of attacks also led to a
+number of human rights abuses that have been discovered and reported
+over the years and that painted a dark picture on the current state
+of control over the Internet.
+
+Generally we can identify in Traffic Interception and Traffic
+Manipulation the two most problematic attacks that can be performed
+against applications employing a clear-text HTTP transport layer.
+
+Traffic Interception
+====
+
+While we are seeing an increasing trend in the last couple of years to
+employ SSL/TLS as a secure traffic layer for HTTP-based applications,
+we are still far from seeing an ubiquitous use of encryption on the
+World Wide Web. It is important to consider that the adoption of
+SSL/TLS is also a relatively recent phenomena. Google introduced an
+option for its GMail users to navigate with SSL only in 2008[1], and
+turned SSL on by default later in 2010[2]. It took an increasing
+amount of scandalous security breaches and revelations on global
+surveillance from Edward Snowden to have other Internet service
+providers to follow Google's lead. For example, Yahoo enabled SSL/TLS
+by default on its webmail services only towards the end of 2013[3].
+
+As we learned through the Snowden's revelations, intelligence agencies
+have been intercepting and collecting unencrypted traffic at large for
+many years. There are documented examples of such mass surveillance
+programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these
+programs NSA/GCHQ have been able to swipe large amounts of data
+including email and instant messaging communications which have been
+transported by the respective providers in clear for years,
+unsuspecting of the pervasiveness and scale of governments' efforts
+and investment into global mass surveillance capabilities.
+
+However, similar mass interception of unencrypted HTTP communications
+is also often employed at a nation-level by less democratic countries
+by exercising control over state-owned Internet Service Providers
+(ISP) and through the use of commercially available monitoring,
+collection, and censorship equipment. Over the last few years a lot of
+information has come to public attention on the role and scale of a
+surveillance industry dedicated to develop interception gear of
+different types. We have several records of such equipment being sold and
+utilized by oppressive regimes in order to monitor entire segments of
+population especially at times of social and political distress,
+uncovering massive human rights abuses. For example, in 2013 the group
+Telecomix revealed that the Syrian regime was making use of BlueCoat
+products in order to intercept clear-text traffic as well as to
+enforce censorship of unwanted content[7]. Similarly in 2012 it was
+found that the French Amesys provided the Gaddafi's government with
+equipment able to intercept emails, Facebook traffic, and chat
+messages ad a country level. The use of such systems, especially in
+the context of the Arab
+Spring and of civil uprisings against the dictatorships, has caused
+serious concerns of significant human rights abuses in Libya.
+
+    Traffic Manipulation
+
+The lack of a secure transport layer over HTTP connections not only
+exposes the users to interception of the content of their
+communications, but is more and more commonly abused as a vehicle for
+active compromises of computers and mobile devices. If an HTTP session
+travels in clear over the network, any node positioned at any point in
+the network is able to perform man-in-the-middle attacks and observe,
+manipulate, and hijack the session and modify the content of the
+communication in order to trigger unexpected behavior by the application
+generating the traffic. For example, in the case of a browser the
+attacker would be able to inject malicious code in order to exploit
+vulnerabilities in the browser or any of its plugins. Similarly, the
+attacker would be able to intercept, trojanize, and repackage binary
+software updates that are very commonly downloaded in clear by
+applications such as word processors and media players. If the HTTP
+session would be encrypted, the tampering of the content would not be
+possible, and these network injection attacks would not be successful.
+
+While traffic manipulation attacks have been long known, documented,
+and prototyped especially in the context of WiFi and LAN networks, in
+the last few years we observed an increasing investment into the
+production and sale of network injection equipment both available
+commercially as well as deployed at scale by intelligence agencies.
+For example we learned from some of the documents provided by Edward
+Snowden to the press, that the NSA has constructed a global network
+injection infrastructure, called QUANTUM, able to leverage mass
+surveillance in order to identify targets of interests and
+subsequently task man-on-the-side attacks to ultimately compromise a
+selected device. Among other attacks, NSA makes use of an attack
+called QUANTUMINSERT[8] which intercepts and hijacks an unencrypted
+HTTP communication and forces the requesting browser to redirect to a
+host controlled by NSA instead of the intended website. Normally, the
+new destination would be an exploitation service, referred in Snowden
+documents as FOXACID, which would attempt at executing malicious code
+in the
+context of the target's browser. The Guardian reported in 2013 that
+NSA has for example been using these techniques to target users of the
+popular anonymity service Tor[9]. The German NDR reported in 2014 that
+NSA has also been using its mass surveillance capabilities to identify
+Tor users at large[10].
+Recently similar capabilities of Chinese authorities have been
+reported as well in what has been informally called the "Great
+Cannon"[11], which raised numerous concerns on the potential curb on
+human rights and freedom of speech due to the increasing tighter
+control of Chinese Internet communications and access to information.
+
+Network injection attacks are also made widely available to state
+actors around the world through the commercialization of similar,
+smaller scale equipment that can be easily acquired and deployed at a
+country-wide level. Companies like FinFisher and HackingTeam are known
+to have network injection gear within their products portfolio,
+respectively called FinFly ISP and RCS Network Injector[12]. The
+technology devised and produced by HackingTeam to perform network
+traffic manipulation attacks on HTTP communications is even the
+subject of a patent application in the United States[13]. Access to
+offensive technologies available on the commercial lawful interception
+market has been largely documented to have lead to human rights abuses
+and illegitimate surveillance of journalists, human rights defenders,
+and political activists in many countries around the world. Companies
+like FinFisher and HackingTeam have been found selling their products
+to oppressive regimes with little concern for bad human rights
+records[14]. While network injection attacks haven't been the subject
+of much attention, they do enable even unskilled attackers to perform
+silent and very resilient compromises, and unencrypted HTTP remains
+one of the main vehicles.
+
+
+[1] http://gmailblog.blogspot.de/2008/07/making-security-easier.html
+[2]
+http://gmailblog.blogspot.de/2010/01/default-https-access-for-gmail.html
+[3]
+https://www.washingtonpost.com/news/the-switch/wp/2013/10/14/yahoo-to-ma
+ke-
+ssl-encryption-the-default-for-webmail-users-finally/
+[4] http://www.theguardian.com/uk/2013/jun/21/gchq-cables-secret-world-
+communications-nsa
+[5] https://theintercept.com/2015/07/01/nsas-google-worlds-private-
+communications/
+[7]
+http://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,4466
+4
+.html
+[8] http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
+[9]
+http://www.theguardian.com/world/2013/oct/04/tor-attacks-nsa-users-onlin
+e-
+anonymity
+[10] http://daserste.ndr.de/panorama/aktuell/nsa230_page-1.html
+[11] https://citizenlab.org/2015/04/chinas-great-cannon/
+[12] https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-tex
+t/
+[13] http://www.google.com/patents/EP2601774A1?cl=en
+[14]
+http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-comp
+any-hacked
 
 XMPP
 ====
