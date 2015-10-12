@@ -116,12 +116,12 @@ Terminology
 
 Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 
-Link Between procols and human rights 
+Link Between protocols and human rights 
 =====================================
 
 Include discussion of value laden engineering as discussed in {{Cath}} 
 
-Discussion of International Bill of Rights and Internet Architecture
+Discussion of Universal Declaration of Human Rights and Internet Architecture
 --------------------------------------------------------------------
 
 Theory
@@ -131,7 +131,7 @@ When looking at protocols the considerations can apply from several perspectives
 
 +   The protocol's effects on human rights on the Internet.
 +   The protocol's effect  on human rights in combination with other protocols
-+   The effect of specific protocol elemements, seperately or in combination with other protocl elements on human rights on the Internet
++   The effect of specific protocol elements, seperately or in combination with other protocl elements on human rights on the Internet
 +   The ability to determine when various effects are occuring
 +   The effect of deployment or non deployment.  While this may be may seem beyond the protocl itself, often the design of protocol, its difficulty in implementation and the degree to which it contain poison pills or other protocol artifacts that discourse implementation or deployment can be signifant in the over human rights affect of a protocol.
 
