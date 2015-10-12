@@ -337,48 +337,48 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
      (         Privacy               )
      (         Security              )   = freedom of expression
      (         Content agnosticism   )
-     (##       Internationalization   )
+     (	      Internationalization   )
      (        Censorship resistance  )
-     (##       Open Standards         )
+     (	      Open Standards         )
       (       Heterogeneity support )
-##                            
+	                           
 
-     (## ## Anonymity           )
-    (## ## Privacy              )   = Non-discrimination
-    (## ## Pseudonymity         )
-     (## ## Content agnosticism )## 
+     (		Anonymity           )
+    (		Privacy              )   = Non-discrimination
+    (		Pseudonymity         )
+     (		Content agnosticism )	
 
-## ## ## 
-    ( ##       Content Agnosticism  )
-    (##       Security             ) ## = Equal protection
+			
+    ( 	      Content Agnosticism  )
+    (	      Security             ) 	= Equal protection
 
     
-     (##       Anonymity       ) 
-    (##       Privacy          )   = Right to be presumed innocent
-     (##       Security        )## 
+     (	      Anonymity       ) 
+    (	      Privacy          )   = Right to be presumed innocent
+     (	      Security        )	
 
 
-##  (## Accessibility         )
-## (## Internationalization   ) = Right to political participation
-## (## Censorship resistance  )
-##  (      
+	 (	Accessibility         )
+	(	Internationalization   ) = Right to political participation
+	(	Censorship resistance  )
+	 (      
 
-## ## ## ## ## 
-##  (  Open standards         )
-## (   Localization            ) = Rights for cultural life, 
-## (   Internationalization    )             arts and science
-##  (  Censorship resistance  )
+					
+	 (  Open standards         )
+	(   Localization            ) = Rights for cultural life, 
+	(   Internationalization    )             arts and science
+	 (  Censorship resistance  )
 
 
-##  (## Connectivity         )  
-## (## Decentralization      )
-## (     Censorship resistance ) = Right to freedom of assembly 
-## (  ## Pseudonymity          )                   and association     
-## (## Anonymity             )
-##  ( ## Security             )
-## 
+	 (	Connectivity         )  
+	(	Decentralization      )
+	(     Censorship resistance ) = Right to freedom of assembly 
+	(  	Pseudonymity          )                   and association     
+	(	Anonymity             )
+	 ( 	Security             )
+	
         ( Reliability    ) 
-       (  Confidentiality )##   
+       (  Confidentiality )	  
        (  Integrity       ) = Right to security
        (  Authenticity    )
         ( Anonymity      )
@@ -394,8 +394,8 @@ Expected Outcome: A glossary has been developed, which aims to build on other re
 Current status: Map cases of protocols being exploited or enablers 
 ------------------------------------------------------------------
 
-IP
-----
+# IP
+
 The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by RFC 791. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in RFC 2460. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
 
 The internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of these human rights.
@@ -434,8 +434,8 @@ Documentation of this form of harm:
 [3] https://tools.ietf.org/html/rfc5944
 
 
-DNS
-====
+# DNS
+
 The Domain Name System (DNS), as specified in RFC 1035, acts as a core switchboard for the internet - associating human readable names with services. The DNS system operates a centralized core of ‘Root Resolvers’ , servers run by a set of organizations trusted by IANA to enact the organization’s decisions by accurately communicating which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by IANA, and have evolved to encompass several classes of
 services. Some, like ‘.Com’ and ‘.Net’, provide a common space for expression of ideas, though their policies are enacted through US based countries. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with the addition of “generic TLDs”, name spaces with accompanying regulations aimed to promote expression
 around specific topics, for instance ‘.travel’ and ‘.ninja’.
@@ -497,8 +497,8 @@ https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.p
 df
 
 
-HTTP
-====
+# HTTP
+
 The Hypertext Transfer Protocol (HTTP), described in its version 1.1 in RFC2616, is a request-response application protocol developed throughout the 1990s, and factually contributed to the exponential growth of the Internet and the inter-connection of populations around
 the world. Because of its simple design, HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP has radically revolutionized the course of technological development and the ways people interact with online content and with each other. 
 However, HTTP is also a fundamentally insecure protocol, that doesn't natively provide encryption properties. While the definition of the Secure Sockets Layer (SSL), and later of Transport Layer Security (TLS), also happened during the 1990s, the fact that HTTP doesn't
@@ -573,8 +573,8 @@ t/
 http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-comp
 any-hacked
 
-XMPP
-====
+# XMPP
+
 The Extensible Messaging and Presence Protocol (XMPP), specified in RFC 3920, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
 
 None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. In addition to issues of user registration and a lack of protocol specification of the registration policy, the protocol also has facets that may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves naturally.
@@ -621,8 +621,8 @@ Multi-user chat rooms are identified by a name specified on a specific server, s
 
 
 
-Peer to Peer
-====
+# Peer to Peer
+
 Peer-to-Peer (P2P) is a network architecture (defined in RFC7574) in which all the participant nodes are equally responsible engaged into the storage and dissemination of information. A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is increasingly becoming a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Skype, Spotify and other proprietary multimedia applications.
 
 In a time of heavily centralized online services, peer-to-peer is often seen as an alternative, more democratic, and resistant architecture that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains critical to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
