@@ -39,13 +39,13 @@ author:
        organization: Article19
        email: niels@article19.org
 -
-       ins: C. Guarniere
+       ins: C. Guarnieri
        name: Claudio Guarnieri
-       organization: Nex
+       organization: Centre for Internet and Human Rights
        email: nex@nex.sx
 -
-       ins: Will Scott
-       name: Niels ten Oever
+       ins: W. Scott
+       name: Will Scott
        organization: University of Washington
        email: willscott@gmail.com
 
