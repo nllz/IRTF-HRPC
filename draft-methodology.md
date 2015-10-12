@@ -38,6 +38,16 @@ author:
        name: Niels ten Oever
        organization: Article19
        email: niels@article19.org
+-
+       ins: C. Guarniere
+       name: Claudio Guarnieri
+       organization: Nex
+       email: nex@nex.sx
+-
+       ins: Will Scott
+       name: Niels ten Oever
+       organization: University of Washington
+       email: willscott@gmail.com
 
 
 normative:
@@ -792,12 +802,7 @@ Multi-user chat rooms are identified by a name specified on a specific server, s
 
 Peer to Peer
 ====
-Peer-to-Peer (P2P) is a network architecture (defined in RFC7574) in
-which all the participant nodes are equally responsible engaged into the
-storage and dissemination of information. A P2P network is a logical
-overlay that lives on top of the physical network, and allows nodes (or
-"peers") participating to it to establish contact and exchange
-information directly from one to each other. The implementation of a P2P
+Peer-to-Peer (P2P) is a network architecture (defined in RFC7574) in which all the participant nodes are equally responsible engaged into the storage and dissemination of information. A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P
 network may very widely: it may be structured or unstructured, and it
 may implement stronger or weaker cryptographic and anonymity properties.
 While its most common application has traditionally been file-sharing
