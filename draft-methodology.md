@@ -47,7 +47,7 @@ author:
        ins: W. Scott
        name: Will Scott
        organization: University of Washington
-       email: willscott@gmail.com
+       email: wrs@cs.washington.edu
 
 
 normative:
@@ -101,7 +101,43 @@ informative:
         - ins: N. ten Oever
         - ins: A. Doria
         - ins: J. Varon
-     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
+     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal
+
+   caida:
+     title: Analysis of Country-wide Internet Outages Caused by Censorship
+     date: 2013
+     author:
+       - ins: A. Dainotti
+       - ins: C. Squarcella
+       - ins: E. Aben
+       - ins: K. Claffy
+       - ins: M. Chiesa
+       - ins: M. Russo
+       - ins: A. Pescape
+     target: http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
+
+   spdy:
+     title: SPDY: An experimental protocol for a faster web
+     date: 2009
+     author:
+       - org: The Chromium Project
+     target: https://www.chromium.org/spdy/spdy-whitepaper
+
+   quic:
+     title: QUIC, a multiplexed stream transport over UDP
+     date: 2014
+     author:
+       - org: The Chromium Project
+     target: https://www.chromium.org/quic
+
+   natusage:
+     title: NAT usage in Residential Broadband networks
+     date: 2011
+     author:
+       - ins: G. Maier
+       - ins: F. Schneider
+       - ins: A. Feldmann
+     target: http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
 
    torrentfreak1:
      title: Proposal for research on human rights protocol considerations
@@ -388,51 +424,38 @@ Step 1.3 - Build a common glossary
 
 Current status: Building of a common glossary
 ---------------
-Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}}). This document aims to provide a description of relevant architectural principals as well as technical concepts that are relevant for describing the impact of protocols on human rights. 
+Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}}). This document aims to provide a description of relevant architectural principals as well as technical concepts that are relevant for describing the impact of protocols on human rights.
 
 
-Current status: Map cases of protocols being exploited or enablers 
+Current status: Map cases of protocols being exploited or enablers
 ------------------------------------------------------------------
 
 # IP
 
-The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by RFC 791. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in RFC 2460. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
+The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by {{RFC791}}. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in {{RFC2460}}. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
 
 The internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of these human rights.
 
-Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options, so that protocol extensions promoting assembly and expression like Mobility and Multicasting can fail to receive support from IP compatible devices. This lack of forward compatibility where extensions can receive a baseline level of support needed to extend the design has stymied forms of expression which could have been extended to support these human rights.
+Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options. Protocol extensions including Mobility and Multicasting have proposed alternate communication modes and suggest that different forms of assemply could be supported by an a robust IP layer. Instead, the protocol has limited the deployability of such extensions by not providing a mechanism for appropriate fallback behavior when unrecognized extensiosn are encountered.
 
 ## Network visibility of Source and Destination
 
-The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [2] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
+The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [caida] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
 
-We have seen from other instantiations of protocols, even those comparable to IPv4, that other designs are possible. IPv4 even encodes a defined option and specification for source routing of packets, where the source can specify or suggest a routing path, and as the message passes through those paths, the part of the path it has completed are removed from the path. This design has the potential to make it much more difficult for an individual router in the network to stifle speech, since it will cannot do the same level of differentiation on the source of the messages.  Unfortunately, many networks prevent the use of source routing, and the protocol is not designed such that support of that ability is required in order for the protocol to be implemented.
+Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers. {{RFC0894}} A variety of alternative designs including source routing, and spoofing of the source IP address are technicaly supported by the protocol, but neither are regularly allowed on the Internet. While projects like [torproject] provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
 
-Documentation of this form of harm: {{RFC0791}}, 
-[1] https://tools.ietf.org/html/rfc791
-[2] http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
+Documentation of this form of harm: {{RFC0791}},
 [3] http://www.ipjustice.org/digital-rights/internet-infrastructure-and-ip-censorship-by-david-post/
 
 ## Protocols
 
-The other major feature of the IP protocol header is that it specifies the protocol encapsulated in each message in an easily observable form, and does not encourage a design where the encapsulated protocol is not available to a network observer.  This design has resulted in a proliferation of routers which inspect the inner protocol, and has resulted in a stagnation where only the TCP and UDP protocols are widely supported across the Internet. While the IP protocol was designed as the entire set of metadata needed for routing, subsequent enhanced routers have found value on making policy decisions based on the contents of TCP and UDP headers as well, and are encoded with the assumption that only these protocols will be used for data transfer. [1] This has prevented development of more secure protocols, since there’s a need to provide sufficient metadata with each message for routers to make positive policy decisions if you hope the protocol will be available to all users.
-
-Documentation of this form of harm:
-[1] https://www.chromium.org/spdy/spdy-whitepaper
-[2] https://www.chromium.org/quic
-[3] https://tools.ietf.org/html/rfc4960
+The other major feature of the IP protocol header is that it specifies the protocol encapsulated in each message in an easily observable form, and does not encourage a design where the encapsulated protocol is not available to a network observer.  This design has resulted in a proliferation of routers which inspect the inner protocol, and has resulted in a stagnation where only the TCP and UDP protocols are widely supported across the Internet. While the IP protocol was designed as the entire set of metadata needed for routing, subsequent enhanced routers have found value on making policy decisions based on the contents of TCP and UDP headers as well, and are encoded with the assumption that only these protocols will be used for data transfer. [spdy] {{RFC4303}} defines an encrypted encapsulation of additional protocols, but lacks widespread deployment and faces the same challenge as any other protocol of providing sufficient metadata with each message for routers to make positive policy decisions. Protocols like {{RFC4906}} have seen limited wide-area uptake, and these alternate designs are frequently re-implemented on top of UDP. [quic]
 
 ## Address Translation and Mobility
 
 A major structural shift in the Internet which has undermined the protocol design of IPv4, and has significantly reduced the freedom of end users to communicate and assemble in the introduction network address translation. {{RFC1631}} Network address translation is a process whereby organizations and autonomous systems to connect two networks by translating the IPv4 source and destination addresses between the two. This process puts the router performing the translation into a privileged position, where it can decide which subset of communications are worthy of translation, and whether an unknown request for communication will be correctly forwarded to a host on the other network.
 
-This process of translation has widespread adoption despite promoting a process that goes against the stated end-to-end process of the underlying protocol [2]. In contrast, the proposed mechanism to provide support for mobility and forwarding to clients which may move, encoded instead as an option in the IP protocol [3], has failed to gain traction. This situation again suggests that the compromise made in design of the protocol has resulted in a technology which failed to technical encode the freedom of expression goals it was designed to promote.
-
-Documentation of this form of harm:
-{{RFC1631}}
-[2] http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
-[3] https://tools.ietf.org/html/rfc5944
-
+This process of translation has widespread adoption despite promoting a process that goes against the stated end-to-end process of the underlying protocol [natusage]. In contrast, the proposed mechanism to provide support for mobility and forwarding to clients which may move, encoded instead as an option in the IP protocol in {{RFC5944}}, has failed to gain traction. This situation again suggests that the compromise made in design of the protocol has resulted in a technology which failed to technical encode the freedom of expression goals it was designed to promote.
 
 # DNS
 
