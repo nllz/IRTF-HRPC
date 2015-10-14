@@ -164,7 +164,11 @@ Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 Link between protocols and human rights
 =====================================
 
-+ Include discussion of value laden engineering as discussed in {{Cath}}
++ Include discussion of value laden engineering as discussed in {{Cath}}.  This work discusses four basic architectural principles that are encoded in Internet Technology: 
+  ++ Openness, Permissionless Innovation, and Content Agnosticism
+  ++ Interoperability
+  ++ Redundancy and the Distributed Architecture
+  ++ The End-to-End Principle
 + Include discussion of  \"Values and Networks\" work by Roland Bless
 + Include discussion of principles from NetMundial Multistakeholder Statement
 
@@ -264,17 +268,17 @@ The case studies point to several areas of protocol behavior that may be appropr
   - Source and Destination visibility
   - Tracking
 
-Additionally, discussion of the rights themselves and the evidence of these rights being implicits in the IETF design principles {{Clark}} and in some of the existing architecture and protocols, Cath and Liddicoat suggest other considerations.
+Additionally, discussion of the rights themselves and the evidence of these rights being implicits in the IETF design principles {{Clark}} and in some of the existing architecture and protocols, {{Cath}} and {{Liddicoat}} suggest other considerations. {{Cath}} recommends that adhereing to the four fundamental architectural principles discess above is a first step.
 
 Next Steps
 ============
 
-Once the first take at consideration are defined, what are the next steps for creating something that can be sesable for protocol designers and implementers in considering freedom of expression and and freedom of association in their work.
+Once the first take at consideration are defined, what are the next steps for creating something that can be useabble for protocol designers and implementers in considering the human rights of freedom of expression and freedom of association in their work.
 
 Acknowledgement
 ===============
 
-A section that include the many contributors of text as as commenters and those who are assisitng this project in existing.
+A section that includes mention the many contributors of text as well as commenters and those who are assisitng this project in existing.
 
 IANA considerations
 ===================
