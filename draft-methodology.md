@@ -116,6 +116,13 @@ informative:
        - ins: A. Pescape
      target: http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
 
+  torproject:
+    title: Tor Project: Anonymity Online
+    date: 2007
+    author:
+      - org: The Tor Project
+    target: https://www.torproject.org/
+
    spdy:
      title: SPDY: An experimental protocol for a faster web
      date: 2009
@@ -443,9 +450,6 @@ Two major shifts have occurred to harm freedom of expression through misuse of t
 The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [caida] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
 
 Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers. {{RFC0894}} A variety of alternative designs including source routing, and spoofing of the source IP address are technicaly supported by the protocol, but neither are regularly allowed on the Internet. While projects like [torproject] provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
-
-Documentation of this form of harm: {{RFC0791}},
-[3] http://www.ipjustice.org/digital-rights/internet-infrastructure-and-ip-censorship-by-david-post/
 
 ## Protocols
 
