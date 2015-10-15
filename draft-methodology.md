@@ -47,7 +47,7 @@ author:
        ins: W. Scott
        name: Will Scott
        organization: University of Washington
-       email: willscott@gmail.com
+       email: wrs@cs.washington.edu
 
 
 normative:
@@ -101,7 +101,99 @@ informative:
         - ins: N. ten Oever
         - ins: A. Doria
         - ins: J. Varon
-     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
+     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal
+
+   caida:
+     title: Analysis of Country-wide Internet Outages Caused by Censorship
+     date: 2013
+     author:
+       - ins: A. Dainotti
+       - ins: C. Squarcella
+       - ins: E. Aben
+       - ins: K. Claffy
+       - ins: M. Chiesa
+       - ins: M. Russo
+       - ins: A. Pescape
+     target: http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
+
+  torproject:
+    title: Tor Project: Anonymity Online
+    date: 2007
+    author:
+      - org: The Tor Project
+    target: https://www.torproject.org/
+
+   spdy:
+     title: SPDY: An experimental protocol for a faster web
+     date: 2009
+     author:
+       - org: The Chromium Project
+     target: https://www.chromium.org/spdy/spdy-whitepaper
+
+   quic:
+     title: QUIC, a multiplexed stream transport over UDP
+     date: 2014
+     author:
+       - org: The Chromium Project
+     target: https://www.chromium.org/quic
+
+   natusage:
+     title: NAT usage in Residential Broadband networks
+     date: 2011
+     author:
+       - ins: G. Maier
+       - ins: F. Schneider
+       - ins: A. Feldmann
+     target: http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
+
+   bbc-wikileaks:
+     title: Whistle-blower site taken offline
+     date: 2008
+     author:
+       - org: BBC
+     target: http://news.bbc.co.uk/2/hi/technology/7250916.stm
+
+   techyum:
+     title: Official: vb.ly Link Shortener Seized by Libyan Government
+     date: 2010
+     author:
+       - ins: Violet
+     target: http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libyan-government/
+
+   turkey:
+     title: Internet censorship in Turkey
+     date: 2015
+     author:
+       - ins: M. Akgül
+       - ins: M. Kirlidoğ
+     target: http://policyreview.info/articles/analysis/internet-censorship-turkey
+
+   ververis:
+     title: Understanding Internet Censorship Policy: The Case of Greece
+     date: 2015
+     author:
+       - ins: V. Vasilis
+       - ins: G. Kargiotakis
+       - ins: A. Filasto
+       - ins: B. Fabian
+       - ins: A. Alexandros
+     target: https://www.usenix.org/system/files/conference/foci15/foci15-paper-ververis-update.pdf
+
+   draft-hall-censorship-tech-01:
+     title: A Survey of Worldwide Censorship Techniques
+     date: 2015
+     author:
+       - ins: J. Hall
+       - ins: M. Aaron
+       - ins: B. Jones
+     target: https://tools.ietf.org/html/draft-hall-censorship-tech-01
+
+   greatfirewall:
+     title: Towards a Comprehensive Picture of the Great Firewall’s DNS Censorship
+     date: 2014
+     author:
+       - ins: Anonymous
+     target: https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.pdf
 
    torrentfreak1:
      title: Proposal for research on human rights protocol considerations
@@ -109,12 +201,12 @@ informative:
      author:
         - ins: E. Van der Sar
      target: https://torrentfreak.com/is-your-isp-messing-with-bittorrent-traffic-find-out-140123/
-   
+
    wikileaks:
      title: - Market Survey - Detection & Filtering Solutions to Identify File Transfer of Copyright Protected Content for Warner Bros. and movielabs
      date: 2011
      author:
-        - ins: T. Sladek 
+        - ins: T. Sladek
         - ins: E. Bröse
      target: https://wikileaks.org/sony/docs/05/docs/Anti-Piracy/CDSA/EANTC-Survey-1.5-unsecured.pdf
 
@@ -388,114 +480,70 @@ Step 1.3 - Build a common glossary
 
 Current status: Building of a common glossary
 ---------------
-Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}}). This document aims to provide a description of relevant architectural principals as well as technical concepts that are relevant for describing the impact of protocols on human rights. 
+Expected Outcome: A glossary has been developed, which aims to build on other relevant published glossaries by the IETF and relevant literature: {{HRPC-GLOSSARY}}). This document aims to provide a description of relevant architectural principals as well as technical concepts that are relevant for describing the impact of protocols on human rights.
 
 
-Current status: Map cases of protocols being exploited or enablers 
+Current status: Map cases of protocols being exploited or enablers
 ------------------------------------------------------------------
 
 # IP
 
-The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by RFC 791. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in RFC 2460. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
+The Internet Protocol version 4, known as ‘layer 3’ of the internet, and specified as a common encapsulation and protocol header, is defined by {{RFC791}}. The evolution of Internet communications have led to continued development in this area, encapsulated in the development of version 6 of the protocol in {{RFC2460}}. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizable majority of internet traffic.
 
 The internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of these human rights.
 
-Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options, so that protocol extensions promoting assembly and expression like Mobility and Multicasting can fail to receive support from IP compatible devices. This lack of forward compatibility where extensions can receive a baseline level of support needed to extend the design has stymied forms of expression which could have been extended to support these human rights.
+Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options. Protocol extensions including Mobility and Multicasting have proposed alternate communication modes and suggest that different forms of assemply could be supported by an a robust IP layer. Instead, the protocol has limited the deployability of such extensions by not providing a mechanism for appropriate fallback behavior when unrecognized extensiosn are encountered.
 
 ## Network visibility of Source and Destination
 
-The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [2] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
+The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, [caida] and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
 
-We have seen from other instantiations of protocols, even those comparable to IPv4, that other designs are possible. IPv4 even encodes a defined option and specification for source routing of packets, where the source can specify or suggest a routing path, and as the message passes through those paths, the part of the path it has completed are removed from the path. This design has the potential to make it much more difficult for an individual router in the network to stifle speech, since it will cannot do the same level of differentiation on the source of the messages.  Unfortunately, many networks prevent the use of source routing, and the protocol is not designed such that support of that ability is required in order for the protocol to be implemented.
-
-Documentation of this form of harm: {{RFC0791}}, 
-[1] https://tools.ietf.org/html/rfc791
-[2] http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
-[3] http://www.ipjustice.org/digital-rights/internet-infrastructure-and-ip-censorship-by-david-post/
+Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers. {{RFC0894}} A variety of alternative designs including source routing, and spoofing of the source IP address are technicaly supported by the protocol, but neither are regularly allowed on the Internet. While projects like [torproject] provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
 
 ## Protocols
 
-The other major feature of the IP protocol header is that it specifies the protocol encapsulated in each message in an easily observable form, and does not encourage a design where the encapsulated protocol is not available to a network observer.  This design has resulted in a proliferation of routers which inspect the inner protocol, and has resulted in a stagnation where only the TCP and UDP protocols are widely supported across the Internet. While the IP protocol was designed as the entire set of metadata needed for routing, subsequent enhanced routers have found value on making policy decisions based on the contents of TCP and UDP headers as well, and are encoded with the assumption that only these protocols will be used for data transfer. [1] This has prevented development of more secure protocols, since there’s a need to provide sufficient metadata with each message for routers to make positive policy decisions if you hope the protocol will be available to all users.
-
-Documentation of this form of harm:
-[1] https://www.chromium.org/spdy/spdy-whitepaper
-[2] https://www.chromium.org/quic
-[3] https://tools.ietf.org/html/rfc4960
+The other major feature of the IP protocol header is that it specifies the protocol encapsulated in each message in an easily observable form, and does not encourage a design where the encapsulated protocol is not available to a network observer.  This design has resulted in a proliferation of routers which inspect the inner protocol, and has resulted in a stagnation where only the TCP and UDP protocols are widely supported across the Internet. While the IP protocol was designed as the entire set of metadata needed for routing, subsequent enhanced routers have found value on making policy decisions based on the contents of TCP and UDP headers as well, and are encoded with the assumption that only these protocols will be used for data transfer. [spdy] {{RFC4303}} defines an encrypted encapsulation of additional protocols, but lacks widespread deployment and faces the same challenge as any other protocol of providing sufficient metadata with each message for routers to make positive policy decisions. Protocols like {{RFC4906}} have seen limited wide-area uptake, and these alternate designs are frequently re-implemented on top of UDP. [quic]
 
 ## Address Translation and Mobility
 
 A major structural shift in the Internet which has undermined the protocol design of IPv4, and has significantly reduced the freedom of end users to communicate and assemble in the introduction network address translation. {{RFC1631}} Network address translation is a process whereby organizations and autonomous systems to connect two networks by translating the IPv4 source and destination addresses between the two. This process puts the router performing the translation into a privileged position, where it can decide which subset of communications are worthy of translation, and whether an unknown request for communication will be correctly forwarded to a host on the other network.
 
-This process of translation has widespread adoption despite promoting a process that goes against the stated end-to-end process of the underlying protocol [2]. In contrast, the proposed mechanism to provide support for mobility and forwarding to clients which may move, encoded instead as an option in the IP protocol [3], has failed to gain traction. This situation again suggests that the compromise made in design of the protocol has resulted in a technology which failed to technical encode the freedom of expression goals it was designed to promote.
-
-Documentation of this form of harm:
-{{RFC1631}}
-[2] http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
-[3] https://tools.ietf.org/html/rfc5944
-
+This process of translation has widespread adoption despite promoting a process that goes against the stated end-to-end process of the underlying protocol [natusage]. In contrast, the proposed mechanism to provide support for mobility and forwarding to clients which may move, encoded instead as an option in the IP protocol in {{RFC5944}}, has failed to gain traction. This situation again suggests that the compromise made in design of the protocol has resulted in a technology which failed to technical encode the freedom of expression goals it was designed to promote.
 
 # DNS
 
-The Domain Name System (DNS), as specified in RFC 1035, acts as a core switchboard for the internet - associating human readable names with services. The DNS system operates a centralized core of ‘Root Resolvers’ , servers run by a set of organizations trusted by IANA to enact the organization’s decisions by accurately communicating which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by IANA, and have evolved to encompass several classes of
-services. Some, like ‘.Com’ and ‘.Net’, provide a common space for expression of ideas, though their policies are enacted through US based countries. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with the addition of “generic TLDs”, name spaces with accompanying regulations aimed to promote expression
-around specific topics, for instance ‘.travel’ and ‘.ninja’.
+The Domain Name System (DNS) {{RFC1035}}, provides service discovery capabailities, and provides a mechanism to associate human readable names with services. The DNS system is organized around a set of independently operated 'Root Servers' run by organizations around the web which enact ICANN's policy by answering queries for which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by ICANN. These namespaces encompass several classes of services. The initial name spaces including ‘.Com’ and ‘.Net’, provide common spaces for expression of ideas, though their policies are enacted through US based companies. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with additional generic and sponsored name spaces, for instance ‘.travel’ and ‘.ninja’, which are operated by a range of organizations which may independently determine their registration policies.
 
-DNS has significant privacy issues, as described in RFC 7626. Notably amongst these, the protocol does not offer either encryption to limit the visibility of requests for domain resolution from several intermediary parties, nor does it offer authentication, allowing the
-client to know that they have received a correct, “authoritative”, answer to a query. Together, these decisions have resulted in ongoing harm to freedom of expression as the DNS protocol has become one of the central mechanisms used to block access to websites - limiting
+DNS has significant privacy issues per {{RFC7626}}. Most notable are the lack of encryption to limit the visibility of requests for domain resolution from intermediary parties, and a limited deployment of DNSSEC to provide authentication, allowing the
+client to know that they have received a correct, "authoritative", answer to a query. Together, this situation results in ongoing harm to freedom of expression as interference with the operation of DNS has become one of the central mechanisms used to block access to websites. This interference limits
 both the freedom of expression of the publisher to offer their content, and the freedom of assembly for clients to congregate in a shared virtual space.
 
 There have been several mechanisms used impose these limitations based on the technical design of the DNS protocol. These have led to a number of situations where limits on expression have been imposed through subversion of the DNS protocol. Each of these situations has accompanying aspects of protocol design enabling those limitations.
 
 ## Removal of records
 
-There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal include ‘seizure’ of names of illegally operating gambling operations by the United States ICE unit by compelling the
-US-based registrar in charge of the .com TLD to hand ownership of those domains over to the government. The same technique has been notably used by Libya to remove sites in violation of “our Country’s Law and Morality [which] do not allow any kind of pornography or its
-promotion.” 
+There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks [bbc-wikileaks] and the names of illegally operating gambling operations by the United States ICE unit, which compelled the
+US-based registry in charge of the .com TLD to hand ownership of those domains over to the government. The same technique has been notably used by Libya to remove sites in violation of "our Country’s Law and Morality (which) do not allow any kind of pornography or its
+promotion." [techyum]
 
-At a protocol level, the ability to seize domain names is enabled by the lack of transparency into DNS transfers, or any technical encoding of name ownership. Name ownership is purely a policy decision of registrars. While DNSSEC addresses distortion events described below,
-it does not tackle this problem, which is has the cooperation of (or compels) the registrar.
-
-Documentation of this form of harm:
-[1] http://news.bbc.co.uk/2/hi/technology/7250916.stm
-[2]
-http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libya
-n-government/
+At a protocol level, there is no technical auditing for name ownership, as in alternate systems like [namecoin]. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below,
+it does not tackle this problem, which has the cooperation of (or compelled action by) the registry.
 
 ## Distortion of records
 
 The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses
-rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted.
+rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as in [turkey].
 
-At the national level, there are additional considerations. The most notable is the interactions between DNS distortion and internet routing. A study on collateral damage showed that the restrictions imposed by China on DNS responses in its network also affected the
-availability of sites to users in Germany, since some fraction of requests would transit through the Chinese network, even though none of the participants were located there.
-
-A notable instance of distortion has occurred in Greece [3], where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content, where ISPs prevented clients from resolving the names of domains which they were not instructed to
+A notable instance of distortion has occurred in Greece [ververis], where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content, where ISPs prevented clients from resolving the names of domains which they were not instructed to
 do through the governmental order prompting the blocking systems there.
 
-At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. The DNSSEC protocol is not widely in use, but provides an extension allowing the client to know that a response is ‘Authoritative’ - that it has been
-generated by the server which has technical ownership of the name requested. Even still, there are a range of downgrade attacks, where a client may continue to follow the resolution of an injected message without such a signature, since it may not know that it should expect
-the response to be signed. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages.
-
-Documentation of this form of harm:
-[1] http://conferences.sigcomm.org/sigcomm/2012/paper/ccr-paper266.pdf
-[2] http://policyreview.info/articles/analysis/internet-censorship-turke
-y
-[3]
-https://www.usenix.org/system/files/conference/foci15/foci15-paper-verve
-ris-update.pdf
-[4] https://tools.ietf.org/html/draft-hall-censorship-tech-01
+At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in [draft-hall-censorship-tech-01].
 
 ## Injection of records
 
 Responding incorrectly to requests for name lookups is the most common mechanism that in-network devices use to limit the ability of end users to discover services. A deviation which accomplishes a similar objective, though may be seen as different from a freedom of expression perspective, is the injection of incorrect responses to queries.  The most prominent example of this behavior occurs in China, where requests for lookups of sites which have been deemed inappropriate will trigger the network to respond with a bogus
-response, causing the client to ignore the real response when it subsequently arrives. Unlike the other forms of discussion discussed above, injection does not stifle the ability of a server to announce it’s name, it instead provides another voice which answers sooner.
-This is effective because of the DNS protocol’s decision to provide whatever answer it receives first, and stop listening for subsequent answers, and enabled by the lack of authentication or encryption in the protocol.
-
-Documentation of this form of harm:
-[1]
-https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.p
-df
-
+response, causing the client to ignore the real response when it subsequently arrives. [greatfirewall] Unlike the other forms of discussion discussed above, injection does not stifle the ability of a server to announce it’s name, it instead provides another voice which answers sooner.
+This is effective because without DNSSEC, the protocol will respond to whichever answer is received first, without listening for subsequent answers.
 
 # HTTP
 
