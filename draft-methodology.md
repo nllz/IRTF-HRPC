@@ -146,18 +146,67 @@ informative:
        - ins: A. Feldmann
      target: http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
 
+   bbc-wikileaks:
+     title: Whistle-blower site taken offline
+     date: 2008
+     author:
+       - org: BBC
+     target: http://news.bbc.co.uk/2/hi/technology/7250916.stm
+
+   techyum:
+     title: Official: vb.ly Link Shortener Seized by Libyan Government
+     date: 2010
+     author:
+       - ins: Violet
+     target: http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libyan-government/
+
+   turkey:
+     title: Internet censorship in Turkey
+     date: 2015
+     author:
+       - ins: M. Akgül
+       - ins: M. Kirlidoğ
+     target: http://policyreview.info/articles/analysis/internet-censorship-turkey
+
+   ververis:
+     title: Understanding Internet Censorship Policy: The Case of Greece
+     date: 2015
+     author:
+       - ins: V. Vasilis
+       - ins: G. Kargiotakis
+       - ins: A. Filasto
+       - ins: B. Fabian
+       - ins: A. Alexandros
+     target: https://www.usenix.org/system/files/conference/foci15/foci15-paper-ververis-update.pdf
+
+   draft-hall-censorship-tech-01:
+     title: A Survey of Worldwide Censorship Techniques
+     date: 2015
+     author:
+       - ins: J. Hall
+       - ins: M. Aaron
+       - ins: B. Jones
+     target: https://tools.ietf.org/html/draft-hall-censorship-tech-01
+
+   greatfirewall:
+     title: Towards a Comprehensive Picture of the Great Firewall’s DNS Censorship
+     date: 2014
+     author:
+       - ins: Anonymous
+     target: https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.pdf
+
    torrentfreak1:
      title: Proposal for research on human rights protocol considerations
      date: 2015
      author:
         - ins: E. Van der Sar
      target: https://torrentfreak.com/is-your-isp-messing-with-bittorrent-traffic-find-out-140123/
-   
+
    wikileaks:
      title: - Market Survey - Detection & Filtering Solutions to Identify File Transfer of Copyright Protected Content for Warner Bros. and movielabs
      date: 2011
      author:
-        - ins: T. Sladek 
+        - ins: T. Sladek
         - ins: E. Bröse
      target: https://wikileaks.org/sony/docs/05/docs/Anti-Piracy/CDSA/EANTC-Survey-1.5-unsecured.pdf
 
@@ -463,71 +512,43 @@ This process of translation has widespread adoption despite promoting a process 
 
 # DNS
 
-The Domain Name System (DNS), as specified in RFC 1035, acts as a core switchboard for the internet - associating human readable names with services. The DNS system operates a centralized core of ‘Root Resolvers’ , servers run by a set of organizations trusted by IANA to enact the organization’s decisions by accurately communicating which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by IANA, and have evolved to encompass several classes of
-services. Some, like ‘.Com’ and ‘.Net’, provide a common space for expression of ideas, though their policies are enacted through US based countries. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with the addition of “generic TLDs”, name spaces with accompanying regulations aimed to promote expression
-around specific topics, for instance ‘.travel’ and ‘.ninja’.
+The Domain Name System (DNS) {{RFC1035}}, provides service discovery capabailities, and provides a mechanism to associate human readable names with services. The DNS system is organized around a set of independently operated 'Root Servers' run by organizations around the web which enact ICANN's policy by answering queries for which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by ICANN. These namespaces encompass several classes of services. The initial name spaces including ‘.Com’ and ‘.Net’, provide common spaces for expression of ideas, though their policies are enacted through US based companies. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has been recently expanded with additional generic and sponsored name spaces, for instance ‘.travel’ and ‘.ninja’, which are operated by a range of organizations which may independently determine their registration policies.
 
-DNS has significant privacy issues, as described in RFC 7626. Notably amongst these, the protocol does not offer either encryption to limit the visibility of requests for domain resolution from several intermediary parties, nor does it offer authentication, allowing the
-client to know that they have received a correct, “authoritative”, answer to a query. Together, these decisions have resulted in ongoing harm to freedom of expression as the DNS protocol has become one of the central mechanisms used to block access to websites - limiting
+DNS has significant privacy issues per {{RFC7626}}. Most notable are the lack of encryption to limit the visibility of requests for domain resolution from intermediary parties, and a limited deployment of DNSSEC to provide authentication, allowing the
+client to know that they have received a correct, "authoritative", answer to a query. Together, this situation results in ongoing harm to freedom of expression as interference with the operation of DNS has become one of the central mechanisms used to block access to websites. This interference limits
 both the freedom of expression of the publisher to offer their content, and the freedom of assembly for clients to congregate in a shared virtual space.
 
 There have been several mechanisms used impose these limitations based on the technical design of the DNS protocol. These have led to a number of situations where limits on expression have been imposed through subversion of the DNS protocol. Each of these situations has accompanying aspects of protocol design enabling those limitations.
 
 ## Removal of records
 
-There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal include ‘seizure’ of names of illegally operating gambling operations by the United States ICE unit by compelling the
-US-based registrar in charge of the .com TLD to hand ownership of those domains over to the government. The same technique has been notably used by Libya to remove sites in violation of “our Country’s Law and Morality [which] do not allow any kind of pornography or its
-promotion.” 
+There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks [bbc-wikileaks] and the names of illegally operating gambling operations by the United States ICE unit, which compelled the
+US-based registry in charge of the .com TLD to hand ownership of those domains over to the government. The same technique has been notably used by Libya to remove sites in violation of "our Country’s Law and Morality (which) do not allow any kind of pornography or its
+promotion." [techyum]
 
-At a protocol level, the ability to seize domain names is enabled by the lack of transparency into DNS transfers, or any technical encoding of name ownership. Name ownership is purely a policy decision of registrars. While DNSSEC addresses distortion events described below,
-it does not tackle this problem, which is has the cooperation of (or compels) the registrar.
-
-Documentation of this form of harm:
-[1] http://news.bbc.co.uk/2/hi/technology/7250916.stm
-[2]
-http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libya
-n-government/
+At a protocol level, there is no technical auditing for name ownership, as in alternate systems like [namecoin]. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below,
+it does not tackle this problem, which has the cooperation of (or compelled action by) the registry.
 
 ## Distortion of records
 
 The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses
-rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted.
+rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as in [turkey].
 
-At the national level, there are additional considerations. The most notable is the interactions between DNS distortion and internet routing. A study on collateral damage showed that the restrictions imposed by China on DNS responses in its network also affected the
-availability of sites to users in Germany, since some fraction of requests would transit through the Chinese network, even though none of the participants were located there.
-
-A notable instance of distortion has occurred in Greece [3], where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content, where ISPs prevented clients from resolving the names of domains which they were not instructed to
+A notable instance of distortion has occurred in Greece [ververis], where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content, where ISPs prevented clients from resolving the names of domains which they were not instructed to
 do through the governmental order prompting the blocking systems there.
 
-At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. The DNSSEC protocol is not widely in use, but provides an extension allowing the client to know that a response is ‘Authoritative’ - that it has been
-generated by the server which has technical ownership of the name requested. Even still, there are a range of downgrade attacks, where a client may continue to follow the resolution of an injected message without such a signature, since it may not know that it should expect
-the response to be signed. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages.
-
-Documentation of this form of harm:
-[1] http://conferences.sigcomm.org/sigcomm/2012/paper/ccr-paper266.pdf
-[2] http://policyreview.info/articles/analysis/internet-censorship-turke
-y
-[3]
-https://www.usenix.org/system/files/conference/foci15/foci15-paper-verve
-ris-update.pdf
-[4] https://tools.ietf.org/html/draft-hall-censorship-tech-01
+At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in [draft-hall-censorship-tech-01].
 
 ## Injection of records
 
 Responding incorrectly to requests for name lookups is the most common mechanism that in-network devices use to limit the ability of end users to discover services. A deviation which accomplishes a similar objective, though may be seen as different from a freedom of expression perspective, is the injection of incorrect responses to queries.  The most prominent example of this behavior occurs in China, where requests for lookups of sites which have been deemed inappropriate will trigger the network to respond with a bogus
-response, causing the client to ignore the real response when it subsequently arrives. Unlike the other forms of discussion discussed above, injection does not stifle the ability of a server to announce it’s name, it instead provides another voice which answers sooner.
-This is effective because of the DNS protocol’s decision to provide whatever answer it receives first, and stop listening for subsequent answers, and enabled by the lack of authentication or encryption in the protocol.
-
-Documentation of this form of harm:
-[1]
-https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.p
-df
-
+response, causing the client to ignore the real response when it subsequently arrives. [greatfirewall] Unlike the other forms of discussion discussed above, injection does not stifle the ability of a server to announce it’s name, it instead provides another voice which answers sooner.
+This is effective because without DNSSEC, the protocol will respond to whichever answer is received first, without listening for subsequent answers.
 
 # HTTP
 
 The Hypertext Transfer Protocol (HTTP), described in its version 1.1 in RFC2616, is a request-response application protocol developed throughout the 1990s, and factually contributed to the exponential growth of the Internet and the inter-connection of populations around
-the world. Because of its simple design, HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP has radically revolutionized the course of technological development and the ways people interact with online content and with each other. 
+the world. Because of its simple design, HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP has radically revolutionized the course of technological development and the ways people interact with online content and with each other.
 However, HTTP is also a fundamentally insecure protocol, that doesn't natively provide encryption properties. While the definition of the Secure Sockets Layer (SSL), and later of Transport Layer Security (TLS), also happened during the 1990s, the fact that HTTP doesn't
 mandate the use of such encryption layers to developers and service providers, caused a very late adoption. Only in the middle of the 2000s we observed big Internet service providers, such as Google, starting to provide encrypted access to their web services.
 
