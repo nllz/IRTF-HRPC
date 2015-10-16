@@ -65,6 +65,7 @@ informative:
    RFC5891:
    RFC5892:
    RFC5893:
+   RFC6210:
    RFC6162:
    RFC6783:
    RFC6973:
@@ -82,7 +83,7 @@ informative:
      title: The Universal Declaration of Human Rights
      date: 1948
      author:
-        org: United Nations General Assembly
+        - org: United Nations General Assembly
      target: http://www.un.org/en/documents/udhr/
 
    HRPC-GLOSSARY:
@@ -107,92 +108,92 @@ informative:
      title: Analysis of Country-wide Internet Outages Caused by Censorship
      date: 2013
      author:
-       - ins: A. Dainotti
-       - ins: C. Squarcella
-       - ins: E. Aben
-       - ins: K. Claffy
-       - ins: M. Chiesa
-       - ins: M. Russo
-       - ins: A. Pescape
+        - ins: A. Dainotti
+        - ins: C. Squarcella
+        - ins: E. Aben
+        - ins: K. Claffy
+        - ins: M. Chiesa
+        - ins: M. Russo
+        - ins: A. Pescape
      target: http://www.caida.org/publications/papers/2014/outages_censorship/outages_censorship.pdf
 
   torproject:
     title: Tor Project: Anonymity Online
     date: 2007
     author:
-      - org: The Tor Project
+        - org: The Tor Project
     target: https://www.torproject.org/
 
    spdy:
      title: SPDY: An experimental protocol for a faster web
      date: 2009
      author:
-       - org: The Chromium Project
+        - org: The Chromium Project
      target: https://www.chromium.org/spdy/spdy-whitepaper
 
    quic:
      title: QUIC, a multiplexed stream transport over UDP
      date: 2014
      author:
-       - org: The Chromium Project
+        - org: The Chromium Project
      target: https://www.chromium.org/quic
 
    natusage:
      title: NAT usage in Residential Broadband networks
      date: 2011
      author:
-       - ins: G. Maier
-       - ins: F. Schneider
-       - ins: A. Feldmann
+        - ins: G. Maier
+        - ins: F. Schneider
+        - ins: A. Feldmann
      target: http://www.icsi.berkeley.edu/pubs/networking/NATusage11.pdf
 
    bbc-wikileaks:
      title: Whistle-blower site taken offline
      date: 2008
      author:
-       - org: BBC
+        - org: BBC
      target: http://news.bbc.co.uk/2/hi/technology/7250916.stm
 
    techyum:
      title: Official: vb.ly Link Shortener Seized by Libyan Government
      date: 2010
      author:
-       - ins: Violet
+        - ins: Violet
      target: http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libyan-government/
 
    turkey:
      title: Internet censorship in Turkey
      date: 2015
      author:
-       - ins: M. Akgül
-       - ins: M. Kirlidoğ
+        - ins: M. Akgül
+        - ins: M. Kirlidoğ
      target: http://policyreview.info/articles/analysis/internet-censorship-turkey
 
    ververis:
      title: Understanding Internet Censorship Policy: The Case of Greece
      date: 2015
      author:
-       - ins: V. Vasilis
-       - ins: G. Kargiotakis
-       - ins: A. Filasto
-       - ins: B. Fabian
-       - ins: A. Alexandros
+        - ins: V. Vasilis
+        - ins: G. Kargiotakis
+        - ins: A. Filasto
+        - ins: B. Fabian
+        - ins: A. Alexandros
      target: https://www.usenix.org/system/files/conference/foci15/foci15-paper-ververis-update.pdf
 
    draft-hall-censorship-tech-01:
      title: A Survey of Worldwide Censorship Techniques
      date: 2015
      author:
-       - ins: J. Hall
-       - ins: M. Aaron
-       - ins: B. Jones
+        - ins: J. Hall
+        - ins: M. Aaron
+        - ins: B. Jones
      target: https://tools.ietf.org/html/draft-hall-censorship-tech-01
 
    greatfirewall:
      title: Towards a Comprehensive Picture of the Great Firewall’s DNS Censorship
      date: 2014
      author:
-       - ins: Anonymous
+        - ins: Anonymous
      target: https://www.usenix.org/system/files/conference/foci14/foci14-anonymous.pdf
 
    torrentfreak1:
@@ -227,7 +228,7 @@ informative:
    freenet1:
      title: What is Freenet?
      author:
-        - ins: Freenet
+        - org: Freenet
      target: https://freenetproject.org/whatis.html
 
    freenet2:
@@ -240,8 +241,173 @@ informative:
      title: Bitmessage Wiki?
      date: 2014
      author:
-        - ins: Bitmessage
+        - org: Bitmessage
      target: https://bitmessage.org/wiki/Main_Page
+
+   PETS2015VPN:
+     title: A Glance through the VPN Looking Glass
+     date: 2015
+     author:
+        - ins: V.C. Pera
+        - ins: M.V. Barbera
+        - ins: G. Tyson
+        - ins: H. Haddadi
+        - ins: A. Mei
+     target: http://www.eecs.qmul.ac.uk/~hamed/papers/PETS2015VPN.pdf
+
+   spiegel:
+     title: Prying Eyes: Inside the NSA's War on Internet Security
+     date: 2014
+     author:
+        - org: SPIEGEL
+     target: http://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html
+
+   Rideout:
+     title: Making security easier
+     date: 2008
+     author:
+        - ins: A. Rideout
+     target: http://gmailblog.blogspot.de/2008/07/making-security-easier.html
+
+   Schillace:
+     title: Default https access for Gmail
+     date: 2010
+     author:
+        - ins: S. Schillace
+     target: http://gmailblog.blogspot.de/2010/01/default-https-access-for-gmail.html
+
+   Peterson:
+     title: Yahoo to make SSL encryption the default for Webmail users. Finally.
+     date: 2013
+     author:
+        - ins: A. Peterson
+        - ins: B. Gellman
+        - ins: A. Soltani
+     target: http://gmailblog.blogspot.de/2010/01/default-https-access-for-gmail.html
+
+   Collins:
+     title: Hacking Team's oppressive regimes customer list revealed in hack
+     date: 2015
+     author:
+        - ins: K. Collins
+     target: http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-company-hacked
+
+   MacAskill:
+     title: GCHQ taps fibre-optic cables for secret access to world's communications
+     date: 2013
+     author:
+        - ins: E. MacAskill
+        - ins: J. Borger
+        - ins: N. Hopkins
+        - ins: N. Davies
+        - ins: J. Ball
+     target: http://www.theguardian.com/uk/2013/jun/21/gchq-cables-secret-world-communications-nsa
+
+   Marquis-Boire:
+     title: DNSA's Google fo the World's Private Communications
+     date: 2015
+     author:
+        - ins: M. Marquis-Boire
+        - ins: G. Greenwald
+        - ins: M. Lee
+     target: https://theintercept.com/2015/07/01/nsas-google-worlds-private-communications/
+
+   RSF:
+     title: Syria using 34 Blue Coat Servers to spy on Internet users
+     date: 2013
+     author:
+        - ins: RSF
+     target: https://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,44664.html
+
+   Haagsma:
+     title: Deep dive into QUANTUM INSERT
+     date: 2015
+     author:
+        - ins: L. Haagsma
+     target: http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
+
+   Schneier:
+     title: Attacking Tor: how the NSA targets users' online anonymity
+     date: 2013
+     author:
+        - ins: B. Schneier
+     target: http://www.theguardian.com/world/2013/oct/04/tor-attacks-nsa-users-online-anonymity
+
+   Appelbaum:
+     title: NSA targets the privacy-conscious
+     date: 2015
+     author:
+        - ins: J. Appelbaum
+        - ins: A. Gibson
+        - ins: V. Kabish
+        - ins: L. Kampf
+        - ins: L. Ryge
+     target: http://daserste.ndr.de/panorama/aktuell/nsa230_page-1.html
+
+   Marcak:
+     title: China's Great Fire Cannon
+     date: 2015
+     author:
+        - ins: B. Marcak
+        - ins: N. Weaver
+        - ins: J. Dalek
+        - ins: R. Ensafi
+        - ins: D. Fifield
+        - ins: S. McKune
+        - ins: A. Rey
+        - ins: J. Scott-Railton
+        - ins: R. Deibert
+        - ins: V. Paxson
+     target: https://citizenlab.org/2015/04/chinas-great-cannon/
+
+   Marquis-Boire2:
+     title: Schrodinger's Cat Video and the Death of Clear-Text
+     date: 2014
+     author:
+        - ins: M. Marquis-Boire
+     target: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+
+   Googlepatent:
+     title: Method and device for network traffic manipulation
+     date: 2012
+     author:
+        - ins: Google
+     target: https://www.google.com/patents/EP2601774A1?cl=en
+
+   Marquis-Boire2:
+     title: Schrodinger's Cat Video and the Death of Clear-Text
+     date: 2014
+     author:
+        - ins: M. Marquis-Boire
+     target: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+
+   Saint-Andre:
+     title: Inconsistent/redundant character encoding requirements
+     date: 2003
+     author:
+        - ins: P. Saint-Andre
+     target: http://mail.jabber.org/pipermail/xmppwg/2003-August/001460.html
+
+   Marquis-Boire2:
+     title: Schrodinger's Cat Video and the Death of Clear-Text
+     date: 2014
+     author:
+        - ins: M. Marquis-Boire
+     target: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+
+   Polvorin:
+     title: Fix cyrsasl_digest RFC-2831 2.1.2.1
+     date: 2010
+     author:
+        - ins: P. Polvorin
+     target: https://support.process-one.net/browse/EJAB-476
+
+   Bitlbee:
+     title: Setting up a Facebook account in BitlBee (old, deprecated method)
+     date: 2015
+     author:
+        - ins: Bitlbee
+     target: https://wiki.bitlbee.org/HowtoFacebookXMPP
 
 --- abstract
 
@@ -561,15 +727,15 @@ Generally we can identify in Traffic Interception and Traffic Manipulation the t
 
 
 While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of
-SSL/TLS is also a relatively recent phenomena. Google introduced an option for its GMail users to navigate with SSL only in 2008[1], and turned SSL on by default later in 2010[2]. It took an increasing amount of scandalous security breaches and revelations on global
-surveillance from Edward Snowden to have other Internet service providers to follow Google's lead. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013[3].
+SSL/TLS is also a relatively recent phenomena. Google introduced an option for its GMail users to navigate with SSL only in 2008 [Rideout], and turned SSL on by default later in 2010[Schillace]. It took an increasing amount of scandalous security breaches and revelations on global
+surveillance from Edward Snowden to have other Internet service providers to follow Google's lead. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 [Peterson].
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these
 programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
 However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by less democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring,
 collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types. We have several records of such equipment being sold and
-utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content[7]. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat
+utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content [RSF]. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat
 messages ad a country level. The use of such systems, especially in the context of the Arab
 Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
@@ -581,45 +747,13 @@ software updates that are very commonly downloaded in clear by applications such
 
 While traffic manipulation attacks have been long known, documented, and prototyped especially in the context of WiFi and LAN networks, in the last few years we observed an increasing investment into the production and sale of network injection equipment both available commercially as well as deployed at scale by intelligence agencies.
 For example we learned from some of the documents provided by Edward Snowden to the press, that the NSA has constructed a global network injection infrastructure, called QUANTUM, able to leverage mass surveillance in order to identify targets of interests and
-subsequently task man-on-the-side attacks to ultimately compromise a selected device. Among other attacks, NSA makes use of an attack called QUANTUMINSERT[8] which intercepts and hijacks an unencrypted HTTP communication and forces the requesting browser to redirect to a
+subsequently task man-on-the-side attacks to ultimately compromise a selected device. Among other attacks, NSA makes use of an attack called QUANTUMINSERT [Haagsma] which intercepts and hijacks an unencrypted HTTP communication and forces the requesting browser to redirect to a
 host controlled by NSA instead of the intended website. Normally, the new destination would be an exploitation service, referred in Snowden documents as FOXACID, which would attempt at executing malicious code in the context of the target's browser. The Guardian reported in 2013 that NSA has for example been using these techniques to target users of the
-popular anonymity service Tor[9]. The German NDR reported in 2014 that NSA has also been using its mass surveillance capabilities to identify Tor users at large[10].
-Recently similar capabilities of Chinese authorities have been reported as well in what has been informally called the "Great Cannon"[11], which raised numerous concerns on the potential curb on human rights and freedom of speech due to the increasing tighter
+popular anonymity service Tor [Schneier]. The German NDR reported in 2014 that NSA has also been using its mass surveillance capabilities to identify Tor users at large [Appelbaum].
+Recently similar capabilities of Chinese authorities have been reported as well in what has been informally called the "Great Cannon"[Marcak], which raised numerous concerns on the potential curb on human rights and freedom of speech due to the increasing tighter
 control of Chinese Internet communications and access to information. 
 Network injection attacks are also made widely available to state actors around the world through the commercialization of similar, smaller scale equipment that can be easily acquired and deployed at a country-wide level. Companies like FinFisher and HackingTeam are known
-to have network injection gear within their products portfolio, respectively called FinFly ISP and RCS Network Injector[12]. The technology devised and produced by HackingTeam to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States[13]. Access to offensive technologies available on the commercial lawful interception market has been largely documented to have lead to human rights abuses and illegitimate surveillance of journalists, human rights defenders,
-and political activists in many countries around the world. Companies like FinFisher and HackingTeam have been found selling their products to oppressive regimes with little concern for bad human rights records[14]. While network injection attacks haven't been the subject
-of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
-
-
-[1] http://gmailblog.blogspot.de/2008/07/making-security-easier.html
-[2]
-http://gmailblog.blogspot.de/2010/01/default-https-access-for-gmail.html
-[3]
-https://www.washingtonpost.com/news/the-switch/wp/2013/10/14/yahoo-to-ma
-ke-
-ssl-encryption-the-default-for-webmail-users-finally/
-[4] http://www.theguardian.com/uk/2013/jun/21/gchq-cables-secret-world-
-communications-nsa
-[5] https://theintercept.com/2015/07/01/nsas-google-worlds-private-
-communications/
-[7]
-http://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,4466
-4
-.html
-[8] http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
-[9]
-http://www.theguardian.com/world/2013/oct/04/tor-attacks-nsa-users-onlin
-e-
-anonymity
-[10] http://daserste.ndr.de/panorama/aktuell/nsa230_page-1.html
-[11] https://citizenlab.org/2015/04/chinas-great-cannon/
-[12] https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-tex
-t/
-[13] http://www.google.com/patents/EP2601774A1?cl=en
-[14]
-http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-comp
-any-hacked
+to have network injection gear within their products portfolio, respectively called FinFly ISP and RCS Network Injector [Marquis-Boire2]. The technology devised and produced by HackingTeam to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States [Googlepatent]. Access to offensive technologies available on the commercial lawful interception market has been largely documented to have lead to human rights abuses and illegitimate surveillance of journalists, human rights defenders, and political activists in many countries around the world. Companies like FinFisher and HackingTeam have been found selling their products to oppressive regimes with little concern for bad human rights records [Collins]. While network injection attacks haven't been the subject of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
 
 # XMPP
 
@@ -631,30 +765,28 @@ None-the-less, there are plenty of aspects of the protocol design of XMPP which 
 
 The XMPP specification specifies that clients are identified with a resource (<node@domain/home> / <node@domain/work>) to distinguish the conversations to specific devices. This has the side effect of enabling tracking of user behavior by a remote friend or server, who are able to track presence not only of the user, but of each individual device. This has proven to be misleading to many users, since many clients only expose user level rather than device level presence. Likewise, user invisibility so that communication can occur while users don’t notify all buddies and other servers of their availability is not part of the formal protocol, and has only been added as an extension within the XML stream rather than enforced by the protocol.
 
-Documentation of this form of harm:
-[1] https://developer.pidgin.im/ticket/4322
+Documentation of this form of harm: https://developer.pidgin.im/ticket/4322
 
 ## Character Encoding
 
-Localization is a source of frustration in many protocols, and appears in some forms of XMPP. The XMPP protocol specifies a requirement for UTF-8 and UTF-16 support [1], though documentation admits that many implementations may not support UTF-16 [2]. In practice, this leads to cases where text encoded outside of a standard english language ascii encoding will fail to render on all clients, limiting the ability of users to communicate in their native languages. Some examples are failure of XMPP servers to handle non-ascii passwords [3], and gateways which simply strip all non-ascii from the conversation stream.
+Localization is a source of frustration in many protocols, and appears in some forms of XMPP. The XMPP protocol specifies a requirement for UTF-8 and UTF-16 support [Saint-Andre], though documentation admits that many implementations may not support UTF-16. In practice, this leads to cases where text encoded outside of a standard english language ascii encoding will fail to render on all clients, limiting the ability of users to communicate in their native languages. Some examples are failure of XMPP servers to handle non-ascii passwords [Polvorin], and gateways which simply strip all non-ascii from the conversation stream.
 
 At the protocol level, XMPP only defines the conversation as an XML block, and leaves the implementation of character sets to the XMPP parsers of each individual client and server. While there have been attempts to define UTF-16 support as part of the protocol specification, the lack of actual implementation of the more extensible character set by all clients has shaped the protocol to harm the full range of expression users may desire.
 
 Documentation of this form of harm:
-[1] http://mail.jabber.org/pipermail/xmppwg/2003-August/001460.html
-[2] http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions-unsupported-encoding
-[3] https://support.process-one.net/browse/EJAB-476
-[4] https://wiki.bitlbee.org/HowtoFacebookXMPP
+- [Saint-Andre]
+- http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions-unsupported-encoding
+- [Polvorin]
 
 ## Surveillance of Communication
 
 The XMPP protocol specifies the standard by which communication of channels may be encrypted, but it does not provide visibility to clients of whether their communications are encrypted on each link. In particular, even when both clients ensure that they have an encrypted connection to their XMPP server to ensure that their local network is unable to read or disrupt the messages they send, the protocol does not provide visibility into the encryption status between the two servers. As such, clients may be subject to selective disruption of communications by an intermediate network which disrupts communications based on keywords found through Deep Packet Inspection.
 
-In particular, section 13.14 of the protocol specification [2] explicitly acknowledges the existence of a downgrade attack where an adversary controlling an intermediate network can force the inter domain federation between servers to revert to a non-encrypted protocol were selective messages can then be disrupted.
+In particular, section 13.14 of the protocol specification {{RFC6120}} explicitly acknowledges the existence of a downgrade attack where an adversary controlling an intermediate network can force the inter domain federation between servers to revert to a non-encrypted protocol were selective messages can then be disrupted.
 
 Documentation of this form of harm:
-[1] https://raw.githubusercontent.com/stpeter/manifesto/master/manifesto.txt
-[2] https://www.ietf.org/rfc/rfc6120.txt
+- https://raw.githubusercontent.com/stpeter/manifesto/master/manifesto.txt
+- {{RFC6120}}
 
 
 ## Group Chat Limitations
@@ -728,7 +860,7 @@ VPN providers very commonly rely on 3rd parties to provision the infrastructure 
 
 ## IPv6 Leakage
 
-Some studies proved that several commercial VPN providers and applications suffer of critical leakage of information through IPv6 due to improper support and configuration[1]. This is generally caused by a lack of proper configuration of the client's IPv6 routing tables. Considering that most popular browsers and similar applications have been supporting IPv6 by default, if the host is provided with a functional IPv6 configuration, the traffic that is generated might be leaked if the VPN application isn't designed to manipulate such traffic properly.
+Some studies proved that several commercial VPN providers and applications suffer of critical leakage of information through IPv6 due to improper support and configuration [PETS2015VPN]. This is generally caused by a lack of proper configuration of the client's IPv6 routing tables. Considering that most popular browsers and similar applications have been supporting IPv6 by default, if the host is provided with a functional IPv6 configuration, the traffic that is generated might be leaked if the VPN application isn't designed to manipulate such traffic properly.
 
 ## DNS Leakage
 
@@ -736,11 +868,7 @@ Similarly, VPN services that aren't handling DNS requests and are not running DN
 
 ## Traffic Correlation
 
-As revelations of mass surveillance have been growing in the press, additional details on attacks on secure Internet communications have come to the public's attention. Among these, VPN appeared to be a very interesting target for attacks and collectiong efforts. Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented[2] to be already in practice and could completely vanify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
-
-[1] http://www.eecs.qmul.ac.uk/~hamed/papers/PETS2015VPN.pdf
-[2] http://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html
-
+As revelations of mass surveillance have been growing in the press, additional details on attacks on secure Internet communications have come to the public's attention. Among these, VPN appeared to be a very interesting target for attacks and collectiong efforts. Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented [spiegel] to be already in practice and could completely vanify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
 
 Next Steps of the Methodology still to be applied
 =================================================
