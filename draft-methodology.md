@@ -893,6 +893,12 @@ Can we propose guidelines to protect the Internet as a human-rights-enabling env
 Assuming that the research produces useful results, can the objective evolve into the creation of a set of recommended considerations for the protection of applicable human rights?
 
 
+Acknowledgements
+================
+
+Special thanks to all members of the hrpc proposed RG who contributed to this draft. The following deserve a special mention: Stephane Bortzmeyer, dkg and Tim Sammut.
+
+
 Security Considerations
 ========================
 
