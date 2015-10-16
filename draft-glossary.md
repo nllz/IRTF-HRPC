@@ -220,9 +220,6 @@ End-to-End
 
 : communication that takes place between communication end-points of the same physical or logical functional level
 
-Evolving System
-:
-
 Federation
 : The possibility of connecting autonomous systems into a single distributed system.
 
@@ -274,9 +271,6 @@ Privacy
 
 The right to privacy is also recognized in nearly every national constitution  and in most international human rights treaties.  It has been adjudicated upon both by international and regional bodies.  The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.  
 
-Relevance
-:
-
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. 
 
@@ -298,16 +292,12 @@ Strong encryption / cryptography
 Transparent:
 : "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
-Quality
-:
-
-
 The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
 
 	 ( Reliability    )
 	(  Confidentiality )
-	(  Integrity       ) =  communication and information security (technical)
-	(  Authenticity    )
+	(  Integrity       ) =  communication and information 
+	(  Authenticity    )                  security (technical)
 	 ( Anonymity      )
 
 
