@@ -191,7 +191,7 @@ Anonymous
 : A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
 
 Authenticity
-: The act of confirming the truth of an attribute of a single piece of data or entity.
+: The fact that the data does indeed come from the source it claims to come from. (It is strongly linked with Integrity, see below).
 
 Censorship resistance
 : Methods and measures to prevent Internet censorship.
