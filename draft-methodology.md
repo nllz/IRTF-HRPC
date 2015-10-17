@@ -377,6 +377,22 @@ informative:
         - ins: P. Polvorin
      target: https://support.process-one.net/browse/EJAB-476
 
+   pidgin:
+     title: [XMPP] Invisible mode violating standard
+     date: 2015-07
+     author:
+       - ins: js
+       - org: Pidgin Developers
+     target: https://developer.pidgin.im/ticket/4322
+
+   xmppmanifesto:
+     title: A Public Statement Regarding Ubiquitous Encryption on the XMPP Network
+     date: 2014
+     author:
+       - ins: P. Saint-Andre
+       - ins: XMPP Operators
+     target: https://raw.githubusercontent.com/stpeter/manifesto/master/manifesto.txt
+
    namecoin:
      title: Namecoin - Decentralized secure names
      date: 2015
@@ -725,49 +741,32 @@ For example we learned from some of the documents provided by Edward Snowden to 
 subsequently task man-on-the-side attacks to ultimately compromise a selected device. Among other attacks, NSA makes use of an attack called QUANTUMINSERT {{Haagsma}} which intercepts and hijacks an unencrypted HTTP communication and forces the requesting browser to redirect to a host controlled by NSA instead of the intended website. Normally, the new destination would be an exploitation service, referred in Snowden documents as FOXACID, which would attempt at executing malicious code in the context of the target's browser. The Guardian reported in 2013 that NSA has for example been using these techniques to target users of the
 popular anonymity service Tor {{Schneier}}. The German NDR reported in 2014 that NSA has also been using its mass surveillance capabilities to identify Tor users at large {{Appelbaum}}.
 Recently similar capabilities of Chinese authorities have been reported as well in what has been informally called the "Great Cannon" {{Marcak}}, which raised numerous concerns on the potential curb on human rights and freedom of speech due to the increasing tighter
-control of Chinese Internet communications and access to information. 
+control of Chinese Internet communications and access to information.
 Network injection attacks are also made widely available to state actors around the world through the commercialization of similar, smaller scale equipment that can be easily acquired and deployed at a country-wide level. Companies like FinFisher and HackingTeam are known
 to have network injection gear within their products portfolio, respectively called FinFly ISP and RCS Network Injector {{Marquis-Boire}}. The technology devised and produced by HackingTeam to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States {{Googlepatent}}. Access to offensive technologies available on the commercial lawful interception market has been largely documented to have lead to human rights abuses and illegitimate surveillance of journalists, human rights defenders, and political activists in many countries around the world. Companies like FinFisher and HackingTeam have been found selling their products to oppressive regimes with little concern for bad human rights records {{Collins}}. While network injection attacks haven't been the subject of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
 
 ### XMPP
 
-The Extensible Messaging and Presence Protocol (XMPP), specified in RFC 3920, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
+The Extensible Messaging and Presence Protocol (XMPP), specified in RFC 6120, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
 
-None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. In addition to issues of user registration and a lack of protocol specification of the registration policy, the protocol also has facets that may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves naturally.
+None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. The protocol also has facets that may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves naturally.
 
 #### User Identification
 
-The XMPP specification specifies that clients are identified with a resource (<node@domain/home> / <node@domain/work>) to distinguish the conversations to specific devices. This has the side effect of enabling tracking of user behavior by a remote friend or server, who are able to track presence not only of the user, but of each individual device. This has proven to be misleading to many users, since many clients only expose user level rather than device level presence. Likewise, user invisibility so that communication can occur while users don’t notify all buddies and other servers of their availability is not part of the formal protocol, and has only been added as an extension within the XML stream rather than enforced by the protocol.
-
-Documentation of this form of harm: https://developer.pidgin.im/ticket/4322
-
-#### Character Encoding
-
-Localization is a source of frustration in many protocols, and appears in some forms of XMPP. The XMPP protocol specifies a requirement for UTF-8 and UTF-16 support {{Saint-Andre}}, though documentation admits that many implementations may not support UTF-16. In practice, this leads to cases where text encoded outside of a standard english language ascii encoding will fail to render on all clients, limiting the ability of users to communicate in their native languages. Some examples are failure of XMPP servers to handle non-ascii passwords {{Polvorin}}, and gateways which simply strip all non-ascii from the conversation stream.
-
-At the protocol level, XMPP only defines the conversation as an XML block, and leaves the implementation of character sets to the XMPP parsers of each individual client and server. While there have been attempts to define UTF-16 support as part of the protocol specification, the lack of actual implementation of the more extensible character set by all clients has shaped the protocol to harm the full range of expression users may desire.
-
-Documentation of this form of harm:
-- {{Saint-Andre}}
-- http://xmpp.org/rfcs/rfc6120.html#streams-error-conditions-unsupported-encoding
-- {{Polvorin}}
+The XMPP specification dictates that clients are identified with a resource (<node@domain/home> / <node@domain/work>) to distinguish the conversations to specific devices. While the protocol does not specify that the resource must be exposed by the client's server to remote users, in practice this has become the default behavior. In doing so, users can be tracked by remote friends and their servers, who are able to monitor presence not just of the user, but of each individual device the user logs in with. This has proven to be misleading to many users, {{pidgin}} since many clients only expose user level rather than device level presence. Likewise, user invisibility so that communication can occur while users don’t notify all buddies and other servers of their availability is not part of the formal protocol, and has only been added as an extension within the XML stream rather than enforced by the protocol.
 
 #### Surveillance of Communication
 
-The XMPP protocol specifies the standard by which communication of channels may be encrypted, but it does not provide visibility to clients of whether their communications are encrypted on each link. In particular, even when both clients ensure that they have an encrypted connection to their XMPP server to ensure that their local network is unable to read or disrupt the messages they send, the protocol does not provide visibility into the encryption status between the two servers. As such, clients may be subject to selective disruption of communications by an intermediate network which disrupts communications based on keywords found through Deep Packet Inspection.
+The XMPP protocol specifies the standard by which communication of channels may be encrypted, but it does not provide visibility to clients of whether their communications are encrypted on each link. In particular, even when both clients ensure that they have an encrypted connection to their XMPP server to ensure that their local network is unable to read or disrupt the messages they send, the protocol does not provide visibility into the encryption status between the two servers. As such, clients may be subject to selective disruption of communications by an intermediate network which disrupts communications based on keywords found through Deep Packet Inspection. While many operators have commited to only establishing encrypted links from their servers in recognition of this vulnerability, it remains impossible for users to audit this behavior and is not required by the protocol {{xmppmanifesto}}.
 
 In particular, section 13.14 of the protocol specification {{RFC6120}} explicitly acknowledges the existence of a downgrade attack where an adversary controlling an intermediate network can force the inter domain federation between servers to revert to a non-encrypted protocol were selective messages can then be disrupted.
-
-Documentation of this form of harm:
-- https://raw.githubusercontent.com/stpeter/manifesto/master/manifesto.txt
-- {{RFC6120}}
 
 
 #### Group Chat Limitations
 
-Group chat in the XMPP protocol is defined as an extension within the XML specification of the XMPP protocol (http://xmpp.org/extensions/xep-0045.html). However, it is not encoded or required at a protocol level, and not uniformly implemented by clients.
+Group chat in the XMPP protocol is defined as an extension within the XML specification of the XMPP protocol (https://xmpp.org/extensions/xep-0045.html). However, it is not encoded or required at a protocol level, and not uniformly implemented by clients.
 
-The design of multi-user chat in the XMPP protocol suffers from extending a protocol that was not designed with assembly of many users in mind. In particular, in the federated protocol provided by XMPP, multi-user communities are implemented with a distinguished ‘owner’, who is granted control over the participants and structure of the conversation.
+The design of multi-user chat in the XMPP protocol suffers from extending a protocol that was not designed with assembly of many users in mind. In particular, in the federated protocol provided by XMPP, multi-user communities are implemented with a distinguished 'owner', who is granted control over the participants and structure of the conversation.
 
 Multi-user chat rooms are identified by a name specified on a specific server, so that while the overall protocol may be federated, the ability for users to assemble in a given community is moderated by a single server. That server may block the room and prevent assembly unilaterally, even between two users neither of whom trust or use that server directly.
 
