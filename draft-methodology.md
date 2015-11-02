@@ -400,6 +400,12 @@ informative:
         - org: Namecoin
      target: https://namecoin.info/
 
+   Douceur:
+     title: The Sybil Attack
+     date: 2002
+     author:
+        - ins: J.R. Douceur
+     target: http://research.microsoft.com:8082/pubs/74220/IPTPS2002.pdf
 
 --- abstract
 
@@ -594,13 +600,13 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 	                           
 
      (		Anonymity           )
-    (		Privacy              )   = Non-discrimination
+    (		Privacy              )   = Right to non-discrimination
     (		Pseudonymity         )
      (		Content agnosticism )	
 
 			
     ( 	      Content Agnosticism  )
-    (	      Security             ) 	= Equal protection
+    (	      Security             ) 	= Right to equal protection
 
     
      (	      Anonymity       ) 
@@ -615,7 +621,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
 					
 	 (  Open standards         )
-	(   Localization            ) = Rights for cultural life, 
+	(   Localization            ) = Right to participate in cultural life, 
 	(   Internationalization    )             arts and science
 	 (  Censorship resistance  )
 
@@ -800,6 +806,9 @@ tracking systems in order to identify downloaders and initiate legal actions loo
 It is worth nothing that there are varieties of P2P networks that implement cryptographic practices and that introduce anonymization of its users. Such implementations proved to be successful in resisting censorship of content, and tracking of the network peers. A primary
 example is FreeNet {{freenet1}}, a free software application designed to significantly increase the difficulty of users and content identification, and dedicated to foster freedom of speech online {{freenet2}}.
 
+#### Sybil Attacks
+
+In open-membership P2P networks, a single attacker can pretend to be many participants, typically by creating multiple fake identities of whatever kind the P2P network uses [Douceur].  Attackers can use Sybil attacks to bias choices the P2P network makes collectively toward the attacker’s advantage, e.g., by making it more likely that a particular data item (or some threshold of the replicas or shares of a data item) are assigned to attacker-controlled participants.  If the P2P network implements any voting, moderation, or peer review-like functionality, Sybil attacks may be used to “stuff the ballots” toward the attacker’s benefit.  Companies and governments can use Sybil attacks on discussion-oriented P2P systems for “astroturfing” or creating the appearance of  mass grassroots support for some position where there is none in reality. 
 
 #### Conclusions
 
