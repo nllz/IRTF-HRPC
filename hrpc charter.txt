@@ -49,7 +49,7 @@ Outputs
 The research group plans on using  a variety of research methods to
 create different outputs including (but not limited to):
 
-- Internet drafts - (some of which may be put on IRSG RFC stream)
+- Internet drafts - (some of which may be put on IRTF RFC stream)
 These would concern progress of the project, methodology, and would
 define any possible protocol considerations.
 
