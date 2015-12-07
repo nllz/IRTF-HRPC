@@ -242,8 +242,13 @@ Inter-operable
 Internet Standards as an Arena for Conflict
 : Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications’ impact on the Internet’s users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be  appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
 
-Internationalization (i13n)
-: The practice of the adaptation and facilitation of protocols, standards, and implementation to different languages and scripts.
+Internationalization (i18n)
+: The practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization)
+
+Localization (l10n)
+: The practice of translating an implementation to make it functional
+      in a specific language or for users in a specific locale (see
+      Internationalization)
 
 Open standards
 : Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
