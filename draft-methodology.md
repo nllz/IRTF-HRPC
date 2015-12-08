@@ -1,7 +1,7 @@
 ---
 title: Human Rights Protocol Considerations Methodology
 abbrev: hrpcm
-docname: draft-varon-hrpc-methodology-01
+docname: draft-varon-hrpc-methodology-02
 category: info
 
 ipr: trust200902
@@ -363,22 +363,8 @@ informative:
         - ins: M. Marquis-Boire
      target: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
 
-   Saint-Andre:
-     title: Inconsistent/redundant character encoding requirements
-     date: 2003
-     author:
-        - ins: P. Saint-Andre
-     target: http://mail.jabber.org/pipermail/xmppwg/2003-August/001460.html
-
-   Polvorin:
-     title: Fix cyrsasl_digest RFC-2831 2.1.2.1
-     date: 2010
-     author:
-        - ins: P. Polvorin
-     target: https://support.process-one.net/browse/EJAB-476
-
    pidgin:
-     title: [XMPP] Invisible mode violating standard
+     title: -XMPP- Invisible mode violating standard
      date: 2015-07
      author:
        - ins: js
@@ -409,7 +395,7 @@ informative:
 
 --- abstract
 
-This document presents steps undertaken for developing a methodology to map engineering concepts at the protocol level that may be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It feeds upon and is intended to facilitate the work done by the proposed Human Rights Protocol Considerations research group, as well as other authors within the IETF.
+This document presents steps undertaken for developing a methodology to map engineering concepts at the protocol level that may be related to promotion and protection of Human Rights, particularly the right to freedom of expression and association.  It aims to facilitate and build the work done by the Human Rights Protocol Considerations research group in the IRTF, as well as other authors within the IETF.
 
 Exemplary work {{RFC1984}} {{RFC6973}} {{RFC7258}} has already been done in the IETF on privacy issues that should be considered when creating an Internet protocol. But, beyond privacy considerations, concerns for freedom of expression and association were also a strong part of the world-view of the community involved in developing the first Internet protocols. Indeed, promoting open, secure and reliable connectivity is essential for these rights. But how are this concepts addressed in the protocol level? Are there others? This ID is intended to explain research work done so far and to explore possible methodological approaches to move further on exploring and exposing the relations between standards and protocols and the promotion and protection of the rights to freedom of expression and association. 
 
@@ -437,7 +423,7 @@ Besides privacy, it should be possible to highlight other aspects of connectivit
 
 To move this debate further, information has been compiled at the https://datatracker.ietf.org/rg/hrpc/ and discussions are happening through the list hrpc@irtf.org
 
-This document builds on the previous IDs published within the framework of the proposed hrpc research group {{ID}}
+This document builds on the previous IDs published within the framework of the hrpc research group {{ID}}
 
 Research Topic
 ==============
@@ -467,7 +453,7 @@ Methodology
 
 Mapping the relation between human rights and protocols and architectures is a new research challenge, which requires a good amount of interdisciplinary and cross organizational cooperation to develop a consistent methodology.  While the authors of this first draft are involved in  both human rights advocacy and research on Internet technologies - we believe that bringing this work into the IRTF facilitates and  improves this work by bringing human rights experts together with the  community of researchers and developers of Internet standards and technologies.
 
-In order to map the potential relation between human rights and protocols, so far, the HRPC proposed research group has been gathered the data from three specific sources:
+In order to map the potential relation between human rights and protocols, so far, the HRPC research group has been gathering the data from three specific sources:
 
 a. Discourse analysis of RFCs
 To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis possible impact on human rights is being undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions is underway to expose core architectural principles, language and deliberations on human rights of those affected by the network.
@@ -808,7 +794,7 @@ example is FreeNet {{freenet1}}, a free software application designed to signifi
 
 #### Sybil Attacks
 
-In open-membership P2P networks, a single attacker can pretend to be many participants, typically by creating multiple fake identities of whatever kind the P2P network uses [Douceur].  Attackers can use Sybil attacks to bias choices the P2P network makes collectively toward the attacker’s advantage, e.g., by making it more likely that a particular data item (or some threshold of the replicas or shares of a data item) are assigned to attacker-controlled participants.  If the P2P network implements any voting, moderation, or peer review-like functionality, Sybil attacks may be used to “stuff the ballots” toward the attacker’s benefit.  Companies and governments can use Sybil attacks on discussion-oriented P2P systems for “astroturfing” or creating the appearance of  mass grassroots support for some position where there is none in reality. 
+In open-membership P2P networks, a single attacker can pretend to be many participants, typically by creating multiple fake identities of whatever kind the P2P network uses {{Douceur}}.  Attackers can use Sybil attacks to bias choices the P2P network makes collectively toward the attacker’s advantage, e.g., by making it more likely that a particular data item (or some threshold of the replicas or shares of a data item) are assigned to attacker-controlled participants.  If the P2P network implements any voting, moderation, or peer review-like functionality, Sybil attacks may be used to “stuff the ballots” toward the attacker’s benefit.  Companies and governments can use Sybil attacks on discussion-oriented P2P systems for “astroturfing” or creating the appearance of  mass grassroots support for some position where there is none in reality. 
 
 #### Conclusions
 
@@ -874,7 +860,7 @@ Assuming that the research produces useful results, can the objective evolve int
 Acknowledgements
 ================
 
-Special thanks to all members of the hrpc proposed RG who contributed to this draft. The following deserve a special mention: Stephane Bortzmeyer, dkg and Tim Sammut.
+Special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: Stephane Bortzmeyer, dkg and Tim Sammut.
 
 
 Security Considerations
