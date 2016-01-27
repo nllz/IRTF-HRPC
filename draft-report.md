@@ -1,7 +1,7 @@
 ---
 title: Human Rights Protocol Considerations - Research Report
 docname: draft-doria-hrpc-report
-date: 2015-10-11
+date: 2016-01-05
 category: info
 
 ipr: trust200902
@@ -25,8 +25,8 @@ author:
 -
   ins: A. Doria
   name: Avri Doria
-  org: Technicalities
-  email: avri@acm.org
+  org: APC
+  email: avri@apc.org
 
 normative:
 
@@ -112,6 +112,11 @@ informative:
       - ins: L. Denardis
     date: 2013
    
+  Netmundial:
+	title: NETmundial Multistakeholder Statement
+	date: 2014
+	target:  http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf
+
   Post:
     title: Internet Infrastructure and IP Censorship
     author:
@@ -127,7 +132,7 @@ informative:
 
 --- abstract
 
-This document present an overview of the project to map engineering concepts at the protocol level that may be related to promotion and protection of the freedom of expression and association.
+This document present an overview snapshot of the project to map engineering concepts at the protocol level that may be related to promotion and protection of the freedom of expression and association.
 
 This first draft is intended to provide the framework for reporting on the study, initial results and basic considerations. At a later stage it will fold in the work being done in the Methodology and Glossary drafts as well as the work being done in the case studies. It also folds in some of the text included in the original proposal for the HRPC.
 
@@ -139,9 +144,9 @@ Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admin
 Background
 ============
 
-The recognition that human rights have a role in Internet policies has become part of the general discourse.  Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC).  And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly.  The NETmundial outcome document affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
+The recognition that human rights have a role in Internet policies has become part of the general discourse.  Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC).  And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly.  The NETmundial outcome document {{Netmundial}} affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
 
-Nevertheless, the direct relation between Internet Standards and human rights is still something to be explored and more clearly demonstrated.
+Nevertheless, a direct relation between Internet Standards and human rights is still something to be explored and more clearly demonstrated.
 
 Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols.  Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values.  But as the scale and the commercialization of the
 Internet has grown, the influence of such world-views had to compete with other values, such as ease of development and cost. The purpose of this research is to discover and document the consideration involved in taking human rights into account when creating protocols.
@@ -164,11 +169,7 @@ Currently defined in draft-dkg-hrpc-glossary to be folded in at appropriate time
 Link between protocols and human rights
 =====================================
 
-+ Include discussion of value laden engineering as discussed in {{Cath}}.  This work discusses four basic architectural principles that are encoded in Internet Technology: 
-  ++ Openness, Permissionless Innovation, and Content Agnosticism
-  ++ Interoperability
-  ++ Redundancy and the Distributed Architecture
-  ++ The End-to-End Principle
++ Include discussion of value laden engineering as discussed in {{Cath}}
 + Include discussion of  \"Values and Networks\" work by Roland Bless
 + Include discussion of principles from NetMundial Multistakeholder Statement
 
@@ -268,17 +269,17 @@ The case studies point to several areas of protocol behavior that may be appropr
   - Source and Destination visibility
   - Tracking
 
-Additionally, discussion of the rights themselves and the evidence of these rights being implicits in the IETF design principles {{Clark}} and in some of the existing architecture and protocols, {{Cath}} and {{Liddicoat}} suggest other considerations. {{Cath}} recommends that adhereing to the four fundamental architectural principles discess above is a first step.
+Additionally, discussion of the rights themselves and the evidence of these rights being implicits in the IETF design principles {{Clark}} and in some of the existing architecture and protocols, Cath and Liddicoat suggest other considerations.
 
 Next Steps
 ============
 
-Once the first take at consideration are defined, what are the next steps for creating something that can be useabble for protocol designers and implementers in considering the human rights of freedom of expression and freedom of association in their work.
+Once the first take at consideration are defined, what are the next steps for creating something that can be sesable for protocol designers and implementers in considering freedom of expression and and freedom of association in their work.
 
 Acknowledgement
 ===============
 
-A section that includes mention the many contributors of text as well as commenters and those who are assisitng this project in existing.
+A section that include the many contributors of text as as commenters and those who are assisitng this project in existing.
 
 IANA considerations
 ===================
