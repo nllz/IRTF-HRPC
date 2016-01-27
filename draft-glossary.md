@@ -129,10 +129,18 @@ informative:
    Elahi:
      title: "CORDON - A taxonomy of Internet Censorship Resistance Strategies"
      author:
-       - ins: T. Elahi
-       - ins: I. Goldberg
+        - ins: T. Elahi
+        - ins: I. Goldberg
      target: http://cacr.uwaterloo.ca/techreports/2012/cacr2012-33.pdf
      date: 2012
+
+   Brown:
+     title: "A Prehistory of Internet Governance"
+     date: 2013
+     author:
+        - ins: I. Brown
+        - ins: M. Ziewitz
+     seriesinfo: Research Handbook on Governance of the Internet. Cheltenham, Edward Elgar.
 
 --- abstract
 
@@ -264,6 +272,8 @@ Open standards
 Openness
 : The quality of the unfiltered Internet that allows for free access to other hosts
 
+: Absence of centralised points of control – a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}
+
 Permissionless innovation
 : The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
     
@@ -310,7 +320,7 @@ The combination of End-to-End, Interoperability, resilience, reliability and rob
 
 
                          ( End-to-End      )   
-     connectivity =     (  Interoperability )  
+     connectivity =     (  Interoperability )
                        (   Resilience        )  
                        (   Reliability       )   
                        (   Robustness        )
