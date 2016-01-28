@@ -63,8 +63,10 @@ informative:
    RFC2460:
    RFC2639:
    RFC2919:
+   RFC3552:
    RFC3365:
    RFC3724:
+   RFC4101:
    RFC4303:
    RFC4906:
    RFC5890:
@@ -74,6 +76,7 @@ informative:
    RFC5944:
    RFC6120:
    RFC6162:
+   RFC6365:
    RFC6783:
    RFC6973:
    RFC7230:
@@ -84,6 +87,7 @@ informative:
    RFC7236:
    RFC7237:
    RFC7258:
+   RFC7574:
    RFC7626:
 
 
@@ -633,7 +637,7 @@ Current status: Translating human rights to technical terms
 
 Expected outcome 2: This analysis aims to translate human rights concepts that impact or are impacted by the Internet as follows:
 
-The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}}, and open standards are the technical principles that underlay freedom of expression on the Internet.
+The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}} ), and open standards are the technical principles that underlay freedom of expression on the Internet.
 
       (        Connectivity         ) 
      (         Privacy               )
@@ -649,7 +653,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
     (		Privacy              )   = Right to non-discrimination
     (		Pseudonymity         )
     (		Content agnosticism  )
-     (          Accessibility       )		
+     (          Accessibility       )
 
 			
     ( 	      Content Agnosticism  )
@@ -702,7 +706,7 @@ The Internet Protocol version 4, known as ‘layer 3’ of the internet, and spe
 
 The internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of these human rights.
 
-Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options. Protocol extensions including Mobility and Multicasting have proposed alternate communication modes and suggest that different forms of assemply could be supported by an a robust IP layer. Instead, the protocol has limited the deployability of such extensions by not providing a mechanism for appropriate fallback behavior when unrecognized extensiosn are encountered.
+Two major shifts have occurred to harm freedom of expression through misuse of the Internet Protocol. The first is the network’s exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. The second is the selective development of IP options. Protocol extensions including Mobility and Multicasting have proposed alternate communication modes and suggest that different forms of assemply could be supported by an a robust IP layer. Instead, the protocol has limited the deployability of such extensions by not providing a mechanism for appropriate fallback behavior when unrecognized extensions are encountered.
 
 #### Network visibility of Source and Destination
 
@@ -799,7 +803,7 @@ to have network injection gear within their products portfolio, respectively cal
 
 ### XMPP
 
-The Extensible Messaging and Presence Protocol (XMPP), specified in RFC 6120, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
+The Extensible Messaging and Presence Protocol (XMPP), specified in {{RFC6120}}, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
 
 None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. The protocol also has facets that may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves naturally.
 
@@ -824,7 +828,7 @@ Multi-user chat rooms are identified by a name specified on a specific server, s
 
 ### Peer to Peer
 
-Peer-to-Peer (P2P) is a network architecture (defined in RFC7574) in which all the participant nodes are equally responsible engaged into the storage and dissemination of information. A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is increasingly becoming a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Skype, Spotify and other proprietary multimedia applications.
+Peer-to-Peer (P2P) is a network architecture (defined in {{RFC7574}}) in which all the participant nodes are equally responsible engaged into the storage and dissemination of information. A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is increasingly becoming a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Skype, Spotify and other proprietary multimedia applications.
 
 In a time of heavily centralized online services, peer-to-peer is often seen as an alternative, more democratic, and resistant architecture that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains critical to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
 
@@ -925,11 +929,11 @@ Many individuals, not excluding IETF engineers, have argued that DDoS attacks ar
 
 In addition, DDoS attacks are increasingly used as an extortion tactic, with criminals flooding a website – rendering it inaccessible – until the owner pays them a certain amount of money to stop the attack. The costs of mitigating such attacks, either by improving security to prevent them or paying off the attackers, ends up being paid by the consumer.
 
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in RFC 7258 its commitment to mitigating ‘pervasive monitoring (…) in the design of IETF protocols, where possible.’ This means the use of encryption should become standard. Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech.
+All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in {{RFC7258}} its commitment to mitigating ‘pervasive monitoring (…) in the design of IETF protocols, where possible.’ This means the use of encryption should become standard. Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech.
 
 DDoS although disruptive, and silencing at times, can also enable as protest and speech. Or as Sauter {{Sauter}} argues: ‘though DDoS as a tactic is still relatively novel, it fits within a centuries- long tradition of breaking laws and disrupting business as usual to make a political point. These actions aren’t simply disruption for disruption’s sake. Rather they serve to help the activist or dissenter to direct the attention of the public through the interpolation of difference into routine.’ (30-31). An often heard argument against DDoS attacks is that you cannot construe it as a means to exercise your right to freedom of speech, when the means used effectively impede the right of the party on the receiving end of the attack to exercise that same right. The problem with this line of argumentation is that it conveniently ignores the fact that online DDoS attacks are often one of the few effective ways for activists to gain the attention of the media, the government or other parties of interest. Simply putting up a website for a cause won’t garner the same amount of attention as directly confronting the issue via the website of the individual or organization at the heart of the issue. The ability of activists to do so should be protected, especially considering the fact that as Sauter (2014:4) explains: ‘Collectively, we have allowed the construction of an entire public sphere, the Internet, which by accidents of evolution and design, has none of the inherent free speech guarantees we have come to expect. Dissenting voices are pushed out of the paths of potential audiences, effectively removing them from the public discourse. There is nowhere online for an activist to stand with her friends and her sign. She might set up a dedicated blog—which may or may not ever be read—but it is much harder for her to stand collectively with others against a corporate giant in the online space.’ Although the Internet is often compared to public space, it is not. Rather the opposite. The Internet is almost entirely owned by private entities. And the IETF plays a crucial role in developing this privatized commercialized Internet.
 
-From a legal and political perspective, the IETF does not have the legitimacy to determine when a DDoS is legitimate (in legal or political terms). It does not have the capability to make this judgment as a matter of public policy and subsequently translate it to code. Nor should the IETF try to do so.  From a technical perspective, the difference between a ‘legitimate’ and ‘illegitimate’ DDoS attack is meaningless because it would be extremely difficult for the IETF to engineer a way to detect that difference. In addition, there is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see RFC 7258 for why), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
+From a legal and political perspective, the IETF does not have the legitimacy to determine when a DDoS is legitimate (in legal or political terms). It does not have the capability to make this judgment as a matter of public policy and subsequently translate it to code. Nor should the IETF try to do so.  From a technical perspective, the difference between a ‘legitimate’ and ‘illegitimate’ DDoS attack is meaningless because it would be extremely difficult for the IETF to engineer a way to detect that difference. In addition, there is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
 
 David Clark recently published a paper warning that the future of the Internet is in danger. He argues that the private sector control over the Internet is too strong, limiting the myriad of ways in which it can be used {{Daedalus}}, including for freedom of speech. But just because freedom of speech, dissent, and protest are human rights, and DDoS is a potential expression of those rights, doesn't mean that DDoS in and of itself is a right.  To widen the analogy, just because the Internet is a medium through which the right to freedom of expression can be exercised does not make access to the Internet or specific ICTs or NCTs a human right. Uses of DDoS might or might not be legitimate for political reasons, but the IETF has no means or methods to assess this, and in general enabling DDoS would mean a deterioration of the network and thus freedom of expression.
 
@@ -948,19 +952,155 @@ Current Status: Apply human rights technical definitions to the cases mapped
 
 
 ### Human Rights Guidelines
-freedom of expression
+
+This section provides guidance for document authors in the form of a questionnaire about a protocol being designed.  The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
+
+Note that the guidance provided in this section does not recommend specific practices.  The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how privacy might be balanced against other design goals.  However, by carefully considering the answers to each question, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion of whether the protocol adequately protects against privacy threats.  This guidance is meant to help the thought process of privacy analysis; it does not provide specific directions for how to write a privacy considerations section (from {{RFC6973}}).
+
+#### Right to freedom of expression
+
+##### Connectivity
+Does your protocol honor the end-to-end principle? 
+
+##### Privacy
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
+
+##### Security
+Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
+
+##### Content agnosticism
+If your protocol impact packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
+
+##### Internationalization
+Does your protocol have text string that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
+
+##### Censorship resistance
+Does your protocol make censorsip easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
+
+##### Open Standards
+Is your protcol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any propietary code needed for the implementation, running or further development of your protocol?
+
+##### Heterogeneity Support
+Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
+
+#### Right to non-discrimination
+
+##### Anonymity
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
+
+##### Privacy
+See above
+
+##### Pseudonymity
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
+
+##### Content agnosticism
+See above
+
+##### Accessibility
+Is your protocol optimized for low bandwith and high latency connections? Could your protocol also be developed in a stateless manner? 
+
+#### Right to equal protection
+
+##### Content agnosticism
+See above
+
+#### Right to be presumed innocent
+
+##### Anonymity
+See above
+
+##### Privacy
+See above
+
+##### Security
+See above
+
+#### Right to political participation
+
+##### Accessibility
+when websites, web technologies, or web tools are badly designed, they can create barriers that exclude people from using the Web. Is your protocol designed to provide an enabling environment for people with disabilities? It might be relevant to look at the W3C Web Accessibility Initiative for examples and guidance.
+
+##### Internationalization
+See above
+
+##### Censorship resistance
+See above
+
+#### Right to participate in cultural life, arts and science
+
+##### Open Standards
+See above
+
+##### Localization
+Does your protocol live up to standards of internationalization (see above)? Have you considered localizing your protocol for relevant audiences?
+
+##### Internationalization
+See above
+
+##### Censorship resistance
+See above
+
+#### Right to freedom of assembly and association
+
+##### Connectivity
+See above
+
+##### Decentralization
 
 
 
+##### Censorship resistance
+See above
 
-	Infrastructure MUST provide unfethered connectivity at all times
-	Protocols MUST me transparent about failure, interception, and attacks
-	Protocols MUST be resilient against attacks
-	Protocols SHOULD allow for anonymity where possible.
-	
-	
+##### Pseudonymity
+See above
+
+##### Anonymity
+See above
+
+#### Security
+See above
 
 
+#### Right to security
+
+##### Reliability 
+Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Is your protocol able to maintain dependability and performance in the face of unanticipated changes or circumstances?
+
+##### Confidentiality
+(cf {{RFC6973}} ) Which information related to identifiers or data  is exposed to each other protocol entity (i.e., recipients, intermediaries, and enablers)?  Are there ways for protocol implementers to choose to limit the information shared with each entity?  Are there operational controls available to limit the information shared with each entity?
+
+What controls or consent mechanisms does the protocol define or require before personal data or identifiers are shared or exposed via the protocol?  If no such mechanisms or controls are specified, is it expected that control and consent will be handled outside of the protocol?
+
+Does the protocol provide ways for initiators to share different information with different recipients?  If not, are there mechanisms that exist outside of the protocol to provide initiators with such control?
+
+Does the protocol provide ways for initiators to limit which information is shared with intermediaries?  If not, are there mechanisms that exist outside of the protocol to provide users with such control?  Is it expected that users will have relationships that govern the  use of the information (contractual or otherwise) with those who operate these intermediaries?
+
+Does the protocol provide ways for initiators to express individuals' preferences to recipients or intermediaries with regard to the collection, use, or disclosure of their personal data?
+
+##### Integrity
+Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
+
+##### Authenticity
+Do you have enough measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec and other Standard Security Best Practices?
+
+##### Anonymity
+See above
+
+#### Right to education
+
+##### Acceptability
+Do your protocols adhere to the principle of non-discrimination (see above)? Do your protocols adhere to the principle of content agnosticism (see above)?
+
+##### Availability
+Do your protocols use or depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
+
+##### Accessability
+See above
+
+##### Adaptability
+Could your protocol stifle or hinder permissionless innovation in any way? See 'Connectivity' above
 
 
 Next Steps of the Methodology still to be developed
@@ -974,7 +1114,7 @@ How can the rights enabling environment be safeguarded in (future) protocol deve
 
 How  can (nontransparent) human rights violations be minimized in (future) protocol development?
 
-Can we propose guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, specially in relation to freedom of expression and freedom of  association, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}?
+Can we propose guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, specially in relation to freedom of expression and freedom of  association, in a manner similar to the work done for Privacy Considerations in {{RFC6973}} ?
 
 Assuming that the research produces useful results, can the objective evolve into the creation of a set of recommended considerations for the protection of applicable human rights?
 
@@ -983,7 +1123,7 @@ Acknowledgements
 ================
 
 Special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: Stephane Bortzmeyer, dkg and Tim Sammut.
-
+We would also like to thank Molly Sauter, Arturo Filasto, Eleanor Saitta and all other who provided input on the draft or the ideas. 
 
 Security Considerations
 ========================
