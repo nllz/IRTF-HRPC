@@ -47,11 +47,13 @@ informative:
    RFC0793:
    RFC1122:
    RFC1958:
+   RFC2277:
    RFC2606:	
    RFC2775:
    RFC3724:
    RFC4084:
    RFC4949:
+   RFC6365:
    RFC6973:
 
 
@@ -141,6 +143,20 @@ informative:
         - ins: I. Brown
         - ins: M. Ziewitz
      seriesinfo: Research Handbook on Governance of the Internet. Cheltenham, Edward Elgar.
+
+   FRAMEWORK:
+     title: Information technology - Framework for internationalization, prepared by ISO/IEC JTC 1/SC 22/WG 20 ISO/IEC TR 11017
+     date: 1997
+     author:
+        - ins: ISO/IEC
+
+   W3Ci18nDef:
+     title: Localization vs. Internationalization
+     date: 2010
+     author:
+        - ins: W3C
+     target: http://www.w3.org/International/questions/qa-i18n.en
+
 
 --- abstract
 
@@ -253,10 +269,26 @@ Internet Standards as an Arena for Conflict
 Internationalization (i18n)
 : The practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization)
 
+: (cf {{RFC6365}}) In the IETF, "internationalization" means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}}  A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+
+         "Internationalization is the design and development of a
+         product, application or document content that enables easy
+         localization for target audiences that vary in culture, region,
+         or language."  {{W3Ci18nDef}}
+
+Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to  interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully all of the ones useful in the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices. 
+
 Localization (l10n)
-: The practice of translating an implementation to make it functional
-      in a specific language or for users in a specific locale (see
-      Internationalization)
+: The practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization)
+
+: (cf {{RFC6365}} The process of adapting an internationalized application platform or application to a specific cultural environment.  In localization, the same semantics are preserved while the syntax may be changed. {{FRAMEWORK}}
+
+Localization is the act of tailoring an application for a different language or script or culture.  Some internationalized applications can handle a wide variety of languages.  Typical users only understand a small number of languages, so the program must be tailored to interact with users in just the languages they know.
+
+The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
+
+Localization is rarely an IETF matter, and protocols that are merely localized, even if they are serially localized for several locations, are generally considered unsatisfactory for the global Internet.
+
 
 Open standards
 : Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
