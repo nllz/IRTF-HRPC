@@ -1,27 +1,8 @@
 # IRTF-HRPC
 This is the repository for the Internet Research Taskforce (IRTF) Human Rights Protocol Consideration (hrpc) Research Group.
 
-We're currently experimenting with how we're managing version control of the documents produced by and for the proposed research group. We're currently using the mailinglist [0] etherpads [1] and ethercalc [2] and this repository. We hope to have a trac installation on the IETF site soon. 
+We're currently experimenting with how we're managing version control of the documents produced by and for the proposed research group. We're currently using the mailinglist [0] and this repository. 
 
-[0] https://www.irtf.org/mailman/listinfo/hrpc
-
-[1] https://hrpc.etherpad.mozilla.org/
-
-[2] https://www.ethercalc.org/tdeh4wx2zo
-
-
-Building drafts for HRPC
-========================
-
-Install dependencies:
-
-      # apt install kramdown-rfc2629 xml2rfc
-
-Draft editing workflow:
-
-      $EDITOR draft-glossary.md
-      make
-      
 # Contributing
 
 Before submitting feedback, please familiarize yourself with our current issues list and review the working group documents and mailing list discussion. If you're new to this, you may also want to read the Tao of the IETF.
@@ -61,3 +42,17 @@ Please consult RFC 5378 and RFC 3979 for details.
 A participant in any IETF activity is deemed to accept all IETF rules of process, as documented in Best Current Practices RFCs and IESG Statements.
 
 A participant in any IETF activity acknowledges that written, audio and video records of meetings may be made and may be available to the public.
+
+# Building drafts for HRPC
+
+Install dependencies:
+
+      # apt install kramdown-rfc2629 xml2rfc
+
+Draft editing workflow:
+
+      $EDITOR draft-glossary.md
+      make
+
+
+[0] https://www.irtf.org/mailman/listinfo/hrpc
