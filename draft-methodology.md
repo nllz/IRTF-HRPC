@@ -975,9 +975,10 @@ If your protocol impact packet handling, does it look at the packet content? Is 
 Does your protocol have text string that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
 
 ##### Censorship resistance
-Does your protocol make censorsip easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
+Does your protocol make censorship easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
 
 ##### Open Standards
+Is your protcol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any propietary code needed for the implementation, running or further development of your protocol?
 
 ##### Heterogeneity Support
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
@@ -1005,6 +1006,7 @@ Is your protocol optimized for low bandwidth and high latency connections? Could
 See above
 
 #### Right to be presumed innocent
+Is is possible to deploy your protocol without a single point of control? If applicable, can it also implemented in a federated way?
 
 ##### Anonymity
 See above
