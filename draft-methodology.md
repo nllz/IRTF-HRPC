@@ -1048,8 +1048,7 @@ See above
 See above
 
 ##### Decentralization
-
-
+Does your protocol contribute to more centralized points of control? Can your protocol be implemented without one single point of control. If applicable, can your protocol be deployed in a federated manner?
 
 ##### Censorship resistance
 See above
