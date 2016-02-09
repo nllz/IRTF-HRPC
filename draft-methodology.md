@@ -552,7 +552,7 @@ Map cases of protocols being exploited or enablers
 ------------------------------------------------------
 
 Step 1.1 - Cases of protocols being exploited
-Activity 1: Map cases in which users rights have been exploited, violated or compromised, analyze which protocols or vulnerabilities in protocols are invovled with this.
+Activity 1: Map cases in which users rights have been exploited, violated or compromised, analyze which protocols or vulnerabilities in protocols are involved with this.
 Activity 2: Understand technical rationale for the use of particular protocols that undermine human rights. 
 Expected Outcome: list of protocols that have been exploited to expose users to rights violation and rationale.
 
@@ -944,17 +944,18 @@ Current Status: Apply human rights technical definitions to the cases mapped
 ----------------------------------------------------------------------------
 
 ### Human Rights Threats
-The human rights threats on the Internet come in a myriad of forms. Protocols and standards can directly harm the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocent, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored, or whose personal information is leaked may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that are not human-rights proof can lead to physical danger (for instance opposition leaders in totalitarian regimes being subjected to torture on the basis of leaky protocols).
+The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocence, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+
 This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
 
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependents and universal. 
-Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particar. This is by no means an attempt to cherry picks right, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and universal. 
+Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular. This is by no means an attempt to cherry picks right, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
 
 ### Human Rights Guidelines
 
 This section provides guidance for document authors in the form of a questionnaire about a protocol being designed.  The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
 
-Note that the guidance provided in this section does not recommend specific practices.  The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how privacy might be balanced against other design goals.  However, by carefully considering the answers to each question, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion of whether the protocol adequately protects against privacy threats.  This guidance is meant to help the thought process of privacy analysis; it does not provide specific directions for how to write a privacy considerations section (from {{RFC6973}}).
+Note that the guidance provided in this section does not recommend specific practices.  The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to each question, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion of whether the protocol adequately protects against human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (from {{RFC6973}}).
 
 #### Right to freedom of expression
 
@@ -977,7 +978,6 @@ Does your protocol have text string that are readable or entered by humans? Does
 Does your protocol make censorsip easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
 
 ##### Open Standards
-Is your protcol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any propietary code needed for the implementation, running or further development of your protocol?
 
 ##### Heterogeneity Support
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
@@ -997,7 +997,7 @@ Did you have a look at the Privacy Considerations for Internet Protocols {{RFC69
 See above
 
 ##### Accessibility
-Is your protocol optimized for low bandwith and high latency connections? Could your protocol also be developed in a stateless manner? 
+Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
 
 #### Right to equal protection
 
@@ -1095,7 +1095,7 @@ Do your protocols adhere to the principle of non-discrimination (see above)? Do 
 ##### Availability
 Do your protocols use or depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
 
-##### Accessability
+##### Accessibility
 See above
 
 ##### Adaptability
