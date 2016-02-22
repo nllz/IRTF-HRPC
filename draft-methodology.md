@@ -1,7 +1,7 @@
 ---
 title: Human Rights Protocol Considerations Methodology
 abbrev: hrpcm
-docname: draft-varon-hrpc-methodology-03
+docname: draft-varon-hrpc-methodology-04
 category: info
 
 ipr: trust200902
@@ -948,7 +948,7 @@ Current Status: Apply human rights technical definitions to the cases mapped
 ----------------------------------------------------------------------------
 
 ### Human Rights Threats
-The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocence, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocent, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
 
 This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
 
@@ -967,7 +967,7 @@ Note that the guidance provided in this section does not recommend specific prac
 Does your protocol honor the end-to-end principle? 
 
 ##### Privacy
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation? What is the potential for discrimination against users of your protocol? 
 
 ##### Security
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
@@ -998,6 +998,9 @@ See above
 ##### Pseudonymity
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
 
+##### Decentralization
+Does your protocol contribute to more centralized points of control? Can your protocol be implemented without one single point of control. If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of your protocol be used to implicate users?
+
 ##### Content agnosticism
 See above
 
@@ -1010,7 +1013,6 @@ Is your protocol optimized for low bandwidth and high latency connections? Could
 See above
 
 #### Right to be presumed innocent
-Is is possible to deploy your protocol without a single point of control? If applicable, can it also implemented in a federated way?
 
 ##### Anonymity
 See above
@@ -1019,6 +1021,12 @@ See above
 See above
 
 ##### Security
+See above
+
+##### Decentralization
+See above
+
+##### Content agnosticism
 See above
 
 #### Right to political participation
@@ -1052,7 +1060,7 @@ See above
 See above
 
 ##### Decentralization
-Does your protocol contribute to more centralized points of control? Can your protocol be implemented without one single point of control. If applicable, can your protocol be deployed in a federated manner?
+See above
 
 ##### Censorship resistance
 See above
