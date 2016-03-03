@@ -960,23 +960,18 @@ This section provides guidance for document authors in the form of a questionnai
 
 Note that the guidance provided in this section does not recommend specific practices.  The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to each question, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion of whether the protocol adequately protects against human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}).
 
-#### Technical concepts as the relate to human rights
+### Technical concepts as they relate to human rights
 
-##### Connectivity (Right to freedom of expression & Right to freedom of assembly and association)
+#### Connectivity (Right to freedom of expression & Right to freedom of assembly and association)
 Does your protocol honor the end-to-end principle? 
 
-<<<<<<< HEAD
-##### Privacy
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation? What is the potential for discrimination against users of your protocol? 
-=======
-##### Privacy (Right to freedom of expression & Right to non discrimination & Right to be presumed innocent)
+#### Privacy ( Right to freedom of expression & Right to non discrimination & Right to be presumed innocent)
 Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
->>>>>>> 23bda47f7837a0757c10b08e3f1e1c8d0017d43d
 
-##### Content agnosticism (Right to freedom of expression & Right to non discrimination & Right to equal protection & Right to be presumed innocent)
+#### Content agnosticism (Right to freedom of expression & Right to non discrimination & Right to equal protection & Right to be presumed innocent)
 If your protocol impact packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
 
-##### Security (Right to freedom of expression & Right to freedom of assembly and association & right to non discrimination & Right to be presumed innocent)
+#### Security (Right to freedom of expression & Right to freedom of assembly and association & right to non discrimination & Right to be presumed innocent)
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
 
 ##### Internationalization (Right to freedom of expression & Right to political participation & Right to participate in cultural life, arts and science & Right to political participation)
@@ -997,7 +992,6 @@ Did you have a look at the Privacy Considerations for Internet Protocols {{RFC69
 ##### Pseudonymity (Right to non-discrimination & Right to freedom of assembly and association)
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
 
-<<<<<<< HEAD
 ##### Decentralization
 Does your protocol contribute to more centralized points of control? Can your protocol be implemented without one single point of control. If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of your protocol be used to implicate users?
 
