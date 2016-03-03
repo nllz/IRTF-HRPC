@@ -565,11 +565,11 @@ informative:
 
    Adamantia Rachovitsa:
 	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
-	date: 2015
-	author:
-	  - ins: A. Rachovitsa
-	target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
-	seriesinfo: International Journal of Law & Information Technology 
+     date: 2015
+     author:
+        - ins: A. Rachovitsa
+     target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
+     seriesinfo: International Journal of Law & Information Technology 
 
    Allan Davidson, John Morris, Robert Courtney:
 	title: Strangers in a strange land
@@ -585,10 +585,10 @@ informative:
 	title:  Tussle in cyberspace: defining tomorrow’s Internet
 	date: 2005
 	author:
-	   - ins: D.D. Clark
-		- ins: J. Wroclawski
-			- ins: K.R. Sollins
-				- ins: R. Braden
+	  - ins: D.D. Clark
+          - ins: J. Wroclawski
+	  - ins: K.R. Sollins
+	  - ins: R. Braden
 	target: https://dl.acm.org/citation.cfm?id=1074049
 	seriesinfo: ACM Digital Library
 
@@ -657,7 +657,7 @@ Laura Denardis:
 	author: 
 	   - ins: L. Denardis
 	target: https://www.jstor.org/stable/j.ctt5vkz4n
-	seriesinfo: Yale University Press 	
+	seriesinfo: Yale University Press
 
 Lawrence Lessig:
 	title: Code: And Other Laws of Cyberspace, Version 2.0. 
@@ -950,6 +950,7 @@ By combining data from the three data sources named above, an extensive list of�
 Mapping the protocols and standards that are related to human rights and creating an human rights enabeling environment was the first step to focus on specific technical concepts that underlie these protocols and  standards. On the basis of this list number of technical concepts that appeared frequently was extracted, and used to create a list of technical terms that combined create the enabling environment for excercising human rights on the Internet. 
 
 #### Building a common vocabulary of technical concepts that impact human rights 
+While interviewing experts and mapping RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms a list of terms was created. The definitions are based on definitions from other IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature. 
 
 #### Translating Human Rights Concept into Technical Definitions
 The previous steps allowed for the clarification of relation between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precies technical concepts that make up these protocols and standards in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that combined create the enabling environment for human rights.
