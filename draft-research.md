@@ -563,15 +563,15 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Adamantia Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
+   Rachovitsa:
+	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human 	Rights Issue in the Face of Pervasive Monitoring
      date: 2015
           author:
         - ins: A. Rachovitsa
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
      seriesinfo: International Journal of Law & Information Technology 
 
-   Allan Davidson, John Morris, Robert Courtney:
+   Davidson:
 	title: Strangers in a strange land
 	date: 2002
 	author:																	- ins: A. Davidson
@@ -580,7 +580,7 @@ informative:
 	target: https://www.cdt.org/files/publications/piais.pdf
 	seriesinfo: Telecommunications Policy Research Conference
 
-   David D. Clark, John Wroclawski, Karen R. Sollins, Robert Braden:
+   Clark:
 	title:  Tussle in cyberspace: defining tomorrow’s Internet
 	date: 2005
 	author:
@@ -591,7 +591,7 @@ informative:
 	target: https://dl.acm.org/citation.cfm?id=1074049
 	seriesinfo: ACM Digital Library
 
-   Dennis Broeders:
+   Broeders:
 	title: The public core of the Internet
 	date: 2015
 	author:
@@ -599,7 +599,7 @@ informative:
 	target: http://www.wrr.nl/en/publications/publication/article/de-publieke-kern-van-het-internet-1/
 	seriesinfo: WRR
 
-Francesca Musiani:
+   Musiani:
 	title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services: An Issue of Internet Governance
 	date: 2015 
 	author:
@@ -607,7 +607,7 @@ Francesca Musiani:
 	target: http://doi.org/10.16997/wpcc.214 
 	seriesinfo: Westminister Papers in Communication and Culture
 
-Ian Brown and Chris Marsden:
+   Brown:
 	title: Regulating code
 	date: 2013
 	author:
@@ -616,7 +616,7 @@ Ian Brown and Chris Marsden:
 	target: https://mitpress.mit.edu/books/regulating-code
 	seriesinfo: MIT Press
 
-Ian Brown, David D. Clark, Dirk Trossen:
+   Brown:
 	title: Should specific values be embedded in the Internet Architecture?
 	date: 2010
 	author:
@@ -626,7 +626,7 @@ Ian Brown, David D. Clark, Dirk Trossen:
 	target: http://conferences.sigcomm.org/co-next/2010/Workshops/REARCH/ReArch_papers/10-Brown.pdf
 	seriesinfo: Sigcomm
 
-Janet Abbate:
+   Abbate:
 	title: Inventing the Internet 
 	date: 2000	
 	author:
@@ -634,7 +634,7 @@ Janet Abbate:
 	target: https://mitpress.mit.edu/books/inventing-internet
 	seriesinfo: MIT Press 
 
-Jonathan Zittrain:
+   Zittrain:
 	title: The Future of the Internet - And How to Stop It
 	date: 2008
 	author:
@@ -642,7 +642,7 @@ Jonathan Zittrain:
 	target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
 	series info: Yale University Press
 
-Laura Denardis:	
+   Denardis:	
 	title: The Internet Design Tension between Surveillance and Security
 	date: 2015
 	author: 
@@ -650,7 +650,7 @@ Laura Denardis:
 	target: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7116471
 	seriesinfo: IEEE Annals of the History of Computing (volume 37:2)
 
-Laura Denardis:	
+   Denardis:	
 	title: The Global War for Internet Governance
 	date: 2014
 	author: 
@@ -658,7 +658,7 @@ Laura Denardis:
 	target: https://www.jstor.org/stable/j.ctt5vkz4n
 	seriesinfo: Yale University Press
 
-Lawrence Lessig:
+   Lessig:
 	title: Code: And Other Laws of Cyberspace, Version 2.0. 
 	date: 2006
 	author: 
@@ -666,7 +666,7 @@ Lawrence Lessig:
 	target: http://codev2.cc/
 	seriesinfo: New York Basic Books
 
-Milton Mueller:
+   Mueller:
 	title: Networks and States
 	date: 2010 
 	author:
@@ -674,14 +674,14 @@ Milton Mueller:
 	target: https://mitpress.mit.edu/books/networks-and-states
 	seriesinfo: MIT Press
 
-Ronald Bless and Carsten Orwat
+   Bless
 	title: Values and Networks
 	date: 2015 
 	author:
 	   - ins: R. Bless
 	   - ins: C. Orwat
 
-Yoachim Benkler:
+   Benkler:
 	title: The wealth of Networks: How social production transforms markets and freedom
 	date: 2006
 	author:
