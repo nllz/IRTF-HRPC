@@ -563,10 +563,10 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Adamantia Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
+   Rachovitsa:
+	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human 	Rights Issue in the Face of Pervasive Monitoring
      date: 2015
-          author:
+     author:
         - ins: A. Rachovitsa
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
      seriesinfo: International Journal of Law & Information Technology 
@@ -574,7 +574,8 @@ informative:
    Allan Davidson, John Morris, Robert Courtney:
 	title: Strangers in a strange land
 	date: 2002
-	author:																	- ins: A. Davidson
+	author:
+	 - ins: A. Davidson
 	 	- ins: J. Morris
 	 		- ins: R. Courtney
 	target: https://www.cdt.org/files/publications/piais.pdf
