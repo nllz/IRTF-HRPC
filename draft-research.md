@@ -563,8 +563,8 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Adamantia Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
+    Rachovitsa:
+    title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human         Rights Issue in the Face of Pervasive Monitoring
      date: 2015
           author:
         - ins: A. Rachovitsa
@@ -711,7 +711,11 @@ Introduction
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights.
 
+<<<<<<< HEAD
 Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. In a similar vein, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+=======
+Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+>>>>>>> fcd98f5db299298c0215600b70f3905a90480689
 
 While the Internet was designed with freedom and openness of communications as core values, the scale and the commercialization of the Internet has grown such that issues like access, rights and connectivity are forced to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. Conversely, not protecting these human right enabeling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internets architecture.
 
