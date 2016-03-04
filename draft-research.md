@@ -694,7 +694,7 @@ informative:
 
 The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown et al. 2010}}.
 
-This document provides a proposal for a glossary to discuss the relation between human rights and Internet protocls, an overview of the discussion, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
+This document provides a proposal for a glossary to discuss the relation between human rights and Internet protocols, an overview of the discussion, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
 Discussion of this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/listinfo/hrpc
 
