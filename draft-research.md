@@ -563,8 +563,8 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-    Rachovitsa:
-    title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human         Rights Issue in the Face of Pervasive Monitoring
+   Adamantia Rachovitsa:
+	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
      date: 2015
           author:
         - ins: A. Rachovitsa
@@ -712,10 +712,14 @@ Introduction
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. In a similar vein, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
 =======
 Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
 >>>>>>> fcd98f5db299298c0215600b70f3905a90480689
+=======
+Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+>>>>>>> debfd05c5f512a78cf1894c9c1c95396c3106d8b
 
 While the Internet was designed with freedom and openness of communications as core values, the scale and the commercialization of the Internet has grown such that issues like access, rights and connectivity are forced to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. Conversely, not protecting these human right enabeling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internets architecture.
 
@@ -1291,8 +1295,7 @@ The human rights threats on the Internet come in a myriad of forms. Protocols an
 
 This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
 
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and universal. 
-Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular. This is by no means an attempt to cherry picks right, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and universal. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular. This is by no means an attempt to cherry picks rights, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
 
 ### Guidelines for human rights considerations
 This section provides guidance for document authors in the form of a questionnaire about a protocol being designed. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
