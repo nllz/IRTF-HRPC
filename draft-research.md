@@ -563,25 +563,24 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human 	Rights Issue in the Face of Pervasive Monitoring
+   Adamantia Rachovitsa:
+	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
      date: 2015
-     author:
+          author:
         - ins: A. Rachovitsa
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
      seriesinfo: International Journal of Law & Information Technology 
 
-   Davidson:
+   Allan Davidson, John Morris, Robert Courtney:
 	title: Strangers in a strange land
 	date: 2002
-	author:
-	 - ins: A. Davidson
+	author:																	- ins: A. Davidson
 	 	- ins: J. Morris
 	 		- ins: R. Courtney
 	target: https://www.cdt.org/files/publications/piais.pdf
 	seriesinfo: Telecommunications Policy Research Conference
 
-   Clark:
+   David D. Clark, John Wroclawski, Karen R. Sollins, Robert Braden:
 	title:  Tussle in cyberspace: defining tomorrow’s Internet
 	date: 2005
 	author:
@@ -592,7 +591,7 @@ informative:
 	target: https://dl.acm.org/citation.cfm?id=1074049
 	seriesinfo: ACM Digital Library
 
-   Broeders:
+   Dennis Broeders:
 	title: The public core of the Internet
 	date: 2015
 	author:
@@ -600,7 +599,7 @@ informative:
 	target: http://www.wrr.nl/en/publications/publication/article/de-publieke-kern-van-het-internet-1/
 	seriesinfo: WRR
 
-   Musiani:
+Francesca Musiani:
 	title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services: An Issue of Internet Governance
 	date: 2015 
 	author:
@@ -608,7 +607,7 @@ informative:
 	target: http://doi.org/10.16997/wpcc.214 
 	seriesinfo: Westminister Papers in Communication and Culture
 
-   Brown:
+Ian Brown and Chris Marsden:
 	title: Regulating code
 	date: 2013
 	author:
@@ -617,7 +616,7 @@ informative:
 	target: https://mitpress.mit.edu/books/regulating-code
 	seriesinfo: MIT Press
 
-   Brown:
+Ian Brown, David D. Clark, Dirk Trossen:
 	title: Should specific values be embedded in the Internet Architecture?
 	date: 2010
 	author:
@@ -627,7 +626,7 @@ informative:
 	target: http://conferences.sigcomm.org/co-next/2010/Workshops/REARCH/ReArch_papers/10-Brown.pdf
 	seriesinfo: Sigcomm
 
-   Abbate:
+Janet Abbate:
 	title: Inventing the Internet 
 	date: 2000	
 	author:
@@ -635,7 +634,7 @@ informative:
 	target: https://mitpress.mit.edu/books/inventing-internet
 	seriesinfo: MIT Press 
 
-   Zittrain:
+Jonathan Zittrain:
 	title: The Future of the Internet - And How to Stop It
 	date: 2008
 	author:
@@ -643,7 +642,7 @@ informative:
 	target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
 	series info: Yale University Press
 
-   Denardis:	
+Laura Denardis:	
 	title: The Internet Design Tension between Surveillance and Security
 	date: 2015
 	author: 
@@ -651,7 +650,7 @@ informative:
 	target: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7116471
 	seriesinfo: IEEE Annals of the History of Computing (volume 37:2)
 
-   Denardis:	
+Laura Denardis:	
 	title: The Global War for Internet Governance
 	date: 2014
 	author: 
@@ -659,7 +658,7 @@ informative:
 	target: https://www.jstor.org/stable/j.ctt5vkz4n
 	seriesinfo: Yale University Press
 
-   Lessig:
+Lawrence Lessig:
 	title: Code: And Other Laws of Cyberspace, Version 2.0. 
 	date: 2006
 	author: 
@@ -667,7 +666,7 @@ informative:
 	target: http://codev2.cc/
 	seriesinfo: New York Basic Books
 
-   Mueller:
+Milton Mueller:
 	title: Networks and States
 	date: 2010 
 	author:
@@ -675,14 +674,14 @@ informative:
 	target: https://mitpress.mit.edu/books/networks-and-states
 	seriesinfo: MIT Press
 
-   Bless
+Ronald Bless and Carsten Orwat
 	title: Values and Networks
 	date: 2015 
 	author:
 	   - ins: R. Bless
 	   - ins: C. Orwat
 
-   Benkler:
+Yoachim Benkler:
 	title: The wealth of Networks: How social production transforms markets and freedom
 	date: 2006
 	author:
@@ -692,7 +691,7 @@ informative:
 
 --- abstract
 
-The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown et al. 2010}}.
+The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown}}.
 
 This document provides a proposal for a glossary to discuss the relation between human rights and Internet protocls, an overview of the discussion, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
@@ -893,11 +892,11 @@ The Human Rights Protocol Considerations Research Group (hrpc) in the Internet R
 Literature and Discussion Review 
 ================================
 
-Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political,historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis}}. To quote {{Abbate}}: “protocols are politics by other means”. Since the late 1990’s a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidson}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{Brown}} {{Lessig}}, {{Mueller}}.
+Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political,historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis}}. To quote {{Abbate}}: “protocols are politics by other means”. Since the late 1990’s a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidson et al 2002}} {{Musiani 2015}}, others look into the political, legal, commercial or social impact of protocols {{Brown and Marsden 2013}} {{Lessig 2006}}, {{Mueller 2010}}.
  
-Commercial and political influences on the management of the Internet’s architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brown}}  {{Denardis}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is enough to say that the IETF consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users’ experience of the Internet {{Denardis}}. The role human rights play in technical engineering is much less clear. 
+Commercial and political influences on the management of the Internet’s architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal.}}  {{Denardis}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is enough to say that the IETF consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users’ experience of the Internet {{Denardis 2014}}. The role human rights play in technical engineering is much less clear. 
  
-Understanding how protocols and standards impact human rights, especially the right to freedom of expression and freedom of association and assembly is crucial. Questions at the intersection of human rights and Internet architecture management are particularly important as Internet Standard Developing Organizations (SDOs) are the arenas for contention over human rights and the role of technical engineers to protect human rights by design {{Brown}} {{Clark}}  {{Denardis}}  {{Lessig}}  {{Rachovitsa}}. 
+Understanding how protocols and standards impact human rights, especially the right to freedom of expression and freedom of association and assembly is crucial. Questions at the intersection of human rights and Internet architecture management are particularly important as Internet Standard Developing Organizations (SDOs) are the arenas for contention over human rights and the role of technical engineers to protect human rights by design {{Brownetal.}} {{Clarketal.}}  {{Denardis 2014}}  {{Lessig 2006}}  {{Rachovitsa 2015}}. 
  
 In the academic literature four clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (…) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{2005:2}}.’ They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to blunting the tools of enforcement and last but not least, it is dangerous to make promises that can’t be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals’ human rights. 
 
@@ -905,9 +904,9 @@ Conversely, Brown et al. {{2010:3}} state that 'some key, universal values – o
 
 The main disagreement between these two positions lies mostly in the question on whether a particular value system should be build into the Internet’s architecture or whether the architecture needs to account for a varying set of values. 
  
-A third position that is similar to that of Brown et al., is taken by {{Broeders}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the tcp/ip ProtocolSuite, numerous standards, the Domain Name System (dns), and routing protocols- a common public good. This is a different approach then that of {{Clark}} and {{Brown}} because he does not suggest that social values should (or should not) be explicitly coded into the Internet’s architecture, but rather that the existing architecture should be seen as an entity of public value. 
+A third position that is similar to that of Brown et al., is taken by {{Broeders 2015}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the tcp/ip ProtocolSuite, numerous standards, the Domain Name System (dns), and routing protocols- a common public good. This is a different approach then that of {{Clark et al.}} and {{Brown et al.}} because he does not suggest that social values should (or should not) be explicitly coded into the Internet’s architecture, but rather that the existing architecture should be seen as an entity of public value. 
  
-{{Bless}} represent a fourth position. They argue that ‘pure technical solutions for enabling, enforcing or restricting rights/values are often costly, insufficient, inflexible, may have unintended consequences or create stakeholders with too much power’. They argue that it is important to search for solutions that ‘create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.’ 
+{{Bless}} {{Orwat}} represent a fourth position. They argue that ‘pure technical solutions for enabling, enforcing or restricting rights/values are often costly, insufficient, inflexible, may have unintended consequences or create stakeholders with too much power’. They argue that it is important to search for solutions that ‘create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.’ 
  
 Our position is that hard-coding human rights into protocols in addition to being undesirable is also impossible, because each situation is dependent on its context. It is however important to make consicious design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol. 
 
