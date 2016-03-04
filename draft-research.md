@@ -563,8 +563,8 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Adamantia Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
+    Rachovitsa:
+    title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human         Rights Issue in the Face of Pervasive Monitoring
      date: 2015
           author:
         - ins: A. Rachovitsa
