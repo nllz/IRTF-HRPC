@@ -942,7 +942,7 @@ The data above was processed using three consecutive strategies: mapping protoco
 ### Identifying qualities of technical concepts that relate to human rights
 
 #### Mapping protocols and standards related to human rights
-By combining data from the three data sources named above, an extensive list of  protocols and standards that potentially enable the internet as a tool for freedom of expression and association was assembly. In order to determine this enabling (or inhibiting) featured we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially more closely related to human rights were compiled.
+By combining data from the three data sources named above, an extensive list of  protocols and standards that potentially enable the internet as a tool for freedom of expression and association was assembly. In order to determine these enabling (or inhibiting) features we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially more closely related to human rights were compiled.
 
 
 #### Extracting concepts from mapped RFCs
