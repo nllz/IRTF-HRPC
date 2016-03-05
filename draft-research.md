@@ -64,6 +64,8 @@ author:
 
 normative:
 
+   RFC6973:
+
 informative:
 
    RFC0226:
@@ -101,7 +103,6 @@ informative:
    RFC6162:
    RFC6365:
    RFC6783:
-   RFC6973:
    RFC7230:
    RFC7231:
    RFC7232:
@@ -1001,9 +1002,9 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
      (      Privacy                )
      (      Security               )   = Right to freedom of expression
      (      Content agnosticism    )
-     (	    Internationalization   )
+     (      Internationalization   )
      (      Censorship resistance  )
-     (	    Open Standards         )
+     (      Open Standards         )
       (     Heterogeneity support )
 	                           
 
@@ -1025,7 +1026,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
 	 (	Accessibility         )
 	(	Internationalization   ) = Right to political participation
-	(	Censorship resistance  )
+	(	Censorship resistance )
 
 					
 	 (  Open standards         )
