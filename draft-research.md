@@ -564,130 +564,131 @@ informative:
      target: http://www.w3.org/International/questions/qa-i18n.en
 
    Adamantia Rachovitsa:
-	title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive 				Monitoring
+     title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
      date: 2015
-          author:
+     author:
         - ins: A. Rachovitsa
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
      seriesinfo: International Journal of Law & Information Technology 
 
    Allan Davidson, John Morris, Robert Courtney:
-	title: Strangers in a strange land
-	date: 2002
-	author:																	- ins: A. Davidson
-	 	- ins: J. Morris
-	 		- ins: R. Courtney
-	target: https://www.cdt.org/files/publications/piais.pdf
-	seriesinfo: Telecommunications Policy Research Conference
+     title: Strangers in a strange land
+     date: 2002
+     author:
+        - ins: A. Davidson
+        - ins: J. Morris
+        - ins: R. Courtney
+     target: https://www.cdt.org/files/publications/piais.pdf
+     seriesinfo: Telecommunications Policy Research Conference
 
    David D. Clark, John Wroclawski, Karen R. Sollins, Robert Braden:
-	title:  Tussle in cyberspace: defining tomorrow’s Internet
-	date: 2005
-	author:
-	  - ins: D.D. Clark
-          - ins: J. Wroclawski
-	  - ins: K.R. Sollins
-	  - ins: R. Braden
+     title:  Tussle in cyberspace: defining tomorrow’s Internet
+     date: 2005
+     author:
+        - ins: D.D. Clark
+        - ins: J. Wroclawski
+        - ins: K.R. Sollins
+        - ins: R. Braden
 	target: https://dl.acm.org/citation.cfm?id=1074049
 	seriesinfo: ACM Digital Library
 
    Dennis Broeders:
-	title: The public core of the Internet
-	date: 2015
-	author:
-	   - ins: D. Broeders
-	target: http://www.wrr.nl/en/publications/publication/article/de-publieke-kern-van-het-internet-1/
+      title: The public core of the Internet
+      date: 2015
+      author:
+         - ins: D. Broeders
+      target: http://www.wrr.nl/en/publications/publication/article/de-publieke-kern-van-het-internet-1/
 	seriesinfo: WRR
 
 Francesca Musiani:
-	title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services: An Issue of Internet Governance
-	date: 2015 
-	author:
-	   - ins: F. Musiani
-	target: http://doi.org/10.16997/wpcc.214 
-	seriesinfo: Westminister Papers in Communication and Culture
+      title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services: An Issue of Internet Governance
+      date: 2015 
+      author:
+        - ins: F. Musiani
+      target: http://doi.org/10.16997/wpcc.214 
+      seriesinfo: Westminister Papers in Communication and Culture
 
 Ian Brown and Chris Marsden:
-	title: Regulating code
-	date: 2013
-	author:
-	   - ins: I. Brown
-	   - ins: C. Marsden
-	target: https://mitpress.mit.edu/books/regulating-code
-	seriesinfo: MIT Press
+      title: Regulating code
+      date: 2013
+      author:
+        - ins: I. Brown
+        - ins: C. Marsden
+      target: https://mitpress.mit.edu/books/regulating-code
+      seriesinfo: MIT Press
 
-Ian Brown, David D. Clark, Dirk Trossen:
-	title: Should specific values be embedded in the Internet Architecture?
-	date: 2010
-	author:
-	   - ins: I. Brown
-	   - ins: D. Clark
-	   - ins: D. Trossen
-	target: http://conferences.sigcomm.org/co-next/2010/Workshops/REARCH/ReArch_papers/10-Brown.pdf
-	seriesinfo: Sigcomm
+Brownetal.:
+      title: Should specific values be embedded in the Internet Architecture?
+      date: 2010
+      author:
+        - ins: I. Brown
+        - ins: D. Clark
+        - ins: D. Trossen
+      target: http://conferences.sigcomm.org/co-next/2010/Workshops/REARCH/ReArch_papers/10-Brown.pdf
+      seriesinfo: Sigcomm
 
 Janet Abbate:
-	title: Inventing the Internet 
-	date: 2000	
-	author:
-	    - ins: J. Abbate
-	target: https://mitpress.mit.edu/books/inventing-internet
-	seriesinfo: MIT Press 
+      title: Inventing the Internet 
+      date: 2000	
+      author:
+        - ins: J. Abbate
+      target: https://mitpress.mit.edu/books/inventing-internet
+      seriesinfo: MIT Press 
 
 Jonathan Zittrain:
-	title: The Future of the Internet - And How to Stop It
-	date: 2008
-	author:
-	   - ins: J. Zittrain
-	target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
-	series info: Yale University Press
+      title: The Future of the Internet - And How to Stop It
+      date: 2008
+      author:
+        - ins: J. Zittrain
+      target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
+      series info: Yale University Press
 
 Laura Denardis:	
-	title: The Internet Design Tension between Surveillance and Security
-	date: 2015
-	author: 
-	   - ins: L. Denardis
-	target: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7116471
-	seriesinfo: IEEE Annals of the History of Computing (volume 37:2)
+      title: The Internet Design Tension between Surveillance and Security
+      date: 2015
+      author: 
+        - ins: L. Denardis
+      target: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7116471
+      seriesinfo: IEEE Annals of the History of Computing (volume 37:2)
 
 Laura Denardis:	
-	title: The Global War for Internet Governance
-	date: 2014
-	author: 
-	   - ins: L. Denardis
-	target: https://www.jstor.org/stable/j.ctt5vkz4n
-	seriesinfo: Yale University Press
+      title: The Global War for Internet Governance
+      date: 2014
+      author: 
+        - ins: L. Denardis
+      target: https://www.jstor.org/stable/j.ctt5vkz4n
+      seriesinfo: Yale University Press
 
 Lawrence Lessig:
-	title: Code: And Other Laws of Cyberspace, Version 2.0. 
-	date: 2006
-	author: 
-	   - ins: L. Lessig
-	target: http://codev2.cc/
-	seriesinfo: New York Basic Books
+      title: Code: And Other Laws of Cyberspace, Version 2.0. 
+      date: 2006
+      author: 
+        - ins: L. Lessig
+      target: http://codev2.cc/
+      seriesinfo: New York Basic Books
 
 Milton Mueller:
-	title: Networks and States
-	date: 2010 
-	author:
-	   - ins: M. Mueller
-	target: https://mitpress.mit.edu/books/networks-and-states
-	seriesinfo: MIT Press
+      title: Networks and States
+      date: 2010 
+      author:
+        - ins: M. Mueller
+      target: https://mitpress.mit.edu/books/networks-and-states
+      seriesinfo: MIT Press
 
 Ronald Bless and Carsten Orwat
-	title: Values and Networks
-	date: 2015 
-	author:
-	   - ins: R. Bless
-	   - ins: C. Orwat
+      title: Values and Networks
+      date: 2015 
+      author:
+        - ins: R. Bless
+        - ins: C. Orwat
 
 Yoachim Benkler:
-	title: The wealth of Networks: How social production transforms markets and freedom
-	date: 2006
-	author:
-	   - ins: Y. Benkler
-	target: http://www.benkler.org/Benkler_Wealth_Of_Networks.pdf
-	series info: New Haven and London: Yale University Press
+      title: The wealth of Networks: How social production transforms markets and freedom
+      date: 2006
+      author:
+        - ins: Y. Benkler
+      target: http://www.benkler.org/Benkler_Wealth_Of_Networks.pdf
+      series info: New Haven and London: Yale University Press
 
 --- abstract
 
@@ -711,23 +712,7 @@ Introduction
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. In a similar vein, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
-=======
 Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
->>>>>>> fcd98f5db299298c0215600b70f3905a90480689
-=======
-Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
->>>>>>> debfd05c5f512a78cf1894c9c1c95396c3106d8b
-=======
-Open, secure and reliable connectivity is to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
->>>>>>> debfd05c5f512a78cf1894c9c1c95396c3106d8b
-=======
-Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internets role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}}{{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internets architectural design equally strongly contributes to the strenghtening of the Internet as a human rights enabeling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
->>>>>>> 68ceeccdf908b4904d883728fd58b1260064fb2a
 
 While the Internet was designed with freedom and openness of communications as core values, as the scale and the commercialization of the Internet has grown greatly, topics like access, rights and connectivity are forced to compete with other values. Therefore, decisive and human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabeling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internets architecture.
 
