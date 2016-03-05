@@ -617,7 +617,7 @@ Ian Brown and Chris Marsden:
       target: https://mitpress.mit.edu/books/regulating-code
       seriesinfo: MIT Press
 
-Brownetal.:
+Ian Brown, David D. Clark, Dirk Trossen:
       title: Should specific values be embedded in the Internet Architecture?
       date: 2010
       author:
