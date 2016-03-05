@@ -66,22 +66,32 @@ normative:
 
 informative:
 
+   RFC0226:
+   RFC0760:
    RFC0791:
+   RFC0793:
    RFC0894:
    RFC1035:
+   RFC1122:
    RFC1631:
    RFC1958:
    RFC1984:
+   RFC2012:
    RFC2026:
+   RFC2277:
    RFC2460:
+   RFC2606:
    RFC2639:
+   RFC2775:
    RFC2919:
    RFC3552:
    RFC3365:
    RFC3724:
+   RFC4084:
    RFC4101:
    RFC4303:
    RFC4906:
+   RFC4949:
    RFC5890:
    RFC5891:
    RFC5892:
@@ -103,7 +113,26 @@ informative:
    RFC7574:
    RFC7626:
 
+   UNGA2013:
+     title: UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)
+     date: 2013
+     author:
+        - org: United Nations General Assembly
+     target: http://daccess-ods.un.org/TMP/1133732.05065727.html
 
+   HRC2012:
+     title: UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)
+     date: 2011
+     author:
+        - org: United Nations Human Rights Council
+     target: http://daccess-ods.un.org/TMP/554342.120885849.html
+
+   NETmundial:
+     title: NETmundial Multistakeholder Statement
+     date: 2014
+     author:
+        - org: NETmundial
+     target: http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf
 
    UDHR:
      title: The Universal Declaration of Human Rights
@@ -112,23 +141,12 @@ informative:
         - org: United Nations General Assembly
      target: http://www.un.org/en/documents/udhr/
 
-   HRPC-GLOSSARY:
-     title: Human Rights Protocol Considerations Glossary
-     date: 2015
+   ICESCR:
+     title: International Covenant on Economic, Social and Cultural Rights
+     date: 1966
      author:
-        - ins: N. ten Oever
-        - ins: A. Doria
-        - ins: D. K. Gillmor
-     target: https://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
-
-   ID:
-     title: Proposal for research on human rights protocol considerations
-     date: 2015
-     author:
-        - ins: N. ten Oever
-        - ins: A. Doria
-        - ins: J. Varon
-     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal
+        - org: United Nations General Assembly
+     target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CESCR.aspx
 
    caida:
      title: Analysis of Country-wide Internet Outages Caused by Censorship
@@ -520,15 +538,6 @@ informative:
      title: Debugging
      target: https://en.wikipedia.org/wiki/Debugging
 
-   ID:
-     title: Proposal for research on human rights protocol considerations
-     date: 2015
-     author:
-        - ins: N. ten Oever
-        - ins: A. Doria
-        - ins: J. Varon
-     target: http://tools.ietf.org/html/draft-doria-hrpc-proposal 
-
    FIArch:
      title: Future Internet Design Principles
      date: January 2012
@@ -563,15 +572,15 @@ informative:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
 
-   Adamantia Rachovitsa:
-     title: Engineering “Privacy by Design” in the Internet Protocols: Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
+   Rachovitsa:
+     title: Engineering “Privacy by Design” in the Internet Protocols - Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
      date: 2015
      author:
         - ins: A. Rachovitsa
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdfRBnRYFeVsm.pdf
-     seriesinfo: International Journal of Law & Information Technology 
+     seriesinfo: International Journal of Law and Information Technology 
 
-   Allan Davidson, John Morris, Robert Courtney:
+   Davidsonetal:
      title: Strangers in a strange land
      date: 2002
      author:
@@ -581,34 +590,34 @@ informative:
      target: https://www.cdt.org/files/publications/piais.pdf
      seriesinfo: Telecommunications Policy Research Conference
 
-   David D. Clark, John Wroclawski, Karen R. Sollins, Robert Braden:
-     title:  Tussle in cyberspace: defining tomorrow’s Internet
+   Clarketal:
+     title: Tussle in cyberspace - defining tomorrow’s Internet
      date: 2005
      author:
         - ins: D.D. Clark
         - ins: J. Wroclawski
         - ins: K.R. Sollins
         - ins: R. Braden
-	target: https://dl.acm.org/citation.cfm?id=1074049
-	seriesinfo: ACM Digital Library
+     target: https://dl.acm.org/citation.cfm?id=1074049
+     seriesinfo: ACM Digital Library
 
-   Dennis Broeders:
+   Broeders:
       title: The public core of the Internet
       date: 2015
       author:
          - ins: D. Broeders
       target: http://www.wrr.nl/en/publications/publication/article/de-publieke-kern-van-het-internet-1/
-	seriesinfo: WRR
+      seriesinfo: WRR
 
-Francesca Musiani:
-      title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services: An Issue of Internet Governance
+   Musiani:
+      title:  Giants, Dwarfs and Decentralized Alternatives to Internet-based Services - An Issue of Internet Governance
       date: 2015 
       author:
         - ins: F. Musiani
       target: http://doi.org/10.16997/wpcc.214 
       seriesinfo: Westminister Papers in Communication and Culture
 
-Ian Brown and Chris Marsden:
+   BrownMarsden:
       title: Regulating code
       date: 2013
       author:
@@ -617,7 +626,7 @@ Ian Brown and Chris Marsden:
       target: https://mitpress.mit.edu/books/regulating-code
       seriesinfo: MIT Press
 
-Ian Brown, David D. Clark, Dirk Trossen:
+   Brownetal:
       title: Should specific values be embedded in the Internet Architecture?
       date: 2010
       author:
@@ -627,7 +636,7 @@ Ian Brown, David D. Clark, Dirk Trossen:
       target: http://conferences.sigcomm.org/co-next/2010/Workshops/REARCH/ReArch_papers/10-Brown.pdf
       seriesinfo: Sigcomm
 
-Janet Abbate:
+   Abbate:
       title: Inventing the Internet 
       date: 2000	
       author:
@@ -635,39 +644,39 @@ Janet Abbate:
       target: https://mitpress.mit.edu/books/inventing-internet
       seriesinfo: MIT Press 
 
-Jonathan Zittrain:
+   Zittrain:
       title: The Future of the Internet - And How to Stop It
       date: 2008
       author:
         - ins: J. Zittrain
       target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
-      series info: Yale University Press
+      seriesinfo: Yale University Press
 
-Laura Denardis:	
+   Denardis15:	
       title: The Internet Design Tension between Surveillance and Security
       date: 2015
       author: 
         - ins: L. Denardis
-      target: http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=7116471
-      seriesinfo: IEEE Annals of the History of Computing (volume 37:2)
+      target: http://is.gd/7GAnFy
+      seriesinfo: IEEE Annals of the History of Computing (volume 37-2)
 
-Laura Denardis:	
+   Denardis14:	
       title: The Global War for Internet Governance
       date: 2014
-      author: 
+      author:
         - ins: L. Denardis
       target: https://www.jstor.org/stable/j.ctt5vkz4n
       seriesinfo: Yale University Press
 
-Lawrence Lessig:
-      title: Code: And Other Laws of Cyberspace, Version 2.0. 
+   Lessig:
+      title: Code - And Other Laws of Cyberspace, Version 2.0. 
       date: 2006
       author: 
         - ins: L. Lessig
       target: http://codev2.cc/
       seriesinfo: New York Basic Books
 
-Milton Mueller:
+   Mueller:
       title: Networks and States
       date: 2010 
       author:
@@ -675,24 +684,24 @@ Milton Mueller:
       target: https://mitpress.mit.edu/books/networks-and-states
       seriesinfo: MIT Press
 
-Ronald Bless and Carsten Orwat
+   Bless:
       title: Values and Networks
       date: 2015 
       author:
         - ins: R. Bless
         - ins: C. Orwat
 
-Yoachim Benkler:
-      title: The wealth of Networks: How social production transforms markets and freedom
+   Benkler:
+      title: The wealth of Networks - How social production transforms markets and freedom
       date: 2006
       author:
         - ins: Y. Benkler
-      target: http://www.benkler.org/Benkler_Wealth_Of_Networks.pdf
-      series info: New Haven and London: Yale University Press
+      target: http://is.gd/rxUpTQ
+      seriesinfo: New Haven and London - Yale University Press
 
 --- abstract
 
-The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown}}.
+The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown}}.
 
 This document provides a proposal for a glossary to discuss the relation between human rights and Internet protocols, an overview of the discussion, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
@@ -860,25 +869,25 @@ Strong encryption / cryptography
 Transparent
 : "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
-The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet
+The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
-         ( Reliability    )
-        (  Confidentiality )
-        (  Integrity       ) =  communication and information 
-        (  Authenticity    )                  security (technical)
-         ( Anonymity      )
-
+      (     Reliability          ) 
+     (      Confidentiality       )
+     (      Integrity             )   = communication and information security (technical)
+     (      Authenticity          )
+      (     Anonymity            )
 
 The combination of End-to-End, Interoperability, resilience, reliability and robustness is what makes us connectivity on the Internet
 
+                         ( End-to-End      )   
+     connectivity =     (  Interoperability )
+                       (   Resilience        )  
+                       (   Reliability       )   
+                       (   Robustness        )
+                        (  Autonomy         ) 
+                         ( Simplicity      )  
 
-                         ( End-to-End      )   
-     connectivity =     (  Interoperability )
-                       (   Resilience        )  
-                       (   Reliability       )   
-                       (   Robustness        )
-                        (  Autonomy         ) 
-                         ( Simplicity      )   
+
 
 Research Questions
 ==================
@@ -893,21 +902,21 @@ The Human Rights Protocol Considerations Research Group (hrpc) in the Internet R
 Literature and Discussion Review 
 ================================
 
-Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political,historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis}}. To quote {{Abbate}}: “protocols are politics by other means”. Since the late 1990’s a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidson et al 2002}} {{Musiani 2015}}, others look into the political, legal, commercial or social impact of protocols {{Brown and Marsden 2013}} {{Lessig 2006}}, {{Mueller 2010}}.
+Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political,historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: “protocols are politics by other means”. Since the late 1990’s a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}}.
  
-Commercial and political influences on the management of the Internet’s architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal.}}  {{Denardis}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is enough to say that the IETF consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users’ experience of the Internet {{Denardis 2014}}. The role human rights play in technical engineering is much less clear. 
+Commercial and political influences on the management of the Internet’s architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is enough to say that the IETF consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users’ experience of the Internet {{Denardis14}}. The role human rights play in technical engineering is much less clear. 
  
-Understanding how protocols and standards impact human rights, especially the right to freedom of expression and freedom of association and assembly is crucial. Questions at the intersection of human rights and Internet architecture management are particularly important as Internet Standard Developing Organizations (SDOs) are the arenas for contention over human rights and the role of technical engineers to protect human rights by design {{Brownetal.}} {{Clarketal.}}  {{Denardis 2014}}  {{Lessig 2006}}  {{Rachovitsa 2015}}. 
+Understanding how protocols and standards impact human rights, especially the right to freedom of expression and freedom of association and assembly is crucial. Questions at the intersection of human rights and Internet architecture management are particularly important as Internet Standard Developing Organizations (SDOs) are the arenas for contention over human rights and the role of technical engineers to protect human rights by design {{Brownetal}} {{Clarketal}}  {{Denardis14}}  {{Lessig}}  {{Rachovitsa}}. 
  
-In the academic literature four clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (…) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{2005:2}}.’ They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to blunting the tools of enforcement and last but not least, it is dangerous to make promises that can’t be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals’ human rights. 
+In the academic literature four clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (…) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{Clarketal}}.’ They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to blunting the tools of enforcement and last but not least, it is dangerous to make promises that can’t be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals’ human rights. 
 
-Conversely, Brown et al. {{2010:3}} state that 'some key, universal values – of which the UDHR is the most legitimate expression – should be baked into the architecture at design time.' They argue that design choices have offline consequences, and are able shape the power positions of groups or individuals in society. As such, the individuals making these technical decisions have a moral obligation to take into account the impact of their decisions on society, and by extension human rights. Brown et al recognise that values and the implementation of human rights vary across the globe. Yet they argue that all members of the United Nations have found ‘common agreement on the values proclaimed in the Universal Declaration of Human Rights. In looking for the most legitimate set of global values to embed in the future Internet architecture, the UDHR has the democratic assent of a significant fraction of the planet's population, through their elected representatives.” 
+Conversely, Brown et al. {{Brownetal}} state that 'some key, universal values – of which the UDHR is the most legitimate expression – should be baked into the architecture at design time.' They argue that design choices have offline consequences, and are able shape the power positions of groups or individuals in society. As such, the individuals making these technical decisions have a moral obligation to take into account the impact of their decisions on society, and by extension human rights. Brown et al recognise that values and the implementation of human rights vary across the globe. Yet they argue that all members of the United Nations have found ‘common agreement on the values proclaimed in the Universal Declaration of Human Rights. In looking for the most legitimate set of global values to embed in the future Internet architecture, the UDHR has the democratic assent of a significant fraction of the planet's population, through their elected representatives.” 
 
 The main disagreement between these two positions lies mostly in the question on whether a particular value system should be build into the Internet’s architecture or whether the architecture needs to account for a varying set of values. 
  
-A third position that is similar to that of Brown et al., is taken by {{Broeders 2015}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the tcp/ip ProtocolSuite, numerous standards, the Domain Name System (dns), and routing protocols- a common public good. This is a different approach then that of {{Clark et al.}} and {{Brown et al.}} because he does not suggest that social values should (or should not) be explicitly coded into the Internet’s architecture, but rather that the existing architecture should be seen as an entity of public value. 
+A third position that is similar to that of Brown et al., is taken by {{Broeders}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the tcp/ip ProtocolSuite, numerous standards, the Domain Name System (dns), and routing protocols- a common public good. This is a different approach then that of {{Clarketal}} and {{Brownetal}} because he does not suggest that social values should (or should not) be explicitly coded into the Internet’s architecture, but rather that the existing architecture should be seen as an entity of public value. 
  
-{{Bless}} {{Orwat}} represent a fourth position. They argue that ‘pure technical solutions for enabling, enforcing or restricting rights/values are often costly, insufficient, inflexible, may have unintended consequences or create stakeholders with too much power’. They argue that it is important to search for solutions that ‘create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.’ 
+Bless and Orwat {{Bless}} represents a fourth position. They argue that ‘pure technical solutions for enabling, enforcing or restricting rights/values are often costly, insufficient, inflexible, may have unintended consequences or create stakeholders with too much power’. They argue that it is important to search for solutions that ‘create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.’ 
  
 Our position is that hard-coding human rights into protocols in addition to being undesirable is also impossible, because each situation is dependent on its context. It is however important to make consicious design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol. 
 
@@ -998,11 +1007,11 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
       (     Heterogeneity support )
 	                           
 
-     (	   Anonymity           )
-    (	   Privacy              )   = Right to non-discrimination
-    (	    Pseudonymity         )
-    (	    Content agnosticism  )
-     (         Accessibility       )
+     (	   Anonymity          )
+    (	   Privacy             )   = Right to non-discrimination
+    (	   Pseudonymity        )
+    (	   Content agnosticism )
+     (     Accessibility      )
 
 			
     ( 	    Content Agnosticism  )
@@ -1027,7 +1036,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
 	 (	Connectivity         )
 	(	Decentralization      )
-	(     Censorship resistance ) = Right to freedom of assembly 
+	(     Censorship resistance   ) = Right to freedom of assembly 
 	(  	Pseudonymity          )                   and association
 	(	Anonymity             )
 	 ( 	Security             )
@@ -1295,70 +1304,133 @@ Note that the guidance provided in this section does not recommend specific prac
 
 ##### Connectivity
 Does your protocol honor the end-to-end principle? 
-	Impacts → Right to freedom of expression 
-		→ Right to freedom of assembly and association	
 
+Impacts: 
+
+- Right to freedom of expression 
+- Right to freedom of assembly and association	
 
 ##### Privacy
 Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
-	Impacts → Right to freedom of expression 
-		→ Right to non discrimination
-		→ Right to be presumed innocent
+
+Impacts:
+
+- Right to freedom of expression 
+- Right to non-discrimination
+- Right to be presumed innocent
 
 ##### Content agnosticism 
 If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
-	Impacts → Right to freedom of expression 
-		→ Right to non discrimination 
-		→ Right to equal protection 
-		→ Right to be presumed innocent
+
+Impacts: 
+
+- Right to freedom of expression 
+- Right to non-discrimination 
+- Right to equal protection 
+		- Right to be presumed innocent
 
 
 ##### Security 
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
-	Impacts	→ Right to freedom of expression 
-		→ Right to freedom of assembly and association
-		→ Right to non discrimination & Right to be presumed innocent)
+
+Impacts:
+
+- Right to freedom of expression 
+- Right to freedom of assembly and association
+- Right to non discrimination & Right to be presumed innocent)
 
 ##### Internationalization
 Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
-	Impacts	→ Right to freedom of expression 
-		→ Right to political participation 
-		→ Right to participate in cultural life, arts and science
-		→ Right to political participation
+
+Impacts:
+
+- Right to freedom of expression 
+- Right to political participation 
+- Right to participate in cultural life, arts and science
+- Right to political participation
 
 ##### Censorship resistance 
 Does your protocol make censorship easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
-	Impacts (Right to freedom of expression & Right to political participation & Right to participate in cultural life, arts and science & Right to freedom of assembly and association)
+
+Impacts:
+
+- Right to freedom of expression 
+- Right to political participation 
+- Right to participate in cultural life, arts and science 
+- Right to freedom of assembly and association
 	
-##### Open Standards (Right to freedom of expression & Right to participate in cultural life, arts and science)
+##### Open Standards 
 Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any proprietary code needed for the implementation, running or further development of your protocol?
 
-##### Heterogeneity Support (Right to freedom of expression)
+Impacts:
+
+- Right to freedom of expression 
+- Right to participate in cultural life, arts and science 
+
+##### Heterogeneity Support
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
 
-##### Anonymity (Right to non-discrimination & Right to freedom of assembly and association & Right to security & Right to be presumed innocent)
+Impacts: 
+
+- Right to freedom of expression 
+
+##### Anonymity
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
 
-##### Pseudonymity (Right to non-discrimination & Right to freedom of assembly and association)
+Impacts:
+
+- Right to non-discrimination
+- Right to political participation 
+- Right to freedom of assembly and association
+- Right to security
+- Right to be presumed innocent
+
+##### Pseudonymity
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
 
-##### Accessibility (Right to non-discrimination & Right to education & Right to political participation)
+Impacts:
+
+- Right to non-discrimination
+- Right to freedom of assembly and association
+
+##### Accessibility
 When websites, web technologies, or web tools are badly designed, they can create barriers that exclude people from using the Web. Is your protocol designed to provide an enabling environment for people with disabilities? It might be relevant to look at the W3C Web Accessibility Initiative for examples and guidance.Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
 
-##### Localization (Right to participate in cultural life, arts and science)
+Impacts:
+
+- Right to non-discrimination
+- Right to freedom of assembly and association
+- Right to education
+- Right to political participation
+
+##### Localization 
 Does your protocol live up to standards of internationalization? Have you considered localizing your protocol for relevant audiences?
 
-##### Decentralization (Right to freedom of assembly and association & Right to be presumed innocent)
+Impacts:
+
+- Right to non-discrimination 
+- Right to participate in cultural life, arts and science
+
+##### Decentralization
 Does your protocol contribute to more centralized points of control?
 Can your protocol be implemented without one single point of control?
 If applicable, can your protocol be deployed in a federated manner?
 What is the potential for discrimination against users of your protocol?
 How can use of your protocol be used to implicate users?
 
-##### Reliability (Right to security)
+Impacts:
+
+- Right to freedom of assembly and association
+- Right to be presumed innocent
+
+##### Reliability 
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Is your protocol able to maintain dependability and performance in the face of unanticipated changes or circumstances?
 
-##### Confidentiality (Right to security)
+Impacts:
+
+- Right to security
+
+##### Confidentiality
 (cf {{RFC6973}} ) Which information related to identifiers or data is exposed to each other protocol entity (i.e., recipients, intermediaries, and enablers)?  Are there ways for protocol implementers to choose to limit the information shared with each entity?  Are there operational controls available to limit the information shared with each entity?
 
 What controls or consent mechanisms does the protocol define or require before personal data or identifiers are shared or exposed via the protocol?  If no such mechanisms or controls are specified, is it expected that control and consent will be handled outside of the protocol?
@@ -1369,21 +1441,43 @@ Does the protocol provide ways for initiators to limit which information is shar
 
 Does the protocol provide ways for initiators to express individuals' preferences to recipients or intermediaries with regard to the collection, use, or disclosure of their personal data?
 
-##### Integrity (Right to security)
+Impacts:
+
+- Right to security
+
+##### Integrity 
 Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
 
-##### Authenticity (Right to security)
+Impacts:
+
+- Right to security
+
+##### Authenticity
 Do you have enough measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec and other Standard Security Best Practices?
 
-##### Acceptability (Right to education)
-Do your protocols adhere to the principle of non-discrimination? Do your protocols adhere to the principle of content agnosticism?
+Impacts:
 
-##### Availability (Right to education)
+- Right to security
+
+##### Acceptability
+Do your protocols adhere to the principle of non-discrimination? Do your protocols adhere to the principle of content agnosticism?
+Impacts:
+
+- Right to education
+
+##### Availability
 Do your protocols use or depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
 
-##### Adaptability (Right to education)
+Impacts:
+
+- Right to education
+
+##### Adaptability
 Could your protocol stifle or hinder permissionless innovation in any way? See 'Connectivity' above
 
+Impacts:
+
+- Right to education
 
 Acknowledgements
 ================
