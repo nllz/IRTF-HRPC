@@ -1,4 +1,4 @@
-DRAFTS = glossary methodology
+DRAFTS = glossary methodology research
 OUTPUTS = $(foreach draft,$(DRAFTS),draft-${draft}.html draft-${draft}.xml draft-${draft}.txt)
 STAGING = staging.xml
 
