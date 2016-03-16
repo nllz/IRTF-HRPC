@@ -138,7 +138,7 @@ informative:
 
 --- abstract
 
-This document presents and overview snapshot of the HRPC project to map engineering concepts at the protocol level that may be related to human rights, with a focus on the promotion and protection of the freedom of expression and of association.
+This document presents an overview snapshot of the HRPC project to map engineering concepts at the protocol level that may be related to human rights, with a focus on the promotion and protection of the freedom of expression and of association.
 
 It is provides a framework while reporting on the study including: theoretical background, results and basic considerations. It will reference the detailed work being done in the Methodology draft as well as the work being done in the case studies. It also folds in discussions from the research literature. The documents, {{HRPC-Method}} and this document, form an interrelated set that may later be combined into a single document.
 
@@ -150,8 +150,9 @@ Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admin
 Background
 ============
 
-The recognition that human rights have a role in Internet policies has become part of the general discourse. Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC). And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly. The NETmundial outcome document {{Netmundial}} affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
-Nevertheless, a direct relation between Internet Standards and human rights is still something to be explored and more clearly demonstrated.
+The recognition that human rights have a role in Internet policies has become part of the general discourse. Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which led to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC). More recently, it led to the resolution "The right to privacy in the digital age" at the UN General Assembly. The NETmundial outcome document {{Netmundial}} affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
+
+Althought the application of human rights to Internet policy consideratons seem to have a strong basis, a direct relation between Internet architecture and standards and human rights requires exploration and description.  As the full range of the indivisble human rights would be challenging as a starting place for discussions, the research group has decided to start with the the rights of freedom of expression and association.
 
 Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols. Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values. But as the scale and the commercialization of the Internet has grown, the influence of such world-views had to compete with other values, such as ease of development and cost. The purpose of this research is to discover and document the consideration involved in taking human rights into account when creating protocols.
 
@@ -165,39 +166,19 @@ In RFC 1984 {{RFC1984}}, the Internet Architecture Board (IAB) and the Internet 
 
 Besides privacy, it should be possible to highlight other aspects of connectivity embedded in standards and protocols that can have human rights considerations. This report focuses on freedom of expression and the right to association and assembly online.
 
-Terminology
-============
+# Terminology
 
 The terminology being used in this project is defined in {{HRPC-Method}}.
-The process of developing this glossary has involved taking the variety of glossaries defined by the IETF in its various RFCs, comparing the terms both among the various RFC definitions and with terminology for the Human Rights field to produced a synthesized set of definitions after discussion in the research group. The gola is to produce a set of terms, using existing terminology, that can assist clear discussion between engineering experts and human rights experts.
 
-The glossary also includes the definitions of some complex terms, such as security and connectivity that relied of several of the other defined terms. The Methodology goes on to include basic Human rights in terms of the engineering terminology. For example from {{HRPC-Method}}
+The process of developing a glossary has involved taking the variety of glossaries defined by the IETF in its various RFCs, comparing the terms both among the various RFC definitions and with terminology used in human rights field to produced a synthesized set of definitions after discussion in the research group. The goal is to produce a set of terms, using existing terminology, that can assist clear discussion among engineering experts and human rights experts.
 
-+ Right to Freedom of Expression builds on definitions of 
- - Connectivity
- - Privacy
- - Security
- - Content Agnosticism
- - Internationalization
- - Censorship resistance
- - Open Standards
- - Heterogeneity support
-
-Link between protocols and human rights
-=====================================
+The glossary also includes the definitions of some complex terms, such as security and connectivity that relied of several of the other defined terms. 
 
 
-+ Right to Freedom of Assembly and Association builds on the definitions of:
- - Connectivity
- - Decentralization
- - Censorship Resistance
- - Pseudonimity 
- - Anonymity
- - Security
 
+# Theory
 
 ## Universal Declaration of Human Rights (UDHR) and Internet Architecture
-
 
 This project is focused on two rights defined in the UDHR {{UDHR}}, Article 19 on Freedom of Expression and Article 20 of Freedom of Association.
 
@@ -209,7 +190,28 @@ Article 20
    :  2 No one may be compelled to belong to an association.
 
 
-# Theory
+## Link between protocols and human rights
+
+The Methodology includes defintions of the basic human rights in terms of the engineering terminology. For example from {{HRPC-Method}}
+
++ Right to Freedom of Expression builds on definitions of 
+ - Connectivity
+ - Privacy
+ - Security
+ - Content Agnosticism
+ - Internationalization
+ - Censorship resistance
+ - Open Standards
+ - Heterogeneity support
+ 
+ + Right to Association builds on the defintions of
+ - Connectivity
+ - Decentralization
+ - Censorship resistance
+ - Pseudonymity
+ - Anonymity
+ 
+ Detailed defintions of the included terms can be found in {{HRPC-Method}}
 
 When looking at protocols the considerations can apply from several perspectives.
 
@@ -240,11 +242,7 @@ The description ended with the following: "this episode is a reminder that some 
 
 ## Theory discussed in the research group
 
-+ Value laden engineering as discussed in {{Cath}}
-
-+ "Values and Networks" work by Roland Bless
-
-+ Principles from NetMundial Multistakeholder Statement
+### Principles from NetMundial Multistakeholder Statement
 
 NETmundial was a bell-weather event held in October 2014, where stakeholders from academia, business, civil society, governments came together to discuss Principles and a Roadmap for Internet governance.  While the Principles did not address protocol development specifically, they did include a principle on Open Standards:
 
@@ -268,6 +266,24 @@ state and non-state actors should be conducted in accordance with international
 human rights law. More dialogue is needed on this topic at the international level
 using forums like the Human Rights Council and IGF aiming to develop a common
 understanding on all the related aspects." {{Netmundial}}
+
+
+### Value laden engineering as discussed in {{Cath}}
+
+This work discusses four basic architectural principles that are encoded in Internet Technology:
+
+- Openness, Permissionless Innovation, and Content Agnosticism
+- Interoperability
+- Redundancy and the Distributed Architecture
+- The End-to-End Principle
+
+The work by Cath explores the relationship of the architectural principles to the human right of freedom of expression and asks whether the IETF has an repsonsiblity toward human rights.  The fact that there is documentaiton of normative principles among the body of work of the IETF, is an indication that ethics are within the purview of IETF consideraitons.  The research question asked by the work is: "Should the right to freedom of speech be instantiated in the protocols and standards of the Internet Engineering Task Force?"
+
+Becasue of the threat of fragmentation by countries that do not accept human rights, the answer given to the research question is negative: support for human rights should not be intitiated in the Interent in order to avoid fragmentation.  This means that care must be taken to turning into protocols political targets.  On the other hand the principles that are encoded in the Interent do make it better at enabling rights.  This encourages work such as the work done for privacy consideration in the IETF and the research done of protocol consideration for the freedoms of expression and association.
+
+### "Values and Networks" work by Roland Bless
+
+TBD
 
 # Methodology
 
@@ -332,6 +348,9 @@ This records some of the question opened in discussion of the group that open br
 
 
 Once the first take at considerations are defined, what are the next steps for creating something that can be usable for protocol designers and implementers in considering freedom of expression and and freedom of association in their work.
+
+The current revision of {{HRPC-Method}} includes a first set of possible considerations.
+
 Next Steps
 ============
 
