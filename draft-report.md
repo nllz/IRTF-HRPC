@@ -1,14 +1,14 @@
 ---
 title: Human Rights Protocol Considerations - Research Report
-docname: draft-doria-hrpc-report
+docname: draft-doria-hrpc-report-01
 date: 2016-01-05
 category: info
 
 ipr: trust200902
- 
-area: IRTF
-workgroup: Human Rights Protocol Consideration RG
+area: General
+workgroup: Human Rights Protocol Considerations Research Group
 keyword: Internet-Draft
+
 stand_alone: yes
 pi:
   rfcedstyle: yes
@@ -113,9 +113,9 @@ informative:
     date: 2013
    
   Netmundial:
-	title: NETmundial Multistakeholder Statement
-	date: 2014
-	target:  http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf
+    title: NETmundial Multistakeholder Statement
+    date: 2014
+    target:  http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf
 
   Post:
     title: Internet Infrastructure and IP Censorship
