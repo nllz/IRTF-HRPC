@@ -106,11 +106,17 @@ informative:
        - ins: A. Doria
     target: https://www.apc.org/en/pubs/human-rights-and-internet-protocols-comparing-proc
    
-  Denardis:
+  Denardis09:
     title: Protocol Politics
     author:
       - ins: L. Denardis
     date: 2013
+
+  Denardis14:
+    title: The Global War for Internet Goverance
+    author: 
+    - ins: L. Denardis
+    date: 2014
    
   Netmundial:
     title: NETmundial Multistakeholder Statement
@@ -132,9 +138,9 @@ informative:
 
 --- abstract
 
-This document gathers the theoretical background for the HRPC as well as anoverview snapshot of the project to map engineering concepts at the protocol level that may be related to promotion and protection of the freedom of expression and association.
+This document presents and overview snapshot of the HRPC project to map engineering concepts at the protocol level that may be related to human rights, with a focus on the promotion and protection of the freedom of expression and of association.
 
-It is intended to provide the framework for reporting on the study, results and basic considerations. It will reference the detailed work being done in the Methodology draft as well as the work being done in the case studies. It also folds in discussions from the research literature. The documents, {{HRPC-Method}} and this document, form an interrelated set that may later be combined into a single document.
+It is provides a framework while reporting on the study including: theoretical background, results and basic considerations. It will reference the detailed work being done in the Methodology draft as well as the work being done in the case studies. It also folds in discussions from the research literature. The documents, {{HRPC-Method}} and this document, form an interrelated set that may later be combined into a single document.
 
 Discussion on this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/admindb/hrpc
 
@@ -146,11 +152,17 @@ Background
 
 The recognition that human rights have a role in Internet policies has become part of the general discourse. Several reports from former United Nations (UN) Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression, Frank La Rue, have made such relation explicit, which lead to the approval of the landmark resolution "on the promotion, protection and enjoyment of human rights on the Internet" at the UN Human Rights Council (HRC). And, more recently, to the resolution "The right to privacy in the digital age" at the UN General Assembly. The NETmundial outcome document {{Netmundial}} affirms that human rights, as reflected in the Universal Declaration of Human Rights {{UDHR}}, should underpin Internet governance principles.
 Nevertheless, a direct relation between Internet Standards and human rights is still something to be explored and more clearly demonstrated.
+
 Concerns for freedom of expression and association were a strong part of the world-view of the community involved in developing the first Internet protocols. Apparently, by intention or by coincidence, the Internet was designed with freedom and openness of communications as core values. But as the scale and the commercialization of the Internet has grown, the influence of such world-views had to compete with other values, such as ease of development and cost. The purpose of this research is to discover and document the consideration involved in taking human rights into account when creating protocols.
+
 In a manner similar to the work done for RFC 6973 {{RFC6973}} on Privacy Consideration Guidelines, the premise of this research is that some standards and protocols can solidify, enable or threaten user rights.
+
 As stated in RFC 1958 {{RFC1958}}, the Internet aims to be the global network of networks that provides unfettered connectivity to all users at all times and for any content. Open, secure and reliable connectivity is essential for rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. Therefore, considering connectivity as the ultimate objective of the Internet, this makes a clear case that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network.
+
 An essential part of maintaining the Internet as a tool for communication and connectivity is security. Indeed, "development of security mechanisms is seen as a key factor in the future growth of the Internet as a motor for international commerce and communication" RFC 1984 [RFC1984] and according to the Danvers Doctrine RFC 3365 {{RFC3365}}, there is an overwhelming consensus in the IETF that the best security should be used and standardized.
+
 In RFC 1984 {{RFC1984}}, the Internet Architecture Board (IAB) and the Internet Engineering Steering Group (IESG), the bodies which oversee architecture and standards for the Internet, expressed: "concern by the need for increased protection of international commercial transactions on the Internet, and by the need to offer all Internet users an adequate degree of privacy." Indeed, the IETF has been doing a significant job in this area {{RFC6973}} {{RFC7258}}, considering privacy concerns as a subset of security concerns. {{RFC6973}}
+
 Besides privacy, it should be possible to highlight other aspects of connectivity embedded in standards and protocols that can have human rights considerations. This report focuses on freedom of expression and the right to association and assembly online.
 
 Terminology
@@ -158,6 +170,7 @@ Terminology
 
 The terminology being used in this project is defined in {{HRPC-Method}}.
 The process of developing this glossary has involved taking the variety of glossaries defined by the IETF in its various RFCs, comparing the terms both among the various RFC definitions and with terminology for the Human Rights field to produced a synthesized set of definitions after discussion in the research group. The gola is to produce a set of terms, using existing terminology, that can assist clear discussion between engineering experts and human rights experts.
+
 The glossary also includes the definitions of some complex terms, such as security and connectivity that relied of several of the other defined terms. The Methodology goes on to include basic Human rights in terms of the engineering terminology. For example from {{HRPC-Method}}
 
 + Right to Freedom of Expression builds on definitions of 
@@ -172,9 +185,7 @@ The glossary also includes the definitions of some complex terms, such as securi
 
 Link between protocols and human rights
 =====================================
-+ Include discussion of value laden engineering as discussed in {{Cath}}
-+ Include discussion of  \"Values and Networks\" work by Roland Bless
-+ Include discussion of principles from NetMundial Multistakeholder Statement
+
 
 + Right to Freedom of Assembly and Association builds on the definitions of:
  - Connectivity
@@ -210,6 +221,7 @@ When looking at protocols the considerations can apply from several perspectives
 
 Several key pieces of researched are discussed in this section.  Readers/reviewers who have other recommended sources for relevant research that should be discussed in this document are invited to submit such for inclusion.
 
+
 ## Related research
 
 This section will look at the theoretical work that has been done in the are of rights and protocols.  It will include the academic research on the topic including the work of David Post {{Post}}, Jonathan Zittrain {{Zittrain}} and Laura Denardis, among others.
@@ -236,7 +248,7 @@ The description ended with the following: "this episode is a reminder that some 
 
 NETmundial was a bell-weather event held in October 2014, where stakeholders from academia, business, civil society, governments came together to discuss Principles and a Roadmap for Internet governance.  While the Principles did not address protocol development specifically, they did include a principle on Open Standards:
 
-"Internet governance should promote open standards, informed by individual and
+"Internet governance should promote open standards, informed by individual and 
 collective expertise and decisions made by rough consensus, that allow for a global,
 interoperable, resilient, stable, decentralized, secure, and interconnected network,
 available to all. Standards must be consistent with human rights and allow
