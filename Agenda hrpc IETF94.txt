@@ -1,0 +1,33 @@
+Human Rights Protocols Considerations (hrpc) proposed research group sessions at #IETF94 
+15:20 - 16:50 JST, November 3 2015
+
+- Beginning (5 min)
+	Agenda Bashing
+	Jabber scribe, note takers
+	Notewell
+	Introduction
+- Status of proposed research group (5 min)
+- Context of research (10 Min)
+- Discussion of 'A Case Study of Coding Rights' (20 min)
+https://mailarchive.ietf.org/arch/attach/hrpc/pdfbyB1Dp.pdf
+- Discussion of Methodology draft  (30 min)
+https://tools.ietf.org/html/draft-varon-hrpc-methodology-01
+		Cases
+			IP
+			DNS
+			HTTP
+			P2P
+			XMPP
+			VPN
+		Definitions
+		Way forward
+- Discussion of Glossary draft	(10 min)
+https://tools.ietf.org/html/draft-dkg-hrpc-glossary-01
+- Discussion of report draft (10 min)
+https://tools.ietf.org/html/draft-doria-hrpc-report-00
+- Discussion of 'The Internet is for End Users' draft (20 min)
+https://tools.ietf.org/html/draft-nottingham-for-the-users-02
+- Open discussion other drafts, papers, ideas (20 min)
+- Charter update status (if necessary - 5 Min)
+- Next steps (5 min)
+- AOB

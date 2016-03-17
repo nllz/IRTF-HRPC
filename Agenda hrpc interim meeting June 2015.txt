@@ -1,0 +1,23 @@
+Agenda for hrpc interim meeting at the opengov hub [0] on June 9 2015
+
+
+10:00 - 10:15  Coffee & introductions
+10:15 - 11:15. Update on the existing work
+			charter (Niels)
+			ID (Joana & Avri)
+			film (Joana)
+			analysis of RFCs (MC)
+			paper(s) (Corinne)
+			other work (Joe? & others?)
+11:15 - 11:30 Methodology & documentation
+11:30 - 11:45 Preferences and priorities
+11:45 - 12:30 Sprint 1
+12:30 - 13:15 Lunch
+13:15 - 14:00 Continuation Sprint 1
+14:00 - 14:30 Short report back / possible change of teams & topics
+14:30 - 16:30 Sprint 2
+16:30 - 17:00 Short report back
+17:00 - 17:30 Next steps
+
+
+[0] http://opengovhub.org/

@@ -1,0 +1,20 @@
+hrpc Session 
+    Wednesday, Afternoon Session III 1740-1940
+    Room Name: Berlin/Brussels size: 100
+    ---------------------------------------------
+
+- Beginning (5 min)
+	Agenda Bashing 
+	Jabber scribe, note takers
+	Notewell
+	Introduction
+- Status of proposed research group (5 min)
+- Context of research (10 Min)
+- Discussion of draft draft-varon-hrpc-methodology-00 (20 min)
+	 http://www.ietf.org/id/draft-varon-hrpc-methodology-00.txt
+- Discussion of draft draft-dkg-hrpc-glossary-00 (30 min)
+	 http://www.ietf.org/id/draft-dkg-hrpc-glossary-00.txt
+- Research on "Values and Networks" (20 min)
+- Open discussion other drafts, papers, ideas (20 min)
+- Charter update status &c. (if necessary - 5 Min)
+- Next steps (5 min)

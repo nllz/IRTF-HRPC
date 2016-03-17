@@ -1,0 +1,20 @@
+hrpc proposed research group meeting Dallas, TX March 27, 2015
+
+Time: Friday, March 27, 2015 11:50 - 13:20
+Location: Royal
+Etherpad for notes: https://hrpc.etherpad.mozilla.org/ietf92notes
+
+Agenda:
+
+Welcome, Agenda Bashing, Minutes taker, Jabber scribe [Chair]
+Notewell
+Introduction
+
+
+Status of proposed research group [Joana Varon & Niels ten Oever]
+	Context of research
+	Discussion of draft draft-doria-hrpc-proposal-01 https://tools.ietf.org/html/draft-doria-hrpc-proposal
+	Next steps
+
+Other relevant research, issues or topics
+Discussion
