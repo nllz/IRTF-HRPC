@@ -677,7 +677,7 @@ informative:
      author:
        - ins: E. Babbie
      target: http://www.cengage.com/search/productOverview.do;jsessionid=22B05DCBFE571D8FC4913AF890948024?N=0&Ntk=P_Isbn13&Ntt=9780495812241&Ntx=mode%2Bmatchallpartial
-     series info: Belmont CA Cengage
+     seriesinfo: Belmont CA Cengage
 
     Denzin: 
       title: Handbook of Qualitative Research
@@ -685,7 +685,7 @@ informative:
       author:
           -ins: N.K. Denzin and Y.S. Lincoln
        target: http://www.amazon.com/SAGE-Handbook-Qualitative-Research-Handbooks/dp/1412974178
-       series: Thousand Oaks CA Sage
+       seriesinfo: Thousand Oaks CA Sage
     
 
     Clifford:
@@ -694,7 +694,7 @@ informative:
     	author:
     	   -ins: G. Clifford
     	target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
-    	series: Chicago University of Chicago Press.
+    	seriesinfo: Chicago University of Chicago Press.
 
     Jabri:
         title: Discourses on Violence: conflict analysis reconsidered
@@ -702,7 +702,7 @@ informative:
         author:
             -ins: V. Jabri
         target: https://books.google.nl/books/about/Discourses_on_Violence.html?id=CizoAAAAIAAJ&redir_esc=y
-        series: Manchester University Press 
+        seriesinfo: Manchester University Press 
         
     King:
         title: Power, Social Violence and Civil Wars
@@ -710,7 +710,7 @@ informative:
         author:
              -ins: C. King
         target:https://books.google.nl/books?id=x8EJHUhAk7kC&pg=PA115&lpg=PA115&dq=king+Power,+Social+Violence+and+Civil+Wars&source=bl&ots=C0qcUxIEti&sig=kc1wcj2nw71PcuA49vv0vXnewiU&hl=en&sa=X&ved=0ahUKEwjc3aS00MfLAhWCQJoKHbwsALMQ6AEIKTAC#v=onepage&q=king%20Power%2C%20Social%20Violence%20and%20Civil%20Wars&f=false
-        series: Washington D.C. United States Institute of Peace Press
+        seriesinfo: Washington D.C. United States Institute of Peace Press
         
     
      Schröder:
@@ -719,7 +719,7 @@ informative:
         author:
             -ins: I.W. Schröder & B. Schmidt
         target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
-        series: London and New York Routledge
+        seriesinfo: London and New York Routledge
         
      Richie:
         title: Qualitative Research Practice: A Guide for Social Science Students and Researchers
@@ -727,7 +727,7 @@ informative:
         author:
             -ins: J. Richie & J. Lewis
         target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106 
-        series: London Sage
+        seriesinfo: London Sage
 
      Doty:
         title:  Automated text analysis of Requests for Comment (RFCs) 
