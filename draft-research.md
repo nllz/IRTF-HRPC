@@ -1397,7 +1397,9 @@ Impacts:
 - Right to political participation
 
 ##### Censorship resistance 
-Does your protocol make censorship easier by exposing specific identifiers that could be sensitive for filtering. When filtering is happening, does your protocol help make it apparent or transparent?
+Does this protocol introduce new identifiers that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens?
+
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of HTTP in this particular scenario [...].
 
 Impacts:
 
