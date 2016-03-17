@@ -1454,11 +1454,17 @@ Impacts:
 Acknowledgements
 ================
 A special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: 
+
 - Joana Varon for helping draft the first iteration of the methodology, previous drafts and the direction of the film Net of Rights and working on the interviews at IETF92 in Dallas.
+
 - Daniel Kahn Gillmor (dkg) for helping with the first iteration of the glossary as well as a lot of technical guidance, support and language suggestions. 
+
 - Claudio Guarnieri for writing the first iterations of the case studies on VPN, HTTP, and Peer to Peer.
+
 - Will Scott for writing the first iterations of the case studies on DNS, IP, XMPP.
+
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary. 
+
 and Stephane Bortzmeyer, Barry Shein, Joe Hall, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text.
 We would also like to thank Molly Sauter, Arturo Filasto, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
