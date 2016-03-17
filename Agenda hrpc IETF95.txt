@@ -1,5 +1,7 @@
 Human Rights Protocols Considerations (hrpc) research group sessions at #IETF95 17:40 - 19:40 UTC-3, April 4 2016 -
 
+Human Rights Protocols Considerations (hrpc) research group sessions at #IETF95 17:40 - 19:40 UTC-3, April 4 2016 -
+
 - Beginning (5 min)
 	Jabber scribe, note takers
 	Agenda Bashing
@@ -9,10 +11,12 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF95 
 - Context of research (10 mins)
 - Discussion introduction website https://hrpc.io (5 mins)
 - Presentation + Q&A - Ramsey Nasser on ‘kalbe’ [قلب] a programming language entirely written in Arabic and the issues he came across while developing this (15 mins)
-- Presentation + Q&A - Geoffrey Bowker on Values in Design and difficulties surrounding engineering for social values  (15 mins)
+- Presentation + Q&A - Geoffrey Bowker on Values in Design and difficulties surrounding engineering for social values (15 mins)
 - Presentation + Q&A - Nick Doty on privacy adoption in Internet and web standard setting, and how this could be applied in developing human rights guidelines (15 mins)
-- Discussion of research draf, including firrst version of considerations (30 minutes)
-$LINK
+- Discussion of research draft, including first version of considerations (15 mins)
+	https://tools.ietf.org/html/draft-tenoever-hrpc-research
+- Discussion of report draft (15 mins)
+	https://tools.ietf.org/html/draft-doria-hrpc-report
 - Open discussion other drafts, papers, ideas (20 min)
 - Next steps (5 min)
 - AOB
