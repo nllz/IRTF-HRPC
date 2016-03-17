@@ -33,35 +33,6 @@ author:
        organization: Oxford Internet Institute
        email: corinne.cath@oii.ox.ac.uk
 
--
-       ins: D. K. Gillmor
-       name: Daniel Kahn Gillmor
-       organization: ACLU
-       email: dkg@fifthhorseman.net
-
--
-       ins: C. Guarnieri
-       name: Claudio Guarnieri
-       organization: Centre for Internet and Human Rights
-       email: nex@nex.sx
--
-       ins: W. Scott
-       name: Will Scott
-       organization: University of Washington
-       email: wrs@cs.washington.edu
-
--
-       ins: J. Varon 
-       name: Joana Varon 
-       organization: Coding Rights
-       email: joana@codingrights.org
-
-- 
-       ins: A. Doria
-       name: Avri Doria
-       organization: APC
-       email: avri@apc.org
-
 normative:
 
    RFC6973:
@@ -1292,7 +1263,7 @@ Having established how human rights relate to standards and protocols, a common 
 ### Human rights threats
 The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocence, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
 
-This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
+This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations {{RFC3552}}. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
 
 Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and universal. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular. This is by no means an attempt to cherry picks rights, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
 
@@ -1328,7 +1299,7 @@ Impacts:
 - Right to freedom of expression 
 - Right to non-discrimination 
 - Right to equal protection 
-		- Right to be presumed innocent
+- Right to be presumed innocent
 
 
 ##### Security 
@@ -1482,14 +1453,18 @@ Impacts:
 
 Acknowledgements
 ================
-Special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: Stephane Bortzmeyer and Tim Sammut.
+A special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: 
+- Joana Varon for helping draft the first iteration of the methodology, previous drafts and the direction of the film Net of Rights and working on the interviews at IETF92 in Dallas.
+- Daniel Kahn Gillmor (dkg) for helping with the first iteration of the glossary as well as a lot of technical guidance, support and language suggestions. 
+- Claudio Guarnieri for writing the first iterations of the case studies on VPN, HTTP, and Peer to Peer.
+- Will Scott for writing the first iterations of the case studies on DNS, IP, XMPP.
+- Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary. 
+and Stephane Bortzmeyer, Barry Shein, Joe Hall, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text.
 We would also like to thank Molly Sauter, Arturo Filasto, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
-
 Security Considerations
-===================
+=======================
 As this document concerns a research document, there are no security considerations.
-
 
 IANA Considerations
 ===================
