@@ -671,6 +671,73 @@ informative:
       target: http://is.gd/rxUpTQ
       seriesinfo: New Haven and London - Yale University Press
 
+   Babbie:
+     title: The Basics of Social Research 
+     date: 2010
+     author:
+       - ins: E. Babbie
+     target: http://www.cengage.com/search/productOverview.do;jsessionid=22B05DCBFE571D8FC4913AF890948024?N=0&Ntk=P_Isbn13&Ntt=9780495812241&Ntx=mode%2Bmatchallpartial
+     series info: Belmont CA Cengage
+
+    Denzin: 
+      title: Handbook of Qualitative Research
+      date: 2000
+      author:
+          -ins: N.K. Denzin and Y.S. Lincoln
+       target: http://www.amazon.com/SAGE-Handbook-Qualitative-Research-Handbooks/dp/1412974178
+       series: Thousand Oaks CA Sage
+    
+
+    Clifford:
+    	title: Kinship in Bali
+    	date: 1975
+    	author:
+    	   -ins: G. Clifford
+    	target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
+    	series: Chicago University of Chicago Press.
+
+    Jabri:
+        title: Discourses on Violence: conflict analysis reconsidered
+        date: 1996
+        author:
+            -ins: V. Jabri
+        target: https://books.google.nl/books/about/Discourses_on_Violence.html?id=CizoAAAAIAAJ&redir_esc=y
+        series: Manchester University Press 
+        
+    King:
+        title: Power, Social Violence and Civil Wars
+        date: 2007
+        author:
+             -ins: C. King
+        target:https://books.google.nl/books?id=x8EJHUhAk7kC&pg=PA115&lpg=PA115&dq=king+Power,+Social+Violence+and+Civil+Wars&source=bl&ots=C0qcUxIEti&sig=kc1wcj2nw71PcuA49vv0vXnewiU&hl=en&sa=X&ved=0ahUKEwjc3aS00MfLAhWCQJoKHbwsALMQ6AEIKTAC#v=onepage&q=king%20Power%2C%20Social%20Violence%20and%20Civil%20Wars&f=false
+        series: Washington D.C. United States Institute of Peace Press
+        
+    
+     Schröder:
+        title: Introduction: Violent Imaginaries and Violent Practice  
+        date: 2001
+        author:
+            -ins: I.W. Schröder & B. Schmidt
+        target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
+        series: London and New York Routledge
+        
+     Richie:
+        title: Qualitative Research Practice: A Guide for Social Science Students and Researchers
+        date: 2003
+        author:
+            -ins: J. Richie & J. Lewis
+        target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106 
+        series: London Sage
+
+     Doty:
+        title:  Automated text analysis of Requests for Comment (RFCs) 
+        date: 2014
+        author:
+            -ins: N. Doty
+        target: https://github.com/npdoty/rfc-analysis
+     
+     	
+
 --- abstract
 
 The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown}}.
@@ -899,6 +966,14 @@ Methodology
 ===========
 
 Mapping the relation between human rights and protocols and architectures is a new research challenge, which requires a good amount of interdisciplinary and cross organizational cooperation to develop a consistent methodology.  While the authors of this first draft are involved in  both human rights advocacy and research on Internet technologies - we believe that bringing this work into the IRTF facilitates and  improves this work by bringing human rights experts together with the  community of researchers and developers of Internet standards and technologies.
+
+The methodological choices made in this document are based on the political science-based method of discourse analysis and ethnographic research methods. This work departs from the assumption that language reflects the understanding of concepts. Or as {{Jabri}} holds, policy documents are 'social relations represented in texts where language is used to construct meaning and representation'. This process happens in ‘the social space of society’ {{Schmidt&Schröder}} and manifests itself in institutions and organizations {{King}} which were exposed using the ethnographic methods of semi-structured interviews and participant observation.
+
+The discourse analysis was operationalized using qualitative and quantitative means. The first step was for the research group to read RFCs and other official IETF documents. The second step was the use of a pyhon-based analyzer, using the tool {{Big Bang}} to scan for the concepts that were identified as important architetural principels (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie&Lewis}}. But this tool is unable to understand ‘latent meaning’ {{Denzin}}.  In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the ‘thick meaning’ {{Geertz 1975}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis. 
+The ethnographic methods of the data collection process allowed the research group to acquire the data necessary to ‘provide a holistic understanding of research participants' views and actions’ {{Denzin&Lincoln}} that highlighted ongoing issues and case studies where protocols impact human rights. The interview participants were selected through purposive sampling {{Babbie}}, as the research group was interested in getting a wide variety of opinions on the role of human rights in guiding protocol development. This sampling method also ensured that the  individuals with extensive experience of working at the IETF in various roles were targeted. The interviewees included individuals in leadership positions (Working Group (WG) chairs, Area Directors (ADs)), ‘regular participants’, individuals working for specific entities (corporate, civil society, political, academic) and represented various backgrounds, nationalities and genders. 
+
+
+
 
 Data Sources
 ------------
