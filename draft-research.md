@@ -31,7 +31,7 @@ author:
        ins: C.J.N. Cath
        name: Corinne Cath
        organization: Oxford Internet Institute
-       email: corinne.cath@oii.ox.ac.uk
+       email: corinnecath@gmail.com
 
 normative:
 
