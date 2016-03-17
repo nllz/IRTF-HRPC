@@ -679,7 +679,7 @@ informative:
      target: http://www.cengage.com/search/productOverview.do;jsessionid=22B05DCBFE571D8FC4913AF890948024?N=0&Ntk=P_Isbn13&Ntt=9780495812241&Ntx=mode%2Bmatchallpartial
      series info: Belmont CA Cengage
 
-    Denzin: 
+   Denzin: 
       title: Handbook of Qualitative Research
       date: 2000
       author:
@@ -688,56 +688,54 @@ informative:
        series: Thousand Oaks CA Sage
     
 
-    Clifford:
-    	title: Kinship in Bali
-    	date: 1975
-    	author:
-    	   -ins: G. Clifford
-    	target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
-    	series: Chicago University of Chicago Press.
+   Clifford:
+      title: Kinship in Bali
+      date: 1975
+      author:
+        -ins: G. Clifford
+      target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
+      series: Chicago University of Chicago Press.
 
-    Jabri:
-        title: Discourses on Violence: conflict analysis reconsidered
-        date: 1996
-        author:
-            -ins: V. Jabri
-        target: https://books.google.nl/books/about/Discourses_on_Violence.html?id=CizoAAAAIAAJ&redir_esc=y
-        series: Manchester University Press 
+   Jabri:
+      title: Discourses on Violence: conflict analysis reconsidered
+      date: 1996
+      author:
+        -ins: V. Jabri
+      target: https://books.google.nl/books/about/Discourses_on_Violence.html?id=CizoAAAAIAAJ&redir_esc=y
+      series: Manchester University Press 
         
-    King:
-        title: Power, Social Violence and Civil Wars
-        date: 2007
-        author:
-             -ins: C. King
-        target:https://books.google.nl/books?id=x8EJHUhAk7kC&pg=PA115&lpg=PA115&dq=king+Power,+Social+Violence+and+Civil+Wars&source=bl&ots=C0qcUxIEti&sig=kc1wcj2nw71PcuA49vv0vXnewiU&hl=en&sa=X&ved=0ahUKEwjc3aS00MfLAhWCQJoKHbwsALMQ6AEIKTAC#v=onepage&q=king%20Power%2C%20Social%20Violence%20and%20Civil%20Wars&f=false
-        series: Washington D.C. United States Institute of Peace Press
+   King:
+      title: Power, Social Violence and Civil Wars
+      date: 2007
+      author:
+        -ins: C. King
+      target:https://books.google.nl/books?id=x8EJHUhAk7kC&pg=PA115&lpg=PA115&dq=king+Power,+Social+Violence+and+Civil+Wars&source=bl&ots=C0qcUxIEti&sig=kc1wcj2nw71PcuA49vv0vXnewiU&hl=en&sa=X&ved=0ahUKEwjc3aS00MfLAhWCQJoKHbwsALMQ6AEIKTAC#v=onepage&q=king%20Power%2C%20Social%20Violence%20and%20Civil%20Wars&f=false
+      series: Washington D.C. United States Institute of Peace Press
         
     
-     Schröder:
-        title: Introduction: Violent Imaginaries and Violent Practice  
-        date: 2001
-        author:
-            -ins: I.W. Schröder & B. Schmidt
-        target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
-        series: London and New York Routledge
+   Schröder:
+      title: Introduction: Violent Imaginaries and Violent Practice
+      date: 2001
+      author:
+        -ins: I.W. Schröder & B. Schmidt
+      target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
+      series: London and New York Routledge
         
-     Richie:
-        title: Qualitative Research Practice: A Guide for Social Science Students and Researchers
-        date: 2003
-        author:
-            -ins: J. Richie & J. Lewis
-        target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106 
-        series: London Sage
+   Richie:
+      title: Qualitative Research Practice: A Guide for Social Science Students and Researchers
+      date: 2003
+      author:
+        -ins: J. Richie & J. Lewis
+      target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106 
+      series: London Sage
 
-     Doty:
-        title:  Automated text analysis of Requests for Comment (RFCs) 
-        date: 2014
-        author:
-            -ins: N. Doty
-        target: https://github.com/npdoty/rfc-analysis
+   Doty:
+      title: Automated text analysis of Requests for Comment (RFCs) 
+      date: 2014
+      author:
+        -ins: N. Doty
+      target: https://github.com/npdoty/rfc-analysis
      
-     	
-
 --- abstract
 
 The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strenghtened as a human rights enabeling environment {{Brown}}.
