@@ -1,5 +1,5 @@
 ---
-title: HRPC - Report
+title: Human Rights Protocol Considerations - Research Report
 docname: draft-doria-hrpc-report-01
 date: 2016-03-21
 category: info
@@ -180,15 +180,15 @@ The IETF has determined that an essential part of maintaining the Internet as a 
 
 In RFC 1984 {{RFC1984}}, the Internet Architecture Board (IAB) and the Internet Engineering Steering Group (IESG), the bodies which oversee architecture and standards for the Internet, expressed: "concern by the need for increased protection of international commercial transactions on the Internet, and by the need to offer all Internet users an adequate degree of privacy." Indeed, the IETF has been doing a significant job in this area {{RFC6973}} and {{RFC7258}}, considering privacy concerns as a subset of security concerns. {{RFC6973}}
 
-Besides privacy, the premise of this work is that it is possible to establish human rights consideratons for other aspects of connectivity embedded in standards and protocols. It also intended to build on the the idea that protecting all rights is as much a security concern in the Internet as is the protection of privacy. The research also intends to document other bases for consideration of human rights as core values in Internet architectures and protocols.  This first phase of research focuses on freedom of expression and the right to association and assembly online.  In doing so, given the interrelationship of all rights, other rights may be touched upon in the discussion, but the primary emphasis will be to discover where there are considerations that relate specicially to the Freedoms of Expression and of Association and Assembly.  In the first phase there will also be a reliance on arguments based on securuty considerations, though the effect of other values will be considered.
+Besides privacy, the premise of this work is that it is possible to establish human rights consideratons for other aspects of connectivity embedded in standards and protocols. It also intended to build on the the idea that protecting all rights is as much a security concern in the Internet as is the protection of privacy. The research also intends to document other bases for consideration of human rights as core values in Internet architectures and protocols.  This first phase of reasearch focuses on freedom of expression and the right to association and assembly online.  In doing so, given the interrelationship of all rights, other rights may be touched upon in the discussion, but the primary emphasis will be to discover where there are considerations that relate specicially to the Freedoms of Expression and of Association and Assembly.  In the first phase there will also be a reliance on arguments based on securuty considerations, though the effect of other values will be considered.
 
 # Terminology
 
 The terminology being used in this project was defined in {{HRPC-GLOSSARY}} and is applied in {{HRPC-Research}}.
 
-The process of developing a glossary has involved taking the variety of glossaries defined by the IETF in its various RFCs, comparing the terms both among the various RFC definitions and with terminology used in human rights field to produced a synthesized set of definitions after discussion in the research group. The goal is to produce a set of terms, using existing terminology, that can assist clear discussion among engineering experts and human rights experts.  At this point in the research this vocabulary has been provisionally accepted in the research group.
+The process of developing a glossary has involved taking the variety of glossaries defined by the IETF in its various RFCs, comparing the terms both among the various RFC definitions and with terminology used in human rights field to produced a synthesized set of definitions after discussion in the research group. The goal is to produce a set of terms, using existing terminology, that can assist clear discussion among engineering experts and human rights experts.  At this point in the research this vocabulary has been provisionally accepted in the rresearch group.
 
-The glossary also includes the definitions of some complex terms, such as Freedom of Expression ans Freedom of Association, that relies of several of the other defined terms. Some of these complex defintions are still under discussion.
+The glossary also includes the definitions of some complex terms, such as security and connectivity that relies of several of the other defined terms. Some of these complext defintions are still under discussion.
 
 # Theory
 
@@ -205,7 +205,7 @@ Article 20
 
 ## Link between protocols and human rights
 
-{{HRPC-Research}} includes defintions of the basic human rights in terms of the engineering terminology. For example:
+The Methodology includes defintions of the basic human rights in terms of the engineering terminology. For example from {{HRPC-Method}}
 
 + Right to Freedom of Expression builds on definitions of 
  - Connectivity
@@ -224,7 +224,7 @@ Article 20
  - Pseudonymity
  - Anonymity
  
- Detailed defintions of the included terms can be found in {{HRPC-Research}}
+ Detailed defintions of the included terms can be found in {{HRPC-Method}}
 
 When looking at protocols the considerations can apply from several perspectives.
 
@@ -232,20 +232,15 @@ When looking at protocols the considerations can apply from several perspectives
 -   The protocol's direct effect  on human rights in combination with other protocols
 -   The effect of specific protocol elements, separately or in combination with other protocol elements on human rights on the Internet
 -   The ability to determine when various effects are occurring, i.e. transparency
--   The effect of deployment or non deployment of protocol features.  While this may be may seem beyond the protocol itself, often the design of protocol, its difficulty in implementation and the degree to which it contains required elements, poison pills or other protocol artifacts that either encourage or discourse implementation or deployment, can be significant in the overall human rights affect of a protocol.
+-   The effect of deployment or non deployment.  While this may be may seem beyond the protocol itself, often the design of protocol, its difficulty in implementation and the degree to which it contains required elements, poison pills or other protocol artifacts that either encourage or discourse implementation or deployment can be significant in the overall human rights affect of a protocol.
 
-Several key pieces of research are discussed in this section.  Readers/reviewers of the draft who have other recommended sources for relevant research that should be discussed in this document are invited to submit such for inclusion.
+Several key pieces of researched are discussed in this section.  Readers/reviewers who have other recommended sources for relevant research that should be discussed in this document are invited to submit such for inclusion.
 
 
 ## Related research
 
 This section will look at the theoretical work that has been done in the are of rights and protocols.  It will include the academic research on the topic including the work of David Post {{Post}}, Jonathan Zittrain {{Zittrain}} and Laura Denardis, among others.
 
-### David Clark
-
-TBD
-
-### Laura Denardis
 
 In Protocol Politics {{Denardis09}} Denardis discusses "how values enter, or should enter, Internet protocol design." She describes the "IETF process itself self-consciously expresses certain values." The discussion goes on to define some examples of of IETF values, including:
 
@@ -258,15 +253,7 @@ To demonstrate the point, she presents a case study where engineers at the IETF 
 
 The description ended with the following: "this episode is a reminder that some of the most critical Internet governance questions concern individual civil liberties and that design decisions can present an opportunity to advance libertarian and democratic values or to contain these values.  IPv6 privacy design implications and value-conscious design choices reinforce the notion that Internet architecture and virtual resources cannot be understood only through the lens of technical efficiency, scarcity, or economic competition but as an embodiment of human values with social and cultural effects."
 
-### David Post
-
-TBD
-
-### Jonathan Zittrain
-
-TBD
-
-## Related theoretical discussions from the research group
+## Theory discussed in the research group
 
 ### Principles from NetMundial Multistakeholder Statement
 
@@ -293,11 +280,6 @@ human rights law. More dialogue is needed on this topic at the international lev
 using forums like the Human Rights Council and IGF aiming to develop a common
 understanding on all the related aspects." {{Netmundial}}
 
-### "Values and Networks" work by Roland Bless
-
-TBD
-
-
 ### Value laden engineering as discussed in A case study of codeing rights by Cath
 
 This work discusses four basic architectural principles that are encoded in Internet Technology:
@@ -311,16 +293,19 @@ The work by Cath explores the relationship of the architectural principles to th
 
 Despite this ethical basis in Internet potocols, the threat of fragmentation by countries that do not accept human rights suggests that and an answer to the normative research question is negative: support for human rights should not be intitiated in the Internet in order to avoid fragmentation.  This can be understood to mean that care must be taken to turning into protocols political targets.  On the other hand the principles that are encoded in the Internet do make it better at enabling rights.  This encourages work such as the work done for privacy consideration in the IETF and the research done of protocol consideration for the freedoms of expression and association, as long as these are just considerations and not requirements.  The paper cautions against using protocols to achieve advocacy goals.
 
+### "Values and Networks" work by Roland Bless
 
-## Internet protocols as a public good
+TBD
 
-While not specifically part of the research, a background theoretical discussion in Internet rights involves discussion of whether the Internet is a public good. The economic definitons of a public good includes reuirements that it be non-excludable in that it is a good that cannot be withheld from any individual, and that it be non-rivalous, meaning that its use by some does not preclude its use by others.
+## Protocols as either a public good or a common pool resource.
 
-Strictily speaking, the Internet does not meet these requirements.  The fact that much of the world still does not have Internet access shows that it is excludable as many are still excluded. Addtionally the fact that service providers charge for Internet access point to access not being a public good.  In terms of being rivalry, bandwidth and scalability isues give another indication that the Internet does not qualify as a public good, one person's usage can interefer with another poerson's.  Some have argued that the Internet is a Common Pool Resource (CPR), as defined by Ostrom {{Ostrum}}.  This claim has yet to be substantiated as the Interent needs to satisfy various design principles to qualify as a CPR. Discussion of this issue is beyond the scope of this draft. (Though it could be included it people felt it would be useful content for references sake.)
+While not specifically part of the research, a background theoretical discussion in Internet rights discussion involves discussion of whether the Internet is a public good. Becasue of the requirement that a public good be something that is non-excludable in that that is a good that cannot be withheld from any individual.  To be a public good the Internet must also be non rivalous meaning that is use by some does not preclude its use by others.
 
-While the discussion on whether the Internet itself, as an infrastrucure, is either a public good or CPR, is open and contentions, it may be simpler to establish whether the set of core protocols is a public good.  This is relavant to the research in this group dealing with protocol considerations.  It can be argued that for Internet protocols to be non-excludable, it has to be possible for everyone to use them. Through the use of the core Internet protocols, anyone can create a network that connects into the Internet.  While some protocols are encumbered by property rights and licensing requirements, a core set of protocols that are not encumberd, and thus freely avaialble to all, can be described as non-excludable. It seems clear that one party's proper use of the core set of Internet protocols does not have the effect of precluding use by others, so protocl can also be called non-revalrous. One question relevant to the question of Internet protocols as a common good will involve determining whether a sufficient set of the core protocols essential to the Internet, are unencumbered.
+Strictily speaking, the Internet does not meet these requirements.  The fact that much of the world still does not have Internet access shows that it is still excludable.  Addtionally there is question of whether in terms of bandwidth and scalability, it is non-rivalrous.  Many have argued that is is a Common Pool Resource (CPR), as defined by Ostrom {{Ostrum}}.  This claim has yet to be substantiated as the interent needs to satisfy various design principles as a CPR. Discussion of this issue is beyond the scope of this draft.
 
-Establising that Internet protocols are a public good adds an economic consideration to the discussions and provides possible avenues for basing human rights protocol consideraton on more that just security, allowing other bases for discussion of the trades off in considerations when designing or deploying a protocol. The question still needs to further exploriation to determine whether Internet protocols as a public good has any effect on the protocol considerations to be researched in this group.
+While the discussion on whether the Internet itself, as an infrastrucure, is either a public good or CPR, is open and contentions, it may be simpler to establish whether the set of core protocols is a public good.  This is relavant to the research in this group dealing with protocol considerations.  It can be argued that for Internet protocols to be non-excludable, it has to be possible to all to use them.  Through the use of the core Internet protocols, anyone can create a network that connects into the Internet.  while some protocols are encumbered by propoerty rights, a core set of protocols that are not encumberd, and thus freely avaialble to all, can be described. It can also be easily argued that one party's use of the core set of Internet protocols does not have the effect of precluding use by others. 
+
+Establising that Internet protocols are a public good adds an economic consideration to the discussions and provides possible avenues for basing human rights consideraton on more that just security allowing other bases for discussion of the trades off in considerations when designing or deploying a protocol. The question still needs to be explored as to whether Internet protocols as a public good has any effect on the protocols considerations to be defined in this group.
 
 # Methodology
 
@@ -342,11 +327,11 @@ The purpose is to map the potential relations between human rights and protocols
 
 ## Case Studies
 
-The case studies and their initial status is being documented in {{HRPC-Research}}.
+The case studies and their initial status is being documented in draft-varon-hrpc-methodology {{HRPC-Research}}.
 
-In each of the case studies, the behavior of the protocols is analysed for its positive and negative effects.  In some case these effects are due to the design of the protocol itself, in others they may be due to existing or absent features.  In protocls with optional features, whether a feature is implemented or deployed, can be a factor in the protocol's impact on human rights.
+In each of the case studies, the behavior of the protocols is analysed for its positive and negative effects.  In some case these effects are due to the design of the protocol itself, in others they are due to existing or absent features.
 
-The analysis on the following protocols are currently being discussed on HRPC list and being described in {{HRPC-Research}}.  
+Initial versions of the analysis on the following protocols are currently being discussed on HRPC list and being describe in the methodology document.  
 
 Additionally, discussion of the rights themselves and the evidence of these rights being implicits in the IETF design principles {{Clark}} and in some of the existing architecture and protocols, Cath and Liddicoat suggest other considerations.
 
@@ -367,17 +352,17 @@ Covering issues concerning the network visibility of source and destination, add
 ## Methodology Issues
 
 The current methodology is based on discourse analysis and ethnographic
-research methods.  This method is explain in {{HRPC-Research}}. While this is a good basis for initial discovery, further analysis on whether the hypotheses formed as a result of the case studies can be abstracted to general statements. Study is also needed to determine whether evidence for similar effects can be shown as a result of applying the general considerations to a wider set of protocols.  A full anlaysis also requires that some attempt be made to test any candidate considerations for other effects and for unintended consequences.
+research methods.  This method is explain in {{HRPC-Research}} While this is a good basis for intitial discussions, questions can be asked as to whether the hypothesis formed as a result of this anaylisis can be abstracted and whether evidence for simalr effects can be shown to be of wider application.  A full anlaysis also requires that some attempt be made to test any candidate considerations for other effects and for unintended consequemces.
 
 # Possible areas for protocol considerations
 
-Using the definitions derived, for the the rights of freedom of expression and freedom of association and assembly, and the protocol attributes discovered in the use cases, a set of questions can be developed that enable a protocol designer to consider whether their design has any positive or negative effects on these human rights. The questions should also give guidance in terms of protocol atributes that can aid in creating procols that enable as opposed to hinder human rights.
+Using the definitions derived, for the the rights of freedom of expression and freedom of assembly, and the protocol attributes discovered in the use cases, a set of questions can be developed that enable a protocol designer to consider whether their design has any positive or negative effects on these human rights. The questions shold also give guidance in terms of protocol atributes that can aid in creating procols that enable as opposed to hinder human rights.
 
-{{HRPC-Research}} includes a first take on such questions.  This work is still at an early stage.  There have been recommendations in the list that the form of the questions be based on best practices for questionnaire development.  The questions will need to be tested as outlined above in the section on methodolog issues, to determine whether they are fit for general purpose in an engineering context.
+{{HRPC-Research}} includes a first take on such questions.  This work is still at an early stage.  There have been recommendations in the list that the form of the questions be based on best practices for questionnaire development.  the questions will need to be tested to determine whether they are fit for purpose.
 
 ## Emergent Issues/Questions
 
-This section records some of the question opened in discussion of the group that open broader questions that those centered on protocol considerations.  Often the question involved the manner in which the protocols are deployed or used.
+This records some of the question opened in discussion of the group that open broader questions that those centered on protocol considerations.  Often the question involved the manner in which the protocols are deployed or used.
 
 
 + Can DDOS be considered freedom of expression when used for advocacy?
@@ -387,26 +372,19 @@ This section records some of the question opened in discussion of the group that
 
 #  Next Steps
 
-As discussed in the methodofy section, a set of test needs to be undertaken to determine whether the protocol attributes that have been isolated from the various use cases can be abstracted and tested in situation other thn in the test cases.
+As discussed in the methodofy section, a set of test needs to be undertake to determine whether the protocl attributes that are isolated from the various use case can be abstracted and ested in situation other thn in the test cases.
 
 Once this is done, a set of considerations can be drafted and discussed by the research group.
 
 The current revision of {{HRPC-Research}} includes a first set of possible considerations.
 
-Once the first take at considerations are defined, what are the next steps for creating something that can be usable for protocol designers and implementers in considering freedom of expression and and freedom of association in their work
-
-## Next steps for this document
-
-- Continue to add discussions of various threortical work related to the issue
-- Continue to report on the state of research.
-
-The document will next be udated after IETF 95.
+Once the first take at considerations are defined, what are the next steps for creating something that can be usable for protocol designers and implementers in considering freedom of expression and and freedom of association in their work.
 
 
 Acknowledgements
 ===============
 
-A section that include the many contributors of text as as commenters and those who are assisitng this project in existing.  Some of the names: Niels ten Oever, Joana Varon, Catherine Cath, Daniel Kahn Gillmor, ... more to be added ... and the all the particpants in the research.
+A section that include the many contributors of text as as commenters and those who are assisitng this project in existing.
 
 IANA considerations
 ===================
