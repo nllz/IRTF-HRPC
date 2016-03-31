@@ -1044,12 +1044,6 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
     ( 	    Content Agnosticism  )
     (	    Security             ) 	= Right to equal protection
 
-    
-     (	      Anonymity       ) 
-    (	      Privacy          )   = Right to be presumed innocent
-     (	      Security        )	
-
-
 	 (	Accessibility         )
 	(	Internationalization   ) = Right to political participation
 	(	Censorship resistance )
@@ -1316,7 +1310,7 @@ Having established how human rights relate to standards and protocols, a common 
 
 
 ### Human rights threats
-The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to be presumed innocence, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+The human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority.  A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
 
 This sections details several ‘common’ threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which bases itself on security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations {{RFC3552}}. Others suggested are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
 
@@ -1344,7 +1338,6 @@ Impacts:
 
 - Right to freedom of expression 
 - Right to non-discrimination
-- Right to be presumed innocent
 
 ##### Content agnosticism 
 If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
@@ -1354,7 +1347,6 @@ Impacts:
 - Right to freedom of expression 
 - Right to non-discrimination 
 - Right to equal protection 
-- Right to be presumed innocent
 
 
 ##### Security 
@@ -1364,7 +1356,7 @@ Impacts:
 
 - Right to freedom of expression 
 - Right to freedom of assembly and association
-- Right to non discrimination & Right to be presumed innocent)
+- Right to non discrimination
 
 ##### Internationalization
 Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
@@ -1412,7 +1404,6 @@ Impacts:
 - Right to political participation 
 - Right to freedom of assembly and association
 - Right to security
-- Right to be presumed innocent
 
 ##### Pseudonymity
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
@@ -1450,7 +1441,6 @@ How can use of your protocol be used to implicate users?
 Impacts:
 
 - Right to freedom of assembly and association
-- Right to be presumed innocent
 
 ##### Reliability 
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Is your protocol able to maintain dependability and performance in the face of unanticipated changes or circumstances?
