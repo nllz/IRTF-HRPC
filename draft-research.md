@@ -958,7 +958,7 @@ The ethnographic methods of the data collection process allowed the research gro
 Data Sources
 ------------
 
-In order to map the potential relation between human rights and protocols, so far, the HRPC research group gathered data from three specific sources: 
+In order to map the potential relation between human rights and protocols, so far, the HRPC research group gathered data from three specific sources:
 
 ### Discourse analysis of RFCs
 To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis possible impact on human rights is being undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions is underway to expose core architectural principles, language and deliberations on human rights of those affected by the network.
@@ -989,7 +989,7 @@ Mapping the protocols and standards that are related to human rights and creatin
 While interviewing experts and mapping RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms a list of terms was created. The definitions are based on definitions from other IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature. 
 
 #### Translating Human Rights Concept into Technical Definitions
-The previous steps allowed for the clarification of relation between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precise technical concepts that make up these protocols and standards in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that combined create the enabling environment for human rights.
+The previous steps allowed for the clarification of relation between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precies technical concepts that make up these protocols and standards in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that combined create the enabling environment for human rights.
 
 #### List technical terms that combined create enabling environment for human rights 
 On the basis of the prior steps the following  list of  technical terms that combined create the enabling environment for human rights, such a freedom of expression and freedom of association was drafted.
