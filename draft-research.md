@@ -67,6 +67,7 @@ informative:
    RFC7258:
    RFC7574:
    RFC7626:
+   RFC7725:
 
    UNGA2013:
      title: UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)
