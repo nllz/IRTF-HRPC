@@ -1134,7 +1134,7 @@ However, HTTP is also a fundamentally insecure protocol, that doesn't natively p
 
 The lack of sensitivity and understanding of the critical importance of securing web traffic incentivized malicious and offensive actors to develop, deploy and utilize at large interception systems and later active injection attacks, in order to swipe large amounts of data, compromise Internet-enabled devices. The commercial availability of systems and tools to perform these types of attacks also led to a number of human rights abuses that have been discovered and reported over the years. 
 
-Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer.
+Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer. That being said, the IETF and especially the General Area Review Team (Gen-ART), is taking steady steps to move to HTTPS.
 
 #### Traffic Interception
 
