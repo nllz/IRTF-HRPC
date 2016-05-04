@@ -291,8 +291,23 @@ informative:
      author:
         - ins: K. Collins
      target: http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-company-hacked
+     
+   Cath:
+     title: A Case Study of Coding Rights: Should Freedom of Speech Be Instantiated in the Protocols and Standards Designed by the Internet Engineering Task Force?
+     date: 2015
+     author:
+       - ins: C. Cath
+     target: https://www.ietf.org/mail-archive/web/hrpc/current/pdf36GrmRM84S.pdf
+      
+   CathandFloridi:
+     title: The Design of the Internet’s Architecture by the Internet Engineering Task Force (IETF) and Human Rights
+     date: forthcoming
+     author:
+       - C. Cath
+       - L. Floridi
+     target: n/a
 
-   RSF:
+    RSF:
      title: Syria using 34 Blue Coat Servers to spy on Internet users
      date: 2013
      author:
