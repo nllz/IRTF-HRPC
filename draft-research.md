@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-tenoever-hrpc-research-00
+docname: draft-tenoever-hrpc-research-01
 category: info
 
 ipr: trust200902
@@ -180,7 +180,7 @@ informative:
         - ins: A. Alexandros
      target: https://www.usenix.org/system/files/conference/foci15/foci15-paper-ververis-update.pdf
 
-   draft-hall-censorship-tech-01:
+   hall:
      title: A Survey of Worldwide Censorship Techniques
      date: 2015
      author:
@@ -293,33 +293,32 @@ informative:
      target: http://www.wired.co.uk/news/archive/2015-07/06/hacking-team-spyware-company-hacked
      
    Cath:
-     title: A Case Study of Coding Rights: Should Freedom of Speech Be Instantiated in the Protocols and Standards Designed by the Internet Engineering Task Force?
+     title: "A Case Study of Coding Rights: Should Freedom of Speech Be Instantiated in the Protocols and Standards Designed by the Internet Engineering Task Force?"
      date: 2015
      author:
-       - ins: C. Cath
+        - ins: C. Cath
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdf36GrmRM84S.pdf
       
    CathandFloridi:
      title: The Design of the Internet’s Architecture by the Internet Engineering Task Force (IETF) and Human Rights
      date: forthcoming
      author:
-       - C. Cath
-       - L. Floridi
-     target: n/a
-
-    RSF:
-     title: Syria using 34 Blue Coat Servers to spy on Internet users
-     date: 2013
-     author:
-        - ins: RSF
-     target: https://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,44664.html
+        - ins: C. Cath
+        - ins: L. Floridi
 
    Haagsma:
-     title: Deep dive into QUANTUM INSERT
+     title: "Deep dive into QUANTUM INSERT"
      date: 2015
      author:
         - ins: L. Haagsma
      target: http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
+
+   RSF:
+     title: Syria using 34 Blue Coat Servers to spy on Internet users
+     date: 2013
+     author:
+        - org: RSF
+     target: https://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,44664.html
 
    Schneier:
      title: Attacking Tor - how the NSA targets users' online anonymity
@@ -707,7 +706,6 @@ informative:
       author:
         - ins: C. King
       seriesinfo: Washington D.C. United States Institute of Peace Press
-        
    
    Schroeder:
       title: Introduction - Violent Imaginaries and Violent Practice
@@ -1134,7 +1132,7 @@ The most common mechanism by which the DNS system is abused to limit freedom of 
 
 A notable instance of distortion has occurred in Greece {{ververis}}, where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content, where ISPs prevented clients from resolving the names of domains which they were not instructed to do through the governmental order prompting the blocking systems there.
 
-At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in {{draft-hall-censorship-tech-01}}.
+At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records has also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in {{hall}}.
 
 #### Injection of records
 
