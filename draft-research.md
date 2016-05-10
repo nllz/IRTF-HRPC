@@ -1358,6 +1358,8 @@ Impacts:
 ##### Privacy
 Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
 
+Explanation
+
 Impacts:
 
 - Right to freedom of expression 
