@@ -1057,13 +1057,16 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
 	 (	Accessibility         )
 	(	Internationalization   ) = Right to political participation
-	(	Censorship resistance )
+	(	Censorship resistance  )
+	 (      Connectivity          )
 
 					
 	 (  Open standards         )
 	(   Localization            ) = Right to participate in cultural life, 
 	(   Internationalization    )             arts and science
-	 (  Censorship resistance  )
+	(   Censorship resistance   )
+	 (  Connectivity           )
+
 
 
 	 (	Connectivity         )
@@ -1167,6 +1170,8 @@ Recently similar capabilities of Chinese authorities have been reported as well 
 
 Network injection attacks are also made widely available to state actors around the world through the commercialization of similar, smaller scale equipment that can be easily acquired and deployed at a country-wide level. Companies like FinFisher and HackingTeam are known to have network injection gear within their products portfolio, respectively called FinFly ISP and RCS Network Injector {{Marquis-Boire}}. The technology devised and produced by HackingTeam to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States {{Googlepatent}}. Access to offensive technologies available on the commercial lawful interception market has been largely documented to have lead to human rights abuses and illegitimate surveillance of journalists, human rights defenders, and political activists in many countries around the world. Companies like FinFisher and HackingTeam have been found selling their products to oppressive regimes with little concern for bad human rights records {{Collins}}. While network injection attacks haven't been the subject of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
 
+There is a new version of HTTP, called HTTP/2, which was published as {{RFC7540}} and which aimed to be largely backwards compatible but also offer new option such as data compression of HTTP headers and pipelining of request and multiplexing multiple requests over a single TCP connection. Except for decreasing latency to improve page loading speeds it also facilitates more efficient use of connectivity in low-bandwith environments, which is an enabler for freedom of expression, the right to assembly, right to political participation and the right to participate in cultural life, art and science. 
+{{RFC7540}} does not mandate Transport Layer Security or any other form of encryption, is also does not support opportunistic encryption, so the vulnerabilities listed above for HTTP/1 are also valid for HTTP/2 as defined in {{RFC7540}}.
 
 ### XMPP
 
