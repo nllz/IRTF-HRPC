@@ -867,7 +867,7 @@ Openness
 : Absence of centralised points of control – a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}
 
 Permissionless innovation
-: The freedom and ability of to freely create and deploy new protocols on top of the communications constructs that currently exist
+: The freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist
 
 Privacy
 : The right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}
@@ -1063,8 +1063,8 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 					
 	 (  Open standards         )
 	(   Localization            ) = Right to participate in cultural life, 
-	(   Internationalization    )             arts and science
-	(   Censorship resistance   ) = Right to education
+	(   Internationalization    )             arts and science &
+	(   Censorship resistance   )    Right to education
 	 (  Accessibility          )
 
 
@@ -1343,7 +1343,6 @@ Note that the guidance provided in this section does not recommend specific prac
 ##### Connectivity
 Question(s):
 Does your protocol add application-specific functions to intermediary nodes? Could this functionality also be added to end nodes instead of intermediary nodes?
-
 Explanation:
 The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals’ ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real. 
 
@@ -1432,7 +1431,14 @@ Impacts:
 - Right to security
 
 ##### Pseudonymity
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ?
+Question(s): 
+Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
+
+Explanation: 
+Pseudonymity – the ability to disguise one’s identity online – is an important feature for many end-users, as it allows them different degrees of anonymity and privacy online.
+
+Example: 
+Designing a standard that exposes private information to ??, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
 
 Impacts:
 
@@ -1505,24 +1511,48 @@ Impacts:
 - Right to security
 
 ##### Acceptability
-Do your protocols adhere to the principle of non-discrimination? Do your protocols adhere to the principle of content agnosticism?
-Impacts:
+Question(s):
+Do your protocols follow the principle of non-discrimination? Do your protocols follow the principle of content agnosticism? Does your protocol take into account the needs of special needs (Internet) groups, like the audio-visually impaired?  Also see availability.
+
+Explanation: 
+The Internet is a global medium. Yet, there continue to be issues surrounding acceptability – the extent to which standards are non-discriminatory and relevant to the widest range of end-users – that need to be resolved. Many standards are not suitable for end-users who are not-ablebodied, or otherwise restricted in their ability to access the Internet in its current form (text, data and English heavy). Development of new standards should consider the ways in which they exclude or include non-traditional user communities. 
+
+Example: Designing a feature that could make access to websites for non-able bodied people more difficult. 
 
 - Right to education
+- Right to freedom of expression 
+- Right to freedom of assembly and association
 
 ##### Availability
-Do your protocols use or depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
+Question(s):
+Does your standard favor proprietary specifications over technically equivalent and competing specification(s) by making any incorporated vendor specification "required" or "recommended" {{RFC2026}}? Does your protocols use proprietary code? Does your protocol depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
+
+Explanation: 
+An open, balanced and cooperative approach to developing technological standards is vital to maintaining the Internet open, accessible and secure. This will ensure the standards are open and not subject to restrictive contract terms from the copyright owners. Availability of standards is a prerequisite to the continued growth of the Internet, and crucial to continued technological innovation across the globe. 
+
+Example: 
+See Open Standards
 
 Impacts:
 
 - Right to education
 
 ##### Adaptability
-Could your protocol stifle or hinder permissionless innovation in any way? See 'Connectivity' above
+Question(s):
+Does your protocol impact permissionless innovation? See 'Connectivity' above.
+
+Explanation: 
+Adaptability is closely interrelated permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop. 
+
+Example: 
+WebRTC generates audio and/or video data. In order to ensure that WebRTC can be used in different locations by different parties it is important that standard Javascript APIs are developed to support applications from different voice service providers. Multiple parties will have similar capabilities, in order to ensure that all parties can build upon existing standards these need to be adaptable, and allow for permissionless innovation.
 
 Impacts:
 
 - Right to education
+- Freedom of expression
+- Freedom of assembly and association
+
 
 Acknowledgements
 ================
