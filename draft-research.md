@@ -850,9 +850,6 @@ Localization is the act of tailoring an application for a different language or 
 
 The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
 
-Localization is rarely an IETF matter, and protocols that are merely localized, even if they are serially localized for several locations, are generally considered unsatisfactory for the global Internet.
-
-
 Open standards
 : Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI,
       ISO, IEEE, and ITU-T, develop a variety of protocol and service
