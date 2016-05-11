@@ -1508,7 +1508,7 @@ Question(s):
 Does your protocol uphold the standards of internationalization? Have made any concrete  steps towards localizing your protocol for relevant audiences?
 
 Explanation:
-Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Cqa-i18n}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
+Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Ci18nDef}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
 
 Example:
 The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world’s online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language. 
