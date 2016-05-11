@@ -1413,11 +1413,17 @@ Impacts:
 - Right to participate in cultural life, arts and science 
 
 ##### Heterogeneity Support
+Question(s):
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
 
-Impacts: 
+Explanation:
+The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns, there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design {{FIArch}}.
 
-- Right to freedom of expression 
+Example:
+Heterogeneity is inevitable and needs be supported by design. Multiple types of hardware must be allowed for, e.g. transmission speeds differing by at least 7 orders of magnitude, various computer word lengths, and hosts ranging from memory-starved microprocessors up to massively parallel supercomputers. Multiple types of    application protocol must be allowed for, ranging from the simplest such as remote login up to the most complex such as distributed databases {{RFC1958}}.
+
+Impacts: 
+•	Right to freedom of expression 
 
 ##### Anonymity
 Question(s):
