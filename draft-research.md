@@ -1474,12 +1474,19 @@ Impacts:
 
 - Right to freedom of assembly and association
 
-##### Reliability 
-Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Is your protocol able to maintain dependability and performance in the face of unanticipated changes or circumstances?
+#####Reliability
+
+Question(s):
+Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
+
+Explanation:
+Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems in addition to the reliable delivery the protocol needs to safeguard timeliness. 
+
+Example:
+In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
 
 Impacts:
-
-- Right to security
+•	Right to security
 
 ##### Confidentiality
 (cf {{RFC6973}} ) Which information related to identifiers or data is exposed to each other protocol entity (i.e., recipients, intermediaries, and enablers)?  Are there ways for protocol implementers to choose to limit the information shared with each entity?  Are there operational controls available to limit the information shared with each entity?
