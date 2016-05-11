@@ -1372,8 +1372,16 @@ Impacts:
 - Right to non-discrimination 
 - Right to equal protection 
 
-##### Security 
+##### Security
+
+Question(s):
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
+
+Explanation:
+Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these    properties are required for every application. We can loosely divide security goals into those related to protecting communications (COMMUNICATION SECURITY, also known as COMSEC) and those relating to protecting systems (ADMINISTRATIVE SECURITY or SYSTEM SECURITY). Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{RFC3552}}.
+
+Example: 
+See {{RFC3552}}.
 
 Impacts:
 
