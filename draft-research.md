@@ -813,8 +813,7 @@ Federation
 : The possibility of connecting autonomous systems into a single distributed system.
 
 Heterogenity
-:  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and internet service providers, each with their own separate policy concerns,
-there is a large heterogeneity of administrative domains and pricing structures. As a result, heterogeneity principle is proposed in {{RFC1958}} to be supported by design. {{FIArch}}
+:  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
 
 Integrity
 : Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered
