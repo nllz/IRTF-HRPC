@@ -541,6 +541,13 @@ informative:
      author:
         - org: W3C
      target: http://www.w3.org/International/questions/qa-i18n.en
+   
+   W3CAccessibility:
+     title: Accessibility
+     date: 2015
+     author:
+        - org: W3C
+     target: https://www.w3.org/standards/webdesign/accessibility
 
    Rachovitsa:
      title: Engineering “Privacy by Design” in the Internet Protocols - Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
