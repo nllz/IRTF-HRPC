@@ -1404,13 +1404,22 @@ Impacts:
 - Right to participate in cultural life, arts and science 
 - Right to freedom of assembly and association
 	
-##### Open Standards 
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any proprietary code needed for the implementation, running or further development of your protocol?
+##### Open Standards
+
+Question(s):
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you use proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s) for instance by making any incorporated vendor specification  "required" or "recommended"?  
+
+Explanation:
+The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
+Similarly, {{RFC3935}} does not define open standards but does emphasize the importance of ‘open process’: any interested person can participate in the work, know what is being decided, and make his or her voice heard on the issue. Part of this principle is the IETF’s commitment to making its documents, WG mailing lists, attendance lists, and meeting minutes publicly available on the Internet.
+Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
+
+Example:
+{{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
 
 Impacts:
-
-- Right to freedom of expression 
-- Right to participate in cultural life, arts and science 
+•	Right to freedom of expression 
+•	Right to participate in cultural life, arts and scienc
 
 ##### Heterogeneity Support
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? 
