@@ -1354,9 +1354,15 @@ Impacts:
 - Right to freedom of assembly and association	
 
 ##### Privacy
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
 
-Explanation
+Question(s):
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimization?
+
+Explanation: 
+Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}.
+
+Example:
+See {{RFC6973}}
 
 Impacts:
 
