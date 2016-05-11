@@ -1445,14 +1445,21 @@ Impacts:
 - Right to freedom of assembly and association
 
 ##### Accessibility
-Sometimes in the design of  websites, web technologies, or web tools, barriers are created that exclude people from using the Web. Is your protocol designed to provide an enabling environment for people with disabilities? It might be relevant to look at the W3C Web Accessibility Initiative for examples and guidance. Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
+
+Question(s):
+Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
+
+Explanation:
+The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web. 
+
+Example:
+The HTML protocol as defined in {{RFC1866}} specifically requires that every image must have an alt attribute (with a few exceptions for HTML5) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.  
 
 Impacts:
-
-- Right to non-discrimination
-- Right to freedom of assembly and association
-- Right to education
-- Right to political participation
+•	Right to non-discrimination
+•	Right to freedom of assembly and association
+•	Right to education
+•	Right to political participation
 
 ##### Localization
 
