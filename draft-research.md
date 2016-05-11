@@ -1591,7 +1591,22 @@ Impacts:
 - Right to security
 
 ##### Authenticity
-Do you have enough measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec and other Standard Security Best Practices?
+Question(s):
+Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
+
+Explanation: 
+Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent attacks or unauthorized access and use of data.
+
+Example: 
+Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows: 
+
+Alice wants to communicate with Bob.
+Alice sends data to Bob.
+Niels intercepts the data sent to Bob.
+Niels reads and alters the message to Bob.
+Bob cannot see the data did not come from Alice but from Niels.
+Niels intercepts and alters the communication as it is sent between Alice and Bob.
+Niels knows all.
 
 Impacts:
 
