@@ -1392,18 +1392,23 @@ Impacts:
 - Right to participate in cultural life, arts and science
 - Right to political participation
 
-##### Censorship resistance 
+##### Censorship resistance
+
+Question(s):
 Does this protocol introduce new identifiers that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens?
 
-Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of HTTP in this particular scenario [...].
+Explanation:
+Censorship resistance refers to the methods and measures to prevent Internet censorship.
+
+Example:
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 – which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
 
 Impacts:
+•	Right to freedom of expression 
+•	Right to political participation 
+•	Right to participate in cultural life, arts and science 
+•	Right to freedom of assembly and association
 
-- Right to freedom of expression 
-- Right to political participation 
-- Right to participate in cultural life, arts and science 
-- Right to freedom of assembly and association
-	
 ##### Open Standards 
 Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any proprietary code needed for the implementation, running or further development of your protocol?
 
