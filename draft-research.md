@@ -47,6 +47,8 @@ informative:
    RFC1035:
    RFC1122:
    RFC1631:
+   RFC1766:
+   RFC1866:
    RFC1958:
    RFC1984:
    RFC2277:
@@ -56,12 +58,15 @@ informative:
    RFC3552:
    RFC3365:
    RFC3724:
+   RFC4033:
    RFC4084:
    RFC4101:
    RFC4303:
    RFC4906:
    RFC4949:
+   RFC5321:
    RFC5944:
+   RFC6108:
    RFC6120:
    RFC6365:
    RFC7258:
@@ -1354,48 +1359,26 @@ Impacts:
 - Right to freedom of assembly and association	
 
 ##### Privacy
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimisation?
 
-Question(s):
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimization?
-
-Explanation: 
-Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}.
-
-Example:
-See {{RFC6973}}
+Explanation
 
 Impacts:
 
 - Right to freedom of expression 
 - Right to non-discrimination
 
-##### Content agnosticism
-
-Question(s):
+##### Content agnosticism 
 If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
-
-Explanation:
-Content agnosticism refers to the notion that network traffic is treated identically regardless of content.
-
-Example: 
-Content agnosticism prevents content-based discrimination against packets. This is important because changes to this principle can lead to a two-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others. 
 
 Impacts: 
 
 - Right to freedom of expression 
 - Right to non-discrimination 
-- Right to equal protection
+- Right to equal protection 
 
-##### Security
-
-Question(s):
+##### Security 
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
-
-Explanation:
-Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these    properties are required for every application. We can loosely divide security goals into those related to protecting communications (COMMUNICATION SECURITY, also known as COMSEC) and those relating to protecting systems (ADMINISTRATIVE SECURITY or SYSTEM SECURITY). Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{RFC3552}}.
-
-Example: 
-See {{RFC3552}}.
 
 Impacts:
 
@@ -1581,37 +1564,17 @@ Impacts:
 
 - Right to security
 
+
+
 ##### Integrity 
-Question(s):
 Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
-
-Explanation: 
-Integrity refers to the maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
-
-Example: 
-See authenticity
 
 Impacts:
 
 - Right to security
 
 ##### Authenticity
-Question(s):
-Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
-
-Explanation: 
-Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent attacks or unauthorized access and use of data.
-
-Example: 
-Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows: 
-
-Alice wants to communicate with Bob.
-Alice sends data to Bob.
-Niels intercepts the data sent to Bob.
-Niels reads and alters the message to Bob.
-Bob cannot see the data did not come from Alice but from Niels.
-Niels intercepts and alters the communication as it is sent between Alice and Bob.
-Niels knows all.
+Do you have enough measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec and other Standard Security Best Practices?
 
 Impacts:
 
