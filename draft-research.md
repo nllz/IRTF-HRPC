@@ -1363,14 +1363,22 @@ Impacts:
 - Right to freedom of expression 
 - Right to non-discrimination
 
-##### Content agnosticism 
+##### Content agnosticism
+
+Question(s):
 If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
+
+Explanation:
+Content agnosticism refers to the notion that network traffic is treated identically regardless of content.
+
+Example: 
+Content agnosticism prevents content-based discrimination against packets. This is important because changes to this principle can lead to a two-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others. 
 
 Impacts: 
 
 - Right to freedom of expression 
 - Right to non-discrimination 
-- Right to equal protection 
+- Right to equal protection
 
 ##### Security 
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
