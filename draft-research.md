@@ -1463,15 +1463,17 @@ Impacts:
 - Right to participate in cultural life, arts and science
 
 ##### Decentralization
-Does your protocol contribute to more centralized points of control?
-Can your protocol be implemented without one single point of control?
-If applicable, can your protocol be deployed in a federated manner?
-What is the potential for discrimination against users of your protocol?
-How can use of your protocol be used to implicate users?
+Question(s):
+Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of  your protocol be used to implicate users? Does your protocol create additional centralized points of control?
+
+Explanation:
+Decentralization is one of the central technical concepts of the architecture, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control – a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990’s there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet. 
+
+Example:
+The bits traveling the Internet are increasingly susceptible to monitoring and censorship, from both governments and Internet service providers, as well as third (malicious) parties. The ability to monitor and censor is further enabled by the increased centralization of the network that creates central infrastructure points that can be tapped in to. The creation of peer-to-peer networks and the development of voice-over-IP protocols using peer-to-peer technology in combination with distributed hash table (DHT) for scalability are examples of how protocols can preserve decentralization {{Pouwelse}}.
 
 Impacts:
-
-- Right to freedom of assembly and association
+•	Right to freedom of assembly and association
 
 #####Reliability
 
