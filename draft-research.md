@@ -1372,7 +1372,6 @@ Impacts:
 - Right to non-discrimination 
 - Right to equal protection 
 
-
 ##### Security 
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}?
 
@@ -1383,8 +1382,21 @@ Impacts:
 - Right to non discrimination
 
 ##### Internationalization
+Question(s):
 Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
 
+Explanation:
+Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+
+         "Internationalization is the design and development of a
+         product, application or document content that enables easy
+         localization for target audiences that vary in culture, region,
+         or language."  {{W3Ci18nDef}}
+
+Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices. 
+
+Example:
+See localization
 Impacts:
 
 - Right to freedom of expression 
@@ -1404,22 +1416,13 @@ Impacts:
 - Right to participate in cultural life, arts and science 
 - Right to freedom of assembly and association
 	
-##### Open Standards
-
-Question(s):
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you use proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s) for instance by making any incorporated vendor specification  "required" or "recommended"?  
-
-Explanation:
-The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
-Similarly, {{RFC3935}} does not define open standards but does emphasize the importance of ‘open process’: any interested person can participate in the work, know what is being decided, and make his or her voice heard on the issue. Part of this principle is the IETF’s commitment to making its documents, WG mailing lists, attendance lists, and meeting minutes publicly available on the Internet.
-Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
-
-Example:
-{{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
+##### Open Standards 
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any proprietary code needed for the implementation, running or further development of your protocol?
 
 Impacts:
-•	Right to freedom of expression 
-•	Right to participate in cultural life, arts and scienc
+
+- Right to freedom of expression 
+- Right to participate in cultural life, arts and science 
 
 ##### Heterogeneity Support
 Question(s):
