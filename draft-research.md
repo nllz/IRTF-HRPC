@@ -1559,10 +1559,15 @@ Impacts:
 
 - Right to security
 
-
-
 ##### Integrity 
+Question(s):
 Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
+
+Explanation: 
+Integrity refers to the maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
+
+Example: 
+See authenticity
 
 Impacts:
 
