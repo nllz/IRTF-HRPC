@@ -1420,14 +1420,20 @@ Impacts:
 - Right to freedom of expression 
 
 ##### Anonymity
+Question(s):
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
 
-Impacts:
+Explanation: 
+Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
 
-- Right to non-discrimination
-- Right to political participation 
-- Right to freedom of assembly and association
-- Right to security
+Example: 
+Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
+
+Impacts:
+•	Right to non-discrimination
+•	Right to political participation 
+•	Right to freedom of assembly and association
+•	Right to security
 
 ##### Pseudonymity
 Question(s): 
