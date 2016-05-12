@@ -90,6 +90,14 @@ informative:
         - org: NETmundial
      target: http://netmundial.br/wp-content/uploads/2014/04/NETmundial-Multistakeholder-Document.pdf
 
+   NetofRights:
+    title: Net of Rights - short documentary 
+     date: 2016
+     author:
+        - org: ARTICLE 19
+        - org: Coding Rights
+     target:https://hrpc.io/net-of-rights/?play=1
+     
    UDHR:
      title: The Universal Declaration of Human Rights
      date: 1948
@@ -1663,9 +1671,9 @@ Impacts:
 
 Acknowledgements
 ================
-A special thanks to all members of the hrpc RG who contributed to this draft. The following deserve a special mention: 
+A special thanks to all members of the HRPC RG who contributed to this draft. The following deserve a special mention: 
 
-- Joana Varon for helping draft the first iteration of the methodology, previous drafts and the direction of the film Net of Rights and working on the interviews at IETF92 in Dallas.
+- Joana Varon for helping draft the first iteration of the methodology, previous drafts and the direction of the film {{NetofRights}} and working on the interviews at IETF92 in Dallas.
 
 - Daniel Kahn Gillmor (dkg) for helping with the first iteration of the glossary as well as a lot of technical guidance, support and language suggestions. 
 
