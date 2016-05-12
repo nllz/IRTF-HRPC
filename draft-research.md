@@ -1372,13 +1372,13 @@ Impacts:
 ##### Content agnosticism
 
 Question(s):
-If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
+If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others? If so, on what basis does it do so?
 
 Explanation:
-Content agnosticism refers to the notion that network traffic is treated identically regardless of content.
+Content agnosticism refers to the notion that network traffic is treated identically regardless of content. It ensures that, where within reasonable technical boundaries, all packets are treated equal ensuring that not withstanding other issues (low bandwidth or high latency for example) end users have a similar online experience. 
 
 Example: 
-Content agnosticism prevents content-based discrimination against packets. This is important because changes to this principle can lead to a two-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others. 
+Content agnosticism prevents content-based discrimination against packets. This is important because changes to this principle can lead to a multi-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others. 
 
 Impacts: 
 
@@ -1528,8 +1528,6 @@ Impacts:
 •	Right to participate in cultural life, arts and science
 •	Right to Freedom of Expression
 
-
-
 ##### Decentralization
 Question(s):
 Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of  your protocol be used to implicate users? Does your protocol create additional centralized points of control?
@@ -1543,7 +1541,7 @@ The bits traveling the Internet are increasingly susceptible to monitoring and c
 Impacts:
 •	Right to freedom of assembly and association
 
-#####Reliability
+##### Reliability
 
 Question(s):
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
