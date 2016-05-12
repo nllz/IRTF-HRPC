@@ -1408,17 +1408,18 @@ Question(s):
 Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
 
 Explanation:
-Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
 
          "Internationalization is the design and development of a
          product, application or document content that enables easy
          localization for target audiences that vary in culture, region,
          or language."  {{W3Ci18nDef}}
 
-Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices. 
+Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}. Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world. In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices. 
 
 Example:
 See localization
+
 Impacts:
 
 - Right to freedom of expression 
@@ -1432,7 +1433,7 @@ Question(s):
 Does this protocol introduce new identifiers that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens?
 
 Explanation:
-Censorship resistance refers to the methods and measures to prevent Internet censorship.
+Censorship resistance refers to the methods and measures to prevent Internet censorship. It is important to enable the free flow of intformation and human rights like the right to freedom of expression and assembly.
 
 Example:
 Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 – which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
