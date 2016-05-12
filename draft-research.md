@@ -1480,14 +1480,15 @@ Impacts:
 •	Right to freedom of expression 
 
 ##### Anonymity
+
 Question(s):
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
 Explanation: 
 Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
 
 Example: 
-Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
+Often standards expose private information, it is important to consider ways to mitigate the obvious impacts on anonimity. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
 
 Impacts:
 •	Right to non-discrimination
@@ -1496,6 +1497,7 @@ Impacts:
 •	Right to security
 
 ##### Pseudonymity
+
 Question(s): 
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
@@ -1542,8 +1544,6 @@ Impacts:
 •	Right to non-discrimination 
 •	Right to participate in cultural life, arts and science
 •	Right to Freedom of Expression
-
-
 
 ##### Decentralization
 Question(s):
