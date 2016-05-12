@@ -47,8 +47,11 @@ informative:
    RFC1035:
    RFC1122:
    RFC1631:
+   RFC1766:
+   RFC1866:
    RFC1958:
    RFC1984:
+   RFC2026:
    RFC2277:
    RFC2460:
    RFC2606:
@@ -56,16 +59,21 @@ informative:
    RFC3552:
    RFC3365:
    RFC3724:
+   RFC3935:
    RFC4084:
+   RFC4033:
    RFC4101:
    RFC4303:
    RFC4906:
    RFC4949:
+   RFC5321:
    RFC5944:
    RFC6120:
    RFC6365:
    RFC7258:
+   RFC7540:
    RFC7574:
+   RFC7624:
    RFC7626:
    RFC7725:
 
@@ -1546,7 +1554,7 @@ The bits traveling the Internet are increasingly susceptible to monitoring and c
 Impacts:
 •	Right to freedom of assembly and association
 
-#####Reliability
+##### Reliability
 
 Question(s):
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
@@ -1555,7 +1563,7 @@ Explanation:
 Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems in addition to the reliable delivery the protocol needs to safeguard timeliness. 
 
 Example:
-In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
+In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC0793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
 
 Impacts:
 •	Right to security
