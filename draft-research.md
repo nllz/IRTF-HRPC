@@ -1505,7 +1505,7 @@ Explanation:
 Pseudonymity – the ability to disguise one’s identity online – is an important feature for many end-users, as it allows them different degrees of anonymity and privacy online.
 
 Example: 
-Designing a standard that exposes private information to ??, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
+Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person. 
 
 Impacts:
 
@@ -1515,7 +1515,7 @@ Impacts:
 ##### Accessibility
 
 Question(s):
-Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
+Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative {{W3CAccessibility}} for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner? 
 
 Explanation:
 The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web. 
@@ -1532,13 +1532,13 @@ Impacts:
 ##### Localization
 
 Question(s):
-Does your protocol uphold the standards of internationalization? Have made any concrete  steps towards localizing your protocol for relevant audiences?
+Does your protocol uphold the standards of internationalization? Have you made any concrete steps towards localizing your protocol for relevant audiences?
 
 Explanation:
 Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Cqa-i18n}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
 
 Example:
-The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world’s online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language. 
+The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and by extension having working knowledge of the English language. This limits the ability of a large part of the world’s online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language. 
 
 Impacts:
 •	Right to non-discrimination 
@@ -1546,8 +1546,9 @@ Impacts:
 •	Right to Freedom of Expression
 
 ##### Decentralization
+
 Question(s):
-Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of  your protocol be used to implicate users? Does your protocol create additional centralized points of control?
+Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
 
 Explanation:
 Decentralization is one of the central technical concepts of the architecture, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control – a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990’s there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet. 
@@ -1564,7 +1565,7 @@ Question(s):
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
 
 Explanation:
-Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems in addition to the reliable delivery the protocol needs to safeguard timeliness. 
+Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected results. A system that is reliable, degenerates gracefully and has a documented way to announce degradation increases its reliability.  Ideally, it also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems, in addition to the reliable delivery, the protocol needs to safeguard timeliness. 
 
 Example:
 In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
@@ -1589,14 +1590,14 @@ Explanation:
 Confidentiality refers to keeping your data secret from unintended listeners {{RFC3552}}. The growth of the Internet depends on users having confidence that the network protects their private information {{RFC1984}}. 
 
 Example:
-Protocols that do not encrypt their payload make the entire content of the communication available to the idealized attacker along their path. Following the advice in {{RFC3365}}, most such protocols have a secure variant that encrypts the payload for confidentiality, and these secure variants are seeing ever-wider deployment. A noteworthy exception is DNS {{RFC1035}}, as DNSSEC {{RFC4033}}does not have confidentiality as a requirement.  This implies that, in the absence of changes to the protocol as presently under development in the IETF's DNS Private Exchange   (DPRIVE) working group, all DNS queries and answers generated by the activities of any protocol are available to the attacker.  When store-and-forward protocols are used (e.g., SMTP {{RFC5321}}), intermediaries leave this data subject to observation by an attacker that has compromised these intermediaries, unless the data is    encrypted end-to-end by the application-layer protocol or the implementation uses an encrypted store for this data {{RFC7624}}.
-
+Protocols that do not encrypt their payload make the entire content of the communication available to the idealized attacker along their path. Following the advice in {{RFC3365}}, most such protocols have a secure variant that encrypts the payload for confidentiality, and these secure variants are seeing ever-wider deployment. A noteworthy exception is DNS {{RFC1035}}, as DNSSEC {{RFC4033}} does not have confidentiality as a requirement. This implies that, in the absence of changes to the protocol as presently under development in the IETF's DNS Private Exchange (DPRIVE) working group, all DNS queries and answers generated by the activities of any protocol are available to the attacker. When store-and-forward protocols are used (e.g., SMTP {{RFC5321}}), intermediaries leave this data subject to observation by an attacker that has compromised these intermediaries, unless the data is encrypted end-to-end by the application-layer protocol or the implementation uses an encrypted store for this data {{RFC7624}}.
 
 Impacts:
 
 - Right to security
 
 ##### Integrity 
+
 Question(s):
 Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
 
@@ -1611,6 +1612,7 @@ Impacts:
 - Right to security
 
 ##### Authenticity
+
 Question(s):
 Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
 
@@ -1633,24 +1635,26 @@ Impacts:
 - Right to security
 
 ##### Acceptability
+
 Question(s):
-Do your protocols follow the principle of non-discrimination? Do your protocols follow the principle of content agnosticism? Does your protocol take into account the needs of special needs (Internet) groups, like the audio-visually impaired?  Also see availability.
+Do your protocols follow the principle of non-discrimination? Do your protocols follow the principle of content agnosticism? Does your protocol take into account the requirements of special needs (Internet) groups, like the audio-visually impaired?  See availability.
 
 Explanation: 
-The Internet is a global medium. Yet, there continue to be issues surrounding acceptability – the extent to which standards are non-discriminatory and relevant to the widest range of end-users – that need to be resolved. Many standards are not suitable for end-users who are not-ablebodied, or otherwise restricted in their ability to access the Internet in its current form (text, data and English heavy). Development of new standards should consider the ways in which they exclude or include non-traditional user communities. 
+The Internet is a global medium. Yet, there continue to be issues surrounding acceptability – the extent to which standards are non-discriminatory and relevant to the widest range of end-users – that need to be resolved. Many standards are not suitable for end-users who are not-ablebodied, or otherwise restricted in their ability to access the Internet in its current form (text, data and English heavy). Development of new standards should consider the ways in which they exclude or include 'non-traditional' user communities. 
 
-Example: Designing a feature that could make access to websites for non-able bodied people more difficult. 
+Example: Designing a feature that could make access to websites for non-able bodied people more difficult. See accessibility.
 
 - Right to education
 - Right to freedom of expression 
 - Right to freedom of assembly and association
 
 ##### Availability
+
 Question(s):
 Does your standard favor proprietary specifications over technically equivalent and competing specification(s) by making any incorporated vendor specification "required" or "recommended" {{RFC2026}}? Does your protocols use proprietary code? Does your protocol depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
 
 Explanation: 
-An open, balanced and cooperative approach to developing technological standards is vital to maintaining the Internet open, accessible and secure. This will ensure the standards are open and not subject to restrictive contract terms from the copyright owners. Availability of standards is a prerequisite to the continued growth of the Internet, and crucial to continued technological innovation across the globe. 
+An open, balanced and cooperative approach to developing technological standards is vital to maintaining an Internet that is open, accessible and secure. This can be achieved by ensuring that the standards developed in the IETF are open and not subject to overly restrictive contract terms from the copyright owners. Availability of open standards is a prerequisite to the continued growth of the Internet, and crucial to continued technological innovation across the globe. 
 
 Example: 
 See Open Standards
@@ -1660,11 +1664,12 @@ Impacts:
 - Right to education
 
 ##### Adaptability
+
 Question(s):
 Does your protocol impact permissionless innovation? See 'Connectivity' above.
 
 Explanation: 
-Adaptability is closely interrelated permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop. 
+Adaptability is closely related to permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop. 
 
 Example: 
 WebRTC generates audio and/or video data. In order to ensure that WebRTC can be used in different locations by different parties it is important that standard Javascript APIs are developed to support applications from different voice service providers. Multiple parties will have similar capabilities, in order to ensure that all parties can build upon existing standards these need to be adaptable, and allow for permissionless innovation.
