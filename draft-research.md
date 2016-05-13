@@ -68,6 +68,7 @@ informative:
    RFC4949:
    RFC5321:
    RFC5944:
+   RFC6108:
    RFC6120:
    RFC6365:
    RFC7258:
@@ -252,6 +253,13 @@ informative:
         - org: Bitmessage
      target: https://bitmessage.org/wiki/Main_Page
 
+   tribler:
+     title: About Tribler
+     date: 2013
+     author:
+        - org: Delft University of Technology, Department EWI/PDS/Tribler
+     target: https://www.tribler.org/about.html
+
    PETS2015VPN:
      title: A Glance through the VPN Looking Glass
      date: 2015
@@ -307,7 +315,7 @@ informative:
         - ins: C. Cath
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdf36GrmRM84S.pdf
 
-   CathandFloridi:
+   CathFloridi:
      title: The Design of the Internet's Architecture by the Internet Engineering Task Force (IETF) and Human Rights
      date: forthcoming
      author:
@@ -754,11 +762,19 @@ informative:
         - ins: J. Pouwelse, Ed.
       target: https://tools.ietf.org/html/draft-pouwelse-censorfree-scenarios
 
+   Penney:
+      title: "Chilling Effects: Online Surveillance and Wikipedia Use"
+      date: 2016
+      author:
+        - ins: J. Penney
+      target: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645
+
+
 --- abstract
 
-The increased intertwinement of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
+The increaseing convolution of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
 
-This document provides a proposal for a glossary to discuss the relation between human rights and Internet protocols, an overview of the discussion, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
+This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
 Discussion of this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/listinfo/hrpc
 
@@ -776,7 +792,7 @@ Introduction
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights.
 
-Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathandFloridi}}.
+Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}.
 
 While the Internet was designed with freedom and openness of communications as core values, as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture.
 
@@ -828,8 +844,6 @@ End-to-End
 : The principal of extending characteristics of a protocol or system as far as possible within the system. For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
-
-: communication that takes place between communication end-points of the same physical or logical functional level
 
 Federation
 : The possibility of connecting autonomous systems into a single distributed system.
@@ -894,8 +908,7 @@ Privacy
 : The right of individuals to control or influence what information related to them may be collected and stored and by whom and to whom that information may be disclosed.
 
 : Privacy is a broad concept relating to the protection of individual autonomy and the relationship between an individual and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
-
-The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
+: The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
@@ -922,19 +935,19 @@ The combination of reliability, confidentiality, integrity, anonymity, and authe
 
       (     Reliability          )
      (      Confidentiality       )
-     (      Integrity             )   = communication and information security (technical)
+     (      Integrity             ) = communication and information security
      (      Authenticity          )
       (     Anonymity            )
 
-The combination of End-to-End, Interoperability, resilience, reliability and robustness is what makes us connectivity on the Internet
+The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in on the Internet.
 
-                         ( End-to-End      )
-     connectivity =     (  Interoperability )
-                       (   Resilience        )
-                       (   Reliability       )
-                       (   Robustness        )
-                        (  Autonomy         )
-                         ( Simplicity      )
+      ( End-to-End      )
+     (  Interoperability )
+     (  Resilience       )
+     (  Reliability      ) = connectivity
+     (  Robustness       )
+     (  Autonomy         )
+      ( Simplicity      )
 
 
 
@@ -946,16 +959,14 @@ The Human Rights Protocol Considerations Research Group (hrpc) in the Internet R
 
 2. Can guidelines be developed to improve informed and transparent decision making about potential human rights impact of protocols?
 
-
-
 Literature and Discussion Review
 ================================
 
 Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: "protocols are politics by other means". Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}}.
 
-Commercial and political influences on the management of the Internet's architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is enough to say that the IETF consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of the Internet {{Denardis14}}. The role human rights play in technical engineering is much less clear.
+Commercial and political influences on the management of the Internet's architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is sufficient to say that the IETF community consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of and trust in the Internet {{Denardis14}}. The role human rights play in engineering, architecture and protocol design is much less clear.
 
-Understanding how protocols and standards impact human rights, especially the right to freedom of expression and freedom of association and assembly, is crucial. Questions at the intersection of human rights and Internet architecture management are particularly important as Internet Standard Developing Organizations (SDOs) are the arenas for contention over human rights and the role of technical engineers to protect human rights by design {{Brownetal}} {{Clarketal}} {{Denardis14}} {{CathandFloridi}} {{Lessig}} {{Rachovitsa}}.
+It is very important to understand how protocols and standards impact human rights. In particular because Standard Setting Organizations (SDOs) are increasingly becoming venues where social values (like human rights) are discussed, although often from a technological point of view. These SDOs are becoming a new focal point for discussions about values-by-design, and the role of technical engineers in protecting or enabling human rights {{Brownetal}} {{Clarketal}} {[Denardis14}} {{CathFloridi}} {{Lessig}} {{Rachovitsa}}.
 
 In the academic literature four clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (...) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{Clarketal}}.' They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to blunting the tools of enforcement and last but not least, it is dangerous to make promises that can't be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals' human rights.
 
@@ -965,7 +976,7 @@ The main disagreement between these two positions lies mostly in the question on
 
 A third position that is similar to that of Brown et al., is taken by {{Broeders}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the TCP/IP protocol suite, numerous standards, the Domain Name System (DNS), and routing protocols - a common public good. This is a different approach than that of {{Clarketal}} and {{Brownetal}} because Broeders does not suggest that social values should (or should not) be explicitly coded into the Internet's architecture, but rather that the existing architecture should be seen as an entity of public value.
 
-Bless and Orwat {{Bless}} represents a fourth position. They argue that it is to early to make any definitive claims, but that there is a need for more careful analysis of the impact of protocol design choices on human rights. They also argue that it is important to search for solutions that 'create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.'
+Bless and Orwat {{Bless}} represent a fourth position. They argue that it is to early to make any definitive claims, but that there is a need for more careful analysis of the impact of protocol design choices on human rights. They also argue that it is important to search for solutions that 'create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.'
 
 Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
@@ -975,11 +986,11 @@ This document details the steps taken in theresearch into human rights protocol 
 Methodology
 ===========
 
-Mapping the relation between human rights, protocols and architectures is a new research challenge, which requires a good amount of interdisciplinary and cross organizational cooperation to develop a consistent methodology.  The authors of this first draft are involved in both human rights advocacy and research on Internet technologies - and as such  believe that bringing this work into the IRTF facilitates and  improves it by bringing human rights experts together with the community of researchers and developers of Internet standards and technologies.
+Mapping the relation between human rights, protocols and architectures is a new research challenge, which requires a good amount of interdisciplinary and cross organizational cooperation to develop a consistent methodology. 
 
 The methodological choices made in this document are based on the political science-based method of discourse analysis and ethnographic research methods {{Cath}}. This work departs from the assumption that language reflects the understanding of concepts. Or as {{Jabri}} holds, policy documents are 'social relations represented in texts where language is used to construct meaning and representation'. This process happens in 'the social space of society' {{Schroeder}} and manifests itself in institutions and organizations {{King}}, exposed using the ethnographic methods of semi-structured interviews and participant observation.
 
-The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the research group was reading  RFCs and other official IETF documents. The second step was the use of a pyhon-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis.
+The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the research group was reading  RFCs and other official IETF documents. The second step was the use of a python-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis.
 
 The ethnographic methods of the data collection and processing allowed the research group to acquire the data necessary to 'provide a holistic understanding of research participants' views and actions' {{Denzin}} that highlighted ongoing issues and case studies where protocols impact human rights. The interview participants were selected through purposive sampling {{Babbie}}, as the research group was interested in getting a wide variety of opinions on the role of human rights in guiding protocol development. This sampling method also ensured that individuals with extensive experience working at the IETF in various roles were targeted. The interviewees included individuals in leadership positions (Working Group (WG) chairs, Area Directors (ADs)), 'regular participants', individuals working for specific entities (corporate, civil society, political, academic) and represented various backgrounds, nationalities and genders.
 
@@ -989,7 +1000,7 @@ The ethnographic methods of the data collection and processing allowed the resea
 Data Sources
 ------------
 
-In order to map the potential relation between human rights and protocols, so far, the HRPC research group gathered data from three specific sources:
+In order to map the potential relation between human rights and protocols, the HRPC research group gathered data from three specific sources:
 
 ### Discourse analysis of RFCs
 To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis their possible impact on human rights was undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions was undertaken to expose core architectural principles, language and deliberations on human rights of those affected by the network.
@@ -1078,7 +1089,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
      (  Accessibility         )
     (   Internationalization   ) = Right to political participation
     (   Censorship resistance  )
-     (      Accessibility         )
+     (      Accessibility     )
 
 
      (  Open standards         )
@@ -1091,7 +1102,7 @@ The combination of content agnosticism, connectivity, security, privacy (as defi
 
      (  Connectivity         )
     (   Decentralization      )
-    (     Censorship resistance   ) = Right to freedom of assembly
+    (   Censorship resistance ) = Right to freedom of assembly
     (   Pseudonymity          )                   and association
     (   Anonymity             )
      (  Security             )
@@ -1135,7 +1146,7 @@ This process of translation has widespread adoption despite promoting a process 
 
 The Domain Name System (DNS) {{RFC1035}}, provides service discovery capabilities, and provides a mechanism to associate human readable names with services. The DNS system is organized around a set of independently operated 'Root Servers' run by organizations around the web which enact ICANN's policy by answering queries for which organizations have been delegated to manage registration under each Top Level Domain (TLD). Top Level domains are maintained and determined by ICANN. These namespaces encompass several classes of services. The initial name spaces including '.Com' and '.Net', provide common spaces for expression of ideas, though their policies are enacted through US based companies. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has recently been expanded with additional generic and sponsored name spaces, for instance '.travel' and '.ninja', which are operated by a range of organizations which may independently determine their registration policies. This new development has both positive and negative implications in terms of enabling human rights. Some individuals argue that it undermines the right to freedom of expression because some of these new gtlds have restricted policies on registration and particular rules on hate speech content. Others argue that precisely these properties are positive because they enable certain (mostly minority) communities to build safer spaces for association, thereby enabling their right to freedom of association. An often mentioned example is an application like .gay.
 
-DNS has significant privacy issues per {{RFC7626}}. Most notable the lack of encryption to limit the visibility of requests for domain resolution from intermediary parties, and a limited deployment of DNSSEC to provide authentication, allowing the client to know that they received a correct, "authoritative", answer to a query.
+DNS has significant privacy issues per {{RFC7626}}. Most notable the lack of encryption to limit the visibility of requests for domain resolution from intermediary parties, and a limited deployment of DNSSEC to provide authentication, allowing the client to know that they received a correct, "authoritative", answer to a query. In response to the privacy issues, the IETF DNS PRIVate Exchange (DPRIVE) Working Group is developing mechanisms to provide confidentiality to DNS transactions, to address concerns surrounding pervasive monitoring {{RFC7258}}.
 
 Authentication through DNSSEC creates a validation path for records. This authentication protects against forged or manipulated DNS data. As such DNSSEC protects the directory look-up and makes hijacking of a session harder. This is important because currently interference with the operation of the DNS is becoming one of the central mechanisms used to block access to websites. This interference limits both the freedom of expression of the publisher to offer their content, and the freedom of assembly for clients to congregate in a shared virtual space. Even though DNSSEC doesn't prevent censorship, it makes it clear that the returned information is not the information that was requested, which contributes to the right to security and increases trust in the network.
 
@@ -1248,7 +1259,7 @@ In open-membership P2P networks, a single attacker can pretend to be many partic
 
 #### Conclusions
 
-Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material, publish content anonymously, and communicate securely {{bitmessage}}. If adopted at large, well-designed and resistant P2P networks might represent a critical component of a future secure and distributed Internet, enabling freedom of speech and freedom
+Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material {{tribler}}, publish content anonymously, and communicate securely {{bitmessage}}. If adopted at large, well-designed and resistant P2P networks might represent a critical component of a future secure and distributed Internet, enabling freedom of speech and freedom
 of information at scale.
 
 
@@ -1300,7 +1311,7 @@ The 451 status code would allow server operators to operate with greater transpa
 
 The status code would be named '451', a reference to Bradbury's famous novel on censorship
 
-During the IETF meeting in Dallas, there was discussion about the usefulness of '451'. The main tension revolved around the lack of an apparent machine-readable technical use of the information. The extent to which '451' is just 'political theatre' or whether it has a concrete technical use was heatedly debated. Some argued that 'the 451 status code is just a status code with a response body' others said it was problematic because 'it brings law into the picture'. Again others argued that it would be useful for individuals, or organizations like the 'Chilling Effects' project, crawling the web to get an indication of censorship (IETF discussion on '451' &#x2013; author's field notes March 2015). There was no outright objection during the Dallas meeting against moving forward on status code '451', and on December 18, 2015 the Internet Engineering Steering Group approved publication of {{RFC7725}} 'An HTTP Status Code to Report Legal Obstacles'. It is now an IETF approved HTTP status code to signal when resource access is denied as a consequence of legal demands {{RFC7725}}.
+During the IETF92 meeting in Dallas, there was discussion about the usefulness of '451'. The main tension revolved around the lack of an apparent machine-readable technical use of the information. The extent to which '451' is just 'political theatre' or whether it has a concrete technical use was heatedly debated. Some argued that 'the 451 status code is just a status code with a response body' others said it was problematic because 'it brings law into the picture'. Again others argued that it would be useful for individuals, or organizations like the 'Chilling Effects' project, crawling the web to get an indication of censorship (IETF discussion on '451' - author's field notes March 2015). There was no outright objection during the Dallas meeting against moving forward on status code '451', and on December 18, 2015 the Internet Engineering Steering Group approved publication of 'An HTTP Status Code to Report Legal Obstacles'. It is now an IETF approved HTTP status code to signal when resource access is denied as a consequence of legal demands {{RFC7725}}.
 
 What is interesting about this particular case is that not only technical arguments but also the status code's outright potential political use for civil society played a substantial role in shaping the discussion, and the decision to move forward with this technology.
 
@@ -1331,7 +1342,7 @@ In addition, DDoS attacks are increasingly used as an extortion tactic, with cri
 
 All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in {{RFC7258}} its commitment to mitigating 'pervasive monitoring (...) in the design of IETF protocols, where possible.' This means the use of encryption should become standard. Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech.
 
-DDoS although disruptive, and silencing at times, can also enable as protest and speech. Or as Sauter {{Sauter}} argues: 'though DDoS as a tactic is still relatively novel, it fits within a centuries- long tradition of breaking laws and disrupting business as usual to make a political point. These actions aren't simply disruption for disruption's sake. Rather they serve to help the activist or dissenter to direct the attention of the public through the interpolation of difference into routine.' (30-31). An often heard argument against DDoS attacks is that you cannot construe it as a means to exercise your right to freedom of speech, when the means used effectively impede the right of the party on the receiving end of the attack to exercise that same right. The problem with this line of argumentation is that it conveniently ignores the fact that online DDoS attacks are often one of the few effective ways for activists to gain the attention of the media, the government or other parties of interest. Simply putting up a website for a cause won't garner the same amount of attention as directly confronting the issue via the website of the individual or organization at the heart of the issue. The ability of activists to do so should be protected, especially considering the fact that as Sauter (2014:4) explains: 'Collectively, we have allowed the construction of an entire public sphere, the Internet, which by accidents of evolution and design, has none of the inherent free speech guarantees we have come to expect. Dissenting voices are pushed out of the paths of potential audiences, effectively removing them from the public discourse. There is nowhere online for an activist to stand with her friends and her sign. She might set up a dedicated blog---which may or may not ever be read---but it is much harder for her to stand collectively with others against a corporate giant in the online space.' Although the Internet is often compared to public space, it is not. Rather the opposite. The Internet is almost entirely owned by private entities. And the IETF plays a crucial role in developing this privatized commercialized Internet.
+DDoS although disruptive, and silencing at times, can also enable as protest and speech. Or as Sauter {{Sauter}} argues: 'though DDoS as a tactic is still relatively novel, it fits within a centuries-long tradition of breaking laws and disrupting business as usual to make a political point. These actions aren't simply disruption for disruption's sake. Rather they serve to help the activist or dissenter to direct the attention of the public through the interpolation of difference into routine.' (30-31). An often heard argument against DDoS attacks is that you cannot construe it as a means to exercise your right to freedom of speech, when the means used effectively impede the right of the party on the receiving end of the attack to exercise that same right. The problem with this line of argumentation is that it conveniently ignores the fact that online DDoS attacks are often one of the few effective ways for activists to gain the attention of the media, the government or other parties of interest. Simply putting up a website for a cause won't garner the same amount of attention as directly confronting the issue via the website of the individual or organization at the heart of the issue. The ability of activists to do so should be protected, especially considering the fact that as Sauter (2014:4) explains: 'Collectively, we have allowed the construction of an entire public sphere, the Internet, which by accidents of evolution and design, has none of the inherent free speech guarantees we have come to expect. Dissenting voices are pushed out of the paths of potential audiences, effectively removing them from the public discourse. There is nowhere online for an activist to stand with her friends and her sign. She might set up a dedicated blog---which may or may not ever be read---but it is much harder for her to stand collectively with others against a corporate giant in the online space.' Although the Internet is often compared to public space, it is not. Rather the opposite. The Internet is almost entirely owned by private entities. And the IETF plays a crucial role in developing this privatized commercialized Internet.
 
 From a legal and political perspective, the IETF does not have the legitimacy to determine when a DDoS is legitimate (in legal or political terms). It does not have the capability to make this judgment as a matter of public policy and subsequently translate it to code. Nor should the IETF try to do so.  From a technical perspective, the difference between a 'legitimate' and 'illegitimate' DDoS attack is meaningless because it would be extremely difficult for the IETF to engineer a way to detect that difference. In addition, there is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
 
@@ -1347,16 +1358,16 @@ Having established how human rights relate to standards and protocols, a common 
 
 
 ### Human rights threats
-Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition leaders in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition group members (or those identified as such) in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
 
-This sections details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain human rights threats are indirectly considered in Internet protocols as part of the standard privacy and security considerations {{RFC3552}}. Others suggestions are tailored specifically to human rights, and represents considerations not currently considered in other RFCs.
+This sections details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{RFC3552}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
 
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and universal. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to cherry picks rights, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to cherry picks rights, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
 
 ### Guidelines for human rights considerations
 This section provides guidance for document authors in the form of a questionnaire about protocols being designed. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
 
-There should be some discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC.This might be coupled with an Applicability Statement for that RFC.
+There should be some discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
 
 Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to each question mentioned under 7.3, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}).
 
@@ -1366,6 +1377,7 @@ Note that the guidance provided in this section does not recommend specific prac
 ##### Connectivity
 Question(s):
 Does your protocol add application-specific functions to intermediary nodes? Could this functionality also be added to end nodes instead of intermediary nodes?
+
 Explanation:
 The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
 
@@ -1380,7 +1392,7 @@ Impacts:
 ##### Privacy
 
 Question(s):
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Does your protocol in any way impact the confidentiality of protocol metadata? Does your protocol countering traffic analysis, or data minimization?
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis, or data minimization?
 
 Explanation:
 Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}.
@@ -1396,7 +1408,7 @@ Impacts:
 ##### Content agnosticism
 
 Question(s):
-If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decision? Does your protocol prioritize certain content or services over others?
+If your protocol impacts packet handling, does it look at the packet content? Is it making decisions based on the content of the packet? Is the protocol transparent about its decisions? Does your protocol prioritize certain content or services over others?
 
 Explanation:
 Content agnosticism refers to the notion that network traffic is treated identically regardless of content.
@@ -1411,7 +1423,6 @@ Impacts:
 - Right to equal protection
 
 ##### Security
-
 Question(s):
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{RFC3552}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as descibred throughout this document)?
 
@@ -1451,15 +1462,14 @@ Impacts:
 - Right to political participation
 
 ##### Censorship resistance
-
 Question(s):
-Does this protocol introduce new identifiers that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens?
+Does this protocol introduce new identifiers that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
 
 Explanation:
 Censorship resistance refers to the methods and measures to prevent Internet censorship.
 
 Example:
-Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 &#x2013; which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
 
 Impacts:
 - Right to freedom of expression
@@ -1468,7 +1478,17 @@ Impacts:
 - Right to freedom of assembly and association
 
 ##### Open Standards
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed. Is there any proprietary code needed for the implementation, running or further development of your protocol?
+Question(s):
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you use proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended"?
+
+Explanation:
+The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
+Similarly, {{RFC3935}} does not define open standards but does emphasize the importance of ‘open process’: any interested person can participate in the work, know what is being decided, and make his or her voice heard on the issue. Part of this principle is the IETF’s commitment to making its documents, WG mailing lists, attendance lists, and meeting minutes publicly available on the Internet.
+
+Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
+
+Example:
+{{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
 
 Impacts:
 
@@ -1477,7 +1497,7 @@ Impacts:
 
 ##### Heterogeneity Support
 Question(s):
-Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols?
+Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? Is your protocol liberal in what it receives and handles? Will it remain usable and open if the context changes?
 
 Explanation:
 The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns, there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design {{FIArch}}.
