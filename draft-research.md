@@ -854,20 +854,19 @@ Internationalization (i18n)
 
 : (cf {{RFC6365}}) In the IETF, "internationalization" means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}}  A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
 
-         "Internationalization is the design and development of a
-         product, application or document content that enables easy
-         localization for target audiences that vary in culture, region,
-         or language."  {{W3Ci18nDef}}
+: "Internationalization is the design and development of a
+product, application or document content that enables easy
+localization for target audiences that vary in culture, region,
+or language."  {{W3Ci18nDef}}
 
-Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding up to local guesswork (which leads, of course, to  interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully all of the ones useful in the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices.
+: Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding up to local guesswork (which leads, of course, to  interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully all of the ones useful in the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices.
 
 Localization (l10n)
 : The practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
 
-: (cf {{RFC6365}} The process of adapting an internationalized application platform or application to a specific cultural environment.  In localization, the same semantics are preserved while the syntax may be changed. {{FRAMEWORK}}
+: (cf {{RFC6365}}): The process of adapting an internationalized application platform or application to a specific cultural environment.  In localization, the same semantics are preserved while the syntax may be changed. {{FRAMEWORK}}
 
-Localization is the act of tailoring an application for a different language or script or culture.  Some internationalized applications can handle a wide variety of languages.  Typical users only understand a small number of languages, so the program must be tailored to interact with users in just the languages they know.
-
+: Localization is the act of tailoring an application for a different language or script or culture.  Some internationalized applications can handle a wide variety of languages.  Typical users only understand a small number of languages, so the program must be tailored to interact with users in just the languages they know.
 The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
 
 Open standards
