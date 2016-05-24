@@ -772,7 +772,7 @@ informative:
 
 --- abstract
 
-The increaseing convolution of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has an increasing impact on society. This has led to an increasing recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
+The proliferating convolution of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
 
 This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
