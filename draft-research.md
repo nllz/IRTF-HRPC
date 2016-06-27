@@ -1686,7 +1686,7 @@ See Open Standards
 
 Impacts:
 
-- Right to education
+- Freedom of Expression 
 
 ##### Adaptability
 Question(s):
