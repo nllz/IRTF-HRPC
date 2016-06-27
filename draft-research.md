@@ -1719,7 +1719,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text.
+and Stephane Bortzmeyer, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank James Gannon, Giovane Moura and Scott Craig for testing the HRPC guidelines in the wild.  
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
