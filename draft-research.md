@@ -516,6 +516,27 @@ informative:
      seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
      date: 2001
 
+    Franklin:
+    title: The Real World of Technology. Toronto: Toronto University Press.
+    date: 1999
+    author:
+     ins - U. M. Franklin
+    target: http://houseofanansi.com/products/the-real-world-of-technology-digital
+    
+    Dutton:
+    title: Freedom of Connection, Freedom of Expression: the Changing legal and regulatory Ecology Shaping the Internet.
+    date: 2011
+    author:
+     - ins: W. Dutton
+    target: http://portal.unesco.org/ci/en/ev.php-URL_ID=31397&URL_DO=DO_TOPIC&URL_SECTION=201.html
+    
+    Kaye:
+    title: Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression
+    date: 2016
+    author:
+    - ins: D. Kaye
+    target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
+    
    WP-Stateless:
      title: Stateless protocol
      target: https://en.wikipedia.org/wiki/Stateless_protocol
@@ -802,7 +823,7 @@ The IETF has produced guidelines and procedures to ensure and galvanize the priv
 Vocabulary used
 ===============
 
-In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided.
+In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together {{Dutton}},{{Kaye}}, {{Franklin}}. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided.
 
 Accessibility
 : Full Internet Connectivity as described in {{RFC4084}} to provide unfettered access to the Internet
