@@ -1554,10 +1554,10 @@ Question(s):
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
 Explanation:
-Pseudonymity &#x2013; the ability to disguise one's identity online &#x2013; is an important feature for many end-users, as it allows them different degrees of anonymity and privacy online.
+Pseudonymity &#x2013; the ability to disguise one's identity online &#x2013; is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
 
 Example:
-Designing a standard that exposes private information to ??, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
+Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
 
 Impacts:
 
