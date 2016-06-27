@@ -329,6 +329,14 @@ informative:
         - ins: L. Haagsma
      target: http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
 
+    WynsbergheMoura:
+      title: The concept of embedded values and the example of internet security
+      date: 2013
+      author:
+        - ins: A. Wynsberghe 
+        - ins: G. Moura
+      target: http://doc.utwente.nl/87095/
+
    RSF:
      title: Syria using 34 Blue Coat Servers to spy on Internet users
      date: 2013
