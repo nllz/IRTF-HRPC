@@ -1287,7 +1287,8 @@ In open-membership P2P networks, a single attacker can pretend to be many partic
 
 #### Conclusions
 
-Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material {{tribler}}, publish content anonymously, and communicate securely {{bitmessage}}. If adopted at large, well-designed and resistant P2P networks might represent a critical component of a future secure and distributed Internet, enabling freedom of speech and freedom
+Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material {{tribler}}, publish content anonymously, and communicate securely {{bitmessage}}.These platforms are not perfect, and more research needs to be done.
+If adopted at large, well-designed and resistant P2P networks might represent a critical component of a future secure and distributed Internet, enabling freedom of speech and freedom
 of information at scale.
 
 
