@@ -1701,7 +1701,7 @@ Example: Designing a feature that could make access to websites for non-able bod
 
 ##### Availability
 Question(s):
-Does your standard favor proprietary specifications over technically equivalent and competing specification(s) by making any incorporated vendor specification "required" or "recommended" {{RFC2026}}? Does your protocols use proprietary code? Does your protocol depend on proprietary code? Also see 'Open Standards' above. Also see 'Connectivity' above.
+Does your standard favor proprietary specifications over technically equivalent and competing specification(s) by making any incorporated vendor specification "required" or "recommended" {{RFC2026}}? Does your protocols use proprietary code? Does your protocol depend on proprietary code? Do you normatively reference another standard that is not available without cost?  Also see 'Open Standards' above. Also see 'Connectivity' above.
 
 Explanation:
 An open, balanced and cooperative approach to developing technological standards is vital to maintaining the Internet open, accessible and secure. This will ensure the standards are open and not subject to restrictive contract terms from the copyright owners. Availability of standards is a prerequisite to the continued growth of the Internet, and crucial to continued technological innovation across the globe.
