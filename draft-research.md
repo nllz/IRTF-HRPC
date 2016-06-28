@@ -944,7 +944,7 @@ Privacy
 
 : The right of individuals to control or influence what information related to them may be collected and stored and by whom and to whom that information may be disclosed.
 
-: Privacy is a broad concept relating to the protection of individual autonomy and the relationship between an individual and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
+: Privacy is a broad concept relating to the protection of individual or group autonomy and the relationship between an individual or group and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
 Reliable
