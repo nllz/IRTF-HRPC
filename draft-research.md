@@ -1270,7 +1270,7 @@ peers where to fetch the data, or at routing tables, with the attempt of providi
 
 #### Throttling
 
-Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}.
+Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throtteling undermines the end-to-end principle.
 
 Throttling the peer-to-peer traffic makes some uses of P2P networks ineffective and it might be coupled with stricter inspection of users' Internet traffic through Deep Packet Inspection techniques which might pose additional security and privacy risks.
 
