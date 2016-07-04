@@ -1,13 +1,13 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-tenoever-hrpc-research-02
+docname: draft-tenoever-hrpc-research-03
 category: info
 
 ipr: trust200902
+area: IRTF
 workgroup: Human Rights Protocol Considerations Research Group
 keyword: Internet-Draft
-op
 stand_alone: yes
 pi:
   rfcedstyle: yes
@@ -32,12 +32,10 @@ author:
        organization: Oxford Internet Institute
        email: corinnecath@gmail.com
 
+
 normative:
 
-   RFC6973:
-
-informative:
-
+informative: 
    RFC0226:
    RFC0760:
    RFC0791:
@@ -70,12 +68,14 @@ informative:
    RFC6108:
    RFC6120:
    RFC6365:
+   RFC6973:
    RFC7258:
    RFC7540:
    RFC7574:
    RFC7624:
    RFC7626:
    RFC7725:
+
 
    UNGA2013:
      title: UN General Assembly Resolution "The right to privacy in the digital age" (A/C.3/68/L.45)
