@@ -315,7 +315,7 @@ informative:
      target: https://www.ietf.org/mail-archive/web/hrpc/current/pdf36GrmRM84S.pdf
 
    CathFloridi:
-     title: The Design of the Internet's Architecture by the Internet Engineering Task Force (IETF) and Human Rights
+     title: "The Design of the Internet's Architecture by the Internet Engineering Task Force (IETF) and Human Rights"
      date: forthcoming
      author:
         - ins: C. Cath
@@ -328,13 +328,13 @@ informative:
         - ins: L. Haagsma
      target: http://blog.fox-it.com/2015/04/20/deep-dive-into-quantum-insert/
 
-    WynsbergheMoura:
-      title: The concept of embedded values and the example of internet security
-      date: 2013
-      author:
+   WynsbergheMoura:
+     title: The concept of embedded values and the example of internet security
+     date: 2013
+     author:
         - ins: A. Wynsberghe 
         - ins: G. Moura
-      target: http://doc.utwente.nl/87095/
+     target: http://doc.utwente.nl/87095/
 
    RSF:
      title: Syria using 34 Blue Coat Servers to spy on Internet users
@@ -491,8 +491,8 @@ informative:
    Berners-Lee:
      title: Weaving the Web,
      author:
-       - ins: T. Berners-Lee
-       - ins: M. Fischetti
+        - ins: T. Berners-Lee
+        - ins: M. Fischetti
      seriesinfo:
        HarperCollins: p 208
      date: 1999
@@ -500,9 +500,9 @@ informative:
    Saltzer:
      title: End-to-End Arguments in System Design
      author:
-       - ins: J.H. Saltzer
-       - ins: D.P. Reed
-       - ins: D.D. Clark
+        - ins: J.H. Saltzer
+        - ins: D.P. Reed
+        - ins: D.D. Clark
      seriesinfo: ACM TOCS, Vol 2, Number 4, November
         1984, pp 277-288.
      date: 1984
@@ -518,31 +518,31 @@ informative:
    Blumenthal:
      title: "Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world"
      author:
-       - ins: M. Blumenthal
-       - ins: D.D. Clark
+        - ins: M. Blumenthal
+        - ins: D.D. Clark
      seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
      date: 2001
 
-    Franklin:
-    title: The Real World of Technology. Toronto: Toronto University Press.
-    date: 1999
-    author:
-     ins - U. M. Franklin
-    target: http://houseofanansi.com/products/the-real-world-of-technology-digital
+   Franklin:
+     title: The Real World of Technology
+     date: 1999
+     author:
+        - ins: U. M. Franklin
+     target: http://houseofanansi.com/products/the-real-world-of-technology-digital
     
-    Dutton:
-    title: Freedom of Connection, Freedom of Expression: the Changing legal and regulatory Ecology Shaping the Internet.
-    date: 2011
-    author:
-     - ins: W. Dutton
-    target: http://portal.unesco.org/ci/en/ev.php-URL_ID=31397&URL_DO=DO_TOPIC&URL_SECTION=201.html
+   Dutton:
+     title: "Freedom of Connection, Freedom of Expression: the Changing legal and regulatory Ecology Shaping the Internet."
+     date: 2011
+     author:
+        - ins: W. Dutton
+     target: http://portal.unesco.org/ci/en/ev.php-URL_ID=31397%26URL_DO=DO_TOPIC%26URL_SECTION=201.html
     
-    Kaye:
-    title: Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression
-    date: 2016
-    author:
-    - ins: D. Kaye
-    target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
+   Kaye:
+     title: Report of the Special Rapporteur on the promotion and protection of the right to freedom of opinion and expression
+     date: 2016
+     author:
+        - ins: D. Kaye
+     target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
     
    WP-Stateless:
      title: Stateless protocol
@@ -594,7 +594,7 @@ informative:
      target: https://www.w3.org/standards/webdesign/accessibility
 
    Rachovitsa:
-     title: Engineering "Privacy by Design" in the Internet Protocols - Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
+     title: Engineering 'Privacy by Design' in the Internet Protocols - Understanding Online Privacy both as a Technical and a Human Rights Issue in the Face of Pervasive Monitoring
      date: 2015
      author:
         - ins: A. Rachovitsa
@@ -713,12 +713,12 @@ informative:
         - ins: C. Orwat
 
    Benkler:
-      title: The wealth of Networks - How social production transforms markets and freedom
-      date: 2006
-      author:
+     title: The wealth of Networks - How social production transforms markets and freedom
+     date: 2006
+     author:
         - ins: Y. Benkler
-      target: http://is.gd/rxUpTQ
-      seriesinfo: New Haven and London - Yale University Press
+     target: http://is.gd/rxUpTQ
+     seriesinfo: New Haven and London - Yale University Press
 
    Babbie:
      title: The Basics of Social Research
@@ -737,74 +737,73 @@ informative:
      seriesinfo: Thousand Oaks CA Sage
 
    Geertz:
-      title: Kinship in Bali
-      date: 1975
-      author:
+     title: Kinship in Bali
+     date: 1975
+     author:
         - ins: G. Clifford
-      target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
-      seriesinfo: Chicago University of Chicago Press.
+     target: http://press.uchicago.edu/ucp/books/book/chicago/K/bo3625088.html
+     seriesinfo: Chicago University of Chicago Press.
 
    Jabri:
-      title: Discourses on Violence - conflict analysis reconsidered
-      date: 1996
-      author:
+     title: Discourses on Violence - conflict analysis reconsidered
+     date: 1996
+     author:
         - ins: V. Jabri
-      seriesinfo: Manchester University Press
+     seriesinfo: Manchester University Press
 
    King:
-      title: Power, Social Violence and Civil Wars
-      date: 2007
-      author:
+     title: Power, Social Violence and Civil Wars
+     date: 2007
+     author:
         - ins: C. King
-      seriesinfo: Washington D.C. United States Institute of Peace Press
+     seriesinfo: Washington D.C. United States Institute of Peace Press
 
    Schroeder:
-      title: Introduction - Violent Imaginaries and Violent Practice
-      date: 2001
-      author:
+     title: Introduction - Violent Imaginaries and Violent Practice
+     date: 2001
+     author:
         - ins: I.W. Schroeder
         - ins: B. Schmidt
-      target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
-      seriesinfo: London and New York Routledge
+     target: http://resourcelists.st-andrews.ac.uk/items/BFC20363-67B0-B3EF-EA48-13E5230E7899.html
+     seriesinfo: London and New York Routledge
 
    Richie:
-      title: Qualitative Research Practice - A Guide for Social Science Students and Researchers
-      date: 2003
-      author:
+     title: Qualitative Research Practice - A Guide for Social Science Students and Researchers
+     date: 2003
+     author:
         - ins: J. Richie
         - ins: J. Lewis
-      target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106
-      seriesinfo: London Sage
+     target: http://www.amazon.co.uk/Qualitative-Research-Practice-Students-Researchers/dp/0761971106
+     seriesinfo: London Sage
 
    Doty:
-      title: Automated text analysis of Requests for Comment (RFCs)
-      date: 2014
-      author:
+     title: Automated text analysis of Requests for Comment (RFCs)
+     date: 2014
+     author:
         - ins: N. Doty
-      target: https://github.com/npdoty/rfc-analysis
+     target: https://github.com/npdoty/rfc-analysis
 
    Pouwelse:
-      title: Media without censorship
-      date: 2012
-      author:
+     title: Media without censorship
+     date: 2012
+     author:
         - ins: J. Pouwelse, Ed.
-      target: https://tools.ietf.org/html/draft-pouwelse-censorfree-scenarios
+     target: https://tools.ietf.org/html/draft-pouwelse-censorfree-scenarios
 
    Penney:
-      title: "Chilling Effects: Online Surveillance and Wikipedia Use"
-      date: 2016
-      author:
+     title: "Chilling Effects: Online Surveillance and Wikipedia Use"
+     date: 2016
+     author:
         - ins: J. Penney
-      target: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645
+     target: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645
 
-
-    BernersLeeHarpin:
-    title: Defend the Web
-    date: 2012
-    author:
-    - ins: T. Berners-Lee
-    - ins: H. Harpin
-    target: http://www.ibiblio.org/hhalpin/homepage/publications/def-timbl-halpin.pdf
+   BernersLeeHalpin:
+     title: Defend the Web
+     date: 2012
+     author:
+        - ins: T. Berners-Lee
+        - ins: H. Halpin
+     target: http://www.ibiblio.org/hhalpin/homepage/publications/def-timbl-halpin.pdf
     
 
 --- abstract
@@ -1000,7 +999,7 @@ The Human Rights Protocol Considerations Research Group (hrpc) in the Internet R
 Literature and Discussion Review
 ================================
 
-Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: "protocols are politics by other means". Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}} and yet others look at how the engineers' personal set of values get translated into technology {{Abbate}},{{cathfloridi}} {{Denardis15}}.
+Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: "protocols are politics by other means". Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}} and yet others look at how the engineers' personal set of values get translated into technology {{Abbate}},{{CathFloridi}} {{Denardis15}}.
 
 Commercial and political influences on the management of the Internet's architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is sufficient to say that the IETF community consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of and trust in the Internet {{Denardis14}}. The role human rights play in engineering, architecture and protocol design is much less clear.
 
@@ -1016,7 +1015,7 @@ A third position that is similar to that of Brown et al., is taken by {{Broeders
 
 Bless and Orwat {{Bless}} represent a fourth position. They argue that it is to early to make any definitive claims, but that there is a need for more careful analysis of the impact of protocol design choices on human rights. They also argue that it is important to search for solutions that 'create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.'
 
-Berners-Lee and Harpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHarpin}}. This last position is interesting to keep in mind, but beyond the remit of this document.
+Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. This last position is interesting to keep in mind, but beyond the remit of this document.
 
 It is important to give some background to the academic discussion on this issue. As it stems from the issues as they arise in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
