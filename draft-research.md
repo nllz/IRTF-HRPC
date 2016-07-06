@@ -804,7 +804,37 @@ informative:
         - ins: T. Berners-Lee
         - ins: H. Halpin
      target: http://www.ibiblio.org/hhalpin/homepage/publications/def-timbl-halpin.pdf
-    
+   
+   Bhargavan
+     title: Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS.
+     date: 2014
+     author: 
+        - ins: K. Bhargavan 
+        - ins: A. Delignat-Lavaud 
+        - ins: C. Fournet 
+        - ins: A. Pironti
+        - ins: P. Strub
+     seriesinfo: IEEE Symposium on Security and Privacy 2014: 98-113
+
+   Adrian
+     title: Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice
+     date: 2015
+     author:
+        - ins: D. Adrian
+        - ins: K. Bhargavan
+        - ins: Z. Durumeric
+        - ins: P. Gaudry
+        - ins: M. Green
+        - ins: J.A. Halderman
+        - ins: N. Heninger
+        - ins: D. Springall
+        - ins: E. Thomé 
+        - ins: L. Valenta
+        - ins: B. VanderSloot
+        - ins: E. Wustrow
+        - ins: S. Zanella Béguelin
+        - ins: P. Zimmermann 
+      sesiesinfo: ACM Conference on Computer and Communications Security 2015: 5-17
 
 --- abstract
 
@@ -1222,6 +1252,8 @@ Generally we can identify in Traffic Interception and Traffic Manipulation the t
 #### Traffic Interception
 
 While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of SSL/TLS is also a relatively recent phenomena. E-mail providers such as riseup.net provided SSL on by default as on of the first. Google introduced an option for its GMail users to navigate with SSL only in 2008 {{Rideout}}, and turned SSL on by default later in 2010 {{Schillace}}. It took an increasing amount of security breaches and revelations on global surveillance from Edward Snowden to have other Internet service providers to follow Google's lead. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 {{Peterson}}.
+
+TLS itself has been subject to many attacks and bugs which can be attributed to some fundamental design weaknesses such as lack of a state machine, which opens a vulnerability for a Triple Handshake Attack, and flaws caused by early U.S. government restrictions on cryptography, leading to cipher-suite downgrade attacks (Logjam attack). These vulnerabilities have been corrected in TLS1.3. {{Bhargavan}} {{Adrian}}
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
@@ -1756,7 +1788,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Giovane Moura, Harry Halpin, James Gannon, and Scott Craig for testing the HRPC guidelines in the wild.  
+and Stephane Bortzmeyer, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Giovane Moura, Harry Halpin, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
