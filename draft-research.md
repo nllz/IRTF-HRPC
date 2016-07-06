@@ -804,9 +804,9 @@ informative:
         - ins: T. Berners-Lee
         - ins: H. Halpin
      target: http://www.ibiblio.org/hhalpin/homepage/publications/def-timbl-halpin.pdf
-   
-   Bhargavan
-     title: Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS.
+
+   Bhargavan:
+     title: "Triple Handshakes and Cookie Cutters: Breaking and Fixing Authentication over TLS"
      date: 2014
      author: 
         - ins: K. Bhargavan 
@@ -814,10 +814,10 @@ informative:
         - ins: C. Fournet 
         - ins: A. Pironti
         - ins: P. Strub
-     seriesinfo: IEEE Symposium on Security and Privacy 2014: 98-113
+     seriesinfo: "IEEE Symposium on Security and Privacy 2014: 98-113"
 
-   Adrian
-     title: Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice
+   Adrian:
+     title: "Imperfect Forward Secrecy: How Diffie-Hellman Fails in Practice"
      date: 2015
      author:
         - ins: D. Adrian
@@ -834,7 +834,7 @@ informative:
         - ins: E. Wustrow
         - ins: S. Zanella Béguelin
         - ins: P. Zimmermann 
-      sesiesinfo: ACM Conference on Computer and Communications Security 2015: 5-17
+     seriesinfo: "ACM Conference on Computer and Communications Security 2015: 5-17"
 
 --- abstract
 
