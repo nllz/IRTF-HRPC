@@ -1437,7 +1437,7 @@ This section provides guidance for document authors in the form of a questionnai
 
 There should be some discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
 
-Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}).
+Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}).
 
 
 #### Technical concepts as they relate to human rights
@@ -1790,7 +1790,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Giovane Moura, Harry Halpin, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Giovane Moura, Harry Halpin, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
