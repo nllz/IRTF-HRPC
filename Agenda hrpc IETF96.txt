@@ -7,14 +7,13 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 
 	Introduction
 - Status of research group & documents (2 min)
 - Context of research (5 mins)
-- Presentation + Q&A - UN Special Rapporteur Human Rights David Kaye on report 'Freedom of expression and the private sector in the digital age' (15 mins)
-- Presentation + Q&A - Geoffrey Bowker on Values in Design and difficulties surrounding engineering for social values (15 mins)
 - Presentation + Q&A - Laura DeNardis on Protocol Politics (15 mins)
+- Presentation + Q&A - UN Special Rapporteur Human Rights David Kaye on report 'Freedom of expression and the private sector in the digital age' (15 mins)
 - Presentation + Q&A - Alissa Cooper on lessons learned from RFC6973 (15 mins)
 - Discussion of draft-tenoever-hrpc-research  (15 mins)
 	- recent changes + reviews
 	- experiences in using it while evaluating other drafts
-	- next steps?
+	- next stepsfile
 	https://tools.ietf.org/html/draft-tenoever-hrpc-research
 - Open discussion other drafts, papers, ideas (15 min)
 - Next steps (5 min)
