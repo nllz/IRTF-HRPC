@@ -1131,9 +1131,11 @@ On the basis of the prior steps the following  list of  technical terms, that wh
 
 ### Translation human rights to technical terms
 
-This analysis aims to translate human rights concepts that impact or are impacted by the Internet as follows:
+The combination of the technical concepts that have been gathered the steps above have been grouped according to their impact on specific rights as they have been mentioned in the interviews done at IETF92 as well as study of literature (see literature and discussion review above).
 
-The combination of content agnosticism, connectivity, security, privacy (as defined in {{RFC6973}} ), and open standards are the technical principles that underlie freedom of expression on the Internet.
+This analysis aims to assist protocol developers by understanding better understanding the roles specific technical concepts with regards to the possibility to exercise human rights on the Internet.
+
+This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial combined concept mapping based on interviews and literature and discussion review.
 
       (     Connectivity          )
      (      Privacy                )
