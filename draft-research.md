@@ -1581,7 +1581,7 @@ Impacts:
 
 ##### Open Standards
 Question(s):
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you use proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended"? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented?
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented?
 
 Explanation:
 The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
@@ -1589,7 +1589,7 @@ Similarly, {{RFC3935}} does not define open standards but does emphasize the imp
 
 Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
 
-"All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open stadards, particularly in the domain of cryptography {{newegg}}.
+All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open stadards, particularly in the domain of cryptography {{newegg}}.
 Patents in open standards or in normative references to other standards should have a patent disclosure {{notewell}}, royalty-free licensing {{patentpolicy}}, or some other form of reasonable protection. Reasonable patent protection should includes but is not limited to cryptographic primitives.
 
 Example:
@@ -1763,7 +1763,7 @@ Bob cannot see the data did not come from Alice but from Niels.
 Niels intercepts and alters the communication as it is sent between Alice and Bob.
 Niels knows all.
 
-Impacts:
+Wat iImpacts:
 
 - Right to security
 
@@ -1780,23 +1780,9 @@ Example: Designing a feature that could make access to websites for non-able bod
 - Right to freedom of expression
 - Right to freedom of assembly and association
 
-##### Availability
-Question(s):
-Does your standard favor proprietary specifications over technically equivalent and competing specification(s) by making any incorporated vendor specification "required" or "recommended" {{RFC2026}}? Does your protocols use proprietary code? Does your protocol depend on proprietary code? Do you normatively reference another standard that is not available without cost?  Also see 'Open Standards' above. Also see 'Connectivity' above.
-
-Explanation:
-An open, balanced and cooperative approach to developing technological standards is vital to maintaining the Internet open, accessible and secure. This will ensure the standards are open and not subject to restrictive contract terms from the copyright owners. Availability of standards is a prerequisite to the continued growth of the Internet, and crucial to continued technological innovation across the globe.
-
-Example:
-See Open Standards
-
-Impacts:
-
-- Freedom of Expression 
-
 ##### Adaptability
 Question(s):
-Does your protocol impact permissionless innovation? See 'Connectivity' above.
+Is your protocol written in such a way that is would be easy for other protocols to be developed on top of it, or to interact with it? Does your protocol impact permissionless innovation? See 'Connectivity' above.
 
 Explanation:
 Adaptability is closely interrelated permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop.
@@ -1825,7 +1811,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Giovane Moura, Harry Halpin, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Shane Kerr, Giovane Moura, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
