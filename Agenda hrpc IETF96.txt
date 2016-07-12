@@ -13,7 +13,7 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 
 - Discussion of draft-tenoever-hrpc-research  (15 mins)
 	- recent changes + reviews
 	- experiences in using it while evaluating other drafts
-	- next stepsfile
+	- next steps
 	https://tools.ietf.org/html/draft-tenoever-hrpc-research
 - Open discussion other drafts, papers, ideas (15 min)
 - Next steps (5 min)
