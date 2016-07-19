@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-tenoever-hrpc-research-03
+docname: draft-tenoever-hrpc-research-04
 category: info
 
 ipr: trust200902

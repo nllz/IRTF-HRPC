@@ -11,10 +11,12 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 
 - Presentation + Q&A - UN Special Rapporteur Human Rights David Kaye on report 'Freedom of expression and the private sector in the digital age' (15 mins)
 - Presentation + Q&A - Alissa Cooper on lessons learned from RFC6973 (15 mins)
 - Discussion of draft-tenoever-hrpc-research  (15 mins)
+	https://tools.ietf.org/html/draft-tenoever-hrpc-research
 	- recent changes + reviews
 	- experiences in using it while evaluating other drafts
+		- Shane Kerr
+		- Giovane C. M. Moura
 	- next steps
-	https://tools.ietf.org/html/draft-tenoever-hrpc-research
 - Open discussion other drafts, papers, ideas (15 min)
 - Next steps (5 min)
 - AOB
