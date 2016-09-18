@@ -1268,6 +1268,8 @@ There have been a number of cases where the records for a domain are removed fro
 
 At a protocol level, there is no technical auditing for name ownership, as in alternate systems like {{namecoin}}. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below, it does not tackle this problem.
 
+(Speaking of alternative techniques, this is not a complete comparison of DNS with Namecoin: the later has its own problems and limitations. The idea here is to show that there are several possible choices, and they have consequences for human rights.)
+
 #### Distortion of records
 
 The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as in {{turkey}}.
