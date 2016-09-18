@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-tenoever-hrpc-research-04
+docname: draft-irtf-hrpc-research-00
 category: info
 
 ipr: trust200902
@@ -868,9 +868,13 @@ informative:
 
 --- abstract
 
-The proliferating convolution of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
+The evergrowing interconnectedness of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
 
 This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
+
+This document is not an Internet Standards Track specification; it is published for informational purposes.
+
+This document is a product of the Internet Research Task Force (IRTF).  The IRTF publishes the results of Internet-related research and development activities. This documents aims to be a consensus document of the Human Rights Protocol Consideration Research Group of the Internet Research Task Force (IRTF).
 
 Discussion of this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/listinfo/hrpc
 
@@ -885,20 +889,26 @@ Introduction
 
 {{Berners-Lee}}
 
+    "The Internet isn't value-neutral, and neither is the IETF."
+
+{{RFC3935}}
+
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights.
 
 Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association, as defined in the Universal Declaration of Human Rights {{UDHR}}. The Internet aims to be a global network of networks that provides unfettered connectivity to all users at all times and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's architecture and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF enabled the manifestation of the right to privacy, through the Internet's architecture. Additionally, access to information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet  increasingly becoming a pre-condition for human rights rather than a supplement.
 
-Openness of communications of the technical design fostered freedom of communication as a core value, however as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture.New protocols, particularly those that upgrade the core infrastructure of the Net, should be designed to continue to enable fundamental human rights.
+Openness of communications of the technical design fostered freedom of communication as a core value, however as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture. New protocols, particularly those that upgrade the core infrastructure of the Net, should be designed to continue to enable fundamental human rights.
 
 The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
+
+This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The draft in its current form and iteration has received five in-depth reviews, and received many comments.  The authors believe that the issues that have been raised by the reviewers have been addressed. 
 
 
 Vocabulary used
 ===============
 
-In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together {{Dutton}},{{Kaye}}, {{Franklin}}. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided.
+In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together {{Dutton}},{{Kaye}}, {{Franklin}}. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided, building as much as possible on existing definitions, and where these were not available definitions have been developed. 
 
 Accessibility
 : Full Internet Connectivity as described in {{RFC4084}} to provide unfettered access to the Internet
@@ -937,7 +947,7 @@ Decentralized
 : Opportunity for implementation or deployment of standards, protocols or systems without one single point of control.
 
 End-to-End
-: The principal of extending characteristics of a protocol or system as far as possible within the system. technicall this means that intermediaries should not modify messages but simply route them to their desired end-points as capabilities should be given by the end-points, that the network then interconnects rather than controls.
+: The principal of extending characteristics of a protocol or system as far as possible within the system. technical this means that intermediaries should not modify messages but simply route them to their desired end-points as capabilities should be given by the end-points, that the network then interconnects rather than controls.
 For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
@@ -955,7 +965,7 @@ Internet censorship
 :  Internet censorship is the intentional suppression of information originating, flowing or stored on systems connected to the Internet where that information is relevant for decision making to some entity. {{Elahi}}
 
 Inter-operable
-: A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted negotiation, access or functionality.
+: A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted access or functionality.
 
 Internet Standards as an Arena for Conflict
 : Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
@@ -970,7 +980,7 @@ product, application or document content that enables easy
 localization for target audiences that vary in culture, region,
 or language."  {{W3Ci18nDef}}
 
-: Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding up to local guesswork (which leads, of course, to  interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully all of the ones useful in the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices.
+: Many protocols that handle text only handle one charset (US-ASCII), or leave the question of encoding up to local guesswork (which leads, of course, to  interoperability problems) {{RFC3536}}. If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully all of the ones useful in the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices.
 
 Localization (l10n)
 : The practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
@@ -1063,7 +1073,7 @@ Protocols and standards are regularly seen as merely performing technical functi
 
 Commercial and political influences on the management of the Internet's architecture are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is sufficient to say that the IETF community consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of and trust in the Internet {{Denardis14}}. The role human rights play in engineering, architecture and protocol design is much less clear.
 
-It is very important to understand how protocols and standards impact human rights. In particular because Standard Developing Organizations (SDOs) are increasingly becoming venues where social values (like human rights) are discussed, although often from a technological point of view. These SDOs are becoming a new focal point for discussions about values-by-design, and the role of technical engineers in protecting or enabling human rights {{Brownetal}} {{Clarketal}} {[Denardis14}} {{CathFloridi}} {{Lessig}} {{Rachovitsa}}.
+It is very important to understand how protocols and standards impact human rights. In particular because Standard Developing Organizations (SDOs) are increasingly becoming venues where social values (like human rights) are discussed, although often from a technological point of view. These SDOs are becoming a new focal point for discussions about values-by-design, and the role of technical engineers in protecting or enabling human rights {{Brownetal}} {{Clarketal}} {{Denardis14}} {{CathFloridi}} {{Lessig}} {{Rachovitsa}}.
 
 In the academic literature five clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (...) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{Clarketal}}.' They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to blunting the tools of enforcement and last but not least, it is dangerous to make promises that can't be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals' human rights.
 
@@ -1079,7 +1089,7 @@ Berners-Lee and Halpin argue that the Internet could lead to even new capacities
 
 It is important to give some background to the academic discussion on this issue. As it stems from the issues as they arise in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
-This document details the steps taken in theresearch into human rights protocol considerations by the HRPC group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
+This document details the steps taken in the research into human rights protocol considerations by the hrpc research group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
 
 
 Methodology
