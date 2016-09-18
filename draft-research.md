@@ -69,6 +69,7 @@ informative:
    RFC6120:
    RFC6365:
    RFC6797:
+   RFC6698:
    RFC6973:
    RFC7258:
    RFC7469:
@@ -1300,7 +1301,7 @@ While we are seeing an increasing trend in the last couple of years to employ SS
 
 TLS itself has been subject to many attacks and bugs which can be attributed to some fundamental design weaknesses such as lack of a state machine, which opens a vulnerability for a Triple Handshake Attack, and flaws caused by early U.S. government restrictions on cryptography, leading to cipher-suite downgrade attacks (Logjam attack). These vulnerabilities have been corrected in TLS1.3. {{Bhargavan}} {{Adrian}}
 
-HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" in any links to HTTPS URIs from a web-page transferred in cleartext over HTTP, an attack called "SSL Stripping" {{sslstrip}}. Thus, for high security use of HTTPS IETF standards such as HSTS {{RFC6797}} and certificate pinning should be used {{RFC7469}}.
+HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" in any links to HTTPS URIs from a web-page transferred in cleartext over HTTP, an attack called "SSL Stripping" {{sslstrip}}. Thus, for high security use of HTTPS IETF standards such as HSTS {{RFC6797}}, certificate pinning  {{RFC7469}} and/or DANE {{6698}} should be used.
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
