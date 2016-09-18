@@ -902,7 +902,7 @@ Openness of communications of the technical design fostered freedom of communica
 
 The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
-This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The draft in its current form and iteration has received five in-depth reviews, and received many comments.  The authors believe that the issues that have been raised by the reviewers have been addressed. 
+This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The draft in its current form and iteration has received five in-depth reviews on list, and received many comments from inside and outside the IRTF and IETF community.  The authors believe that the issues that have been raised by the reviewers have been addressed. 
 
 
 Vocabulary used
@@ -1087,7 +1087,7 @@ Bless and Orwat {{Bless}} represent a fourth position. They argue that it is to 
 
 Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. This last position is interesting to keep in mind, but beyond the remit of this document.
 
-It is important to give some background to the academic discussion on this issue. As it stems from the issues as they arise in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
+It is important to give some background to the academic discussion on this issue, because these discussions are rooted in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
 This document details the steps taken in the research into human rights protocol considerations by the hrpc research group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
 
@@ -1118,7 +1118,7 @@ To start addressing the issue, a mapping exercise analyzing Internet architectur
 Interviews with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group (IESG) and chairs of selected working groups and RFC authors was done at the IETF92 Dallas meeting in March 2015. To get an insider understanding of how they view the relationship (if any) between human rights and protocols to play out in their work.
 
 ### Participant observation in Working Groups
-By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which which general themes, technical concepts, and use-cases about human rights and protocols were extracted.
+By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which general themes, technical concepts, and use-cases about human rights and protocols were extracted.
 
 
 Data analysis strategies
@@ -1137,9 +1137,9 @@ By combining data from the three data sources named above, an extensive list of 
 Mapping the protocols and standards that are related to human rights and create a human rights enabeling environment was the first step. For that we needed to focus on specific technical concepts that underlie these protocols and  standards. On the basis of this list a number of technical concepts that appeared frequently was extracted, and used to create a second list of technical terms that, when combined, create an enabling environment for excercising human rights on the Internet.
 
 #### Building a common vocabulary of technical concepts that impact human rights
-While interviewing experts, mapping RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms and vocabulary, a list of definitions was created. The definitions are based on the wording found in various IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature.
+While interviewing experts, mapping RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms and vocabulary, a list of definitions was created. The definitions are based on the wording found in various IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature, as indicated in the vocabulary section.
 
-#### Translating Human Rights Concept into Technical Definitions
+#### Translating Human Rights Concepts into Technical Definitions
 The previous steps allowed for the clarification of relation between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precise technical concepts that make up these protocols and standards, in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that when combined create an enabling environment for human rights.
 
 #### List technical terms that combined create enabling environment for human rights
@@ -1169,13 +1169,13 @@ On the basis of the prior steps the following  list of  technical terms, that wh
      +===============================================+
 
 
-### Translation human rights to technical terms
+### Translating human rights to technical terms
 
 The combination of the technical concepts that have been gathered the steps above have been grouped according to their impact on specific rights as they have been mentioned in the interviews done at IETF92 as well as study of literature (see literature and discussion review above).
 
-This analysis aims to assist protocol developers by understanding better understanding the roles specific technical concepts with regards to the possibility to exercise human rights on the Internet.
+This analysis aims to assist protocol developers by better understanding the roles specific technical concepts with regards to the possibility to exercise human rights on the Internet.
 
-This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial combined concept mapping based on interviews and literature and discussion review.
+This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial concept mapping based on interviews and literature and discussion review.
 
       (     Connectivity          )
      (      Privacy                )
@@ -1262,7 +1262,11 @@ Authentication through DNSSEC creates a validation path for records. This authen
 
 #### Removal of records
 
-There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks {{bbc-wikileaks}} and the names of illegally operating gambling operations by the United States ICE unit, which compelled the US-based registry in charge of the .com TLD to hand ownership of those domains over to the US government. The same technique has been used in Libya to remove sites in violation of "our Country's Law and Morality (which) do not allow any kind of pornography or its promotion." {{techyum}}
+There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks {{bbc-wikileaks}} and the names of illegally operating gambling operations by the 
+
+{{blablabalabal}}> need to add abbrev
+
+United States ICE unit, which compelled the US-based registry in charge of the .com TLD to hand ownership of those domains over to the US government. The same technique has been used in Libya to remove sites in violation of "our Country's Law and Morality (which) do not allow any kind of pornography or its promotion." {{techyum}}
 
 At a protocol level, there is no technical auditing for name ownership, as in alternate systems like {{namecoin}}. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below, it does not tackle this problem.
 
@@ -1292,7 +1296,7 @@ Generally we can identify in Traffic Interception and Traffic Manipulation the t
 
 #### Traffic Interception
 
-While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of SSL/TLS is also a relatively recent phenomena. E-mail providers such as riseup.net provided SSL on by default as on of the first. Google introduced an option for its GMail users to navigate with SSL only in 2008 {{Rideout}}, and turned SSL on by default later in 2010 {{Schillace}}. It took an increasing amount of security breaches and revelations on global surveillance from Edward Snowden to have other Internet service providers to follow Google's lead. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 {{Peterson}}.
+While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of SSL/TLS is also a relatively recent phenomena. E-mail providers such as riseup.net provided SSL on by default as on of the first. Google introduced an option for its GMail users to navigate with SSL only in 2008 {{Rideout}}, and turned SSL on by default later in 2010 {{Schillace}}. It took an increasing amount of security breaches and revelations on global surveillance from Edward Snowden to have other Internet service providers follow Google's lead. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 {{Peterson}}.
 
 TLS itself has been subject to many attacks and bugs which can be attributed to some fundamental design weaknesses such as lack of a state machine, which opens a vulnerability for a Triple Handshake Attack, and flaws caused by early U.S. government restrictions on cryptography, leading to cipher-suite downgrade attacks (Logjam attack). These vulnerabilities have been corrected in TLS1.3. {{Bhargavan}} {{Adrian}}
 
@@ -1300,12 +1304,12 @@ HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" 
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
-However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by less democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages ad a country level. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
+However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by less democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
 #### Traffic Manipulation
 
-The lack of a secure transport layer under HTTP connections not only exposes the users to interception of the content of their communications, but is more and more commonly abused as a vehicle for active compromises of computers and mobile devices. If an HTTP session travels in clear over the network, any node positioned at any point in the network is able to perform man-in-the-middle attacks and observe, manipulate, and hijack the session and modify the content of the communication in order to trigger unexpected behavior by the application
-generating the traffic. For example, in the case of a browser the attacker would be able to inject malicious code in order to exploit vulnerabilities in the browser or any of its plugins. Similarly, the attacker would be able to intercept, trojanize, and repackage binary software updates that are very commonly downloaded in clear by applications such as word processors and media players. If the HTTP session would be encrypted, the tampering of the content would not be possible, and these network injection attacks would not be successful.
+The lack of a secure transport layer under HTTP connections not only exposes the users to interception of the content of their communications, but is more and more commonly abused as a vehicle for actively comprosing computers and mobile devices. If an HTTP session travels in the clear over the network, any node positioned at any point in the network is able to perform man-in-the-middle attacks and observe, manipulate, and hijack the session and modify the content of the communication in order to trigger unexpected behavior by the application
+generating the traffic. For example, in the case of a browser the attacker would be able to inject malicious code in order to exploit vulnerabilities in the browser or any of its plugins. Similarly, the attacker would be able to intercept, add malware, and repackage binary software updates that are very commonly downloaded in clear by applications such as word processors and media players. If the HTTP session would be encrypted, the tampering of the content would not be possible, and these network injection attacks would not be successful.
 
 While traffic manipulation attacks have been long known, documented, and prototyped especially in the context of WiFi and LAN networks, in the last few years we observed an increasing investment into the production and sale of network injection equipment both available commercially as well as deployed at scale by intelligence agencies.
 
@@ -1315,7 +1319,7 @@ Recently similar capabilities of Chinese authorities have been reported as well 
 
 Network injection attacks are also made widely available to state actors around the world through the commercialization of similar, smaller scale equipment that can be easily acquired and deployed at a country-wide level. Companies like FinFisher and HackingTeam are known to have network injection gear within their products portfolio, respectively called FinFly ISP and RCS Network Injector {{Marquis-Boire}}. The technology devised and produced by HackingTeam to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States {{Googlepatent}}. Access to offensive technologies available on the commercial lawful interception market has been largely documented to have lead to human rights abuses and illegitimate surveillance of journalists, human rights defenders, and political activists in many countries around the world. Companies like FinFisher and HackingTeam have been found selling their products to oppressive regimes with little concern for bad human rights records {{Collins}}. While network injection attacks haven't been the subject of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
 
-There is a new version of HTTP, called HTTP/2, which was published as {{RFC7540}} and which aimed to be largely backwards compatible but also offer new option such as data compression of HTTP headers and pipelining of request and multiplexing multiple requests over a single TCP connection. Except for decreasing latency to improve page loading speeds it also facilitates more efficient use of connectivity in low-bandwith environments, which is an enabler for freedom of expression, the right to assembly, right to political participation and the right to participate in cultural life, art and science.
+There is a new version of HTTP, called HTTP/2, which was published as {{RFC7540}} and which aimed to be largely backwards compatible but also offer new option such as data compression of HTTP headers and pipelining of request and multiplexing multiple requests over a single TCP connection. In addition to decreasing latency to improve page loading speeds it also facilitates more efficient use of connectivity in low-bandwith environments, which is an enabler for freedom of expression, the right to assembly, right to political participation and the right to participate in cultural life, art and science.
 {{RFC7540}} does not mandate Transport Layer Security or any other form of encryption, is also does not support opportunistic encryption, so the vulnerabilities listed above for HTTP/1 are also valid for HTTP/2 as defined in {{RFC7540}}.
 
 ### XMPP
@@ -1430,7 +1434,7 @@ During the IETF92 meeting in Dallas, there was discussion about the usefulness o
 
 What is interesting about this particular case is that not only technical arguments but also the status code's outright potential political use for civil society played a substantial role in shaping the discussion, and the decision to move forward with this technology.
 
-It is however important to note that 451 is not a solution to detect all occasions of censorship. A large swath of Internet filtering occurs in the network rather than the server itself. For these forms of censorship 451 plays a limited role, as the servers will not be able to send the code, because they haven't received the requests (as is the case with servers with resources blocked by the Chinese Golden shield). Such filtering regimes are unlikely to voluntarily inject a 451 status code. The use of 451 is most likely to apply in the case of cooperative, legal versions of content removal resulting from requests to providers. One can think of content that is removed or blocked for legal reasons, like copyright infringement, gambling laws, child abuse, et cetera. The major use case is thus clearly on the Web server itself, not the network. Large Internet companies and search engines are constantly asked to censor content in various jurisdictions. 451 allows this to be easily discovered, for instance by initiatives like the Lumen Database. In the case of adversarial blocking done by a filtering entity on the network 451 is less useful.
+It is nonetheless important to note that HTTP status code 451 is not a solution to detect all occasions of censorship. A large swath of Internet filtering occurs in the network rather than the server itself. For these forms of censorship 451 plays a limited role, as the servers will not be able to send the code, because they haven't received the requests (as is the case with servers with resources blocked by the Chinese Golden shield). Such filtering regimes are unlikely to voluntarily inject a 451 status code. The use of 451 is most likely to apply in the case of cooperative, legal versions of content removal resulting from requests to providers. One can think of content that is removed or blocked for legal reasons, like copyright infringement, gambling laws, child abuse, et cetera. The major use case is thus clearly on the Web server itself, not the network. Large Internet companies and search engines are constantly asked to censor content in various jurisdictions. 451 allows this to be easily discovered, for instance by initiatives like the Lumen Database. In the case of adversarial blocking done by a filtering entity on the network 451 is less useful.
 
 Overall, the strength of 451 lies in its ability to provide transparency by giving the reason for blocking, and giving the end-user the ability to file a complaint. It allows organizations to easily measure censorship in an automated way, and prompts the user to access the content via another path (e.g. TOR, VPNs) when (s)he encounters the 451 status code.
 
@@ -1450,11 +1454,11 @@ Middleboxes are becoming a proxy for the debate on the extent to which commercia
 ### DDOS attacks
 Many individuals, not excluding IETF engineers, have argued that DDoS attacks are fundamentally against freedom of speech. Technically DDoS attacks are when one or multiple host overload the bandwidth or resources of another host by flooding it with traffic, causing it to temporarily stop being available to users. One can roughly differentiate three types of DDoS attacks: Volume Based Attacked (This attack aims to make the host unreachable by using up all it's bandwith, often used techniques are: UDP floods and ICMP floods), Protocol Attacks (This attacks aims to use up actual server resources, often used techniques are SYN floods, fragmented packet attacks, and Ping of Death {{RFC4949}}) and Application Layer Attacks (this attack aims to bring down a server, such as the webserver).
 
-In their 2010 report Zuckerman et al argue that DDoS attacks are a bad thing because they are increasingly used by governments to attack and silence critics. Their research demonstrates that in many countries independent media outlets and human rights organizations are the victim of DDoS attacks, which are directly or indirectly linked to their governments. These types of attacks are particularly complicated because attribution is difficult, creating a situation in which governments can effectively censor content, while being able to deny involvement in the attacks {{Zuckerman}}. DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}).
+In their 2010 report Zuckerman et al argue that DDoS attacks are a malicious tool because they are increasingly used by governments to attack and silence critics. Their research demonstrates that in many countries independent media outlets and human rights organizations are the victim of DDoS attacks, which are directly or indirectly linked to their governments. These types of attacks are particularly complicated because attribution is difficult, creating a situation in which governments can effectively censor content, while being able to deny involvement in the attacks {{Zuckerman}}. DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}).
 
 In addition, DDoS attacks are increasingly used as an extortion tactic, with criminals flooding a website - rendering it inaccessible - until the owner pays them a certain amount of money to stop the attack. The costs of mitigating such attacks, either by improving security to prevent them or paying off the attackers, ends up being paid by the consumer.
 
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in {{RFC7258}} its commitment to mitigating 'pervasive monitoring (...) in the design of IETF protocols, where possible.' This means the use of encryption should become standard. Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}.
+All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in {{RFC7258}} its commitment to mitigating 'pervasive monitoring (...) in the design of IETF protocols, where possible.' This means the use of encryption should become standard {{RFC7258}}.  Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}.
 
  There is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
 
@@ -1477,18 +1481,18 @@ This sections details several 'common' threats to human rights, indicating how e
 Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to cherry picks rights, if other rights seem relevant, please contact the authors and/or the hrpc mailinglist.
 
 ### Guidelines for human rights considerations
-This section provides guidance for document authors in the form of a questionnaire about protocols being designed. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
+This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
 
-There should be some discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
+Protocols and Internet Standard might benefit from a documented discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
 
-Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}).
+Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}), and the addition of a human rights protocol considerations section has also not yet been proposed. 
 
 
 #### Technical concepts as they relate to human rights
 
 ##### Connectivity
 Question(s):
-Does your protocol add application-specific functions to intermediary nodes? Could this functionality also be added to end nodes instead of intermediary nodes?
+Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
 
 Explanation:
 The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
@@ -1562,7 +1566,7 @@ Internationalization refers to the practice of making protocols, standards, and 
          localization for target audiences that vary in culture, region,
          or language."  {{W3Ci18nDef}}
 
-Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices.
+Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only.
 
 Example:
 See localization
@@ -1584,6 +1588,7 @@ Example:
 Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
 
 Impacts:
+
 - Right to freedom of expression
 - Right to political participation
 - Right to participate in cultural life, arts and science
@@ -1635,6 +1640,7 @@ Example:
 Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
 
 Impacts:
+
 - Right to non-discrimination
 - Right to political participation
 - Right to freedom of assembly and association
@@ -1645,7 +1651,7 @@ Question(s):
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
 Explanation:
-Pseudonymity &#x2013; the ability to disguise one's identity online &#x2013; is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
+Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
 
 Example:
 Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
@@ -1667,6 +1673,7 @@ Example:
 The HTML protocol as defined in {{RFC1866}} specifically requires that every image must have an alt attribute (with a few exceptions for HTML5) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.
 
 Impacts:
+
 - Right to non-discrimination
 - Right to freedom of assembly and association
 - Right to education
@@ -1684,6 +1691,7 @@ Example:
 The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world's online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language.
 
 Impacts:
+
 - Right to non-discrimination
 - Right to participate in cultural life, arts and science
 - Right to Freedom of Expression
@@ -1701,6 +1709,7 @@ Example:
 The bits traveling the Internet are increasingly susceptible to monitoring and censorship, from both governments and Internet service providers, as well as third (malicious) parties. The ability to monitor and censor is further enabled by the increased centralization of the network that creates central infrastructure points that can be tapped in to. The creation of peer-to-peer networks and the development of voice-over-IP protocols using peer-to-peer technology in combination with distributed hash table (DHT) for scalability are examples of how protocols can preserve decentralization {{Pouwelse}}.
 
 Impacts:
+
 - Right to freedom of assembly and association
 
 ##### Reliability
@@ -1715,6 +1724,7 @@ Example:
 In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC0793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
 
 Impacts:
+
 - Right to security
 
 ##### Confidentiality
@@ -1765,15 +1775,15 @@ Authenticity ensures that data does indeed come from the source it claims to com
 Example:
 Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows:
 
-Alice wants to communicate with Bob.
-Alice sends data to Bob.
-Niels intercepts the data sent to Bob.
-Niels reads and alters the message to Bob.
-Bob cannot see the data did not come from Alice but from Niels.
-Niels intercepts and alters the communication as it is sent between Alice and Bob.
-Niels knows all.
+Alice wants to communicate with Bob.  
+Alice sends data to Bob.  
+Corinne intercepts the data sent to Bob.  
+Corinne reads and alters the message to Bob.  
+Bob cannot see the data did not come from Alice but from Corinne.  
+Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
+Corinne knows all.
 
-Wat iImpacts:
+Impacts:
 
 - Right to security
 
@@ -1785,6 +1795,8 @@ Explanation:
 The Internet is a global medium. Yet, there continue to be issues surrounding acceptability &#x2013; the extent to which standards are non-discriminatory and relevant to the widest range of end-users &#x2013; that need to be resolved. Many standards are not suitable for end-users who are not-ablebodied, or otherwise restricted in their ability to access the Internet in its current form (text, data and English heavy). Development of new standards should consider the ways in which they exclude or include non-traditional user communities.
 
 Example: Designing a feature that could make access to websites for non-able bodied people more difficult.
+
+Impacts:
 
 - Right to education
 - Right to freedom of expression
