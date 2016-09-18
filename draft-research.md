@@ -1228,6 +1228,8 @@ This analysis does not claim to be an complete or exhaustive mapping of all poss
 #### Map cases of protocols that adversely impact human rights or are enablers thereof
 Given the information above, the following list of cases of protocols that adversely impact or enable human rights was formed.
 
+It is important to note that the assessment here is not a general judgment on these protocols. When they were conceived, there were many criteria to take into account. For instance, relying on an external server can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered at design time.
+
 ### IPv4
 
 The Internet Protocol version 4 (IPv4), also known as 'layer 3' of the Internet, and specified as a common encapsulation and protocol header, is defined in {{RFC0791}}. The evolution of Internet communications led to continued development in this area, encapsulated in the development of version 6 (IPv6) of the protocol in {{RFC2460}}. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizeable majority of Internet traffic, and most (if not all) of the issues discussed here are valid for IPv4 as well as IPv6.
