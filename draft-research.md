@@ -1262,11 +1262,7 @@ Authentication through DNSSEC creates a validation path for records. This authen
 
 #### Removal of records
 
-There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks {{bbc-wikileaks}} and the names of illegally operating gambling operations by the 
-
-{{blablabalabal}}> need to add abbrev
-
-United States ICE unit, which compelled the US-based registry in charge of the .com TLD to hand ownership of those domains over to the US government. The same technique has been used in Libya to remove sites in violation of "our Country's Law and Morality (which) do not allow any kind of pornography or its promotion." {{techyum}}
+There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks {{bbc-wikileaks}} and the names of illegally operating gambling operations by the United States Immigrations and Customs Enforcement unit, which compelled the US-based registry in charge of the .com TLD to hand ownership of those domains over to the US government. The same technique has been used in Libya to remove sites in violation of "our Country's Law and Morality (which) do not allow any kind of pornography or its promotion." {{techyum}}
 
 At a protocol level, there is no technical auditing for name ownership, as in alternate systems like {{namecoin}}. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below, it does not tackle this problem.
 
