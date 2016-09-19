@@ -55,8 +55,10 @@ informative:
    RFC2775:
    RFC3552:
    RFC3365:
+   RFC3536:
    RFC3724:
    RFC3935:
+   RFC3979:
    RFC4084:
    RFC4033:
    RFC4101:
@@ -70,6 +72,7 @@ informative:
    RFC6365:
    RFC6797:
    RFC6698:
+   RFC6701:
    RFC6973:
    RFC7258:
    RFC7469:
@@ -171,14 +174,6 @@ informative:
      author:
         - ins: Violet
      target: http://techyum.com/2010/10/official-vb-ly-link-shortener-seized-by-libyan-government/
-
-   turkey:
-     title: Internet censorship in Turkey
-     date: 2015
-     author:
-        - ins: M. Akgül
-        - ins: M. Kirlidoğ
-     target: http://policyreview.info/articles/analysis/internet-censorship-turkey
 
    ververis:
      title: Understanding Internet Censorship Policy - The Case of Greece
@@ -1088,11 +1083,7 @@ Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too
 
 Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. This last position is interesting to keep in mind, but beyond the remit of this document.
 
-<<<<<<< HEAD
-It is important to give some background to the academic discussion on this issue, because these discussions are rooted in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make consicious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
-=======
 It is important to give some background to the academic discussion on this issue. As it stems from the issues as they arise in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
->>>>>>> c4e0997572a9d480cb2d8058bfb45c26052b133f
 
 This document details the steps taken in the research into human rights protocol considerations by the hrpc research group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
 
@@ -1273,11 +1264,11 @@ There have been a number of cases where the records for a domain are removed fro
 
 At a protocol level, there is no technical auditing for name ownership, as in alternate systems like {{namecoin}}. As a result, there is no ability for users to differentiate seizure from the legitimate transfer of name ownership, which is purely a policy decision of registrars. While DNSSEC addresses network distortion events described below, it does not tackle this problem.
 
-(Speaking of alternative techniques, this is not a complete comparison of DNS with Namecoin: the later has its own problems and limitations. The idea here is to show that there are several possible choices, and they have consequences for human rights.)
+(While mentioning alternative techniques, this is not a complete comparison of DNS with Namecoin: the latter has its own problems and limitations. The idea here is to show that there are several possible choices, and they have consequences for human rights.)
 
 #### Distortion of records
 
-The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as in China.
+The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as can be observed in Chinese network.
 
 A notable instance of distortion occurred in Greece {{ververis}}, where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content. ISPs prevented clients from resolving the names of domains which they were instructed to do through a governmental order, prompting this particular blocking systems there.
 
@@ -1439,7 +1430,7 @@ During the IETF92 meeting in Dallas, there was discussion about the usefulness o
 
 What is interesting about this particular case is that not only technical arguments but also the status code's outright potential political use for civil society played a substantial role in shaping the discussion, and the decision to move forward with this technology.
 
-It is nonetheless important to note that HTTP status code 451 is not a solution to detect all occasions of censorship. A large swath of Internet filtering occurs in the network rather than the server itself. For these forms of censorship 451 plays a limited role, as the servers will not be able to send the code, because they haven't received the requests (as is the case with servers with resources blocked by the Chinese Golden shield). Such filtering regimes are unlikely to voluntarily inject a 451 status code. The use of 451 is most likely to apply in the case of cooperative, legal versions of content removal resulting from requests to providers. One can think of content that is removed or blocked for legal reasons, like copyright infringement, gambling laws, child abuse, et cetera. The major use case is thus clearly on the Web server itself, not the network. Large Internet companies and search engines are constantly asked to censor content in various jurisdictions. 451 allows this to be easily discovered, for instance by initiatives like the Lumen Database. In the case of adversarial blocking done by a filtering entity on the network 451 is less useful.
+It is nonetheless important to note that HTTP status code 451 is not a solution to detect all occasions of censorship. A large swath of Internet filtering occurs in the network rather than the server itself. For these forms of censorship 451 plays a limited role, as the servers will not be able to send the code, because they haven't received the requests (as is the case with servers with resources blocked by the Chinese Golden shield). Such filtering regimes are unlikely to voluntarily inject a 451 status code. The use of 451 is most likely to apply in the case of cooperative, legal versions of content removal resulting from requests to providers. One can think of content that is removed or blocked for legal reasons, like copyright infringement, gambling laws, child abuse, et cetera. Large Internet companies and search engines are constantly asked to censor content in various jurisdictions. 451 allows this to be easily discovered, for instance by initiatives like the Lumen Database. 
 
 Overall, the strength of 451 lies in its ability to provide transparency by giving the reason for blocking, and giving the end-user the ability to file a complaint. It allows organizations to easily measure censorship in an automated way, and prompts the user to access the content via another path (e.g. TOR, VPNs) when (s)he encounters the 451 status code.
 
@@ -1463,15 +1454,11 @@ In their 2010 report Zuckerman et al argue that DDoS attacks are a malicious too
 
 In addition, DDoS attacks are increasingly used as an extortion tactic, with criminals flooding a website - rendering it inaccessible - until the owner pays them a certain amount of money to stop the attack. The costs of mitigating such attacks, either by improving security to prevent them or paying off the attackers, ends up being paid by the consumer.
 
-<<<<<<< HEAD
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in the network stacks of routers or computers, reducing flaws in HTTPS implementations, and depreciating non-secure HTTP protocols could address this issue. The IETF can clearly play a role in bringing about some of these changes, and has indicated in {{RFC7258}} its commitment to mitigating 'pervasive monitoring (...) in the design of IETF protocols, where possible.' This means the use of encryption should become standard {{RFC7258}}.  Effectively, for the web this means standardized use of HTTPS. The IETF could redirect its work such that HTPPS becomes part-and-parcel of its standards. However, next to the various technical trade-offs that this might lead to it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}.
-=======
-Some people ({{Sauter}}) may say that DDoS attacks are the only mean to be heard, in the current Internet. It is true that Internet has no "public space", a place where everyone can go and protest and raise issues in front of everyone. The Internet, and specially the Web, is a more a series of commercial malls, hold by private entities and where free speech is limited. This is a complicated issue for human rights, and specially freedom of speech, but it does not mean that DDoS are a solution to this real problem.
+Some people may say that DDoS attacks are the only mean to be heard, in the current Internet. It is true that Internet has no "public space", a place where everyone can go and protest and raise issues in front of everyone. The Internet, and specially the Web, is a more a series of commercial malls, hold by private entities and where free speech is limited. This is a complicated issue for human rights, and specially freedom of speech, but it does not mean that DDoS are a solution to this real problem.
 
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes. 
->>>>>>> c4e0997572a9d480cb2d8058bfb45c26052b133f
+All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes. it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}.
 
- There is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
+Eventhough it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}. There is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
 
 David Clark recently published a paper warning that the future of the Internet is in danger. He argues that the private sector control over the Internet is too strong, limiting the myriad of ways in which it can be used {{Daedalus}}, including for freedom of speech. But just because freedom of speech, dissent, and protest are human rights, and DDoS is a potential expression of those rights, doesn't mean that DDoS in and of itself is a right.  To widen the analogy, just because the Internet is a medium through which the right to freedom of expression can be exercised does not make access to the Internet or specific ICTs or NCTs a human right. Uses of DDoS might or might not be legitimate for political reasons, but the IETF has no means or methods to assess this, and in general enabling DDoS would mean a deterioration of the network and thus freedom of expression.
 
@@ -1567,7 +1554,7 @@ Impacts:
 
 ##### Internationalization
 Question(s):
-Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only, thereby shifting conversion issues away from individual choices? Did you have a look at {{RFC6365}}?
+Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only,If other character sets /encodings are allowed, does your protocol mandates a proper tagging of the charset? Did you have a look at {{RFC6365}}?
 
 Explanation:
 Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
@@ -1607,7 +1594,7 @@ Impacts:
 
 ##### Open Standards
 Question(s):
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented?
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
 
 Explanation:
 The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
@@ -1844,7 +1831,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Shane Kerr, Giovane Moura, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
