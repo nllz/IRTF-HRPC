@@ -1456,7 +1456,7 @@ In addition, DDoS attacks are increasingly used as an extortion tactic, with cri
 
 Some people may say that DDoS attacks are the only mean to be heard, in the current Internet. It is true that Internet has no "public space", a place where everyone can go and protest and raise issues in front of everyone. The Internet, and specially the Web, is a more a series of commercial malls, hold by private entities and where free speech is limited. This is a complicated issue for human rights, and specially freedom of speech, but it does not mean that DDoS are a solution to this real problem.
 
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes. it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}.
+All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes. 
 
 Eventhough it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}. There is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
 
@@ -1554,7 +1554,7 @@ Impacts:
 
 ##### Internationalization
 Question(s):
-Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only,If other character sets /encodings are allowed, does your protocol mandates a proper tagging of the charset? Did you have a look at {{RFC6365}}?
+Does your protocol have text strings that are readable or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only,if other character sets /encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
 
 Explanation:
 Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
