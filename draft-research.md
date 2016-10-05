@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-00
+docname: draft-irtf-hrpc-research-01
 category: info
 
 ipr: trust200902
@@ -1034,20 +1034,20 @@ Strong encryption / cryptography
 Transparent
 : "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
-The combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
+A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
       (     Reliability          )
      (      Confidentiality       )
-     (      Integrity             ) = communication and information security
+     (      Integrity             ) ⇒ communication and information security
      (      Authenticity          )
       (     Anonymity            )
 
-The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in on the Internet.
+The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
 
       ( End-to-End      )
      (  Interoperability )
      (  Resilience       )
-     (  Reliability      ) = connectivity
+     (  Reliability      ) ⇒ connectivity
      (  Robustness       )
      (  Autonomy         )
       ( Simplicity      )
@@ -1169,13 +1169,13 @@ On the basis of the prior steps the following  list of  technical terms, that wh
 
 The combination of the technical concepts that have been gathered the steps above have been grouped according to their impact on specific rights as they have been mentioned in the interviews done at IETF92 as well as study of literature (see literature and discussion review above).
 
-This analysis aims to assist protocol developers by better understanding the roles specific technical concepts with regards to the possibility to exercise human rights on the Internet.
+This analysis aims to assist protocol developers by better understanding the roles specific technical concepts with regards to their contributing an enabeling environment for people to excise their human rights.
 
 This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial concept mapping based on interviews and literature and discussion review.
 
       (     Connectivity          )
      (      Privacy                )
-     (      Security               )   = Right to freedom of expression
+     (      Security               )   ⇒ Right to freedom of expression
      (      Content agnosticism    )
      (      Internationalization   )
      (      Censorship resistance  )
@@ -1184,23 +1184,23 @@ This analysis does not claim to be an complete or exhaustive mapping of all poss
 
 
      (     Anonymity          )
-    (      Privacy             )   = Right to non-discrimination
+    (      Privacy             )   ⇒ Right to non-discrimination
     (      Pseudonymity        )
     (      Content agnosticism )
      (     Accessibility      )
 
 
     (       Content Agnosticism  )
-    (       Security             )  = Right to equal protection
+    (       Security             )  ⇒ Right to equal protection
 
      (  Accessibility         )
-    (   Internationalization   ) = Right to political participation
+    (   Internationalization   ) ⇒ Right to political participation
     (   Censorship resistance  )
      (      Accessibility     )
 
 
      (  Open standards         )
-    (   Localization            ) = Right to participate in cultural life,
+    (   Localization            ) ⇒ Right to participate in cultural life,
     (   Internationalization    )             arts and science &
     (   Censorship resistance   )    Right to education
      (  Accessibility          )
@@ -1209,14 +1209,14 @@ This analysis does not claim to be an complete or exhaustive mapping of all poss
 
      (  Connectivity         )
     (   Decentralization      )
-    (   Censorship resistance ) = Right to freedom of assembly
+    (   Censorship resistance ) ⇒ Right to freedom of assembly
     (   Pseudonymity          )                   and association
     (   Anonymity             )
      (  Security             )
 
         ( Reliability    )
        (  Confidentiality )
-       (  Integrity       ) = Right to security
+       (  Integrity       ) ⇒ Right to security
        (  Authenticity    )
         ( Anonymity      )
 
