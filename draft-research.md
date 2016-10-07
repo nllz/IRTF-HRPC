@@ -541,10 +541,6 @@ informative:
      author:
         - ins: D. Kaye
      target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
-    
-   WP-Stateless:
-     title: Stateless protocol
-     target: https://en.wikipedia.org/wiki/Stateless_protocol
 
    WP-Debugging:
      title: Debugging
@@ -869,6 +865,21 @@ informative:
         - org: Ministers of the Freedom Online Coalition
      target: https://www.freedomonlinecoalition.com/wp-content/uploads/2014/04/FOC-recommendations-consensus.pdf
 
+   Meyer:
+     title: "Defining and Evaluating Resilience: A Performability Perspective, presentation at International Workshop on Performability Modeling of Computer and Communication Systems."
+     date: 2009
+     author:
+        - ins: J.F. Meyer 
+
+   dict:
+     title: Reliability (dictionary entry)
+     date: 2016
+     author:
+        - org: BusinessDictionary.com. WebFinance, Inc. 
+     target: http://www.businessdictionary.com/definition/reliability.html
+
+     
+
 --- abstract
 
 This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
@@ -1025,25 +1036,19 @@ Article 21 of the ASEAN Human Rights Declaration; and
 Article 8 of the European Convention on Human Rights.
 
 Reliable
-: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. (Derived from {{dict}}).
 
 Resilience
-: The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
+: The maintaining of dependability and performance in the face of unanticipated changes and circumstances. {{Meyer}}
 
 Robustness
-: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
+: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, robustness is the quality of a system that can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 Scalable
 : The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined. In protocol design ensuring for the capacity to both scale up and down can be a challenge. Yet, it is important to consider the capability of the protocol to do both, to ensure new protocols consider the requirements of both big and small operators.
 
-Stateless / stateful
-: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
-
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
-
-Transparent
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
 
 A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
@@ -1641,7 +1646,7 @@ Impacts:
 
 ##### Anonymity
 Question(s):
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ? Could your protocol also be developed in a stateless manner?
 
 Explanation:
 Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
