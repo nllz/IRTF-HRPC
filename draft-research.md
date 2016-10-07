@@ -875,7 +875,7 @@ This document provides a proposal for a vocabulary to discuss the relation betwe
 
 This document is not an Internet Standards Track specification; it is published for informational purposes.
 
-This document is a product of the Internet Research Task Force (IRTF).  The IRTF publishes the results of Internet-related research and development activities. This documents aims to be a consensus document of the Human Rights Protocol Consideration Research Group of the Internet Research Task Force (IRTF).
+This document is a product of the Internet Research Task Force (IRTF). The IRTF publishes the results of Internet-related research and development activities. This documents aims to be a consensus document of the Human Rights Protocol Consideration Research Group of the Internet Research Task Force (IRTF).
 
 Discussion of this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/listinfo/hrpc
 
@@ -1114,13 +1114,13 @@ Data Sources
 In order to map the potential relation between human rights and protocols, the HRPC research group gathered data from three specific sources:
 
 ### Discourse analysis of RFCs
-To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis their possible impact on human rights was undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions was undertaken to expose core architectural principles, language and deliberations on human rights of those affected by the network.
+To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis their possible impact on human rights was undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions was undertaken to expose core architectural principles, language and deliberations on human rights of those affected by the network. This process continues, and the group keeps a living document of the RFCs and mailinglists it has been tracking.
 
 ### Interviews with members of the IETF community
-Interviews with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group (IESG) and chairs of selected working groups and RFC authors was done at the IETF92 Dallas meeting in March 2015. To get an insider understanding of how they view the relationship (if any) between human rights and protocols to play out in their work.
+Over 30 interviews with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group (IESG) and chairs of selected working groups and RFC authors were done at the IETF92 Dallas meeting in March 2015. To get an insider understanding of how they view the relationship (if any) between human rights and protocols to play out in their work. Several of the participants opted to remain anonymous, if you are interested in this data set please contact the list.
 
 ### Participant observation in Working Groups
-By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which general themes, technical concepts, and use-cases about human rights and protocols were extracted.
+By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which general themes, technical concepts, and use-cases about human rights and protocols were extracted. This process started at the IETF91 meeting and continues today.
 
 
 Data analysis strategies
