@@ -992,15 +992,15 @@ Localization (l10n)
 The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
 
 Open standards
-: Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined here.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process.
+: Conform  {{RFC2606}} : Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined here.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process.
 
 Openness
 : The quality of the unfiltered Internet that allows for free access to other hosts.
 
-: Absence of centralized points of control &#x2013; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}.
+: Absence of centralized points of control - a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}.
 
 Permissionless innovation
-: The freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. As well as using existing protocols in new ways without having to ask. 
+: The freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. As well as using existing protocols in new ways without having to seek permission. 
 
 Privacy
 : The right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}
@@ -1009,6 +1009,20 @@ Privacy
 
 : Privacy is a broad concept relating to the protection of individual or group autonomy and the relationship between an individual or group and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
+
+: The right to privacy is articulated  all of the major international and regional human rights instruments, including:
+{{UDHR}} Article 12: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.”
+{{ICCPR}} Article 17: “1. No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour or reputation. 2. Everyone has the right to the protection of the law against such interference or attacks.”
+The right to privacy is also included in:
+Article 14 of the United Nations Convention on Migrant Workers;
+Article 16 of the UN Convention on the Rights of the Child;
+Article 10 of the African Charter on the Rights and Welfare of the Child;
+Article 4 of the African Union Principles on Freedom of Expression (the right of access to information);
+Article 11 of the American Convention on Human Rights;
+Article 5 of the American Declaration of the Rights and Duties of Man,
+Articles 16 and 21 of the Arab Charter on Human Rights;
+Article 21 of the ASEAN Human Rights Declaration; and
+Article 8 of the European Convention on Human Rights.
 
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
@@ -1829,7 +1843,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Stephen Farrell and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
