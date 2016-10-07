@@ -898,13 +898,13 @@ The evergrowing interconnectedness of Internet and society increases the impact 
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights. 
 
-Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association {{FOC}}, as defined in the Universal Declaration of Human Rights {{UDHR}}. The purpose of the Internet to be a global network of networks that provides unfettered connectivity to all users and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's architecture and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF allowed for the manifestation of the right to privacy, through its protocol design processes. Additionally, access to information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet  increasingly becoming a pre-condition for human rights rather than a supplement.
+Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association {{FOC}}, as defined in the Universal Declaration of Human Rights {{UDHR}}. The purpose of the Internet to be a global network of networks that provides unfettered connectivity to all users and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the network. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's architecture and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF enabled the manifestation of the right to privacy, through the Internet's architecture. Additionally, access to information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet  increasingly becoming a pre-condition for human rights rather than a supplement.
 
 Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such as case the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm in a proportional way. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to.
 
-Openness of communications on the initial network fostered freedom of communication as a core value, however as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture. New protocols, particularly those that upgrade the core infrastructure of the Net, should be designed to continue to enable fundamental human rights.
+The open nature of the initial technical design (open standards, open source, etc) fostered freedom of communication as a core value, everyone could join and everyone could submit code. However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture. New protocols, particularly those that upgrade the core infrastructure of the Net, should be designed to continue to enable fundamental human rights.
 
-The IETF has produced guidelines and procedures to encourage the the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
+The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
 This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The draft in its current form and iteration has received five in-depth reviews on list, and received many comments from inside and outside the IRTF and IETF community.  The authors believe that the issues that have been raised by the reviewers have been addressed. 
 
@@ -915,7 +915,7 @@ Vocabulary used
 In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together {{Dutton}},{{Kaye}},{{Franklin}}, {{RFC1958}}. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided, building as much as possible on existing definitions, and where these were not available definitions have been developed. 
 
 Accessibility
-: Full Internet Connectivity as described in {{RFC4084}} to provide access to the Internet
+: Full Internet Connectivity as described in {{RFC4084}} to provide unfettered access to the Internet
 
 : The design of protocols, services or implementation that provide an enabling environment for people with disabilities.
 
@@ -937,7 +937,7 @@ Confidentiality
 : The non-disclosure of information to any unintended person or host or party.
 
 Connectivity
-: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}.
+: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}.
 
 Content-agnosticism
 : Treating network traffic identically regardless of content.
@@ -992,15 +992,22 @@ Localization (l10n)
 The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
 
 Open standards
-: Conform  {{RFC2606}} : Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined here.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process.
+: Conform  {{RFC2606}}: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service
+      specifications that are similar to Technical Specifications
+      defined here.  National and international groups also publish
+      "implementors' agreements" that are analogous to Applicability
+      Statements, capturing a body of implementation-specific detail
+      concerned with the practical application of their standards.  All
+      of these are considered to be "open external standards" for the
+      purposes of the Internet Standards Process.
 
 Openness
 : The quality of the unfiltered Internet that allows for free access to other hosts.
 
-: Absence of centralized points of control - a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}.
+: Absence of centralized points of control &#x2013; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}.
 
 Permissionless innovation
-: The freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. As well as using existing protocols in new ways without having to seek permission. 
+: The freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist.
 
 Privacy
 : The right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}
@@ -1009,20 +1016,6 @@ Privacy
 
 : Privacy is a broad concept relating to the protection of individual or group autonomy and the relationship between an individual or group and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
-
-: The right to privacy is articulated  all of the major international and regional human rights instruments, including:
-{{UDHR}} Article 12: “No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.”
-{{ICCPR}} Article 17: “1. No one shall be subjected to arbitrary or unlawful interference with his privacy, family, home or correspondence, nor to unlawful attacks on his honour or reputation. 2. Everyone has the right to the protection of the law against such interference or attacks.”
-The right to privacy is also included in:
-Article 14 of the United Nations Convention on Migrant Workers;
-Article 16 of the UN Convention on the Rights of the Child;
-Article 10 of the African Charter on the Rights and Welfare of the Child;
-Article 4 of the African Union Principles on Freedom of Expression (the right of access to information);
-Article 11 of the American Convention on Human Rights;
-Article 5 of the American Declaration of the Rights and Duties of Man,
-Articles 16 and 21 of the Arab Charter on Human Rights;
-Article 21 of the ASEAN Human Rights Declaration; and
-Article 8 of the European Convention on Human Rights.
 
 Reliable
 : Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
@@ -1034,7 +1027,7 @@ Robustness
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 Scalable
-: The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined. In protocol design ensuring for the capacity to both scale up and down can be a challenge. Yet, it is important to consider the capability of the protocol to do both, to ensure new protocols consider the requirements of both big and small operators.
+: The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined.
 
 Stateless / stateful
 : In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
@@ -1043,7 +1036,7 @@ Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
 Transparent
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}}
+: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}} 
 
 A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
@@ -1843,7 +1836,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help writing the initial proposals and Internet Drafts and contributing to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Stephen Farrell and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 
 Security Considerations
