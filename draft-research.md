@@ -915,7 +915,7 @@ Vocabulary used
 In the discussion of human rights and Internet architecture concepts developed in computer science, networking, law, policy-making and advocacy are coming together {{Dutton}},{{Kaye}},{{Franklin}}, {{RFC1958}}. The same concepts might have a very different meaning and implications in other areas of expertise. In order to foster a constructive interdisciplinary debate, and minimize differences in interpretation, the following glossary is provided, building as much as possible on existing definitions, and where these were not available definitions have been developed. 
 
 Accessibility
-: Full Internet Connectivity as described in {{RFC4084}} to provide unfettered access to the Internet
+: Full Internet Connectivity as described in {{RFC4084}} to provide access to the Internet
 
 : The design of protocols, services or implementation that provide an enabling environment for people with disabilities.
 
