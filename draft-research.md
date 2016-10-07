@@ -339,7 +339,7 @@ informative:
      date: 2013
      author:
         - org: RSF
-     target: https://en.rsf.org/syria-syria-using-34-blue-coat-servers-23-05-2013,44664.html
+     target: https://rsf.org/en/news/syria-using-34-blue-coat-servers-spy-internet-users
 
    Schneier:
      title: Attacking Tor - how the NSA targets users' online anonymity
@@ -878,7 +878,20 @@ informative:
         - org: BusinessDictionary.com. WebFinance, Inc. 
      target: http://www.businessdictionary.com/definition/reliability.html
 
+   Farrow:
+     title: Source Address Spoofing
+     date: 2016
+     author: 
+        - ins: R. Farrow
+     target: https://technet.microsoft.com/library/cc723706.aspx
      
+   WSJ:
+     title: Firms Aided Libyan Spies
+     date: 2011
+     author: 
+        - ins: P. Sonne
+        - ins: M. Coker
+     target: http://www.wsj.com/articles/SB10001424053111904199404576538721260166388
 
 --- abstract
 
@@ -1043,12 +1056,6 @@ Scalable
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
-<<<<<<< HEAD
-=======
-Transparent
-: "transparency" refers to the original Internet concept of a single universal logical addressing scheme, and the mechanisms by which packets may flow from source to destination essentially unaltered. {{RFC2775}} 
-
->>>>>>> 563d8eecf131f8f085a5a8a973c7c68cfa0c07b8
 A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
       (     Reliability          )
@@ -1253,7 +1260,7 @@ A feature that can harm freedom of expression as well as the right to privacy th
 
 The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, {{caida}} and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
 
-Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers. {{RFC0894}} A variety of alternative designs including source routing, which would allow for the sender to choose a per defined (safe) route, and spoofing of the source IP address are technically supported by the protocol, but neither are considered good practice on the Internet. While projects like {{torproject}} provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
+Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers {{RFC0894}}. A variety of alternative designs including source routing, which would allow for the sender to choose a per defined (safe) route, and spoofing of the source IP address are technically supported by the protocol, but neither are considered good practice on the Internet {{Farrow}}. While projects like {{torproject}} provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
 
 #### Protocols
 
@@ -1316,7 +1323,7 @@ HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" 
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
-However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by less democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
+However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by some democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level {{WSJ}}. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
 #### Traffic Manipulation
 
