@@ -541,6 +541,10 @@ informative:
      author:
         - ins: D. Kaye
      target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
+    
+   WP-Stateless:
+     title: Stateless protocol
+     target: https://en.wikipedia.org/wiki/Stateless_protocol
 
    WP-Debugging:
      title: Debugging
@@ -893,13 +897,14 @@ informative:
         - ins: M. Coker
      target: http://www.wsj.com/articles/SB10001424053111904199404576538721260166388
 
+=======
 --- abstract
 
 This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
 
 This document is not an Internet Standards Track specification; it is published for informational purposes.
 
-This document is a product of the Internet Research Task Force (IRTF).  The IRTF publishes the results of Internet-related research and development activities. This documents aims to be a consensus document of the Human Rights Protocol Consideration Research Group of the Internet Research Task Force (IRTF).
+This document is a product of the Internet Research Task Force (IRTF). The IRTF publishes the results of Internet-related research and development activities. This documents aims to be a consensus document of the Human Rights Protocol Consideration Research Group of the Internet Research Task Force (IRTF).
 
 Discussion of this draft at: hrpc@irtf.org // https://www.irtf.org/mailman/listinfo/hrpc
 
@@ -1042,16 +1047,19 @@ Privacy
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
 Reliable
-: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. (Derived from {{dict}}).
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
 
 Resilience
-: The maintaining of dependability and performance in the face of unanticipated changes and circumstances. {{Meyer}}
+: The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
 
 Robustness
-: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, robustness is the quality of a system that can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
+: The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 Scalable
 : The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined.
+
+Stateless / stateful
+: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
 
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
@@ -1132,13 +1140,13 @@ Data Sources
 In order to map the potential relation between human rights and protocols, the HRPC research group gathered data from three specific sources:
 
 ### Discourse analysis of RFCs
-To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis their possible impact on human rights was undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions was undertaken to expose core architectural principles, language and deliberations on human rights of those affected by the network.
+To start addressing the issue, a mapping exercise analyzing Internet architecture and protocols features, vis-a-vis their possible impact on human rights was undertaken. Therefore, research on the language used in current and historic RFCs and mailing list discussions was undertaken to expose core architectural principles, language and deliberations on human rights of those affected by the network. This process continues, and the group keeps a living document of the RFCs and mailinglists it has been tracking.
 
 ### Interviews with members of the IETF community
-Interviews with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group (IESG) and chairs of selected working groups and RFC authors was done at the IETF92 Dallas meeting in March 2015. To get an insider understanding of how they view the relationship (if any) between human rights and protocols to play out in their work.
+Over 30 interviews with the current and past members of the Internet Architecture Board (IAB), current and past members of the Internet Engineering Steering Group (IESG) and chairs of selected working groups and RFC authors were done at the IETF92 Dallas meeting in March 2015. To get an insider understanding of how they view the relationship (if any) between human rights and protocols to play out in their work. Several of the participants opted to remain anonymous, if you are interested in this data set please contact the list.
 
 ### Participant observation in Working Groups
-By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which general themes, technical concepts, and use-cases about human rights and protocols were extracted.
+By participating in various working groups, in person at IETF meetings and on mailinglists, information was gathered about the IETFs day-to-day workings. From which general themes, technical concepts, and use-cases about human rights and protocols were extracted. This process started at the IETF91 meeting and continues today.
 
 
 Data analysis strategies
@@ -1323,7 +1331,7 @@ HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" 
 
 As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
-However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by some democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by oppressive regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level {{WSJ}}. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
+However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by some democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by some regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level {{WSJ}}. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
 #### Traffic Manipulation
 
@@ -1458,33 +1466,12 @@ Overall, the strength of 451 lies in its ability to provide transparency by givi
 
 Status code 451 impact human rights by making censorship more transparent and measurable. The status code increases transparency both by signaling the existence of censorship (instead of a much more broad HTTP error message like HTTP status code 404) as well as providing details of the legal restriction, which legal authority is imposing it, and what class of resources it applies to. This empowers the user to seek redress.
 
-
-### Middleboxes
-
-On the current Internet, transparency on how packets reach a destination is no longer a given. This is due to the increased presence of firewalls, spam filters, and network address translators networks (NATs) - or middleboxes as these hosts are often called - that make use of higher-layer fields to function {{Walfish}}.
-This development is contentious. The debate also unfolded at the IETF, specifically at the Session Protocol Underneath Datagrams (SPUD) Birds of a Feather (BOF) meeting held at the IETF conference in March 2015. The discussion at the BOF focused on questions about adding meta-data, or other information to traffic flows, to enable the sharing of information with middleboxes in that flow. During the sessions two competing arguments were distilled. On the one hand adding additional data would allow for network optimization, and hence improve traffic carriage. On the other hand, there are risks of information leakage and other privacy and security concerns.
-
-Middleboxes, and the protocols guiding them, influence individuals' ability to communicate online freely and privately.  Repeatedly mentioned in the discussion was the danger of censorship that comes with middleboxes, and the IETF's role to prevent such censorship from happening. Middleboxes essentially undermine the end-to-end principle by inserting themselves in the network, and acting as intermediaries. Although there are many advantages, such as increased security and network performance, to having middleboxes they also have downsides. They are known to limit the choice of transport protocols and drop packets that don't conform. As such, limiting both freedom of expression online and undermining the end-to-end principle.
-
-Middleboxes are becoming a proxy for the debate on the extent to which commercial interests are a valid reason to undermine the end-to-end principle. The potential for abuse and censoring, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real. It is impossible to make any definitive statements about the direction the debate on middleboxes will take at the IETF. The opinions expressed in the SPUD BOF and by the various interviewees indicate that a majority of engineers are trying to mitigate the negative effects of middleboxes on freedom of speech, but their ability to act is limited by their larger commercial context that is expanding the use of middleboxes.
-
-
 ### DDOS attacks
 Many individuals, not excluding IETF engineers, have argued that DDoS attacks are fundamentally against freedom of speech. Technically DDoS attacks are when one or multiple host overload the bandwidth or resources of another host by flooding it with traffic, causing it to temporarily stop being available to users. One can roughly differentiate three types of DDoS attacks: Volume Based Attacked (This attack aims to make the host unreachable by using up all it's bandwith, often used techniques are: UDP floods and ICMP floods), Protocol Attacks (This attacks aims to use up actual server resources, often used techniques are SYN floods, fragmented packet attacks, and Ping of Death {{RFC4949}}) and Application Layer Attacks (this attack aims to bring down a server, such as the webserver).
 
-In their 2010 report Zuckerman et al argue that DDoS attacks are a malicious tool because they are increasingly used by governments to attack and silence critics. Their research demonstrates that in many countries independent media outlets and human rights organizations are the victim of DDoS attacks, which are directly or indirectly linked to their governments. These types of attacks are particularly complicated because attribution is difficult, creating a situation in which governments can effectively censor content, while being able to deny involvement in the attacks {{Zuckerman}}. DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}).
+DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}). In addition, DDoS attacks are increasingly used as an extortion tactic.
 
-In addition, DDoS attacks are increasingly used as an extortion tactic, with criminals flooding a website - rendering it inaccessible - until the owner pays them a certain amount of money to stop the attack. The costs of mitigating such attacks, either by improving security to prevent them or paying off the attackers, ends up being paid by the consumer.
-
-Some people may say that DDoS attacks are the only mean to be heard, in the current Internet. It is true that Internet has no "public space", a place where everyone can go and protest and raise issues in front of everyone. The Internet, and specially the Web, is a more a series of commercial malls, hold by private entities and where free speech is limited. This is a complicated issue for human rights, and specially freedom of speech, but it does not mean that DDoS are a solution to this real problem.
-
-All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes. 
-
-Eventhough it is important to consider that DDoS attacks are sometimes seen as a method for exercising freedom of speech {{Sauter}}. There is a need for the IETF to be consistent in the face of attacks (an attack is an attack is an attack) to maintain the viability of the network. Arguing that some DDoS attacks should be allowed, based on the motivation of the attackers complicates the work of the IETF. Because it approaches PM regardless of the motivation of the attackers (see {{RFC7258}}) for reasoning), taking the motivation of the attackers into account for DDoS would indirectly undermine the ability of the IETF to protect the right to privacy because it introduces an element of inconsistency into how the IETF deals with attacks.
-
-David Clark recently published a paper warning that the future of the Internet is in danger. He argues that the private sector control over the Internet is too strong, limiting the myriad of ways in which it can be used {{Daedalus}}, including for freedom of speech. But just because freedom of speech, dissent, and protest are human rights, and DDoS is a potential expression of those rights, doesn't mean that DDoS in and of itself is a right.  To widen the analogy, just because the Internet is a medium through which the right to freedom of expression can be exercised does not make access to the Internet or specific ICTs or NCTs a human right. Uses of DDoS might or might not be legitimate for political reasons, but the IETF has no means or methods to assess this, and in general enabling DDoS would mean a deterioration of the network and thus freedom of expression.
-
-In summation, the IETF cannot be expected to take a moral stance on DDoS attacks, or create protocols to enable some attacks and inhibit others. But what it can do is critically reflect on its role in creating a commercialized Internet without a defacto public space or inherent protections for freedom of speech.
+All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes but  the IETF cannot be expected to take a moral stance on DDoS attacks, or create protocols to enable some attacks and inhibit others. But what it can do is critically reflect on its role in creating a commercialized Internet without a defacto public space or inherent protections for freedom of speech.
 
 
 Model for developing human rights protocol considerations
@@ -1651,7 +1638,7 @@ Impacts:
 
 ##### Anonymity
 Question(s):
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ? Could your protocol also be developed in a stateless manner?
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
 
 Explanation:
 Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
