@@ -81,6 +81,7 @@ informative:
    RFC7624:
    RFC7626:
    RFC7725:
+   RFC7858:
 
 
    UNGA2013:
@@ -1304,6 +1305,8 @@ The most common mechanism by which the DNS system is abused to limit freedom of 
 A notable instance of distortion occurred in Greece {{ververis}}, where a study found evidence of both of deep packet inspection to distort DNS replies, and overblocking of content. ISPs prevented clients from resolving the names of domains which they were instructed to do through a governmental order, prompting this particular blocking systems there.
 
 At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records is also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in {{hall}}.
+
+Users can switch to another resolver, for instance a public one such as those operated by [http://dns.telecomix.org/](Telecomix). The distorter can then try to block or hijack the connection to this resolver. This may start an arm's race, the user switching to secured connections to this alternative resolver ({{RFC7858}}), the disruptor then trying to find more sophisticated ways to block or hijack. In some cases, this research to find an alternative, non-disrupting resolver, may lead to more centralisation, many people going to a few big commercial public resolvers.
 
 #### Injection of records
 
