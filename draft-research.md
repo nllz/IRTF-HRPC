@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-01
+docname: draft-irtf-hrpc-research-02
 category: info
 
 ipr: trust200902
@@ -24,7 +24,7 @@ author:
 -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: Article19
+       organization: ARTICLE 19
        email: niels@article19.org
 -
        ins: C.J.N. Cath
@@ -36,7 +36,6 @@ author:
 normative:
 
 informative: 
-   BCP72:
    RFC0226:
    RFC0760:
    RFC0791:
@@ -46,14 +45,12 @@ informative:
    RFC1122:
    RFC1631:
    RFC1766:
-   RFC1866:
    RFC1958:
    RFC1984:
    RFC2026:
    RFC2277:
    RFC2460:
    RFC2606:
-   RFC2775:
    RFC3365:
    RFC3536:
    RFC3724:
@@ -62,11 +59,11 @@ informative:
    RFC4084:
    RFC4033:
    RFC4101:
-   RFC4303:
-   RFC4906:
    RFC4949:
+   rfc5246:
    RFC5321:
    RFC5944:
+   RFC6101:
    RFC6108:
    RFC6120:
    RFC6365:
@@ -138,20 +135,6 @@ informative:
      author:
         - ins: The Tor Project
      target: https://www.torproject.org/
-
-   spdy:
-     title: SPDY - An experimental protocol for a faster web
-     date: 2009
-     author:
-        - org: The Chromium Project
-     target: https://www.chromium.org/spdy/spdy-whitepaper
-
-   quic:
-     title: QUIC, a multiplexed stream transport over UDP
-     date: 2014
-     author:
-        - org: The Chromium Project
-     target: https://www.chromium.org/quic
 
    natusage:
      title: NAT usage in Residential Broadband networks
@@ -427,33 +410,6 @@ informative:
         - ins: T. Bray
      target: https://tools.ietf.org/html/draft-ietf-httpbis-legally-restricted-status-04
 
-   Daedalus:
-     title: The Contingent Internet
-     date: 2016
-     author:
-        - ins: D. Clark
-     seriesinfo: Daedalus Winter 2016, Vol. 145, No. 1. p. 9&#x2013;17
-     target: http://www.mitpressjournals.org/toc/daed/current
-
-   Sauter:
-     title: The Coming Swarm
-     date: 2014
-     author:
-        - ins: M. Sauter
-     seriesinfo: Bloomsbury, London
-
-   Walfish:
-     title: Middleboxes No Longer Considered Harmful
-     date: 2004
-     author:
-        - ins: M. Walfish
-        - ins: J. Stribling
-        - ins: M. Krohn
-        - ins: H. Balakrishnan
-        - ins: R. Morris
-        - ins: S. Shenker
-     target: http://www.nms.lcs.mit.edu/papers/doa-osdi04.pdf
-
    Abibil:
      title: Dissecting 'Operation Ababil' - an OSINT Analysis
      date: 2012
@@ -467,18 +423,6 @@ informative:
      author:
         - ins: N. Villeneuve
      target: https://www.nartv.org/2009/06/16/iran-ddos/
-
-   Zuckerman:
-     title: Report on Distributed Denial of Service (DDoS) Attacks
-     date: 2010
-     author:
-        - ins: E. Zuckerman
-        - ins: H. Roberts
-        - ins: R. McGrady
-        - ins: J. York
-        - ins: J. Palfrey
-     target: https://cyber.law.harvard.edu/sites/cyber.law.harvard.edu/files/2010_DDoS_Attacks_Human_Rights_and_Media.pdf
-     seriesinfo: The Berkman Center for Internet and Society at Harvard University
 
    ICCPR:
      title: International Covenant on Civil and Political Rights
@@ -542,14 +486,6 @@ informative:
      author:
         - ins: D. Kaye
      target: http://www.ohchr.org/EN/Issues/FreedomOpinion/Pages/Privatesectorinthedigitalage.aspx
-    
-   WP-Stateless:
-     title: Stateless protocol
-     target: https://en.wikipedia.org/wiki/Stateless_protocol
-
-   WP-Debugging:
-     title: Debugging
-     target: https://en.wikipedia.org/wiki/Debugging
 
    FIArch:
      title: Future Internet Design Principles
@@ -905,7 +841,7 @@ informative:
         - ins: N. Schiess
      target: https://www.insinuator.net/2013/08/vulnerabilities-attack-vectors-of-vpns-pt-1/
 
-   Alshalalanetal:
+   Alshalanetal:
      title: A Survey of Mobile VPN Technologies
      date: 2016
      author: 
@@ -922,7 +858,7 @@ informative:
      target: https://www.w3.org/TR/html5/
 
    Greenwald:
-     title: XKeyscore: NSA tool collects 'nearly everything a user does on the internet'
+     title: "XKeyscore: NSA tool collects 'nearly everything a user does on the internet'"
      date: 2013
      author: 
         - ins: G. Greenwald
@@ -935,8 +871,13 @@ informative:
         - org: Wikipedia
      target: https://en.wikipedia.org/wiki/Tempora
 
+   BCP72:
+     title: Guidelines for Writing RFC Text on Security Considerations
+     date: 2003
+     author: 
+        - org: IETF
+     target: https://datatracker.ietf.org/doc/bcp72/
 
-=======
 --- abstract
 
 This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
@@ -975,7 +916,6 @@ The open nature of the initial technical design (open standards, open source, et
 The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
 This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The draft in its current form and iteration has received five in-depth reviews on list, and received many comments from inside and outside the IRTF and IETF community.  The authors believe that the issues that have been raised by the reviewers have been addressed. 
-
 
 Vocabulary used
 ===============
@@ -1081,10 +1021,10 @@ Privacy
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
 Reliable
-: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing.
+: Reliability ensures that a protocol will execute its function consistently and error resistant as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing {{dict}}.
 
 Resilience
-: The maintaining of dependability and performance in the face of unanticipated changes and circumstances.
+: The maintaining of dependability and performance in the face of unanticipated changes and circumstances {{Meyer}}.
 
 Robustness
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
@@ -1097,11 +1037,11 @@ Strong encryption / cryptography
 
 A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
-      (     Reliability          )
-     (      Confidentiality       )
-     (      Integrity             ) ⇒ communication and information security
-     (      Authenticity          )
-      (     Anonymity            )
+      (     Reliability       )
+     (      Confidentiality    )
+     (      Integrity          ) ⇒ communication and information security
+     (      Authenticity       )
+      (     Anonymity         )
 
 The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
 
@@ -1112,8 +1052,6 @@ The combination of the end-to-end principle, interoperability, resilience, relia
      (  Robustness       )
      (  Autonomy         )
       ( Simplicity      )
-
-
 
 Research Questions
 ==================
@@ -1183,7 +1121,7 @@ By participating in various working groups, in person at IETF meetings and on ma
 Data analysis strategies
 ------------------------
 
-The data above was processed using three consecutive strategies: mapping protocols related to human rights, extracting concepts from these protocols, and creation of a common glossary (detailed under <xref target="Vocabulary used" />). Before going over these strategies some elaboration on the process of identifying technical concepts as they relate to human rights needs to be given:
+The data above was processed using three consecutive strategies: mapping protocols related to human rights, extracting concepts from these protocols, and creation of a common glossary (detailed under <xref target="vocabulary-used" />). Before going over these strategies some elaboration on the process of identifying technical concepts as they relate to human rights needs to be given:
 
 
 ### Identifying qualities of technical concepts that relate to human rights
@@ -1335,7 +1273,7 @@ A notable instance of distortion occurred in Greece {{ververis}}, where a study 
 
 At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records is also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in {{hall}}.
 
-Users can switch to another resolver, for instance a public one such as those operated by  Telecomix [http://dns.telecomix.org/]. The distorter can then try to block or hijack the connection to this resolver. This may start an arm's race, the user switching to secured connections to this alternative resolver ({{RFC7858}}), the disruptor then trying to find more sophisticated ways to block or hijack. In some cases, this research to find an alternative, non-disrupting resolver, may lead to more centralisation, many people going to a few big commercial public resolvers.
+Users can switch to another resolver, for instance a public one such as those operated by  Telecomix (http://dns.telecomix.org/). The distorter can then try to block or hijack the connection to this resolver. This may start an arm's race, the user switching to secured connections to this alternative resolver ({{RFC7858}}), the disruptor then trying to find more sophisticated ways to block or hijack. In some cases, this research to find an alternative, non-disrupting resolver, may lead to more centralisation, many people going to a few big commercial public resolvers.
 
 ##### Injection of records
 
@@ -1442,7 +1380,7 @@ of information at scale.
 
 The Virtual Private Networks (VPN) that are being discussed here are point-to-point connections that enables two computers to communicate over an encrypted tunnel. There are multiple implementations and protocols used in the deployment of VPNs, and they generally diversify by encryption protocol or particular requirements, most commonly in proprietary and enterprise solutions. VPNs are used commonly either to enable some devices to communicate through peculiar network configurations, or in order to use some privacy and security properties in order to protect the traffic generated by the end user; or both. VPNs have also become a very popular technology among human rights defenders, dissidents, and journalists worldwide to avoid local monitoring and eventually also to circumvent censorship. Among human rights defenders VPNs are often debated as a potential alternative to Tor or other anonymous networks. Such comparison is misleading, as some of the privacy and security properties of VPNs are often misunderstood by less tech-savvy users, which could ultimately lead to unintended problems.
 
-As VPNs increased in popularity, commercial VPN providers have started growing in business and are very commonly picked by human rights defenders and people at risk, as they are normally provided with an easy-to-use service and sometimes even custom applications to establish the VPN tunnel. Not being able to control the configuration of the network, and even less so the security of the application, assessing the general privacy and security state of common VPNs is very hard. Often such services have been discovered leaking information, and their custom applications have been found flawed. While Tor and similar networks receive a lot of scrutiny from the public and the academic community, commercial or non-commercial VPN networks are way less analyzed and understood {{Insinuator}} ((Alshalanetal}} , and it might be valuable to establish some standards to guarantee a minimal level of privacy and security to those who need them the most.
+As VPNs increased in popularity, commercial VPN providers have started growing in business and are very commonly picked by human rights defenders and people at risk, as they are normally provided with an easy-to-use service and sometimes even custom applications to establish the VPN tunnel. Not being able to control the configuration of the network, and even less so the security of the application, assessing the general privacy and security state of common VPNs is very hard. Often such services have been discovered leaking information, and their custom applications have been found flawed. While Tor and similar networks receive a lot of scrutiny from the public and the academic community, commercial or non-commercial VPN networks are way less analyzed and understood {{Insinuator}} {{Alshalanetal}} , and it might be valuable to establish some standards to guarantee a minimal level of privacy and security to those who need them the most.
 
 
 ##### No anonymity against VPN provider
