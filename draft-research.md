@@ -452,7 +452,7 @@ informative:
         - ins: H. Balakrishnan
         - ins: R. Morris
         - ins: S. Shenker
-     target: http://nms.csail.mit.edu/doa
+     target: http://www.nms.lcs.mit.edu/papers/doa-osdi04.pdf
 
    Abibil:
      title: Dissecting 'Operation Ababil' - an OSINT Analysis
@@ -914,6 +914,28 @@ informative:
         - ins: D. Huang
      target: "http://ieeexplore.ieee.org.proxy.uba.uva.nl:2048/stamp/stamp.jsp?arnumber=7314859"
 
+   HTML5:
+     title: HTML5
+     date: 2014
+     author: 
+        - org: W3C
+     target: https://www.w3.org/TR/html5/
+
+   Greenwald:
+     title: XKeyscore: NSA tool collects 'nearly everything a user does on the internet'
+     date: 2013
+     author: 
+        - ins: G. Greenwald
+     target: https://www.theguardian.com/world/2013/jul/31/nsa-top-secret-program-online-data
+
+   WP-Tempora:
+     title: Tempora
+     date: 2016
+     author: 
+        - org: Wikipedia
+     target: https://en.wikipedia.org/wiki/Tempora
+
+
 =======
 --- abstract
 
@@ -948,7 +970,7 @@ Open, secure and reliable connectivity is necessary (although not sufficient) to
 
 Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such as case the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm in a proportional way. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to.
 
-The open nature of the initial technical design (open standards, open source, etc) fostered freedom of communication as a core value, everyone could join and everyone could submit code. However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture. New protocols, particularly those that upgrade the core infrastructure of the Net, should be designed to continue to enable fundamental human rights.
+The open nature of the initial technical design (open standards, open source, etc) fostered freedom of communication as a core value, everyone could join and everyone could submit code. However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture. New protocols, particularly those that upgrade the core infrastructure of the network, should be designed to continue to enable fundamental human rights.
 
 The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
@@ -977,10 +999,10 @@ Authenticity
 : The fact that the data does indeed come from the source it claims to come from. (It is strongly linked with Integrity, see below).
 
 Censorship resistance
-: Methods and measures to prevent Internet censorship.
+: Methods and measures to mitigate Internet censorship.
 
 Confidentiality
-: The non-disclosure of information to any unintended person or host or party.
+: The non-disclosure of information to any unintended person or host or party {{RFC4949}}.
 
 Connectivity
 : The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}.
@@ -988,16 +1010,11 @@ Connectivity
 Content-agnosticism
 : Treating network traffic identically regardless of content.
 
-Debugging
-: Debugging is a methodical process of finding and reducing the number of bugs, or defects, or malfunctions in a protocol or its implementation, thus making it behave as expected. It also includes analyzing the consequences that might have emanate from the error. Debugging tends to be harder when various subsystems are tightly coupled, as changes in one may cause bugs to emerge in another. {{WP-Debugging}}
-
-: The process through which people troubleshoot a technical issue, which may include inspection of program source code or device configurations. Can also include tracing or monitoring packet flow.
-
 Decentralized
-: Opportunity for implementation or deployment of standards, protocols or systems without one single point of control.
+: Implementation or deployment of standards, protocols or systems without one single point of control.
 
 End-to-End
-: The principal of extending characteristics of a protocol or system as far as possible within the system. technical this means that intermediaries should not modify messages but simply route them to their desired end-points as capabilities should be given by the end-points, that the network then interconnects rather than controls.
+: The principal of extending characteristics of a protocol or system as far as possible within the system. technically this means that intermediaries should not modify messages but simply route them to their desired end-points as capabilities should be given by the end-points, that the network then interconnects rather than controls.
 For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
@@ -1005,22 +1022,22 @@ For example, end-to-end instant message encryption would conceal communications 
 Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
 
-Heterogenity
-:  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
+Heterogeinity
+:  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of independent organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
 
 Integrity
-: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
+: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered {{RFC4949}}. 
 
 Internet censorship
 :  Internet censorship is the intentional suppression of information originating, flowing or stored on systems connected to the Internet where that information is relevant for decision making to some entity. {{Elahi}}
 
-Inter-operable
+Interoperable
 : A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted access or functionality.
 
 Internationalization (i18n)
-: The practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization)
+: The practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization).
 
-: (cf {{RFC6365}}) In the IETF, "internationalization" means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}}  A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+: "In the IETF, "internationalization" means to add or improve the handling of non-ASCII text in a protocol" {{RFC6365}}.  A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
 
 : "Internationalization is the design and development of a
 product, application or document content that enables easy
@@ -1075,9 +1092,6 @@ Robustness
 Scalable
 : The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined.
 
-Stateless / stateful
-: In computing, a stateless protocol is a communications protocol that treats each request as an independent transaction that is unrelated to any previous request so that the communication consists of independent pairs of request and response. A stateless protocol does not require the server to retain session information or status about each communications partner for the duration of multiple requests. In contrast, a protocol which requires keeping of the internal state on the server is known as a stateful protocol. {{WP-Stateless}}
-
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
@@ -1130,7 +1144,7 @@ Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too
 
 Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. This last position is interesting to keep in mind, but beyond the remit of this document.
 
-It is important to give some background to the academic discussion on this issue. As it stems from the issues as they arise in the field of technical engineering. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
+It is important to give some background to the academic discussion on this issue. They also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is very complicated as each situation is dependent on its context. At this point is difficult to say whether hard-coding human rights into protocols is wise (or feasible). It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed below. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
 Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
 
@@ -1144,7 +1158,7 @@ Mapping the relation between human rights, protocols and architectures is a new 
 
 The methodological choices made in this document are based on the political science-based method of discourse analysis and ethnographic research methods {{Cath}}. This work departs from the assumption that language reflects the understanding of concepts. Or as {{Jabri}} holds, policy documents are 'social relations represented in texts where language is used to construct meaning and representation'. This process happens in 'the social space of society' {{Schroeder}} and manifests itself in institutions and organizations {{King}}, exposed using the ethnographic methods of semi-structured interviews and participant observation. Or in non-academic language, the way the language in IETF/IRTF documents describes and approaches the issues they are trying to address is an indicator for the underlying social assumptions and relations of the engineers to their engineering. By reading and analyzing these documents, as well as interviewing engineers and participating in the IETF/IRTF working groups, it is possible to distill the relation between human rights, protocols and the Internet's architecture as it pertains to the work of the IETF.
 
-The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the research group was reading  RFCs and other official IETF documents. The second step was the use of a python-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis. As such the initial rounds of quantitative discourse analysis were used to inform the second rounds of qualitative analysis.The results from the qualitative interviews were again used to feed new concepts into the quantitative discourse analysis. As such the two methods continued to support and enrich each other. 
+The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the authors and contributors was reading RFCs and other official IETF documents. The second step was the use of a python-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis. As such the initial rounds of quantitative discourse analysis were used to inform the second rounds of qualitative analysis.The results from the qualitative interviews were again used to feed new concepts into the quantitative discourse analysis. As such the two methods continued to support and enrich each other. 
 
 The ethnographic methods of the data collection and processing allowed the research group to acquire the data necessary to 'provide a holistic understanding of research participants' views and actions' {{Denzin}} that highlighted ongoing issues and case studies where protocols impact human rights. The interview participants were selected through purposive sampling {{Babbie}}, as the research group was interested in getting a wide variety of opinions on the role of human rights in guiding protocol development. This sampling method also ensured that individuals with extensive experience working at the IETF in various roles were targeted. The interviewees included individuals in leadership positions (Working Group (WG) chairs, Area Directors (ADs)), 'regular participants', individuals working for specific entities (corporate, civil society, political, academic) and represented various backgrounds, nationalities and genders.
 
@@ -1169,13 +1183,13 @@ By participating in various working groups, in person at IETF meetings and on ma
 Data analysis strategies
 ------------------------
 
-The data above was processed using three consecutive strategies: mapping protocols related to human rights, extracting concepts from these protocols, and creation of a common glossary (detailed under "2.vocabulary used"). Before going over these strategies some elaboration on the process of identifying technical concepts as they relate to human rights needs to be given:
+The data above was processed using three consecutive strategies: mapping protocols related to human rights, extracting concepts from these protocols, and creation of a common glossary (detailed under <xref target="Vocabulary used" />). Before going over these strategies some elaboration on the process of identifying technical concepts as they relate to human rights needs to be given:
 
 
 ### Identifying qualities of technical concepts that relate to human rights
 
 #### Mapping protocols and standards related to human rights
-By combining data from the three data sources named above, an extensive list of  protocols and standards that potentially enable the Internet as a tool for freedom of expression and association was assembly. In order to determine the enabling (or inhibiting) features we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially closely related to human rights was compiled.
+By combining data from the three data sources named above, an extensive list of  protocols and standards that potentially enable the Internet as a tool for freedom of expression and association. In order to determine the enabling (or inhibiting) features we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially closely related to human rights was compiled.
 
 #### Extracting concepts from mapped RFCs
 Mapping the protocols and standards that are related to human rights and create a human rights enabeling environment was the first step. For that we needed to focus on specific technical concepts that underlie these protocols and  standards. On the basis of this list a number of technical concepts that appeared frequently was extracted, and used to create a second list of technical terms that, when combined, create an enabling environment for excercising human rights on the Internet.
@@ -1212,12 +1226,14 @@ On the basis of the prior steps the following  list of  technical terms, that wh
      =                                               =
      +===============================================+
 
+figure 1 - relation between architectural principles and enabling features for user rights.
+
 
 ### Translating human rights to technical terms
 
 The combination of the technical concepts that have been gathered the steps above have been grouped according to their impact on specific rights as they have been mentioned in the interviews done at IETF92 as well as study of literature (see literature and discussion review above).
 
-This analysis aims to assist protocol developers by better understanding the roles specific technical concepts with regards to their contributing an enabeling environment for people to excise their human rights.
+This analysis aims to assist protocol developers by better understanding the roles specific technical concepts with regards to their contribution to an enabeling environment for people to excise their human rights.
 
 This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial concept mapping based on interviews and literature and discussion review.
 
@@ -1268,33 +1284,34 @@ This analysis does not claim to be an complete or exhaustive mapping of all poss
        (  Authenticity    )
         ( Anonymity      )
 
+figure 2 - relation between specific technical concepts with regards to their contribution to an enabeling environment for people to excise their human rights
 
-#### Map cases of protocols that adversely impact human rights or are enablers thereof
+### Map cases of protocols that adversely impact human rights or are enablers thereof
 Given the information above, the following list of cases of protocols that adversely impact or enable human rights was formed.
 
 It is important to note that the assessment here is not a general judgment on these protocols. When they were conceived, there were many criteria to take into account. For instance, relying on an external server can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered at design time.
 
-### IPv4
+#### IPv4
 
 The Internet Protocol version 4 (IPv4), also known as 'layer 3' of the Internet, and specified as a common encapsulation and protocol header, is defined in {{RFC0791}}. The evolution of Internet communications led to continued development in this area, encapsulated in the development of version 6 (IPv6) of the protocol in {{RFC2460}}. In spite of this updated protocol, we find that 25 years after the specification of version 6 of the protocol, the older v4 standard continues to account for a sizeable majority of Internet traffic, and most of the issues discussed here (with the big exception of NAT, see Address Translation) are valid for IPv4 as well as IPv6.
 
 The Internet was designed as a platform for free and open communication, most notably encoded in the end-to-end principle, and that philosophy is also present in the technical implementation of the Internet Protocol. {{RFC3724}} While the protocol was designed to exist in an environment where intelligence is at the end hosts, it has proven to provide sufficient information that a more intelligent network core can make policy decisions and enforce policy shaping and restricting the communications of end hosts. These capabilities for network control and limitations of the freedom of expression by end hosts can be traced back to the IPv4 design, helping us understand which technical protocol decisions have led to harm of this human rights.
 A feature that can harm freedom of expression as well as the right to privacy through misuse of the Internet Protocol is the exploitation of the public visibility of the host pairs for all communications, and the corresponding ability to discriminate and block traffic as a result of that metadata. 
 
-#### Network visibility of Source and Destination
+##### Network visibility of Source and Destination
 
-The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for hosts to communicate today, {{caida}} and can be seen as a restriction of the ability for those hosts to assemble or to consensually express themselves.
+The IPv4 protocol header contains fixed location fields for both the source and destination IP addresses {{RFC0791}}. These addresses identify both the host sending and receiving each message, and allow the core network to understand who is talking to whom, and to practically limit communication selectively between pairs of hosts. Blocking of communication based on the pair of source and destination is one of the most common limitations on the ability for people to communicate today, {{caida}} and can be seen as a restriction of the ability for people to assemble or to consensually express themselves.
 
 Inclusion of an Internet-wide identified source in the IP header is not the only possible design, especially since the protocol is most commonly implemented over Ethernet networks exposing only link-local identifiers {{RFC0894}}. A variety of alternative designs including source routing, which would allow for the sender to choose a per defined (safe) route, and spoofing of the source IP address are technically supported by the protocol, but neither are considered good practice on the Internet {{Farrow}}. While projects like {{torproject}} provide an alternative implementation of anonymity in connections, they have been developed in spite of the IPv4 protocol design.
 
-#### Address Translation and Mobility
+##### Address Translation and Mobility
 
 A major structural shift in the Internet which undermined the protocol design of IPv4, and significantly reduced the freedom of end users to communicate and assemble is the introduction of network address translation. {{RFC1631}} Network address translation is a process whereby organizations and autonomous systems connect two networks by translating the IPv4 source and destination addresses between the two. This process puts the router performing the translation into a privileged position, where it can decide which subset of communications are worthy of translation, and whether an unknown request for communication will be correctly forwarded to a host on the other network.
 
 This process of translation has widespread adoption despite promoting a process that goes against the stated end-to-end process of the underlying protocol {{natusage}}. In contrast, the proposed mechanism to provide support for mobility and forwarding to clients which may move, encoded instead as an option in the IP protocol in {{RFC5944}}, has failed to gain traction. In this situation the compromise made in the design of the protocol resulted in a technology that is not coherent with the end-to-end principles and thus creates and extra possible hurdle for freedom of expression in its design, even though a viable alternative that would do this exists. There is a particular problem surrounding NATs and VPN (as well as other connections used for privacy purposes) as they sometimes cause these not to work.
 
 
-### DNS
+#### DNS
 
 The Domain Name System (DNS) {{RFC1035}}, provides service discovery capabilities, and provides a mechanism to associate human readable names with services. The DNS system is organized around a set of independently operated 'Root Servers' run by organizations around the web which function in line with ICANN's policy by answering queries for which organizations have been delegated to manage registration under each Top Level Domain (TLD). The DNS is organized as a rooted tree, and this brings up political and social concerns over control.  Top Level domains are maintained and determined by ICANN. These namespaces encompass several classes of services. The initial name spaces including '.Com' and '.Net', provide common spaces for expression of ideas, though their policies are enacted through US based companies. Other name spaces are delegated to specific nationalities, and may impose limits designed to focus speech in those forums both to promote speech from that nationality, and to comply with local limits on expression and social norms. Finally, the system has recently been expanded with additional generic and sponsored name spaces, for instance '.travel' and '.ninja', which are operated by a range of organizations which may independently determine their registration policies. This new development has both positive and negative implications in terms of enabling human rights. Some individuals argue that it undermines the right to freedom of expression because some of these new gtlds have restricted policies on registration and particular rules on hate speech content. Others argue that precisely these properties are positive because they enable certain (mostly minority) communities to build safer spaces for association, thereby enabling their right to freedom of association. An often mentioned example is an application like .gay.
 
@@ -1302,7 +1319,7 @@ DNS has significant privacy issues per {{RFC7626}}. Most notable the lack of enc
 
 Authentication through DNSSEC creates a validation path for records. This authentication protects against forged or manipulated DNS data. As such DNSSEC protects the directory look-up and makes hijacking of a session harder. This is important because currently interference with the operation of the DNS is becoming one of the central mechanisms used to block access to websites. This interference limits both the freedom of expression of the publisher to offer their content, and the freedom of assembly for clients to congregate in a shared virtual space. Even though DNSSEC doesn't prevent censorship, it makes it clear that the returned information is not the information that was requested, which contributes to the right to security and increases trust in the network. It is however important to note that DNSSEC is currently  not widely supported or deployed by domain name registrars, making it difficult to authenticate and use correctly.
 
-#### Removal of records
+##### Removal of records
 
 There have been a number of cases where the records for a domain are removed from the name system due to real-world events. Examples of this removal includes the 'seizure' of wikileaks {{bbc-wikileaks}} and the names of illegally operating gambling operations by the United States Immigrations and Customs Enforcement unit, which compelled the US-based registry in charge of the .com TLD to hand ownership of those domains over to the US government. The same technique has been used in Libya to remove sites in violation of "our Country's Law and Morality (which) do not allow any kind of pornography or its promotion." {{techyum}}
 
@@ -1310,7 +1327,7 @@ At a protocol level, there is no technical auditing for name ownership, as in al
 
 (While mentioning alternative techniques, this is not a complete comparison of DNS with Namecoin: the latter has its own problems and limitations. The idea here is to show that there are several possible choices, and they have consequences for human rights.)
 
-#### Distortion of records
+##### Distortion of records
 
 The most common mechanism by which the DNS system is abused to limit freedom of expression is through manipulation of protocol messages by the network. One form occurs at an organizational level, where client computers are instructed to use a local DNS resolver controlled by the organization. The DNS resolver will then selectively distort responses rather than request the authoritative lookup from the upstream system. The second form occurs through the use of deep packet inspection, where all DNS protocol messages are inspected by the network, and objectionable content is distorted, as can be observed in Chinese network.
 
@@ -1318,37 +1335,37 @@ A notable instance of distortion occurred in Greece {{ververis}}, where a study 
 
 At a protocol level, the effectiveness of these attacks is made possible by a lack of authentication in the DNS protocol. DNSSEC provides the ability to determine authenticity of responses when used, but it is not regularly checked by resolvers. DNSSEC is not effective when the local resolver for a network is complicit in the distortion, for instance when the resolver assigned for use by an ISP is the source of injection. Selective distortion of records is also been made possible by the predictable structure of DNS messages, which make it computationally easy for a network device to watch all passing messages even at high speeds, and the lack of encryption, which allows the network to distort only an objectionable subset of protocol messages. Specific distortion mechanisms are discussed further in {{hall}}.
 
-Users can switch to another resolver, for instance a public one such as those operated by [http://dns.telecomix.org/](Telecomix). The distorter can then try to block or hijack the connection to this resolver. This may start an arm's race, the user switching to secured connections to this alternative resolver ({{RFC7858}}), the disruptor then trying to find more sophisticated ways to block or hijack. In some cases, this research to find an alternative, non-disrupting resolver, may lead to more centralisation, many people going to a few big commercial public resolvers.
+Users can switch to another resolver, for instance a public one such as those operated by  Telecomix [http://dns.telecomix.org/]. The distorter can then try to block or hijack the connection to this resolver. This may start an arm's race, the user switching to secured connections to this alternative resolver ({{RFC7858}}), the disruptor then trying to find more sophisticated ways to block or hijack. In some cases, this research to find an alternative, non-disrupting resolver, may lead to more centralisation, many people going to a few big commercial public resolvers.
 
-#### Injection of records
+##### Injection of records
 
 Responding incorrectly to requests for name lookups is the most common mechanism that in-network devices use to limit the ability of end users to discover services. A deviation, which accomplishes a similar objective may be seen as different from a freedom of expression perspective, is the injection of incorrect responses to queries. The most prominent example of this behavior occurs in China, where requests for lookups of sites deemed inappropriate will trigger the network to respond with a false
 response, causing the client to ignore the real response when it subsequently arrives. {{greatfirewall}} Unlike the other forms of discussion mentioned above, injection does not stifle the ability of a server to announce it's name, it instead provides another voice which answers sooner. This is effective because without DNSSEC, the protocol will respond to whichever answer is received first, without listening for subsequent answers.
 
 
-### HTTP
+#### HTTP
 
-The Hypertext Transfer Protocol (HTTP), described in its version 1.1 in RFC 7230 to 7237, is a request-response application protocol developed throughout the 1990s, and factually contributed to the exponential growth of the Internet and the inter-connection of populations around the world. Because of its simple design, HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP radically revolutionized the course of technological development and the ways people interact with online content and with each other.
+The Hypertext Transfer Protocol (HTTP), described in its version 1.1 in RFC 7230 to 7237, is a request-response application protocol developed throughout the 1990s, and factually contributed to the exponential growth of the Internet and the inter-connection of populations around the world. Its simple design strongly contributed to the fact that HTTP has become the foundation of most modern Internet platforms and communication systems, from websites, to chat systems, and computer-to-computer applications. In its manifestation with the World Wide Web, HTTP radically revolutionized the course of technological development and the ways people interact with online content and with each other.
 
-However, HTTP is also a fundamentally insecure protocol, that doesn't natively provide encryption properties. While the definition of the Secure Sockets Layer (SSL), and later of Transport Layer Security (TLS), also happened during the 1990s, the fact that HTTP doesn't mandate the use of such encryption layers to developers and service providers, was one of the reasons for a very late adoption of encryption. Only in the middle of the 2000s did we observed big Internet service providers, such as Google, starting to provide encrypted access to their web services.
+However, HTTP is also a fundamentally insecure protocol, that doesn't natively provide encryption properties. While the definition of the Secure Sockets Layer (SSL) {{RFC6101}}, and later of Transport Layer Security (TLS){{RFC5246}}, also happened during the 1990s, the fact that HTTP doesn't mandate the use of such encryption layers to developers and service providers, was one of the reasons for a very late adoption of encryption. Only in the middle of the 2000s did we observed big Internet service providers, such as Google, starting to provide encrypted access to their web services.
 
 The lack of sensitivity and understanding of the critical importance of securing web traffic incentivized certain (offensive) actors to develop, deploy and utilize at large interception systems and later active injection attacks, in order to swipe large amounts of data, compromise Internet-enabled devices. The commercial availability of systems and tools to perform these types of attacks also led to a number of human rights abuses that have been discovered and reported over the years.
 
-Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer. That being said, the IETF and especially the General Area Review Team (Gen-ART), is taking steady steps to move to the encrypted version of HTTP, HTTPSecure (HTTPS).
+Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer. That being said, the IETF is taking steady steps to move to the encrypted version of HTTP, HTTPSecure (HTTPS).
 
-#### Traffic Interception
+##### Traffic Interception
 
-While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of SSL/TLS is also a relatively recent phenomena. E-mail providers such as riseup.net provided SSL on by default as on of the first. Google introduced an option for its GMail users to navigate with SSL only in 2008 {{Rideout}}, and turned TLS on by default later in 2010 {{Schillace}}. It took an increasing amount of security breaches and revelations on global surveillance from Edward Snowden to have other mail service providers to follow suit. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 {{Peterson}}.
+While we are seeing an increasing trend in the last couple of years to employ SSL/TLS as a secure traffic layer for HTTP-based applications, we are still far from seeing an ubiquitous use of encryption on the World Wide Web. It is important to consider that the adoption of SSL/TLS is also a relatively recent phenomena. E-mail providers such as riseup.net were the first ones to enable SSL by default. Google introduced an option for its GMail users to navigate with SSL only in 2008 {{Rideout}}, and turned TLS on by default later in 2010 {{Schillace}}. It took an increasing amount of security breaches and revelations on global surveillance from Edward Snowden to have other mail service providers to follow suit. For example, Yahoo enabled SSL/TLS by default on its webmail services only towards the end of 2013 {{Peterson}}.
 
-TLS itself has been subject to many attacks and bugs which can be attributed to some fundamental design weaknesses such as lack of a state machine, which opens a vulnerability for a Triple Handshake Attack, and flaws caused by early U.S. government restrictions on cryptography, leading to cipher-suite downgrade attacks (Logjam attack). These vulnerabilities have been corrected in TLS1.3. {{Bhargavan}} {{Adrian}}
+TLS itself has been subject to many attacks and bugs which can be attributed to some fundamental design weaknesses such as lack of a state machine, which opens a vulnerability for a Triple Handshake Attack, and flaws caused by early U.S. government restrictions on cryptography, leading to cipher-suite downgrade attacks (Logjam attack). These vulnerabilities are being corrected in TLS1.3. {{Bhargavan}} {{Adrian}}
 
 HTTP upgrading to HTTPS is also vulnerable to having an attacker remove the "S" in any links to HTTPS URIs from a web-page transferred in cleartext over HTTP, an attack called "SSL Stripping" {{sslstrip}}. Thus, for high security use of HTTPS IETF standards such as HSTS {{RFC6797}}, certificate pinning  {{RFC7469}} and/or DANE {{RFC6698}} should be used.
 
-As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA and NSA's XKEYSCORE. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
+As we learned through the Snowden's revelations, intelligence agencies have been intercepting and collecting unencrypted traffic at large for many years. There are documented examples of such mass surveillance programs with GCHQ's TEMPORA {{WP-Tempora}} and NSA's XKEYSCORE {{Greenwald}}. Through these programs NSA/GCHQ have been able to swipe large amounts of data including email and instant messaging communications which have been transported by the respective providers in clear for years, unsuspecting of the pervasiveness and scale of governments' efforts and investment into global mass surveillance capabilities.
 
 However, similar mass interception of unencrypted HTTP communications is also often employed at a nation-level by some democratic countries by exercising control over state-owned Internet Service Providers (ISP) and through the use of commercially available monitoring, collection, and censorship equipment. Over the last few years a lot of information has come to public attention on the role and scale of a surveillance industry dedicated to develop interception gear of different types, making use of known and unknown weaknesses in existing protocols {{RFC7258}}. We have several records of such equipment being sold and utilized by some regimes in order to monitor entire segments of population especially at times of social and political distress, uncovering massive human rights abuses. For example, in 2013 the group Telecomix revealed that the Syrian regime was making use of BlueCoat products in order to intercept clear-text traffic as well as to enforce censorship of unwanted content {{RSF}}. Similarly in 2012 it was found that the French Amesys provided the Gaddafi's government with equipment able to intercept emails, Facebook traffic, and chat messages at a country level {{WSJ}}. The use of such systems, especially in the context of the Arab Spring and of civil uprisings against the dictatorships, has caused serious concerns of significant human rights abuses in Libya.
 
-#### Traffic Manipulation
+##### Traffic Manipulation
 
 The lack of a secure transport layer under HTTP connections not only exposes the users to interception of the content of their communications, but is more and more commonly abused as a vehicle for actively comprosing computers and mobile devices. If an HTTP session travels in the clear over the network, any node positioned at any point in the network is able to perform man-in-the-middle attacks and observe, manipulate, and hijack the session and modify the content of the communication in order to trigger unexpected behavior by the application generating the traffic. For example, in the case of a browser the attacker would be able to inject malicious code in order to exploit vulnerabilities in the browser or any of its plugins. Similarly, the attacker would be able to intercept, add malware, and repackage binary software updates that are very commonly downloaded in clear by applications such as word processors and media players. If the HTTP session would be encrypted, the tampering of the content would not be possible, and these network injection attacks would not be successful.
 
@@ -1363,23 +1380,23 @@ Network injection attacks are also made widely available to state actors around 
 There is a new version of HTTP, called HTTP/2, which was published as {{RFC7540}} and which aimed to be largely backwards compatible but also offer new option such as data compression of HTTP headers and pipelining of request and multiplexing multiple requests over a single TCP connection. In addition to decreasing latency to improve page loading speeds it also facilitates more efficient use of connectivity in low-bandwith environments, which is an enabler for freedom of expression, the right to assembly, right to political participation and the right to participate in cultural life, art and science.
 {{RFC7540}} does not mandate Transport Layer Security or any other form of encryption, is also does not support opportunistic encryption, so the vulnerabilities listed above for HTTP/1 are also valid for HTTP/2 as defined in {{RFC7540}}.
 
-### XMPP
+#### XMPP
 
 The Extensible Messaging and Presence Protocol (XMPP), specified in {{RFC6120}}, provides a standard for interactive chat messaging, and has evolved to encompass interoperable text, voice, and video chat. The protocol is structured as a federated network of servers, similar to email, where users register with a local server which acts one their behalf to cache and relay messages. This protocol design has many advantages, allowing servers to shield clients from denial of service and other forms of retribution for their expression, and designed to avoid central entities which could control the ability to communicate or assemble using the protocol.
 
 None-the-less, there are plenty of aspects of the protocol design of XMPP which shape the ability for users to communicate freely, and to assembly through the protocol. 
 
-#### User Identification
+##### User Identification
 
 The XMPP specification dictates that clients are identified with a resource (<node@domain/home> / <node@domain/work>) to distinguish the conversations to specific devices. While the protocol does not specify that the resource must be exposed by the client's server to remote users, in practice this has become the default behavior. In doing so, users can be tracked by remote friends and their servers, who are able to monitor presence not just of the user, but of each individual device the user logs in with. This has proven to be misleading to many users, {{pidgin}} since many clients only expose user level rather than device level presence. Likewise, user invisibility so that communication can occur while users don't notify all buddies and other servers of their availability is not part of the formal protocol, and has only been added as an extension within the XML stream rather than enforced by the protocol.
 
-#### Surveillance of Communication
+##### Surveillance of Communication
 
 The XMPP protocol specifies the standard by which communication of channels may be encrypted, but it does not provide visibility to clients of whether their communications are encrypted on each link. In particular, even when both clients ensure that they have an encrypted connection to their XMPP server to ensure that their local network is unable to read or disrupt the messages they send, the protocol does not provide visibility into the encryption status between the two servers. As such, clients may be subject to selective disruption of communications by an intermediate network which disrupts communications based on keywords found through Deep Packet Inspection. While many operators have commited to only establishing encrypted links from their servers in recognition of this vulnerability, it remains impossible for users to audit this behavior and encrypted connections are not required by the protocol itself {{xmppmanifesto}}.
 
 In particular, section 13.14 of the protocol specification {{RFC6120}} explicitly acknowledges the existence of a downgrade attack where an adversary controlling an intermediate network can force the inter domain federation between servers to revert to a non-encrypted protocol were selective messages can then be disrupted.
 
-#### Group Chat Limitations
+##### Group Chat Limitations
 
 Group chat in the XMPP protocol is defined as an extension within the XML specification of the XMPP protocol (https://xmpp.org/extensions/xep-0045.html). However, it is not encoded or required at a protocol level, and not uniformly implemented by clients.
 
@@ -1388,81 +1405,77 @@ The design of multi-user chat in the XMPP protocol suffers from extending a prot
 Multi-user chat rooms are identified by a name specified on a specific server, so that while the overall protocol may be federated, the ability for users to assemble in a given community is moderated by a single server. That server may block the room and prevent assembly unilaterally, even between two users neither of whom trust or use that server directly.
 
 
-### Peer to Peer 
+#### Peer to Peer 
 
 Peer-to-Peer (P2P) is a distribet network architecture in which all the participant nodes can be responsible for the storage and dissemination of information from any other node (defined in {{RFC7574}}, an IETF standard that used a P2P architecture). A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Bitcoin and proprietary multimedia applications.
 
-In a time of heavily centralized online services, peer-to-peer is often seen as an alternative, more democratic, and resistant option  that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains critical to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
+In a time of heavily centralized online services, peer-to-peer is regularly described as an alternative, more democratic, and resistant option  that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains imporant to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
 
-#### Network Poisoning
+##### Network Poisoning
 
-Since content, and in some occasions peer lists, are safeguarded and distributed by its members, P2P networks are prone to what are generally defined as "poisoning attacks". Poisoning attacks might be directed directly at the data that is being distributed, for example by intentionally corrupting it, or at the index tables used to instruct the
+Since content, and in some occasions peer lists, are safeguarded and distributed by its members, P2P networks are prone to what are generally defined as "poisoning attacks". Poisoning attacks might be aimed directly at the data that is being distributed, for example by intentionally corrupting it, or at the index tables used to instruct the
 peers where to fetch the data, or at routing tables, with the attempt of providing connecting peers with lists of rogue or non-existing peers, with the intention to effectively cause a Denial of Service on the network.
 
-#### Throttling
+##### Throttling
 
-Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throtteling undermines the end-to-end principle.
+Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throttling undermines the end-to-end principle.
 
 Throttling the peer-to-peer traffic makes some uses of P2P networks ineffective and it might be coupled with stricter inspection of users' Internet traffic through Deep Packet Inspection techniques which might pose additional security and privacy risks.
 
-#### Tracking and Identification
+##### Tracking and Identification
 
 One of the fundamental and most problematic issues with traditional peer-to-peer networks is a complete lack of anonymization of its users. For example, in the case of BitTorrent, all peers' IP addresses are openly available to the other peers. This has lead to an ever-increasing tracking of peer-to-peer and file-sharing users {{ars}}. As the geographical
 location of the user is directly exposed, and so could be his identity, the user might become target of additional harassment and attacks, being of physical or legal nature. For example, it is known that in Germany law firms have made extensive use of peer-to-peer and file-sharing tracking systems in order to identify downloaders and initiate legal actions looking for compensations {{torrentfreak2}}.
 
 It is worth noting that there are varieties of P2P networks that implement cryptographic practices and that introduce anonymization of its users. Such implementations may be proved to be successful in resisting censorship of content, and tracking of the network peers. A primary example is FreeNet {{freenet1}}, a free software application designed to significantly increase the difficulty of users and content identification, and dedicated to foster freedom of speech online {{freenet2}}.
 
-#### Sybil Attacks
+##### Sybil Attacks
 
 In open-membership P2P networks, a single attacker can pretend to be many participants, typically by creating multiple fake identities of whatever kind the P2P network uses {{Douceur}}.  Attackers can use Sybil attacks to bias choices the P2P network makes collectively toward the attacker's advantage, e.g., by making it more likely that a particular data item (or some threshold of the replicas or shares of a data item) are assigned to attacker-controlled participants.  If the P2P network implements any voting, moderation, or peer review-like functionality, Sybil attacks may be used to "stuff the ballots" toward the attacker's benefit.  Companies and governments can use Sybil attacks on discussion-oriented P2P systems for "astroturfing" or creating the appearance of  mass grassroots support for some position where there is none in reality. It is important to know that there are no known complete, environmentally sustainable, and fully distributed solutions to Sybil attacks, and routing via 'friends' allows users to be de-anonymized via their social graph. It is important to note that Sybil attacks in this context (e.f. astroturfing) are relevant to more than P2P protocols. And are also common on web based systems, and exploited by governments and commercial entitities. 
-
-#### Conclusions
 
 Encrypted P2P and Anonymous P2P networks already emerged and provided viable platforms for sharing material {{tribler}}, publish content anonymously, and communicate securely {{bitmessage}}. These platforms are not perfect, and more research needs to be done.
 If adopted at large, well-designed and resistant P2P networks might represent a critical component of a future secure and distributed Internet, enabling freedom of speech and freedom
 of information at scale.
 
 
-### Virtual Private Network
+#### Virtual Private Network
 
-#### Introduction
-
-A Virtual Private Network (VPN) is a point-to-point connection that enables two computers to communicate over an encrypted tunnel. There are multiple implementations and protocols used in provisioning a VPN, and they generally diversify by encryption protocol or particular requirements, most commonly in proprietary and enterprise solutions. VPNs are used commonly either to enable some devices to communicate through peculiar network configurations, or in order to use some privacy and security properties in order to protect the traffic generated by the end user; or both. VPNs have also become a very popular technology among human rights defenders, dissidents, and journalists worldwide to avoid local monitoring and eventually also to circumvent censorship. Among human rights defenders VPNs are often debated as a potential alternative to Tor or other anonymous networks. Such comparison is misleading, as some of the privacy and security properties of VPNs are often misunderstood by less tech-savvy users, which could ultimately lead to unintended problems.
+The Virtual Private Networks (VPN) that are being discussed here are point-to-point connections that enables two computers to communicate over an encrypted tunnel. There are multiple implementations and protocols used in the deployment of VPNs, and they generally diversify by encryption protocol or particular requirements, most commonly in proprietary and enterprise solutions. VPNs are used commonly either to enable some devices to communicate through peculiar network configurations, or in order to use some privacy and security properties in order to protect the traffic generated by the end user; or both. VPNs have also become a very popular technology among human rights defenders, dissidents, and journalists worldwide to avoid local monitoring and eventually also to circumvent censorship. Among human rights defenders VPNs are often debated as a potential alternative to Tor or other anonymous networks. Such comparison is misleading, as some of the privacy and security properties of VPNs are often misunderstood by less tech-savvy users, which could ultimately lead to unintended problems.
 
 As VPNs increased in popularity, commercial VPN providers have started growing in business and are very commonly picked by human rights defenders and people at risk, as they are normally provided with an easy-to-use service and sometimes even custom applications to establish the VPN tunnel. Not being able to control the configuration of the network, and even less so the security of the application, assessing the general privacy and security state of common VPNs is very hard. Often such services have been discovered leaking information, and their custom applications have been found flawed. While Tor and similar networks receive a lot of scrutiny from the public and the academic community, commercial or non-commercial VPN networks are way less analyzed and understood {{Insinuator}} ((Alshalanetal}} , and it might be valuable to establish some standards to guarantee a minimal level of privacy and security to those who need them the most.
 
 
-#### No anonymity against VPN provider
+##### No anonymity against VPN provider
 
 One of the common misconception among users of VPNs is the level of anonymity VPN can provide. This sense of anonymity can be betrayed by a number of attacks or misconfigurations of the VPN provider. It is important to remember that, contrarily to Tor and similar systems, VPN was not designed to provide anonymity properties. From a technical point of view, the VPN might leak identifiable information, or might be subject of correlation attacks that could expose the originating address of the connecting user. Most importantly, it is vital to understand that commercial and non-commercial VPN providers are bound by the law of the jurisdiction they reside in or in which their infrastructure is located, and they might be legally forced to turn over data of specific users if legal investigations or intelligence requirements dictate so. In such cases, if the VPN providers retain logs, it is possible that the information of the user is provided to the user's adversary and leads to his or her identification.
 
 
-#### Logging
+##### Logging
 
 With VPN being point-to-point connections, the service providers are in fact able to observe the original location of the connecting users and they are able to track at what time they started their session and eventually also to which destinations they're trying to connect to. If the VPN providers retain logs for long enough, they might be forced to turn over the relevant data or they might be otherwise compromised, leading to the same data getting exposed. A clear log retaining policy could be enforced, but considering that countries enforce very different levels of data retention policies, VPN providers would at least be transparent on what information do they store and for how long is being kept.
 
 
-#### 3rd Party Hosting
+##### 3rd Party Hosting
 
 VPN providers very commonly rely on 3rd parties to provision the infrastructure that is later going to be used to run VPN endpoints. For example, they might rely on external dedicated server hosting providers, or on uplink providers. In those cases, even if the VPN provider itself isn't retaining any significant logs, the information on the connecting users might be retained by those 3rd parties instead, introducing an additional collection point for the adversary.
 
 
-#### IPv6 Leakage
+##### IPv6 Leakage
 
 Some studies proved that several commercial VPN providers and applications suffer of critical leakage of information through IPv6 due to improper support and configuration {{PETS2015VPN}}. This is generally caused by a lack of proper configuration of the client's IPv6 routing tables. Considering that most popular browsers and similar applications have been supporting IPv6 by default, if the host is provided with a functional IPv6 configuration, the traffic that is generated might be leaked if the VPN application isn't designed to manipulate such traffic properly.
 
 
-#### DNS Leakage
+##### DNS Leakage
 
 Similarly, VPN services that aren't handling DNS requests and are not running DNS servers of their own, might be prone to DNS leaking which might not only expose sensitive information on the activity of the user, but could also potentially lead to DNS hijacking attacks and following compromises.
 
 
-#### Traffic Correlation
+##### Traffic Correlation
 
-As revelations of mass surveillance have been growing in the press, additional details on attacks on secure Internet communications have come to the public's attention. Among these, VPN appeared to be a very interesting target for attacks and collection efforts. Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented {{spiegel}} to be already in practice and could completely vanify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
+Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented {{spiegel}} to be already in practice and could completely vanify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
 
 
-### HTTP Status Code 451
+#### HTTP Status Code 451
 
 Every Internet user has run into the '404 Not Found' Hypertext Transfer Protocol (HTTP) status code when trying, and failing, to access a particular website {{Cath}}. It is a response status that the server sends to the browser, when the server cannot locate the URL. '403 Forbidden' is another example of this class of code signals that gives users information about what is going on. In the '403' case the server can be reached, but is blocking the request because the user is trying to access content forbidden to them. This can be because the specific user is not allowed access to the content (like a government employee trying to access pornography on a work-computer) or because access is restricted to all users (like social network sites in certain countries).
 As surveillance and censorship of the Internet is becoming more commonplace, voices were raised at the IETF to introduce a new status code that indicates when something is not available for 'legal reasons' (like censorship):
@@ -1481,8 +1494,8 @@ Overall, the strength of 451 lies in its ability to provide transparency by givi
 
 Status code 451 impact human rights by making censorship more transparent and measurable. The status code increases transparency both by signaling the existence of censorship (instead of a much more broad HTTP error message like HTTP status code 404) as well as providing details of the legal restriction, which legal authority is imposing it, and what class of resources it applies to. This empowers the user to seek redress.
 
-### DDoS attacks
-Many individuals, not excluding IETF engineers, have argued that DDoS attacks are fundamentally against freedom of expression. Technically DDoS attacks are when one or multiple host overload the bandwidth or resources of another host by flooding it with traffic, causing it to temporarily stop being available to users. One can roughly differentiate three types of DDoS attacks: Volume Based Attacked (This attack aims to make the host unreachable by using up all it's bandwith, often used techniques are: UDP floods and ICMP floods), Protocol Attacks (This attacks aims to use up actual server resources, often used techniques are SYN floods, fragmented packet attacks, and Ping of Death {{RFC4949}}) and Application Layer Attacks (this attack aims to bring down a server, such as the webserver).
+#### DDoS attacks
+Many individuals, not excluding IETF engineers, have argued that DDoS attacks are fundamentally against freedom of expression. Technically DDoS attacks are when one or multiple host overload the bandwidth or resources of another host by flooding it with traffic or making resource intensive requests, causing it to temporarily stop being available to users. One can roughly differentiate three types of DDoS attacks: Volume Based Attacked (This attack aims to make the host unreachable by using up all it's bandwith, often used techniques are: UDP floods and ICMP floods), Protocol Attacks (This attacks aims to use up actual server resources, often used techniques are SYN floods, fragmented packet attacks, and Ping of Death {{RFC4949}}) and Application Layer Attacks (this attack aims to bring down a server, such as the webserver).
 
 DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}). In addition, DDoS attacks are increasingly used as an extortion tactic.
 
@@ -1492,7 +1505,7 @@ All of these issues seem to suggest that the IETF should try to ensure that thei
 Model for developing human rights protocol considerations
 ---------------------------------------------------------
 
-Having established how human rights relate to standards and protocols, a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights means the contours of a model for developing human rights protocol considerations has taken shape. This subsection provides the last step by detailing how the technical concepts identified above relate to human rights, and what questions engineers should ask themselves when developing or improving protocols. In short, it presents a set of human rights protocol considerations.
+In the previous steps we have established that human rights relate to standards and protocols and offered a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights. With this the contours of a model for developing human rights protocol considerations has taken shape. This subsection provides the last step by detailing how specific technical concepts identified above relate to human rights, and what questions engineers should ask themselves when developing or improving protocols. In short, it presents a set of human rights protocol considerations.
 
 
 ### Human rights threats
@@ -1520,7 +1533,7 @@ Explanation:
 The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
 
 Example:
-End-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+End-to-end instant message encryption would conceal the content of communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 Impacts:
 
@@ -1565,7 +1578,7 @@ Question(s):
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as descibred throughout this document)?
 
 Explanation:
-Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these    properties are required for every application. We can loosely divide security goals into those related to protecting communications (COMMUNICATION SECURITY, also known as COMSEC) and those relating to protecting systems (ADMINISTRATIVE SECURITY or SYSTEM SECURITY). Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}. Security needs to be also be approached in terms of advesaries, and passive global adversaries whose attack is pervasive surveillance now need to be taken into consideration when designing new protocols. 
+Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these properties are required for every application. Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}.
 
 Example:
 See {{BCP72}}.
@@ -1648,6 +1661,7 @@ Example:
 Heterogeneity is inevitable and needs be supported by design. Multiple types of hardware must be allowed for, e.g. transmission speeds differing by at least 7 orders of magnitude, various computer word lengths, and hosts ranging from memory-starved microprocessors up to massively parallel supercomputers. Multiple types of    application protocol must be allowed for, ranging from the simplest such as remote login up to the most complex such as distributed databases {{RFC1958}}.
 
 Impacts:
+
 - Right to freedom of expression
 - Right to security
 
@@ -1670,7 +1684,7 @@ Impacts:
 
 ##### Pseudonymity
 Question(s):
-Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
+Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generates or processes anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
 Explanation:
 Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
@@ -1692,7 +1706,7 @@ Explanation:
 The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web.
 
 Example:
-The HTML protocol as defined in {{RFC1866}} specifically requires that every image must have an alt attribute (with a few exceptions for HTML5) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.
+The HTML protocol as defined in {{HTML5}} specifically requires that every image must have an alt attribute (with a few exceptions) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.
 
 Impacts:
 
@@ -1722,10 +1736,10 @@ Impacts:
 
 ##### Decentralization
 Question(s):
-Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can use of  your protocol be used to implicate users? Does your protocol create additional centralized points of control?
+Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can the use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
 
 Explanation:
-Decentralization is one of the central technical concepts of the architecture, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990's there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet.
+Decentralization is one of the central technical concepts of the architecture, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990's there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet.
 
 Example:
 The bits traveling the Internet are increasingly susceptible to monitoring and censorship, from both governments and Internet service providers, as well as third (malicious) parties. The ability to monitor and censor is further enabled by the increased centralization of the network that creates central infrastructure points that can be tapped in to. The creation of peer-to-peer networks and the development of voice-over-IP protocols using peer-to-peer technology in combination with distributed hash table (DHT) for scalability are examples of how protocols can preserve decentralization {{Pouwelse}}.
@@ -1808,21 +1822,6 @@ Corinne knows all.
 Impacts:
 
 - Right to security
-
-##### Acceptability
-Question(s):
-Do your protocols follow the principle of non-discrimination? Do your protocols follow the principle of content agnosticism? Does your protocol take into account the needs of special needs (Internet) groups, like the audio-visually impaired?  Also see availability.
-
-Explanation:
-The Internet is a global medium. Yet, there continue to be issues surrounding acceptability &#x2013; the extent to which standards are non-discriminatory and relevant to the widest range of end-users &#x2013; that need to be resolved. Many standards are not suitable for end-users who are not-ablebodied, or otherwise restricted in their ability to access the Internet in its current form (text, data and English heavy). Development of new standards should consider the ways in which they exclude or include non-traditional user communities.
-
-Example: Designing a feature that could make access to websites for non-able bodied people more difficult.
-
-Impacts:
-
-- Right to education
-- Right to freedom of expression
-- Right to freedom of assembly and association
 
 ##### Adaptability
 Question(s):
