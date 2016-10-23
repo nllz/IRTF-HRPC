@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-02
+docname: draft-irtf-hrpc-research-03
 category: info
 
 ipr: trust200902
@@ -1035,23 +1035,12 @@ Scalable
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
-A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
+Communication and information security
+: A combination of reliability, confidentiality, integrity, anonymity, and authenticity is what makes up security on the Internet.
 
-      (     Reliability       )
-     (      Confidentiality    )
-     (      Integrity          ) ⇒ communication and information security
-     (      Authenticity       )
-      (     Anonymity         )
+Connectivity
+: The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
 
-The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
-
-      ( End-to-End      )
-     (  Interoperability )
-     (  Resilience       )
-     (  Reliability      ) ⇒ connectivity
-     (  Robustness       )
-     (  Autonomy         )
-      ( Simplicity      )
 
 Research Questions
 ==================
@@ -1175,52 +1164,52 @@ This analysis aims to assist protocol developers by better understanding the rol
 
 This analysis does not claim to be an complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial concept mapping based on interviews and literature and discussion review.
 
-      (     Connectivity          )
-     (      Privacy                )
-     (      Security               )   ⇒ Right to freedom of expression
-     (      Content agnosticism    )
-     (      Internationalization   )
-     (      Censorship resistance  )
-     (      Open Standards         )
-      (     Heterogeneity support )
 
-
-     (     Anonymity          )
-    (      Privacy             )   ⇒ Right to non-discrimination
-    (      Pseudonymity        )
-    (      Content agnosticism )
-     (     Accessibility      )
-
-
-    (       Content Agnosticism  )
-    (       Security             )  ⇒ Right to equal protection
-
-     (  Accessibility         )
-    (   Internationalization   ) ⇒ Right to political participation
-    (   Censorship resistance  )
-     (      Accessibility     )
-
-
-     (  Open standards         )
-    (   Localization            ) ⇒ Right to participate in cultural life,
-    (   Internationalization    )             arts and science &
-    (   Censorship resistance   )    Right to education
-     (  Accessibility          )
-
-
-
-     (  Connectivity         )
-    (   Decentralization      )
-    (   Censorship resistance ) ⇒ Right to freedom of assembly
-    (   Pseudonymity          )                   and association
-    (   Anonymity             )
-     (  Security             )
-
-        ( Reliability    )
-       (  Confidentiality )
-       (  Integrity       ) ⇒ Right to security
-       (  Authenticity    )
-        ( Anonymity      )
+     +-----------------------+-----------------------------------------+
+     | Technical Concepts    | Rights potentially impacted             |
+     +-----------------------+-----------------------------------------+
+     | Connectivity          |                                         |
+     | Privacy               |                                         |
+     | Security              |                                         |
+     | Content agnosticism   | Right to freedom of expression          |
+     | Internationalization  |                                         |
+     | Censorship resistance |                                         |
+     | Open Standards        |                                         |
+     | Heterogeneity support |                                         |
+     +-----------------------+-----------------------------------------+
+     | Anonymity             |                                         |
+     | Privacy               |                                         |
+     | Pseudonymity          | Right to non-discrimination             |
+     | Accessibility         |                                         |
+     +-----------------------+-----------------------------------------+
+     | Content agnosticism   |                                         |
+     | Security              | Right to equal protection               |
+     +-----------------------+-----------------------------------------+
+     | Accessibility         |                                         |
+     | Internationalization  | Right to political participation        |
+     | Censorship resistance |                                         |
+     | Accessibility         |                                         |
+     +-----------------------+-----------------------------------------+
+     | Open standards        |                                         |
+     | Localization          | Right to participate in cultural life,  |
+     | Internationalization  |                  arts and science &     |
+     | Censorship resistance | Right to education                      |
+     | Accessibility         |                                         |
+     +-----------------------+-----------------------------------------+
+     | Connectivity          |                                         |
+     | Decentralization      |                                         |
+     | Censorship resistance | Right to freedom of assembly            |
+     | Pseudonymity          |                     and association     |
+     | Anonymity             |                                         |
+     | Security              |                                         |
+     +-----------------------+-----------------------------------------+
+     | Reliability           |                                         |
+     | Confidentiality       |                                         |
+     | Integrity             | Right to security                       |
+     | Authenticity          |                                         |
+     | Anonymity             |                                         |
+     |                       |                                         |
+     +-----------------------+-----------------------------------------+
 
 figure 2 - relation between specific technical concepts with regards to their contribution to an enabeling environment for people to excise their human rights
 
