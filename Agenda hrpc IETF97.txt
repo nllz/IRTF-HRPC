@@ -1,4 +1,4 @@
-Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 [time] UTC [timezone], November [day] 2016
+Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 9:30 UTC+9, November 14 2016
 
 - Beginning (5 min)
 	Jabber scribe, note takers
