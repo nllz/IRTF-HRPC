@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-03
+docname: draft-irtf-hrpc-research-03bis
 category: info
 
 ipr: trust200902
@@ -903,13 +903,13 @@ Introduction
 
 {{RFC3935}}
 
-The evergrowing interconnectedness of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the architecture of the Internet also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
+The evergrowing interconnectedness of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the Internet infrastructure also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights. 
 
 Open, secure and reliable connectivity is necessary (although not sufficient) to excercise the human rights such as freedom of expression and freedom of association {{FOC}}, as defined in the Universal Declaration of Human Rights {{UDHR}}. The purpose of the Internet to be a global network of networks that provides unfettered connectivity to all users and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the networks that make up the Internet. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's infrastructure and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF enabled the manifestation of the right to privacy, through the Internet's infrastructure. Additionally, access to information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet  increasingly becoming a pre-condition for human rights rather than a supplement.
 
-Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such as case the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm in a proportional way. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to.
+Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such as case the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm in a proportional way. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to. Technology can never be fully equated with a human right. Whereas a specific technology might be strong enabler of a specific human right, it might have an adverse impact on another human right. In this case decisions on design and deployment need to take this into account.
 
 The open nature of the initial technical design (open standards, open source, etc) fostered freedom of communication as a core value, everyone could join and everyone could submit code. However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture of networks. New protocols, particularly those that upgrade the core infrastructure of the network, should be designed to continue to enable fundamental human rights.
 
@@ -962,7 +962,7 @@ For example, end-to-end instant message encryption would conceal communications 
 Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
 
-Heterogeinity
+Heterogeneity
 :  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of independent organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
 
 Integrity
@@ -1037,6 +1037,345 @@ Strong encryption / cryptography
 
 Connectivity
 : The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
+
+
+Model for developing human rights protocol considerations
+---------------------------------------------------------
+
+This section outlines a set of human rights protocol considerations for protocol developers. It provides questions engineers should ask themselves when developing or improving protocols if they want to understand their human rights impact. It should however be noted that the impact of a protocol cannot solely be deduced from its design, but its usage and implementation should also be studied to form a full protocol human rights impact assessment. 
+
+The questions are based on the research performed by the hrpc research group which has been documented after these considerations. The research establishes that human rights relate to standards and protocols and offers a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights. With this the contours of a model for developing human rights protocol considerations has taken shape. 
+
+### Human rights threats
+Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition group members (or those identified as such) in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+
+This sections details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{BCP72}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
+
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to exclude specific rights or proritize some rights over others, if other rights seem relevant, please contact the research group mailinglist.
+
+### Guidelines for human rights considerations
+This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
+
+Protocols and Internet Standard might benefit from a documented discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
+
+Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}), and the addition of a human rights protocol considerations section has also not yet been proposed. 
+
+
+#### Technical concepts as they relate to human rights
+
+##### Connectivity
+Question(s):
+Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
+
+Explanation:
+The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
+
+Example:
+End-to-end instant message encryption would conceal the content of communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to freedom of assembly and association
+
+##### Privacy
+
+Question(s):
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could you protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
+
+Explanation:
+Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}. If a protocol provides insufficient privacy it may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves freely.
+
+Example:
+See {{RFC6973}}
+
+Impacts:
+
+- Right to freedom of expression
+- Right to non-discrimination
+
+##### Content agnosticism
+
+Question(s):
+If your protocol impacts packet handling, does it look at the packet payload? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the priotization that is made (if any)?
+
+Explanation:
+Content agnosticism refers to the notion that network traffic is treated identically regardless of payload, with some exception where it comes to effective traffic handling, for instance where it comes to delay tolerant or delay sensitive packets, based on the header.
+
+Example:
+Content agnosticism prevents payload-based discrimination against packets. This is important because changes to this principle can lead to a two-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to non-discrimination
+- Right to equal protection
+
+##### Security
+Question(s):
+Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as descibred throughout this document)?
+
+Explanation:
+Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these properties are required for every application. Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}.
+
+Example:
+See {{BCP72}}.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to freedom of assembly and association
+- Right to non discrimination
+
+##### Internationalization
+Question(s):
+Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
+
+Explanation:
+Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+
+         "Internationalization is the design and development of a
+         product, application or document content that enables easy
+         localization for target audiences that vary in culture, region,
+         or language."  {{W3Ci18nDef}}
+
+Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only.
+
+Example:
+See localization
+Impacts:
+
+- Right to freedom of expression
+- Right to political participation
+- Right to participate in cultural life, arts and science
+- Right to political participation
+
+##### Censorship resistance
+Question(s):
+Does this protocol introduce new identifiers or reuse existing identifiers (e.g. MAC addresses) that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
+
+Explanation:
+Censorship resistance refers to the methods and measures to prevent Internet censorship.
+
+Example:
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to political participation
+- Right to participate in cultural life, arts and science
+- Right to freedom of assembly and association
+
+##### Open Standards
+Question(s):
+Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
+
+Explanation:
+The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
+Similarly, {{RFC3935}} does not define open standards but does emphasize the importance of ‘open process’: any interested person can participate in the work, know what is being decided, and make his or her voice heard on the issue. Part of this principle is the IETF’s commitment to making its documents, WG mailing lists, attendance lists, and meeting minutes publicly available on the Internet.
+
+Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
+
+All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open stadards, particularly in the domain of cryptography {{newegg}}.
+Patents in open standards or in normative references to other standards should have a patent disclosure {{notewell}}, royalty-free licensing {{patentpolicy}}, or some other form of reasonable protection. Reasonable patent protection should includes but is not limited to cryptographic primitives.
+
+Example:
+{{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to participate in cultural life, arts and science
+
+##### Heterogeneity Support
+Question(s):
+Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? Is your protocol liberal in what it receives and handles? Will it remain usable and open if the context changes? Does your protocol allow there to be well-defined extension points? Do these extension points to allow open innovation possibly have security and privacy ramifications, and if so,how can these be dealt with?
+
+Explanation:
+The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns, there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design {{FIArch}}.
+
+Example:
+Heterogeneity is inevitable and needs be supported by design. Multiple types of hardware must be allowed for, e.g. transmission speeds differing by at least 7 orders of magnitude, various computer word lengths, and hosts ranging from memory-starved microprocessors up to massively parallel supercomputers. Multiple types of    application protocol must be allowed for, ranging from the simplest such as remote login up to the most complex such as distributed databases {{RFC1958}}.
+
+Impacts:
+
+- Right to freedom of expression
+- Right to security
+
+##### Anonymity
+Question(s):
+Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
+
+Explanation:
+Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
+
+Example:
+Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
+
+Impacts:
+
+- Right to non-discrimination
+- Right to political participation
+- Right to freedom of assembly and association
+- Right to security
+
+##### Pseudonymity
+Question(s):
+Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generates or processes anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
+
+Explanation:
+Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
+
+Example:
+Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
+
+Impacts:
+
+- Right to non-discrimination
+- Right to freedom of assembly and association
+
+##### Accessibility
+
+Question(s):
+Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner?
+
+Explanation:
+The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web.
+
+Example:
+The HTML protocol as defined in {{HTML5}} specifically requires that every image must have an alt attribute (with a few exceptions) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.
+
+Impacts:
+
+- Right to non-discrimination
+- Right to freedom of assembly and association
+- Right to education
+- Right to political participation
+
+##### Localization
+
+Question(s):
+Does your protocol uphold the standards of internationalization? Have made any concrete  steps towards localizing your protocol for relevant audiences?
+
+Explanation:
+Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Ci18nDef}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
+
+Example:
+The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world's online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language.
+
+Impacts:
+
+- Right to non-discrimination
+- Right to participate in cultural life, arts and science
+- Right to Freedom of Expression
+
+
+
+##### Decentralization
+Question(s):
+Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can the use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
+
+Explanation:
+Decentralization is one of the central technical concepts of the architecture of the networks, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990's there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet.
+
+Example:
+The bits traveling the Internet are increasingly susceptible to monitoring and censorship, from both governments and Internet service providers, as well as third (malicious) parties. The ability to monitor and censor is further enabled by the increased centralization of the network that creates central infrastructure points that can be tapped in to. The creation of peer-to-peer networks and the development of voice-over-IP protocols using peer-to-peer technology in combination with distributed hash table (DHT) for scalability are examples of how protocols can preserve decentralization {{Pouwelse}}.
+
+Impacts:
+
+- Right to freedom of assembly and association
+
+##### Reliability
+
+Question(s):
+Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
+
+Explanation:
+Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems in addition to the reliable delivery the protocol needs to safeguard timeliness.
+
+Example:
+In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC0793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
+
+Impacts:
+
+- Right to security
+
+##### Confidentiality
+
+Question(s):
+Does this protocol expose information related to identifiers or data? If so, does it do so to each other protocol entity (i.e., recipients, intermediaries, and enablers) {{RFC6973}}? What options exist for protocol implementers to choose to limit the information shared with each entity? What operational controls are available to limit the information shared with each entity?
+
+What controls or consent mechanisms does the protocol define or require before personal data or identifiers are shared or exposed via the protocol?  If no such mechanisms or controls are specified, is it expected that control and consent will be handled outside of the protocol?
+
+Does the protocol provide ways for initiators to share different pieces of information with different recipients?  If not, are there mechanisms that exist outside of the protocol to provide initiators with such control?
+
+Does the protocol provide ways for initiators to limit which information is shared with intermediaries?  If not, are there mechanisms that exist outside of the protocol to provide users with such control?  Is it expected that users will have relationships that govern the use of the information (contractual or otherwise) with those who operate these intermediaries? Does the protocol prefer encryption over clear text operation?
+
+Does the protocol provide ways for initiators to express individuals' preferences to recipients or intermediaries with regard to the collection, use, or disclosure of their personal data?
+
+Explanation:
+Confidentiality refers to keeping your data secret from unintended listeners {{BCP72}}. The growth of the Internet depends on users having confidence that the network protects their private information {{RFC1984}}.
+
+Example:
+Protocols that do not encrypt their payload make the entire content of the communication available to the idealized attacker along their path. Following the advice in {{RFC3365}}, most such protocols have a secure variant that encrypts the payload for confidentiality, and these secure variants are seeing ever-wider deployment. A noteworthy exception is DNS {{RFC1035}}, as DNSSEC {{RFC4033}}does not have confidentiality as a requirement.  This implies that, in the absence of changes to the protocol as presently under development in the IETF's DNS Private Exchange   (DPRIVE) working group, all DNS queries and answers generated by the activities of any protocol are available to the attacker.  When store-and-forward protocols are used (e.g., SMTP {{RFC5321}}), intermediaries leave this data subject to observation by an attacker that has compromised these intermediaries, unless the data is    encrypted end-to-end by the application-layer protocol or the implementation uses an encrypted store for this data {{RFC7624}}.
+
+
+Impacts:
+
+- Right to security
+
+##### Integrity
+Question(s):
+Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
+
+Explanation:
+Integrity refers to the maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
+
+Example:
+See authenticity
+
+Impacts:
+
+- Right to security
+
+##### Authenticity
+Question(s):
+Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
+
+Explanation:
+Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent attacks or unauthorized access and use of data.
+
+Example:
+Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows:
+
+Alice wants to communicate with Bob.  
+Alice sends data to Bob.  
+Corinne intercepts the data sent to Bob.  
+Corinne reads and alters the message to Bob.  
+Bob cannot see the data did not come from Alice but from Corinne.  
+Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
+Corinne knows all.
+
+Impacts:
+
+- Right to security
+
+##### Adaptability
+Question(s):
+Is your protocol written in such a way that is would be easy for other protocols to be developed on top of it, or to interact with it? Does your protocol impact permissionless innovation? See 'Connectivity' above.
+
+Explanation:
+Adaptability is closely interrelated permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop.
+
+Example:
+WebRTC generates audio and/or video data. In order to ensure that WebRTC can be used in different locations by different parties it is important that standard Javascript APIs are developed to support applications from different voice service providers. Multiple parties will have similar capabilities, in order to ensure that all parties can build upon existing standards these need to be adaptable, and allow for permissionless innovation.
+
+Impacts:
+
+- Right to education
+- Freedom of expression
+- Freedom of assembly and association
 
 
 Research Questions
@@ -1424,345 +1763,6 @@ Many individuals, not excluding IETF engineers, have argued that DDoS attacks ar
 DDoS attacks can thus stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent.  When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants. In the overwhelming majority of cases, the clients are hacked hosts of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}). In addition, DDoS attacks are increasingly used as an extortion tactic.
 
 All of these issues seem to suggest that the IETF should try to ensure that their protocols cannot be used for DDoS attacks, which is consistent with the long-standing IETF consensus that DDoS is an attack that protocols should mitigate them to the extent they can {{BCP72}}. Decreasing the number of vulnerabilities in protocols and (outside of IETF) the number of bugs in the network stacks of routers or computers could address this issue. The IETF can clearly play a role in bringing about some of these changes but the IETF cannot be expected to take a positive stance on (specific) DDoS attacks, or create protocols to enable some attacks and inhibit others. What the IETF can do is critically reflect on its role in the development of the Internet, and how this impacts the ability of people to excercise their human rights, such as freedom of expression.
-
-
-Model for developing human rights protocol considerations
----------------------------------------------------------
-
-In the previous steps we have established that human rights relate to standards and protocols and offered a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights. With this the contours of a model for developing human rights protocol considerations has taken shape. This subsection provides the last step by detailing how specific technical concepts identified above relate to human rights, and what questions engineers should ask themselves when developing or improving protocols. In short, it presents a set of human rights protocol considerations.
-
-
-### Human rights threats
-Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition group members (or those identified as such) in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
-
-This sections details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{BCP72}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
-
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to exclude specific rights or proritize some rights over others, if other rights seem relevant, please contact the research group mailinglist.
-
-### Guidelines for human rights considerations
-This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
-
-Protocols and Internet Standard might benefit from a documented discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
-
-Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}), and the addition of a human rights protocol considerations section has also not yet been proposed. 
-
-
-#### Technical concepts as they relate to human rights
-
-##### Connectivity
-Question(s):
-Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
-
-Explanation:
-The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
-
-Example:
-End-to-end instant message encryption would conceal the content of communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to freedom of assembly and association
-
-##### Privacy
-
-Question(s):
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could you protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
-
-Explanation:
-Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}. If a protocol provides insufficient privacy it may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves freely.
-
-Example:
-See {{RFC6973}}
-
-Impacts:
-
-- Right to freedom of expression
-- Right to non-discrimination
-
-##### Content agnosticism
-
-Question(s):
-If your protocol impacts packet handling, does it look at the packet payload? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the priotization that is made (if any)?
-
-Explanation:
-Content agnosticism refers to the notion that network traffic is treated identically regardless of content.
-
-Example:
-Content agnosticism prevents content-based discrimination against packets. This is important because changes to this principle can lead to a two-tiered Internet, where certain packets are prioritized over others on the basis of their content. Effectively this would mean that although all users are entitled to receive their packets at a certain speed, some users become more equal than others.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to non-discrimination
-- Right to equal protection
-
-##### Security
-Question(s):
-Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as descibred throughout this document)?
-
-Explanation:
-Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these properties are required for every application. Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}.
-
-Example:
-See {{BCP72}}.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to freedom of assembly and association
-- Right to non discrimination
-
-##### Internationalization
-Question(s):
-Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
-
-Explanation:
-Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
-
-         "Internationalization is the design and development of a
-         product, application or document content that enables easy
-         localization for target audiences that vary in culture, region,
-         or language."  {{W3Ci18nDef}}
-
-Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only.
-
-Example:
-See localization
-Impacts:
-
-- Right to freedom of expression
-- Right to political participation
-- Right to participate in cultural life, arts and science
-- Right to political participation
-
-##### Censorship resistance
-Question(s):
-Does this protocol introduce new identifiers or reuse existing identifiers (e.g. MAC addresses) that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
-
-Explanation:
-Censorship resistance refers to the methods and measures to prevent Internet censorship.
-
-Example:
-Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to political participation
-- Right to participate in cultural life, arts and science
-- Right to freedom of assembly and association
-
-##### Open Standards
-Question(s):
-Is your protocol fully documented in a way that it could be easily implemented, improved, build upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
-
-Explanation:
-The Internet was able to developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2606}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
-Similarly, {{RFC3935}} does not define open standards but does emphasize the importance of ‘open process’: any interested person can participate in the work, know what is being decided, and make his or her voice heard on the issue. Part of this principle is the IETF’s commitment to making its documents, WG mailing lists, attendance lists, and meeting minutes publicly available on the Internet.
-
-Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
-
-All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open stadards, particularly in the domain of cryptography {{newegg}}.
-Patents in open standards or in normative references to other standards should have a patent disclosure {{notewell}}, royalty-free licensing {{patentpolicy}}, or some other form of reasonable protection. Reasonable patent protection should includes but is not limited to cryptographic primitives.
-
-Example:
-{{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to participate in cultural life, arts and science
-
-##### Heterogeneity Support
-Question(s):
-Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? Is your protocol liberal in what it receives and handles? Will it remain usable and open if the context changes? Does your protocol allow there to be well-defined extension points? Do these extension points to allow open innovation possibly have security and privacy ramifications, and if so,how can these be dealt with?
-
-Explanation:
-The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of autonomous organizations and Internet service providers, each with their own separate policy concerns, there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design {{FIArch}}.
-
-Example:
-Heterogeneity is inevitable and needs be supported by design. Multiple types of hardware must be allowed for, e.g. transmission speeds differing by at least 7 orders of magnitude, various computer word lengths, and hosts ranging from memory-starved microprocessors up to massively parallel supercomputers. Multiple types of    application protocol must be allowed for, ranging from the simplest such as remote login up to the most complex such as distributed databases {{RFC1958}}.
-
-Impacts:
-
-- Right to freedom of expression
-- Right to security
-
-##### Anonymity
-Question(s):
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
-
-Explanation:
-Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. It is an important feature for many end-users, as it allows them different degrees of privacy online.
-
-Example:
-Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
-
-Impacts:
-
-- Right to non-discrimination
-- Right to political participation
-- Right to freedom of assembly and association
-- Right to security
-
-##### Pseudonymity
-Question(s):
-Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generates or processes anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
-
-Explanation:
-Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
-
-Example:
-Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
-
-Impacts:
-
-- Right to non-discrimination
-- Right to freedom of assembly and association
-
-##### Accessibility
-
-Question(s):
-Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner?
-
-Explanation:
-The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web.
-
-Example:
-The HTML protocol as defined in {{HTML5}} specifically requires that every image must have an alt attribute (with a few exceptions) to ensure images are accessible for people that cannot themselves decipher non-text content in web pages.
-
-Impacts:
-
-- Right to non-discrimination
-- Right to freedom of assembly and association
-- Right to education
-- Right to political participation
-
-##### Localization
-
-Question(s):
-Does your protocol uphold the standards of internationalization? Have made any concrete  steps towards localizing your protocol for relevant audiences?
-
-Explanation:
-Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Ci18nDef}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
-
-Example:
-The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world's online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC1766}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language.
-
-Impacts:
-
-- Right to non-discrimination
-- Right to participate in cultural life, arts and science
-- Right to Freedom of Expression
-
-
-
-##### Decentralization
-Question(s):
-Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can the use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
-
-Explanation:
-Decentralization is one of the central technical concepts of the architecture of the networks, and embraced as such by the IETF {{RFC3935}}. It refers to the absence or minimization of centralized points of control; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}. It also reduces issues surrounding single points of failure, and distributes the network such that it continues to function if one or several nodes are disabled. With the commercialization of the Internet in the early 1990's there has been a slow move to move away from decentralization, to the detriment of the technical benefits of having a decentralized Internet.
-
-Example:
-The bits traveling the Internet are increasingly susceptible to monitoring and censorship, from both governments and Internet service providers, as well as third (malicious) parties. The ability to monitor and censor is further enabled by the increased centralization of the network that creates central infrastructure points that can be tapped in to. The creation of peer-to-peer networks and the development of voice-over-IP protocols using peer-to-peer technology in combination with distributed hash table (DHT) for scalability are examples of how protocols can preserve decentralization {{Pouwelse}}.
-
-Impacts:
-
-- Right to freedom of assembly and association
-
-##### Reliability
-
-Question(s):
-Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
-
-Explanation:
-Reliability ensures that a protocol will execute its function consistently and error resistant as described, and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation.  It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing. As with confidentiality, the growth of the Internet and fostering innovation in services depends on users having confidence and trust {{RFC3724}} in the network. For reliability it is necessary that services notify the users if a delivery fails. In the case of real-time systems in addition to the reliable delivery the protocol needs to safeguard timeliness.
-
-Example:
-In the modern IP stack structure, a reliable transport layer requires an indication that transport processing has successfully completed, such as given by TCP's ACK message {{RFC0793}}, and not simply an indication from the IP layer that the packet arrived.  Similarly, an application layer protocol may require an application-specific acknowledgement that contains, among other things, a status code indicating the disposition of the request (See {{RFC3724}}).
-
-Impacts:
-
-- Right to security
-
-##### Confidentiality
-
-Question(s):
-Does this protocol expose information related to identifiers or data? If so, does it do so to each other protocol entity (i.e., recipients, intermediaries, and enablers) {{RFC6973}}? What options exist for protocol implementers to choose to limit the information shared with each entity? What operational controls are available to limit the information shared with each entity?
-
-What controls or consent mechanisms does the protocol define or require before personal data or identifiers are shared or exposed via the protocol?  If no such mechanisms or controls are specified, is it expected that control and consent will be handled outside of the protocol?
-
-Does the protocol provide ways for initiators to share different pieces of information with different recipients?  If not, are there mechanisms that exist outside of the protocol to provide initiators with such control?
-
-Does the protocol provide ways for initiators to limit which information is shared with intermediaries?  If not, are there mechanisms that exist outside of the protocol to provide users with such control?  Is it expected that users will have relationships that govern the use of the information (contractual or otherwise) with those who operate these intermediaries? Does the protocol prefer encryption over clear text operation?
-
-Does the protocol provide ways for initiators to express individuals' preferences to recipients or intermediaries with regard to the collection, use, or disclosure of their personal data?
-
-Explanation:
-Confidentiality refers to keeping your data secret from unintended listeners {{BCP72}}. The growth of the Internet depends on users having confidence that the network protects their private information {{RFC1984}}.
-
-Example:
-Protocols that do not encrypt their payload make the entire content of the communication available to the idealized attacker along their path. Following the advice in {{RFC3365}}, most such protocols have a secure variant that encrypts the payload for confidentiality, and these secure variants are seeing ever-wider deployment. A noteworthy exception is DNS {{RFC1035}}, as DNSSEC {{RFC4033}}does not have confidentiality as a requirement.  This implies that, in the absence of changes to the protocol as presently under development in the IETF's DNS Private Exchange   (DPRIVE) working group, all DNS queries and answers generated by the activities of any protocol are available to the attacker.  When store-and-forward protocols are used (e.g., SMTP {{RFC5321}}), intermediaries leave this data subject to observation by an attacker that has compromised these intermediaries, unless the data is    encrypted end-to-end by the application-layer protocol or the implementation uses an encrypted store for this data {{RFC7624}}.
-
-
-Impacts:
-
-- Right to security
-
-##### Integrity
-Question(s):
-Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
-
-Explanation:
-Integrity refers to the maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
-
-Example:
-See authenticity
-
-Impacts:
-
-- Right to security
-
-##### Authenticity
-Question(s):
-Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
-
-Explanation:
-Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent attacks or unauthorized access and use of data.
-
-Example:
-Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows:
-
-Alice wants to communicate with Bob.  
-Alice sends data to Bob.  
-Corinne intercepts the data sent to Bob.  
-Corinne reads and alters the message to Bob.  
-Bob cannot see the data did not come from Alice but from Corinne.  
-Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
-Corinne knows all.
-
-Impacts:
-
-- Right to security
-
-##### Adaptability
-Question(s):
-Is your protocol written in such a way that is would be easy for other protocols to be developed on top of it, or to interact with it? Does your protocol impact permissionless innovation? See 'Connectivity' above.
-
-Explanation:
-Adaptability is closely interrelated permissionless innovation, both maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the impact of protocols on maintaining or reducing permissionless innovation to ensure the Internet can continue to develop.
-
-Example:
-WebRTC generates audio and/or video data. In order to ensure that WebRTC can be used in different locations by different parties it is important that standard Javascript APIs are developed to support applications from different voice service providers. Multiple parties will have similar capabilities, in order to ensure that all parties can build upon existing standards these need to be adaptable, and allow for permissionless innovation.
-
-Impacts:
-
-- Right to education
-- Freedom of expression
-- Freedom of assembly and association
-
 
 Acknowledgements
 ================
