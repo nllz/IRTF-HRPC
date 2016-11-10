@@ -7,12 +7,14 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 
 	Introduction
 - Status of research group & documents (2 min)
 - Context of research (5 mins)
-- Presentation + Q&A - Francesca Musiani on Infrastructure and Human Rights (20 mins)
-- Presentation + Q&A - Sarah Spiekerman on Value Based Design (20 mins)
-- Discussion of draft-irtf-hrpc-research  (20 mins)
+- Presentation + Q&A - Geoffrew Bowker on Infrastructure and Human Rights (20 mins)
+- Discussion of draft-irtf-hrpc-research  (60 mins)
 	https://tools.ietf.org/html/draft-irtf-hrpc-research
 	- process update by document sherpherd (Avri Doria)
 	- content update by document authors (Niels ten Oever, Corinne Cath)
+		- anonymity as aspirational goal
+		- internationalization
+		- protocols are political
 	- next steps
 - Open discussion other drafts, papers, ideas (15 min)
 - Next steps (5 min)
