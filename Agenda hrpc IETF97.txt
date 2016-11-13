@@ -12,12 +12,19 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF96 
 	https://tools.ietf.org/html/draft-irtf-hrpc-research
 	- process update by document sherpherd (Avri Doria)
 	- content update by document authors (Niels ten Oever, Corinne Cath)
+		- review & changes
 		- anonymity as aspirational goal
 		- internationalization
 		- protocols are political
 	- next steps
-- Open discussion other drafts, papers, ideas (15 min)
+- Human Rights in other Internet Governance Bodies
+	- Documents
+	- ICANN
+	- IEEE
+- Open discussion other drafts, papers, ideas
 - Next steps (5 min)
 - AOB
+
+
 
 
