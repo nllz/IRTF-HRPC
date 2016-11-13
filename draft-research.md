@@ -883,7 +883,7 @@ informative:
      date: 2016
      author: 
         - org: Council of Europe
-     target: https://community.icann.org/pages/viewpage.action?pageId=53772653&preview=/53772653/63146835/Report%20on%20Community%20TLD%27s.pdf
+     target: https://rm.coe.int/CoERMPublicCommonSearchServices/DisplayDCTMContent?documentId=09000016806b5a14
    
 
 --- abstract
