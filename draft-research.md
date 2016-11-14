@@ -921,7 +921,7 @@ Human rights can be in conflict with each other, such as the right to freedom of
 
 The open nature of the initial technical design (open standards, open source, etc) fostered freedom of communication as a core value, everyone could join and everyone could submit code. However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture of networks. New protocols, particularly those that upgrade the core infrastructure of the network, should be designed to continue to enable fundamental human rights.
 
-The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the final part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
+The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the considerations <xref target="model-for-developing-human-rights-protocol-considerations" /> part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
 Vocabulary used
 ===============
@@ -1064,7 +1064,8 @@ This section provides guidance for document authors in the form of a questionnai
 
 Protocols and Internet Standard might benefit from a documented discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
 
-Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats.  This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}), and the addition of a human rights protocol considerations section has also not yet been proposed. 
+Note that the guidance provided in this section does not recommend specific practices. The range of protocols developed in the IETF is too broad to make recommendations about particular uses of data or how human rights might be balanced against other design goals.  However, by carefully considering the answers to the following questions, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats. This guidance is meant to help the thought process of a human rights analysis; it does not provide specific directions for how to write a human rights protocol considerations section (following the example set in {{RFC6973}}), and the addition of a human rights protocol considerations section has also not yet been proposed.
+In considering these questions, authors will need to be aware of the potential of technical advances or the passage of time to undermine protections.  In general, considerations of rights are likely to be more effective if they are considered given a purpose and specific use cases, rather than as abstract absolute goals. 
 
 
 #### Technical concepts as they relate to human rights
@@ -1138,7 +1139,7 @@ Question(s):
 Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
 
 Explanation:
-Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts.  (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
+Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
 
          "Internationalization is the design and development of a
          product, application or document content that enables easy
@@ -1147,8 +1148,12 @@ Internationalization refers to the practice of making protocols, standards, and 
 
 Many protocols that handle text only handle one charset (US-ASCII), or leave the question of what CCS and encoding are used up to local guesswork (which leads, of course, to interoperability problems).  If multiple charsets are permitted, they must be explicitly identified {{RFC2277}}.  Adding non-ASCII text to a protocol allows the protocol to handle more scripts, hopefully representing users across the world.  In today's world, that is normally best accomplished by allowing Unicode encoded in UTF-8 only.
 
+In aforementioned IETF documents internationalization is aimed at user-facing strings. The authors believe that this should also be extended to protocols themselves because if the Internet wants to be a global network of networks, the protocols should not only work in English and non-latin characters. 
+
 Example:
 See localization
+
+
 Impacts:
 
 - Right to freedom of expression
