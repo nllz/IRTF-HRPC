@@ -50,13 +50,17 @@ informative:
 
 --- abstract
 
-This documents aims to document the relation between Internet protocol and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two SHOULD be documented and adverse impact on this human right SHOULD be mitigated
+This documents aims to document the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two SHOULD be documented and adverse impact on this human right SHOULD be mitigated.
+
+On the other hand there have also been methods of protest on this Internet, such as DDoS attacks, that have been harmful to Internet connectivity. This document aims to document forms of protest that do not have a negative impact on the Internet infrastructure.
 
 --- middle
 
 
 Introduction
 ============
+
+- D
 
 
 Vocabulary Used
