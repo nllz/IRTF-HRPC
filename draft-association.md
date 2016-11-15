@@ -24,7 +24,7 @@ author:
 -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: Article19
+       organization: ARTICLE 19
        email: niels@article19.org
 
 
@@ -68,6 +68,10 @@ To do
 
 - Gather more examples
 
+- Outline difference and relation between right to assembly, association and protest
+
+- Explain the relation of these as rights (within frameworks of {{UDHR}}, {{ICCPR}}, etc)
+	https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
 
 Introduction
 ============
