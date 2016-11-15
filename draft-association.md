@@ -56,11 +56,22 @@ On the other hand there have also been methods of protest on this Internet, such
 
 --- middle
 
+To do
+=====
+
+- add description of (harmful) DDoS attacks. Possibly from :
+	Gabrielle Colemans "Hacker, Hoaxer, Whistleblower, Spy"
+	Moly Sauters "The Coming Swarm"
+
+- websites go blank in strike / protests again SOPA and PIPA
+	https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
+
+- Gather more examples
+
 
 Introduction
 ============
 
-- D
 
 
 Vocabulary Used
