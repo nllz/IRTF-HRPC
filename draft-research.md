@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-04
+docname: draft-irtf-hrpc-research-05
 category: info
 
 ipr: trust200902
