@@ -1,5 +1,5 @@
 --- 
-title: Freedom of Association and Internet Protocols
+title: Freedom of Association on the Internet
 abbrev: FoA
 docname: draft-tenoever-hrpc-association-00
 category: info
@@ -50,7 +50,7 @@ informative:
 
 --- abstract
 
-This documents aims to document the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two SHOULD be documented and adverse impact on this human right SHOULD be mitigated.
+This documents aims to document the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two should be documented and adverse impacts on this human right should be mitigated.
 
 On the other hand there have also been methods of protest on this Internet, such as DDoS attacks, that have been harmful to Internet connectivity. This document aims to document forms of protest that do not have a negative impact on the Internet infrastructure.
 
@@ -60,34 +60,37 @@ To do
 =====
 
 Examples
+
 - add description of (harmful) DDoS attacks. Possibly from :
-	Gabrielle Colemans "Hacker, Hoaxer, Whistleblower, Spy"
-	Moly Sauters "The Coming Swarm"
+    * Gabrielle Colemans "Hacker, Hoaxer, Whistleblower, Spy"
+    * Moly Sauters "The Coming Swarm"
 
 - websites go blank in strike / protests again SOPA and PIPA
-	https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
+    * https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
+
+- organizing platforms
+    * mailinglists
 
 - decision making platforms 
-	https://www.loomio.org/
-	http://liquidfeedback.org/
+    * https://www.loomio.org/
+    * http://liquidfeedback.org/
 
 - peer production 
-	https://www.wikipedia.org/
-	Git - Github
-	etherpad
-	google doc
+    * https://www.wikipedia.org/
+    * Git &/vs Github
+    * etherpad
+    * google doc
 	
-
 - Gather more examples
 
 
-Other issues
-- Outline difference and relation between right to assembly, association and protest
+- Other issues
+    * Outline difference and relation between right to assembly, association and protest
 
-- Explain the relation of these as rights (within frameworks of {{UDHR}}, {{ICCPR}}, etc)
-	https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
+    * Explain the relation of these as rights (within frameworks of {{UDHR}}, {{ICCPR}}, etc)
+        * https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
 
-- differences (and gradients) between free (as in beer) and free (as in freedom)
+    * differences (and gradients) between free (as in beer) and free (as in freedom)
 
 Introduction
 ============
