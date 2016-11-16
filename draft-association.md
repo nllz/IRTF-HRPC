@@ -59,6 +59,7 @@ On the other hand there have also been methods of protest on this Internet, such
 To do
 =====
 
+Examples
 - add description of (harmful) DDoS attacks. Possibly from :
 	Gabrielle Colemans "Hacker, Hoaxer, Whistleblower, Spy"
 	Moly Sauters "The Coming Swarm"
@@ -66,24 +67,39 @@ To do
 - websites go blank in strike / protests again SOPA and PIPA
 	https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
 
+- decision making platforms 
+	https://www.loomio.org/
+	http://liquidfeedback.org/
+
+- peer production 
+	https://www.wikipedia.org/
+	Git - Github
+	etherpad
+	google doc
+	
+
 - Gather more examples
 
+
+Other issues
 - Outline difference and relation between right to assembly, association and protest
 
 - Explain the relation of these as rights (within frameworks of {{UDHR}}, {{ICCPR}}, etc)
 	https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
+
+- differences (and gradients) between free (as in beer) and free (as in freedom)
 
 Introduction
 ============
 
 
 
-Vocabulary Used
-========
+Vocabulary used
+===============
 
 
 Security Considerations
-========================
+=======================
 
 As this draft concerns a research document, there are no security considerations.
 
