@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-05
+docname: draft-irtf-hrpc-research-06
 category: info
 
 ipr: trust200902
@@ -1046,7 +1046,7 @@ Connectivity
 
 
 Model for developing human rights protocol considerations
----------------------------------------------------------
+=========================================================
 
 This section outlines a set of human rights protocol considerations for protocol developers. It provides questions engineers should ask themselves when developing or improving protocols if they want to understand their human rights impact. It should however be noted that the impact of a protocol cannot solely be deduced from its design, but its usage and implementation should also be studied to form a full protocol human rights impact assessment. 
 
