@@ -1046,6 +1046,42 @@ Strong encryption / cryptography
 Connectivity
 : The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
 
+Research Questions
+==================
+
+The Human Rights Protocol Considerations Research Group (hrpc) in the Internet Research Taskforce (IRTF) embarked on its mission to answer the following two questions which are also the main two questions which this documents seeks to answer:
+
+1. How can Internet protocols and standards impact human rights, either by enabling them or by creating a restrictive environment?
+
+2. Can guidelines be developed to improve informed and transparent decision making about potential human rights impact of protocols?
+
+Literature and Discussion Review
+================================
+
+Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: "protocols are politics by other means". This statement confers that protocols are based on decision making, most often by humans. In this process the values and ideas about the role that a particular technology should  perform in society is embedded into the design. Often these design decisions are part pure-technical, and part inspired by certain world view of how technology should function that is inspired by personal and political views. Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols, and the politics of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}} and yet others look at how the engineers' personal set of values get translated into technology {{Abbate}},{{CathFloridi}} {{Denardis15}} {{WynsbergheMoura}}.
+
+Commercial and political influences on the management of the Internet's infrastructure are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is sufficient to say that the IETF community consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of and trust in the Internet {{Denardis14}}. The role human rights play in engineering, infrastructure maintenance and protocol design is much less clear.
+
+It is very important to understand how protocols and standards impact human rights. In particular because Standard Developing Organizations (SDOs) are increasingly becoming venues where social values (like human rights) are discussed, although often from a technological point of view. These SDOs are becoming a new focal point for discussions about values-by-design, and the role of technical engineers in protecting or enabling human rights {{Brownetal}} {{Clarketal}} {{Denardis14}} {{CathFloridi}} {{Lessig}} {{Rachovitsa}}.
+
+In the academic literature five clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (...) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{Clarketal}}.' They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to using the UDHR. What the authors mean by this is that  if the IETF were to bake the UDHR into its protocols, countries who do not agree with that might completely withdraw from the standard setting process.  And last but not least, it is dangerous to make promises that can't be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals' human rights.
+
+Conversely, Brown et al. {{Brownetal}} state that 'some key, universal values - of which the UDHR is the most legitimate expression - should be baked into the architecture at design time.' They argue that design choices have offline consequences, and are able to shape the power positions of groups or individuals in society. As such, the individuals making these technical decisions have a moral obligation to take into account the impact of their decisions on society, and by extension human rights. Brown et al recognise that values and the implementation of human rights vary across the globe. Yet they argue that all members of the United Nations have found 'common agreement on the values proclaimed in the Universal Declaration of Human Rights. In looking for the most legitimate set of global values to embed in the future Internet architectures, the UDHR has the democratic assent of a significant fraction of the planet's population, through their elected representatives."
+
+The main disagreement between these two academic positions lies mostly in the question on whether a particular value system should be embedded into the Internet's architectures or whether the architectures need to account for a varying set of values.
+
+A third position that is similar to that of Brown et al., is taken by {{Broeders}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the TCP/IP protocol suite, numerous standards, the Domain Name System (DNS), and routing protocols - a common public good. This is a different approach than that of {{Clarketal}} and {{Brownetal}} because Broeders does not suggest that social values should (or should not) be explicitly coded into the Internet, but rather that the existing infrastructure should be seen as an entity of public value.
+
+Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too early to make any definitive claims, but that there is a need for more careful analysis of the impact of protocol design choices on human rights. They also argue that it is important to search for solutions that 'create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.'
+
+Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. 
+
+It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
+
+Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
+
+This document details the steps taken in the research into human rights protocol considerations by the hrpc research group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
+
 Methodology
 ===========
 
@@ -1420,6 +1456,7 @@ In considering these questions, authors will need to be aware of the potential o
 #### Technical concepts as they relate to human rights
 
 ##### Connectivity
+
 Question(s):
 Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
 
@@ -1468,6 +1505,7 @@ Impacts:
 - Right to equal protection
 
 ##### Security
+
 Question(s):
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as described throughout this document)?
 
@@ -1484,6 +1522,7 @@ Impacts:
 - Right to non-discrimination
 
 ##### Internationalization
+
 Question(s):
 Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
 
@@ -1528,6 +1567,7 @@ Impacts:
 - Right to freedom of assembly and association
 
 ##### Open Standards
+
 Question(s):
 Is your protocol fully documented in a way that it could be easily implemented, improved, built upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
 
@@ -1549,6 +1589,7 @@ Impacts:
 - Right to participate in cultural life, arts and science
 
 ##### Heterogeneity Support
+
 Question(s):
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? Is your protocol liberal in what it receives and handles? Will it remain usable and open if the context changes? Does your protocol allow there to be well-defined extension points? Do these extension points to allow open innovation possibly have security and privacy ramifications, and if so,how can these be dealt with?
 
@@ -1564,6 +1605,7 @@ Impacts:
 - Right to security
 
 ##### Anonymity
+
 Question(s):
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
 
@@ -1581,6 +1623,7 @@ Impacts:
 - Right to security
 
 ##### Pseudonymity
+
 Question(s):
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generates or processes anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
@@ -1630,9 +1673,8 @@ Impacts:
 - Right to participate in cultural life, arts and science
 - Right to Freedom of Expression
 
-
-
 ##### Decentralization
+
 Question(s):
 Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can the use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
 
@@ -1686,6 +1728,7 @@ Impacts:
 - Right to security
 
 ##### Integrity
+
 Question(s):
 Does your protocol maintain and assure the accuracy of data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
 
@@ -1700,6 +1743,7 @@ Impacts:
 - Right to security
 
 ##### Authenticity
+
 Question(s):
 Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
 
@@ -1722,6 +1766,7 @@ Impacts:
 - Right to security
 
 ##### Adaptability
+
 Question(s):
 Is your protocol written in such a way that is would be easy for other protocols to be developed on top of it, or to interact with it? Does your protocol impact permissionless innovation? See 'Connectivity' above.
 
@@ -1736,44 +1781,6 @@ Impacts:
 - Right to education
 - Freedom of expression
 - Freedom of assembly and association
-
-
-Research Questions
-==================
-The Human Rights Protocol Considerations Research Group (hrpc) in the Internet Research Taskforce (IRTF) embarked on its mission to answer the following two questions which are also the main two questions which this documents seeks to answer:
-
-1. How can Internet protocols and standards impact human rights, either by enabling them or by creating a restrictive environment?
-
-2. Can guidelines be developed to improve informed and transparent decision making about potential human rights impact of protocols?
-
-Literature and Discussion Review
-================================
-
-Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. To quote {{Abbate}}: "protocols are politics by other means". This statement confers that protocols are based on decision making, most often by humans. In this process the values and ideas about the role that a particular technology should  perform in society is embedded into the design. Often these design decisions are part pure-technical, and part inspired by certain world view of how technology should function that is inspired by personal and political views. Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols, and the politics of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}} and yet others look at how the engineers' personal set of values get translated into technology {{Abbate}},{{CathFloridi}} {{Denardis15}} {{WynsbergheMoura}}.
-
-Commercial and political influences on the management of the Internet's infrastructure are well-documented in the academic literature and will thus not be discussed here {{Benkler}}  {{Brownetal}}  {{Denardis15}}  {{Lessig}}  {{Mueller}}  {{Zittrain}}. It is sufficient to say that the IETF community consistently tries to push back against the standardization of surveillance and certain other issues that negatively influence end-users' experience of and trust in the Internet {{Denardis14}}. The role human rights play in engineering, infrastructure maintenance and protocol design is much less clear.
-
-It is very important to understand how protocols and standards impact human rights. In particular because Standard Developing Organizations (SDOs) are increasingly becoming venues where social values (like human rights) are discussed, although often from a technological point of view. These SDOs are becoming a new focal point for discussions about values-by-design, and the role of technical engineers in protecting or enabling human rights {{Brownetal}} {{Clarketal}} {{Denardis14}} {{CathFloridi}} {{Lessig}} {{Rachovitsa}}.
-
-In the academic literature five clear positions can be discerned, in relation to the role of human rights in protocol design and how to account for these human rights in protocol development: Clark et al. argue that there is a need to 'design for variation in outcome, so that the outcome can be different in different places, and the tussle takes place within the design (...) [as] Rigid designs will be broken; designs that permit variation will flex under pressure and survive {{Clarketal}}.' They hold that human rights should not be hard-coded into protocols because of four reasons: first, the rights in the UDHR are not absolute. Second, technology is not the only tool in the tussle over human rights. Third, there are inherent dangers to using the UDHR. What the authors mean by this is that  if the IETF were to bake the UDHR into its protocols, countries who do not agree with that might completely withdraw from the standard setting process.  And last but not least, it is dangerous to make promises that can't be kept. The open nature of the Internet will never, they argue, be enough to fully protect individuals' human rights.
-
-Conversely, Brown et al. {{Brownetal}} state that 'some key, universal values - of which the UDHR is the most legitimate expression - should be baked into the architecture at design time.' They argue that design choices have offline consequences, and are able to shape the power positions of groups or individuals in society. As such, the individuals making these technical decisions have a moral obligation to take into account the impact of their decisions on society, and by extension human rights. Brown et al recognise that values and the implementation of human rights vary across the globe. Yet they argue that all members of the United Nations have found 'common agreement on the values proclaimed in the Universal Declaration of Human Rights. In looking for the most legitimate set of global values to embed in the future Internet architectures, the UDHR has the democratic assent of a significant fraction of the planet's population, through their elected representatives."
-
-The main disagreement between these two academic positions lies mostly in the question on whether a particular value system should be embedded into the Internet's architectures or whether the architectures need to account for a varying set of values.
-
-A third position that is similar to that of Brown et al., is taken by {{Broeders}} who argues that 'we must find ways to continue guaranteeing the overall integrity and functionality of the public core of the Internet.' He argues that the best way to do this is by declaring the backbone of the Internet - which includes the TCP/IP protocol suite, numerous standards, the Domain Name System (DNS), and routing protocols - a common public good. This is a different approach than that of {{Clarketal}} and {{Brownetal}} because Broeders does not suggest that social values should (or should not) be explicitly coded into the Internet, but rather that the existing infrastructure should be seen as an entity of public value.
-
-Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too early to make any definitive claims, but that there is a need for more careful analysis of the impact of protocol design choices on human rights. They also argue that it is important to search for solutions that 'create awareness in the technical community about impact of design choices on social values. And work towards a methodology for co-design of technical and institutional systems.'
-
-Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. 
-
-It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will ensure that the impact protocols can have on human rights is clear and explicit, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
-
-Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
-
-This document details the steps taken in the research into human rights protocol considerations by the hrpc research group to clarify the relation between technical concepts used in the IETF and human rights. This document sets out some preliminary steps and considerations for engineers to take into account when developing standards and protocols.
-
-
 
 Document Status
 ===============
