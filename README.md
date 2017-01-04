@@ -47,7 +47,7 @@ A participant in any IETF activity acknowledges that written, audio and video re
 
 Install dependencies:
 
-      # apt install kramdown-rfc2629 xml2rfc
+      # apt install ruby-kramdown-rfc2629 xml2rfc
 
 Draft editing workflow:
 
