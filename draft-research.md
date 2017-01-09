@@ -44,7 +44,6 @@ informative:
    RFC1035:
    RFC1122:
    RFC1631:
-   RFC1766:
    RFC1958:
    RFC1984:
    RFC2026:
@@ -58,6 +57,7 @@ informative:
    RFC4084:
    RFC4033:
    RFC4101:
+   RFC4646:
    RFC4949:
    rfc5246:
    RFC5321:
@@ -401,13 +401,6 @@ informative:
      author:
         - ins: J.R. Douceur
      target: http://research.microsoft.com:8082/pubs/74220/IPTPS2002.pdf
-
-   Bray:
-     title: A New HTTP Status Code for Legally-restricted Resources
-     date: 2016
-     author:
-        - ins: T. Bray
-     target: https://tools.ietf.org/html/draft-ietf-httpbis-legally-restricted-status-04
 
    Abibil:
      title: Dissecting 'Operation Ababil' - an OSINT Analysis
@@ -884,6 +877,12 @@ informative:
         - org: Council of Europe
      target: https://rm.coe.int/CoERMPublicCommonSearchServices/DisplayDCTMContent?documentId=09000016806b5a14
    
+   geekfeminism:
+     title: Pseudonymity
+     date: 2015
+     author: 
+        - org: Geek Feminism Wiki 
+     target: http://geekfeminism.wikia.com/wiki/Pseudonymity
 
 --- abstract
 
@@ -923,7 +922,7 @@ Human rights can be in conflict with each other, such as the right to freedom of
 he open nature of the initial technical design and its open standards, as well as developments like open source, fostered freedom of communication.  What emerged was a network of networks that could enable everyone to connect and to exchange data, information and code.  For many, enabling such conections became a core value.
 However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture of networks. New protocols, particularly those that upgrade the core infrastructure of the network, should be designed to continue to enable fundamental human rights.
 
-The IETF has produced guidelines and procedures to ensure and galvanize the privacy and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the <xref target="model-for-developing-human-rights-protocol-considerations" /> part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
+The IETF has produced guidelines and procedures to ensure and galvanize the privacy of indiduals and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the <xref target="model-for-developing-human-rights-protocol-considerations" /> part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats.
 
 Vocabulary used
 ===============
@@ -1058,7 +1057,7 @@ The Human Rights Protocol Considerations Research Group (hrpc) in the Internet R
 Literature and Discussion Review
 ================================
 
-Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which some Internet processes and protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. According to {{Abbate}}: "protocols are politics by other means". This statement would probably not garner IETF consensus, but it nonetheless confers that protocols are based on decision making, most often by humans. In this process the values and ideas about the role that a particular technology should  perform in society is embedded into the design. Often these design decisions are part pure-technical, and part inspired by certain world view of how technology should function that is inspired by personal, corporate and political views. Within the community of IETF participants there is a strong desire to solve technical problems and minimize engagement with political processes and non-protocol related poltical issues.
+Protocols and standards are regularly seen as merely performing technical functions. However, these protocols and standards do not exist outside of their technical context nor outside of their political, historical, economic, legal or cultural context. This is best exemplified by the way in which some Internet processes and protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring or global innovation policy for concrete examples {{Denardis15}}. According to {{Abbate}}: "protocols are politics by other means". This statement would probably not garner IETF consensus, but it nonetheless confers that protocols are based on decision making, most often by humans. In this process the values and ideas about the role that a particular technology should  perform in society is embedded into the design. Often these design decisions are part pure-technical, and part inspired by certain world view of how technology should function that is inspired by personal, corporate and political views. Within the community of IETF participants there is a strong desire to solve technical problems and minimize engagement with political processes and non-protocol related political issues.
 
 Since the late 1990's a burgeoning group of academics and practitioners researched questions surrounding the societal impact of protocols, and the politics of protocols. These studies vary in focus and scope: some focus on specific standards {{Davidsonetal}} {{Musiani}}, others look into the political, legal, commercial or social impact of protocols {{BrownMarsden}} {{Lessig}}, {{Mueller}} and yet others look at how the engineers' personal set of values get translated into technology {{Abbate}} {{CathFloridi}} {{Denardis15}} {{WynsbergheMoura}}.
 
@@ -1192,7 +1191,7 @@ This analysis does not claim to be a complete or exhaustive mapping of all possi
      | Accessibility         |                                         |
      | Internationalization  | Right to political participation        |
      | Censorship resistance |                                         |
-     | Accessibility         |                                         |
+     | Connectivity          |                                         |
      +-----------------------+-----------------------------------------+
      | Open standards        |                                         |
      | Localization          | Right to participate in cultural life,  |
@@ -1220,7 +1219,7 @@ figure 2 - relation between specific technical concepts with regards to their co
 ### Map cases of protocols that adversely impact human rights or are enablers thereof
 Given the information above, the following list of cases of protocols that adversely impact or enable human rights was formed.
 
-It is important to note that the assessment here is not a general judgment on these protocols. When they were conceived, there were many criteria to take into account. For instance, relying on an external server can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered at design time.
+It is important to note that the assessment here is not a general judgment on these protocols. When they were conceived, there were many criteria to take into account. For instance, relying on an centralized service can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered at design time.
 
 #### IPv4
 
@@ -1349,7 +1348,7 @@ peers where to fetch the data, or at routing tables, with the attempt of providi
 
 ##### Throttling
 
-Peer-to-Peer traffic (and BitTorrent in particular) represents a high percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throttling undermines the end-to-end principle.
+Peer-to-Peer traffic (and BitTorrent in particular) represents a significant percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throttling undermines the end-to-end principle.
 
 Throttling the peer-to-peer traffic makes some uses of P2P networks ineffective and it might be coupled with stricter inspection of users' Internet traffic through Deep Packet Inspection techniques which might pose additional security and privacy risks.
 
@@ -1410,7 +1409,7 @@ Some implementations of VPN appear to be particularly vulnerable to identificati
 Every Internet user has run into the '404 Not Found' Hypertext Transfer Protocol (HTTP) status code when trying, and failing, to access a particular website {{Cath}}. It is a response status that the server sends to the browser, when the server cannot locate the URL. '403 Forbidden' is another example of this class of code signals that gives users information about what is going on. In the '403' case the server can be reached, but is blocking the request because the user is trying to access content forbidden to them. This can be because the specific user is not allowed access to the content (like a government employee trying to access pornography on a work-computer) or because access is restricted to all users (like social network sites in certain countries).
 As surveillance and censorship of the Internet is becoming more commonplace, voices were raised at the IETF to introduce a new status code that indicates when something is not available for 'legal reasons' (like censorship):
 
-The 451 status code would allow server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation. This transparency may be beneficial both to these operators and to end-users {{Bray}}.
+The 451 status code would allow server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation. This transparency may be beneficial both to these operators and to end-users {{RFC7725}}.
 
 The status code is named '451', a reference to Bradbury's famous novel on censorship, and the temperature (in Fahrenheit) at which bookpaper autoignites. 
 
@@ -1479,7 +1478,7 @@ Question(s):
 Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could you protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
 
 Explanation:
-Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}. If a protocol provides insufficient privacy it may stifle speech as users self-censor for fear of surveillance, or find themselves unable to express themselves freely.
+Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}. If a protocol provides insufficient privacy protection it may have a negative impact on freedom of expression as users self-censor for fear of surveillance, or find themselves unable to express themselves freely.
 
 Example:
 See {{RFC6973}}
@@ -1492,7 +1491,7 @@ Impacts:
 ##### Content agnosticism
 
 Question(s):
-If your protocol impacts packet handling, does it look at the packet payload? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the priotization that is made (if any)?
+If your protocol impacts packet handling, does it use data from the packet payload? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the priotization that is made (if any)?
 
 Explanation:
 Content agnosticism refers to the notion that network traffic is treated identically regardless of payload, with some exception where it comes to effective traffic handling, for instance where it comes to delay tolerant or delay sensitive packets, based on the header.
@@ -1557,13 +1556,13 @@ Impacts:
 
 ##### Censorship resistance
 Question(s):
-Does this protocol introduce new identifiers or reuse existing identifiers (e.g. MAC addresses) that might be associated with persons or content? Does your protocol make it apparent or transparent when filtering happens? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
+Does this protocol introduce new identifiers or reuse existing identifiers (e.g. MAC addresses) that might be associated with persons or content? Does your protocol make it apparent or transparent when access to a resource it restricted? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
 
 Explanation:
 Censorship resistance refers to the methods and measures to prevent Internet censorship.
 
 Example:
-Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Filtering can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{Bray}}.
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Denial or restriction of access can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{RFC7725}}.
 
 Impacts:
 
@@ -1637,7 +1636,14 @@ Explanation:
 Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
 
 Example:
-Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
+Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. Pseudonymity means using a pseudonym instead of one's "real" name. There are many reasons for users to use pseudoyms, for instance to: hide their gender, protect themselves against harassment, protect their families' privacy, frankly discuss sexuality, or develop a artistic or journalistic persona without retribution from an employer, (potential) customers, or social surrounding. {{geekfeminism}} The difference between anonymity and pseudonymity is that a pseudonym often is persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
+
+
+Examples include pen names of authors such as Mark Twain or Cecil Adams, as well as stage names of performers such as Woody Allen or Ice T. Usernames used online, if not connected to a person's legal identity, are examples of pseudonyms. 
+
+
+
+For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
 
 Impacts:
 
@@ -1743,7 +1749,15 @@ Explanation:
 Integrity refers to the maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered.
 
 Example:
-See authenticity
+Integrity verification of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle changing the content of the data. In practice this looks as follows:
+
+Alice wants to communicate with Bob.  
+Alice sends data to Bob.  
+Corinne intercepts the data sent to Bob.  
+Corinne reads and alters the message to Bob.  
+Bob cannot see the data from Alice was altered by Corinne.  
+Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
+Corinne is able to control the communication content.  
 
 Impacts:
 
@@ -1763,10 +1777,17 @@ Authentication of data is important to prevent vulnerabilities and attacks, like
 Alice wants to communicate with Bob.  
 Alice sends data to Bob.  
 Corinne intercepts the data sent to Bob.  
-Corinne reads and alters the message to Bob.  
+Corinne reads (and potentially alters) the message to Bob.  
 Bob cannot see the data did not come from Alice but from Corinne.  
-Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
-Corinne knows all.
+
+
+When there is proper authentication the scenario would be as follows:
+
+Alice wants to communicate with Bob.  
+Alice sends data to Bob.  
+Corinne intercepts the data sent to Bob.  
+Corinne reads and alters the message to Bob.  
+Bob can see the data did not come from Alice but from Corinne.  
 
 Impacts:
 
@@ -1809,7 +1830,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help with writing the initial proposals and Internet Drafts, her reviews and contributions to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Amerlia Andersdotter, Stephen Farrell, Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, S. Moonesamy, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Amelia Andersdotter, Stephen Farrell, Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Alissa Cooper, S. Moonesamy, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 Thanks to Edward Snowden for his comments regarding the impact of protocols on the rights of users at IETF93.
 
