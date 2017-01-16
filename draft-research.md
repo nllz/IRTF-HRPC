@@ -886,7 +886,7 @@ informative:
 
 --- abstract
 
-This document provides a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, and a proposal for guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}.
+This document aims to propose guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. This is achieved by providing a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, as well as guidelines.
 
 If you want to see how to apply this work to your own, you can directly go to <xref target="model-for-developing-human-rights-protocol-considerations" />. The rest of the document explains the background of the guidelines and how they were developed.
 
@@ -911,11 +911,11 @@ Introduction
 
 {{RFC3935}}
 
-The evergrowing interconnectedness of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the Internet infrastructure also has a growing impact on society. This has led to an broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
+The evergrowing interconnectedness of Internet and society increases the impact of the Internet on the lives of individuals. Because of this, the design and development of the Internet infrastructure also has a growing impact on society. This has led to a broad recognition that human rights {{UDHR}} {{ICCPR}} {{ICESCR}} have a role in the development and management of the Internet {{HRC2012}} {{UNGA2013}} {{NETmundial}}. It has also been argued that the Internet should be strengthened as a human rights enabling environment {{Brown}}.
 
 This document aims to expose the relation between protocols and human rights, propose possible guidelines to protect the Internet as a human-rights-enabling environment in future protocol development, in a manner similar to the work done for Privacy Considerations in {{RFC6973}}, and to increase the awareness in both the human rights community and the technical community on the importance of the technical workings of the Internet and its impact on human rights. 
 
-Open, secure and reliable connectivity is necessary (although not sufficient) to excercise human rights such as freedom of expression and freedom of association {{FOC}}, as defined in the Universal Declaration of Human Rights {{UDHR}}. The purpose of the Internet to be a global network of networks that provides unfettered connectivity to all users and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. The Internet has given people a platform to exchange opinions, gather information, and it has enabled people of different backgrounds and genders to participate in the public debate, it has also allowed people to congregate and organize. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the networks that make up the Internet. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's infrastructure and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF enabled the manifestation of the right to privacy, through the Internet's infrastructure. Additionally, access to information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet  increasingly becoming a pre-condition for human rights rather than a supplement.
+Open, secure and reliable connectivity is necessary (although not sufficient) to excercise human rights such as freedom of expression and freedom of association {{FOC}}, as defined in the Universal Declaration of Human Rights {{UDHR}}. The purpose of the Internet to be a global network of networks that provides unfettered connectivity to all users and for any content {{RFC1958}}. This objective of stimulating global connectivity contributes to the Internet's role as an enabler of human rights. The Internet has given people a platform to exchange opinions, gather information, and it has enabled people of different backgrounds and genders to participate in the public debate, it has also allowed people to congregate and organize. Next to that, the strong commitment to security {{RFC1984}} {{RFC3365}} and privacy {{RFC6973}} {{RFC7258}} in the Internet's architectural design contribute to the strengthening of the Internet as a human rights enabling environment. One could even argue that the Internet is not only an enabler of human rights, but that human rights lie at the basis of, and are ingrained in, the architecture of the networks that make up the Internet. Internet connectivity increases the capacity for individuals to exercise their rights, the core of the Internet, its architectural design is therefore closely intertwined with the human rights framework {{CathFloridi}}. The quintessential link between the Internet's infrastructure and human rights has been argued by many. {{Bless}} for instance argues that, 'to a certain extent, the Internet and its protocols have already facilitated the realization of human rights, e.g., the freedom of assembly and expression. In contrast, measures of censorship and pervasive surveillance violate fundamental human rights.' {{Denardis15}} argues that 'Since the first hints of Internet commercialization and internationalization, the IETF has supported strong security in protocol design and has sometimes served as a force resisting protocol-enabled surveillance features.' By doing so, the IETF enabled the manifestation of the right to privacy, through the Internet's infrastructure. Additionally, access to freely available information gives people access to knowledge that enables them to help satisfy other human rights, as such the Internet increasingly becomes a pre-condition for human rights rather than a supplement.
 
 Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such as case the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm in a proportional way. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to. Technology can never be fully equated with a human right. Whereas a specific technology might be strong enabler of a specific human right, it might have an adverse impact on another human right. In this case decisions on design and deployment need to take this into account.
 
@@ -943,16 +943,18 @@ Anonymous
 : A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
 
 Authenticity
-: The fact that the data does indeed come from the source it claims to come from. (It is strongly linked with Integrity, see below).
+: The property of being genuine and able to be verified and be trusted. {{RFC4949}}
 
 Censorship resistance
 : Methods and measures to mitigate Internet censorship.
 
 Confidentiality
-: The non-disclosure of information to any unintended person or host or party {{RFC4949}}.
+: The property that data is not disclosed to system entities unless they have been authorized to know the data. {{RFC4949}}.
 
 Connectivity
 : The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}.
+
+: The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
 
 Content agnosticism
 : Treating network traffic identically regardless of content.
@@ -961,7 +963,7 @@ Decentralized
 : Implementation or deployment of standards, protocols or systems without one single point of control.
 
 End-to-End
-: The principal of extending characteristics of a protocol or system as far as possible within the system. This means that intermediaries in the network should not modify messages but simply route them to their desired end-points. Functionality should be expanded at the end-points to ensure that the network interconnects rather than controls.
+: The principle of extending characteristics of a protocol or system as far as possible within the system. This means that intermediaries in the network should not modify messages but simply route them to their desired end-points. Functionality should be expanded at the end-points to ensure that the network interconnects rather than controls.
 For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
 
 : One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
@@ -972,14 +974,17 @@ Federation
 Heterogeneity
 :  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of independent organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
 
+Human rights
+: Human rights are principles and norms that are indivisible, interrelated, unalienable, universal, and mutually reinforcing that have been codified in national and international bodies of law. The Universal Declaration of Human Rights {{UDHR}} is the most well-known document in the history of human rights. The apirations from this documents were later codified into treaties such as the {{ICCPR}} and the {{ICESCR}}, after which signatory countries were obliged to reflect them in their national bodies of law. There is also a broad recognition that not only states have an obligations vis a vis human rights, but non-state actors do so as well.
+
 Integrity
-: Maintenance and assurance of the accuracy and consistency of data to ensure it has not been (intentionally or unintentionally) altered {{RFC4949}}. 
+: The property that data has not been changed, destroyed, or lost in an unauthorized or accidental manner. {{RFC4949}}. 
 
 Internet censorship
-:  Internet censorship is the intentional suppression of information originating, flowing or stored on systems connected to the Internet where that information is relevant for decision making to some entity. {{Elahi}}
+: Internet censorship is the intentional suppression of otherwise freely accessible information originating, flowing or stored on systems connected to the Internet where that information is relevant for decision making to some entity." (based on {{Elahi}})
 
 Interoperable
-: A property of a documented standard or protocol which allows different independent implementations to work with each other without any restricted access or functionality.
+: A property of a documented standard or protocol which allows different independent implementations to work with each other without any restriction on functionality.
 
 Internationalization (i18n)
 : The practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization).
@@ -1002,7 +1007,7 @@ Localization (l10n)
 The major work of localization is translating the user interface and documentation.  Localization involves not only changing the language interaction, but also other relevant changes such as display of numbers, dates, currency, and so on.  The better internationalized an application is, the easier it is to localize it for a particular language and character encoding scheme.
 
 Open standards
-: Conform  {{RFC2026}}: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service
+: Conform with {{RFC2026}}: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service
       specifications that are similar to Technical Specifications
       defined here.  National and international groups also publish
       "implementors' agreements" that are analogous to Applicability
@@ -1012,8 +1017,6 @@ Open standards
       purposes of the Internet Standards Process.
 
 Openness
-: The quality of the unfiltered Internet that allows for free access to other hosts.
-
 : Absence of centralized points of control &#x2013; a feature that is assumed to make it easy for new users to join and new uses to unfold {{Brown}}.
 
 Permissionless innovation
@@ -1027,7 +1030,7 @@ Privacy
 : Privacy is a broad concept relating to the protection of individual or group autonomy and the relationship between an individual or group and society, including government, companies and private individuals. It is often summarized as "the right to be left alone" but it encompasses a wide range of rights including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech.
 : The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties. It has been adjudicated upon both by international and regional bodies. The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
-Reliable
+Reliability
 : Reliability ensures that a protocol will execute its function consistently as described and function without unexpected result. A system that is reliable degenerates gracefully and will have a documented way to announce degradation. It also has mechanisms to recover from failure gracefully, and if applicable, allow for partial healing {{dict}}.
 
 Resilience
@@ -1036,14 +1039,13 @@ Resilience
 Robustness
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
 
-Scalable
-: The ability to handle increased or decreased workloads predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined.
+Scalability
+: The ability to handle increased or decreased system parameters (e.g., number of end-systems, users, data flows, routing entries. etc.) predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined. Growth or shrinkage of these parameters is typically considered by orders of magnitude.
 
 Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
-Connectivity
-: The combination of the end-to-end principle, interoperability, resilience, reliability and robustness are the enableing factors that result in connectivity to and on the Internet.
+
 
 Research Questions
 ==================
@@ -1090,7 +1092,7 @@ Mapping the relation between human rights, protocols and architectures is a new 
 
 The methodological choices made in this document are based on the political science-based method of discourse analysis and ethnographic research methods {{Cath}}. This work departs from the assumption that language reflects the understanding of concepts. Or as {{Jabri}} holds, policy documents are 'social relations represented in texts where language is used to construct meaning and representation'. This process happens in 'the social space of society' {{Schroeder}} and manifests itself in institutions and organizations {{King}}, exposed using the ethnographic methods of semi-structured interviews and participant observation. Or in non-academic language, the way the language in IETF/IRTF documents describes and approaches the issues they are trying to address is an indicator for the underlying social assumptions and relations of the engineers to their engineering. By reading and analyzing these documents, as well as interviewing engineers and participating in the IETF/IRTF working groups, it is possible to distill the relation between human rights, protocols and the Internet's infrastructure as it pertains to the work of the IETF.
 
-The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the authors and contributors was reading RFCs and other official IETF documents. The second step was the use of a python-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis. As such the initial rounds of quantitative discourse analysis were used to inform the second rounds of qualitative analysis.The results from the qualitative interviews were again used to feed new concepts into the quantitative discourse analysis. As such the two methods continued to support and enrich each other. 
+The discourse analysis was operationalized using qualitative and quantitative means. The first step taken by the authors and contributors was reading RFCs and other official IETF documents. The second step was the use of a python-based analyzer, using the tool Big Bang, adapted by Nick Doty {{Doty}} to scan for the concepts that were identified as important architectural principles (distilled on the initial reading and supplemented by the interviews and participant observation). Such a quantitative method is very precise and speeds up the research process {{Richie}}. But this tool is unable to understand 'latent meaning' {{Denzin}}. In order to mitigate these issues of automated word-frequency based approaches, and to get a sense of the 'thick meaning' {{Geertz}} of the data, a second qualitative analysis of the data set was performed. These various rounds of discourse analysis were used to inform the interviews and further data analysis. As such the initial rounds of quantitative discourse analysis were used to inform the second rounds of qualitative analysis. The results from the qualitative interviews were again used to feed new concepts into the quantitative discourse analysis. As such the two methods continued to support and enrich each other. 
 
 The ethnographic methods of the data collection and processing allowed the research group to acquire the data necessary to 'provide a holistic understanding of research participants' views and actions' {{Denzin}} that highlighted ongoing issues and case studies where protocols impact human rights. The interview participants were selected through purposive sampling {{Babbie}}, as the research group was interested in getting a wide variety of opinions on the role of human rights in guiding protocol development. This sampling method also ensured that individuals with extensive experience working at the IETF in various roles were targeted. The interviewees included individuals in leadership positions (Working Group (WG) chairs, Area Directors (ADs)), 'regular participants', individuals working for specific entities (corporate, civil society, political, academic) and represented various backgrounds, nationalities and genders.
 
@@ -1118,17 +1120,17 @@ The data above was processed using three consecutive strategies: mapping protoco
 
 ### Identifying qualities of technical concepts that relate to human rights
 
-#### Mapping protocols and standards related to human rights
-By combining data from the three data sources named above, an extensive list of  protocols and standards that potentially enable the Internet as a tool for freedom of expression and association. In order to determine the enabling (or inhibiting) features we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially closely related to human rights was compiled.
+#### Mapping protocols and standards to human rights
+By combining data from the three data sources named above, an extensive list of protocols and standards that potentially enable the Internet as a tool for freedom of expression and association was created. In order to determine the enabling (or inhibiting) features we relied on direct references of such impact in the RFCs, as well as input from the community. On the basis of this analysis a list of RFCs that describe standards and protocols that are potentially closely related to human rights was compiled.
 
-#### Extracting concepts from mapped RFCs
-Mapping the protocols and standards that are related to human rights and create a human rights enabeling environment was the first step. For that we needed to focus on specific technical concepts that underlie these protocols and  standards. On the basis of this list a number of technical concepts that appeared frequently was extracted, and used to create a second list of technical terms that, when combined, create an enabling environment for excercising human rights on the Internet.
+#### Extracting concepts from selected RFCs
+Identifying the protocols and standards that are related to human rights and create a human rights enabeling environment was the first step. For that we needed to focus on specific technical concepts that underlie these protocols and  standards. On the basis of this list a number of technical concepts that appeared frequently was extracted, and used to create a second list of technical terms that, when combined, create an enabling environment for excercising human rights on the Internet.
 
 #### Building a common vocabulary of technical concepts that impact human rights
-While interviewing experts, mapping RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms and vocabulary, a list of definitions was created. The definitions are based on the wording found in various IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature, as indicated in the vocabulary section.
+While interviewing experts, investigating RFCs and compiling technical definitions several concepts of convergence and divergence were identified. To ensure that the discussion was based on a common understanding of terms and vocabulary, a list of definitions was created. The definitions are based on the wording found in various IETF documents, and if these were unavailable definitions were taken from definitions from other Standards Developing Organizations or academic literature, as indicated in the vocabulary section.
 
 #### Translating Human Rights Concepts into Technical Definitions
-The previous steps allowed for the clarification of relation between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precise technical concepts that make up these protocols and standards, in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that when combined create an enabling environment for human rights.
+The previous steps allowed for the clarification of relations between human rights and technical concepts. The steps taken show how the research process zoomed in, from compiling a broad lists of protocols and standards that relate to human rights to extracting the precise technical concepts that make up these protocols and standards, in order to understand the relationship between the two. This sub-section presents the next step: translating human rights to technical concepts by matching the individuals components of the rights to the accompanying technical concepts, allowing for the creation of a list of technical concepts that when combined create an enabling environment for human rights.
 
 #### List technical terms that combined create enabling environment for human rights
 On the basis of the prior steps the following  list of  technical terms, that when combined create an enabling environment for human rights, such a freedom of expression and freedom of association, was drafted.
@@ -1830,7 +1832,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 
 - Avri Doria for proposing writing a glossary in the first place, help with writing the initial proposals and Internet Drafts, her reviews and contributions to the glossary.
 
-and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Amelia Andersdotter, Stephen Farrell, Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Alissa Cooper, S. Moonesamy, and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
+and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Amelia Andersdotter, Stephen Farrell, Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Alissa Cooper, S. Moonesamy, Roland Bless and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
 We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
 Thanks to Edward Snowden for his comments regarding the impact of protocols on the rights of users at IETF93.
 
