@@ -46,6 +46,7 @@ informative:
    RFC1958:
    RFC1984:
    RFC2026:
+   RFC2775:
    RFC2277:
    RFC2460:
    RFC3022:
@@ -986,10 +987,9 @@ Decentralized
 : Implementation or deployment of standards, protocols or systems without one single point of control.
 
 End-to-End
-: The principle of extending characteristics of a protocol or system as far as possible within the system. This means that intermediaries in the network should not modify messages but simply route them to their desired end-points. Functionality should be expanded at the end-points to ensure that the network interconnects rather than controls.
-For example, end-to-end instant message encryption would conceal communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+: The principle that application-specific functions should not be embedded into the network and thus stay at the end-points: in many cases, especially when dealing with failures, the right decisions can only be made with the corresponding application-specific knowledge, which is available at the end-points not in the network. 
 
-: One of the key architectural guidelines of the Internet is the end-to-end principle in the papers by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. The end-to-end principle was originally articulated as a question of where best not to put functions in a communication system. Yet, in the ensuing years, it has evolved to address concerns of maintaining openness, increasing reliability and robustness, and preserving the properties of user choice and ease of new service development as discussed by Blumenthal and Clark in {{Blumenthal}}; concerns that were not part of the original articulation of the end-to-end principle. {{RFC3724}}
+: The end-to-end principle is one of the key architectural guidelines of the Internet. The argument in favor of the end-to-end approach to system design is laid out in the fundamental paper by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. In it, the authors argue in favor of radical simplification:  systems designers should only build the essential and shared functions into the network, as most functions can only be implemented at network end points. Building features into the network for the benefit of certain applications, will come at the expense of others. As such, as a general system designers should attempt to steer clear of building anything into the network that is not a bare necessity for its functioning. Following the end-to-end principle is crucial for innovation, as it makes innovation at the edges possible without having to make changes to the network, and the robustness of the network. Various aspects of end-to-end connectivity are further elaborated on in {{RFC 2775}}.
 
 Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
@@ -1493,10 +1493,10 @@ Question(s):
 Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
 
 Explanation:
-The end-to-end principle {{Saltzer}} which aims to extend characteristics of a protocol or system as far as possible within the system, or in other words 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing), and the protocols guiding them, influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
+The end-to-end principle {{Saltzer}} holds that 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. The end-to-end principle is important for the robustness of the network and innovation. Such robustness of the network is crucial to enabling human rights like freedom of expression.
 
 Example:
-End-to-end instant message encryption would conceal the content of communications from one user's instant messaging application through any intermediate devices and servers all the way to the recipient's instant messaging application. If the message was decrypted at any intermediate point--for example at a service provider--then the property of end-to-end encryption would not be present.
+Middleboxes (which can be Content Delivery Networks, Firewalls, NATs or other intermediary nodes that provide other 'services' than routing) serve many legitimate purposes. But the protocols guiding them, can influence individuals' ability to communicate online freely and privately. The potential for abuse and intentional and unintentional censoring and limiting permissionless innovation, and thus ultimately the impact of middleboxes on the Internet as a place of unfiltered, unmonitored freedom of speech, is real.
 
 Impacts:
 
