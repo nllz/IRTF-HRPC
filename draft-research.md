@@ -62,6 +62,7 @@ informative:
    RFC4949:
    rfc5246:
    RFC5321:
+   RFC5694:
    RFC5944:
    RFC6101:
    RFC6108:
@@ -908,6 +909,13 @@ informative:
      seriesinfo: "SIGCOMM '14 Proceedings of the 2014 ACM conference on SIGCOMM
 Pages 75-86" 
 
+   Sandvine:
+     title: "Sandvine: Over 70% Of North American Traffic Is Now Streaming Video And Audio"
+     date: 2015
+     author: 
+        - org: Sandvine
+     target: https://www.sandvine.com/pr/2015/12/7/sandvine-over-70-of-north-american-traffic-is-now-streaming-video-and-audio.html
+
 --- abstract
 
 This document aims to propose guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. This is achieved by providing a proposal for a vocabulary to discuss the relation between human rights and Internet protocols, an overview of the discussion in technical and academic literature and communities, a proposal for the mapping of the relation between human rights and technical concepts, as well as guidelines.
@@ -1244,10 +1252,10 @@ This analysis does not claim to be a complete or exhaustive mapping of all possi
 
 figure 2 - relation between specific technical concepts with regards to their contribution to an enabeling environment for people to exercise their human rights
 
-### Map cases of protocols that adversely impact human rights or are enablers thereof
-Given the information above, the following list of cases of protocols that adversely impact or enable human rights was formed.
+### Map cases of protocols, implementations and networking paradigms that adversely impact human rights or are enablers thereof
+Given the information above, the following list of cases of protocols, implenentations and networking paradigms that adversely impact or enable human rights was formed.
 
-It is important to note that the assessment here is not a general judgment on these protocols. When they were conceived, there were many criteria to take into account. For instance, relying on an centralized service can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered in the design phase.
+It is important to note that the assessment here is not a general judgment on these protocols, nor an exhaustive listing of all the potential negative or positive impacts on human rights they might have. When they were conceived, there were many criteria to take into account. For instance, relying on an centralized service can be bad for freedom of speech (it creates one more control point, where censorship could be applied) but it may be a necessity if the endpoints are not connected and reachable permanently. So, when we say "protocol X has feature Y, which may endanger the freedom of speech", it does not mean that protocol X is bad and even less that its authors were evil. The goal here is to show, with actual examples, that the design of protocols have practical consequences for some human rights and these consequences have to be considered in the design phase.
 
 #### IPv4
 
@@ -1368,7 +1376,7 @@ Multi-user chat rooms are identified by a name specified on a specific server, s
 
 #### Peer to Peer 
 
-Peer-to-Peer (P2P) is a distributed network architecture in which all the participant nodes can be responsible for the storage and dissemination of information from any other node (defined in {{RFC7574}}, an IETF standard that used a P2P architecture). A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Bitcoin and proprietary multimedia applications.
+Peer-to-Peer (P2P) is a distributed network architecture {{RFC5694}} in which all the participant nodes can be responsible for the storage and dissemination of information from any other node (defined in {{RFC7574}}, an IETF standard that used a P2P architecture). A P2P network is a logical overlay that lives on top of the physical network, and allows nodes (or "peers") participating to it to establish contact and exchange information directly from one to each other. The implementation of a P2P network may very widely: it may be structured or unstructured, and it may implement stronger or weaker cryptographic and anonymity properties. While its most common application has traditionally been file-sharing (and other types of content delivery systems), P2P is a popular architecture for networks and applications that require (or encourage) decentralization. A prime example is Bitcoin (and similar cryptocurrencies), as well as Bitcoin and proprietary multimedia applications.
 
 In a time of heavily centralized online services, peer-to-peer is regularly described as an alternative, more democratic, and resistant option  that displaces structures of control over data and communications and delegates all peers equally to be responsible for the functioning, integrity, and security of the data. While in principle peer-to-peer remains imporant to the design and development of future content distribution, messaging, and publishing systems, it poses numerous security and privacy challenges which are mostly delegated to individual developers to recognize, analyze, and solve in each implementation of a given P2P network.
 
@@ -1379,7 +1387,7 @@ peers where to fetch the data, or at routing tables, with the attempt of providi
 
 ##### Throttling
 
-Peer-to-Peer traffic (and BitTorrent in particular) represents a significant percentage of global Internet traffic and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throttling undermines the end-to-end principle.
+Peer-to-Peer traffic (and BitTorrent in particular) represents a significant percentage of global Internet traffic {{Sandvine}} and it has become increasingly popular for Internet Service Providers to perform throttling of customers lines in order to limit bandwidth usage {{torrentfreak1}} and sometimes probably as an effect of the ongoing conflict between copyright holders and file-sharing communities {{wikileaks}}. Such throttling undermines the end-to-end principle.
 
 Throttling the peer-to-peer traffic makes some uses of P2P networks ineffective and it might be coupled with stricter inspection of users' Internet traffic through Deep Packet Inspection techniques which might pose additional security and privacy risks.
 
@@ -1477,7 +1485,7 @@ This section details several 'common' threats to human rights, indicating how ea
 Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}. This is by no means an attempt to exclude specific rights or prioritize some rights over others. If other rights seem relevant, please contact the authors.
 
 ## Guidelines for human rights considerations
-This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}.
+This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}. These guidelines do not seek to replace any existing referenced specifications, but rather contribute to them and look at the design process from a human rights perspective. 
 
 Protocols and Internet Standard might benefit from a documented discussion of potential human rights risks arising from potential misapplications of the protocol or technology described in the RFC. This might be coupled with an Applicability Statement for that RFC.
 
@@ -1490,7 +1498,8 @@ In considering these questions, authors will need to be aware of the potential o
 ##### Connectivity
 
 Question(s):
-Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes?
+Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner?
+
 
 Explanation:
 The end-to-end principle {{Saltzer}} holds that 'the intelligence is end to end rather than hidden in the network' {{RFC1958}}. The end-to-end principle is important for the robustness of the network and innovation. Such robustness of the network is crucial to enabling human rights like freedom of expression.
@@ -1522,7 +1531,7 @@ Impacts:
 ##### Content agnosticism
 
 Question(s):
-If your protocol impacts packet handling, does it use data from the packet payload? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the prioritization that is made (if any)?
+If your protocol impacts packet handling, does it use user data (packet data that is not included in the header)? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the prioritization that is made (if any)?
 
 Explanation:
 Content agnosticism refers to the notion that network traffic is treated identically regardless of payload, with some exception where it comes to effective traffic handling, for instance where it comes to delay tolerant or delay sensitive packets, based on the header.
@@ -1557,11 +1566,7 @@ Impacts:
 ##### Internationalization
 
 Question(s):
-Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
-
-
-
-Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
+Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
 
 Explanation:
 Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
@@ -1593,7 +1598,9 @@ Explanation:
 Censorship resistance refers to the methods and measures to prevent Internet censorship.
 
 Example:
-Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of IP based censorship, which affects protocols like HTTP. Denial or restriction of access can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{RFC7725}}.
+In the development of the IPv6 protocol it was discussed to embed a Media Access Control (MAC) address into unique IP addresses. This would make it possible for 'eavesdroppers and other information collectors to identify when different addresses used in different transactions actually correspond to the same node. {{RFC4941}} This is why Privacy Extensions for Stateless Address Autoconfiguration in IPv6 have been introduced. {{RFC4941}}
+
+Identifiers of content exposed within a protocol might be used to facilitate censorship, as in the case of Application Layer based censorship, which affects protocols like HTTP. Denial or restriction of access can be made apparent by the use of status code 451 - which allows server operators to operate with greater transparency in circumstances where issues of law or public policy affect their operation {{RFC7725}}.
 
 Impacts:
 
@@ -1605,7 +1612,7 @@ Impacts:
 ##### Open Standards
 
 Question(s):
-Is your protocol fully documented in a way that it could be easily implemented, improved, built upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
+Is your protocol fully documented in a way that it could be easily implemented, improved, built upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost (and could it possible be done without)? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
 
 Explanation:
 The Internet was able to be developed into the global network of networks because of the existence of open, non-proprietary standards {{Zittrain}}. They are crucial for enabling interoperability. Yet, open standards are not explicitly defined within the IETF. On the subject, {{RFC2026}} states: Various national and international standards bodies, such as ANSI, ISO, IEEE, and ITU-T, develop a variety of protocol and service specifications that are similar to Technical Specifications defined at the IETF.  National and international groups also publish "implementors' agreements" that are analogous to Applicability Statements, capturing a body of implementation-specific detail concerned with the practical application of their standards.  All of these are considered to be "open external standards" for the purposes of the Internet Standards Process. 
@@ -1613,8 +1620,7 @@ Similarly, {{RFC3935}} does not define open standards but does emphasize the imp
 
 Open standards are important as they allow for permissionless innovation, which is important to maintain the freedom and ability to freely create and deploy new protocols on top of the communications constructs that currently exist. It is at the heart of the Internet as we know it, and to maintain its fundamentally open nature, we need to be mindful of the need for developing open standards.
 
-All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open standards, particularly in the domain of cryptography {{newegg}}.
-Patents in open standards or in normative references to other standards should have a patent disclosure {{notewell}}, royalty-free licensing {{patentpolicy}}, or some other form of reasonable protection. Reasonable patent protection should includes but is not limited to cryptographic primitives.
+All standards that need to be normatively implemented should be freely available and with reasonable protection for patent infringement claims, so it can also be implemented in open source or free software. Patents have often held back open standardization or been used against those deploying open standards, particularly in the domain of cryptography {{newegg}}. An exemption of this is sometimes made when a protocol is standardized that normatively relies  on speficiations produced by others SDOs that are not freely available. Patents in open standards or in normative references to other standards should have a patent disclosure {{notewell}}, royalty-free licensing {{patentpolicy}}, or some other form of reasonable protection. Reasonable patent protection should includes but is not limited to cryptographic primitives.
 
 Example:
 {{RFC6108}} describes a system for providing critical end-user notifications to web browsers, which has been deployed by Comcast, an Internet Service Provider (ISP).  Such a notification system is being used to provide near-immediate notifications to customers, such as to warn them that their traffic exhibits patterns that are indicative of malware or virus infection. There are other proprietary systems that can perform such notifications, but those systems utilize Deep Packet Inspection (DPI) technology.  In contrast to DPI, this document describes a system that does not rely upon DPI, and is instead based in open IETF standards and open source applications.
@@ -1670,13 +1676,6 @@ Pseudonymity - the ability to disguise one's identity online - is an important f
 Example:
 Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. Pseudonymity means using a pseudonym instead of one's "real" name. There are many reasons for users to use pseudoyms, for instance to: hide their gender, protect themselves against harassment, protect their families' privacy, frankly discuss sexuality, or develop a artistic or journalistic persona without retribution from an employer, (potential) customers, or social surrounding. {{geekfeminism}} The difference between anonymity and pseudonymity is that a pseudonym often is persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
 
-
-Examples include pen names of authors such as Mark Twain or Cecil Adams, as well as stage names of performers such as Woody Allen or Ice T. Usernames used online, if not connected to a person's legal identity, are examples of pseudonyms. 
-
-
-
-For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
-
 Impacts:
 
 - Right to non-discrimination
@@ -1685,7 +1684,7 @@ Impacts:
 ##### Accessibility
 
 Question(s):
-Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner?
+Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? 
 
 Explanation:
 The Internet is fundamentally designed to work for all people, whatever their hardware, software, language, culture, location, or physical or mental ability. When the Internet meets this goal, it is accessible to people with a diverse range of hearing, movement, sight, and cognitive ability {{W3CAccessibility}}. Sometimes in the design of protocols, websites, web technologies, or web tools, barriers are created that exclude people from using the Web.
