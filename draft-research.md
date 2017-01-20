@@ -59,6 +59,7 @@ informative:
    RFC4033:
    RFC4101:
    RFC4646:
+   RFC4941:
    RFC4949:
    rfc5246:
    RFC5321:
@@ -82,8 +83,8 @@ informative:
    RFC7858:
 
 
-   IRP
-     title: 10 Internet Rights & Principles
+   IRP:
+     title: "10 Internet Rights & Principles"
      date: 2014
      author:
         - org:  Internet Rights and Principles Dynamic Coalition
@@ -465,14 +466,6 @@ informative:
      seriesinfo: Proc SIGCOMM 88, ACM CCR Vol 18, Number 4, August
         1988, pp. 106-114.
      date: 1988
-
-   Blumenthal:
-     title: "Rethinking the design of the Internet: The end-to-end arguments vs. the brave new world"
-     author:
-        - ins: M. Blumenthal
-        - ins: D.D. Clark
-     seriesinfo: ACM Transactions on Internet Technology, Vol. 1, No. 1, August 2001, pp 70-109.
-     date: 2001
 
    Franklin:
      title: The Real World of Technology
@@ -1011,7 +1004,7 @@ Decentralized
 End-to-End
 : The principle that application-specific functions should not be embedded into the network and thus stay at the end-points: in many cases, especially when dealing with failures, the right decisions can only be made with the corresponding application-specific knowledge, which is available at the end-points not in the network. 
 
-: The end-to-end principle is one of the key architectural guidelines of the Internet. The argument in favor of the end-to-end approach to system design is laid out in the fundamental paper by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. In it, the authors argue in favor of radical simplification:  systems designers should only build the essential and shared functions into the network, as most functions can only be implemented at network end points. Building features into the network for the benefit of certain applications, will come at the expense of others. As such, as a general system designers should attempt to steer clear of building anything into the network that is not a bare necessity for its functioning. Following the end-to-end principle is crucial for innovation, as it makes innovation at the edges possible without having to make changes to the network, and the robustness of the network. Various aspects of end-to-end connectivity are further elaborated on in {{RFC 2775}}.
+: The end-to-end principle is one of the key architectural guidelines of the Internet. The argument in favor of the end-to-end approach to system design is laid out in the fundamental paper by Saltzer, Reed, and Clark {{Saltzer}} {{Clark}}. In it, the authors argue in favor of radical simplification:  systems designers should only build the essential and shared functions into the network, as most functions can only be implemented at network end points. Building features into the network for the benefit of certain applications, will come at the expense of others. As such, as a general system designers should attempt to steer clear of building anything into the network that is not a bare necessity for its functioning. Following the end-to-end principle is crucial for innovation, as it makes innovation at the edges possible without having to make changes to the network, and the robustness of the network. Various aspects of end-to-end connectivity are further elaborated on in {{RFC2775}}.
 
 Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
@@ -1509,9 +1502,7 @@ Note that the guidance provided in this section does not recommend specific prac
 In considering these questions, authors will need to be aware of the potential of technical advances or the passage of time to undermine protections.  In general, considerations of rights are likely to be more effective if they are considered given a purpose and specific use cases, rather than as abstract absolute goals. 
 
 
-#### Technical concepts as they relate to human rights
-
-##### Connectivity
+### Connectivity
 
 Question(s):
 Does your protocol add application-specific functions to intermediary nodes? Could this functionality be added to end nodes instead of intermediary nodes? Is your protocol optimized for low bandwidth and high latency connections? Could your protocol also be developed in a stateless manner?
@@ -1528,7 +1519,7 @@ Impacts:
 - Right to freedom of expression
 - Right to freedom of assembly and association
 
-##### Privacy
+### Privacy
 
 Question(s):
 Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could you protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
@@ -1544,7 +1535,7 @@ Impacts:
 - Right to freedom of expression
 - Right to non-discrimination
 
-##### Content agnosticism
+### Content agnosticism
 
 Question(s):
 If your protocol impacts packet handling, does it use user data (packet data that is not included in the header)? Is it making decisions based on the payload of the packet? Does your protocol prioritize certain content or services over others in the routing process ? Is the protocol transparent about the prioritization that is made (if any)?
@@ -1561,7 +1552,7 @@ Impacts:
 - Right to non-discrimination
 - Right to equal protection
 
-##### Security
+### Security
 
 Question(s):
 Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as described throughout this document)?
@@ -1579,7 +1570,7 @@ Impacts:
 - Right to non-discrimination
 - Right to security
 
-##### Internationalization
+### Internationalization
 
 Question(s):
 Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
@@ -1606,7 +1597,8 @@ Impacts:
 - Right to political participation
 - Right to participate in cultural life, arts and science
 
-##### Censorship resistance
+### Censorship resistance
+
 Question(s):
 Does this protocol introduce new identifiers or reuse existing identifiers (e.g. MAC addresses) that might be associated with persons or content? Does your protocol make it apparent or transparent when access to a resource it restricted? Can your protocol contribute to filtering in a way it could be implemented to censor data or services? Could this be designed to ensure this doesn't happen?
 
@@ -1625,7 +1617,7 @@ Impacts:
 - Right to participate in cultural life, arts and science
 - Right to freedom of assembly and association
 
-##### Open Standards
+### Open Standards
 
 Question(s):
 Is your protocol fully documented in a way that it could be easily implemented, improved, built upon and/or further developed? Do you depend on proprietary code for the implementation, running or further development of your protocol? Does your protocol favor a particular proprietary specification over technically equivalent and competing specification(s), for instance by making any incorporated vendor specification  "required" or "recommended" {{RFC2026}}? Do you normatively reference another standard that is not available without cost (and could it possible be done without)? Are you aware of any patents that would prevent your standard from being fully implemented {{RFC3979}} {{RFC6701}}?
@@ -1646,7 +1638,7 @@ Impacts:
 - Right to freedom of expression
 - Right to participate in cultural life, arts and science
 
-##### Heterogeneity Support
+### Heterogeneity Support
 
 Question(s):
 Does your protocol support heterogeneity by design? Does your protocol allow for multiple types of hardware? Does your protocol allow for multiple types of application protocols? Is your protocol liberal in what it receives and handles? Will it remain usable and open if the context changes? Does your protocol allow there to be well-defined extension points? Do these extension points allow for open innovation?
@@ -1663,7 +1655,7 @@ Impacts:
 - Right to freedom of expression
 - Right to political participtation
 
-##### Anonymity
+### Anonymity
 
 Question(s):
 Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
@@ -1681,7 +1673,7 @@ Impacts:
 - Right to freedom of assembly and association
 - Right to security
 
-##### Pseudonymity
+### Pseudonymity
 
 Question(s):
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generate or process anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
@@ -1697,7 +1689,7 @@ Impacts:
 - Right to non-discrimination
 - Right to freedom of assembly and association
 
-##### Accessibility
+### Accessibility
 
 Question(s):
 Is your protocol designed to provide an enabling environment for people who are not able-bodied? Have you looked at the W3C Web Accessibility Initiative for examples and guidance? 
@@ -1715,7 +1707,7 @@ Impacts:
 - Right to education
 - Right to political participation
 
-##### Localization
+### Localization
 
 Question(s):
 Does your protocol uphold the standards of internationalization? Have made any concrete  steps towards localizing your protocol for relevant audiences?
@@ -1732,7 +1724,7 @@ Impacts:
 - Right to participate in cultural life, arts and science
 - Right to freedom of expression
 
-##### Decentralization
+### Decentralization
 
 Question(s):
 Can your protocol be implemented without one single point of control? If applicable, can your protocol be deployed in a federated manner? What is the potential for discrimination against users of your protocol? How can the use of your protocol be used to implicate users? Does your protocol create additional centralized points of control?
@@ -1748,7 +1740,7 @@ Impacts:
 - Right to freedom of expression
 - Right to freedom of assembly and association
 
-##### Reliability
+### Reliability
 
 Question(s):
 Is your protocol fault tolerant? Does it degrade gracefully? Do you have a documented way to announce degradation? Do you have measures in place for recovery or partial healing from failure? Can your protocol maintain dependability and performance in the face of unanticipated changes or circumstances?
@@ -1764,7 +1756,7 @@ Impacts:
 - Right to freedom of expression
 - Right to security
 
-##### Confidentiality
+### Confidentiality
 
 Question(s):
 Does this protocol expose information related to identifiers or data? If so, does it do so to each other protocol entity (i.e., recipients, intermediaries, and enablers) {{RFC6973}}? What options exist for protocol implementers to choose to limit the information shared with each entity? What operational controls are available to limit the information shared with each entity?
@@ -1789,7 +1781,7 @@ Impacts:
 - Right to privacy
 - Right to security
 
-##### Integrity
+### Integrity
 
 Question(s):
 Does your protocol maintain, assure and/or verify the accuracy of payload data? Does your protocol maintain and assure the consistency of data? Does your protocol in any way allow for the data to be (intentionally or unintentionally) altered?
@@ -1813,7 +1805,7 @@ Impacts:
 - Right to freedom of expression
 - Right to security
 
-##### Authenticity
+### Authenticity
 
 Question(s):
 Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
@@ -1845,7 +1837,7 @@ Impacts:
 - Right to freedom of expression
 - Right to security
 
-##### Adaptability
+### Adaptability
 
 Question(s):
 Is your protocol written in such a way that is would be easy for other protocols to be developed on top of it, or to interact with it? Does your protocol impact permissionless innovation? See 'Connectivity' above.
