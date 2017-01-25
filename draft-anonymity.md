@@ -135,18 +135,19 @@ Premise: activity on the network has the ability for is to be anonymous or authe
 While analyzing protocols for their impact on users anonymity, would it make sense to ask the following questions:
 
 1. How anonymous is the end user to:
-- local network operator
-- other networks you connect to
-- your communications peer on the other end of the pipe
+ - local network operator
+ - other networks you connect to
+ - your communications peer on the other end of the pipe
 
 2. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)
 
 3. How does the protocol impact pseudonomity?
-- in case of long term pseudonymity
-- in case of short term pseudonymity
+ - in case of long term pseudonymity
+ - in case of short term pseudonymity
 
 4. How does the protocol, in conjunction with other protocols, impact pseudonymity?
 
+5. Could there be advice for prootocol developers and implementers to improve anonimity and pseudonymity?
 
 Use Cases
 =========
