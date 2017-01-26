@@ -1211,51 +1211,51 @@ This analysis aims to assist protocol developers in better understanding the rol
 This analysis does not claim to be a complete or exhaustive mapping of all possible ways in which a protocols could potentially impact human rights, but it presents an initial concept mapping based on interviews and literature and discussion review.
 
 
-   +-----------------------+-----------------------------------------+
-   | Technical Concepts    | Rights potentially impacted             |
-   +-----------------------+-----------------------------------------+
-   | Connectivity          |                                         |
-   | Privacy               |                                         |
-   | Security              |                                         |
-   | Content agnosticism   | Right to freedom of expression          |
-   | Internationalization  |                                         |
-   | Censorship resistance |                                         |
-   | Open Standards        |                                         |
-   | Heterogeneity support |                                         |
-   +-----------------------+-----------------------------------------+
-   | Anonymity             |                                         |
-   | Privacy               |                                         |
-   | Pseudonymity          | Right to non-discrimination             |
-   | Accessibility         |                                         |
-   +-----------------------+-----------------------------------------+
-   | Content agnosticism   |                                         |
-   | Security              | Right to equal protection               |
-   +-----------------------+-----------------------------------------+
-   | Accessibility         |                                         |
-   | Internationalization  | Right to political participation        |
-   | Censorship resistance |                                         |
-   | Connectivity          |                                         |
-   +-----------------------+-----------------------------------------+
-   | Open standards        |                                         |
-   | Localization          | Right to participate in cultural life,  |
-   | Internationalization  |                  arts and science &     |
-   | Censorship resistance | Right to education                      |
-   | Accessibility         |                                         |
-   +-----------------------+-----------------------------------------+
-   | Connectivity          |                                         |
-   | Decentralization      |                                         |
-   | Censorship resistance | Right to freedom of assembly            |
-   | Pseudonymity          |                     and association     |
-   | Anonymity             |                                         |
-   | Security              |                                         |
-   +-----------------------+-----------------------------------------+
-   | Reliability           |                                         |
-   | Confidentiality       |                                         |
-   | Integrity             | Right to security                       |
-   | Authenticity          |                                         |
-   | Anonymity             |                                         |
-   |                       |                                         |
-   +-----------------------+-----------------------------------------+
+    +-----------------------+-----------------------------------------+
+    | Technical Concepts    | Rights potentially impacted             |
+    +-----------------------+-----------------------------------------+
+    | Connectivity          |                                         |
+    | Privacy               |                                         |
+    | Security              |                                         |
+    | Content agnosticism   | Right to freedom of expression          |
+    | Internationalization  |                                         |
+    | Censorship resistance |                                         |
+    | Open Standards        |                                         |
+    | Heterogeneity support |                                         |
+    +-----------------------+-----------------------------------------+
+    | Anonymity             |                                         |
+    | Privacy               |                                         |
+    | Pseudonymity          | Right to non-discrimination             |
+    | Accessibility         |                                         |
+    +-----------------------+-----------------------------------------+
+    | Content agnosticism   |                                         |
+    | Security              | Right to equal protection               |
+    +-----------------------+-----------------------------------------+
+    | Accessibility         |                                         |
+    | Internationalization  | Right to political participation        |
+    | Censorship resistance |                                         |
+    | Connectivity          |                                         |
+    +-----------------------+-----------------------------------------+
+    | Open standards        |                                         |
+    | Localization          | Right to participate in cultural life,  |
+    | Internationalization  |                  arts and science &     |
+    | Censorship resistance | Right to education                      |
+    | Accessibility         |                                         |
+    +-----------------------+-----------------------------------------+
+    | Connectivity          |                                         |
+    | Decentralization      |                                         |
+    | Censorship resistance | Right to freedom of assembly            |
+    | Pseudonymity          |                     and association     |
+    | Anonymity             |                                         |
+    | Security              |                                         |
+    +-----------------------+-----------------------------------------+
+    | Reliability           |                                         |
+    | Confidentiality       |                                         |
+    | Integrity             | Right to security                       |
+    | Authenticity          |                                         |
+    | Anonymity             |                                         |
+    |                       |                                         |
+    +-----------------------+-----------------------------------------+
 
 figure 2 - relation between specific technical concepts with regards to their contribution to an enabeling environment for people to exercise their human rights
 
