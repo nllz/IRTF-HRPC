@@ -904,7 +904,14 @@ informative:
         - ins: A. Perrig
      target: https://dl.acm.org/citation.cfm?id=2813628
      seriesinfo: "CCS '15 Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security Pages 1441-1454"
-
+     
+    Hill:
+    title: "Partial Catalog of Human Rights Related to ICT Activities"
+    date: 2014
+    author:
+      - ins: R. Hill 
+    target: http://www.apig.ch/UNIGE%20Catalog.pdf
+    
    APIP:
      title: Balancing accountability and privacy in the network
      date: 2014
@@ -1120,7 +1127,8 @@ Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too
 
 Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. 
 
-It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will contribute to the understanding of the impact protocols can have on human rights, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
+It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. Additionally, there are many human rights, but that not all are relevant for ICTs. A partial catalog, with references to sources, of human rights related to ICTs can be found here {{Hill2014}}.
+It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will contribute to the understanding of the impact protocols can have on human rights, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
 Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
 
