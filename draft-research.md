@@ -1084,7 +1084,9 @@ Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
 Transparency
-: In this context transparency is linked to the comprehensibility of a protocol in relation to the choices it makes for both user and protocol developers and implementers.
+: In this context transparency is linked to the comprehensibility of a protocol in relation to the choices it makes for both user and protocol developers and implementers and to its outcome.
+: outcome transparency, is linked to the comprehensibility of the effects of a protocol in relation to the choices it
+makes for both user and protocol developers and implementers, including the comprehensibility of possible unintended consequences of protocol choices (e.g. lack of authenticity may lead to lack of integrity and negative externalities)
 
 
 
