@@ -1854,6 +1854,31 @@ Impacts:
 - Freedom of expression
 - Freedom of assembly and association
 
+### Outcome Transparency
+
+Question(s): Are the effects of your protocol fully and easily
+comprehensible, including with respect to unintended consequences of
+protocol choices?
+
+Explanation: certain technical choice may have unintended consequences.
+
+Example: lack of authenticity may lead to lack of integrity and negative
+externalities, of which spam is an example. Lack of data that could be used
+for billing and accounting can lead to so-called "free" arrangements which
+obscure the actual costs and distribution of the costs, for example the
+barter arrangements that are commonly used for Internet interconnection; and
+the commercial exploitation of private data for targeted advertising which
+is the most common funding model for the so-called "free" services such as
+search engines and social networks.
+
+Impacts:
+- Freedom of expression
+- Privacy 
+- Freedom of assembly and association
+- Access to information 
+
+
+
 Document Status
 ===============
 
