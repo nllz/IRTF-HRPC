@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-09
+docname: draft-irtf-hrpc-research-11
 category: info
 
 ipr: trust200902
@@ -905,12 +905,12 @@ informative:
      target: https://dl.acm.org/citation.cfm?id=2813628
      seriesinfo: "CCS '15 Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security Pages 1441-1454"
      
-    Hill:
-    title: "Partial Catalog of Human Rights Related to ICT Activities"
-    date: 2014
-    author:
-      - ins: R. Hill 
-    target: http://www.apig.ch/UNIGE%20Catalog.pdf
+   Hill:
+     title: "Partial Catalog of Human Rights Related to ICT Activities"
+     date: 2014
+     author:
+        - ins: R. Hill 
+     target: http://www.apig.ch/UNIGE%20Catalog.pdf
     
    APIP:
      title: Balancing accountability and privacy in the network
@@ -1495,8 +1495,7 @@ This section outlines a set of human rights protocol considerations for protocol
 The questions are based on the research performed by the hrpc research group which has been documented before these considerations. The research establishes that human rights relate to standards and protocols and offers a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights. With this the contours of a model for developing human rights protocol considerations has taken shape. 
 
 ## Human rights threats
-Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when individuals identified as treats to the state are subjected to torture, or extrajudicial killing, or detention on the basis of information gathered by state agencies through information
-leakage in protocols.
+Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when individuals perceived as treats to the state are subjected to torture or extrajudicial killing or detention on the basis of information gathered by state agencies through information leakage in protocols.
 
 This section details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{BCP72}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
 
