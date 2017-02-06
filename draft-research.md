@@ -905,7 +905,7 @@ informative:
      target: https://dl.acm.org/citation.cfm?id=2813628
      seriesinfo: "CCS '15 Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security Pages 1441-1454"
      
-   Hill:
+   Hill2014:
      title: "Partial Catalog of Human Rights Related to ICT Activities"
      date: 2014
      author:
