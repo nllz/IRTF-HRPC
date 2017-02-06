@@ -904,7 +904,14 @@ informative:
         - ins: A. Perrig
      target: https://dl.acm.org/citation.cfm?id=2813628
      seriesinfo: "CCS '15 Proceedings of the 22nd ACM SIGSAC Conference on Computer and Communications Security Pages 1441-1454"
-
+     
+    Hill:
+    title: "Partial Catalog of Human Rights Related to ICT Activities"
+    date: 2014
+    author:
+      - ins: R. Hill 
+    target: http://www.apig.ch/UNIGE%20Catalog.pdf
+    
    APIP:
      title: Balancing accountability and privacy in the network
      date: 2014
@@ -1084,7 +1091,9 @@ Strong encryption / cryptography
 : Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}
 
 Transparency
-: In this context transparency is linked to the comprehensibility of a protocol in relation to the choices it makes for both user and protocol developers and implementers.
+: In this context transparency is linked to the comprehensibility of a protocol in relation to the choices it makes for both user and protocol developers and implementers and to its outcome.
+: outcome transparency, is linked to the comprehensibility of the effects of a protocol in relation to the choices it
+makes for both user and protocol developers and implementers, including the comprehensibility of possible unintended consequences of protocol choices (e.g. lack of authenticity may lead to lack of integrity and negative externalities)
 
 
 
@@ -1120,7 +1129,8 @@ Bless and Orwat {{Bless}} represent a fourth position. They argue that it is too
 
 Berners-Lee and Halpin argue that the Internet could lead to even new capacities, and these capacities may over time be viewed as new kinds of rights. For example, Internet access may be viewed as a human right in of itself if it is taken to be a pre-condition for other rights, even if it could not have been predicted at the declaration of the UNHDR after the end of World War 2.{{BernersLeeHalpin}}. 
 
-It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will contribute to the understanding of the impact protocols can have on human rights, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
+It is important to contextualize the technical discussion with the academic discussions on this issue. The academic discussions also are important to document as they inform the position of the authors of this document. Our position is that hard-coding human rights into protocols is complicated and changes with the context. At this point is difficult to say whether hard-coding human rights into protocols is wise or feasible. Additionally, there are many human rights, but that not all are relevant for ICTs. A partial catalog, with references to sources, of human rights related to ICTs can be found here {{Hill2014}}.
+It is however important to make conscious and explicit design decisions that take into account the human rights protocol considerations guidelines developed above. This will contribute to the understanding of the impact protocols can have on human rights, both for developers and for users. In addition, it ensures that the impact of specific protocol on human rights is carefully considered and that concrete design decisions are documented in the protocol.
 
 Pursuant to the principle of constant change, since the function and scope of the Internet evolves, so does the role of the IETF in developing standards. Internet standards are adopted on the basis of a series of criteria, including high technical quality, support by community consensus, and their overall benefit to the Internet. The latter calls for an assessment of the interests of all affected parties and the specifications' impact on the Internet's users. In this respect, the effective exercise of the human rights of the Internet users is a relevant consideration that needs to be appreciated in the standardization process insofar as it is directly linked to the reliability and core values of the Internet. {{RFC1958}} {{RFC0226}} {{RFC3724}}
 
@@ -1485,11 +1495,12 @@ This section outlines a set of human rights protocol considerations for protocol
 The questions are based on the research performed by the hrpc research group which has been documented before these considerations. The research establishes that human rights relate to standards and protocols and offers a common vocabulary of technical concepts that impact human rights and how these technical concept can be combined to ensure that the Internet remains an enabling environment for human rights. With this the contours of a model for developing human rights protocol considerations has taken shape. 
 
 ## Human rights threats
-Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when opposition group members (or those identified as such) in totalitarian regimes are subjected to torture on the basis of information gathered by the regime through information leakage in protocols.
+Human rights threats on the Internet come in a myriad of forms. Protocols and standards can harm or enable the right to freedom of expression, right to non-discrimination, right to equal protection, right to participate in cultural life, arts and science, right to freedom of assembly and association, and the right to security. An end-user who is denied access to certain services, data or websites may be unable to disclose vital information about the malpractices of a government or other authority. A person whose communications are monitored may be prevented from exercising their right to freedom of association or participate in political processes {{Penney}}. In a worst-case scenario, protocols that leak information can lead to physical danger. A realistic example to consider is when individuals identified as treats to the state are subjected to torture, or extrajudicial killing, or detention on the basis of information gathered by state agencies through information
+leakage in protocols.
 
 This section details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{BCP72}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
 
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}: "The main source of the values of human rights is the International Bill of Human Rights that is composed of the Universal Declaration of Human Rights {{UDHR}} along with the International Covenant on Civil and Political Rights {{ICCPR}} and the International Covenant on Economic, Social and Cultural Rights {{ICESCR}}. In the light of several cases of Internet censorship, the Human Rights Council Resolution 20/8 was adopted in 2012 {{UNHRC2016}}, affirming “. . . that the same rights that people have offline must also be protected online. . . ” . In 2015, the Charter of Human Rights and Principles for the Internet {{IRP}} was developed and released. According to these documents, some examples of human rights relevant for ICT systems are human dignity (Art. 1 UDHR), non-discrimination (Art. 2), rights to life, liberty and security (Art. 3), freedom of opinion and expression (Art. 19), freedom of assembly and association (Art. 20), rights to equal protection, legal remedy, fair trial, due process, presumed innocent (Art. 7–11), appropriate social and international order (Art. 28), participation in public affairs (Art. 21), participation in cultural life, protection of intellectual property (Art. 27), and privacy (Art. 12)."
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}: "The main source of the values of human rights is the International Bill of Human Rights that is composed of the Universal Declaration of Human Rights {{UDHR}} along with the International Covenant on Civil and Political Rights {{ICCPR}} and the International Covenant on Economic, Social and Cultural Rights {{ICESCR}}. In the light of several cases of Internet censorship, the Human Rights Council Resolution 20/8 was adopted in 2012 {{UNHRC2016}}, affirming “. . . that the same rights that people have offline must also be protected online. . . ” . In 2015, the Charter of Human Rights and Principles for the Internet {{IRP}} was developed and released. According to these documents, some examples of human rights relevant for ICT systems are human dignity (Art. 1 UDHR), non-discrimination (Art. 2), rights to life, liberty and security (Art. 3), freedom of opinion and expression (Art. 19), freedom of assembly and association (Art. 20), rights to equal protection, legal remedy, fair trial, due process, presumed innocent (Art. 7–11), appropriate social and international order (Art. 28), participation in public affairs (Art. 21), participation in cultural life, protection of intellectual property (Art. 27), and privacy (Art. 12)." A partial catalog of human rights related to ICTs, including economic rights, can be found in {{Hill2014}}.
 
 This is by no means an attempt to exclude specific rights or prioritize some rights over others. If other rights seem relevant, please contact the authors.
 
@@ -1853,6 +1864,31 @@ Impacts:
 - Right to education
 - Freedom of expression
 - Freedom of assembly and association
+
+### Outcome Transparency
+
+Question(s): Are the effects of your protocol fully and easily
+comprehensible, including with respect to unintended consequences of
+protocol choices?
+
+Explanation: certain technical choice may have unintended consequences.
+
+Example: lack of authenticity may lead to lack of integrity and negative
+externalities, of which spam is an example. Lack of data that could be used
+for billing and accounting can lead to so-called "free" arrangements which
+obscure the actual costs and distribution of the costs, for example the
+barter arrangements that are commonly used for Internet interconnection; and
+the commercial exploitation of private data for targeted advertising which
+is the most common funding model for the so-called "free" services such as
+search engines and social networks.
+
+Impacts:
+- Freedom of expression
+- Privacy 
+- Freedom of assembly and association
+- Access to information 
+
+
 
 Document Status
 ===============
