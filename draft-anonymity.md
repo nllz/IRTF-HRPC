@@ -5,7 +5,7 @@ docname: draft-tenoever-hrpc-anonymity-00
 category: info
 
 ipr: trust200902
-area: General
+area: IRTF
 workgroup: Human Rights Protocol Considerations Research Group
 keyword: Internet-Draft
 stand_alone: yes
@@ -24,7 +24,7 @@ author:
 -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: Article19
+       organization: ARTICLE 19
        email: niels@article19.org
 
 normative:
@@ -36,7 +36,6 @@ informative:
    RFC7258:
    RFC7626:
    RFC7858:
-
 
    torproject:
      title: Tor Project - Anonymity Online
