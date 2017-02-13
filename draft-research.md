@@ -495,14 +495,6 @@ informative:
      date: January 2012
      target: http://www.future-internet.eu/uploads/media/FIArch_Design_Principles_V1.0.pdf
 
-   Elahi:
-     title: "CORDON - A taxonomy of Internet Censorship Resistance Strategies"
-     author:
-        - ins: T. Elahi
-        - ins: I. Goldberg
-     target: http://cacr.uwaterloo.ca/techreports/2012/cacr2012-33.pdf
-     date: 2012
-
    Brown:
      title: "A Prehistory of Internet Governance"
      date: 2013
@@ -775,7 +767,7 @@ informative:
      seriesinfo: "ACM Conference on Computer and Communications Security 2015: 5-17"
 
    Aryanetall:
-      title: Internet Censorship in Iran: A First Look
+     title: "Internet Censorship in Iran: A First Look"
      date: 2013
      author: 
         - ins: S. Aryan
@@ -1003,10 +995,10 @@ Authenticity
 : The property of being genuine and able to be verified and be trusted. {{RFC4949}}
 
 Blocking
-: the practice of preventing access to resources in the aggregate {{RFC 7754}}. Both blocking and filtering can be implemented at the level of "services" (web hosting or video streaming, for example) or at the level of particular "content."  {{RFC 7754}}
+: the practice of preventing access to resources in the aggregate {{RFC7754}}. Both blocking and filtering can be implemented at the level of "services" (web hosting or video streaming, for example) or at the level of particular "content."  {{RFC7754}}
 
 Censorship
-: technical mechanisms, that include both blocking and filtering, that certain political or private actors around the world use to block or degrade Internet traffic. For further details on the various elements of Internet censorship see {{Hall2015}} 
+: technical mechanisms, that include both blocking and filtering, that certain political or private actors around the world use to block or degrade Internet traffic. For further details on the various elements of Internet censorship see {{hall}} 
 
 Censorship resistance
 : Methods and measures to mitigate Internet censorship.
@@ -1034,7 +1026,7 @@ Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
 
 Filtering
-: the practice of preventing access to specific resources within an aggregate {{RFC 7754}}. 
+: the practice of preventing access to specific resources within an aggregate {{RFC7754}}. 
 
 Heterogeneity
 :  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of independent organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
@@ -1357,7 +1349,7 @@ The lack of sensitivity and understanding of the critical importance of securing
 
 Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer. That being said, the IETF is taking steady steps to move to the encrypted version of HTTP, HTTPSecure (HTTPS).
 
-While this is commendable, we must not lose track of the fact that different protocols, implementations and networking paradigms can intersect such that they adversely impact human rights. For instance, certain countries will throttle HTTPS connections forcing users to switch to the (unthrottled) HTTP to facilitating surveillance {{Aryanetall}}.
+While this is commendable, we must not lose track of the fact that different protocols, implementations, configurations and networking paradigms can intersect such that they (can be used to) adversely impact human rights. For instance, certain countries will throttle HTTPS connections forcing users to switch to the (unthrottled) HTTP to facilitate surveillance {{Aryanetall}}. 
 
 ##### Traffic Interception
 
