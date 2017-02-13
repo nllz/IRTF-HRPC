@@ -80,6 +80,7 @@ informative:
    RFC7624:
    RFC7626:
    RFC7725:
+   RFC7754:
    RFC7858:
 
 
@@ -133,7 +134,8 @@ informative:
      target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CESCR.aspx
 
    caida:
-     title: Analysis of Country-wide Internet Outages Caused by Censorship
+     title: Analysis of Country-wide Internet Outages Caused by 
+     
      date: 2013
      author:
         - ins: A. Dainotti
@@ -991,6 +993,12 @@ Anonymous
 Authenticity
 : The property of being genuine and able to be verified and be trusted. {{RFC4949}}
 
+Blocking
+: the practice of preventing access to resources in the aggregate {{RFC 7754}}. Both blocking and filtering can be implemented at the level of "services" (web hosting or video streaming, for example) or at the level of particular "content."  {{RFC 7754}}
+
+Censorship
+: technical mechanisms, that include both blocking and filtering, that certain political or private actors around the world use to block or degrade Internet traffic. For further details on the various elements of Internet censorship see {{Hall2015}} 
+
 Censorship resistance
 : Methods and measures to mitigate Internet censorship.
 
@@ -1015,6 +1023,9 @@ End-to-End
 
 Federation
 : The possibility of connecting autonomous and possibly centralized systems into single system without a central authority.
+
+Filtering
+: the practice of preventing access to specific resources within an aggregate {{RFC 7754}}. 
 
 Heterogeneity
 :  The Internet is characterized by heterogeneity on many levels: devices and nodes, router scheduling algorithms and queue management mechanisms, routing protocols, levels of multiplexing, protocol versions and implementations, underlying link layers (e.g., point-to-point, multi-access links, wireless, FDDI, etc.), in the traffic mix and in the levels of congestion at different times and places. Moreover, as the Internet is composed of independent organizations and Internet service providers, each with their own separate policy concerns,there is a large heterogeneity of administrative domains and pricing structures. As a result, the heterogeneity principle proposed in {{RFC1958}} needs to be supported by design. {{FIArch}}
