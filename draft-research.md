@@ -1689,10 +1689,17 @@ Question(s):
 Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generate or process anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
 
 Explanation:
-Pseudonymity - the ability to disguise one's identity online - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
+Pseudonymity - the ability to use a persistent identifier not linked to one's offline identity" straight away - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
+
+I would also include consideration that pseudonyms cannot be simply reverse
+engineered -- some early approaches simply took approaches such as simple
+hashing of IP addreses. These could then be simply reversed by generating a
+hash for each potential IP address and comparing it to the pseudonym.
 
 Example:
-Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. Pseudonymity means using a pseudonym instead of one's "real" name. There are many reasons for users to use pseudoyms, for instance to: hide their gender, protect themselves against harassment, protect their families' privacy, frankly discuss sexuality, or develop a artistic or journalistic persona without retribution from an employer, (potential) customers, or social surrounding. {{geekfeminism}} The difference between anonymity and pseudonymity is that a pseudonym often is persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
+Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. While pseudonyms cannot be simply reverse engineered - some early approaches simply took approaches such as simple hashing of IP addreses, these could then be simply reversed by generating a hash for each potential IP address and comparing it to the pseudonym - limiting the exposure of private information remains important. 
+
+Pseudonymity means using a pseudonym instead of one's "real" name. There are many reasons for users to use pseudoyms, for instance to: hide their gender, protect themselves against harassment, protect their families' privacy, frankly discuss sexuality, or develop a artistic or journalistic persona without retribution from an employer, (potential) customers, or social surrounding. {{geekfeminism}} The difference between anonymity and pseudonymity is that a pseudonym often is persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
 
 Impacts:
 
