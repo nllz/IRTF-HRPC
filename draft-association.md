@@ -27,6 +27,13 @@ author:
        organization: ARTICLE 19
        email: niels@article19.org
 
+-
+       ins: G. Perez De Acha
+       name: Gisela Perez De Acha
+       organization: Derechos Digitales
+       email: gisela@derechosdigitales.org
+
+
 
 normative:
   
@@ -71,7 +78,7 @@ Examples
 - organizing platforms
     * mailinglists
 
-- decision making platforms 
+- decision making platforms (or this just application layer)
     * https://www.loomio.org/
     * http://liquidfeedback.org/
 
@@ -81,6 +88,9 @@ Examples
     * etherpad
     * google doc
 	
+-  multi party video conferencing and risks
+https://iranthreats.github.io/resources/webrtc-deanonymization/
+
 - Gather more examples
 
 
