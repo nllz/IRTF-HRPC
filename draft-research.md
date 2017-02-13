@@ -1025,8 +1025,6 @@ Human rights
 Integrity
 : The property that data has not been changed, destroyed, or lost in an unauthorized or accidental manner. {{RFC4949}}. 
 
-Internet censorship
-: Internet censorship is the intentional suppression of otherwise freely accessible information originating, flowing or stored on systems connected to the Internet where that information is relevant for decision making to some entity." (based on {{Elahi}})
 
 Interoperable
 : A property of a documented standard or protocol which allows different independent implementations to work with each other without any restriction on functionality.
