@@ -774,6 +774,15 @@ informative:
         - ins: P. Zimmermann 
      seriesinfo: "ACM Conference on Computer and Communications Security 2015: 5-17"
 
+   Aryanetall:
+      title: Internet Censorship in Iran: A First Look
+     date: 2013
+     author: 
+        - ins: S. Aryan
+        - ins: H. Aryan
+        - ins: J. Alex Halderman   
+     target: https://jhalderm.com/pub/papers/iran-foci13.pdf
+     
    sslstrip:
      title: "Software >> sslstrip"
      date: 2011
@@ -1347,6 +1356,8 @@ However, HTTP is also a fundamentally insecure protocol, that doesn't natively p
 The lack of sensitivity and understanding of the critical importance of securing web traffic incentivized certain (offensive) actors to develop, deploy and utilize at large interception systems and later active injection attacks, in order to swipe large amounts of data, compromise Internet-enabled devices. The commercial availability of systems and tools to perform these types of attacks also led to a number of human rights abuses that have been discovered and reported over the years.
 
 Generally we can identify in Traffic Interception and Traffic Manipulation the two most problematic attacks that can be performed against applications employing a clear-text HTTP transport layer. That being said, the IETF is taking steady steps to move to the encrypted version of HTTP, HTTPSecure (HTTPS).
+
+While this is commendable, we must not lose track of the fact that different protocols, implementations and networking paradigms can intersect such that they adversely impact human rights. For instance, certain countries will throttle HTTPS connections forcing users to switch to the (unthrottled) HTTP to facilitating surveillance {{Aryanetall}}.
 
 ##### Traffic Interception
 
