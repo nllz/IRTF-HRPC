@@ -28,8 +28,8 @@ author:
        email: niels@article19.org
 
 -
-       ins: G. Perez De Acha
-       name: Gisela Perez De Acha
+       ins: G. Perez de Acha
+       name: Gisela Perez de Acha
        organization: Derechos Digitales
        email: gisela@derechosdigitales.org
 
@@ -66,33 +66,33 @@ On the other hand there have also been methods of protest on this Internet, such
 To do
 =====
 
+
+   +-----------------------+-----------------------------------------+
+   | Connectivity          |                                         |
+   | Decentralization      |                                         |
+   | Censorship resistance | Right to freedom of assembly            |
+   | Pseudonymity          |                     and association     |
+   | Anonymity             |                                         |
+   | Security              |                                         |
+   +-----------------------+-----------------------------------------+
+
 Examples
 
 - add description of (harmful) DDoS attacks. Possibly from :
     * Gabrielle Colemans "Hacker, Hoaxer, Whistleblower, Spy"
     * Moly Sauters "The Coming Swarm"
 
-- websites go blank in strike / protests again SOPA and PIPA
-    * https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
-
 - organizing platforms
     * mailinglists
-
-- decision making platforms (or this just application layer)
-    * https://www.loomio.org/
-    * http://liquidfeedback.org/
 
 - peer production 
     * https://www.wikipedia.org/
     * Git &/vs Github
     * etherpad
     * google doc
-	
+
 -  multi party video conferencing and risks
 https://iranthreats.github.io/resources/webrtc-deanonymization/
-
-- Gather more examples
-
 
 - Other issues
     * Outline difference and relation between right to assembly, association and protest
@@ -101,6 +101,17 @@ https://iranthreats.github.io/resources/webrtc-deanonymization/
         * https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
 
     * differences (and gradients) between free (as in beer) and free (as in freedom)
+
+
+
+Non-Examples
+- websites go blank in strike / protests again SOPA and PIPA
+    * https://en.wikipedia.org/wiki/Protests_against_SOPA_and_PIPA
+
+- decision making platforms (or this just application layer)
+    * https://www.loomio.org/
+    * http://liquidfeedback.org/
+
 
 Introduction
 ============
