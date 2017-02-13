@@ -1910,7 +1910,7 @@ A special thanks to all members of the hrpc RG who contributed to this draft. Th
 - Avri Doria for proposing writing a glossary in the first place, help with writing the initial proposals and Internet Drafts, her reviews and contributions to the glossary.
 
 and Stephane Bortzmeyer, John Curran, Barry Shein, Joe Hall, Joss Wright, Harry Halpin, and Tim Sammut who made a lot of excellent suggestions, many of which found their way directly into the text. We want to thank Amelia Andersdotter, Stephen Farrell, Stephane Bortzemeyer, Shane Kerr, Giovane Moura, James Gannon, Alissa Cooper, Andrew Sullivan, S. Moonesamy, Roland Bless and Scott Craig for their reviews and testing the HRPC guidelines in the wild.
-We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta and all others who provided input on the draft or the conceptualization of the idea.
+We would also like to thank Molly Sauter, Arturo Filasto, Nathalie Marechal, Eleanor Saitta, Richard Hill and all others who provided input on the draft or the conceptualization of the idea.
 Thanks to Edward Snowden for his comments regarding the impact of protocols on the rights of users at IETF93.
 
 Security Considerations
