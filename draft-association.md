@@ -97,9 +97,11 @@ https://iranthreats.github.io/resources/webrtc-deanonymization/
 - Other issues
     * Outline difference and relation between right to assembly, association and protest
 
+
+
     * Explain the relation of these as rights (within frameworks of {{UDHR}}, {{ICCPR}}, etc)
         * https://right-to-protest.org/wp-content/uploads/2015/06/right-to-protest-for-web.pdf
-
+	* https://www.article19.org/data/files/medialibrary/38581/Protest-Background-paper-Final-April-2016.pdf
     * differences (and gradients) between free (as in beer) and free (as in freedom)
 
 
