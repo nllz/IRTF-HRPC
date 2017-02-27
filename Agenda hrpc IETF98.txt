@@ -1,0 +1,27 @@
+Human Rights Protocols Considerations (hrpc) research group sessions at #IETF98 13:00 - 14:30 CDT, March 28 2017
+
+- Beginning (5 min)
+	Jabber scribe, note takers
+	Agenda Bashing
+	Notewell
+	Introduction
+- Status of research group & documents (2 min)
+- Context of research (2 mins)
+- Presentation + Q&A - Francesca Musiani on Distributed Architectures and Rights (15 mins)
+- Presentation + Q&A - John Havens on:
+	- The IEEE Global Initiative for Ethical Considerations in AI & AS
+	- P7000 - Model Process for Addressing Ethical Concerns During System Design (15 mins)
+- Presentation + Q&A - Giovane Moura on 'No domain left behind: is Let's Encrypt democratizing encryption?' (15 mins)
+	- https://arxiv.org/abs/1612.03005
+- Presentation + Q&A - Adamantia Rachovitsa on 'Rethinking Privacy Online and Human Rights: The Internet's  Standardisation Bodies as the Guardians of Privacy Online in the Face of Mass Surveillance' (15 mins)
+	- https://papers.ssrn.com/sol3/papers2.cfm?abstract_id=2911978
+- Discussion of draft-tenoever-hrpc-anonymity-00 (5 mins)
+- Discussion of draft-tenoever-hrpc-association-00 (5 mins)
+- Update (and perhaps discussion) on the status of draft-irtf-hrpc-research (5 mins)
+- Open discussion other drafts, papers, ideas (5 mins)
+- Next steps (5 min)
+- AOB
+
+
+
+
