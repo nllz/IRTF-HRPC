@@ -175,32 +175,32 @@ Cases and examples
 
 
 
-# communicating
+## Communicating
  
-## mailinglists
+### Mailinglists
 Since the beginning of the Internet mailing lists have been a key site of assembly and association. {{RFC0155}} {{RFC1211}}  One can even argue that mailing lists were one of the Internets first functionalities. 
 
-## multi party video conferencing and risks
+### Multi party video conferencing and risks
 https://iranthreats.github.io/resources/webrtc-deanonymization/
 
-## reaching out (spam, logs)
+### Reaching out (spam, logs)
 impossibility of providing information, in a proportionate manner, that someone is not expecting/asking for reinforces the filter bubble, is this a inherent consequent on internet infrastructure?
 
 https://motherboard.vice.com/en_us/article/chaos-communication-congress-hackers-invaded-millions-of-servers-with-a-poem
 
-# working together (peer production)
+## Working together (peer production)
 
-## version control
+### Version control
 Ever since developers needed to collaboratively write, maintain and discuss large code basis for the Internet there have been different approaches of doing so. One approach is discussing code through mailing lists, but this has proven to be hard in case of maintaining the most recent versions. There are many different versions and characteristics of version control systems. 
 
 centralization - differences (and gradients) between free (as in beer) and free (as in freedom). Git vs Github.	
 
-# grouping together (identities)
+## Grouping together (identities)
 
-## DNS
+### DNS
 advantages and disadvantages (.gay)
 
-## ISPs
+### ISPs
 No one may be compelled to belong to an association.
  
 Notes
