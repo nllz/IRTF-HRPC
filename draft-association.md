@@ -345,6 +345,7 @@ comment: # I have to find the legal basis for this argument, but it's basically 
 ### ISPs
 No one may be compelled to belong to an association.
 
+## Here we need to expand on forced association and diversity in relation to access
  
 Acknowledgements
 ================
