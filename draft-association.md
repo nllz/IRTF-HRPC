@@ -173,15 +173,6 @@ informative:
         - ins: A. Melucci
       seriesinfo: Temple University Press, Philadelphia
 
-   BradshawDeNardis:
-      title: "The politicization of the Internet’s Domain Name System: Implications for Internet security, universality, and freedom"
-      date: 2016
-      author:
-        - ins: S. Bradshaw
-        - ins: L. DeNardis
-#      seriesinfo: New Media & Society
-      target: http://journals.sagepub.com/doi/pdf/10.1177/1461444816662932
-
    AckermannKargerZhang:
       title: "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?" 
       date: 2017
@@ -251,7 +242,7 @@ Even at at linguistical level, the words "networks” and “associations” are
 
 On the other hand, IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussion, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}. 
 
-Recently, the Internet has also played a central role in worldy events such as the Arab Spring {{HussainHoward}} and Latin American student movements. In both cases, the Internet played a crucial role by providing a means for the fast dissemination of information that was otherwise distorted by the mass media, or even forbiden by the government {{Pensado}}.  According to Hussain and Howard the Internet helped to 'build solidarity networks and identification of collective identities and goals', facilitate protest, 'extend the range of local coverage to international broadcast networks' and as platform for contestation for the future of 'the future of civil society and information infrastructure' {{HussainHoward}}. 
+Throughtout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}.  According to Hussain and Howard the Internet helped to 'build solidarity networks and identification of collective identities and goals', facilitate protest, 'extend the range of local coverage to international broadcast networks' and as platform for contestation for the future of 'the future of civil society and information infrastructure' {{HussainHoward}}. 
 
 However, some of these examples go beyond the use of Internet protocols and flow over into the applications layer or association in the offline world, whereas we'll focus on the Internet protocols and architecture. 
 
@@ -278,8 +269,6 @@ Decentralization
 Pseudonymity 
 : The ability to disguise one's identity online with a different name than the "real" one, allowing for diverse degrees of disguised identity and privacy. It is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)."  {{RFC6973}}
 
-
-
 Research questions
 =====================
 
@@ -287,8 +276,6 @@ How does the internet architecture enables and/or inhibits freedom of associatio
 
 Cases and examples
 =====================
-
-
 
 ## Communicating
  
@@ -299,6 +286,7 @@ Since the beginning of the Internet mailing lists have been a key site of assemb
 In 1971, four years after the invention of email, the first mailing list was created to discuss the idea of using Arpanet for discussion. By this time, what had initially propelled the Arpanet project forward as a resource sharing platform was gradually replaced by the idea of a network as a means of bringing people together {{Abbate}}. More than 45 years after, mailing lists are pervasive and help communities to engage, have discussion, share  information, ask questions, and build ties. Even as social media and discussion forums grew, mailing lists continue to be widely used {{AckermannKargerZhang}}. They are a crucial tool to organise groups and individuals around themes and causes {{APC}}.
 
 ### Multi party video conferencing and risks
+
 'Beginning in early 2008, Iranian security entities have engaged in operations to identify and arrest administrators of “illicit” websites and social media groups. In recent years, the detention and interrogation of members of online communities has been publicized by state media for propaganda purposes. However, the heavy-handedness of the government has also inadvertently created a situation where Iranian users are better positioned than others to avoid some surveillance activities – increasing the burden of finding pseudonymous users.' {{AndersonGuarnieri}}.
 
 'The WebRTC protocol was designed to enable responsive real-time communications over the Internet, and is instrumental in allowing streaming video and conferencing applications to run in the browser. In order to easily facilitate direct connections between computers (bypassing the need for a central server to act as a gatekeeper), WebRTC provides functionality to automatically collect the local and public IP addresses of Internet users (ICE or STUN). These functions do not require consent from the user, and can be instantiated by sites that a user visits without their awareness. The potential privacy implications of this aspect of WebRTC are well  documented, and certain browsers have provided options to limit its behavior.' {{AndersonGuarnieri}}.
@@ -307,20 +295,19 @@ In 1971, four years after the invention of email, the first mailing list was cre
 
 
 ### Reaching out
+
 In the 1990s as the internet became more and more commercial, spam came to be defined as irrelevant or unsolicited messages that were porsted many times to multiple news groups or mailing lists {{Marcus}}. Here the question of consent is crucial. In the 2000s a large part of the discussion revolved around the fact that certain corporations -protected by the right to freedom of association- considered spam to be a form of "comercial speech", thus encompassed by free expression rights {{Marcus}}. Nonetheless, if we consider that the rights to assembly and association also mean that "no one may be compelled to belong to an association" {{UDHR}}, spam infringes both rights if an op-out mechanism is not provided and people are obliged to receive unwanted information, or be reached by people they do not know.
 
 This leaves us with an interesting case: spam is currently handled mostly by mailproviders on behalf of the user, next to that countries are increasingly adopting opt-in regimes for mailinglists and commercial e-mail, with a possibility of serious fines in case of violation.
 
-This protect the user from being confronted with unwanted messages, but it also makes it legally and technically very difficult to communite a message to someone who did not explicitly ask for this. In public, offline space we regularly get exposed to flyers, invitations or demonstrations where out opinions get challenged, or one is invited to consider a different viewpoint. It seems that there is no equivalent on the Internet under this technical and legal regime. In other words, it is nearly impossible impossibility to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called 'filter bubble': "The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It's a cozy place, populated by our favorite people and things and ideas." {{Pariser}}.
-"The filter bubble's costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (...). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown." {{Pariser}}.
-It seem that the 'filter bubble'-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression.
+This protects the user from being confronted with unwanted messages, but it also makes it legally and technically very difficult to communite a message to someone who did not explicitly ask for this. In the public offline spaces we regularly get exposed to flyers, invitations or demonstrations where our opinions get challenged, or we are invited to consider different viewpoints. There is no equivalent on the Internet with the technical and legal regime that currently operates in it. In other words, it is nearly impossible impossibility to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called ‘filter bubble’: “The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It’s a cozy place, populated by our favorite people and things and ideas.” {{Pariser}}. “The filter bubble’s costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (…). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown.” {{Pariser}}. It seem that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression.
 
 There have been creative alternative for this problem, such as when a message was distributed to the server logs of millons of servers through the 'masscan'-tool {{Cox}}.
 
 
 ## Working together (peer production)
 
-At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices.  According to Benkler, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}
+At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices.  According to Benkler, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}.
 
 ### Version control
 
@@ -334,17 +321,11 @@ Collective identities are also protected by freedom of association and assembly 
 
 ### DNS
 
-advantages and disadvantages (.gay)  
-
-"Similar  moral  debates  materialized  after  ICANN  announced  a  massive  expansion  of TLDs and received almost two thousand applications for new domains. Saudi Arabia, a country in which homosexuality is criminalized and sometimes punishable by death, objected to the .gay TLD application, because “many societies and cultures consider homosexuality to be contrary to  their  culture,  morality,  or  religion”.  Saudi  Arabia  and  other  countries  also opposed  the  introduction  of  TLDs  such  as  .sexy,  .dating,  .porn,  .adult,  and  others,  as  well  as .islam  over  objections  to  a  private  company  operating  a  domain  representing  the  worldwide Muslim community" {{BradshawDeNardis}}. 
-
- Both these examples are relevant in terms of freedom of association and assembly. First, because a .gay domain, if it allows for collective identification and segmentation of information for usefull purposes, it might also make DNS censorship easier. Secondly, because a .gay domain (or .islam and .catholicism ) might contain information that groups themselves do not share or identify to.  
-
-comment: # I have to find the legal basis for this argument, but it's basically that if someone builds a site with "fake" or defaming information on .gay, it might violate the assembly's identity grounds. I don't know if it works. I'll work more on it #
+Advantages and disadvantages 
 
 ### ISPs
-No one may be compelled to belong to an association.
 
+Access, diversity and forced association
  
 Acknowledgements
 ================
