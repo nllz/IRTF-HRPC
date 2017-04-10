@@ -939,7 +939,7 @@ This document aims to propose guidelines for human rights considerations, simila
 
 This document is not an Internet Standards Track specification; it is published for informational purposes.
 
-This document is a product of the Internet Research Task Force (IRTF). The IRTF publishes the results of Internet-related research and development activities. These results might not be suitable for deployment. This RFC represents the consensus of the Human Rights Protocol Considerations Research Group of the Internet Research Task Force (IRTF).
+This informational document has consensus for publication from the Internet Research Task Force (IRTF) Human Right Protocol Considerations Research Group. It is the first milestone in a longer term research effort and has been reviewed both by the research group and by individuals from outside the research group. Many of the topics discussed are still under discussion in the research group and will be subjects of continuing research.
 
 --- middle
 
@@ -1907,7 +1907,6 @@ Impacts:
 
 Document Status
 ===============
-
 This document has been developed within the framework of the Human Rights Protocols Considerations Research Group, based on discussions on the hrpc mailinglist and during hrpc sessions, where this document also has been extensively discussed. The document has received eleven in-depth reviews on list, and received many comments from inside and outside the IRTF and IETF community.  The research group has reached consensus on publishing this document as informational research group consensus document. 
 
 
