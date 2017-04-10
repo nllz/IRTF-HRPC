@@ -326,9 +326,6 @@ Advantages and disadvantages
 ### ISPs
 
 Access, diversity and forced association
-
-## Here we need to expand on forced association and diversity in relation to access
-
  
 Acknowledgements
 ================
