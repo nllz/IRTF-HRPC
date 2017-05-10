@@ -146,7 +146,7 @@ While analyzing protocols for their impact on users anonymity, would it make sen
 
 4. How does the protocol, in conjunction with other protocols, impact pseudonymity?
 
-5. Could there be advice for prootocol developers and implementers to improve anonimity and pseudonymity?
+5. Could there be advice for protocol developers and implementers to improve anonimity and pseudonymity?
 
 Use Cases
 =========
