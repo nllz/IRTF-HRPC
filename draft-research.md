@@ -1,7 +1,7 @@
 ---
 title: Research into Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-research-12
+docname: draft-irtf-hrpc-research-13
 category: info
 
 ipr: trust200902
@@ -58,11 +58,11 @@ informative:
    RFC4084:
    RFC4033:
    RFC4101:
-   RFC4646:
    RFC4941:
    RFC4949:
    rfc5246:
    RFC5321:
+   RFC5646:
    RFC5694:
    RFC5944:
    RFC6101:
@@ -82,6 +82,7 @@ informative:
    RFC7725:
    RFC7754:
    RFC7858:
+   RFC8164:
 
 
    IRP:
@@ -964,10 +965,10 @@ Open, secure and reliable connectivity is necessary (although not sufficient) to
 
 Human rights can be in conflict with each other, such as the right to freedom of expression and the right to privacy. In such cases the different affected rights need to be balanced. In order to do this it is crucial that the rights impacts are clearly documented in order to mitigate the potential harm. Making that process tangible and practical for protocol developers is what this research aims to ultimately contribute to. Technology can never be fully equated with a human right. Whereas a specific technology might be strong enabler of a specific human right, it might have an adverse impact on another human right. In this case decisions on design and deployment need to take this into account.
 
-The open nature of the initial technical design and its open standards, as well as developments like open source, fostered freedom of communication.  What emerged was a network of networks that could enable everyone to connect and to exchange data, information and code.  For many, enabling such conections became a core value.
+The open nature of the initial technical design and its open standards, as well as developments like open source, fostered freedom of communication.  What emerged was a network of networks that could enable everyone to connect and to exchange data, information and code.  For many, enabling such connections became a core value.
 However as the scale and the commercialization of the Internet grew, topics like access, rights and connectivity are forced to compete with other values. Therefore, important human rights enabling characteristics of the Internet might be degraded if they're not properly defined, described and protected as such. And, the other way around, not protecting human right enabling characteristics could also result in (partial) loss of functionality and connectivity, and other inherent parts of the Internet's architecture of networks. New protocols, particularly those that upgrade the core infrastructure of the network, should be designed to continue to enable fundamental human rights.
 
-The IETF has produced guidelines and procedures to ensure and galvanize the privacy of indiduals and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the <xref target="model-for-developing-human-rights-protocol-considerations" /> part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against human rights threats, and potentially stimulate authors to think about alternative design choices.
+The IETF has produced guidelines and procedures to ensure and galvanize the privacy of indiduals and security of the network in protocol development. This document aims to explore the possibility of the development of similar procedures for guidelines for human rights considerations to ensure that protocols developed in the IETF do not have an adverse impact on the realization of human rights on the Internet. By carefully considering the answers to the questions posed in the <xref target="model-for-developing-human-rights-protocol-considerations" /> part of this document, document authors should be able to produce a comprehensive analysis that can serve as the basis for discussion on whether the protocol adequately protects against specific human rights threats, and potentially stimulate authors to think about alternative design choices.
 
 Vocabulary used
 ===============
@@ -1372,7 +1373,7 @@ Recently similar capabilities of Chinese authorities have been reported as well 
 Network injection attacks are also made widely available to state actors around the world through the commercialization of similar, smaller scale equipment that can be easily acquired and deployed at a country-wide level. Certain companies are known to have network injection gear within their products portfolio {{Marquis-Boire}}. The technology devised and produced by some of them to perform network traffic manipulation attacks on HTTP communications is even the subject of a patent application in the United States {{Googlepatent}}. Access to offensive technologies available on the commercial lawful interception market has led to human rights abuses and illegitimate surveillance of journalists, human rights defenders, and political activists in many countries around the world {{Collins}}. While network injection attacks haven't been the subject of much attention, they do enable even unskilled attackers to perform silent and very resilient compromises, and unencrypted HTTP remains one of the main vehicles.
 
 There is a new version of HTTP, called HTTP/2, which was published as {{RFC7540}} and which aimed to be largely backwards compatible but also offer new option such as data compression of HTTP headers and pipelining of request and multiplexing multiple requests over a single TCP connection. In addition to decreasing latency to improve page loading speeds it also facilitates more efficient use of connectivity in low-bandwith environments, which is an enabler for freedom of expression, the right to assembly, right to political participation and the right to participate in cultural life, art and science.
-{{RFC7540}} does not mandate Transport Layer Security or any other form of encryption, is also does not support opportunistic encryption, so the vulnerabilities listed above for HTTP/1 are also valid for HTTP/2 as defined in {{RFC7540}}.
+{{RFC7540}} does not mandate Transport Layer Security or any other form of encryption, also does not support opportunistic encryption, eventhough that is now addressed in {{RFC8164}}.
 
 #### XMPP
 
@@ -1465,7 +1466,7 @@ Similarly, VPN services that aren't handling DNS requests and are not running DN
 
 ##### Traffic Correlation
 
-Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented {{spiegel}} to be already in practice and could completely vanify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
+Some implementations of VPN appear to be particularly vulnerable to identification and collection of key exchanges which, some Snowden documents revealed, are systematically collected and stored for future reference. The ability of an adversary to monitor network connections at many different points over the Internet, can allow them to perform traffic correlation attacks and identify the origin of certain VPN traffic by cross referencing the connection time of the user to the endpoint and the connection time of the endpoint to the final destination. These types of attacks, although very expensive and normally only performed by very resourceful adversaries, have been documented {{spiegel}} to be already in practice and could completely nullify the use of a VPN and ultimately expose the activity and the identity of a user at risk.
 
 
 #### HTTP Status Code 451
@@ -1591,7 +1592,7 @@ Impacts:
 ### Internationalization
 
 Question(s):
-Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? Does your protocol allow Unicode encoded in UTF-8 only? If other character sets or encodings are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}?
+Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? 
 
 Explanation:
 Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
@@ -1670,7 +1671,6 @@ Heterogeneity is inevitable and needs be supported by design. Multiple types of 
 Impacts:
 
 - Right to freedom of expression
-- Right to freedom of expression
 - Right to political participtation
 
 ### Anonymity
@@ -1698,11 +1698,6 @@ Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}
 
 Explanation:
 Pseudonymity - the ability to use a persistent identifier not linked to one's offline identity" straight away - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
-
-I would also include consideration that pseudonyms cannot be simply reverse
-engineered -- some early approaches simply took approaches such as simple
-hashing of IP addreses. These could then be simply reversed by generating a
-hash for each potential IP address and comparing it to the pseudonym.
 
 Example:
 Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. While pseudonyms cannot be simply reverse engineered - some early approaches simply took approaches such as simple hashing of IP addreses, these could then be simply reversed by generating a hash for each potential IP address and comparing it to the pseudonym - limiting the exposure of private information remains important. 
@@ -1741,7 +1736,7 @@ Explanation:
 Localization refers to the adaptation of a product, application or document content to meet the language, cultural and other requirements of a specific target market (a locale) {{W3Ci18nDef}}. It is also described as the practice of translating an implementation to make it functional in a specific language or for users in a specific locale (see Internationalization).
 
 Example:
-The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world's online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC4646}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language.
+The Internet is a global medium, but many of its protocols and products are developed with a certain audience in mind, that often share particular characteristics like knowing how to read and write in ASCII and knowing English. This limits the ability of a large part of the world's online population from using the Internet in a way that is culturally and linguistically accessible. An example of a protocol that has taken into account the view that individuals like to have access to data in their native language can be found in {{RFC5646}}. This protocol labels the information content with an identifier for the language in which it is written. And this allows information to be presented in more than one language.
 
 Impacts:
 
