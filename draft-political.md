@@ -206,10 +206,7 @@ Acknowledgements
 Research Group Information
 ==========================
 
-The discussion list for the IRTF Human Rights Protocol Considerations
-proposed working group is located at the e-mail address
-<hrpc@ietf.org>. Information on the group and information on how to
-subscribe to the list is at
+The discussion list for the IRTF Human Rights Protocol Considerations working group is located at the e-mail address <hrpc@ietf.org>. Information on the group and information on how to subscribe to the list is at: 
 <https://www.irtf.org/mailman/listinfo/hrpc>
 
 Archives of the list can be found at:
