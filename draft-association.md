@@ -39,11 +39,13 @@ normative:
 informative: 
    RFC0155: 
    RFC1211:
+   RFC1287:
    RFC3233:
    RFC1958:
    RFC4084:
    RFC4949:
    RFC6973:
+   RFC7858:
 
    UDHR:
      title: The Universal Declaration of Human Rights
@@ -322,16 +324,18 @@ The structuring of DNS as a hierarchical authority structure also brings about s
  
 ### ISPs
 
-In order for edge-users to connect to the 'network of networks', the user needs to be connected to a network. This means that in the process of accessing the network of networks the edge-user needs to accept the policies and practices of the network they connect to. 
-
-Access, diversity and forced association
-
-Network of networks,, edge user connectivity, not their own peering/network infra, this forces edge-user to engage in association
-
+In order for edge-users to connect to the 'network of networks', the user needs to be connected to a network. This means that in the process of accessing the network of networks the edge-user needs to accept the policies and practices of the network they connect to. There is not necessarily a uniform way in which the policies, practices and principles of the network are communicated to the edge-user. These practices might include filtering, blocking, extensive logging or other invasive practices that are not clearly communicated to the user.
+In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate its own Autonomous System. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
 
 ### Centralization
 
-Similar to DNS, find stuff, but that is also possible with federation. Example Mastodon. Protocols instead of platforms. 
+There is an increasing trend of centralization and consolidation on the Internet, this is trend can be observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. This trend forms a thread to the distributed nature of the Internet {{RFC1287}} in different ways.
+
+Federation
+
+
+Example Mastodon. Protocols instead of platforms. 
+
 
  
 Conclusions
