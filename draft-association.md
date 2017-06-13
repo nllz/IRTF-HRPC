@@ -209,13 +209,6 @@ informative:
         - ins: C. Guarnieri
       target: https://iranthreats.github.io/resources/webrtc-deanonymization/
 
-   Cox:
-      title: Chaos Communication Congress Hackers Invaded Millions of Servers With a Poem
-      date: 2016
-      author:
-        - ins: J. Cox
-      target: https://motherboard.vice.com/en_us/article/chaos-communication-congress-hackers-invaded-millions-of-servers-with-a-poem
-
 --- abstract
 
 This documents aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two should be documented and adverse impacts on this human right should be mitigated. On the other hand there have also been methods of protest, a form of freedom of assembly, on the Internet that have been harmful to Internet connectivity and the Internet infrastructure, such as DDoS attacks. This document aims to document forms of protest, association and assembly that do not have a negative impact on the Internet infrastructure.
