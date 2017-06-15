@@ -209,9 +209,31 @@ informative:
         - ins: C. Guarnieri
       target: https://iranthreats.github.io/resources/webrtc-deanonymization/
 
+   OSCE:
+      title: Guidelines on Freedom of Peaceful Assembly 
+      date: 2010
+      author:
+         - org: OSCE Office for Democratic Institutions and Human Rights
+      target: https://www.osce.org/odihr/73405?download=true
+      seriesinfo: page 24
+
+   Abibil:
+     title: Dissecting 'Operation Ababil' - an OSINT Analysis
+     date: 2012
+     author:
+        - ins: D. Danchev
+     target: http://ddanchev.blogspot.be/2012/09/dissecting-operation-ababil-osint.html
+
+   GreenMovement:
+     title: Iran DDoS
+     date: 2009
+     author:
+        - ins: N. Villeneuve
+     target: https://www.nartv.org/2009/06/16/iran-ddos/
+
 --- abstract
 
-This documents aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and thus the ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet the relation between the two should be documented and adverse impacts on this human right should be mitigated. On the other hand there have also been methods of protest, a form of freedom of assembly, on the Internet that have been harmful to Internet connectivity and the Internet infrastructure, such as DDoS attacks. This document aims to document forms of protest, association and assembly that do not have a negative impact on the Internet infrastructure.
+This document aims to scope the relation between Internet protocols and the rights to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between the mentioned rights should be documented, and adverse impacts should be mitigated. There have been methods of protest on the Internet -a form of freedom of assembly- that have proven to be harmful to connectivity and infrastructure, such as DDoS attacks. Therefore, this text aims to document forms of protest, association and assembly that do not have a negative impact on the Internet infrastructure.
 
 --- middle
 
@@ -219,31 +241,19 @@ This documents aims to scope the relation between Internet protocols and the rig
 Introduction
 ============
 
-Freedom of assembly and freedom of association are two human rights that protect and enable collective action and expression {{UDHR}} {{ICCPR}}. This is important because causes and opinions take more force within a group of people that come together for the same means {{Tocqueville}}. 
+Freedom of assembly and freedom of association are two human rights that protect and enable collective action and expression {{UDHR}} {{ICCPR}}. Both rights ensure everyone in a society has the opportunity to express the opinions they hold in common with others, which in turn facilitates dialogue among citizens, as well as between them and political leaders or government {{OSCE}}. This is important in the process of democratic delibration because causes and opinions are more widely heard when a group of people comes groups together behind the same cause or issue {{Tocqueville}}. The rights to freedom of assembly and association thus protect any collective, gathered either permanently or temporarily for peaceful purposes. It is indeed a "freedom" because it is voluntary and uncoerced: anyone can join or leave a group of choice, which in turn means that they are not forced to do either stay or leave.
 
-The difference between the freedom of assembly and the freedom of associotiation is merely gradual one. An assembly is an intentional and temporary gathering of a collective in a private or public space for a  specific  purpose:  demonstrations,  inside  meetings,  strikes, processions,  rallies  or  even  sits-in {{UNHRC}}. The right to protest is one of the rights encompassed by freedom of assembly, but also exercised along with freedom of expression and the right to hold an opinion. Nonetheless, protest unlike assembly, implies an element of dissent that can be exercised individually, where as assembly always has a collective component {{ARTICLE19}}. 
+The difference between freedom of assembly and freedom of association is merely gradual one: the former tends to have an informal and ephemeral nature, whereas the latter refers to established and permanent bodies with specific objectives. Nonetheless, one and the other are protected to the same degree.
 
-Association on the other hand has a more formal nature. It refers to a group of individuals or any legal entities brought together in order to collectively act, express, promote, pursue or defend a field of common interests {{UNGA}}. This means civil  society  organizations,  clubs, cooperatives, NGOs,  religious  associations,  political  parties,  trade unions, foundations or even online associations as the Internet has been instrumental, for instance, in 'facilitating active citizen participation in building democratic societies' {{UNHRC}}.  
+An assembly is an intentional and temporary gathering of a collective in a private or public space for a specific purpose: demonstrations, inside meetings, strikes, processions, rallies or even sits-in {{UNHRC}}. It is essentially a gathering. The right to protest is encompassed by this right, and it coincides with the right to freedom of expression and the right to hold an opinion. Nonetheless protest, unlike assembly, involves an element of dissent that can be exercised individually whereas assembly always has a collective component {{ARTICLE19}}. Association on the other hand has a more formal and established nature. It refers to a group of individuals or legal entities brought together in order to collectively act, express, pursue or defend a field of common interests {{UNGA}}. Within this category we can think about civil society organizations, clubs, cooperatives, NGOs, religious associations, political parties, trade unions or foundations.
 
-In less democratic or authoritarian countries, online association and assembly has been crucial to mobilise groups and people, where physical gatherings have been impossible or dangerous {{APC}}. Both rights protect the right to join or leave a group of choice. Thus any collective, gathered for peaceful purposes, is protected by these rights.
+Rights to assembly and association are crucial for the Internet, even if privacy and freedom of expression are the most discussed human rights when it comes to the online world. It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. One could even argue that as a whole, the networked internet constitutes a big collective, and thus an assembly and an association. 
 
-In draft-irtf-hrpc-research the relationship between human rights and Internet protocols has been shown, and guidelines for considerations of human rights impact in protocol design have been provided. 
+IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussions, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}. 
 
-Further research is needed to understand the exact shape, extend and form of Internet protocols on human rights.  This document aims to break down the relationship between Internet protocols and the right to freedom of assembly and association.
+In less democratic or authoritarian countries, online association and assembly have been crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. According to Hussain and Howard the Internet helped to 'build solidarity networks and identification of collective identities and goals', facilitate protest, 'extend the range of local coverage to international broadcast networks' and as platform for contestation for the future of 'the future of civil society and information infrastructure' {{HussainHoward}}. Some of these examples go beyond the use of Internet protocols and flow over into the applications layer or examples in the offline world. The following document aims to break down the relationship between Internet protocols and the right to freedom of assembly and association. We do recognize however that in some cases the line between protocols, applications, implementations, policies, and the offline world are often blurry and hard (if not impossible) to differentiate, since protocols are a part of the socio-technical ordering of the world. 
 
-The right to privacy and the right to freedom of expression are the most discussed human rights when it comes to the Internet. Still we must recognize that communities, collaboration and joint action lie at the heart of the Internet.
-
-Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and association of persons depend on “links” and “relationships” {{Swire}}. One could even argue that as a whole, the networked internet constitutes a big collective, and thus an assembly and an association. 
-
-On the other hand, IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussion, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}. 
-
-Throughtout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}.  According to Hussain and Howard the Internet helped to 'build solidarity networks and identification of collective identities and goals', facilitate protest, 'extend the range of local coverage to international broadcast networks' and as platform for contestation for the future of 'the future of civil society and information infrastructure' {{HussainHoward}}. 
-
-However, some of these examples go beyond the use of Internet protocols and flow over into the applications layer or association in the offline world, whereas we'll focus on the Internet protocols and architecture. 
-
-This can be contrasted with the example of association on the infrastructure level (albeit one can contest wether this is 'peaceful') of Distributed Denial of Service Attacks (DDoS) in which the infrastructure of the Internet is used to express discontent with a specific cause {{Abibil}} {{GreenMovement}}. Unfortunately more of than not DDoS are used to stifle freedom of expression, complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent. This is one of the reasons protocols should seek to mitigate DDoS attacks {{BCP72}}.   
-
-This document will further seek to map how the internet architecture impacts freedom of association and assembly.
+In draft-irtf-hrpc-research the relationship between human rights and Internet protocols has been shown, and guidelines for considerations of human rights impact in protocol design have been provided. Further research is needed to understand the exact impact of Internet protocols on human rights, including assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. This is what this document aims contnribute to. 
 
 
 Vocabulary used 
@@ -264,10 +274,12 @@ Decentralization
 Pseudonymity 
 : The ability to disguise one's identity online with a different name than the "real" one, allowing for diverse degrees of disguised identity and privacy. It is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)."  {{RFC6973}}
 
+
 Research questions
 =====================
 
 How does the internet architecture enables and/or inhibits freedom of association and assembly.
+
 
 Cases and examples
 =====================
@@ -282,24 +294,37 @@ In 1971, four years after the invention of email, the first mailing list was cre
 
 ### Multi party video conferencing and risks
 
-'Beginning in early 2008, Iranian security entities have engaged in operations to identify and arrest administrators of “illicit” websites and social media groups. In recent years, the detention and interrogation of members of online communities has been publicized by state media for propaganda purposes. However, the heavy-handedness of the government has also inadvertently created a situation where Iranian users are better positioned than others to avoid some surveillance activities – increasing the burden of finding pseudonymous users.' {{AndersonGuarnieri}}.
-
-'The WebRTC protocol was designed to enable responsive real-time communications over the Internet, and is instrumental in allowing streaming video and conferencing applications to run in the browser. In order to easily facilitate direct connections between computers (bypassing the need for a central server to act as a gatekeeper), WebRTC provides functionality to automatically collect the local and public IP addresses of Internet users (ICE or STUN). These functions do not require consent from the user, and can be instantiated by sites that a user visits without their awareness. The potential privacy implications of this aspect of WebRTC are well  documented, and certain browsers have provided options to limit its behavior.' {{AndersonGuarnieri}}.
+Multi party video conferencing protocols such as webRTC {{RFC6176}} {{RFC7118}} allow for robust, bandwidth-adaptive, wideband and super-wideband video and audio discussions in groups. 'The WebRTC protocol was designed to enable responsive real-time communications over the Internet, and is instrumental in allowing streaming video and conferencing applications to run in the browser. In order to easily facilitate direct connections between computers (bypassing the need for a central server to act as a gatekeeper), WebRTC provides functionality to automatically collect the local and public IP addresses of Internet users (ICE or STUN). These functions do not require consent from the user, and can be instantiated by sites that a user visits without their awareness. The potential privacy implications of this aspect of WebRTC are well documented, and certain browsers have provided options to limit its behavior.' {{AndersonGuarnieri}}.
 
 'The disclosure of network addresses presents a specific risk to individuals that use privacy tools to conceal their real IP address to sites that they visit. Typically, when a user browses the Internet over a VPN, the only address that should be recorded by sites they visit would be that of the VPN provider itself. Using the WebRTC STUN function allows a site to additionally enumerate the addresses that are associated with the computer that the visitor is using – rather than those of intermediaries. This means that if a user is browsing the Internet on an ADSL connection over a VPN, a malicious site they visit could potentially surreptitious record the home address of the user.' {{AndersonGuarnieri}}.
 
+While facilitating freedom of assembly and association multi party video conferencing tools might pose concrete risks for those who use them. One the one hand webRTC is providing a resilient channels of communications, but on the other hand it also exposed information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that.  The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right of freedom of assembly or association.
 
-### Reaching out
+## Reaching out
+
+### Spam, filter bubbles, and unrequested messaging
 
 In the 1990s as the internet became more and more commercial, spam came to be defined as irrelevant or unsolicited messages that were porsted many times to multiple news groups or mailing lists {{Marcus}}. Here the question of consent is crucial. In the 2000s a large part of the discussion revolved around the fact that certain corporations -protected by the right to freedom of association- considered spam to be a form of "comercial speech", thus encompassed by free expression rights {{Marcus}}. Nonetheless, if we consider that the rights to assembly and association also mean that "no one may be compelled to belong to an association" {{UDHR}}, spam infringes both rights if an op-out mechanism is not provided and people are obliged to receive unwanted information, or be reached by people they do not know.
 
 This leaves us with an interesting case: spam is currently handled mostly by mailproviders on behalf of the user, next to that countries are increasingly adopting opt-in regimes for mailinglists and commercial e-mail, with a possibility of serious fines in case of violation.
 
-This protects the user from being confronted with unwanted messages, but it also makes it legally and technically very difficult to communite a message to someone who did not explicitly ask for this. In the public offline spaces we regularly get exposed to flyers, invitations or demonstrations where our opinions get challenged, or we are invited to consider different viewpoints. There is no equivalent on the Internet with the technical and legal regime that currently operates in it. In other words, it is nearly impossible impossibility to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called ‘filter bubble’: “The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It’s a cozy place, populated by our favorite people and things and ideas.” {{Pariser}}. “The filter bubble’s costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (…). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown.” {{Pariser}}. It seem that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression.
+This protects the user from being confronted with unwanted messages, but it also makes it legally and technically very difficult to communicate a message to someone who did not explicitly ask for this. In public offline spaces we regularly get exposed to flyers, invitations or demonstrations where our opinions get challenged, or we are invited to consider different viewpoints. There is no equivalent on the Internet with the technical and legal regime that currently operates in it. In other words, it is nearly impossible  to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called ‘filter bubble’: “The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It’s a cozy place, populated by our favorite people and things and ideas.” {{Pariser}}. “The filter bubble’s costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (…). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown.” {{Pariser}}. It seem that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression.
+
+This could be interpretated as an argument for the injection of unrequested messages, spam or other unrequested notifications. But the big difference between the proliferation of such messages offline and online is the investment that is needed. It is not hard for a single person to message a lot of people, whereas if that person needed to go house by house the scale and impact of their actions would be much smaller. 
+
+### Distributed Denial of Service Attacks
+
+One of the most common examples of association at the infrastructure level are Distributed Denial of Service Attacks (DDoS) in which the infrastructure of the Internet is used to express discontent with a specific cause {{Abibil}} {{GreenMovement}}. Unfortunately DDoS are often used to stifle freedom of expression as they complicate the ability of independent media and human rights organizations to exercise their right to (online) freedom of association, while facilitating the ability of governments to censor dissent. This is one of the reasons protocols should seek to mitigate DDoS attacks {{BCP72}}. As described in draft-irtf-hrpc-research:
+  "Uses of DDoS might or might not be legitimate for political reasons, but the IETF has no means or methods to assess this, and in general enabling DDoS would mean a deterioration of the network and thus freedom of expression." 
+and:
+  "When it comes to comparing DDoS attacks to protests in offline life, it is important to remember that only a limited number of DDoS attacks involved solely willing participants.  In most cases, the clients are hacked computers of unrelated parties that have not consented to being part of a DDoS (for exceptions see Operation Abibil {{Abibil}} or the Iranian Green Movement DDoS {{GreenMovement}}).""
+
+This is argued from the vector of freedom of expression, but if we would analyze it from the perspective of freedom of association the argument could be as follows: If the Internet is an association, any attack should be prevented and mitigated because it prevents the possibility of exercising a right to collective expression, which is consistent with {{BCP72}}.
+
 
 ## Working together (peer production)
 
-At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices.  According to Benkler, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}.
+At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices. According to Benkler, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}. 
 
 ### Version control
 
@@ -307,7 +332,7 @@ Ever since developers needed to collaboratively write, maintain and discuss larg
 
 ## Grouping together (identities)
 
-Collective identities are also protected by freedom of association and assembly rights. Acording to Melucci these are 'shared definitions produced by several interacting individuals who are concerned with the orientation of their action as well as the field of opportunities and constraints in which their action takes place.' {{Melucci}} 
+Collective identities are also protected by freedom of association and assembly rights. Acording to Melucci these are 'shared definitions produced by several interacting individuals who are concerned with the orientation of their action as well as the field of opportunities and constraints in which their action takes place.' {{Melucci}} In this sense, assemblies and associations are an important base in the maintenance and development of culture, as well as preservation of minority identities. [https://www.osce.org/odihr/73405?download=true, page 15] 
 
 ### DNS
 
@@ -318,22 +343,24 @@ The structuring of DNS as a hierarchical authority structure also brings about s
 ### ISPs
 
 In order for edge-users to connect to the 'network of networks', the user needs to be connected to a network. This means that in the process of accessing the network of networks the edge-user needs to accept the policies and practices of the network they connect to. There is not necessarily a uniform way in which the policies, practices and principles of the network are communicated to the edge-user. These practices might include filtering, blocking, extensive logging or other invasive practices that are not clearly communicated to the user.
+
 In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate its own Autonomous System. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
 
 ### Centralization
 
-There is an increasing trend of centralization and consolidation on the Internet, this is trend can be observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. This trend forms a thread to the distributed nature of the Internet {{RFC1287}} in different ways.
+There is an increasing trend of centralization and consolidation on the Internet, this is trend can be observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. This trend forms a threat to the distributed nature of the Internet {{RFC1287}} in different ways.
 
-Federation
-
-
-Example Mastodon. Protocols instead of platforms. 
-
+##Not sure about this yet, you got ideas? We can also do without it. 
 
  
 Conclusions
 ===========
 
+Internet has impact for on the ability for people to excercise their right to freedom of association and assembly.
+
+The Internet is by itself a form of an associtation and assembly.
+
+To get access to the Internet one could argued on is caught in a forced assembly with the access network. 
 
 
 Acknowledgements
