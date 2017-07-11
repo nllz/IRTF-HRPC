@@ -1,7 +1,7 @@
 --- 
 title: On the Politics of Standards
 abbrev: politix
-docname: draft-tenoever-hrpc-political-00
+docname: draft-tenoever-hrpc-political-01
 category: info
 
 ipr: trust200902
@@ -29,8 +29,8 @@ author:
 -
        ins: A. Sullivan
        name: Andrew Sullivan
-#      organization:
-       email: ajs@anvilwalrusden.com
+       organization: Oracle
+       email: andrew.s.sullivan@oracle.com
 
 normative:
   
@@ -144,7 +144,7 @@ Introduction
 
                               -John Culkin
 
-The design of the Internet through protocols and standards is a technical issue with great poltical and econmic impacts {{RFC0603}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property Rights, Internationzalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}. 
+The design of the Internet through protocols and standards is a technical issue with great poltical and econmic impacts {{RFC0603}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationzalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}. 
 
 Recently there has been an increased discussion on the relation between Internet protocols and human rights {{hrpc}} which spurred the discussion on the political nature of protocols. In this document we aim to outline different views on the relation between protocols and politics and seek to answer the question whether protocols are political.
 
@@ -193,7 +193,7 @@ The need for a positioning
 
 It is indisputable that the Internet plays an increasing and increasingly important role in the lives of citizens.  Those who produce interoperability standards for the Internet infrastructure are to some extent automatically implicated in that development. That said, the IETF is not the protocol police. It cannot, and should not, ordain what standards are to be used on the networks. The RFC producing community should not go outside of its mission to advocate for a specific use of protocols. At the same time, it may be useful for those producing Internet standards to take into account the political aspects or implications of that work.  Some structure for doing so may be helpful both to authors of standards documents and for the IETF. 
 
-The risk of not doing doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance on behest of the influence of the IETF.
+The risk of not doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance on behest of the influence of the IETF.
 
 This does not mean the IETF does not have position on particular political issues. The policies for open and diverse participation {{RFC7706}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their stance with respect to the wider implications of that IETF work. 
 
