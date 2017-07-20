@@ -47,6 +47,7 @@ informative:
    RFC0542:
    RFC0549:
    RFC0603:
+   RFC2804:
    RFC5218:
    RFC6973:
    RFC7258:
@@ -129,39 +130,37 @@ informative:
       target: https://mitpress.mit.edu/books/inventing-internet
       seriesinfo: MIT Press
 
-    Heidegger:
+   Heidegger:
       title: "The Question Concerning Technology and Other Essays"
       date: 1977
       author:
         - ins: M. Heidegger
-      target: http://ssbothwell.com/documents/ebooksclub.org__The_Question_Concerning_Technology_and_Other_Essays.pdf
-      seriesinfo: Garland: New York, 1977
+      target: "http://ssbothwell.com/documents/ebooksclub.org__The_Question_Concerning_Technology_and_Other_Essays.pdf"
+      seriesinfo: "Garland: New York, 1977"
  
-    Nadvi:
+   Nadvi:
       title: Making sense of global standards
       date: 2004
       author:
         - ins: K. Nadvi
         - ins: F. Wältring
-      seriesinfo: "In: H. Schmitz (Ed.), Local enterprises
-in the global economy (pp. 53–94). Cheltenham, UK: Edward Elgar."
+      seriesinfo: "In: H. Schmitz (Ed.), Local enterprises in the global economy (pp. 53–94). Cheltenham, UK: Edward Elgar."
 
-
-    Russell:
-      title: Open standards and the digital age: History, ideology, and networks
+   Russell:
+      title: "Open standards and the digital age: History, ideology, and networks"
       date: 2014
       author:
         - ins: A.M. Russell
       seriesinfo: "Cambridge, UK: Cambridge University Press"
 
-    RogersEden:
+   RogersEden:
       title: "The Snowden Disclosures, Technical Standards, and the Making of Surveillance Infrastructures"
       date: 2017
       author: 
         - ins: M. Rogers
         - ins: G. Eden
       seriesinfo: "International Journal of Communication 11(2017), 802-823"
-      target: http://ijoc.org/index.php/ijoc/article/view/5525/1941
+      target: "http://ijoc.org/index.php/ijoc/article/view/5525/1941"
 
 --- abstract
 
