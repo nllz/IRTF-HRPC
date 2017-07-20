@@ -192,23 +192,26 @@ Examples and approaches
 =======================
 
 # Competition and collaboration
+
 The driving force behind voluntary standards is interoperability between different parties. If the development of technical standards does not lead to interoperability, there is no practical use in the standard, because the standard is not in use. One of the examples in which open standards are unlikely to prevail is in the case of monopolies. When one player has exclusive control over an activity there is no internal incentive for the monopolist to offer interoperability with competitors.  
 
 The basis of the Internet can be traced back to the existence of open, non-proprietary standards. This does not mean that all standards that are being deployed on the Internet are open, or that all technologies are standardized. In the development of the Internet collaboration and competition have gone hand in hand and follow each other up in lockstep. The standards process is explicitly aimed at facilitation competition (often dubbed permissionless innovation) while building on the common basis of interoperability.
 
 Competition has led to long and intense debates on IETF mailinglists, in IETF session, and through patents and propietary standards. These processes of contestation are inherently interwoven with power; the power or argumentation, of resources, of credibility, of support in the community, of occupying the positions that better an individual or organization better make their claim. 
 
-The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailinglists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. At the same time these processes are driven by individuals who inherently have specific interests and worldviews. These can lead to different insights and motivations. These motivations can be economical, intellectual, technical and sometimes plain personal. All of these motivations can also be translated into tactics that are being employed in the standards process.
-
-
+The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailinglists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. At the same time these processes are driven by individuals who inherently have specific interests and worldviews. These can lead to different insights and motivations. These motivations can be economical, financial, intellectual, ethical, technical, personal and sometimes inter-personal. All of these motivations can also be translated into tactics that are being employed in the standards process. This is what makes the standards process inherently political from a process perspective. 
 
 # More legacy, more politics?
-Infrastructure studies
+
+Roman engineers complained about inadequate legacy standards they needed to comply with, which hampered them in their engineering excellence. In that sense not much has changed in the last 2100 years. When starting from a tabula rasa, one does not need to take other systems, layers or standards into account. The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically means it will be broadly adopted at as fast pace, examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account and much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
+
+# Infrastructure studies
+
 Ironic loss in political and economical triumph of certain applications, because it becomes ossified and easier to attack. 
 
 # Layers of politics
 
-
+There is a competition between layers, and even contestation about what the borders of different layers are. This leads to competition between layers and different solutions for similar problems on different layers, which in its turn leads to further ossification, which leads to more contestation. 
 
 
 
