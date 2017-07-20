@@ -146,19 +146,19 @@ Introduction
 
 The design of the Internet through protocols and standards is a technical issue with great poltical and econmic impacts {{RFC0603}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationzalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}. 
 
-Recently there has been an increased discussion on the relation between Internet protocols and human rights {{hrpc}} which spurred the discussion on the political nature of protocols. In this document we aim to outline different views on the relation between protocols and politics and seek to answer the question whether protocols are political.
+Recently there has been an increased discussion on the relation between Internet protocols and human rights {{hrpc}} which spurred the discussion on the political nature of protocols. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between protocols and politics and seek to answer the question whether protocols are political, and if so, how.
 
 Vocabulary Used
 ===============
+
+## Politics
+: (from Greek: Politiká: Politika, definition "affairs of the commons") is the process of making decisions applying to all members of a group. More narrowly, it refers to achieving and exercising positions of governance or organized control over a community. Furthermore, politics is the study or practice of the distribution of power and resources within a given community as well as the interrelationship(s) between communities.
+
 
 Literature and Positions
 ========================
 
 While discussion the impact of protocols on human rights different positions could be differentiated. Without judging them on their internal of external consistency they are represented here.
-
-## Politics
-[^1]{:ajs}
-[^1]I suspect we have a problem that we haven't defined "politics", which is maybe what's causing some of the angst.  Should we?
 
 ## Technology is value neutral
 This position starts from the premise that the technical and poltical are differentiated fields and that technology is 'value free'. This is also put more explicitly by Carey: "electronics is neither the arrival of apocalypse nor the dispensation of  grace.  Technology  is  technology;  it  is  a  means  for  communication  and  transportation  over  space, and nothing more." {{Carey}}
@@ -187,6 +187,23 @@ On the other side of the spectrum there are the onces who insist that technology
 More recent scholars of Internet infrastructure and governance have also pointed out that Internet processes and protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition, the RFC on pervasive monitoring[^3]{:ajs} or global innovation policy for concrete examples {{DeNardis}}. According to {{Abbate}}: "protocols are politics by other means". This emphasises the interests that are at play in the process of designing standards. This position holds further that protocols can never be understood without their contextual embeddedness: protocols do not exist solely by themselves but always are to be understood in a more complex context -- the stack, hardware, or nation-state interests and their impact on civil rights. Finally, this view is that that protocols are political because they affect or sometimes effect the socio-technical ordering of reality. The latter observation leads Winner to conclude that the reality of technological progress has too often been a scenario where the innovation has dictated change for society. Those who had the power to introduce a new technology also had the power to create a consumer class  to  use  the  technology, ‘with new practices, relationships, and identities supplanting the old, ---and those who had the wherewithal to implement new technologies often molded society to match the needs of emerging technologies and organizations.’ {{Winner}}
 
 [^3]I have long felt that DeNardis's claim about RFC 7258 embodies a misunderstanding of the IETF's stance.  P3 of sec 1 is pretty clear that the scope is carefully limited to a technical meaning of "attack".  I think this sentence is therefore too glib.  The IANA transition, on the other hand, really was a political thing, but it's politics _about_ protocols rather than protocols _as_ politics.  I think the passage following the Abbate quote is on stronger ground.
+
+Examples and approaches
+=======================
+
+# Processes, inter-company, intra-company
+
+
+# More legacy, more politics?
+Infrastructure studies
+Ironic loss in political and economical triumph of certain applications, because it becomes ossified and easier to attack. 
+
+# Layers of politics
+
+
+# 
+
+
 
 The need for a positioning
 ==========================
