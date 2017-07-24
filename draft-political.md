@@ -46,12 +46,12 @@ informative:
    RFC0316:
    RFC0542:
    RFC0549:
-   RFC0603:
+   RFC0613:
    RFC2804:
    RFC5218:
    RFC6973:
    RFC7258:
-   RFC7706:
+   RFC7704:
    RFC7776:
 
    BramanI:
@@ -175,7 +175,7 @@ Introduction
 
                               -John Culkin
 
-The design of the Internet through protocols and standards is a technical issue with great poltical and economic impacts {{RFC0603}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationzalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}. 
+The design of the Internet through protocols and standards is a technical issue with great political and economic impacts {{RFC0613}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationzalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}. 
 
 Recently there has been an increased discussion on the relation between Internet protocols and human rights {{hrpc}} which spurred the discussion on the political nature of protocols. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between protocols and politics and seek to answer the question whether protocols are political, and if so, how.
 
@@ -208,7 +208,7 @@ Certain kinds of technology shape the world in this sense.  As Martin Heidegger 
 In much same way, then, networking technology once created makes its own demands. One of the most important conditions for protocol success is that the protocol is incremental deployability {{RFC5218}}.  This means that the network already deployed constrains what can be delployed into it.  Moreover, one interpretation of {{RFC7258}} is that pervasive monitoring is an "attack" in the narrow sense precisely because of the network's need not to leak traces of online exchanges. A different network with a different design might not have been subject to this kind of attack.
 
 ## Protocols are inherently political
-On the other side of the spectrum there are the onces who insist that technology is non-neutral. This is for instance made explicit by Postman where he writes: 'the uses made of technology are largely determined by the structure of the technology itself' {{Postman}}. He states that the medium itself 'contains an ideological bias'. He continues to argue that technology is non-neutral:
+On the other side of the spectrum there are the ones who insist that technology is non-neutral. This is for instance made explicit by Postman where he writes: 'the uses made of technology are largely determined by the structure of the technology itself' {{Postman}}. He states that the medium itself 'contains an ideological bias'. He continues to argue that technology is non-neutral:
 
 (1) because of the symbolic forms in which information is encoded, different media have different intellectual and emotional biases;
 (2) because of the accessibility and speed of their information, different media have different political biases;
@@ -226,12 +226,12 @@ The driving force behind voluntary standards is interoperability between differe
 
 The basis of the Internet can be traced back to the existence of open, non-proprietary standards. This does not mean that all standards that are being deployed on the Internet are open, or that all technologies are standardized. In the development of the Internet collaboration and competition have gone hand in hand and follow each other up in lockstep. The standards process is explicitly aimed at facilitation competition (often dubbed permissionless innovation) while building on the common basis of interoperability.
 
-Competition has led to long and intense debates on IETF mailinglists, in IETF session, and through patents and propietary standards. These processes of contestation are inherently interwoven with power; the power or argumentation, of resources, of credibility, of support in the community, of occupying the positions that better an individual or organization better make their claim. 
+Competition has led to long and intense debates on IETF mailinglists, in IETF sessions, and through patents and propietary standards. These processes of contestation are inherently interwoven with power; the power or argumentation, of resources, of credibility, of support in the community, of occupying the positions that better an individual or organization better make their claim. 
 
 The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailinglists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. At the same time these processes are driven by individuals who inherently have specific interests and worldviews. These can lead to different insights and motivations. These motivations can be economical, financial, intellectual, ethical, technical, personal and sometimes inter-personal. All of these motivations can also be translated into tactics that are being employed in the standards process. This is what makes the standards process inherently political from a process perspective. 
 
 # More legacy, more politics?
-Roman engineers complained about inadequate legacy standards they needed to comply with, which hampered them in their engineering excellence. In that sense not much has changed in the last 2100 years. When starting from a tabula rasa, one does not need to take other systems, layers or standards into account. The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically means it will be broadly adopted at as fast pace, examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account and much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
+Roman engineers complained about inadequate legacy standards they needed to comply with, which hampered them in their engineering excellence. In that sense not much has changed in the last 2100 years. When starting from a tabula rasa, one does not need to take other systems, layers or standards into account. The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically means it will be broadly adopted at as fast pace. Examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account a much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
 
 # Infrastructure studies
 Ironic loss in political and economical triumph of certain applications, because it becomes ossified and easier to attack. 
@@ -252,12 +252,12 @@ It is indisputable that the Internet plays an increasing and increasingly import
 
 The risk of not doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance on behest of the influence of the IETF.
 
-This does not mean the IETF does not have position on particular political issues. The policies for open and diverse participation {{RFC7706}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their stance with respect to the wider implications of that IETF work. 
+This does not mean the IETF does not have position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their stance with respect to the wider implications of that IETF work. 
 
 The way forward
 ===============
 
-There are instruments that can help the IETF develop an approach to address the politics of protocls, part of this can be found in draft-irtf-hrpc-research as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community. 
+There are instruments that can help the IETF develop an approach to address the politics of protocols. Part of this can be found in draft-irtf-hrpc-research as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community. 
 
 
 Security Considerations
