@@ -1,7 +1,7 @@
 --- 
 title: Freedom of Association on the Internet
 abbrev: FoA
-docname: draft-tenoever-hrpc-association-01
+docname: draft-tenoever-hrpc-association-02
 category: info
 
 ipr: trust200902
@@ -302,10 +302,20 @@ Pseudonymity
 Research questions
 =====================
 
-How does the internet architecture enables and/or inhibits freedom of association and assembly.
+1. How does the internet architecture enables and/or inhibits freedom of association and assembly?
+2. Can the Internet be perceived as an association or assembly?
+
+Method
+======
+
+In order to answer the research questions an number of typical cases have been collected in which a group of people are enabeled and inhibited by the Internet infrastructure and Internet protocols to collaborate, cooperate or communicate. This overview does not aim to cover all possible ways in which people can collaborate, cooperate or communicate using Internet infrastructure and Internet protocols, but rather cover the most typical uses. 
+
+Closed and centralized Internet platforms such as Facebook do not fall within the scope of this research.
+
 
 Cases and examples
 ==================
+
 
 Whereas rights to freedom of assembly and association protect collective expression, systems and protocols than enable comunal communication between people or between servers allow these rights to prosper. The Internet itself was originally designed as "a medium for communication for machines that share resources with each other as equals" {{NelsonHedlun}}. In this sense, decentralized architectures that protect anonimity and privacy, assure a resilient network of speakers and recipients or receivers and thus ensure better conditions for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. Here we will discuss different cases to bring out the affordances of different protocols, technologies and architectual features. This issue is particularly timely since an increasing trend of centralization and consolidation on the Internet can be observed. This is trend can be parallely observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. Through the discussion of specific case we will try to further understand how this impact freedom of assembly, freedom of association as well as the distributed nature of the Internet {{RFC1287}}.
 
