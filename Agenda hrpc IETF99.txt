@@ -7,7 +7,7 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF99,
 	Introduction
 - Status of research group & documents (2 min)
 - Context of research (2 mins)
-- Presentation + Q&A - Sandra Braman on RFCs, Public Policy and Rights (50 mins)
+- Presentation + Q&A - Milton Mueller - Requiem for a Dream: on advancing human rights through internet architecture (50 mins)
 - Discussion of draft-tenoever-hrpc-anonymity-01 (15 mins)
 - Discussion of draft-tenoever-hrpc-association-01 (15 mins)
 - Discussion of draft-tenoever-hrpc-political-00 (15 mins)

@@ -1092,7 +1092,7 @@ Robustness
 : The resistance of protocols and their implementations to errors, and to involuntary, legal or malicious attempts to disrupt its mode of operations. {{RFC0760}} {{RFC0791}} {{RFC0793}} {{RFC1122}}. Or framed more positively, a system can provide functionality consistently and without errors despite  involuntary, legal or malicious attempts to disrupt its mode of operations.
 
 Scalability
-: The ability to handle increased or decreased system parameters (e.g., number of end-systems, users, data flows, routing entries. etc.) predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a systems scalability should be defined. Growth or shrinkage of these parameters is typically considered by orders of magnitude.
+: The ability to handle increased or decreased system parameters (e.g., number of end-systems, users, data flows, routing entries. etc.) predictably within defined expectations. There should be a clear definition of its scope and applicability. The limits of a system's scalability should be defined. Growth or shrinkage of these parameters is typically considered by orders of magnitude.
 
 Strong encryption / cryptography
 Used to describe a cryptographic algorithm that would require a large amount of computational power to defeat it. {{RFC4949}}. In the modern usage of the definition 'strong encryption' this refers to an amount of computing power current not available, not even to major state-level actors. 
@@ -1542,7 +1542,7 @@ Impacts:
 ### Privacy
 
 Question(s):
-Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could you protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
+Did you have a look at the Guidelines in the Privacy Considerations for Internet Protocols {{RFC6973}} section 7? Could your protocol in any way impact the confidentiality of protocol metadata? Could your protocol counter traffic analysis? Could your protocol improve data minimization?  Does your document identify potentially sensitive logged data by your protocol and/or for how long that needs to be retained for technical reasons?
 
 Explanation:
 Privacy refers to the right of an entity (normally a person), acting in its own behalf, to determine the degree to which it will interact with its environment, including the degree to which the entity is willing to share its personal information with others. {{RFC4949}}. If a protocol provides insufficient privacy protection it may have a negative impact on freedom of expression as users self-censor for fear of surveillance, or find themselves unable to express themselves freely.
@@ -1575,10 +1575,10 @@ Impacts:
 ### Security
 
 Question(s):
-Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any attacks that are out of scope for your protocol? Would these attacks be pertinent to the human rights enabling features of the Internet (as described throughout this document)?
+Did you have a look at Guidelines for Writing RFC Text on Security Considerations {{BCP72}}? Have you found any "attacks that are somewhat related to your protocol yet considered out of scope of your document? Would these attacks be pertinent to the human rights enabling features of the Internet (as described throughout this document)?
 
 Explanation:
-Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection; one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these properties are required for every application. Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}.
+Most people speak of security as if it were a single monolithic property of a protocol or system, however, upon reflection one realizes that it is clearly not true. Rather, security is a series of related but somewhat independent properties. Not all of these properties are required for every application. Since communications are carried out by systems and access to systems is through communications channels, these goals obviously interlock, but they can also be independently provided {{BCP72}}.
 
 Example:
 See {{BCP72}}.
@@ -1593,7 +1593,7 @@ Impacts:
 ### Internationalization
 
 Question(s):
-Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you have accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? 
+Does your protocol have text strings that have to be understood or entered by humans? Does your protocol allow Unicode? If so, do you accept texts in one charset (which must be UTF-8), or several (which is dangerous for interoperability)? If character sets or encodings other than UTF-8 are allowed, does your protocol mandate a proper tagging of the charset? Did you have a look at {{RFC6365}}? 
 
 Explanation:
 Internationalization refers to the practice of making protocols, standards, and implementations usable in different languages and scripts (see Localization). In the IETF, internationalization means to add or improve the handling of non-ASCII text in a protocol. {{RFC6365}} A different perspective, more appropriate to protocols that are designed for global use from the beginning, is the definition used by W3C:
@@ -1683,7 +1683,7 @@ Explanation:
 Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. Even though full anonymity is hard to achieve, it is a non-binary concept. Making pervasive monitoring and tracking harder is important for many users as well as for the IETF {{RFC7258}}. Achieving a higher level of anonymity is an important feature for many end-users, as it allows them different degrees of privacy online.
 
 Example:
-Often standards expose private information, it is important to consider ways to mitigate the obvious privacy impacts. For instance, a feature which uses deep packet inspection or geolocation data could refuse to open this data to third parties, that might be able to connect the data to a physical person.
+Often protocols expose personal data, it is important to consider ways to mitigate the obvious privacy impacts. A protocol that uses data that could help identify a sender (items of interest) should be protected from third parties. For instance if one wants to hide the source/destination IP addresses of a packet, the use of IPsec in tunneling mode (e.g., inside a virtual private network) can be helpful to protect from third parties likely to eavesdrop packets exchanged between the tunnel endpoints. 
 
 Impacts:
 
@@ -1695,13 +1695,13 @@ Impacts:
 ### Pseudonymity
 
 Question(s):
-Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does this specification collect personally derived data?  Does the protocol generate or process anything that can be, or be tightly correlated with, personally identifiable information? Does the standard utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this specification generate personally derived data, and if so how will that data be handled?
+Have you considered the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.2 ? Does the protocol collect personally derived data?  Does the protocol generate or process anything that can be, or be tightly correlated with, personally identifiable information? Does the protocol utilize data that is personally-derived, i.e. derived from the interaction of a single person, or their device or address? Does this protocol generate personally derived data, and if so how will that data be handled?
 
 Explanation:
 Pseudonymity - the ability to use a persistent identifier not linked to one's offline identity" straight away - is an important feature for many end-users, as it allows them different degrees of disguised identity and privacy online.
 
 Example:
-Designing a standard that exposes private information, it is important to consider ways to mitigate the obvious impacts. While pseudonyms cannot be simply reverse engineered - some early approaches simply took approaches such as simple hashing of IP addreses, these could then be simply reversed by generating a hash for each potential IP address and comparing it to the pseudonym - limiting the exposure of private information remains important. 
+Designing a standard that exposes personal data, it is important to consider ways to mitigate the obvious impacts. While pseudonyms cannot be simply reverse engineered - some early approaches simply took approaches such as simple hashing of IP addreses, these could then be simply reversed by generating a hash for each potential IP address and comparing it to the pseudonym - limiting the exposure of personal data remains important. 
 
 Pseudonymity means using a pseudonym instead of one's "real" name. There are many reasons for users to use pseudoyms, for instance to: hide their gender, protect themselves against harassment, protect their families' privacy, frankly discuss sexuality, or develop a artistic or journalistic persona without retribution from an employer, (potential) customers, or social surrounding. {{geekfeminism}} The difference between anonymity and pseudonymity is that a pseudonym often is persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
 
@@ -1792,7 +1792,7 @@ Does the protocol provide ways for initiators to limit which information is shar
 Does the protocol provide ways for initiators to express individuals' preferences to recipients or intermediaries with regard to the collection, use, or disclosure of their personal data?
 
 Explanation:
-Confidentiality refers to keeping your data secret from unintended listeners {{BCP72}}. The growth of the Internet depends on users having confidence that the network protects their private information {{RFC1984}}.
+Confidentiality refers to keeping your data secret from unintended listeners {{BCP72}}. The growth of the Internet depends on users having confidence that the network protects their personal data {{RFC1984}}.
 
 Example:
 Protocols that do not encrypt their payload make the entire content of the communication available to the idealized attacker along their path. Following the advice in {{RFC3365}}, most such protocols have a secure variant that encrypts the payload for confidentiality, and these secure variants are seeing ever-wider deployment. A noteworthy exception is DNS {{RFC1035}}, as DNSSEC {{RFC4033}}does not have confidentiality as a requirement.  This implies that, in the absence of changes to the protocol as presently under development in the IETF's DNS Private Exchange   (DPRIVE) working group, all DNS queries and answers generated by the activities of any protocol are available to the attacker.  When store-and-forward protocols are used (e.g., SMTP {{RFC5321}}), intermediaries leave this data subject to observation by an attacker that has compromised these intermediaries, unless the data is    encrypted end-to-end by the application-layer protocol or the implementation uses an encrypted store for this data {{RFC7624}}.
@@ -1815,9 +1815,7 @@ Example:
 Integrity verification of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle changing the content of the data. In practice this looks as follows:
 
 Alice wants to communicate with Bob.  
-Alice sends data to Bob.  
-Corinne intercepts the data sent to Bob.  
-Corinne reads and alters the message to Bob.  
+Corinne forges and sends a message to Bob, impersonating Alice.
 Bob cannot see the data from Alice was altered by Corinne.  
 Corinne intercepts and alters the communication as it is sent between Alice and Bob.  
 Corinne is able to control the communication content.  
@@ -1833,7 +1831,7 @@ Question(s):
 Do you have sufficient measures to confirm the truth of an attribute of a single piece of data or entity? Can the attributes get garbled along the way (see security)? If relevant have you implemented IPsec, DNSsec, HTTPS and other Standard Security Best Practices?
 
 Explanation:
-Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent attacks or unauthorized access and use of data.
+Authenticity ensures that data does indeed come from the source it claims to come from. This is important to prevent certain attacks or unauthorized access and use of data.
 
 Example:
 Authentication of data is important to prevent vulnerabilities and attacks, like man-in-the-middle-attacks. These attacks happen when a third party (often for malicious reasons) intercepts a communication between two parties, inserting themselves in the middle and posing as both parties. In practice this looks as follows:
@@ -1889,7 +1887,7 @@ externalities, of which spam is an example. Lack of data that could be used
 for billing and accounting can lead to so-called "free" arrangements which
 obscure the actual costs and distribution of the costs, for example the
 barter arrangements that are commonly used for Internet interconnection; and
-the commercial exploitation of private data for targeted advertising which
+the commercial exploitation of personal data for targeted advertising which
 is the most common funding model for the so-called "free" services such as
 search engines and social networks.
 
