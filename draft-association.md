@@ -447,53 +447,38 @@ Domain names allow hosts to be identified by human parsable information. Whereas
 
 The structuring of DNS as a hierarchical authority structure also brings about specific characteristic, namely the possibility of centralized policy making on the management and operation of domain names, which is what (in part) happens at ICANN. The impact of ICANN processes on human rights will not be discussed here. 
  
-### AS'es
+### ASes
 
-In order for edge-users to connect to the Internet, a user needs to be connected to an Automous System (AS) which, in turn, has peering relations with other AS'es. This means that in the process of accessing the Internet the edge-user needs to accept the policies and practices of the intermediary that provides them access to the other networks. In other words, for users to be able to join the 'network of networks', they always need to connect through an intermediary. 
+In order for edge-users to connect to the Internet, a user needs to be connected to an Automous System (AS) which, in turn, has peering or transit relations with other AS'es. This means that in the process of accessing the Internet the edge-user needs to accept the policies and practices of the intermediary that provides them access to the other networks. In other words, for users to be able to join the 'network of networks', they always need to connect through an intermediary. 
 
 While accessing the Internet through an intermediary, the user is forced to accept the policies, practices and principles of a network. This could impede the rights of the edge-user, depending on the implemented policies and practices on the network and how (if at all) they are communicated to them. For example: filtering, blocking, extensive logging or other invasive practices that are not clearly communicated to the user.
 
-In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an AS and engage in peering relation with other AS'es. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
+In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an AS and engage in peering relation with other ASes. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
 
 
 Discussion: The Internet as an association
 ==========================================
 
-It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. Taking this definition and the previous analysis into consideration, we argue that the Internet constitutes a an assembly and an association. What are the implications of this? Does it mean that every network is an assembly and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' assembly (the Internet) has prevails over the preferences of the smaller ones (individual AS'es)?
+It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. Taking this definition and the previous analysis into consideration, we argue that the Internet constitutes a an assembly and an association. What are the implications of this? Does it mean that every network is an assembly and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' assembly (the Internet) has prevails over the preferences of the smaller ones (individual AS'es)? 
+The demands that have been set for ASes is very limited and are based on routing principles: an AS must be used for exchanging external routing information with other ASes through BGP, should therefore use BGP and IP and have a routing policy {{RFC1930}}. So in order to be able to connect to the Internet as an AS, which means to engage in peering or transit relations, there are basic rules one needs to adhere to.  But theses rules do not say anything on how the AS will or should treat traffic on its network. In this regard, we must take into consideration that even things that are private, need to live up to standards because they have public consequences. If we take the example of ASes, we could say they are private infrastructure (therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure, from the moment the receive an Autonomous Systems Number. 
 
-In this regard, we must take into consideration that even things that are private, need to live up to standards because they have public consequences. If we take the example of autonomous infrastructures, we could say they are private infrastructure( therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure.
-## Why? 
-
-Could we therefore say that the 'publicness' of the network of networks, is what binds them? 
-## At the end, which definition of public are we taking? I insist: let's discuss by phone before I rant off something that doesn't make sense. LOL.
-
-## Some other ideas that we could fit in here (I'm not sure about the order, but I think they are good, so I'll put them in bullets): 
-
-* The internet as an association is democratic and inclusive, to the point that it enables more rights within its networks.
-
-* Lastly if we can therefore conclude that the Internet is an assembly and an association, and should be protected as such, we should also expand on the implications of the prohibition of forced association. Just as no one should be forced to belong to an association, no one should be forced to be online. The "right to be offline" could derive directly from recognizing the Internet as an assembly and association.
-
-* If the Internet is an association, any attack should be prevented and mitigated because it prevents the possibility of exercising a right to collective expression, which is consistent with {{BCP72}}.
-
+The Internet is made of up interconnected ASes (one would argue that this doesn't include IXPs, but most modern IXPs will have an ASN for their route server (and possibly a separate ASN for their management infrastructure), which jointly form an assembly and an association. This assembly and association should be protected. This means that rights and obligations that sterm from this organizational form, should also be protected and respected.
  
 Conclusions
 ===========
 
-- Internet has impact for on the ability for people to excercise their right to freedom of association and assembly.
+The Internet has an impact on the ability for people to excercise their right to freedom of association and assembly. The Internet, since its inception has enabled people to jointly communicate, collaborate and collaborate. The same could also be argued with relation to freedom of expression, some have argued that the text in article 19 of the {{UDHR}} reads like a description of the Internet:
 
-- To get access to the Internet one could argued on is caught in a forced assembly with the access network. 
+    [the] freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. {{UDHR}}
 
-- The Internet itself is a form of an associtation and assembly, and should thus be protected.
+The difference between freedom of expression and freedom of association and assembly is that the Internet itself takes the form on an association and assembly; it reproduces its features of collaboration. Recognizing this is a crucial step in determining architectural features of the Internet and its usage. 
 
-- It need to be further researched which level of the network is responsible for these impacts, and considerations could be developed for this. 
-
-Acknowledgements
-================
 
 Security Considerations
 =======================
 
 As this draft concerns a research document, there are no security considerations.
+
 
 IANA Considerations
 ===================
