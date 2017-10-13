@@ -263,7 +263,9 @@ This document aims to scope the relation between Internet protocols and the righ
 Introduction
 ============
 
-The Internet has become a central mediator for collective action and collaboration. This means the Internet has become a strong enabler of the rights to freedom of association and assembly. 
+The right to freedom of assembly and association protects collective expression, in turn, systems and protocols than enable communal communication between people and servers allow these rights to prosper. The Internet itself was originally designed as "a medium of communication for machines that share resources with each other as equals" {{NelsonHedlun}}, the Internet thus forms a basic infrastructure for the right freedom of assembly and association. 
+
+The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonimity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. 
 
 draft-irtf-hrpc-research established the relationship between human rights and Internet protocols, and it provides guidelines for considerations on the human rights impact of protocols. 
 
@@ -304,11 +306,7 @@ In order to answer the research questions, first a number of cases have been col
 
 Closed and centralized Internet platforms such as Facebook do not fall within the scope of this research.
 
-Subsequently 
-
-Secondly, we extrapolate the linguistic use of the word "network" in the offline world, with an online connected collective to determine if the Internet itself can be considered as an assembly or association. 
-
-## Changed the wording and structure a bit on the paragraph you had written. Also added a possible methodology for the second research question. 
+Subsequently we analyze the cases with the theoretical framework provided in the literature review and provide recommendations based on the findings.
 
 Literature Review
 =================
@@ -333,7 +331,9 @@ We are aware that some of these examples go beyond the use of Internet protocols
 Cases and examples
 ==================
 
-Whereas the right to freedom of assembly and association protects collective expression, systems and protocols than enable comunal communication between people or between servers allow these rights to prosper. The Internet itself was originally designed as "a medium of communication for machines that share resources with each other as equals" {{NelsonHedlun}}. In this sense, decentralized architectures that protect anonimity and privacy, assure a resilient network of speakers and recipients or receivers and thus ensure better conditions for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. Here we will discuss different cases to bring out the affordances of different protocols, technologies and architectual features. This issue is particularly timely since an increasing trend of centralization and consolidation on the Internet can be observed. This is trend can be parallely observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. Through the discussion of specific case we will try to further understand how this impact freedom of assembly, freedom of association as well as the distributed nature of the Internet {{RFC1287}}.
+The Internet has become a central mediator for collective action and collaboration. This means the Internet has become a strong enabler of the rights to freedom of association and assembly. 
+
+Here we will discuss different cases to bring out the characteristics and consequences of different protocols, technologies and architectural features. This issue is particularly timely since an increasing trend of centralization and consolidation on the Internet can be observed. This trend can be parallely observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. Through the discussion of specific case we will try to further understand how this impact freedom of assembly, freedom of association as well as the distributed nature of the Internet {{RFC1287}}.
 
 ## Communicating
 
