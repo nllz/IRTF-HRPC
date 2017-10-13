@@ -253,6 +253,36 @@ informative:
         - ins: Ooi, Beng Chin 
      target: "https://www.springer.com/cn/book/9783642035135"
 
+   Star:
+     title: The Ethnography of Infrastructure
+     date: 1999
+     author:
+        - ins: S.L. Star
+     target: http://journals.sagepub.com/doi/abs/10.1177/00027649921955326
+     seriesinfo: American Behavioral Scientist, Volume 43 (3), 377-391.
+
+   Schleuder:
+     title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+     author:
+        - org: Nadir
+     date 2017
+     target: https://schleuder.nadir.org/
+
+   Crawford:
+     title: "The WebRTC VPN “Bug” and How to Fix"
+     date: 2015
+     author: 
+        - ins: D. Crawford
+    target: https://www.bestvpn.com/the-webrtc-vpn-bug-and-how-to-fix-it/
+
+   RPZ:
+     title: DNS Response Policy Zones (RPZ)
+     date: 2017
+     author:
+        - ins: P. Vixie
+        - ins: V. Schyver
+     target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
+
 --- abstract
 
 This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. As there have been methods of protest on the Internet -a form of freedom of assembly- that have proven to be harmful to connectivity and infrastructure, such as DDoS attacks, this text aims to document forms of protest, association and assembly that do not have a negative impact on the Internet infrastructure.
@@ -302,11 +332,9 @@ Research questions
 Methodology
 ============
 
-In order to answer the research questions, first a number of cases have been collected to analyze where Internet infrastructure and protocols have either enabled or inhibited groups of people to collaborate, cooperate or communicate. This overview does not aim to cover all possible ways in which people can collectively organize or reach out to each other using Internet infrastructure and Internet protocols, but rather cover typical uses. 
+In order to answer the research questions, first a number of cases have been collected to analyze where Internet infrastructure and protocols have either enabled or inhibited groups of people to collaborate, cooperate or communicate. This overview does not aim to cover all possible ways in which people can collectively organize or reach out to each other using Internet infrastructure and Internet protocols, but rather cover typical uses in an effort of doing an ethnography of infrastructure {{Star}}. Subsequently we analyze the cases with the theoretical framework provided in the literature review and provide recommendations based on the findings.
 
-Closed and centralized Internet platforms such as Facebook do not fall within the scope of this research.
-
-Subsequently we analyze the cases with the theoretical framework provided in the literature review and provide recommendations based on the findings.
+The scope of this research is open protocols and architectures developed in the IETF, thus closed and centralized Internet platforms such as Facebook do not fall within the scope of this research.
 
 Literature Review
 =================
@@ -345,13 +373,17 @@ Since the beginning of the Internet mailing lists have been a key site of assemb
 
 In 1971, four years after the invention of email, the first mailing list was created to talk about the idea of using Arpanet for discussion. By this time, what had initially propelled the Arpanet project forward as a resource sharing platform was gradually replaced by the idea of a network as a means of bringing people together {{Abbate}}. More than 45 years after, mailing lists are pervasive and help communities to engage, have discussion, share  information, ask questions, and build ties. Even as social media and discussion forums grew, mailing lists continue to be widely used {{AckermannKargerZhang}}. They are a crucial tool to organise groups and individuals around themes and causes {{APC}}.
 
+Mailinglist are still in wide use, also in the IETF because they allow for easy association and allow people to subscribe (join) and unsubscribe (leave) as they please. They also allow for association of specific groups on closed lists. Finally the archival function allows for accountabilty. The downsides of mailinglists are similar to the ones generally associated with e-mail, except that end-to-end encryption such as OpenPGP {{RFC4880}} and S/MIME {{RFC5751}} is not possible because the final recipients are not known. There have been expirimental solutions to address this issues such as Schleuder {{Schleuder}}, but this has not been standardized or widely deployed.
+
 ### Multi-party video conferencing and risks
 
 Multi-party video conferencing protocols such as WebRTC {{RFC6176}} {{RFC7118}} allow for robust, bandwidth-adaptive, wideband and super-wideband video and audio discussions in groups. 'The WebRTC protocol was designed to enable responsive real-time communications over the Internet, and is instrumental in allowing streaming video and conferencing applications to run in the browser. In order to easily facilitate direct connections between computers (bypassing the need for a central server to act as a gatekeeper), WebRTC provides functionality to automatically collect the local and public IP addresses of Internet users (ICE or STUN). These functions do not require consent from the user, and can be instantiated by sites that a user visits without their awareness. The potential privacy implications of this aspect of WebRTC are well documented, and certain browsers have provided options to limit its behavior.' {{AndersonGuarnieri}}.
 
 'The disclosure of network addresses presents a specific risk to individuals that use privacy tools to conceal their real IP address to sites that they visit. Typically, when a user browses the Internet over a VPN, the only address that should be recorded by sites they visit would be that of the VPN provider itself. Using the WebRTC STUN function allows a site to additionally enumerate the addresses that are associated with the computer that the visitor is using – rather than those of intermediaries. This means that if a user is browsing the Internet on an ADSL connection over a VPN, a malicious site they visit could potentially surreptitious record the home address of the user.' {{AndersonGuarnieri}}.
 
-While facilitating freedom of assembly and association multi-party video conferencing tools might pose concrete risks for those who use them. One the one hand WebRTC is providing a resilient channels of communications, but on the other hand it also exposed information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that.  The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right to freedom of assembly or association.
+While facilitating freedom of assembly and association multi-party video conferencing tools might pose concrete risks for those who use them. One the one hand WebRTC is providing a resilient channels of communications, but on the other hand it also exposes information about those who are using the tool which might lead to increased surveillance, identification and the consequences that might be derived from that. This is especially concerning because the usage of a VPN does not protect against the exposure of IP addresses {{Crawford}}. 
+
+The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right to freedom of assembly or association.
 
 
 ## Peer-to-peer networks and systems
@@ -359,12 +391,10 @@ While facilitating freedom of assembly and association multi-party video confere
 At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices. According to {{Benkler}}, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}. 
 
 In his book The Wealth of Networks, Benkler significantly expands on his definition of commons-based peer production. According to Benkler, what distinguishes commons-based production is that it doesn't rely upon or propagate proprietary knowledge: "The inputs and outputs of the process are shared, freely or conditionally, in an institutional form that leaves them equally available for all to use as they choose at their individual discretion." {{Benkler}} To ensure that the knowledge generated is available for free use, commons-based projects are often shared under an open license.
-## These two are old paragraphs about peer production. We left P2P because it is more directly related to protocols. I think this looks better as an introduction to the topic. Does it make sense? I like the idea of having an introduction to each topic?
-## Is is here where you say the "Benkler" citation gets confusing? #LostHere
 
 ### Peer-to-peer system achitectures
 
-Peer-to-peer (P2P) is esentially a model of how people interact in real life because "we deal directly with one another whenever we wish to" {{Vu}}. Usually if we need something we ask our peers, who in turn refer us to other peers. In this sense, the ideal definition of P2P is that "nodes are able to directly exchange resources and services between themselves without the need for centralized servers" and where each participating node typically acts both as a server and as a client {{Vu}}. In RFC 5694 it has been defined that peers or nodes should be able to communicate directly between themselves without passing intermediaries, and that the system should be self organizing and have decentralized control {{RFC5694}}. With this in mind, the ultimate model of P2P is a completely decentralized system, which is more resistant to speech regulation, immune to single points of failure and have a higher performance and scalability. Nonetheless, in practice some P2P systems are supported by centralized servers and some others have hybrid models where nodes are organized into two layers: the upper tier servers and the lower tier common nodes {{Vu}}.
+Peer-to-peer (P2P) is esentially a model of how people interact in real life because "we deal directly with one another whenever we wish to" {{Vu}}. Usually if we need something we ask our peers, who in turn refer us to other peers. In this sense, the ideal definition of P2P is that "nodes are able to directly exchange resources and services between themselves without the need for centralized servers" and where each participating node typically acts both as a server and as a client {{Vu}}. In RFC 5694 P2P has been defined as peers or nodes that should be able to communicate directly between themselves without passing intermediaries, and that the system should be self-organizing and have decentralized control {{RFC5694}}. With this in mind, the ultimate model of P2P is a completely decentralized system, which is more resistant to speech regulation, immune to single points of failure and have a higher performance and scalability. Nonetheless, in practice some P2P systems are supported by centralized servers and some others have hybrid models where nodes are organized into two layers: the upper tier servers and the lower tier common nodes {{Vu}}.
 
 Since the ARPANET project, the original idea behind the Internet was conceived as what we would now call a peer-to-peer system {{RFC0001}}. Over time it has increasingly shifted towards a client/server model with "millions of consumer clients communicating with a relatively priviledged set of servers" {{NelsonHedlun}}. Whether for resource sharing or data sharing, P2P systems are a form of enabling freedom of assembly and association. Not only they allow for effective dissemination of information, but they also because leverage computing resources by diminishing costs allowing for the formation of open collectives at the network level. At the same time, in completely descentralized systems the nodes are autonomous and can join or leave the network as they want also makes the system unpredicable: a resource might be only sometimes available, and some others it might be missing or incomplete {{Vu}}. Lack of information might in turn make association or assembly more difficult. 
 
@@ -376,11 +406,15 @@ Ever since developers needed to collaboratively write, maintain and discuss larg
 
 A version control system is a piece of software that enables developers on a software team to work together and also archive a complete history of their work {{Sink}}. This allows teams to be working simultaneously on updated. According to Sink, broadly speaking, the history of version control tools can be dividied into three generations. In the first one, concurrent development meant that only one person could be working on a file at a time. The second generation tools permit simultaneous modifications as long as users merge the current revisions into their work before they are allowed to commit. The hird generation tools allow merge and commit to be separated {{Sink}}.
 
-## As you see, I moved what we had here about peer-production to the top the general subject of the introduction. In this part we should focus only on Version Control. I didn't find much literature. Do you think you can expand here? 
+Interestingly no version control system has ever been standardized in the IETF whereas the version control systems like Subversion and Git have are widely used within the community, as well as by working groups. There has been a spirited discussion on whether working groups should use centralized forms of the Git protocol, such as those offered by Gitlab or Github. Proponents argue that this simplifies the workflow and allows for a more transparent workflow. Opponents argue that the relience on a centralized service which is not merely using the Git protocol, but also used non-standardize options like an Issue-Tracker, makes the process less transparent and reliant on a third party. 
+
+The IETF has not made a decision on the use of centralized instances of git, such as Github or Gitlab. There have been two efforts to standardize the workflow vis a vis these third party services, but these haven't come to fruition:
+https://www.ietf.org/archive/id/draft-nottingham-wugh-services-00.txt
+https://www.ietf.org/archive/id/draft-thomson-github-bcp-00.txt
 
 ## Reaching out
 
-In the meatspace, handing out pamphlets and reaching out to unknown people is the most common way for growing a cause and seeking collective support. The characteristics of the Internet infrastructure and online space make reaching out more difficult.
+In meatspace, handing out pamphlets and reaching out to unknown people is the most common way for growing a cause and seeking collective support. The characteristics of the Internet infrastructure and online space make reaching out more difficult.
 
 ### Spam, filter bubbles, and unrequested messaging
 
@@ -390,7 +424,9 @@ This leaves us with an interesting case: spam is currently handled mostly by mai
 
 While this protects the user from being confronted with unwanted messages, it also makes it legally and technically very difficult to communicate a message to someone who did not explicitly ask for this. In public offline spaces we regularly get exposed to flyers, invitations or demonstrations where our opinions get challenged, or we are invited to consider different viewpoints. There is no equivalent on the Internet with the technical and legal regime that currently operates in it. In other words, it is nearly impossible  to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called ‘filter bubble’: “The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It’s a cozy place, populated by our favorite people and things and ideas.” {{Pariser}}. “The filter bubble’s costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (…). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown.” {{Pariser}}.
 
-It seems that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression. This could be interpretated as an argument for the injection of unrequested messages, spam or other unrequested notifications. But the big difference between the proliferation of such messages offline and online is the investment that is needed. It is not hard for a single person to message a lot of people, whereas if that person needed to go house by house the scale and impact of their actions would be much smaller. 
+It seems that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression. This could be interpretated as an argument for the injection of unrequested messages, spam or other unrequested notifications. But the big difference between the proliferation of such messages offline and online is the investment that is needed. It is not hard for a single person to message a lot of people, whereas if that person needed to go house by house the scale and impact of their actions would be much smaller. Inversely if it were a common practice to expose people to unwanted messages online, users would be drowned in such messages, and no expression would be possible anymore.  Allowing illimited sending of unsolicited messages would be a blow against freedom of speech: when everyone talks, nobody listens. 
+
+Here the argument is very similar to DDoS attacks: whereas one could argue for legitimate uses in limited specific cases, these would be drowned out by a malicious use which constitutes an attack on the internet infrastructure and thus the assembly or association itself.
 
 ### Distributed Denial of Service Attacks
 
@@ -407,32 +443,23 @@ Collective identities are also protected by freedom of association and assembly.
 
 ### DNS
 
-Domain names allow hosts to be identified by human parsable information. Whereas an IP address might not be the expression of an identity, a domain name can be, and often is. On the other hand the grouping of a certain identity under a specific domain, or even a Top Level Domain, also brings about risks because connecting an identity to a hierarchically structured identifier systems also bring risks about. Some of these risks are the surveillance of the services running on the domain, domain based censorship, or impersonation of the domain through DNS cache poisoning. Several technologies have been developed in the IETF to mitigated these risks such as DNS over TLS {{RFC7858}}, DNSSEC, and TLS. 
-## Do we need to update this with more recent discussions about TLS? Just one line. A reference. I don't know.
+Domain names allow hosts to be identified by human parsable information. Whereas an IP address might not be the expression of an identity, a domain name can be, and often is. On the other hand the grouping of a certain identity under a specific domain or even a Top Level Domain brings about risks because connecting an identity to a hierarchically structured identifier systems creates a central attack surface. Some of these risks are the surveillance of the services running on the domain, domain based censorship {{RFC7754}}, or impersonation of the domain through DNS cache poisoning. Several technologies have been developed in the IETF to mitigated these risks such as DNS over TLS {{RFC7858}}, DNSSEC {{RFC4033}}, and TLS {{RFC5246}}. These mitigations would, when implemented, not make censorship impossible, but rather make it visible. The use of a centralized authority always makes censorship through a registry or registrar possible, as well as by using a fake resolver or using proposed standards such as DNS Response Policy Zones {{RPZ}}.
 
 The structuring of DNS as a hierarchical authority structure also brings about specific characteristic, namely the possibility of centralized policy making on the management and operation of domain names, which is what (in part) happens at ICANN. The impact of ICANN processes on human rights will not be discussed here. 
  
-### ISPs
+### AS'es
 
-In order for edge-users to connect to the Internet, a user needs to be connected to a network. This means that in the process of accessing the Internet the edge-user needs to accept the policies and practices of the intermediary that provides them access to the other networks. In other words, for users to be able to join the 'network of networks', they always need to connect through an intermediary. 
-## Is there a way of saying this without having "network" being repeated so many times? The paragraph seems a bit confusing. I changed the first edge network to intermediary but then we have the same word twice.
+In order for edge-users to connect to the Internet, a user needs to be connected to an Automous System (AS) which, in turn, has peering relations with other AS'es. This means that in the process of accessing the Internet the edge-user needs to accept the policies and practices of the intermediary that provides them access to the other networks. In other words, for users to be able to join the 'network of networks', they always need to connect through an intermediary. 
 
 While accessing the Internet through an intermediary, the user is forced to accept the policies, practices and principles of a network. This could impede the rights of the edge-user, depending on the implemented policies and practices on the network and how (if at all) they are communicated to them. For example: filtering, blocking, extensive logging or other invasive practices that are not clearly communicated to the user.
 
-In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an Autonomous System. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
+In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an AS and engage in peering relation with other AS'es. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network. 
 
-## What does it mean that it is not trivial for an edge-user to operate on an Autonomous System? Why? Expensive? Big learning curve? Don't assume people know.
 
 Discussion: The Internet as an association
 ==========================================
 
-It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. 
-
-Taking this definition into consideration, we could say the networked internet constitutes a big collective, and thus an assembly and an association. It is by definition, the means that allows people to connect and get together. 
-
-What are the implications of this? Does it mean that every network is an assembly and has absolute freedom to implement its own rules? Or does the 'larger' assembly has more rights than the smaller ones?
-
-## We are missing a link to connect this idea with the following. I'm a bit burnt. Let's discuss on the phone.
+It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. Taking this definition and the previous analysis into consideration, we argue that the Internet constitutes a an assembly and an association. What are the implications of this? Does it mean that every network is an assembly and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' assembly (the Internet) has prevails over the preferences of the smaller ones (individual AS'es)?
 
 In this regard, we must take into consideration that even things that are private, need to live up to standards because they have public consequences. If we take the example of autonomous infrastructures, we could say they are private infrastructure( therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure.
 ## Why? 
