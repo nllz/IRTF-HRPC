@@ -1,7 +1,7 @@
 --- 
 title: Unrequested Communications
 abbrev: hrpcurq
-docname: draft-tenoever-unrequested
+docname: draft-tenoever-hrpc-unrequested-00
 category: info
 
 ipr: trust200902
@@ -27,36 +27,51 @@ author:
        organization: ARTICLE 19
        email: niels@article19.org
 
+-
+       ins: G. Perez de Acha
+       name: Gisela Perez de Acha
+       organization: Derechos Digitales
+       email: gisela@derechosdigitales.org
+
+-
+       ins: C.J.N. Cath
+       name: Corinne Cath
+       organization: Oxford Internet Institute
+       email: corinnecath@gmail.com
+
 
 normative:
   
 informative: 
    
    RFC4949:
+   RFC7258:
 
    UDHR:
      title: The Universal Declaration of Human Rights
      date: 1948
      author:
-        org: United Nations General Assembly
+        - org: United Nations General Assembly
      target:  http://www.un.org/en/documents/udhr/
 
    ICCPR:
      title: International Covenant on Civil and Political Rights
      date: 1976
      author:
-        org: United Nations General Assembly
+        - org: United Nations General Assembly
      target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
    
    Zuckerman: 
      title: Report on Distributed Denial of Service (DDoS) Attacks 
-     date: 2010 author: 
+     date: 2010 
+     author: 
         - ins: E. Zuckerman 
         - ins: H. Roberts 
         - ins: R. McGrady 
         - ins: J. York 
         - ins: J. Palfrey 
-     target: https://cyber.law.harvard.edu/sites/cyber.law.harvard.edu/files/2010_DDoS_Attacks_Human_Rights_and_Media.pdf seriesinfo: The Berkman Center for Internet and Society at Harvard University
+     target: https://cyber.law.harvard.edu/sites/cyber.law.harvard.edu/files/2010_DDoS_Attacks_Human_Rights_and_Media.pdf
+     seriesinfo: The Berkman Center for Internet and Society at Harvard University
 
    Sauter: 
      title: The Coming Swarm 
@@ -87,9 +102,26 @@ informative:
      seriesinfo: Daedalus Winter 2016, Vol. 145, No. 1. p. 9–17 
      target: http://www.mitpressjournals.org/toc/daed/current
 
+   Pariser:
+      title: "The Filter Bubble: How the New Personalized Web Is Changing What We Read and How We Think"
+      date: 2012
+      author: 
+        - ins: E. Pariser
+      seriesinfo: Peguin Books, London.
+
+   Marcus:
+      title: "Commercial Speech on the Internet: Spam and the first amendment"
+      date: 1998
+      author: 
+        - ins: J. A. Marcus
+      target: http://www.cardozoaelj.com/wp-content/uploads/2013/02/Marcus.pdf
+#      seriesinfo: "Cardozo Arts & Entertainment"
+
+
+
 --- abstract
 
-This document addresses the topic of unrequested traffic in the form of spam or DDoS attacks. Instead of solely discussing these topics from a mere technical angle, it also addressed human rights implications of unrequested traffic.
+This document addresses the topic of unrequested traffic in the form of spam or DDoS attacks. Instead of solely discussing these topics from a mere technical angle, it also addresses human rights implications of unrequested traffic.
 
 --- middle
 
@@ -97,17 +129,29 @@ This document addresses the topic of unrequested traffic in the form of spam or 
 Introduction
 ============
 
+While researching the human rights impact of the Internet infrastructure we came across several cases which called upon the need to balance rights. The balancing of human rights {{UDHR}} {{ICCPR}} is a process in which two conflicting rights, or two uses of the same right, need to be reconciled.
 
-
-
-
+We will specifically look at Distributed Denial of Service (DDoS) attacks as well as unwanted messaging such as spam.
+ 
 Glossary
 ========
 
+Research Questions
+==================
 
+Overal question:
 
-DDOS Attacks
-============
+- Should the IETF develop or change its position on unrequested messaging
+
+Specific questions
+
+- Are Distributed Denial of Service (DDoS) attacks a legitimate form of online protest protected by the right to freedom of speech and association?
+- Is spam a legitimate way of making use of the right to freedom of expression?
+
+Analysis
+========
+
+## DDOS Attacks
 
 Are Distributed Denial of Service (DDoS) attacks a legitimate form of online protest protected by the right to freedom of speech and association? Can they be seen as the equivalent to 'million-(wo)men marches', or sit-ins? Or are they a threat to freedom of expression and access to information, by limiting access to websites and in certain cases the freedom of speech of others? These questions are crucial in our day and age, where political debates, civil disobedience and other forms of activism are increasingly moving online.
 
@@ -127,6 +171,25 @@ David Clark recently published a paper warning that the future of the Internet i
 
 In summation, the IETF cannot be expected to take a moral stance on DDoS attacks, or create protocols to enable some attacks and inhibit others. But what it can do is critically reflect on its role in creating a commercialized Internet without a defacto public space or inherent protections for freedom of speech.
 
+## Spam, filter bubbles, and unrequested messaging
+
+In the 1990s as the internet became more and more commercial, spam came to be defined as irrelevant or unsolicited messages that were porsted many times to multiple news groups or mailing lists {{Marcus}}. Here the question of consent is crucial. In the 2000s a large part of the discussion revolved around the fact that certain corporations -protected by the right to freedom of association- considered spam to be a form of "comercial speech", thus encompassed by free expression rights {{Marcus}}. Nonetheless, if we consider that the rights to assembly and association also mean that "no one may be compelled to belong to an association" {{UDHR}}, spam infringes both rights if an op-out mechanism is not provided and people are obliged to receive unwanted information, or be reached by people they do not know.
+
+This leaves us with an interesting case: spam is currently handled mostly by mailproviders on behalf of the user, next to that countries are increasingly adopting opt-in regimes for mailinglists and commercial e-mail, with a possibility of serious fines in case of violation.
+
+While this protects the user from being confronted with unwanted messages, it also makes it legally and technically very difficult to communicate a message to someone who did not explicitly ask for this. In public offline spaces we regularly get exposed to flyers, invitations or demonstrations where our opinions get challenged, or we are invited to consider different viewpoints. There is no equivalent on the Internet with the technical and legal regime that currently operates in it. In other words, it is nearly impossible  to provide information, in a proportionate manner, that someone is not explicility expecting or asking for. This reinforces a concept that is regularly discussed on the application level, called ‘filter bubble’: “The proponents of personalization offer a vision of a custom-tailored world, every facet of which fits us perfectly. It’s a cozy place, populated by our favorite people and things and ideas.” {{Pariser}}. “The filter bubble’s costs are both personal and cultural. There are direct consequences for those of us who use personalized filters. And then there are societal consequences, which emerge when masses of people begin to live a filter bubbled-life (…). Left to their own devices, personalization filters serve up a kind of invisible autopropaganda, indoctrinating us with our own ideas, amplifying our desire for things that are familiar and leaving us oblivious to the dangers lurking in the dark territory of the uknown.” {{Pariser}}.
+
+It seems that the ‘filter bubble’-effect can also be observed at the infrastructure level, which actually strenghtens the impact and thus hampers the effect of collective expression. This could be interpretated as an argument for the injection of unrequested messages, spam or other unrequested notifications. But the big difference between the proliferation of such messages offline and online is the investment that is needed. It is not hard for a single person to message a lot of people, whereas if that person needed to go house by house the scale and impact of their actions would be much smaller. Inversely if it were a common practice to expose people to unwanted messages online, users would be drowned in such messages, and no expression would be possible anymore.  Allowing illimited sending of unsolicited messages would be a blow against freedom of speech: when everyone talks, nobody listens. 
+
+Here the argument is very similar to DDoS attacks: whereas one could argue for legitimate uses in limited specific cases, these would be drowned out by a malicious use which constitutes an attack on the internet infrastructure and thus the assembly or association itself.
+
+
+Conclusion
+==========
+
+While there might be narrow individual cases in which DDoS attacks or spam could be used to rightfully excercise freedom of expression, overal DDoS and spam are a self-defeating practice which harms both the Internet infrastructure and freedom of expression.
+
+The growing use of spam and DDoS attacks also leads to an increased dependency of website owners to rely on third party services for DDoS protection which leads to centralization and thus hampers the resilience of the Internet. Furthermore the increase in spam attacks makes it harder for individuals to run a mailserver because of risks for hijacking and blacklisting of the mailserver, as well as the difficulties in filtering spam from messages that are actually wanted.
 
 
 Security Considerations
