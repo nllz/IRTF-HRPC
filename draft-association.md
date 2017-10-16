@@ -41,14 +41,20 @@ informative:
    RFC0155: 
    RFC1211:
    RFC1287:
+   RFC1930:
    RFC3233:
    RFC1958:
    RFC4084:
+   RFC4033:
+   RFC4880:
    RFC4949:
+   RFC5246:
    RFC5694:
+   RFC5751:
    RFC6176:
    RFC6973:
    RFC7118:
+   RFC7754:
    RFC7858:
 
    UDHR:
@@ -259,13 +265,13 @@ informative:
      author:
         - ins: S.L. Star
      target: http://journals.sagepub.com/doi/abs/10.1177/00027649921955326
-     seriesinfo: American Behavioral Scientist, Volume 43 (3), 377-391.
+     seriesinfo: "American Behavioral Scientist, Volume 43 (3), 377-391."
 
    Schleuder:
-     title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+     title: "Schleuder - A gpg-enabled mailinglist with remailing-capabilities."
      author:
         - org: Nadir
-     date 2017
+     date: 2017
      target: https://schleuder.nadir.org/
 
    Crawford:
@@ -273,15 +279,22 @@ informative:
      date: 2015
      author: 
         - ins: D. Crawford
-    target: https://www.bestvpn.com/the-webrtc-vpn-bug-and-how-to-fix-it/
+     target: https://www.bestvpn.com/the-webrtc-vpn-bug-and-how-to-fix-it/
 
    RPZ:
-     title: DNS Response Policy Zones (RPZ)
+     title: "DNS Response Policy Zones (RPZ)"
      date: 2017
      author:
         - ins: P. Vixie
         - ins: V. Schyver
      target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
+
+   Sink:
+     title: Version Control by Example
+     date: 2011
+     author:
+        - ins: E. Sink
+     target: http://ericsink.com/vcbe/
 
 --- abstract
 
@@ -351,7 +364,7 @@ The right to freedom of assembly and association is crucial for the Internet, ev
 
 The Internet is increasingly being used as a platform for protest. Digital technologies play an important role "by helping individuals and groups to organise and plan effectively and quickly, respond to certain events, or document and report on protests "{{ARTICLE19}}. According to Hussain and Howard the Internet helped to "build solidarity networks and identification of collective identities and goals", facilitate protest, "extend the range of local coverage to international broadcast networks" and as platform for contestation for the future of "the future of civil society and information infrastructure" {{HussainHoward}}. 
 
-Protests are no longer limited to public physical spaces: squares, streets or parks. Technology "makes it possible for people to 'gather' in online spaces and engage in new forms of 'virtual' protest" {{AARTICLE19}}. Online association and assembly are crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. 
+Protests are no longer limited to public physical spaces: squares, streets or parks. Technology "makes it possible for people to 'gather' in online spaces and engage in new forms of 'virtual' protest" {{ARTICLE19}}. Online association and assembly are crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. 
 
 We are aware that some of these examples go beyond the use of Internet protocols and flow over into the applications layer or examples in the offline world whereas the purpose of the following document is to break down the relationship between Internet protocols and the right to freedom of assembly and association. Nonetheless, given that protocols are a part of the socio-technical ordering of the world, we do recognize that in some cases the line between them and applications, implementations, policies and offline realities are often blurried and hard (if not impossible) to differentiate.
 
@@ -469,7 +482,7 @@ Conclusions
 
 The Internet has an impact on the ability for people to excercise their right to freedom of association and assembly. The Internet, since its inception has enabled people to jointly communicate, collaborate and collaborate. The same could also be argued with relation to freedom of expression, some have argued that the text in article 19 of the {{UDHR}} reads like a description of the Internet:
 
-    [the] freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. {{UDHR}}
+   [the] freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. {{UDHR}}
 
 The difference between freedom of expression and freedom of association and assembly is that the Internet itself takes the form on an association and assembly; it reproduces its features of collaboration. Recognizing this is a crucial step in determining architectural features of the Internet and its usage. 
 
