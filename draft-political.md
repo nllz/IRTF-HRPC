@@ -1,7 +1,7 @@
 --- 
 title: On the Politics of Standards
 abbrev: politix
-docname: draft-tenoever-hrpc-political-01
+docname: draft-tenoever-hrpc-political-02
 category: info
 
 ipr: trust200902
@@ -36,6 +36,7 @@ author:
        name: Amelia Andersdotter
        organization: ARTICLE 19
        email: amelia@article19.org
+
 normative:
   
 informative: 
@@ -283,7 +284,7 @@ A formalised standard does not stop competition between entities working to real
 
 Standards may not only exist in the form of a formal document laid down by an organisation gathering many different parties of different backgrounds behind a single, converging process. We also speak of de facto standards: the rules governing a technological base used by downstream market actors, such that, even if the rules have not been decided by many different entities they still constitute the effective boundary within which downstream innovation and development occurs. De facto standards can arise in market situations where one entity is particularly dominant, and may or may not lead to technical difficulties in challenging the dominant entity's technological base {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to be able to restrict competition for downstream services for PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}. If such restrictions are found to apply, the resolution may entail obligations on the restrictive party to grant a license (if a failure to grant a license to the standard was the cause of the restriction) or arrange the technical solution in such a way that restrictions do not arise.
 
-Standards development faces a number of economic and organisational challenges that are well-studied: the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. The first problem may, on the one hand, be described as just the sheer organisational costs: how do you create platforms, especially global platforms, that are accessible in terms of price and time, when implementors affected by the standards produced may include any range of entities with different economic means and resources (in the specific context of the IETF some issues of this nature are considered in {{draft-finance-thoughts}} and its references, but challenges are clearly universal in nature). It also incorporates the problem of too many cooks spoiling the broth: if the interests of a large number of entities need to converge around a single solution, by which mechnism does one mitigate the inconvenience of differing opinions or preferences between the parties reducing the over-all utility of the final compromise {{xkcd927}} .
+Standards development faces a number of economic and organisational challenges that are well-studied: the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. The first problem may, on the one hand, be described as just the sheer organisational costs: how do you create platforms, especially global platforms, that are accessible in terms of price and time, when implementors affected by the standards produced may include any range of entities with different economic means and resources (in the specific context of the IETF some issues of this nature are considered in {{draft-finance-thoughts}} and its references, but challenges are clearly universal in nature). It also incorporates the problem of too many cooks spoiling the broth: if the interests of a large number of entities need to converge around a single solution, by which mechnism does one mitigate the inconvenience of differing opinions or preferences between the parties reducing the over-all utility of the final compromise {{xkcd927}}.
 
 The standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. With openness, we understand that the standards were available at no cost to anyone around the world. Internet standardisation set itself apart from traditional standard bodies by not requiring implementors to pay a subscription fee to have access to the texts of codified standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work.
 
@@ -304,22 +305,24 @@ Coordinating transnational stakeholders in a process of negotiation and
 agreement through the development of common rules is a form of global governance {{Nadvi}}. Standards are among the mechanisms by which this governance is achieved. Conformance to certain standards is often a basic condition of participation in international trade and communication, so there are strong economic and political incentives to conform, even in the absence of legal requirements {{Russell}}. {{RogersEden}} argue: 
     As unequal participants compete to define standards, technological compromises emerge, which add complexity to standards. For instance, when working group participants propose competing solutions, it may be easier for them to agree on a standard that combines all the proposals rather than choosing any single proposal. This shifts the responsibility for selecting a solution onto those who implement the standard, which can lead to complex implementations that may not be interoperable. On its face this appears to be a failure of the standardization process, but this outcome may benefit certain participants— for example, by allowing an implementer with large market share to establish a de facto standard within the scope of the documented standard.
 
-# Weakening of encryption standards by governmental actors
 
 The need for a positioning
 ==========================
 
-It is indisputable that the Internet plays an increasing and increasingly important role in the lives of individuals.  Those who produce interoperability standards for the Internet infrastructure are to some extent automatically implicated in that development. It cannot ordain what standards are to be used on the networks. The RFC producing community should not go outside of its mission to advocate for a specific use of protocols. At the same time, it may be useful for those producing Internet standards to take into account the political aspects or implications of that work.  Some structure for doing so may be helpful both to authors of standards documents and for the IETF. 
+It is indisputable that the Internet plays an increasingly important role in the lives of individuals.  The community that procuces standards for the Internet therefore also has an increasing impact on society. The IETF cannot ordain what standards are to be used on the networks, but it does set open standards for interoperarability on the Internet, and has does so since the inception of the Internet. Therefore the standardization process of the IETF has influence and power. Because of the impact Internet standards have on society, the IETF should take into account the political aspects and implications of its work. 
 
 The risk of not doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance on behest of the influence of the IETF.
 
-This does not mean the IETF does not have a position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their stance with respect to the wider implications of that IETF work. 
+This does not mean the IETF does not have a position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work. 
 
 The way forward
 ===============
 
 There are instruments that can help the IETF develop an approach to address the politics of protocols. Part of this can be found in draft-irtf-hrpc-research as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community. 
 
+Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need to live with the fact standards bodies have a political nature {{Webster}}. This does not need to be problematic as long as there are sufficient accountability and transparency mecahnisms in place. The importance of these mechanisms increases with the importance of the standards and their implementations. The complexity of the work inscribes a requirement of competence in the work in the IETF, which forms an inherent barrier for end-user involvement. Even though this might not be intentional, it is a result of the interplay between the characteristics of the epistemic community in the IETF and the nature of the standard setting process.
+
+Rather than arguing for the fairly general blanket statement that 'standards are poltiical' {{Winner}} {{Woolgar}} we argue that we need to look at the politics of individual standards and invite document authorts and reviewers to take these dynamics into account. 
 
 Security Considerations
 ========================
