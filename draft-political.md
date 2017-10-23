@@ -217,6 +217,36 @@ informative:
       target: "http://curia.europa.eu/juris/liste.jsf?num=T-201/04"
       seriesinfo: "DG Comp’s Discussion Paper on Article 82, DG COMP, European Commission"
 
+   Hanseth:
+      title: Insribing Behaviour in Information Infrastructure Standards
+      date: 1997
+      author:
+        - ins: O. Hanseth
+        - ins: E. Monteiro
+      seriesinfo: Accounting, Management and Infomation Technology 7 (14) p.183-211
+
+   Woolgar:
+      title: "Configuring the user: the case of usability trials"
+      date: 1991
+      author: 
+         - ins: S. Woolgar
+      seriesinfo: "A sociology of monsters. Essays on power, technology and dominatior, ed: J. Law, Routeledge p. 57-102."
+
+   Winner:
+      title: "Upon openig the black box and finding it empty: Social constructivism and the philosophy of technology"
+      date: 1993
+      author:
+        - ins: L. Winner
+      seriesinfo: Science, Technology, and Human Values 18 (3) p. 362-378
+
+   Webster:
+      title: Networks of Collaboration or Conflict? The Development of EDI
+      date: 1995
+      author:
+        - ins: J. Webster
+      seriesinfo: "The social shaping of inter-organizational IT systems and data interchange, eds: I. McLougling & D. Mason, European Commission PICT/COST A4"
+
+
 --- abstract
 
 This document aims to outline different views on the relation between protocols and politics and seeks to answer the question whether protocols are political.
@@ -290,7 +320,7 @@ The standards enabling interoperating networks, what we think of today as the In
 
 On the one hand, this enables anyone willing and able to fulfill any standard requirement produced in the IETF. On the other hand, the costs and difficulties of organising many different entities in the standardisation process itself do not disappear only by making standards open and accessible to anyone seeking to implement them.
 
-The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras, 2013}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents {{Contreras, 2013}} which is a record number, even among other comparable standard organisations.
+The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents {{Contreras}} which is a record number, even among other comparable standard organisations.
 
 In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities. Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}).
 
