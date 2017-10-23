@@ -1,0 +1,24 @@
+Human Rights Protocols Considerations (hrpc) research group sessions at #IETF100, 9:30, November 17 2017
+
+- Beginning (5 min)
+	Jabber scribe, note takers
+	Agenda Bashing
+	Notewell
+	Introduction
+- Status of research group & documents
+- Context of research
+- Presentation + Q&A - Sandra Braman -  (40 mins)
+- Discussion of draft-tenoever-hrpc-association-02 (10 mins)
+- Discussion of draft-tenoever-hrpc-political-02 (10 mins)
+- Discussion of draft-tenoever-hrpc-unrequested-00 (5 mins)
+- Discussion of draft-nottingham-for-the-users-06 (10 mins)
+- Errata to HTTP status code 451 + HR considerations (10 mins)
+- Update on the status of RFC8280 (2 mins)
+- Discussion on way forward (draft-hrpc-expression/&-other-rights) (10 mins)
+- Report back on Public Interest Hackathon (10 mins)
+- Open discussion other drafts, papers, ideas
+- AOB
+
+
+
+
