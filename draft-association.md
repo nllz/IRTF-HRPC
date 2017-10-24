@@ -163,6 +163,21 @@ informative:
      target: http://revista.drclas.harvard.edu/book/student-activism
      seriesinfo: "ReVista. Harvard Review of Latin America (2012)."
      
+   Lessig:
+     title: Code and Other Laws of Cyberspace
+     date: 1999
+     author:
+        - ins: Lawrence Lessig
+     seriesinfo: "Basic Books, Inc. New York, NY, USA."
+
+   Boyle:
+     title: Foucault in Cyberspace: Surveillance, Sovereignty, and Hardwired Censors
+     date: 1997
+     author:
+        - ins: James Boyle
+     target: http://scholarship.law.duke.edu/faculty_scholarship/619/
+     seriesinfo: "66 University of Cincinnati Law Review 177-205 (1997)"
+     
    Abbate:
      title: Inventing the Internet
      date: 2013
@@ -218,6 +233,14 @@ informative:
         - ins: C. Anderson
         - ins: C. Guarnieri
       target: https://iranthreats.github.io/resources/webrtc-deanonymization/
+
+   Hildebrandt:
+      title: The rule of law in cyberspace?
+      date: 2013
+      author:
+        - ins: Mireille Hildebrandt
+      target: https://works.bepress.com/mireille_hildebrandt/48/download/
+      seriesinfo: "Inaugural Lecture at Institute of Computing and Information Sciences (iCIS), Radboud University Nijmegen, 22 December 2011"
 
    OSCE:
       title: Guidelines on Freedom of Peaceful Assembly 
@@ -352,22 +375,29 @@ The scope of this research is open protocols and architectures developed in the 
 Literature Review
 =================
 
-The right to freedom of assembly and association protects and enables collective action and expression {{UDHR}} {{ICCPR}}. These rights ensures everyone in a society has the opportunity to express the opinions they hold in common with others, which in turn facilitates dialogue among citizens, as well as with political leaders or governments {{OSCE}}. This is relevant because in the process of democratic delibration, causes and opinions are more widely heard when a group of people come together behind the same cause or issue {{Tocqueville}}. 
+The right to freedom of assembly and association protects and enables collective action and expression {{UDHR}} {{ICCPR}}. These rights ensures everyone in a society has the opportunity to express the opinions they hold in common with others, which in turn facilitates dialogue among citizens, as well as with political leaders or governments {{OSCE}}. They are relevant because in the process of democratic delibration, causes and opinions are more widely heard when a group of people come together behind the same cause or issue {{Tocqueville}}. 
 
-In international law, the right to freedom of assembly and association protects any collective, gathered either permanently or temporarily for "peaceful" purposes. We will later expand on the definitions and limits of "peacefulness" within these rights. For now it is important to underline the propery of "freedom" because the rights to freedom of association and assembly is voluntary and uncoerced: anyone can join or leave a group of choice, which in turn means on should not be forced to either join, stay or leave.
+In international law, the right to freedom of assembly and association protects any collective, gathered either permanently or temporarily for "peaceful" purposes. We will later expand on the definitions and limits of "peacefulness" within these rights. For now it is important to underline the propery of "freedom" because the rights to freedom of association and assembly is voluntary and uncoerced: anyone can join or leave a group of choice, which in turn means one should not be forced to either join, stay or leave.
 
-The difference between freedom of assembly and freedom of association is merely gradual one: the former tends to have an informal and ephemeral nature, whereas the latter refers to established and permanent bodies with specific objectives. Nonetheless, one and the other are protected to the same degree.
+The difference between freedom of assembly and freedom of association is merely a gradual one: the former tends to have an informal and ephemeral nature, whereas the latter refers to established and permanent bodies with specific objectives. Both freedoms are, regardless, protected to the same degree.
 
-An assembly is an intentional and temporary gathering of a collective in a private or public space for a specific purpose: demonstrations, indoor meetings, strikes, processions, rallies or even sits-in {{UNHRC}}. The right to protest is a conglomerate of various rights, and the right to assembly is one of them. Nonetheless protest, unlike assembly, involves an element of dissent that can be exercised individually whereas assembly always has a collective component {{ARTICLE19}}. Association on the other hand has a more formal and established nature. It refers to a group of individuals or legal entities brought together in order to collectively act, express, pursue or defend a field of common interests {{UNGA}}. Within this category we can think about civil society organizations, clubs, cooperatives, NGOs, religious associations, political parties, trade unions or foundations.
+An assembly is an intentional and temporary gathering of a collective in a private or public space for a specific purpose: demonstrations, indoor meetings, strikes, processions, rallies or even sits-in {{UNHRC}}. The right to protest is a conglomerate of various rights, and the right to assembly is one of them. Nonetheless protest, unlike assembly, involves an element of dissent that can be exercised individually whereas assembly always has a collective component {{ARTICLE19}}. 
 
-The right to freedom of assembly and association is crucial for the Internet, even if privacy and freedom of expression are the most discussed human rights when it comes to the online world. The IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussions, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}. 
+Association on the other hand has a more formal and established nature. It refers to a group of individuals or legal entities brought together in order to collectively act, express, pursue or defend a field of common interests {{UNGA}}. Within this category we can think about civil society organizations, clubs, cooperatives, NGOs, religious associations, political parties, trade unions or foundations.
 
-The Internet is increasingly being used as a platform for protest. Digital technologies play an important role "by helping individuals and groups to organise and plan effectively and quickly, respond to certain events, or document and report on protests "{{ARTICLE19}}. According to Hussain and Howard the Internet helped to "build solidarity networks and identification of collective identities and goals", facilitate protest, "extend the range of local coverage to international broadcast networks" and as platform for contestation for the future of "the future of civil society and information infrastructure" {{HussainHoward}}. 
+Internet-enabled technologies are increasingly being used as a platform for protest. Digital technologies play an important role "by helping individuals and groups to organise and plan effectively and quickly, respond to certain events, or document and report on protests "{{ARTICLE19}}. According to Hussain and Howard the Internet helped to "build solidarity networks and identification of collective identities and goals", facilitate protest, "extend the range of local coverage to international broadcast networks" and as platform for contestation for the future of "the future of civil society and information infrastructure" {{HussainHoward}}. 
 
 Protests are no longer limited to public physical spaces: squares, streets or parks. Technology "makes it possible for people to 'gather' in online spaces and engage in new forms of 'virtual' protest" {{ARTICLE19}}. Online association and assembly are crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. 
 
-We are aware that some of these examples go beyond the use of Internet protocols and flow over into the applications layer or examples in the offline world whereas the purpose of the following document is to break down the relationship between Internet protocols and the right to freedom of assembly and association. Nonetheless, given that protocols are a part of the socio-technical ordering of the world, we do recognize that in some cases the line between them and applications, implementations, policies and offline realities are often blurried and hard (if not impossible) to differentiate.
+Protocols are a part of the socio-technical ordering of the world. In this research paper, we recognize that the line between protocols and applications, implementations, policies and offline realities are often blurried and hard (if not impossible) to differentiate.
 
+## Freedom of Association in the IETF context
+
+The right to freedom of assembly and association is crucial for the Internet, even if privacy and freedom of expression have this far been most prominently explored in the online world. The IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is protected by freedom of assembly and association {{RFC3233}}. The voluntary nature of the IETF, as well as the freedom not to be coerced by the IETF to act against one's will, is protected by freedom of assembly and association. Discussions, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}. 
+
+While individual Internet-enabled services or platforms may be public or private to varying degrees, and thereby enable to effective enjoyment of the right to freedom of assembly and association in different ways and to various extents {{Lessig}}, {{Boyle}}, the standardised technical underpinnings of those services or platforms may influence the ease with which private or public platforms can choose to lend themselves to such public enjoyment. Within the framework of {{Hildebrandt}} it could be argued that protocols nudge (or empower) implementors to enable certain forms of enjoyments of these rights. Or that specifications for the protocols may at least attempt to void the specification of the protocol of any nudging or empowerment one way or the other. If a technical architecture can be made such that nudging, or empowerment, to the effect of making the enjoyment of the freedom to assembly and association by individual end-users or independent entities more difficult (consider, for instance, Videotex), the opposite may be true as well.
+
+In this view, it becomes relevant to assess the degree to which particular protocol design choices enable spaces opened up by the implementation of that protocol, to be spaces where freedom of assembly and association may be enjoyed.
 
 Cases and examples
 ==================
@@ -413,7 +443,7 @@ Since the ARPANET project, the original idea behind the Internet was conceived a
 
 Additionally, when one architecturally asseses the role of P2P systems on can say that: "The main advantage of centralized P2P systems is that they are able to provide a quick and reliable resource locating. Their limitation, however, is that the scalability of the systems is affected by the use of servers. While decentralized P2P systems are better than centralized P2P systems in this aspect, they require a longer time in resource locating. As a result, hybrid P2P systems have been introduced to take ad- vantages of both centralized and decentralized architectures. Basically, to maintain the scalability, similar to decentralized P2P systems, there are no servers in hybrid P2P systems. However, peer nodes that are more powerful than others can be se- lected to act as servers to serve others. These nodes are often called super peers. In this way, resource locating can be done by both decentralized search techniques and centralized search techniques (asking super peers), and hence the systems benefit from the search techniques of centralized P2P systems." {{Vu}}
 
-### Version control
+## Version control
 
 Ever since developers needed to collaboratively write, maintain and discuss large code basis for the Internet there have been different approaches of doing so. One approach is discussing code through mailing lists, but this has proven to be hard in case of maintaining the most recent versions. There are many different versions and characteristics of version control systems. 
 
@@ -456,7 +486,7 @@ Collective identities are also protected by freedom of association and assembly.
 
 ### DNS
 
-Domain names allow hosts to be identified by human parsable information. Whereas an IP address might not be the expression of an identity, a domain name can be, and often is. On the other hand the grouping of a certain identity under a specific domain or even a Top Level Domain brings about risks because connecting an identity to a hierarchically structured identifier systems creates a central attack surface. Some of these risks are the surveillance of the services running on the domain, domain based censorship {{RFC7754}}, or impersonation of the domain through DNS cache poisoning. Several technologies have been developed in the IETF to mitigated these risks such as DNS over TLS {{RFC7858}}, DNSSEC {{RFC4033}}, and TLS {{RFC5246}}. These mitigations would, when implemented, not make censorship impossible, but rather make it visible. The use of a centralized authority always makes censorship through a registry or registrar possible, as well as by using a fake resolver or using proposed standards such as DNS Response Policy Zones {{RPZ}}.
+Domain names allow hosts to be identified by human parsable information. Whereas an IP address might not be the expression of an identity, a domain name can be, and often is. On the other hand the grouping of a certain identity under a specific domain or even a Top Level Domain brings about risks, for connecting an identity to a hierarchically structured identifier systems creates a central attack surface. Some of these risks are the surveillance of the services running on the domain, domain based censorship {{RFC7754}}, or impersonation of the domain through DNS cache poisoning. Several technologies have been developed in the IETF to mitigated these risks such as DNS over TLS {{RFC7858}}, DNSSEC {{RFC4033}}, and TLS {{RFC5246}}. These mitigations would, when implemented, not make censorship impossible, but rather make it visible. The use of a centralized authority always makes censorship through a registry or registrar possible, as well as by using a fake resolver or using proposed standards such as DNS Response Policy Zones {{RPZ}}.
 
 The structuring of DNS as a hierarchical authority structure also brings about specific characteristic, namely the possibility of centralized policy making on the management and operation of domain names, which is what (in part) happens at ICANN. The impact of ICANN processes on human rights will not be discussed here. 
  
