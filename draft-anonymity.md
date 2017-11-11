@@ -32,6 +32,7 @@ normative:
 informative: 
 
    RFC3552:
+   RFC6235:
    RFC6973:
    RFC7258:
    RFC7626:
@@ -79,7 +80,7 @@ informative:
    
 --- abstract
 
-Anonymity is less discussed topic in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
+Anonymity is less discussed in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
 
 This document aims to break down the different meanings and implications of anonymity on a mediated computer network.
 
@@ -106,10 +107,10 @@ Anonymity
 : A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
 
 Linkability
-: Linkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
+: Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
 
 Pseudonymity
-: Dervided from pseudonym, a persistent identity which is not the same as the entity's given name.
+: Derided from pseudonym, a persistent identity which is not the same as the entity's given name.
 
 Unlinkability
 : Unlinkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -125,6 +126,20 @@ Unobservability
   : undetectability of the IOI against all subjects uninvolved in it and 
   : anonymity of the subject(s) involved in the IOI even against the other subject(s) involved in that IOI. {{AnonTerm}}
 
+It should be noted that the word "anonymity" is both very loaded
+politically (witness all the headlines about the "darknet") and poorly
+understood. Most texts talking about anonymity actually refer to
+pseudonymity (for instance, when people say that "Bitcoin is
+anonymous", while Bitcoin actually relies on linkability).
+
+Anonymity is strongly linked to unlinkability: if your actions are
+linkable, it suffices that one of them is tied to your identity, and
+anonymity is over.
+
+It should be noted that anonymity is not binary: there have been these
+recent years a lot of progress of desanonymisation techniques. Data is
+never fully "anonymous", it is only more or less anonymous. (See for
+instance RFC6235.) TODO examples of big data desanonymisation.
 
 Research Questions
 ==================
