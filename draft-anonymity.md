@@ -273,23 +273,9 @@ regarded as personal identifiers {{EUcourt}}. On the other hand, Bitcoin address
 are pseudonyms with limited linkability, since the user can always
 create a lot of them.
 
-<<<<<<< HEAD
-4. Could there be advice for protocol developers and implementers to improve anonymity?
-First, the protocol should avoid to have mandatory persistent
-identifiers.
-
-Even without persistent identifiers, anonymity could be broken by
-examining the patterns of access. If an user visits each morning the
-three same Web sites, always in the same order, it will be easy to
-identify him even without persistent identifier. Protocol designers
-should therefore ask themselves if patterns are easily visible, or
-obfuscated in some way.
-=======
 2. Could there be more advice for protocol developers and implementers
 to improve anonymity? (Besides the ones in <xref target="practical-advices"/>.)
    
->>>>>>> 0275d2a2a609d51fd608e0ae3c4ef2f7dc01035c
-
 Security Considerations
 ========================
 
