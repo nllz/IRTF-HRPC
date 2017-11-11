@@ -38,12 +38,35 @@ informative:
    RFC7626:
    RFC7858:
 
-   torproject:
-     title: Tor Project - Anonymity Online
-     date: 2007
+   AnonTerm:
+     title: "A terminology for talking about privacy by data minimization: Anonymity, Unlinkability, Undetectability, Unobservability, Pseudonymity, and Identity Management"
+     date: 2010
      author:
-        - ins: The Tor Project
-     target: https://www.torproject.org/
+        - ins: A. Pfitzmann
+        - ins: M. Hansen
+     target: http://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf
+
+   Article29:
+    title: "Opinion 05/2014 on Anonymisation Techniques"
+    date: 2014
+    author:
+        - ins: Article29
+    target: http://ec.europa.eu/justice/data-protection/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf
+
+   MITdeano:
+      title: "Unique in the Crowd: The privacy bounds of human mobility"
+      date: 2013
+      author:
+         - ins: Y. de Montjoye
+         - ins: C. A. Hidalgo
+         - ins: M. Verleysen 
+         - ins: V. Blondel
+      target: https://www.nature.com/articles/srep01376
+
+   EUcourt:
+      title: "EUCJ Case C-70/10: Scarlet Extended SA vs. Société belge des auteurs, compositeurs et éditeurs SCRL (SABAM)"
+      date: 2011
+      target: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:62010CJ0070:EN:HTML&lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BSFHas%2FXMRHeHVu46775ezw%3D%3D
 
    Pew:
      title: Anonymity, Privacy, and Security Online
@@ -62,22 +85,29 @@ informative:
         - ins: M. Duggan
      target: http://www.pewinternet.org/2014/10/22/online-harassment/
 
+   torproject:
+     title: Tor Project - Anonymity Online
+     date: 2007
+     author:
+        - ins: The Tor Project
+     target: https://www.torproject.org/
+   
    UNHRC2015:
      title: Anonymity, Privacy, and Security Online (A/HRC/29/32)
      date: 2015
      author:
         - ins: D. Kaye
-     target: www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session29/Documents/A.HRC.29.32_AEV.doc
+     target: http://www.ohchr.org/EN/HRBodies/HRC/RegularSessions/Session29/Documents/A.HRC.29.32_AEV.doc
 
-   AnonTerm:
-     title: "A terminology for talking about privacy by data minimization: Anonymity, Unlinkability, Undetectability, Unobservability, Pseudonymity, and Identity Management"
-     date: 2010
-     author:
-        - ins: A. Pfitzmann
-        - ins: M. Hansen
-     target: http://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf
+   Utexas:
+      title: "Robust De-anonymization of Large Sparse Datasets"
+      date: 2008
+      author:
+         - ins: A. Narayanan
+         - ins: V. Shmatikov
+      target: http://www.cs.utexas.edu/~shmat/shmat_oak08netflix.pd
 
-   
+
 --- abstract
 
 Anonymity is less discussed in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
@@ -145,8 +175,8 @@ anonymity is over.
 
 It should be noted that anonymity is not binary: there have been these
 recent years a lot of progress of desanonymisation techniques. Data is
-never fully "anonymous", it is only more or less anonymous. (See for
-instance RFC6235.) TODO examples of big data desanonymisation.
+never fully "anonymous", it is only more or less
+anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} {{Article29}} 
 
 Should we promote / accept / reject anonymity?
 ==============================================
@@ -186,27 +216,27 @@ While analyzing protocols for their impact on users anonymity, would it make sen
  - intermediaries (RFC6973)
  - enablers (RFC6973)
 
-2. Anonymity of the server
+2. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)?
 
-TODO Tor .onion
-
-3. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)?
-
-4. How does the protocol impact pseudonomity?
+3. How does the protocol impact pseudonymity?
 If the protocol limits the creation of new pseudonyms, it can limit
 their usefulness to "hide" an user's identity. For instance, IP
 addresses are pseudonyms but, since they are not under end users's
-control, they have strong linkability. That's why they are righly
-regarded as personal identifiers TODO reference. On the other hand, Bitcoin addresses
+control, they have strong linkability. That's why they are rightly
+regarded as personal identifiers {{EUcourt}}. On the other hand, Bitcoin addresses
 are pseudonyms with limited linkability, since the user can always
 create a lot of them.
 
-5. Could there be advice for protocol developers and implementers to improve anonymity?
-
+4. Could there be advice for protocol developers and implementers to improve anonymity?
 First, the protocol should avoid to have mandatory persistent
 identifiers.
 
-TODO patterns
+Even without persistent identifiers, anonymity could be broken by
+examining the patterns of access. If an user visits each morning the
+three same Web sites, always in the same order, it will be easy to
+identify him even without persistent identifier. Protocol desiogners
+should therefore ask themselves if patterns are easily visible, or
+obfuscated in some way.
 
 Security Considerations
 ========================
