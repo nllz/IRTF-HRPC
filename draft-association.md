@@ -171,7 +171,7 @@ informative:
      seriesinfo: "Basic Books, Inc. New York, NY, USA."
 
    Boyle:
-     title: Foucault in Cyberspace: Surveillance, Sovereignty, and Hardwired Censors
+     title: "Foucault in Cyberspace: Surveillance, Sovereignty, and Hardwired Censors"
      date: 1997
      author:
         - ins: James Boyle
