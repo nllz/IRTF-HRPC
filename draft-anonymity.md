@@ -38,6 +38,7 @@ normative:
 informative: 
 
    RFC3552:
+   RFC4949:
    RFC6235:
    RFC6973:
    RFC7258:
@@ -173,7 +174,8 @@ It should be noted that the word "anonymity" is both very loaded
 politically (witness all the headlines about the "darknet") and poorly
 understood. Most texts talking about anonymity actually refer to
 pseudonymity (for instance, when people say that "Bitcoin is
-anonymous").
+anonymous"). This confusion is even in the example given in
+{{RFC4949}} definition of anonymity.
 
 Anonymity is strongly linked to unlinkability: if your actions are
 linkable, it suffices that one of them is tied to your identity, and
@@ -210,23 +212,50 @@ One user may switch from one identity to another. In that case, it
 must be doable without a "bleedover" from the old identity to the new
 one.
 
-Research Questions
-==================
+Practical advices
+=================
 
-Premise: activity on the network can be anonymous or not.
+Protocol developers
+-------------------
 
-While analyzing protocols for their impact on users anonymity, would it make sense to ask the following questions:
+First, the protocol should avoid to have mandatory persistent
+identifiers. 
 
-1. How anonymous is the end user to:
+Even without persistent identifiers, anonymity could be broken by
+examining the patterns of access. If an user visits each morning the
+three same Web sites, always in the same order, it will be easy to
+identify him even without persistent identifier. Protocol desiogners
+should therefore ask themselves if patterns are easily visible, or
+obfuscated in some way.
+
+If the protocol collects data and distributes it (see {{RFC6235}}),
+"anonymizing" the data is often suggested but it is notoriously
+hard. Do not think that just dropping the last byte of an IP address
+"anonymizes" data.
+
+Pay attention to the fact that Internet actors do not all see the same
+thing. Consider the anonymity of the user wkith respect to:
  - local network operator
  - other networks you connect to
  - your communications peer on the other end of the pipe
- - intermediaries (RFC6973)
- - enablers (RFC6973)
+ - intermediaries ({{RFC6973}})
+ - enablers ({{RFC6973}})
+ - someone who is in several roles, for instance a big state
+   surveillance agency
 
-2. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)?
 
-3. How does the protocol impact pseudonymity?
+Protocol implementors
+---------------------
+
+Avoid adding patterns or regularities that are not explicitely
+required by the protocol. 
+
+Open Questions
+==============
+
+While analyzing protocols for their impact on users anonymity, would it make sense to ask the following questions:
+
+1. How does the protocol impact pseudonymity?
 If the protocol limits the creation of new pseudonyms, it can limit
 their usefulness to "hide" an user's identity. For instance, IP
 addresses are pseudonyms but, since they are not under end users's
@@ -235,16 +264,9 @@ regarded as personal identifiers {{EUcourt}}. On the other hand, Bitcoin address
 are pseudonyms with limited linkability, since the user can always
 create a lot of them.
 
-4. Could there be advice for protocol developers and implementers to improve anonymity?
-First, the protocol should avoid to have mandatory persistent
-identifiers.
-
-Even without persistent identifiers, anonymity could be broken by
-examining the patterns of access. If an user visits each morning the
-three same Web sites, always in the same order, it will be easy to
-identify him even without persistent identifier. Protocol desiogners
-should therefore ask themselves if patterns are easily visible, or
-obfuscated in some way.
+2. Could there be more advice for protocol developers and implementers
+to improve anonymity? (Besides the ones in <xref target="practical-advices"/>.)
+   
 
 Security Considerations
 ========================
