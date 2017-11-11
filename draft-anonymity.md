@@ -46,6 +46,13 @@ informative:
         - ins: M. Hansen
      target: http://dud.inf.tu-dresden.de/literatur/Anon_Terminology_v0.34.pdf
 
+   Article29:
+    title: "Opinion 05/2014 on Anonymisation Techniques"
+    date: 2014
+    author:
+        - ins: Article29
+    target: http://ec.europa.eu/justice/data-protection/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf
+
    MITdeano:
       title: "Unique in the Crowd: The privacy bounds of human mobility"
       date: 2013
@@ -55,6 +62,11 @@ informative:
          - ins: M. Verleysen 
          - ins: V. Blondel
       target: https://www.nature.com/articles/srep01376
+
+   EUcourt:
+      title: "EUCJ Case C-70/10: Scarlet Extended SA vs. Société belge des auteurs, compositeurs et éditeurs SCRL (SABAM)"
+      date: 2011
+      target: http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=CELEX:62010CJ0070:EN:HTML&lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BSFHas%2FXMRHeHVu46775ezw%3D%3D
 
    Pew:
      title: Anonymity, Privacy, and Security Online
@@ -164,7 +176,7 @@ anonymity is over.
 It should be noted that anonymity is not binary: there have been these
 recent years a lot of progress of desanonymisation techniques. Data is
 never fully "anonymous", it is only more or less
-anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} 
+anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} {{Article29}} 
 
 Should we promote / accept / reject anonymity?
 ==============================================
@@ -206,21 +218,25 @@ While analyzing protocols for their impact on users anonymity, would it make sen
 
 2. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)?
 
-3. How does the protocol impact pseudonomity?
+3. How does the protocol impact pseudonymity?
 If the protocol limits the creation of new pseudonyms, it can limit
 their usefulness to "hide" an user's identity. For instance, IP
 addresses are pseudonyms but, since they are not under end users's
-control, they have strong linkability. That's why they are righly
-regarded as personal identifiers TODO reference. On the other hand, Bitcoin addresses
+control, they have strong linkability. That's why they are rightly
+regarded as personal identifiers {{EUcourt}}. On the other hand, Bitcoin addresses
 are pseudonyms with limited linkability, since the user can always
 create a lot of them.
 
 4. Could there be advice for protocol developers and implementers to improve anonymity?
-
 First, the protocol should avoid to have mandatory persistent
 identifiers.
 
-TODO patterns
+Even without persistent identifiers, anonymity could be broken by
+examining the patterns of access. If an user visits each morning the
+three same Web sites, always in the same order, it will be easy to
+identify him even without persistent identifier. Protocol desiogners
+should therefore ask themselves if patterns are easily visible, or
+obfuscated in some way.
 
 Security Considerations
 ========================
