@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-00
+docname: draft-tenoever-hrpc-anonymity-01
 category: info
 
 ipr: trust200902
@@ -32,6 +32,7 @@ normative:
 informative: 
 
    RFC3552:
+   RFC6235:
    RFC6973:
    RFC7258:
    RFC7626:
@@ -79,7 +80,7 @@ informative:
    
 --- abstract
 
-Anonymity is less discussed topic in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
+Anonymity is less discussed in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
 
 This document aims to break down the different meanings and implications of anonymity on a mediated computer network.
 
@@ -106,10 +107,17 @@ Anonymity
 : A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
 
 Linkability
-: Linkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
+: Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
 
 Pseudonymity
-: Dervided from pseudonym, a persistent identity which is not the same as the entity's given name.
+: Derided from pseudonym, a persistent identity which is not the same
+as the entity's given (or official) name. For most (TODO all?) IETF
+protocols, pseudonimity is a given: protocols don't care whether the
+identity is an official one or not. But it should be noted that, if
+the user cannot create new pseudonyms easily, pseudonyms suffer from
+linkability. Unlikability depends on this ability to create new
+pseudonyms. TODO: or decide that pseudonyms *require* this ability to
+be created at will?
 
 Unlinkability
 : Unlinkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -125,11 +133,49 @@ Unobservability
   : undetectability of the IOI against all subjects uninvolved in it and 
   : anonymity of the subject(s) involved in the IOI even against the other subject(s) involved in that IOI. {{AnonTerm}}
 
+It should be noted that the word "anonymity" is both very loaded
+politically (witness all the headlines about the "darknet") and poorly
+understood. Most texts talking about anonymity actually refer to
+pseudonymity (for instance, when people say that "Bitcoin is
+anonymous").
+
+Anonymity is strongly linked to unlinkability: if your actions are
+linkable, it suffices that one of them is tied to your identity, and
+anonymity is over.
+
+It should be noted that anonymity is not binary: there have been these
+recent years a lot of progress of desanonymisation techniques. Data is
+never fully "anonymous", it is only more or less anonymous. (See for
+instance RFC6235.) TODO examples of big data desanonymisation.
+
+Should we promote / accept / reject anonymity?
+==============================================
+
+TOOD legitimacy
+
+TODO operations issues
+
+Example of use cases
+===================
+
+Simultaneous use
+----------------
+
+One user may use concurrently several identities, mixing them in
+operations, while wanting to keep them distinct. The protocol and its
+implementations should not preclude this use.
+
+Successive use
+--------------
+
+One user may switch from one identity to another. In that case, it
+must be doable without a "bleedover" from the old identity to the new
+one.
 
 Research Questions
 ==================
 
-Premise: activity on the network has the ability for is to be anonymous or authenticated
+Premise: activity on the network can be anonymous or not.
 
 While analyzing protocols for their impact on users anonymity, would it make sense to ask the following questions:
 
@@ -137,23 +183,30 @@ While analyzing protocols for their impact on users anonymity, would it make sen
  - local network operator
  - other networks you connect to
  - your communications peer on the other end of the pipe
+ - intermediaries (RFC6973)
+ - enablers (RFC6973)
 
-2. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)
+2. Anonymity of the server
 
-3. How does the protocol impact pseudonomity?
- - in case of long term pseudonymity
- - in case of short term pseudonymity
+TODO Tor .onion
 
-4. How does the protocol, in conjunction with other protocols, impact pseudonymity?
+3. How well can they distinguish my identity from somebody else (with a similar communication) (ie linkability)?
 
-5. Could there be advice for protocol developers and implementers to improve anonimity and pseudonymity?
+4. How does the protocol impact pseudonomity?
+If the protocol limits the creation of new pseudonyms, it can limit
+their usefulness to "hide" an user's identity. For instance, IP
+addresses are pseudonyms but, since they are not under end users's
+control, they have strong linkability. That's why they are righly
+regarded as personal identifiers TODO reference. On the other hand, Bitcoin addresses
+are pseudonyms with limited linkability, since the user can always
+create a lot of them.
 
-Use Cases
-=========
+5. Could there be advice for protocol developers and implementers to improve anonymity?
 
-- multiple identities concurrently used, mixing them in operations / keeping them distinct (talking to XMPP, alias, etc)
+First, the protocol should avoid to have mandatory persistent
+identifiers.
 
-- when you change identity, do cross stack analysis, so you have no bleedover, anonymity on a cross protocol, cross stack level
+TODO patterns
 
 Security Considerations
 ========================
