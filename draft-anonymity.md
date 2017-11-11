@@ -43,6 +43,7 @@ informative:
    RFC6973:
    RFC7258:
    RFC7626:
+   RFC7844:
    RFC7858:
 
    AnonTerm:
@@ -195,6 +196,10 @@ Network operators argue that without opportunities to persistently identify indi
 
 TODO operations issues
 
+Anonymity will always be a compromise between user protection (which
+requires a high level of anonymity) and other requirments for operations,
+research, etc.
+
 Example of use cases
 ===================
 
@@ -234,7 +239,7 @@ hard. Do not think that just dropping the last byte of an IP address
 "anonymizes" data.
 
 Pay attention to the fact that Internet actors do not all see the same
-thing. Consider the anonymity of the user wkith respect to:
+thing. Consider the anonymity of the user with respect to:
  - local network operator
  - other networks you connect to
  - your communications peer on the other end of the pipe
@@ -248,7 +253,11 @@ Protocol implementors
 ---------------------
 
 Avoid adding patterns or regularities that are not explicitely
-required by the protocol. 
+required by the protocol.
+
+An example is DHCP where sending a persistent identifier as the client
+name was not mandatory but, in practice, done by many implementations,
+before {{RFC7844}}.
 
 Open Questions
 ==============
