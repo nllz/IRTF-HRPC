@@ -198,13 +198,27 @@ informative:
         - ins: J. Arkko
       target: "https://datatracker.ietf.org/doc/html/draft-arkko-ietf-finance-thoughts"
 
-   xkcd927:
-      title: "Standards"
-      date: 2011
+   IAOC69:
+      title: "IAOC Report Chicago"
+      date: 2007
       author:
-        - ins: Randall Munroe
-      target: "https://xkcd.com/927/"
-      seriesinfo: "xkcd.com, a web comic"
+        - ins: IAOC
+      target: "https://iaoc.ietf.org/documents/IAOC-Report-Chicago-69.pdf"
+
+   IAOC77:
+      title: "IAOC Report Anaheim"
+      date: 2010
+      author:
+        - ins: IAOC
+      target: "https://iaoc.ietf.org/documents/IAOC-Report-Anaheim-77.pdf"
+
+   IAOC99:
+      title: "IAOC Report Prague"
+      date: 2017
+      author:
+        - ins: IAOC
+      target: "https://iaoc.ietf.org/documents/IAOCReportinAdvanceofIETF99.pdf"
+
 
    Ahlborn:
       title: "Implications of the Proposed Framework and Antitrust Rules for Dynamically Competitive Industries"
@@ -308,21 +322,29 @@ Examples and approaches
 
 # Competition and collaboration
 
-Standards exist for nearly everything: processes, technologies, safety, hiring, elections, and training. Standards provide blue-prints for how to accomplish a particular task in a similar way to others trying to accomplish the same thing, while reducing overhead and inefficiencies. Formal technical standardisation, then, is the process whereby the expected features or functionalities of a particular technology are codified in writing. It is a way of ensuring that different technological systems can interoperate, or work in tandem and exchange functionality.
+Standards exist for nearly everything: processes, technologies, safety, hiring, elections, and training. Standards provide blue-prints for how to accomplish a particular task in a similar way to others trying to accomplish the same thing, while reducing overhead and inefficiencies. Standards enhance competition by allowing different entities to work from a commonly accepted baseline. And they exist in many forms: there can be informal standards, that are just agreed upon normal ways of interacting within a specific community (i.e. the process through which greetings to a new acquaintance are expressed through a bow, a handshake or similar). There can be formal standards, that are normally codified in writing.
 
-A formalised standard does not stop competition between entities working to realise those standards in practical implementations of that technological base. If the standard is well-crafted, it will even help entities cooperate and construct products and services on top of the commonly shared technological base. In these circumstances, standardisation is seen as beneficient for competition in downstream markets, meaning those markets making used of the standardised technologies. Standards have long been used as a tool to lay groundworks, a certain minimal commonality, that helps countries, companies or individuals cooperate to reach the next level of technological advancements more quickly.
+And there can be de facto standards: standards that arise in market situations where one entity is particularly dominant, and downstream competitors are therefore tied to the dominant entity's technological solutions {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to be able to restrict competition for downstream services for PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}.
 
-Standards may not only exist in the form of a formal document laid down by an organisation gathering many different parties of different backgrounds behind a single, converging process. We also speak of de facto standards: the rules governing a technological base used by downstream market actors, such that, even if the rules have not been decided by many different entities they still constitute the effective boundary within which downstream innovation and development occurs. De facto standards can arise in market situations where one entity is particularly dominant, and may or may not lead to technical difficulties in challenging the dominant entity's technological base {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to be able to restrict competition for downstream services for PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}. If such restrictions are found to apply, the resolution may entail obligations on the restrictive party to grant a license (if a failure to grant a license to the standard was the cause of the restriction) or arrange the technical solution in such a way that restrictions do not arise.
+The World Trade Organisation (WTO) recognises a difference between standards and technical regulations, where standards are voluntary formal codes to which products or services may conform while technical regulations are mandatory requirements the fulfillment of which is required for a product to be accessible on one of the WTO country markets {{WTO-TBT}}. The WTO rules have implications for how nation states, at least those that have signed on to the WTO agreements, may impose specific technical requirements on companies.
 
-Standards development faces a number of economic and organisational challenges that are well-studied: the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. The first problem may, on the one hand, be described as just the sheer organisational costs: how do you create platforms, especially global platforms, that are accessible in terms of price and time, when implementors affected by the standards produced may include any range of entities with different economic means and resources (in the specific context of the IETF some issues of this nature are considered in {{draft-finance-thoughts}} and its references, but challenges are clearly universal in nature). It also incorporates the problem of too many cooks spoiling the broth: if the interests of a large number of entities need to converge around a single solution, by which mechnism does one mitigate the inconvenience of differing opinions or preferences between the parties reducing the over-all utility of the final compromise {{xkcd927}}.
+But there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries.
 
-The standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. With openness, we understand that the standards were available at no cost to anyone around the world. Internet standardisation set itself apart from traditional standard bodies by not requiring implementors to pay a subscription fee to have access to the texts of codified standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work.
+## Standards development
 
-On the one hand, this enables anyone willing and able to fulfill any standard requirement produced in the IETF. On the other hand, the costs and difficulties of organising many different entities in the standardisation process itself do not disappear only by making standards open and accessible to anyone seeking to implement them.
+The development of formal standards development faces a number of economic and organisational challenges. The cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. In addition, one faces the problem of deciding what the mutual goal is.
 
-The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents {{Contreras}} which is a record number, even among other comparable standard organisations.
+These problems may be described as inter-organisational costs. Even after a goal is decided upon, coordination of multiple entities requires time and money. One needs communication platforms, processes and a commitment to mutual investment in a higher good. They are not simple tasks, and the more different communities are affected by a particular standardisation process, the more difficult the organisational challenges become.
 
-In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities. Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}).
+## Standards development in the IETF
+
+The standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work.
+
+The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard. 
+
+The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents which is a record number, even among other comparable standard organisations {{Contreras}}.
+
+In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities. Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}). The IETF has faced three periods of decreased commitment from participants in funding its meetings in the past ten years, leading, naturally, to self-scrutiny, see for instance {{IAOC69}}, {{IAOC77}}, {{IAOC99}}. 
 
 # More legacy, more politics?
 Roman engineers complained about inadequate legacy standards they needed to comply with, which hampered them in their engineering excellence. In that sense not much has changed in the last 2100 years. When starting from a tabula rasa, one does not need to take other systems, layers or standards into account. The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically means it will be broadly adopted at as fast pace. Examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account a much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped. Thus with the 
@@ -331,15 +353,20 @@ Roman engineers complained about inadequate legacy standards they needed to comp
 There is a competition between layers, and even contestation about what the borders of different layers are. This leads to competition between layers and different solutions for similar problems on different layers, which in its turn leads to further ossification, which leads to more contestation. 
 
 # How voluntary are open standards?
-Coordinating transnational stakeholders in a process of negotiation and
-agreement through the development of common rules is a form of global governance {{Nadvi}}. Standards are among the mechanisms by which this governance is achieved. Conformance to certain standards is often a basic condition of participation in international trade and communication, so there are strong economic and political incentives to conform, even in the absence of legal requirements {{Russell}}. {{RogersEden}} argue: 
-    As unequal participants compete to define standards, technological compromises emerge, which add complexity to standards. For instance, when working group participants propose competing solutions, it may be easier for them to agree on a standard that combines all the proposals rather than choosing any single proposal. This shifts the responsibility for selecting a solution onto those who implement the standard, which can lead to complex implementations that may not be interoperable. On its face this appears to be a failure of the standardization process, but this outcome may benefit certain participants— for example, by allowing an implementer with large market share to establish a de facto standard within the scope of the documented standard.
+
+Coordinating transnational stakeholders in a process of negotiation and agreement through the development of common rules is a form of global governance {{Nadvi}}. Standards are among the mechanisms by which this governance is achieved. Conformance to certain standards is often a basic condition of participation in international trade and communication, so there are strong economic and political incentives to conform, even in the absence of legal requirements {{Russell}}. {{RogersEden}} argue: 
+
+   "As unequal participants compete to define standards, technological compromises emerge, which add complexity to standards. For instance, when working group participants propose competing solutions, it may be easier for them to agree on a standard that combines all the proposals rather than choosing any single proposal. This shifts the responsibility for selecting a solution onto those who implement the standard, which can lead to complex implementations that may not be interoperable. On its face this appears to be a failure of the standardization process, but this outcome may benefit certain participants— for example, by allowing an implementer with large market share to establish a de facto standard within the scope of the documented standard."
 
 
 The need for a positioning
 ==========================
 
-It is indisputable that the Internet plays an increasingly important role in the lives of individuals.  The community that procuces standards for the Internet therefore also has an increasing impact on society. The IETF cannot ordain what standards are to be used on the networks, but it does set open standards for interoperarability on the Internet, and has does so since the inception of the Internet. Therefore the standardization process of the IETF has influence and power. Because of the impact Internet standards have on society, the IETF should take into account the political aspects and implications of its work. 
+It is indisputable that the Internet plays an increasingly important role in the lives of individuals.  The community that produces standards for the Internet therefore also has an impact on society, which it itself has recognised in a number of previously adopted documents. 
+
+The IETF cannot ordain what standards are to be used on the networks, and it specifically does not determine the laws of regions or countries where networks are being used, but it does set open standards for interoperability on the Internet, and has done so since the inception of the Internet. Because a standard is the blue-print for how to accomplish a particular task in a similar way to others trying to accomplish the same thing, the standards adopted have a normative effect. The standardisation work at the IETF will have implications on what is perceived as technologically possible and useful where networking technologies are being deployed, and its standards output reflect was is considered by the technical community as feasible and good practice.
+
+This calls for fixing a methodology in the IETF community to evaluate which routes forward should indeed be feasible, what constitutes the "good" in "good practice" and what trade-offs between different feasible features of technologies are useful and should therefore be made possible.
 
 The risk of not doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance on behest of the influence of the IETF.
 
@@ -348,11 +375,11 @@ This does not mean the IETF does not have a position on particular political iss
 The way forward
 ===============
 
-There are instruments that can help the IETF develop an approach to address the politics of protocols. Part of this can be found in draft-irtf-hrpc-research as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community. 
+There are instruments that can help the IETF develop an approach to address the politics of protocols. Part of this can be found in {{RFC8280}} as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community. 
 
 Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need to live with the fact standards bodies have a political nature {{Webster}}. This does not need to be problematic as long as there are sufficient accountability and transparency mecahnisms in place. The importance of these mechanisms increases with the importance of the standards and their implementations. The complexity of the work inscribes a requirement of competence in the work in the IETF, which forms an inherent barrier for end-user involvement. Even though this might not be intentional, it is a result of the interplay between the characteristics of the epistemic community in the IETF and the nature of the standard setting process.
 
-Rather than arguing for the fairly general blanket statement that 'standards are poltiical' {{Winner}} {{Woolgar}} we argue that we need to look at the politics of individual standards and invite document authorts and reviewers to take these dynamics into account. 
+Rather than arguing for the fairly general blanket statement that 'standards are poltiical' {{Winner}} {{Woolgar}} we argue that we need to look at the politics of individual standards and invite document authors and reviewers to take these dynamics into account.
 
 Security Considerations
 ========================
