@@ -242,7 +242,7 @@ identifiers.
 Even without persistent identifiers, anonymity could be broken by
 examining the patterns of access. If an user visits each morning the
 three same Web sites, always in the same order, it will be easy to
-identify him even without persistent identifier. Protocol desiogners
+identify him even without persistent identifier. Protocol designers
 should therefore ask themselves if patterns are easily visible, or
 obfuscated in some way.
 
