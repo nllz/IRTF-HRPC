@@ -58,6 +58,7 @@ informative:
    RFC7258:
    RFC7704:
    RFC7776:
+   RFC8280:
 
    BramanI:
      title: "Internationalization of the Internet by design: The first decade "
@@ -326,7 +327,7 @@ Standards exist for nearly everything: processes, technologies, safety, hiring, 
 
 And there can be de facto standards: standards that arise in market situations where one entity is particularly dominant, and downstream competitors are therefore tied to the dominant entity's technological solutions {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to be able to restrict competition for downstream services for PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}.
 
-The World Trade Organisation (WTO) recognises a difference between standards and technical regulations, where standards are voluntary formal codes to which products or services may conform while technical regulations are mandatory requirements the fulfillment of which is required for a product to be accessible on one of the WTO country markets {{WTO-TBT}}. The WTO rules have implications for how nation states, at least those that have signed on to the WTO agreements, may impose specific technical requirements on companies.
+The World Trade Organisation (WTO) recognises a difference between standards and technical regulations, where standards are voluntary formal codes to which products or services may conform while technical regulations are mandatory requirements the fulfillment of which is required for a product to be accessible on one of the WTO country markets [[WTO-TBT]]. The WTO rules have implications for how nation states, at least those that have signed on to the WTO agreements, may impose specific technical requirements on companies.
 
 But there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries.
 
