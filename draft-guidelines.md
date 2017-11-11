@@ -31,6 +31,180 @@ author:
 normative:
 
 informative: 
+   
+   RFC0793:
+   RFC1035:
+   RFC1958:
+   RFC1984:
+   RFC2026:
+   RFC2277:
+   RFC3365:
+   RFC3724:
+   RFC3935:
+   RFC3979:
+   RFC4033:
+   RFC4101:
+   RFC4941:
+   RFC4949:
+   RFC5321:
+   RFC5646:
+   RFC6108:
+   RFC6365:
+   RFC6701:
+   RFC6973:
+   RFC7258:
+   RFC7624:
+   RFC7725:
+
+   UDHR:
+     title: The Universal Declaration of Human Rights
+     date: 1948
+     author:
+        - org: United Nations General Assembly
+     target: http://www.un.org/en/documents/udhr/
+
+   Bless:
+      title: Values and Networks
+      date: 2015
+      author:
+        - ins: R. Bless
+        - ins: C. Orwat
+
+   Brown:
+     title: "A Prehistory of Internet Governance"
+     date: 2013
+     author:
+        - ins: I. Brown
+        - ins: M. Ziewitz
+     seriesinfo: Research Handbook on Governance of the Internet. Cheltenham, Edward Elgar.
+
+   notewell: 
+     title: Note Well
+     date: 2015
+     author:
+        - org: IETF
+     target: https://www.ietf.org/about/note-well.html
+
+   IRP:
+     title: "10 Internet Rights & Principles"
+     date: 2014
+     author:
+        - org:  Internet Rights and Principles Dynamic Coalition
+     target: http://internetrightsandprinciples.org/site/wp-content/uploads/2014/06/IRPC_10RightsandPrinciples_28May2014-11.pdf
+
+   ICCPR:
+     title: International Covenant on Civil and Political Rights
+     date: 1976
+     author:
+        org: United Nations General Assembly
+     target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
+
+   Saltzer:
+     title: End-to-End Arguments in System Design
+     author:
+        - ins: J.H. Saltzer
+        - ins: D.P. Reed
+        - ins: D.D. Clark
+     seriesinfo: ACM TOCS, Vol 2, Number 4, November
+        1984, pp 277-288.
+     date: 1984
+
+   ICESCR:
+     title: International Covenant on Economic, Social and Cultural Rights
+     date: 1966
+     author:
+        - org: United Nations General Assembly
+     target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CESCR.aspx
+
+   Penney:
+     title: "Chilling Effects: Online Surveillance and Wikipedia Use"
+     date: 2016
+     author:
+        - ins: J. Penney
+     target: http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2769645
+
+   UNHRC2016:
+     title: UN Human Rights Council Resolution "The promotion, protection and enjoyment of human rights on the Internet" (A/HRC/32/L.20)
+     date: 2016
+     author:
+        - org: United Nations Human Rights Council
+     target: https://documents-dds-ny.un.org/doc/UNDOC/LTD/G16/131/89/PDF/G1613189.pdf?OpenElement
+
+   geekfeminism:
+     title: Pseudonymity
+     date: 2015
+     author: 
+        - org: Geek Feminism Wiki 
+     target: http://geekfeminism.wikia.com/wiki/Pseudonymity
+
+   W3Ci18nDef:
+     title: Localization vs. Internationalization
+     date: 2010
+     author:
+        - org: W3C
+     target: http://www.w3.org/International/questions/qa-i18n.en
+
+   BCP72:
+     title: Guidelines for Writing RFC Text on Security Considerations
+     date: 2003
+     author: 
+        - org: IETF
+     target: https://datatracker.ietf.org/doc/bcp72/
+
+   patentpolicy:
+     title: W3C Patent Policy
+     date: 2004
+     author:
+        - org: W3C
+     target: https://www.w3.org/Consortium/Patent-Policy-20040205/
+
+   Pouwelse:
+     title: Media without censorship
+     date: 2012
+     author:
+        - ins: J. Pouwelse, Ed.
+     target: https://tools.ietf.org/html/draft-pouwelse-censorfree-scenarios
+
+   HTML5:
+     title: HTML5
+     date: 2014
+     author: 
+        - org: W3C
+     target: https://www.w3.org/TR/html5/
+
+   Zittrain:
+      title: The Future of the Internet - And How to Stop It
+      date: 2008
+      author:
+        - ins: J. Zittrain
+      target: https://dash.harvard.edu/bitstream/handle/1/4455262/Zittrain_Future%20of%20the%20Internet.pdf?sequence=1
+      seriesinfo: Yale University Press
+
+   FIArch:
+     title: Future Internet Design Principles
+     date: January 2012
+     target: http://www.future-internet.eu/uploads/media/FIArch_Design_Principles_V1.0.pdf
+
+   W3CAccessibility:
+     title: Accessibility
+     date: 2015
+     author:
+        - org: W3C
+     target: https://www.w3.org/standards/webdesign/accessibility
+
+   newegg:
+     title: "Newegg on trial: Mystery company TQP rewrites the history of encryption"
+     date: 2013
+     author: 
+        - ins: J. Mullin
+     target: http://arstechnica.com/tech-policy/2013/11/newegg-on-trial-mystery-company-tqp-re-writes-the-history-of-encryption/
+
+   Hill2014:
+     title: "Partial Catalog of Human Rights Related to ICT Activities"
+     date: 2014
+     author:
+        - ins: R. Hill 
+     target: http://www.apig.ch/UNIGE%20Catalog.pdf
 
 --- abstract
 
