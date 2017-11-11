@@ -27,6 +27,12 @@ author:
        organization: ARTICLE 19
        email: niels@article19.org
 
+-
+       ins: S. Bortzmeyer
+       name: Stephane Bortzmeyer
+       organization: AFNIC
+       email: bortzmeyer+ietf@nic.fr
+
 normative:
   
 informative: 
@@ -151,7 +157,9 @@ instance RFC6235.) TODO examples of big data desanonymisation.
 Should we promote / accept / reject anonymity?
 ==============================================
 
-TOOD legitimacy
+Any data that could identify an individual is personally identifiable information. This means that information which can be used to distinguish an indivual from other individuals can be considered as personally identiable information. The access and control of personally identifiable information by a third party is a (potential) liability for both the third party and the individual. This liability could for example translate into a physical risk for the individual or into a legal risk for the third party under information security and privacy laws. 
+
+Network operators argue that without opportunities to persistently identify individual users it becomes harder to thwart attack and troubleshoot network issues. 
 
 TODO operations issues
 
