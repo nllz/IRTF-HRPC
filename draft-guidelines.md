@@ -1,7 +1,7 @@
 ---
 title: Guidelines for Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-tenoever-hrpc-guidelines-00
+docname: draft-tenoever-hrpc-guidelines-01
 category: info
 
 ipr: trust200902
@@ -399,24 +399,6 @@ Impacts:
 - Right to freedom of expression
 - Right to political participtation
 
-### Anonymity
-
-Question(s):
-Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
-
-Explanation:
-Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. Even though full anonymity is hard to achieve, it is a non-binary concept. Making pervasive monitoring and tracking harder is important for many users as well as for the IETF {{RFC7258}}. Achieving a higher level of anonymity is an important feature for many end-users, as it allows them different degrees of privacy online.
-
-Example:
-Often protocols expose personal data, it is important to consider ways to mitigate the obvious privacy impacts. A protocol that uses data that could help identify a sender (items of interest) should be protected from third parties. For instance if one wants to hide the source/destination IP addresses of a packet, the use of IPsec in tunneling mode (e.g., inside a virtual private network) can be helpful to protect from third parties likely to eavesdrop packets exchanged between the tunnel endpoints. 
-
-Impacts:
-
-- Right to non-discrimination
-- Right to political participation
-- Right to freedom of assembly and association
-- Right to security
-
 ### Pseudonymity
 
 Question(s):
@@ -624,12 +606,23 @@ Impacts:
 
 ### Anonymity
 
-Question(s): Does you protocol make use of persistent identifiers? Can it be done without them? If your protocol collects data and distributes it (see {{RFC6235}}), you should anonymize the data, but keep in mind that "anonymizing" data is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data. If your protocol allows for identity management, there should be a clear barrier between the identities to ensure that they cannot (easily) be associated with each other. 
+Example:
+Often protocols expose personal data, it is important to consider ways to mitigate the obvious privacy impacts. A protocol that uses data that could help identify a sender (items of interest) should be protected from third parties. For instance if one wants to hide the source/destination IP addresses of a packet, the use of IPsec in tunneling mode (e.g., inside a virtual private network) can be helpful to protect from third parties likely to eavesdrop packets exchanged between the tunnel endpoints. 
 
-Explanation: Anonymity is an inherent part of the right to freedom of opinion and expression and the right to privacy. Avoid adding identifiers, options or configurations that create or might lead to patterns or regularities that are not explicitely required by the protocol. 
+Question(s): Does you protocol make use of persistent identifiers? Can it be done without them? If your protocol collects data and distributes it (see {{RFC6235}}), you should anonymize the data, but keep in mind that "anonymizing" data is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data. If your protocol allows for identity management, there should be a clear barrier between the identities to ensure that they cannot (easily) be associated with each other. Did you have a look at the Privacy Considerations for Internet Protocols {{RFC6973}}, especially section 6.1.1 ?
+
+Explanation: Anonymity refers to the condition of an identity being unknown or concealed {{RFC4949}}. Even though full anonymity is hard to achieve, it is a non-binary concept. Making pervasive monitoring and tracking harder is important for many users as well as for the IETF {{RFC7258}}. Achieving a higher level of anonymity is an important feature for many end-users, as it allows them different degrees of privacy online. Anonymity is an inherent part of the right to freedom of opinion and expression and the right to privacy. Avoid adding identifiers, options or configurations that create or might lead to patterns or regularities that are not explicitely required by the protocol. 
 
 Example: An example is DHCP where sending a persistent identifier as the client name was not mandatory but, in practice, done by many implementations,
 before {{RFC7844}}.
+
+Impacts:
+
+- Right to non-discrimination
+- Right to political participation
+- Right to freedom of assembly and association
+- Right to security
+
 
 Document Status
 ===============
