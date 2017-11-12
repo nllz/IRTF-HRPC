@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-01
+docname: draft-bortzmeyer-hrpc-anonymity-02
 category: info
 
 ipr: trust200902
@@ -22,16 +22,16 @@ pi:
 
 author:
 -
-       ins: N. ten Oever
-       name: Niels ten Oever
-       organization: ARTICLE 19
-       email: niels@article19.org
-
--
        ins: S. Bortzmeyer
        name: Stephane Bortzmeyer
        organization: AFNIC
        email: bortzmeyer+ietf@nic.fr
+
+-
+       ins: N. ten Oever
+       name: Niels ten Oever
+       organization: ARTICLE 19
+       email: niels@article19.org
 
 normative:
   
@@ -128,7 +128,7 @@ This document aims to break down the different meanings and implications of anon
 Introduction
 ============
 
-There seems to be a clear need for anonymity online in an envrinoment where harassment on the Internet is on the increase {{Pew2}} and the UN Special Rapporteur for Freedom of Expression calls anonymity 'necessary for the exercise of the right to freedom of opinion and expression in the digital age' {{UNHRC2015}}. 
+There seems to be a clear need for anonymity online in an environment where harassment on the Internet is on the increase {{Pew2}} and the UN Special Rapporteur for Freedom of Expression calls anonymity 'necessary for the exercise of the right to freedom of opinion and expression in the digital age' {{UNHRC2015}}. 
 
 Nonetheless anonymity is not getting much discussion at the IETF, providing anonymity does not seem a (semi-)objective for many protocols, even though several documents contribute to improving anonymity such as {{RFC7258}}, {{RFC7626}}, {{RFC7858}}.
 
@@ -148,14 +148,7 @@ Linkability
 : Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
 
 Pseudonymity
-: Derided from pseudonym, a persistent identity which is not the same
-as the entity's given (or official) name. For most (TODO all?) IETF
-protocols, pseudonimity is a given: protocols don't care whether the
-identity is an official one or not. But it should be noted that, if
-the user cannot create new pseudonyms easily, pseudonyms suffer from
-linkability. Unlikability depends on this ability to create new
-pseudonyms. TODO: or decide that pseudonyms *require* this ability to
-be created at will?
+: Derided from pseudonym, a persistent identity which is not the same as the entity's given (or official) name. For most (TODO all?) IETF protocols, pseudonimity is a given: protocols don't care whether the identity is an official one or not. But it should be noted that, if the user cannot create new pseudonyms easily, pseudonyms suffer from linkability. Unlikability depends on this ability to create new pseudonyms. TODO: or decide that pseudonyms *require* this ability to be created at will?
 
 Unlinkability
 : Unlinkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -171,24 +164,15 @@ Unobservability
   : undetectability of the IOI against all subjects uninvolved in it and 
   : anonymity of the subject(s) involved in the IOI even against the other subject(s) involved in that IOI. {{AnonTerm}}
 
-It should be noted that the word "anonymity" is both very loaded
-politically (witness all the headlines about the "darknet") and poorly
-understood. Most texts talking about anonymity actually refer to
-pseudonymity (for instance, when people say that "Bitcoin is
-anonymous"). This confusion is even in the example given in
-{{RFC4949}} definition of anonymity.
+It should be noted that the word "anonymity" is both very loaded politically (witness all the headlines about the "darknet") and poorly understood. Most texts talking about anonymity actually refer to pseudonymity (for instance, when people say that "Bitcoin is anonymous"). This confusion is even in the example given in {{RFC4949}} definition of anonymity.
 
-Anonymity is strongly linked to unlinkability: if your actions are
-linkable, it suffices that one of them is tied to your identity, and
-anonymity is over.
+Anonymity is strongly linked to unlinkability: if your actions are linkable, it suffices that one of them is tied to your identity, and anonymity is over.
 
-It should be noted that anonymity is not binary: there have been these
-recent years a lot of progress of desanonymisation techniques. Data is
-never fully "anonymous", it is only more or less
-anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} {{Article29}} 
+It should be noted that anonymity is not binary: there have been these recent years a lot of progress of desanonymisation techniques. Data is
+never fully "anonymous", it is only more or less anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} {{Article29}} 
 
-Should we promote or reject anonymity?
-=======================================
+Should protocols promote anonymity?
+===================================
 
 The amount of data that is generated by and about individuals is ever increasing. This can be attributed to the fact that an ever increasing number of actions is digitally mediated, and the increase of connected sensors in the every day environment. Even though these two causes do not fully fall within the scope of the IETF, there is a significant part of these two examples that do. 
 
@@ -196,8 +180,7 @@ With the increase of data there is also an increasing ability for third parties 
 
 Some network operators argue that without the opportunity to persistently identify individual users it becomes harder to thwart attacks and troubleshoot network issues. Whereas identification might be helpful to address issues in some cases, it poses an inherent threat to the anonymity of users. Not protecting the anonymity of users leads to a deterioration of the right to privacy, and the right to freedom of option and expression. There can be limitations the right to privacy, but these should always be provided by law and necessary and proportionate to achieve one of a handful of legitimate objectives.
 
-Anonymity will always be a balancing act between user protection (which
-requires a high level of anonymity) and other requirments for operations and
+Anonymity will always be a balancing act between user protection (which requires a high level of anonymity) and other requirments for operations and
 research, such as routing information. Anonimity is by no means achieved by default in an online environment, nor has it been a strong consideration in protocol development in the development of the Internet. Increasing anonymity in the digital environment is not an easy task, exactly because the ubiquity of data that is generated and stored. But exactly the fact that we generate so much data urges us to address this issue. 
 
 Example of use cases
@@ -206,16 +189,12 @@ Example of use cases
 Simultaneous use
 ----------------
 
-One user may use concurrently several identities, mixing them in
-operations, while wanting to keep them distinct. The protocol and its
-implementations should not preclude this use.
+One user may use concurrently several identities, mixing them in operations, while wanting to keep them distinct. The protocol and its implementations should not preclude this use.
 
 Successive use
 --------------
 
-One user may switch from one identity to another. In that case, it
-must be doable without a "bleedover" from the old identity to the new
-one.
+One user may switch from one identity to another. In that case, it must be doable without a "bleedover" from the old identity to the new one.
 
 Practical advices
 =================
@@ -223,24 +202,13 @@ Practical advices
 Protocol developers
 -------------------
 
-First, the protocol should avoid to have mandatory persistent
-identifiers. 
+First, the protocol should avoid to have mandatory persistent identifiers. 
 
-Even without persistent identifiers, anonymity could be broken by
-examining the patterns of access. If an user visits each morning the
-three same Web sites, always in the same order, it will be easy to
-identify him even without persistent identifier. Protocol desiogners
-should therefore ask themselves if patterns are easily visible, or
-obfuscated in some way.
+Even without persistent identifiers, anonymity could be broken by examining the patterns of access. If an user visits each morning the three same Web sites, always in the same order, it will be easy to identify him even without persistent identifier. Protocol designers should therefore ask themselves if patterns are easily visible, or obfuscated in some way.
 
-If the protocol collects data and distributes it (see {{RFC6235}}),
-"anonymizing" the data is often suggested but it is notoriously
-hard. Do not think that just dropping the last byte of an IP address
-"anonymizes" data.
+If the protocol collects data and distributes it (see {{RFC6235}}), "anonymizing" the data is often suggested but it is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data.
 
-Pay attention to the fact that Internet actors do not all see the same
-thing. Consider the anonymity of the user with respect to:
-
+Pay attention to the fact that Internet actors do not all see the same thing. Consider the anonymity of the user with respect to:
  - local network operator
  - other networks you connect to
  - your communications peer on the other end of the pipe
@@ -253,11 +221,9 @@ thing. Consider the anonymity of the user with respect to:
 Protocol implementors
 ---------------------
 
-Avoid adding option or configuration that create or might lead to patterns or regularities that are not explicitely
-required by the protocol. 
+Avoid adding options or configurations that create or might lead to patterns or regularities that are not explicitely required by the protocol. 
 
-An example is DHCP where sending a persistent identifier as the client
-name was not mandatory but, in practice, done by many implementations,
+An example is DHCP where sending a persistent identifier as the client name was not mandatory but, in practice, done by many implementations,
 before {{RFC7844}}.
 
 If an implementation allows for identity management, there should be a clear barrier between the identities to ensure that they cannot (easily) be associated with each other.
