@@ -204,7 +204,7 @@ Protocol developers
 
 First, the protocol should avoid to have mandatory persistent identifiers. 
 
-Even without persistent identifiers, anonymity could be broken by examining the patterns of access. If an user visits each morning the three same Web sites, always in the same order, it will be easy to identify him even without persistent identifier. Protocol designers should therefore ask themselves if patterns are easily visible, or obfuscated in some way.
+Even without persistent identifiers, anonymity could be broken by examining the patterns of access. If an user visits each morning the three same Web sites, always in the same order, it will be easy to identify them even without persistent identifier. Protocol designers should therefore ask themselves if patterns are easily visible, or obfuscated in some way.
 
 If the protocol collects data and distributes it (see {{RFC6235}}), "anonymizing" the data is often suggested but it is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data.
 
