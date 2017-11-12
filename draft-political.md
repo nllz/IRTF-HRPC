@@ -25,7 +25,7 @@ author:
        ins: N. ten Oever
        name: Niels ten Oever
        organization: ARTICLE 19
-       email: niels@article19.org
+       email: mail@nielstenoever.net
 -
        ins: A. Sullivan
        name: Andrew Sullivan
