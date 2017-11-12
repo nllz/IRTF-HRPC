@@ -1,5 +1,5 @@
 ---
-title: Research into Human Rights Protocol Considerations
+title: Guidelines for Human Rights Protocol Considerations
 abbrev: hrpcr
 docname: draft-irtf-hrpc-guidelines-00
 category: info
@@ -22,10 +22,10 @@ pi:
 
 author:
 -
-       ins: N. ten Oever
+       ins: N. ten Oever (editor)
        name: Niels ten Oever
        organization: ARTICLE 19
-       email: niels@article19.org
+       email: mail@nielstenoever.net
 
 
 normative:
@@ -623,6 +623,14 @@ Impacts:
 - Freedom of assembly and association
 - Access to information 
 
+### Anonymity
+
+Question(s): Does you protocol make use of persistent identifiers? Can it be done without them? If your protocol collects data and distributes it (see {{RFC6235}}), you should anonymize the data, but keep in mind that "anonymizing" data is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data. If your protocol allows for identity management, there should be a clear barrier between the identities to ensure that they cannot (easily) be associated with each other. 
+
+Explanation: Anonymity is an inherent part of the right to freedom of opinion and expression and the right to privacy. Avoid adding identifiers, options or configurations that create or might lead to patterns or regularities that are not explicitely required by the protocol. 
+
+Example: An example is DHCP where sending a persistent identifier as the client name was not mandatory but, in practice, done by many implementations,
+before {{RFC7844}}.
 
 Document Status
 ===============
