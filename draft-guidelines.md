@@ -211,7 +211,7 @@ informative:
 
 --- abstract
 
-This document proposes guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}} and is an updated version of the guidelines for consideration in {{RFC8280}}. 
+This document proposes guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. This is an updated version of the guidelines for human rights considerations in {{RFC8280}}. 
 
 --- middle
 
