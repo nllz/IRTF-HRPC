@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-bortzmeyer-hrpc-anonymity-02
+docname: draft-tenoever-hrpc-anonymity-01
 category: info
 
 ipr: trust200902
@@ -148,7 +148,7 @@ Linkability
 : Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
 
 Pseudonymity
-: Derided from pseudonym, a persistent identity which is not the same as the entity's given (or official) name. For most (TODO all?) IETF protocols, pseudonimity is a given: protocols don't care whether the identity is an official one or not. But it should be noted that, if the user cannot create new pseudonyms easily, pseudonyms suffer from linkability. Unlikability depends on this ability to create new pseudonyms. TODO: or decide that pseudonyms *require* this ability to be created at will?
+: Derived from pseudonym, a persistent identity which is not the same as the entity's given (or official) name. For most (TODO all?) IETF protocols, pseudonimity is a given: protocols don't care whether the identity is an official one or not. But it should be noted that, if the user cannot create new pseudonyms easily, pseudonyms suffer from linkability. Unlikability depends on this ability to create new pseudonyms. TODO: or decide that pseudonyms *require* this ability to be created at will?
 
 Unlinkability
 : Unlinkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -181,7 +181,7 @@ With the increase of data there is also an increasing ability for third parties 
 Some network operators argue that without the opportunity to persistently identify individual users it becomes harder to thwart attacks and troubleshoot network issues. Whereas identification might be helpful to address issues in some cases, it poses an inherent threat to the anonymity of users. Not protecting the anonymity of users leads to a deterioration of the right to privacy, and the right to freedom of expression. There can be limitations the right to privacy, but these should always be provided by law and necessary and proportionate to achieve one of a handful of legitimate objectives.
 
 Anonymity will always be a balancing act between user protection (which requires a high level of anonymity) and other requirments for operations and
-research, such as routing information. Anonimity is by no means achieved by default in an online environment, nor has it been a strong consideration in protocol development in the development of the Internet. Increasing anonymity in the digital environment is not an easy task, exactly because the ubiquity of data that is generated and stored. But exactly the fact that we generate so much data urges us to address this issue. 
+research, such as routing information. Anonymity is by no means achieved by default in an online environment, nor has it been a strong consideration in protocol development in the development of the Internet. Increasing anonymity in the digital environment is not an easy task, exactly because the ubiquity of data that is generated and stored. But exactly the fact that we generate so much data urges us to address this issue. 
 
 Example of use cases
 ====================
@@ -209,6 +209,7 @@ Even without persistent identifiers, anonymity could be broken by examining the 
 If the protocol collects data and distributes it (see {{RFC6235}}), "anonymizing" the data is often suggested but it is notoriously hard. Do not think that just dropping the last byte of an IP address "anonymizes" data.
 
 Pay attention to the fact that Internet actors do not all see the same thing. Consider the anonymity of the user with respect to:
+
  - local network operator
  - other networks you connect to
  - your communications peer on the other end of the pipe
