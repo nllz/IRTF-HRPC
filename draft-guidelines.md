@@ -1,7 +1,7 @@
 ---
 title: Guidelines for Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-guidelines-00
+docname: draft-tenoever-hrpc-guidelines-00
 category: info
 
 ipr: trust200902
@@ -49,12 +49,15 @@ informative:
    RFC5321:
    RFC5646:
    RFC6108:
+   RFC6235:
    RFC6365:
    RFC6701:
    RFC6973:
    RFC7258:
    RFC7624:
    RFC7725:
+   RFC7844:
+   RFC8280:
 
    UDHR:
      title: The Universal Declaration of Human Rights
@@ -208,11 +211,7 @@ informative:
 
 --- abstract
 
-This document aims to propose guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. If you want to apply this work to your own, you can directly go to <xref target="model-for-developing-human-rights-protocol-considerations" />. The rest of the document explains the background of the guidelines and how they were developed.
-
-This document is not an Internet Standards Track specification; it is published for informational purposes.
-
-This informational document has consensus for publication from the Internet Research Task Force (IRTF) Human Right Protocol Considerations Research Group. It is the first milestone in a longer term research effort and has been reviewed both by the research group and by individuals from outside the research group. Many of the topics discussed are still under discussion in the research group and will be subjects of continuing research.
+This document proposes guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}} and is an updated version of the guidelines for consideration in {{RFC8280}}. 
 
 --- middle
 
