@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-01
+docname: draft-tenoever-hrpc-anonymity-02
 category: info
 
 ipr: trust200902
@@ -60,6 +60,13 @@ informative:
     author:
         - ins: Article29
     target: http://ec.europa.eu/justice/data-protection/article-29/documentation/opinion-recommendation/files/2014/wp216_en.pdf
+
+   GDPR:
+    title: "REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)"
+    date: 2016
+    author:
+        - ins: European Parliament and Council
+    target: http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679
 
    MITdeano:
       title: "Unique in the Crowd: The privacy bounds of human mobility"
@@ -142,7 +149,7 @@ Vocabulary Used
 Concepts in this draft currently strongly hinges on {{AnonTerm}}
 
 Anonymity
-: A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}}
+: A state of an individual in which an observer or attacker cannot identify the individual within a set of other  individuals (the anonymity set). {{RFC6973}} 
 
 Linkability
 : Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -168,7 +175,7 @@ It should be noted that the word "anonymity" is both very loaded politically (wi
 
 Anonymity is strongly linked to unlinkability: if your actions are linkable, it suffices that one of them is tied to your identity, and anonymity is over.
 
-It should be noted that anonymity is not binary: there have been these recent years a lot of progress of desanonymisation techniques. Data is
+It should be noted that anonymity is not binary: there have been these recent years a lot of progress of desanonymisation techniques (see also {{GDPR}}, article 26). Data is
 never fully "anonymous", it is only more or less anonymous. {{RFC6235}} {{MITdeano}} {{Utexas}} {{Article29}} 
 
 Should protocols promote anonymity?
