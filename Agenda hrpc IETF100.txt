@@ -10,27 +10,24 @@ Human Rights Protocols Considerations (hrpc) research group sessions at #IETF100
 
 - Context of research
 
-- Presentation + Q&A - Human Rights and Civil Liberties in the Internet RFCs, 1969-1979 and On - Sandra Braman (40 mins)
+- Presentation + Q&A - Human Rights and Civil Liberties in the Internet RFCs, 1969-1979 and On
+- Discussion of draft-tenoever-hrpc-association-02
 
-- Discussion of draft-tenoever-hrpc-association-02 (10 mins)
+- Discussion of draft-tenoever-hrpc-political-02
 
-- Discussion of draft-tenoever-hrpc-political-02 (10 mins)
+- Discussion of draft-tenoever-hrpc-anonymity-01
 
-- Discussion of draft-tenoever-hrpc-anonymity-01 (10 mins)
+- Discussion of draft-tenoever-hrpc-unrequested-00
 
-- Discussion of draft-tenoever-hrpc-unrequested-00 (5 mins)
+- Discussion of draft-tenoever-hrpc-guidelines-00 
 
-- Discussion of draft-tenoever-hrpc-guidelines-00 (2 mins)
+- Errata to RFC 7725 + draft-new-protocol-elements-451+ HR considerations
 
-- Errata to HTTP status code 451 + HR considerations (10 mins)
+- Update on progress on human rights considerations  
 
-- Update on the status of RFC8280 (2 mins)
+- Discussion on way forward
 
-- Discussion on way forward (draft-hrpc-expression/&-other-rights) (10 mins)
-
-- Report back on Public Interest Hackathon (10 mins)
-
-- Presentation + Q&A - Chainiac: end-to-end software supply chain security and transparency - Brian Ford (10 mins)
+- Presentation + Q&A - Chainiac: end-to-end software supply chain security and transparency 
 
 - Open discussion other drafts, papers, ideas
 
