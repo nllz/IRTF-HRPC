@@ -284,9 +284,22 @@ informative:
         - ins: V. Schyver
      target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
 
+   Troncosoetal:
+     title: "Systematizing Decentralization and Privacy:
+Lessons from 15 Years of Research and
+Deployments"
+     date: 2017
+     author:
+        - ins: C. Troncoso
+        - ins: M. Isaakdis
+        - ins: G. Danezis
+        - ins: H. Halpin
+     seriesinfo: "Proceedings on Privacy Enhancing Technologies ; 2017 (4):307–329"
+     target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
+
 --- abstract
 
-This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. 
+This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights, and provides a global public space built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. 
 
 --- middle
 
@@ -296,11 +309,11 @@ Introduction
 
 The right to freedom of assembly and association protects collective expression, in turn, systems and protocols than enable communal communication between people and servers allow these rights to prosper. The Internet itself was originally designed as "a medium of communication for machines that share resources with each other as equals" {{NelsonHedlun}}, the Internet thus forms a basic infrastructure for the right freedom of assembly and association. 
 
-The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonimity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. 
+The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonimity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. In other words, different architectural designs come with different affordances, or characteristics. These characteristics should be taken into account at the time of design, and when designing, updating and maintaining other parts of the architecture and infrastructure.
 
 {{RFC8280}} established the relationship between human rights and Internet protocols, and it provides guidelines for considerations on the human rights impact of protocols. 
 
-This draft aims to take continue the work started in draft-irtf-hrpc-research by investigating the exact impact of Internet protocols on a specific human rights, namely the right to freedom of assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. 
+This draft aims to continue the work started in {{RFC8280}} by investigating the exact impact of Internet protocols on a specific human rights, namely the right to freedom of assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. 
 
 
 Vocabulary used 
@@ -312,19 +325,19 @@ Autonomous System (AS)
 : The classic definition of an Autonomous System is a set of routers under a single technical administration, using an interior gateway protocol and common metrics to route packets within the AS, and using an exterior gateway protocol to route packets to other ASs {{RFC1771}}.
 
 Border Gateway Protocol (BGP)
-: 
+: An inter-Autonomous System routing protocol {{RFC4271}}.
 
 Connectivity
-: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}. The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
+: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the Stool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}. The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
 
 Data portability
-:
+: The ability to export ones data from a databases in a format that is compatible with other databases.
 	
 Decentralization
 : Implementation or deployment of standards, protocols or systems without one single point of control.
 
-Distribution
-:
+Distributed system
+: A system with multiple components that have their behavior co-ordinated via message passing. These components are usually spatially separated and communicate using a network, and may be managed by a single root of trust or authority. {{Troncosoetal}}
 
 Internet
 : The Network of networks, that consists of Autonomous Systems that are connected through the Internet Protocol (IP).
@@ -361,7 +374,10 @@ The right to freedom of assembly and association is quitessential for the Intern
 
 The IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussions, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}.
 
+ INSERT MORE STS
+
 We are aware that some of these examples go beyond the use of Internet protocols and flow over into the applications layer or examples in the offline world whereas the purpose of the following document is to break down the relationship between Internet protocols and the right to freedom of assembly and association. Nonetheless, given that protocols are a part of the socio-technical ordering of the world, we do recognize that in some cases the line between them and applications, implementations, policies and offline realities are often blurried and hard (if not impossible) to differentiate.
+
 
 Cases and examples
 ==================
@@ -393,8 +409,8 @@ While facilitating freedom of assembly and association multi-party video confere
 
 The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right to freedom of assembly or association.
 
-### XMPP
-{{RFC8280}} 5.2.3.4 ?
+### IRC
+
 
 
 ## Peer-to-peer networks and systems
@@ -408,7 +424,6 @@ In his book The Wealth of Networks, Benkler significantly expands on his definit
 Peer-to-peer (P2P) is esentially a model of how people interact in real life because "we deal directly with one another whenever we wish to" {{Vu}}. Usually if we need something we ask our peers, who in turn refer us to other peers. In this sense, the ideal definition of P2P is that "nodes are able to directly exchange resources and services between themselves without the need for centralized servers" and where each participating node typically acts both as a server and as a client {{Vu}}. In RFC 5694 P2P has been defined as peers or nodes that should be able to communicate directly between themselves without passing intermediaries, and that the system should be self-organizing and have decentralized control {{RFC5694}}. With this in mind, the ultimate model of P2P is a completely decentralized system, which is more resistant to speech regulation, immune to single points of failure and have a higher performance and scalability. Nonetheless, in practice some P2P systems are supported by centralized servers and some others have hybrid models where nodes are organized into two layers: the upper tier servers and the lower tier common nodes {{Vu}}.
 
 Since the ARPANET project, the original idea behind the Internet was conceived as what we would now call a peer-to-peer system {{RFC0001}}. Over time it has increasingly shifted towards a client/server model with "millions of consumer clients communicating with a relatively priviledged set of servers" {{NelsonHedlun}}. 
-## SYNTAX: add a space between these paragraphs.
 
 Whether for resource sharing or data sharing, P2P systems are a form of enabling freedom of assembly and association. Not only they allow for effective dissemination of information, but *they* also because leverage computing resources by diminishing costs allowing for the formation of open collectives at the network level. At the same time, in completely descentralized systems the nodes are autonomous and can join or leave the network as they want also makes the system unpredicable: a resource might be only sometimes available, and some others it might be missing or incomplete {{Vu}}. Lack of information might in turn make association or assembly more difficult.
 ## GRAMMAR: correct the following --->...but also because they leverage computing resources
