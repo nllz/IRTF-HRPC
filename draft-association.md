@@ -68,6 +68,7 @@ informative:
 
    Tocqueville:
      title: Democracy in America
+     date: 1840
      author:
         - ins: A. de Tocqueville
      target: http://classiques.uqac.ca/classiques/De_tocqueville_alexis/democracy_in_america_historical_critical_ed/democracy_in_america_vol_2.pdf p. 304
@@ -264,9 +265,9 @@ informative:
 
    Schleuder:
      title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+     date: 2017
      author:
         - org: Nadir
-     date 2017
      target: https://schleuder.nadir.org/
 
    Crawford:
@@ -285,9 +286,7 @@ informative:
      target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
 
    Troncosoetal:
-     title: "Systematizing Decentralization and Privacy:
-Lessons from 15 Years of Research and
-Deployments"
+     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
      date: 2017
      author:
         - ins: C. Troncoso
