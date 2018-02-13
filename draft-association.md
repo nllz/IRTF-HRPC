@@ -111,7 +111,7 @@ informative:
      seriesinfo: A/HRC/20/27
       
    APC:
-     title: Freedom of assembly and association online in India, Malaysia  and Pakistan. Trends, challenges and recommendations.
+     title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
      date: 2016
      author:
         - org: Association for Progressive Communications
@@ -299,7 +299,7 @@ Deployments"
 
 --- abstract
 
-This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights, and provides a global public space built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. 
+This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
 
 --- middle
 
