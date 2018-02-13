@@ -68,6 +68,7 @@ informative:
 
    Tocqueville:
      title: Democracy in America
+     date: 1840
      author:
         - ins: A. de Tocqueville
      target: http://classiques.uqac.ca/classiques/De_tocqueville_alexis/democracy_in_america_historical_critical_ed/democracy_in_america_vol_2.pdf p. 304
@@ -111,7 +112,7 @@ informative:
      seriesinfo: A/HRC/20/27
       
    APC:
-     title: Freedom of assembly and association online in India, Malaysia  and Pakistan. Trends, challenges and recommendations.
+     title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
      date: 2016
      author:
         - org: Association for Progressive Communications
@@ -264,9 +265,9 @@ informative:
 
    Schleuder:
      title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+     date: 2017
      author:
         - org: Nadir
-     date 2017
      target: https://schleuder.nadir.org/
 
    Crawford:
@@ -285,9 +286,7 @@ informative:
      target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
 
    Troncosoetal:
-     title: "Systematizing Decentralization and Privacy:
-Lessons from 15 Years of Research and
-Deployments"
+     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
      date: 2017
      author:
         - ins: C. Troncoso
@@ -299,7 +298,7 @@ Deployments"
 
 --- abstract
 
-This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights, and provides a global public space built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. 
+This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
 
 --- middle
 
