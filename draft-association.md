@@ -297,28 +297,26 @@ informative:
      target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
 
    StarRuhleder:
-     title:
-     date:
+     title: "Steps toward an ecology of infrastructure: Design and access for large information spaces"
+     date: 1996
      author:
-        - ins:
-        - ins:
-     seriesinfo:
-     target: 
-
-S.L.Star,K.Ruhleder,Stepstowardanecologyofinfrastructure:Designandaccessforlargeinformationspaces,InformationSystemsResearch7(1)
-(1996)111–134.
+        - ins: S.L. Star
+        - ins: K. Ruhleder
+     seriesinfo: "Information Systems Research 7 (1) (1996) 111–134."
 
    Weisser:
-     title:
-     date:
+     title: The computer for the 21st century
+     date: 1991
      author:
-        - ins:
-        - ins:
-     seriesinfo:
-     target: 
+        - ins: M. Weiser
+     seriesinfo: Scientific American 265 (3) p. 94–104.
 
-M.Weiser,Thecomputerforthe21stcentury,ScientificAmerican265(3)(1991)94–104.September199l.
-
+   Haass:
+     title: "Introduction: epistemic communities and international policy coordination"
+     date: 1992
+     author:
+        - ins: P.M. Haas
+     seriesinfo:  "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
 
 --- abstract
 
