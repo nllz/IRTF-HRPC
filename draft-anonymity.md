@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-02
+docname: draft-tenoever-hrpc-anonymity-03
 category: info
 
 ipr: trust200902
@@ -21,6 +21,7 @@ pi:
   text-list-symbols: -o*+
 
 author:
+
 -
        ins: S. Bortzmeyer
        name: Stephane Bortzmeyer
@@ -30,8 +31,8 @@ author:
 -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: ARTICLE 19
-       email: niels@article19.org
+       organization: University of Amsterdam
+       email: mail@nielstenoever.net
 
 normative:
   
@@ -155,8 +156,11 @@ Anonymity
 Linkability
 : Linkability of two or more items of interest (IOIs - Items Of Interest, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker can sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
 
+Official identity
+: Government-issued identity, as written on ID cards and passports. We don't use terms like "real names" since a choosen pseudonym, for instance, is not less real than a identity given at birth.
+
 Pseudonymity
-: Derived from pseudonym, a persistent identity which is not the same as the entity's given (or official) name. For all IETF protocols, pseudonimity is a given: protocols don't care whether the identity is an official one or not. Even if the protocol allows to use ifficial identities (for instance in the From: header of an Internet email), it dos not require it. But it should be noted that, if the user cannot create new pseudonyms easily, pseudonyms suffer from linkability. Unlikability depends on this ability to create new pseudonyms gratis and at will (good examples are SSH keys or Bitcoin addresses).
+: Derived from pseudonym, a persistent identity which is not the same as the entity's given (or official) name. For all IETF protocols, pseudonimity is a given: protocols don't care whether the identity is an official one or not. Even if the protocol allows to use official identities (for instance in the From: header of an Internet email), it does not require it. But it should be noted that, if the user cannot create new pseudonyms easily, pseudonyms suffer from linkability. Unlinkability depends on this ability to create new pseudonyms gratis and at will (good examples are SSH keys or Bitcoin addresses). Easy creation will allow to have one pseudonym per use, thus defeating linkability.
 
 Unlinkability
 : Unlinkability of two or more items of interest (IOIs, e.g., subjects, messages, actions, ...) from an attacker’s perspective means that within the system (comprising these and possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are related or not. {{AnonTerm}}
@@ -205,10 +209,16 @@ Successive use
 
 One user may switch from one identity to another. In that case, it must be doable without a "bleedover" from the old identity to the new one.
 
-TODO
-----
+Selective use
+-------------
 
-TODO more use cases
+A user might want to retain their anonymity to certain actors / protocols, but identified to others. Also, she may also wish to be identified for some operations but not always.
+
+User analysis
+-------------
+
+A user might want to understand which other actors might (potentially) have which level of information about them. TODO: this requires NO anonymity, no?
+
 
 Practical advices
 =================

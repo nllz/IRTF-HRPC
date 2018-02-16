@@ -82,7 +82,7 @@ informative:
      author:
         - ins: J.L. Contreras
      target:
-     seriesinfo: "Jurimetrics: The Journal of Law, Science & Technology, vol. 53, p. 163-211"
+     seriesinfo: "Jurimetrics: The Journal of Law, Science &amp; Technology, vol. 53, p. 163-211"
 
    hrpc:
      title: Research into Human Rights Protocol Considerations
@@ -259,7 +259,7 @@ informative:
       date: 1995
       author:
         - ins: J. Webster
-      seriesinfo: "The social shaping of inter-organizational IT systems and data interchange, eds: I. McLougling & D. Mason, European Commission PICT/COST A4"
+      seriesinfo: "The social shaping of inter-organizational IT systems and data interchange, eds: I. McLougling &amp; D. Mason, European Commission PICT/COST A4"
 
 
 --- abstract

@@ -1,7 +1,7 @@
 --- 
 title: Freedom of Association on the Internet
 abbrev: FoA
-docname: draft-tenoever-hrpc-association-02
+docname: draft-tenoever-hrpc-association-03
 category: info
 
 ipr: trust200902
@@ -19,7 +19,7 @@ pi:
   comments: yes
   inline: yes
   text-list-symbols: -o*+
-  
+
 author:
 
 -
@@ -36,247 +36,244 @@ author:
 
 normative:
 
-informative: 
-   RFC0001:
-   RFC0155: 
-   RFC1211:
-   RFC1287:
-   RFC3233:
-   RFC1958:
-   RFC4084:
-   RFC4949:
-   RFC5694:
-   RFC6176:
-   RFC6973:
-   RFC7118:
-   RFC7858:
-   RFC8280:
+informative:
 
-   UDHR:
-     title: The Universal Declaration of Human Rights
-     date: 1948
-     author:
-        - org: United Nations General Assembly
-     target:  http://www.un.org/en/documents/udhr/
+  RFC0001:
+  RFC0155:
+  RFC1211:
+  RFC1287:
+  RFC1771:
+  RFC1930:
+  RFC2812:
+  RFC3233:
+  RFC1958:
+  RFC4033:
+  RFC4084:
+  RFC4271:
+  RFC4880:
+  RFC4949:
+  RFC5246:
+  RFC5694:
+  RFC5751:
+  RFC6176:
+  RFC6973:
+  RFC7118:
+  RFC7754:
+  RFC7858:
+  RFC8280:
 
-   ICCPR:
-     title: International Covenant on Civil and Political Rights
-     date: 1966
-     author:
-        - org: United Nations General Assembly
-     target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
+  UDHR:
+    title: The Universal Declaration of Human Rights
+    date: 1948
+    author:
+      - org: United Nations General Assembly
+    target: http://www.un.org/en/documents/udhr/
 
-   Tocqueville:
-     title: Democracy in America
-     date: 1840
-     author:
-        - ins: A. de Tocqueville
-     target: http://classiques.uqac.ca/classiques/De_tocqueville_alexis/democracy_in_america_historical_critical_ed/democracy_in_america_vol_2.pdf p. 304
+  ICCPR:
+    title: International Covenant on Civil and Political Rights
+    date: 1966
+    author:
+      - org: United Nations General Assembly
+    target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
 
-   Abibil:
-     title: Dissecting 'Operation Ababil' - an OSINT Analysis
-     date: 2012
-     author:
-        - ins: D. Danchev
-     target: http://ddanchev.blogspot.be/2012/09/dissecting-operation-ababil-osint.html
+  Tocqueville:
+    title: Democracy in America
+    date: 1840
+    author:
+      - ins: A. de Tocqueville
+    target: http://classiques.uqac.ca/classiques/De_tocqueville_alexis/democracy_in_america_historical_critical_ed/democracy_in_america_vol_2.pdf p. 304
 
-   GreenMovement:
-     title: Iran DDoS
-     date: 2009
-     author:
-        - ins: N. Villeneuve
-     target: https://www.nartv.org/2009/06/16/iran-ddos/
+  Abibil:
+    title: Dissecting 'Operation Ababil' - an OSINT Analysis
+    date: 2012
+    author:
+      - ins: D. Danchev
+    target: http://ddanchev.blogspot.be/2012/09/dissecting-operation-ababil-osint.html
 
-   BCP72:
-     title: Guidelines for Writing RFC Text on Security Considerations
-     date: 2003
-     author: 
-        - org: IETF
-     target: https://datatracker.ietf.org/doc/bcp72/
+  GreenMovement:
+    title: Iran DDoS
+    date: 2009
+    author:
+      - ins: N. Villeneuve
+    target: https://www.nartv.org/2009/06/16/iran-ddos/
 
-   HussainHoward:
-     title: "What Best Explains Successful Protest Cascades? ICTs and the Fuzzy Causes of the Arab Spring"
-     date: 2013
-     author:
-        - ins: M.M. Hussain
-        - ins: P.N. Howard
-     target: https://doi.org/10.1111/misr.12020
-     seriesinfo: "Int Stud Rev (2013) 15 (1): 48-66."
+  BCP72:
+    title: Guidelines for Writing RFC Text on Security Considerations
+    date: 2003
+    author:
+      - org: IETF
+    target: https://datatracker.ietf.org/doc/bcp72/
 
-   UNHRC:
-     title: Report of the Special Rapporteur on the rights to freedom of peaceful assembly and of association 
-     date: 2012
-     author:
-        - ins: Maina Kiai
-     target: http://freeassembly.net/wp-content/uploads/2013/10/A-HRC-20-27_en-annual-report-May-2012.pdf
-     seriesinfo: A/HRC/20/27
-      
-   APC:
-     title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
-     date: 2016
-     author:
-        - org: Association for Progressive Communications
-        - ins: Gayathry Venkiteswaran 
-     target: https://www.apc.org/es/system/files/FOAA_online_IndiaMalaysiaPakistan.pdf
+  HussainHoward:
+    title: "What Best Explains Successful Protest Cascades? ICTs and the Fuzzy Causes of the Arab Spring"
+    date: 2013
+    author:
+      - ins: M.M. Hussain
+      - ins: P.N. Howard
+    target: https://doi.org/10.1111/misr.12020
+    seriesinfo: "Int Stud Rev (2013) 15 (1): 48-66."
 
-   Swire:
-     title: "Social Networks, Privacy, and Freedom of Association: Data Empowerment vs. Data Protection"
-     date: 2012
-     author:
-        - ins: Peter Swire
-     target: https://ssrn.com/abstract=1989516 or http://dx.doi.org/10.2139/ssrn.1989516
-     seriesinfo: "North Carolina Law Review (2012) 90 (1): 104."
+  UNHRC:
+    title: Report of the Special Rapporteur on the rights to freedom of peaceful assembly and of association
+    date: 2012
+    author:
+      - ins: Maina Kiai
+    target: http://freeassembly.net/wp-content/uploads/2013/10/A-HRC-20-27_en-annual-report-May-2012.pdf
+    seriesinfo: A/HRC/20/27
 
-   ARTICLE19:
-     title: "The Right to Protest Principles: Background Paper"
-     date: 2016
-     author:
-        - org: ARTICLE 19
-     target: https://www.article19.org/data/files/medialibrary/38581/Protest-Background-paper-Final-April-2016.pdf page 7
+  APC:
+    title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
+    date: 2016
+    author:
+      - org: Association for Progressive Communications
+      - ins: Gayathry Venkiteswaran
+    target: https://www.apc.org/es/system/files/FOAA_online_IndiaMalaysiaPakistan.pdf
 
-   UNGA:
-     title: Human rights defenders
-     date: 2004
-     author:
-        - ins: Hina Jilani
-     target: http://www.un.org/en/ga/search/view_doc.asp?symbol=A/59/401 para. 46
-     seriesinfo: A/59/401
-     
-   HafnerandLyon:
-     title: Where Wizards Stay Up Late. The Origins of the Internet
-     date: 1998
-     author:
-        - ins: K. Hafnerand
-        - ins: M. Lyon
-     target: https://doi.org/10.1111/misr.12020
-     seriesinfo: "First Touchstone Edition (1998): 93."
-   
-   Pensado:
-     title: Student Activism. Utopian Dreams.
-     date: 2012
-     author:
-        - ins: Jaime Pensado
-     target: http://revista.drclas.harvard.edu/book/student-activism
-     seriesinfo: "ReVista. Harvard Review of Latin America (2012)."
-     
-   Abbate:
-     title: Inventing the Internet
-     date: 2013
-     author:
-        - ins: Janet Abbate
-     target: https://mitpress.mit.edu/books/inventing-internet
-     seriesinfo: "Cambridge: MIT Press (2013): 11."
+  Swire:
+    title: "Social Networks, Privacy, and Freedom of Association: Data Empowerment vs. Data Protection"
+    date: 2012
+    author:
+      - ins: Peter Swire
+    target: https://ssrn.com/abstract=1989516 or http://dx.doi.org/10.2139/ssrn.1989516
+    seriesinfo: "North Carolina Law Review (2012) 90 (1): 104."
 
-   Pariser:
-      title: "The Filter Bubble: How the New Personalized Web Is Changing What We Read and How We Think"
-      date: 2012
-      author: 
-        - ins: E. Pariser
-      seriesinfo: Peguin Books, London.
+  ARTICLE19:
+    title: "The Right to Protest Principles: Background Paper"
+    date: 2016
+    author:
+      - org: ARTICLE 19
+    target: https://www.article19.org/data/files/medialibrary/38581/Protest-Background-paper-Final-April-2016.pdf page 7
 
-   Melucci:
-      title: The Process of Collective Identity
-      date: 1995
-      author:
-        - ins: A. Melucci
-      seriesinfo: Temple University Press, Philadelphia
+  UNGA:
+    title: Human rights defenders
+    date: 2004
+    author:
+      - ins: Hina Jilani
+    target: http://www.un.org/en/ga/search/view_doc.asp?symbol=A/59/401 para. 46
+    seriesinfo: A/59/401
 
-   AckermannKargerZhang:
-      title: "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?" 
-      date: 2017
-      author:
-        - ins: M. S. Ackerman
-        - ins: D. R. Karger
-        - ins: A. X. Zhang
-      target: https://people.csail.mit.edu/axz/papers/mailinglists.pdf
-      seriesinfo: "Mit. edu (2017): 1."
+  HafnerandLyon:
+    title: Where Wizards Stay Up Late. The Origins of the Internet
+    date: 1998
+    author:
+      - ins: K. Hafnerand
+      - ins: M. Lyon
+    target: https://doi.org/10.1111/misr.12020
+    seriesinfo: "First Touchstone Edition (1998): 93."
 
-   Marcus:
-      title: "Commercial Speech on the Internet: Spam and the first amendment"
-      date: 1998
-      author: 
-        - ins: J. A. Marcus
-      target: http://www.cardozoaelj.com/wp-content/uploads/2013/02/Marcus.pdf
-#      seriesinfo: "Cardozo Arts & Entertainment"
+  Pensado:
+    title: Student Activism. Utopian Dreams.
+    date: 2012
+    author:
+      - ins: Jaime Pensado
+    target: http://revista.drclas.harvard.edu/book/student-activism
+    seriesinfo: "ReVista. Harvard Review of Latin America (2012)."
 
-   Benkler:
-      title: Peer Production and Cooperation
-      date: 2009
-      author:
-        - ins: Y. Benkler
-      target: http://www.benkler.org/Peer%20production%20and%20cooperation%2009.pdf
-#      seriesinfo: "M. Bauer & M. Latzer (eds.), Handbook on the Economics of the Internet, Cheltenham and Northampton, Edward Elgar."
+  Abbate:
+    title: Inventing the Internet
+    date: 2013
+    author:
+      - ins: Janet Abbate
+    target: https://mitpress.mit.edu/books/inventing-internet
+    seriesinfo: "Cambridge: MIT Press (2013): 11."
 
-   AndersonGuarnieri:
-      title: "Fictitious Profiles and WebRTC's Privacy Leaks Used to Identify Iranian Activists"
-      date: 2016
-      author:
-        - ins: C. Anderson
-        - ins: C. Guarnieri
-      target: https://iranthreats.github.io/resources/webrtc-deanonymization/
+  Pariser:
+    title: "The Filter Bubble: How the New Personalized Web Is Changing What We Read and How We Think"
+    date: 2012
+    author:
+      - ins: E. Pariser
+    seriesinfo: Peguin Books, London.
 
-   OSCE:
-      title: Guidelines on Freedom of Peaceful Assembly 
-      date: 2010
-      author:
-         - org: OSCE Office for Democratic Institutions and Human Rights
-      target: https://www.osce.org/odihr/73405?download=true
-      seriesinfo: page 24
+  Melucci:
+    title: The Process of Collective Identity
+    date: 1995
+    author:
+      - ins: A. Melucci
+    seriesinfo: Temple University Press, Philadelphia
 
-   Abibil:
-     title: Dissecting 'Operation Ababil' - an OSINT Analysis
-     date: 2012
-     author:
-        - ins: D. Danchev
-     target: http://ddanchev.blogspot.be/2012/09/dissecting-operation-ababil-osint.html
+  AckermannKargerZhang:
+    title: "Mailing Lists: Why Are They Still Here, What’s Wrong With Them, and How Can We Fix Them?"
+    date: 2017
+    author:
+      - ins: M. S. Ackerman
+      - ins: D. R. Karger
+      - ins: A. X. Zhang
+    target: https://people.csail.mit.edu/axz/papers/mailinglists.pdf
+    seriesinfo: "Mit. edu (2017): 1."
 
-   GreenMovement:
-     title: Iran DDoS
-     date: 2009
-     author:
-        - ins: N. Villeneuve
-     target: https://www.nartv.org/2009/06/16/iran-ddos/
+  Marcus:
+    title: "Commercial Speech on the Internet: Spam and the first amendment"
+    date: 1998
+    author:
+      - ins: J. A. Marcus
+    target: http://www.cardozoaelj.com/wp-content/uploads/2013/02/Marcus.pdf
+    #      seriesinfo: "Cardozo Arts & Entertainment"
 
-   NelsonHedlun:
-     title: "A Network of Peers: Models Through the History of the Internet"
-     date: 2001
-     author:
-        - ins: N. Minar
-        - ins: M. Hedlun
-     target: "http://library.uniteddiversity.coop/REconomy_Resource_Pack/More_Inspirational_Videos_and_Useful_Info/Peer_to_Peer-Harnessing_the_Power_of_Disruptive_Technologies.pdf"
-     seriesinfo: "Peer to Peer: Harnessing the Power of Disruptive Technologies, ed: Andy Oram"
+  Benkler:
+    title: Peer Production and Cooperation
+    date: 2009
+    author:
+      - ins: Y. Benkler
+    target: http://www.benkler.org/Peer%20production%20and%20cooperation%2009.pdf
+    #    seriesinfo: "M. Bauer & M. Latzer (eds.), Handbook on the Economics of the Internet, Cheltenham and Northampton, Edward Elgar."
 
-   Vu:
-     title: "Peer-to-Peer Computing: Principles and Applications"
-     date: 2010
-     author:
-        - ins: Vu, Quang Hieu
-        - ins: Lupu, Mihai
-        - ins: Ooi, Beng Chin 
-     target: "https://www.springer.com/cn/book/9783642035135"
+  AndersonGuarnieri:
+    title: "Fictitious Profiles and WebRTC's Privacy Leaks Used to Identify Iranian Activists"
+    date: 2016
+    author:
+      - ins: C. Anderson
+      - ins: C. Guarnieri
+    target: https://iranthreats.github.io/resources/webrtc-deanonymization/
 
-   Star:
-     title: The Ethnography of Infrastructure
-     date: 1999
-     author:
-        - ins: S.L. Star
-     target: http://journals.sagepub.com/doi/abs/10.1177/00027649921955326
-     seriesinfo: American Behavioral Scientist, Volume 43 (3), 377-391.
+  OSCE:
+    title: Guidelines on Freedom of Peaceful Assembly
+    date: 2010
+    author:
+      - org: OSCE Office for Democratic Institutions and Human Rights
+    target: https://www.osce.org/odihr/73405?download=true
+    seriesinfo: page 24
 
-   Schleuder:
-     title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
-     date: 2017
-     author:
-        - org: Nadir
-     target: https://schleuder.nadir.org/
+  NelsonHedlun:
+    title: "A Network of Peers: Models Through the History of the Internet"
+    date: 2001
+    author:
+      - ins: N. Minar
+      - ins: M. Hedlun
+    target: "http://library.uniteddiversity.coop/REconomy_Resource_Pack/More_Inspirational_Videos_and_Useful_Info/Peer_to_Peer-Harnessing_the_Power_of_Disruptive_Technologies.pdf"
+    seriesinfo: "Peer to Peer: Harnessing the Power of Disruptive Technologies, ed: Andy Oram"
 
-   Crawford:
-     title: "The WebRTC VPN “Bug” and How to Fix"
-     date: 2015
-     author: 
-        - ins: D. Crawford
+  Vu:
+    title: "Peer-to-Peer Computing: Principles and Applications"
+    date: 2010
+    author:
+      - ins: Vu, Quang Hieu
+      - ins: Lupu, Mihai
+      - ins: Ooi, Beng Chin
+    target: "https://www.springer.com/cn/book/9783642035135"
+
+  Star:
+    title: The Ethnography of Infrastructure
+    date: 1999
+    author:
+      - ins: S.L. Star
+    target: http://journals.sagepub.com/doi/abs/10.1177/00027649921955326
+    seriesinfo: American Behavioral Scientist, Volume 43 (3), 377-391.
+
+  Schleuder:
+    title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+    date: 2017
+    author:
+      - org: Nadir
+    target: https://schleuder.nadir.org/
+
+  Crawford:
+    title: "The WebRTC VPN “Bug” and How to Fix"
+    date: 2015
+    author:
+      - ins: D. Crawford
     target: https://www.bestvpn.com/the-webrtc-vpn-bug-and-how-to-fix-it/
 
+<<<<<<< HEAD
    RPZ:
      title: DNS Response Policy Zones (RPZ)
      date: 2017
@@ -366,6 +363,90 @@ informative:
      author: Z. Tufekci
      target: https://www.twitterandteargas.org/
 
+=======
+  RPZ:
+    title: DNS Response Policy Zones (RPZ)
+    date: 2017
+    author:
+      - ins: P. Vixie
+      - ins: V. Schyver
+    target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
+
+  Troncosoetal:
+    title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
+    date: 2017
+    author:
+      - ins: C. Troncoso
+      - ins: M. Isaakdis
+      - ins: G. Danezis
+      - ins: H. Halpin
+    seriesinfo: "Proceedings on Privacy Enhancing Technologies ; 2017 (4):307–329"
+    target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
+
+  StarRuhleder:
+    title: "Steps toward an ecology of infrastructure: Design and access for large information spaces"
+    date: 1996
+    author:
+      - ins: S.L. Star
+      - ins: K. Ruhleder
+    seriesinfo: "Information Systems Research 7 (1) (1996) 111–134."
+
+  Weiser:
+    title: The computer for the 21st century
+    date: 1991
+    author:
+      - ins: M. Weiser
+    seriesinfo: Scientific American 265 (3) p. 94–104.
+
+  Haas:
+    title: "Introduction: epistemic communities and international policy coordination"
+    date: 1992
+    author:
+      - ins: P.M. Haas
+    seriesinfo: "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
+
+  Sink:
+    title: "Version Control by Example"
+    date: 2011
+    author:
+      - ins: E. Sink
+    target: http://ericsink.com/vcbe/
+    
+  Mosco:
+    title: "TODO"
+    date: TODO
+    author:
+      - ins: TODO
+  
+  Bloketal:
+    title: "TODO"
+    date: TODO
+    author:
+      - ins: TODO
+  
+  PipekWulf:
+    title: "TODO"
+    date: TODO
+    author:
+      - ins: TODO
+  
+  Mainwaringetal:
+    title: "Infrastructures and Their Discontents: Implications for Ubicomp"
+    date: 2004
+    author:
+      - ins: S.D. Mainwaring
+      - ins: M.F. Chang
+      - ins: K. Anderson 
+    seriesinfo: "DBLP Conference: Conference: UbiComp 2004: Ubiquitous Computing: 6th International Conference, Nottingham, UK, September 7-10, 2004. Proceedings"
+    target: http://www.dourish.com/classes/readings/Mainwaring-Infrastructure.pdf
+
+  Bowker:
+    title: Information mythology and infrastructure
+    date: 1994
+    author:
+      - ins: G. Bowker
+    seriesinfo: "In: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern Business,Routledge,London,1994,pp.231–247"
+>>>>>>> b1e98c5e4249ae5f50121ee66f0ad4dce5be5d56
 
 --- abstract
 
@@ -408,7 +489,7 @@ Connectivity
 
 Data portability
 : The ability to export ones data from a databases in a format that is compatible with other databases.
-	
+    
 Decentralization
 : Implementation or deployment of standards, protocols or systems without one single point of control.
 
