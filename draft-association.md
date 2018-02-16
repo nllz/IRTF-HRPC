@@ -42,12 +42,14 @@ informative:
   RFC0155:
   RFC1211:
   RFC1287:
+  RFC1288:
   RFC1771:
   RFC1930:
   RFC2812:
   RFC3233:
   RFC1958:
   RFC4033:
+  RFC4059:
   RFC4084:
   RFC4271:
   RFC4880:
@@ -273,113 +275,22 @@ informative:
       - ins: D. Crawford
     target: https://www.bestvpn.com/the-webrtc-vpn-bug-and-how-to-fix-it/
 
-<<<<<<< HEAD
-   RPZ:
-     title: DNS Response Policy Zones (RPZ)
-     date: 2017
-     author:
-        - ins: P. Vixie
-        - ins: V. Schyver
-     target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
-
-   Troncosoetal:
-     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
-     date: 2017
-     author:
-        - ins: C. Troncoso
-        - ins: M. Isaakdis
-        - ins: G. Danezis
-        - ins: H. Halpin
-     seriesinfo: "Proceedings on Privacy Enhancing Technologies ; 2017 (4):307–329"
-     target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
-
-   StarRuhleder:
-     title: "Steps toward an ecology of infrastructure: Design and access for large information spaces"
-     date: 1996
-     author:
-        - ins: S.L. Star
-        - ins: K. Ruhleder
-     seriesinfo: "Information Systems Research 7 (1) (1996) 111–134."
-
-   Weisser:
-     title: The computer for the 21st century
-     date: 1991
-     author:
-        - ins: M. Weiser
-     seriesinfo: Scientific American 265 (3) p. 94–104.
-
-   Haass:
-     title: "Introduction: epistemic communities and international policy coordination"
-     date: 1992
-     author:
-        - ins: P.M. Haas
-     seriesinfo:  "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
-
-   Mainwaringetal:
-     title: "Infrastructures and Their Discontents: Implications for Ubicomp"
-     date: 2004
-     author:
-        - ins: S.D. Mainwaring
-        - ins: M.F. Chang
-        - ins: K. Anderson 
-     seriesinfo: "DBLP Conference: Conference: UbiComp 2004: Ubiquitous Computing: 6th International Conference, Nottingham, UK, September 7-10, 2004. Proceedings"
-     target: http://www.dourish.com/classes/readings/Mainwaring-Infrastructure.pdf
-
-   Bowker:
-     title: Information mythology and infrastructure
-     date: 1994
-     author:
-        - ins: G. Bowker
-     seriesinfo: :In: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern Business,Routledge,London,1994,pp.231–247"
-
-   Bloketal
-     title: Infrastructuring Environments
-     date: 2016
-     author:
-        - ins: A. Blok
-        - ins: M. Nakazora
-        - ins: B.R. Winthereik
-     seriesinfo: "Science as Culture 25:1, 1-22."
-
-   PipekWulf
-     title: “Infrastructuring:  Towards an  Integrated  Perspective  on  the  Design  and  Use  of Information Technology,”
-     date: 2009
-     author:
-        - ins: V. Pipek
-        - ins: W. Wolf
-     seriesinfo: "Journal of the Association for Information Systems (10) 5, pp. 306-332"
-
-   Anderson
-     title: "The political voice of young citizens Educational conditions for political conversation – school and social media"
-     date: 2012
-     author:
-       - ins: E. Andersson
-     seriesinfo: "Utbildning & Demokrati: Tidskrift för Didaktik och Utbildningspolitik, Volume 21, Number 1, 2012, pp. 97-119(23)"
-     target: http://www.ingentaconnect.com/content/doaj/11026472/2012/00000021/00000001/art00006
-
-    Tufekci
-     title: "Twitter and Tear Gas: The Power and Fragility of Networked Protest"
-     date: 2017
-     author: Z. Tufekci
-     target: https://www.twitterandteargas.org/
-
-=======
   RPZ:
     title: DNS Response Policy Zones (RPZ)
     date: 2017
     author:
-      - ins: P. Vixie
-      - ins: V. Schyver
+       - ins: P. Vixie
+       - ins: V. Schyver
     target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
 
   Troncosoetal:
     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
     date: 2017
     author:
-      - ins: C. Troncoso
-      - ins: M. Isaakdis
-      - ins: G. Danezis
-      - ins: H. Halpin
+       - ins: C. Troncoso
+       - ins: M. Isaakdis
+       - ins: G. Danezis
+       - ins: H. Halpin
     seriesinfo: "Proceedings on Privacy Enhancing Technologies ; 2017 (4):307–329"
     target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
 
@@ -387,56 +298,31 @@ informative:
     title: "Steps toward an ecology of infrastructure: Design and access for large information spaces"
     date: 1996
     author:
-      - ins: S.L. Star
-      - ins: K. Ruhleder
+       - ins: S.L. Star
+       - ins: K. Ruhleder
     seriesinfo: "Information Systems Research 7 (1) (1996) 111–134."
 
-  Weiser:
+  Weisser:
     title: The computer for the 21st century
     date: 1991
     author:
-      - ins: M. Weiser
+       - ins: M. Weiser
     seriesinfo: Scientific American 265 (3) p. 94–104.
 
   Haas:
     title: "Introduction: epistemic communities and international policy coordination"
     date: 1992
     author:
-      - ins: P.M. Haas
-    seriesinfo: "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
+       - ins: P.M. Haas
+    seriesinfo:  "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
 
-  Sink:
-    title: "Version Control by Example"
-    date: 2011
-    author:
-      - ins: E. Sink
-    target: http://ericsink.com/vcbe/
-    
-  Mosco:
-    title: "TODO"
-    date: TODO
-    author:
-      - ins: TODO
-  
-  Bloketal:
-    title: "TODO"
-    date: TODO
-    author:
-      - ins: TODO
-  
-  PipekWulf:
-    title: "TODO"
-    date: TODO
-    author:
-      - ins: TODO
-  
   Mainwaringetal:
     title: "Infrastructures and Their Discontents: Implications for Ubicomp"
     date: 2004
     author:
-      - ins: S.D. Mainwaring
-      - ins: M.F. Chang
-      - ins: K. Anderson 
+       - ins: S.D. Mainwaring
+       - ins: M.F. Chang
+       - ins: K. Anderson 
     seriesinfo: "DBLP Conference: Conference: UbiComp 2004: Ubiquitous Computing: 6th International Conference, Nottingham, UK, September 7-10, 2004. Proceedings"
     target: http://www.dourish.com/classes/readings/Mainwaring-Infrastructure.pdf
 
@@ -444,9 +330,63 @@ informative:
     title: Information mythology and infrastructure
     date: 1994
     author:
-      - ins: G. Bowker
+       - ins: G. Bowker
     seriesinfo: "In: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern Business,Routledge,London,1994,pp.231–247"
->>>>>>> b1e98c5e4249ae5f50121ee66f0ad4dce5be5d56
+
+  Bloketal:
+    title: Infrastructuring Environments
+    date: 2016
+    author:
+       - ins: A. Blok
+       - ins: M. Nakazora
+       - ins: B.R. Winthereik
+    seriesinfo: "Science as Culture 25:1, 1-22."
+
+  PipekWulf:
+    title: "Infrastructuring: Towards an Integrated Perspective on the Design and Use of Information Technology"
+    date: 2009
+    author:
+       - ins: V. Pipek
+       - ins: W. Wolf
+    seriesinfo: "Journal of the Association for Information Systems (10) 5, pp. 306-332"
+
+  Anderson:
+    title: "The political voice of young citizens Educational conditions for political conversation – school and social media"
+    date: 2012
+    author:
+      - ins: E. Andersson
+    seriesinfo: "Utbildning & Demokrati: Tidskrift för Didaktik och Utbildningspolitik, Volume 21, Number 1, 2012, pp. 97-119(23)"
+    target: http://www.ingentaconnect.com/content/doaj/11026472/2012/00000021/00000001/art00006
+
+  Tufekci:
+    title: "Twitter and Tear Gas: The Power and Fragility of Networked Protest"
+    date: 2017
+    author: 
+      - ins: Z. Tufekci
+    target: https://www.twitterandteargas.org/
+
+  Weiser:
+    title: The Computer for the 21st Century 
+    date: 1991
+    author:
+      - ins: L M. Weiser
+    seriesinfo: Scientific American Ubicomp Paper after Sci Am editing 
+    target: https://web.archive.org/web/20141022035044/http://www.ubiq.com/hypertext/weiser/SciAmDraft3.html
+
+  Sink:
+    title: Version Control by Example
+    date: 2011
+    author: 
+      - ins: E. Sink
+    target: http://ericsink.com/vcbe/
+
+  Mosco:
+     title: "The Digital Sublime: Myth, Power, and Cyberspace"
+     date: 2005
+     author:
+      - ins: V. Mosco
+     target: https://mitpress.mit.edu/books/digital-sublime
+
 
 --- abstract
 
