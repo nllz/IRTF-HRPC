@@ -335,10 +335,41 @@ informative:
         - ins: G. Bowker
      seriesinfo: :In: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern Business,Routledge,London,1994,pp.231–247"
 
+   Bloketal
+     title: Infrastructuring Environments
+     date: 2016
+     author:
+        - ins: A. Blok
+        - ins: M. Nakazora
+        - ins: B.R. Winthereik
+     seriesinfo: "Science as Culture 25:1, 1-22."
+
+   PipekWulf
+     title: “Infrastructuring:  Towards an  Integrated  Perspective  on  the  Design  and  Use  of Information Technology,”
+     date: 2009
+     author:
+        - ins: V. Pipek
+        - ins: W. Wolf
+     seriesinfo: "Journal of the Association for Information Systems (10) 5, pp. 306-332"
+
+   Anderson
+     title: "The political voice of young citizens Educational conditions for political conversation – school and social media"
+     date: 2012
+     author:
+       - ins: E. Andersson
+     seriesinfo: "Utbildning & Demokrati: Tidskrift för Didaktik och Utbildningspolitik, Volume 21, Number 1, 2012, pp. 97-119(23)"
+     target: http://www.ingentaconnect.com/content/doaj/11026472/2012/00000021/00000001/art00006
+
+    Tufekci
+     title: "Twitter and Tear Gas: The Power and Fragility of Networked Protest"
+     date: 2017
+     author: Z. Tufekci
+     target: https://www.twitterandteargas.org/
+
 
 --- abstract
 
-This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
+This document scopes the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
 
 --- middle
 
@@ -391,6 +422,7 @@ Internet
 : The Network of networks, that consists of Autonomous Systems that are connected through the Internet Protocol (IP).
 : A persistent socio-technical system over which services are delivered {{Mainwaringetal}}
 : A techno-social assemblage of devices, users, sensors, networks, routers, governance, administrators, operators and protocols
+: An emergent-process-driven thing that is born from the collections of the ASes that happen to be gathered together at any given time. The fact that they tend to interact at any given time means it is an emergent property that happens because they use the protocols defined at IETF. 
 
 Research questions
 ==================
@@ -433,7 +465,7 @@ Here we will discuss different cases to give an overview of how the Internet pro
 
 ## Conversing
 
-An interactive conversation between two or more people forms the basis for people to organize and associate. 
++An interactive conversation between two or more people forms the basis for people to organize and associate. According to Anderson "the relationship between political conversation and engagement in the democratic process is strong." {{Anderson}}. By this definition, what defines the "political" is essentially assembly or association: a basis for the development of social cohesion in society.
 
 ### Mailing Lists
 
@@ -453,10 +485,12 @@ The risk of surveillance is also true in an offline space, but this is generally
 
 ### Inter Relay Chat
 
-{{RFC2812}}
+Internet Relay Chat (IRC) is an application layer protocol that enables communication in the form of text through a a client/server networking model {{RFC4059}}. In other words, a chat service. IRC clients are computer programs that a user can install on their system. These clients communicate with chat servers to transfer messages to other clients {{RFC4059}}.
 
+For order to be kept within the IRC network, special clases of users become "operators" and are allowed to perform general maintenance functions on the network: basic network tasks such as disconnecting (temporary or permanently) and reconnecting servers as needed {{RFC2812}}. One of the most controversial power of operators is the ability to remove a user from the connected network by 'force', i.e., operators are able to close the connection between any client and server {{RFC2812}}.
 
-
+IRC servers may deploy different policies for the ability of users to create their own channels or 'rooms', and for the delegation of 'operator'-rights in such a room. Some IRC servers support SSL/TLS connections for security purposes. This helps stop the use of packet sniffer programs to obtain the passwords of IRC users, but has little use beyond this scope due to the public nature of IRC channels. SSL connections require both client and server support (that may require the user to install SSL binaries and IRC client specific patches or modules on their computers). Some networks also use SSL for server to server connections, and provide a special channel flag (such as +S) to only allow SSL-connected users on the channel, while disallowing operator identification in clear text, to better utilize the advantages that SSL provides.
+ 
 ## Peer-to-peer networks and systems
 
 At the organizational level, peer production is one of the most relevant innovations from Internet mediated social practices. According to {{Benkler}}, it implies 'open collaborative innovation and creation, performed by diverse, decentralized groups organized principally by neither price signals nor organizational hierarchy, harnessing heterogeneous motivations, and governed and managed based on principles other than the residual authority of ownership implemented through contract.' {{Benkler}}. 
@@ -508,32 +542,24 @@ This is also true for the Border Gateway Protocol - the protocol that selects th
 Discussion: Protocols vs Platforms
 ==================================
 
-## Farell: - It's IMO an error to not include analysis of FB or other closed systems. There has been an ongoing tension between those and open protocols (jabber etc) in which the latter have so far always lost out. I think looking at that could be useful.
+The Internet increasingly becomes a vehicle for commercial, propietary, non-interoperable platforms. The Internet has always allowed for closed-off networks, but the current trend show the rise of a small number of very large non-interoperable platforms. Chat has moved from finger {{RFC1288}}, XMPP and IRC to Facebook Messenger, Whatsapp and WeChat and there has been a strong rise of social media networks with large numbers of users, such as Facebook, Twitter and Instagram. A similar trend can be found among e-mail providers, with the significant difference that e-mail is interoperable. 
 
-This issue is particularly timely since an increasing trend of centralization and consolidation on the Internet can be observed. This trend can be parallely observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. Through the discussion of specific cases we will try to further understand how this impacts freedom of assembly, freedom of association as well as the distributed nature of the Internet {{RFC1287}}.
+Often these non-interoperable platform are built on open-protocols but do not allow for inter-operability or data-portability. In the case of these large platforms this leads to strong network externalities, also know as a network effect; because the users are there, users will be there. The use of social-media platforms has enabled groups to associate, but is has also led to a 'tactical freeze' because of the inability to change the platforms {{Tufekci}}. Whereas these networks a ready-to-hand networked public sphere, it does not allow for its inhabitants to change, or fully understand, their workings.
 
-Protocols vs platforms
-
+This potentially has a significant impact on the distributed nature of the Internet {{RFC1287}}.
 
 Discussion: The Internet as an association
 ==========================================
 
-It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. Taking this definition and the previous analysis into consideration, we argue that the Internet constitutes a an assembly and an association. What are the implications of this? Does it mean that every network is an assembly and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' assembly (the Internet) has prevails over the preferences of the smaller ones (individual AS'es)? 
-## Not sure, what do you think? Again, the streets are not the association. People are. Let's call. 
-
-The demands that have been set for ASes is very limited and are based on routing principles: an AS must be used for exchanging external routing information with other ASes through BGP, should therefore use BGP and IP and have a routing policy {{RFC1930}}. So in order to be able to connect to the Internet as an AS, which means to engage in peering or transit relations, there are basic rules one needs to adhere to.  But theses rules do not say anything on how the AS will or should treat traffic on its network. If we take the example of ASes, we could say they are private infrastructure (therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure, from the moment the receive an Autonomous Systems Number. But, even things that are private, need to live up to standards because they have public consequences.
-
-The Internet is made of up interconnected ASes (one would argue that this doesn't include IXPs, but most modern IXPs will have an ASN for their route server (and possibly a separate ASN for their management infrastructure), which jointly form an assembly and an association. This assembly and association should be protected. This means that rights and obligations that sterm from this organizational form, should also be protected and respected.
-
-## My feeling after last IETF is that the Internet is an assembly and not association. It's a minor difference, but might be a relevant one. I don't want to make too many edits. Let's discuss this section first. 
-## I wrote on the mailing list: 
-1. The OSCE-ODIHR Guidelines on Freedom of Peaceful Assembly  define assembly as an intentional and temporary presence of a number of
-individuals in a public place for a common expressive purpose. ( Source https://www.osce.org/odihr/73405?download=true). Is this definition enough? Can “machines” or “nodes within an AS” can be considered as an individual for this purpose?
-2. I loved Andrew’s definition of “the Internet” because I think it talks about an assembly: an emergent-process-driven thing that is born from the collections of the ASes that happen to be gathered together at any given time. The fact that they tend to interact at any given time, it’s an emergent property that happens because they use the protocols
-defined at IETF.
-
-## SHORE and BAKER: ASes are not people. Melinda is "not that comfortable with this document or discussion for that reason.  There may be an argument to be made that having a fully-connected (?) internet is necessary to support freedom of association (although I'm not sure about that, either), but I'd be a bit more circumspect about conflating routing and the human2 right to freedom of association.
+It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. 
+Assemblies however have an inherently temporary nature, whereas associations do not. Taking these definition and the previous analysis into consideration, we argue that the Internet constitutes an an association. What are the implications of this? Does it mean that every network is an assembly within the association and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' association (the Internet) has prevails over the preferences of the smaller assemblies (individual AS'es)? Or rather, is there a tipping point? For instance if an operator (an AS) wants to filter a specific IP-range. Today, they can do it *technically* (it is quite easy) and *legally* (their network, their rules, and, for this specific case, few people would complain). *But* if everyone started to do it, and to filter networks they don't like (or filtering TLDs they don't like in their DNS resolvers), then there would be a significant problem. A minority of operators filtering a specific IP-range, the Internet would still work and would still be "the Internet". A majority of operators filtering a lot of networks they don't like and, at a point, this would no longer be the Internet. This is a case
+where quantitative changes bring qualitative changes: too much
+filtering and we would no longer have a global network. Despite that fact that each AS has the right to take decisions such as filtering, if everyone started to exercice this right fully, this would destroy the Internet.
  
+The demands that have been set for ASes is very limited and are based on routing principles: an AS must be used for exchanging external routing information with other ASes through BGP, should therefore use BGP and IP and have a routing policy {{RFC1930}}. So in order to be able to connect to the Internet as an AS, which means to engage in peering or transit relations, there are basic rules one needs to adhere to.  But theses rules do not say anything on how the AS will or should treat traffic on its network. If we take the example of ASes, we could say they are private infrastructure (therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure, from the moment the receive an Autonomous Systems Number. But, even things that are private, need to live up to standards because they have public consequences. Especially because specific behaviour of ASes can lead to vicious or virtuous circles. 
+
+The Internet is made of up interconnected ASes (one would argue that this doesn't include IXPs, but most modern IXPs will have an ASN for their route server (and possibly a separate ASN for their management infrastructure), which jointly form an association. This association should be protected. This means that rights and obligations that sterm from this organizational form, should also be protected and respected.
+
 Conclusions
 ===========
 
@@ -541,8 +567,17 @@ The Internet has an impact on the ability for people to excercise their right to
 
     [the] freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. {{UDHR}}
 
-The difference between freedom of expression and freedom of association and assembly is that the Internet itself takes the form on an association and assembly; it reproduces its features of collaboration. Recognizing this is a crucial step in determining architectural features of the Internet and its usage. 
+The difference between freedom of expression and freedom of association and assembly is that the Internet itself takes the form on an association; it reproduces its features of collaboration. Recognizing this is a crucial step in determining architectural features of the Internet and its usage. 
 
+
+Acknowledgements
+================
+
+- Fred Baker, Jefsey, and Andrew Sullivan for work on Internet definitions
+
+- Stephane Bortzmeyer for several concrete text suggestions that found their way in this document (such as the AS filtering example)
+
+- the hrpc mailinglist at large for a very constructive discussion on a hard topic.
 
 Security Considerations
 =======================
