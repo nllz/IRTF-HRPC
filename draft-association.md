@@ -318,6 +318,24 @@ informative:
         - ins: P.M. Haas
      seriesinfo:  "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
 
+   Mainwaringetal:
+     title: "Infrastructures and Their Discontents: Implications for Ubicomp"
+     date: 2004
+     author:
+        - ins: S.D. Mainwaring
+        - ins: M.F. Chang
+        - ins: K. Anderson 
+     seriesinfo: "DBLP Conference: Conference: UbiComp 2004: Ubiquitous Computing: 6th International Conference, Nottingham, UK, September 7-10, 2004. Proceedings"
+     target: http://www.dourish.com/classes/readings/Mainwaring-Infrastructure.pdf
+
+   Bowker:
+     title: Information mythology and infrastructure
+     date: 1994
+     author:
+        - ins: G. Bowker
+     seriesinfo: :In: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern Business,Routledge,London,1994,pp.231–247"
+
+
 --- abstract
 
 This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
@@ -344,7 +362,7 @@ Vocabulary used
 ===============
 
 Architecture
-:
+: The design of a structure
 
 Autonomous System (AS)
 : Autonomous Systems are the unit of routing policy in the modern world of exterior routing {{RFC1930}}.
@@ -367,15 +385,12 @@ Distributed system
 : A system with multiple components that have their behavior co-ordinated via message passing. These components are usually spatially separated and communicate using a network, and may be managed by a single root of trust or authority. {{Troncosoetal}}
 
 Infrastructure
-: **bowker, relational nature
-]
-G. Bowker, Information mythology and infrastructure, in: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern
-Business,Routledge,London,1994,pp.231–247
+: Underlying basis or structure for a functioning society, organization or community. Because infrastructure is a precondition for other activities it has a procedural, rather than static, nature due to its social and cultural embeddedness. {{PipekWulf}} {{Bloketal}}. This means that infrastructure is always relational: infrastructure always develops in relation to something or someone {{Bowker}}.
 
 Internet
 : The Network of networks, that consists of Autonomous Systems that are connected through the Internet Protocol (IP).
-: The ass
-
+: A persistent socio-technical system over which services are delivered {{Mainwaringetal}}
+: A techno-social assemblage of devices, users, sensors, networks, routers, governance, administrators, operators and protocols
 
 Research questions
 ==================
