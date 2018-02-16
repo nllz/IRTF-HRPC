@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-02
+docname: draft-tenoever-hrpc-anonymity-03
 category: info
 
 ipr: trust200902
@@ -21,6 +21,7 @@ pi:
   text-list-symbols: -o*+
 
 author:
+
 -
        ins: S. Bortzmeyer
        name: Stephane Bortzmeyer
@@ -30,8 +31,8 @@ author:
 -
        ins: N. ten Oever
        name: Niels ten Oever
-       organization: ARTICLE 19
-       email: niels@article19.org
+       organization: University of Amsterdam
+       email: mail@nielstenoever.net
 
 normative:
   
