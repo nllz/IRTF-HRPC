@@ -68,6 +68,7 @@ informative:
 
    Tocqueville:
      title: Democracy in America
+     date: 1840
      author:
         - ins: A. de Tocqueville
      target: http://classiques.uqac.ca/classiques/De_tocqueville_alexis/democracy_in_america_historical_critical_ed/democracy_in_america_vol_2.pdf p. 304
@@ -111,7 +112,7 @@ informative:
      seriesinfo: A/HRC/20/27
       
    APC:
-     title: Freedom of assembly and association online in India, Malaysia  and Pakistan. Trends, challenges and recommendations.
+     title: Freedom of assembly and association online in India, Malaysia and Pakistan. Trends, challenges and recommendations.
      date: 2016
      author:
         - org: Association for Progressive Communications
@@ -264,9 +265,9 @@ informative:
 
    Schleuder:
      title: Schleuder - A gpg-enabled mailinglist with remailing-capabilities.
+     date: 2017
      author:
         - org: Nadir
-     date 2017
      target: https://schleuder.nadir.org/
 
    Crawford:
@@ -285,9 +286,7 @@ informative:
      target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
 
    Troncosoetal:
-     title: "Systematizing Decentralization and Privacy:
-Lessons from 15 Years of Research and
-Deployments"
+     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
      date: 2017
      author:
         - ins: C. Troncoso
@@ -297,9 +296,31 @@ Deployments"
      seriesinfo: "Proceedings on Privacy Enhancing Technologies ; 2017 (4):307–329"
      target: https://www.petsymposium.org/2017/papers/issue4/paper87-2017-4-source.pdf
 
+   StarRuhleder:
+     title: "Steps toward an ecology of infrastructure: Design and access for large information spaces"
+     date: 1996
+     author:
+        - ins: S.L. Star
+        - ins: K. Ruhleder
+     seriesinfo: "Information Systems Research 7 (1) (1996) 111–134."
+
+   Weisser:
+     title: The computer for the 21st century
+     date: 1991
+     author:
+        - ins: M. Weiser
+     seriesinfo: Scientific American 265 (3) p. 94–104.
+
+   Haass:
+     title: "Introduction: epistemic communities and international policy coordination"
+     date: 1992
+     author:
+        - ins: P.M. Haas
+     seriesinfo:  "International Organization, special issue: Knowledge, Power, and International Policy Coordination, Cambridge Journals. 46 (1): 1–35."
+
 --- abstract
 
-This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. The Internet increasingly mediates our lives and our ability to excercise human rights, and provides a global public space built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and adverse impacts should be mitigated. 
+This document aims to scope the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
 
 --- middle
 
@@ -307,17 +328,23 @@ This document aims to scope the relation between Internet protocols and the righ
 Introduction
 ============
 
+    “We shape our tools and, thereafter, our tools shape us.” 
+        — John Culkin (1967)
+
+The Internet is a technology which shapes modern information societies. The ordering that the Internet provides is socio-technical, in other words, the Internet infrastructure and architecture consists of social and technological arrangements {{StarRuhleder}}. This odering is not always apparent because infrastructure also tends to hide itself in the societal woodwork {{Mosco}}, or with  {{Weiser}}: ‘The most profound technologies are those that disappear'. Next to that infrastructure is often taken for granted by those using it. Infrastructure therefore mostly presents itself either to an epistemic community of experts {{Haas}} or to a larger public upon breakdown. With the increasing societal use of the Internet the importance of the Internet is growing, and the decisions made about its infrastructure and architecture therefore also become more important. {{RFC8280}} established the relationship between human rights and Internet protocols, and in this document we seek to uncover the relation between two specific human rights and the Internet infrastructure and architecture.
+
 The right to freedom of assembly and association protects collective expression, in turn, systems and protocols than enable communal communication between people and servers allow these rights to prosper. The Internet itself was originally designed as "a medium of communication for machines that share resources with each other as equals" {{NelsonHedlun}}, the Internet thus forms a basic infrastructure for the right freedom of assembly and association. 
 
 The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonimity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. In other words, different architectural designs come with different affordances, or characteristics. These characteristics should be taken into account at the time of design, and when designing, updating and maintaining other parts of the architecture and infrastructure.
 
-{{RFC8280}} established the relationship between human rights and Internet protocols, and it provides guidelines for considerations on the human rights impact of protocols. 
-
-This draft aims to continue the work started in {{RFC8280}} by investigating the exact impact of Internet protocols on a specific human rights, namely the right to freedom of assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. 
+This draft continues the work started in {{RFC8280}} by investigating the exact impact of Internet protocols on a specific human rights, namely the right to freedom of assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. 
 
 
 Vocabulary used 
 ===============
+
+Architecture
+:
 
 Autonomous System (AS)
 : Autonomous Systems are the unit of routing policy in the modern world of exterior routing {{RFC1930}}.
@@ -339,11 +366,16 @@ Decentralization
 Distributed system
 : A system with multiple components that have their behavior co-ordinated via message passing. These components are usually spatially separated and communicate using a network, and may be managed by a single root of trust or authority. {{Troncosoetal}}
 
+Infrastructure
+: **bowker, relational nature
+]
+G. Bowker, Information mythology and infrastructure, in: L. Bud (Ed.), Information Acumen: The Understanding and use of Knowledge in Modern
+Business,Routledge,London,1994,pp.231–247
+
 Internet
 : The Network of networks, that consists of Autonomous Systems that are connected through the Internet Protocol (IP).
+: The ass
 
-Interoperability
-:
 
 Research questions
 ==================
@@ -404,7 +436,7 @@ While facilitating freedom of assembly and association multi-party video confere
 
 The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right to freedom of assembly or association.
 
-### Inter Relay Chay
+### Inter Relay Chat
 
 {{RFC2812}}
 
@@ -438,11 +470,6 @@ The IETF has not made a decision on the use of centralized instances of git, suc
 https://www.ietf.org/archive/id/draft-nottingham-wugh-services-00.txt
 https://www.ietf.org/archive/id/draft-thomson-github-bcp-00.txt
 
-## Reaching out
-
-In meatspace, handing out pamphlets and reaching out to unknown people is the most common way for growing a cause and seeking collective support. The characteristics of the Internet infrastructure and online space make reaching out more difficult.
-## Most people on the list do not coincide with this entire section. The filter bubble argument is controversial itself. I suggest some minor changes that might lead to a broader consensus.
-
 ## Grouping together (identities)
 
 Collective identities are also protected by freedom of association and assembly. Acording to Melucci these are 'shared definitions produced by several interacting individuals who are concerned with the orientation of their action as well as the field of opportunities and constraints in which their action takes place.' {{Melucci}} In this sense, assemblies and associations are an important base in the maintenance and development of culture, as well as preservation of minority identities {{OSCE}}. 
@@ -451,7 +478,7 @@ Collective identities are also protected by freedom of association and assembly.
 
 Domain names allow hosts to be identified by human parsable information. Whereas an IP address might not be the expression of an identity, a domain name can be, and often is. On the other hand the grouping of a certain identity under a specific domain or even a Top Level Domain brings about risks because connecting an identity to a hierarchically structured identifier systems creates a central attack surface. Some of these risks are the surveillance of the services running on the domain, domain based censorship {{RFC7754}}, or impersonation of the domain through DNS cache poisoning. Several technologies have been developed in the IETF to mitigated these risks such as DNS over TLS {{RFC7858}}, DNSSEC {{RFC4033}}, and TLS {{RFC5246}}. These mitigations would, when implemented, not make censorship impossible, but rather make it visible. The use of a centralized authority always makes censorship through a registry or registrar possible, as well as by using a fake resolver or using proposed standards such as DNS Response Policy Zones {{RPZ}}.
 
-The structuring of DNS as a hierarchical authority structure also brings about specific characteristic, namely the possibility of centralized policy making vis a vis the management and operation of domain names, which is what (in part) happens at ICANN. The impact of ICANN processes on human rights will not be discussed here. 
+The structuring of DNS as a hierarchical authority structure also brings about specific characteristic, namely the possibility of centralized policy making vis a vis the management and operation of Top Level Domains, which is what (in part) happens at ICANN. The impact of ICANN processes on human rights will not be discussed here. 
 
 ### ASes
 
@@ -463,12 +490,14 @@ In some cases it also means that there is no other way for the edge-user to conn
 
 This is also true for the Border Gateway Protocol - the protocol that selects the route for traffic over the Internet. Aside from significant security issues there is no transparency about the routes that packets have taken, and thus it is also unclear which ASes a packet has transversed. 
  
-Discussion: Interoperability and data-portability
-=================================================
+Discussion: Protocols vs Platforms
+==================================
 
 ## Farell: - It's IMO an error to not include analysis of FB or other closed systems. There has been an ongoing tension between those and open protocols (jabber etc) in which the latter have so far always lost out. I think looking at that could be useful.
 
 This issue is particularly timely since an increasing trend of centralization and consolidation on the Internet can be observed. This trend can be parallely observed on the application level, among Content Distribution Networks, hosting providers, as well as Internet access providers. Through the discussion of specific cases we will try to further understand how this impacts freedom of assembly, freedom of association as well as the distributed nature of the Internet {{RFC1287}}.
+
+Protocols vs platforms
 
 
 Discussion: The Internet as an association
