@@ -1,7 +1,7 @@
 ---
 title: On the Politics of Standards
 abbrev: politix
-docname: draft-tenoever-hrpc-political-03
+docname: draft-tenoever-hrpc-political-04
 category: info
 
 ipr: trust200902
@@ -253,7 +253,7 @@ informative:
 
 --- abstract
 
-This document aims to outline different views on the relation between protocols and politics and seeks to answer the question whether protocols are political.
+This document maps different perspectives on the relation between protocols and politics existing in the Internet community and seeks to understand what this could mean for the IETF.
 
 --- middle
 
