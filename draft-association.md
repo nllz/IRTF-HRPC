@@ -42,14 +42,13 @@ informative:
   RFC0155:
   RFC1211:
   RFC1287:
-  RFC1288:
   RFC1771:
   RFC1930:
+  RFC2810:
   RFC2812:
   RFC3233:
   RFC1958:
   RFC4033:
-  RFC4059:
   RFC4084:
   RFC4271:
   RFC4880:
@@ -60,6 +59,7 @@ informative:
   RFC6176:
   RFC6973:
   RFC7118:
+  RFC7194:
   RFC7754:
   RFC7858:
   RFC8280:
@@ -209,7 +209,7 @@ informative:
     author:
       - ins: J. A. Marcus
     target: http://www.cardozoaelj.com/wp-content/uploads/2013/02/Marcus.pdf
-    #      seriesinfo: "Cardozo Arts & Entertainment"
+    #      seriesinfo: "Cardozo Arts &amp; Entertainment"
 
   Benkler:
     title: Peer Production and Cooperation
@@ -217,7 +217,7 @@ informative:
     author:
       - ins: Y. Benkler
     target: http://www.benkler.org/Peer%20production%20and%20cooperation%2009.pdf
-    #    seriesinfo: "M. Bauer & M. Latzer (eds.), Handbook on the Economics of the Internet, Cheltenham and Northampton, Edward Elgar."
+    #    seriesinfo: "M. Bauer &amp; M. Latzer (eds.), Handbook on the Economics of the Internet, Cheltenham and Northampton, Edward Elgar."
 
   AndersonGuarnieri:
     title: "Fictitious Profiles and WebRTC's Privacy Leaks Used to Identify Iranian Activists"
@@ -282,6 +282,21 @@ informative:
        - ins: P. Vixie
        - ins: V. Schyver
     target: https://tools.ietf.org/html/draft-ietf-dnsop-dns-rpz-00
+
+  Wugh:
+    title: Using Third Party Services for IETF Work
+    date: 2017
+    author:
+       - ins: M. Nottingham
+    target: https://datatracker.ietf.org/doc/draft-nottingham-wugh-services/
+
+  GithubIETF:
+    title: Using GitHub at the IETF
+    date: 2017
+    author:
+       - ins: M. Thomson
+       - ins: A. Atlas
+    target: 
 
   Troncosoetal:
     title: "Systematizing Decentralization and Privacy: Lessons from 15 Years of Research and Deployments"
@@ -355,7 +370,7 @@ informative:
     date: 2012
     author:
       - ins: E. Andersson
-    seriesinfo: "Utbildning & Demokrati: Tidskrift för Didaktik och Utbildningspolitik, Volume 21, Number 1, 2012, pp. 97-119(23)"
+    seriesinfo: "Utbildning &amp; Demokrati: Tidskrift för Didaktik och Utbildningspolitik, Volume 21, Number 1, 2012, pp. 97-119(23)"
     target: http://www.ingentaconnect.com/content/doaj/11026472/2012/00000021/00000001/art00006
 
   Tufekci:
@@ -390,7 +405,7 @@ informative:
 
 --- abstract
 
-This document scopes the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to excercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
+This document scopes the relation between Internet protocols and the right to freedom of assembly and association. Increasingly, the Internet mediates our lives, our relationships and our ability to exercise our human rights. The Internet provides a global public space, but one that is built on private infrastructure. Since Internet protocols play a central role in the management, development and use of the Internet, the relation between protocols and the aforementioned rights should be documented and any adverse impacts of this relation should be mitigated. 
 
 --- middle
 
@@ -401,11 +416,11 @@ Introduction
     “We shape our tools and, thereafter, our tools shape us.” 
         — John Culkin (1967)
 
-The Internet is a technology which shapes modern information societies. The ordering that the Internet provides is socio-technical, in other words, the Internet infrastructure and architecture consists of social and technological arrangements {{StarRuhleder}}. This odering is not always apparent because infrastructure also tends to hide itself in the societal woodwork {{Mosco}}, or with  {{Weiser}}: ‘The most profound technologies are those that disappear'. Next to that infrastructure is often taken for granted by those using it. Infrastructure therefore mostly presents itself either to an epistemic community of experts {{Haas}} or to a larger public upon breakdown. With the increasing societal use of the Internet the importance of the Internet is growing, and the decisions made about its infrastructure and architecture therefore also become more important. {{RFC8280}} established the relationship between human rights and Internet protocols, and in this document we seek to uncover the relation between two specific human rights and the Internet infrastructure and architecture.
+The Internet is a technology which shapes modern information societies. The ordering that the Internet provides is socio-technical, in other words, the Internet infrastructure and architecture consists of social and technological arrangements {{StarRuhleder}}. This ordering is not always apparent because infrastructure also tends to hide itself in the societal woodwork {{Mosco}}, or with  {{Weiser}}: ‘The most profound technologies are those that disappear'. Next to that infrastructure is often taken for granted by those using it. Infrastructure therefore mostly presents itself either to an epistemic community of experts {{Haas}} or to a larger public upon breakdown. With the increasing societal use of the Internet the importance of the Internet is growing, and the decisions made about its infrastructure and architecture therefore also become more important. {{RFC8280}} established the relationship between human rights and Internet protocols, and in this document we seek to uncover the relation between two specific human rights and the Internet infrastructure and architecture.
 
 The right to freedom of assembly and association protects collective expression, in turn, systems and protocols than enable communal communication between people and servers allow these rights to prosper. The Internet itself was originally designed as "a medium of communication for machines that share resources with each other as equals" {{NelsonHedlun}}, the Internet thus forms a basic infrastructure for the right freedom of assembly and association. 
 
-The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonimity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. In other words, different architectural designs come with different affordances, or characteristics. These characteristics should be taken into account at the time of design, and when designing, updating and maintaining other parts of the architecture and infrastructure.
+The manner in which communication is designed and implemented impacts the ways in which rights can be excercised. For instance a decentralized and resilient architecture that protects anonymity and privacy, offers a strong protection for the exercise of such freedoms in the online environment. At the same time, centralized solutions have enabled people to group together in recognizable places and helped the visbility of groups. In other words, different architectural designs come with different affordances, or characteristics. These characteristics should be taken into account at the time of design, and when designing, updating and maintaining other parts of the architecture and infrastructure.
 
 This draft continues the work started in {{RFC8280}} by investigating the exact impact of Internet protocols on a specific human rights, namely the right to freedom of assembly and association given their importance for the Internet, in order to mitigate (potential) negative impacts. 
 
@@ -425,10 +440,10 @@ Border Gateway Protocol (BGP)
 : An inter-Autonomous System routing protocol {{RFC4271}}.
 
 Connectivity
-: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the Stool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}. The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
+: The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}. The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
 
 Data portability
-: The ability to export ones data from a databases in a format that is compatible with other databases.
+: The ability to export ones data from a database in a format that is compatible with other databases.
     
 Decentralization
 : Implementation or deployment of standards, protocols or systems without one single point of control.
@@ -450,7 +465,7 @@ Research questions
 
 1. How does the internet architecture enable and/or inhibit freedom of association and assembly?
 
-2. If the Internet is used to excercise the right to freedom of association, what are the implications for its architecture and infrastructure?
+2. If the Internet is used to exercise the right to freedom of association, what are the implications for its architecture and infrastructure?
 
 
 Methodology
@@ -470,7 +485,7 @@ The difference between freedom of assembly and freedom of association is merely 
 
 An assembly is an intentional and temporary gathering of a collective in a private or public space for a specific purpose: demonstrations, indoor meetings, strikes, processions, rallies or even sits-in {{UNHRC}}. Association on the other hand has a more formal and established nature. It refers to a group of individuals or legal entities brought together in order to collectively act, express, pursue or defend a field of common interests {{UNGA}}. Within this category we can think about civil society organizations, clubs, cooperatives, NGOs, religious associations, political parties, trade unions or foundations.
 
-The right to freedom of assembly and association is quitessential for the Internet, even if privacy and freedom of expression are the most discussed human rights when it comes to the online world. Online association and assembly are crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. According to Hussain and Howard the Internet helped to "build solidarity networks and identification of collective identities and goals, extend the range of local coverage to international broadcast networks" and as platform for contestation for the future of "the future of civil society and information infrastructure" {{HussainHoward}}. 
+The right to freedom of assembly and association is quintessential for the Internet, even if privacy and freedom of expression are the most discussed human rights when it comes to the online world. Online association and assembly are crucial to mobilise groups and people where physical gatherings have been impossible or dangerous {{APC}}. Throughout the world -from the Arab Spring to Latin American student movements- the Internet has also played a crucial role by providing a means for the fast dissemination of information that was otherwise mediated by broadcast media, or even forbidden by the government {{Pensado}}. According to Hussain and Howard the Internet helped to "build solidarity networks and identification of collective identities and goals, extend the range of local coverage to international broadcast networks" and as platform for contestation for the future of "the future of civil society and information infrastructure" {{HussainHoward}}. 
 
 The IETF itself, defined as a 'open global community' of network designers, operators, vendors, and researchers, is also protected by freedom of assembly and association {{RFC3233}}. Discussions, comments and consensus around RFCs are possible because of the collective expression that freedom of association and assembly allow. The very word “protocol” found its way into the language of computer networking based on the need for collective agreement among network users {{HafnerandLyon}}.
 
@@ -504,13 +519,13 @@ While facilitating freedom of assembly and association multi-party video confere
 
 The risk of surveillance is also true in an offline space, but this is generally easy to analyze for the end-user. Security and privacy expectations of the end-user could be made more clear to the user (or improved) which would result in a more secure and/or private excercise or the right to freedom of assembly or association.
 
-### Inter Relay Chat
+### Internet Relay Chat
 
-Internet Relay Chat (IRC) is an application layer protocol that enables communication in the form of text through a a client/server networking model {{RFC4059}}. In other words, a chat service. IRC clients are computer programs that a user can install on their system. These clients communicate with chat servers to transfer messages to other clients {{RFC4059}}.
+Internet Relay Chat (IRC) is an application layer protocol that enables communication in the form of text through a a client/server networking model {{RFC2810}}. In other words, a chat service. IRC clients are computer programs that a user can install on their system. These clients communicate with chat servers to transfer messages to other clients.
 
 For order to be kept within the IRC network, special clases of users become "operators" and are allowed to perform general maintenance functions on the network: basic network tasks such as disconnecting (temporary or permanently) and reconnecting servers as needed {{RFC2812}}. One of the most controversial power of operators is the ability to remove a user from the connected network by 'force', i.e., operators are able to close the connection between any client and server {{RFC2812}}.
 
-IRC servers may deploy different policies for the ability of users to create their own channels or 'rooms', and for the delegation of 'operator'-rights in such a room. Some IRC servers support SSL/TLS connections for security purposes. This helps stop the use of packet sniffer programs to obtain the passwords of IRC users, but has little use beyond this scope due to the public nature of IRC channels. SSL connections require both client and server support (that may require the user to install SSL binaries and IRC client specific patches or modules on their computers). Some networks also use SSL for server to server connections, and provide a special channel flag (such as +S) to only allow SSL-connected users on the channel, while disallowing operator identification in clear text, to better utilize the advantages that SSL provides.
+IRC servers may deploy different policies for the ability of users to create their own channels or 'rooms', and for the delegation of 'operator'-rights in such a room. Some IRC servers support SSL/TLS connections for security purposes {{RFC7194}}. This helps stop the use of packet sniffer programs to obtain the passwords of IRC users, but has little use beyond this scope due to the public nature of IRC channels. TLS connections require both client and server support (that may require the user to install TLS binaries and IRC client specific patches or modules on their computers). Some networks also use TLS for server to server connections, and provide a special channel flag (such as +S) to only allow TLS-connected users on the channel, while disallowing operator identification in clear text, to better utilize the advantages that TLS provides.
  
 ## Peer-to-peer networks and systems
 
@@ -536,9 +551,7 @@ A version control system is a piece of software that enables developers on a sof
 
 Interestingly no version control system has ever been standardized in the IETF whereas the version control systems like Subversion and Git have are widely used within the community, as well as by working groups. There has been a spirited discussion on whether working groups should use centralized forms of the Git protocol, such as those offered by Gitlab or Github. Proponents argue that this simplifies the workflow and allows for a more transparent workflow. Opponents argue that the relience on a centralized service which is not merely using the Git protocol, but also used non-standardize options like an Issue-Tracker, makes the process less transparent and reliant on a third party. 
 
-The IETF has not made a decision on the use of centralized instances of git, such as Github or Gitlab. There have been two efforts to standardize the workflow vis a vis these third party services, but these haven't come to fruition:
-https://www.ietf.org/archive/id/draft-nottingham-wugh-services-00.txt
-https://www.ietf.org/archive/id/draft-thomson-github-bcp-00.txt
+The IETF has not made a decision on the use of centralized instances of git, such as Github or Gitlab. There have been two efforts to standardize the workflow vis a vis these third party services, but these haven't come to fruition: {{Wugh}} {{GithubIETF}}.
 
 ## Grouping together (identities)
 
@@ -563,7 +576,7 @@ This is also true for the Border Gateway Protocol - the protocol that selects th
 Discussion: Protocols vs Platforms
 ==================================
 
-The Internet increasingly becomes a vehicle for commercial, propietary, non-interoperable platforms. The Internet has always allowed for closed-off networks, but the current trend show the rise of a small number of very large non-interoperable platforms. Chat has moved from finger {{RFC1288}}, XMPP and IRC to Facebook Messenger, Whatsapp and WeChat and there has been a strong rise of social media networks with large numbers of users, such as Facebook, Twitter and Instagram. A similar trend can be found among e-mail providers, with the significant difference that e-mail is interoperable. 
+The Internet increasingly becomes a vehicle for commercial, propietary, non-interoperable platforms. The Internet has always allowed for closed-off networks, but the current trend show the rise of a small number of very large non-interoperable platforms. Chat has moved from XMPP and IRC to Facebook Messenger, Whatsapp and WeChat and there has been a strong rise of social media networks with large numbers of users, such as Facebook, Twitter and Instagram. A similar trend can be found among e-mail providers, with the significant difference that e-mail is interoperable. 
 
 Often these non-interoperable platform are built on open-protocols but do not allow for inter-operability or data-portability. In the case of these large platforms this leads to strong network externalities, also know as a network effect; because the users are there, users will be there. The use of social-media platforms has enabled groups to associate, but is has also led to a 'tactical freeze' because of the inability to change the platforms {{Tufekci}}. Whereas these networks a ready-to-hand networked public sphere, it does not allow for its inhabitants to change, or fully understand, their workings.
 
@@ -573,18 +586,18 @@ Discussion: The Internet as an association
 ==========================================
 
 It is undeniable that communities, collaboration and joint action lie at the heart of the Internet. Even at at linguistical level, the words "networks” and “associations” are close synonyms. Both interconnected groups and assemblies of people depend on “links” and “relationships” {{Swire}}. 
-Assemblies however have an inherently temporary nature, whereas associations do not. Taking these definition and the previous analysis into consideration, we argue that the Internet constitutes an an association. What are the implications of this? Does it mean that every network is an assembly within the association and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' association (the Internet) has prevails over the preferences of the smaller assemblies (individual AS'es)? Or rather, is there a tipping point? For instance if an operator (an AS) wants to filter a specific IP-range. Today, they can do it *technically* (it is quite easy) and *legally* (their network, their rules, and, for this specific case, few people would complain). *But* if everyone started to do it, and to filter networks they don't like (or filtering TLDs they don't like in their DNS resolvers), then there would be a significant problem. A minority of operators filtering a specific IP-range, the Internet would still work and would still be "the Internet". A majority of operators filtering a lot of networks they don't like and, at a point, this would no longer be the Internet. This is a case
+Assemblies however have an inherently temporary nature, whereas associations do not. Taking these definition and the previous analysis into consideration, we argue that the Internet constitutes an association. What are the implications of this? Does it mean that every network is an assembly within the association and has absolute freedom to implement its own rules? Or does the importance of a functioning 'larger' association (the Internet) prevails over the preferences of the smaller assemblies (individual AS'es)? Or rather, is there a tipping point? For instance if an operator (an AS) wants to filter a specific IP-range. Today, they can do it *technically* (it is quite easy) and *legally* (their network, their rules, and, if it is done for good reasons, few people would complain). *But* if everyone started to do it, and to filter networks they don't like (or filtering TLDs they don't like in their DNS resolvers), then there would be a significant problem. A minority of operators filtering a specific IP-range, the Internet would still work and would still be "the Internet". A majority of operators filtering a lot of networks they don't like and, at a point, this would no longer be the Internet. This is a case
 where quantitative changes bring qualitative changes: too much
 filtering and we would no longer have a global network. Despite that fact that each AS has the right to take decisions such as filtering, if everyone started to exercice this right fully, this would destroy the Internet.
  
 The demands that have been set for ASes is very limited and are based on routing principles: an AS must be used for exchanging external routing information with other ASes through BGP, should therefore use BGP and IP and have a routing policy {{RFC1930}}. So in order to be able to connect to the Internet as an AS, which means to engage in peering or transit relations, there are basic rules one needs to adhere to.  But theses rules do not say anything on how the AS will or should treat traffic on its network. If we take the example of ASes, we could say they are private infrastructure (therefore souvereign with the ability to set their own policies), but jointly they form a type of public infrastructure, from the moment the receive an Autonomous Systems Number. But, even things that are private, need to live up to standards because they have public consequences. Especially because specific behaviour of ASes can lead to vicious or virtuous circles. 
 
-The Internet is made of up interconnected ASes (one would argue that this doesn't include IXPs, but most modern IXPs will have an ASN for their route server (and possibly a separate ASN for their management infrastructure), which jointly form an association. This association should be protected. This means that rights and obligations that sterm from this organizational form, should also be protected and respected.
+The Internet is made of up interconnected ASes (one would argue that this doesn't include IXPs, but most modern IXPs will have an ASN for their route server, and possibly a separate ASN for their management infrastructure), which jointly form an association. This association should be protected. This means that rights and obligations that sterm from this organizational form, should also be protected and respected.
 
 Conclusions
 ===========
 
-The Internet has an impact on the ability for people to excercise their right to freedom of association and assembly. The Internet, since its inception has enabled people to jointly communicate, collaborate and collaborate. The same could also be argued with relation to freedom of expression, some have argued that the text in article 19 of the {{UDHR}} reads like a description of the Internet:
+The Internet has an impact on the ability for people to exercise their right to freedom of association and assembly. The Internet, since its inception has enabled people to jointly communicate, collaborate and collaborate. The same could also be argued with relation to freedom of expression, some have argued that the text in article 19 of the {{UDHR}} reads like a description of the Internet:
 
     [the] freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. {{UDHR}}
 
