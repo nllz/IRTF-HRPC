@@ -40,6 +40,7 @@ informative:
 
   RFC0001:
   RFC0155:
+  RFC0791:
   RFC1211:
   RFC1287:
   RFC1771:
@@ -402,6 +403,20 @@ informative:
       - ins: V. Mosco
      target: https://mitpress.mit.edu/books/digital-sublime
 
+  FiveEyes:
+     title: "Five Eyes"
+     date: 2018
+     author:
+      - ins: Wikipedia
+     target: https://en.wikipedia.org/wiki/Five_Eyes
+
+  SchengenRouting:
+     title: "Schengen Routing"
+     date: 2018
+     author:
+      - ins: Wikipedia
+     target: https://en.wikipedia.org/wiki/Schengen_Routing
+
 
 --- abstract
 
@@ -571,7 +586,7 @@ While accessing the Internet through an intermediary, the user is forced to acce
 
 In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an AS and engage in peering relation with other ASes. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent with the policies of the network.
 
-This is also true for the Border Gateway Protocol - the protocol that selects the route for traffic over the Internet. Aside from significant security issues there is no transparency about the routes that packets have taken, and thus it is also unclear which ASes a packet has transversed. 
+It can be noted also that there is no standard and deployed way for the edge-user to choose the routes her packets will go through. {{RFC0791}}, section 3.1, standardized "source routing" but it was never deployed, mostly because of serious security issues. There is not even a way for the edge-user to know about the routes that packets have actually taken, and which ASes a packet has traversed. {{RFC0791}}, section 3.1, standardized "record route" but it was never deployed. In practice, the user must accept policies of ASes he has no relationship with, and didn't choose. For instance, there is no way to direct the packets to avoid the Five Eyes, not even to know after the fact where the packet went. {{FiveEyes}} {{SchengenRouting}} (Traceroutes give you an idea but the path may change before and after the traceroute.) 
  
 Discussion: Protocols vs Platforms
 ==================================
