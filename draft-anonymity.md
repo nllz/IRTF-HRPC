@@ -1,7 +1,7 @@
 --- 
 title: Anonymity, Human Rights and Internet Protocols
 abbrev: anon
-docname: draft-tenoever-hrpc-anonymity-03
+docname: draft-irtf-hrpc-anonymity-00
 category: info
 
 ipr: trust200902
