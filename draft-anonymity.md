@@ -209,6 +209,8 @@ Successive use
 
 One user may switch from one identity to another. In that case, it must be doable without a "bleedover" from the old identity to the new one.
 
+One of the reasons to switch identities might be to make the relationship between this identity and another one (for instance the official one) more difficult. The longer you use a pseudonym, the more clues you give to someone who tries to unveil pseudonymity.
+
 Selective use
 -------------
 
@@ -217,7 +219,7 @@ A user might want to retain their anonymity to certain actors / protocols, but i
 User analysis
 -------------
 
-A user might want to understand which other actors might (potentially) have which level of information about them. TODO: this requires NO anonymity, no?
+A user might want to understand which other actors might (potentially) have which level of information about them. This conflicts of course with privacy because the user has to reveal who he is. Example: if a domain name registry does not publish the name of a registrant, the registrant cannot check if the person who did the registration indicated the name of their client, or their own name.
 
 
 Practical advices
