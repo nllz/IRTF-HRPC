@@ -253,7 +253,7 @@ informative:
 
 --- abstract
 
-This document maps different perspectives on the relation between protocols and politics existing in the Internet community and seeks to understand what this could mean for the IETF.
+This document argues that the politics of standards need to be taken into account in the standards development process. We come to this conclusion by mapping different perspectives on the relation between standards and politics in the Internet community and by providing illustrations of the political aspects of standard development.
 
 --- middle
 
@@ -270,13 +270,13 @@ Introduction
 
 The design of the Internet through protocols and standards is a technical issue with great political and economic impacts {{RFC0613}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}.
 
-Recently there has been an increased discussion on the relation between Internet protocols and human rights {{RFC8280}} which spurred the discussion on the political nature of protocols. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between protocols and politics and seek to answer the question whether protocols are political, and if so, how.
+Recently there has been an increased discussion on the relation between Internet protocols and human rights {{RFC8280}} which spurred the discussion on the political nature of standards. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between standards and politics and seek to answer the question whether standards are political, and if so, how.
 
 Vocabulary Used
 ===============
 
 Politics
-: (from Greek: Politiká: Politika, definition "affairs of the commons") is the process of making decisions applying to all members of a group. More narrowly, it refers to achieving and exercising positions of governance or organized control over a community. Furthermore, politics is the study or practice of the distribution of power and resources within a given community as well as the interrelationship(s) between communities. (adapted from )
+: (from Greek: Politiká: Politika, definition "affairs of the commons") is the process of making decisions applying to all members of a diverse group with conflicting interests. More narrowly, it refers to achieving and exercising positions of governance or organized control over a community. Furthermore, politics is the study or practice of the distribution of power and resources within a given community as well as the interrelationship(s) between communities. (adapted from )
 
 
 Literature and Positions
@@ -301,7 +301,7 @@ Consider, for instance, the way that the very existence of the automobile impose
 
 Certain kinds of technology shape the world in this sense.  As Martin Heidegger says, "The hydroelectric plant is not built into the Rhine River as was the old wooden bridge that joined bank with bank for hundreds of years. Rather the river is dammed up into the power plant. What the river is now, namely, a water power supplier, derives from out of the essence of the power station." {{Heidegger}} (p 16)  The dam in the river changes the world in a way the bridge does not, because the dam alters the nature of the river.
 
-In much same way, then, networking technology once created makes its own demands. One of the most important conditions for protocol success is that the protocol is incremental deployability {{RFC5218}}.  This means that the network already deployed constrains what can be deployed into it.  Moreover, one interpretation of {{RFC7258}} is that pervasive monitoring is an "attack" in the narrow sense precisely because of the network's need not to leak traces of online exchanges. A different network with a different design might not have been subject to this kind of attack.
+In much same way, then, networking technology once created makes its own demands. One of the most important conditions for protocol success is that the protocol is incremental deployability {{RFC5218}}.  This means that the network already deployed constrains what can be deployed into it.  Moreover, one interpretation of {{RFC7258}} is that pervasive monitoring is an "attack" precisely because of the network's need not to leak traces of online exchanges. A different network with a different design might not have been subject to this kind of attack.
 
 ## Protocols are inherently political
 On the other side of the spectrum there are the ones who insist that technology is non-neutral. This is for instance made explicit by Postman where he writes: 'the uses made of technology are largely determined by the structure of the technology itself' {{Postman}}. He states that the medium itself 'contains an ideological bias'. He continues to argue that technology is non-neutral:
@@ -312,7 +312,7 @@ On the other side of the spectrum there are the ones who insist that technology 
 (4) because of the conditions in which we attend to them, different media have different social biases;
 (5) because of their technical and economic structure, different media have different content biases. {{Postman}}
 
-More recent scholars of Internet infrastructure and governance have also pointed out that Internet processes and protocols have become part and parcel of political processes and public policies: one only has to look at the IANA transition or global innovation policy for concrete examples {{DeNardis}}. Similarly one can look at the Raven process in which the IETF after a long discussion refused to standardize wiretapping (which resulted in {{RFC2804}}. That was an instance where the IETF took a position that was largely political, although driven by a technical argument.  It was similar to the process that led to {{RFC6973}}, in which something that occurred in the political space (Snowden disclosures) engendered the IETF to act. This is summarized in {{Abbate}} who says: "protocols are politics by other means". This emphasizes the interests that are at play in the process of designing standards. This position holds further that protocols can never be understood without their contextual embeddedness: protocols do not exist solely by themselves but always are to be understood in a more complex context -- the stack, hardware, or nation-state interests and their impact on civil rights. Finally, this view is that that protocols are political because they affect or sometimes effect the socio-technical ordering of reality. The latter observation leads Winner to conclude that the reality of technological progress has too often been a scenario where the innovation has dictated change for society. Those who had the power to introduce a new technology also had the power to create a consumer class  to  use  the  technology, ‘with new practices, relationships, and identities supplanting the old, ---and those who had the wherewithal to implement new technologies often molded society to match the needs of emerging technologies and organizations.’ {{Winner}}.
+More recent scholars of Internet infrastructure and governance have also pointed out that Internet processes and standards have become part and parcel of political processes and public policies: one only has to look at the IANA transition or global innovation policy for concrete examples {{DeNardis}}. Similarly one can look at the Raven process in which the IETF after a long discussion refused to standardize wiretapping (which resulted in {{RFC2804}}. That was an instance where the IETF took a position that was largely political, although driven by a technical argument.  It was similar to the process that led to {{RFC6973}}, in which something that occurred in the political space (Snowden disclosures) engendered the IETF to act. This is summarized in {{Abbate}} who says: "protocols are politics by other means". This emphasizes the interests that are at play in the process of designing standards. This position holds further that protocols can never be understood without their contextual embeddedness: protocols do not exist solely by themselves but always are to be understood in a more complex context -- the stack, hardware, or nation-state interests and their impact on civil rights. Finally, this view is that that protocols are political because they affect or sometimes effect the socio-technical ordering of reality. The latter observation leads Winner to conclude that the reality of technological progress has too often been a scenario where the innovation has dictated change for society. Those who had the power to introduce a new technology also had the power to create a consumer class  to  use  the  technology, ‘with new practices, relationships, and identities supplanting the old, ---and those who had the wherewithal to implement new technologies often molded society to match the needs of emerging technologies and organizations.’ {{Winner}}.
 
 Examples and approaches
 =======================
@@ -372,7 +372,7 @@ This does not mean the IETF does not have a position on particular political iss
 The way forward
 ===============
 
-There are instruments that can help the IETF develop an approach to address the politics of protocols. Part of this can be found in {{RFC8280}} as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community.
+There are instruments that can help the IETF develop an approach to address the politics of standards. Part of this can be found in {{RFC8280}} as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community.
 
 Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need to live with the fact standards bodies have a political nature {{Webster}}. This does not need to be problematic as long as there are sufficient accountability and transparency mechanisms in place. The importance of these mechanisms increases with the importance of the standards and their implementations. The complexity of the work inscribes a requirement of competence in the work in the IETF, which forms an inherent barrier for end-user involvement. Even though this might not be intentional, it is a result of the interplay between the characteristics of the epistemic community in the IETF and the nature of the standard setting process.
 
@@ -392,7 +392,8 @@ This document has no actions for IANA.
 
 Acknowledgements
 ================
-Thanks to all Andrew Sullivan, Brian Carpenter and all contributors on the hrpc mailinglist.
+
+Thanks to Andrew Sullivan, Brian Carpenter, Mark Perkins and all contributors and reviewers on the hrpc mailinglist.
 
 Research Group Information
 ==========================
