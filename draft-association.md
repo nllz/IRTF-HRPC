@@ -40,6 +40,7 @@ informative:
 
   RFC0001:
   RFC0155:
+  RFC0791:
   RFC1211:
   RFC1287:
   RFC1771:
@@ -402,6 +403,20 @@ informative:
       - ins: V. Mosco
      target: https://mitpress.mit.edu/books/digital-sublime
 
+  FiveEyes:
+     title: "Five Eyes"
+     date: 2018
+     author:
+      - ins: Wikipedia
+     target: https://en.wikipedia.org/wiki/Five_Eyes
+
+  SchengenRouting:
+     title: "Schengen Routing"
+     date: 2018
+     author:
+      - ins: Wikipedia
+     target: https://en.wikipedia.org/wiki/Schengen_Routing
+
 
 --- abstract
 
@@ -414,7 +429,7 @@ Introduction
 ============
 
     “We shape our tools and, thereafter, our tools shape us.” 
-        — John Culkin (1967)
+         - John Culkin (1967)
 
 The Internet is a technology which shapes modern information societies. The ordering that the Internet provides is socio-technical, in other words, the Internet infrastructure and architecture consists of social and technological arrangements {{StarRuhleder}}. This ordering is not always apparent because infrastructure also tends to hide itself in the societal woodwork {{Mosco}}, or with  {{Weiser}}: ‘The most profound technologies are those that disappear'. Next to that infrastructure is often taken for granted by those using it. Infrastructure therefore is mostly known by an epistemic community of experts {{Haas}} and only get recognized by the larger public when it fails. With the increasing societal use of the Internet the importance of the Internet is growing, and the decisions made about its infrastructure and architecture therefore also become more important. {{RFC8280}} established the relationship between human rights and Internet protocols, and in this document we seek to uncover the relation between two specific human rights and the Internet infrastructure and architecture.
 
@@ -442,9 +457,6 @@ Border Gateway Protocol (BGP)
 Connectivity
 : The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}. The combination of the end-to-end principle, interoperability, distributed architecture, resilience, reliability and robustness are the enabling factors that result in connectivity to and on the Internet.
 
-Data portability
-: The ability to export ones data from a database in a format that is compatible with other databases.
-
 Decentralization
 : Implementation or deployment of standards, protocols or systems without one single point of control.
 
@@ -452,11 +464,11 @@ Distributed system
 : A system with multiple components that have their behavior co-ordinated via message passing. These components are usually spatially separated and communicate using a network, and may be managed by a single root of trust or authority. {{Troncosoetal}}
 
 Infrastructure
-: Underlying basis or structure for a functioning society, organization or community. Because infrastructure is a precondition for other activities it has a procedural, rather than static, nature due to its social and cultural embeddedness. {{PipekWulf}} {{Bloketal}}. This means that infrastructure is always relational: infrastructure always develops in relation to something or someone {{Bowker}}.
+: Underlying basis or structure for a functioning society, organization or community. Because infrastructure is a precondition for other activities it has a procedural, rather than static, nature due to its social and cultural embeddedness {{PipekWulf}} {{Bloketal}}. This means that infrastructure is always relational: infrastructure always develops in relation to something or someone {{Bowker}}.
 
 Internet
 : The Network of networks, that consists of Autonomous Systems that are connected through the Internet Protocol (IP).
-: A persistent socio-technical system over which services are delivered {{Mainwaringetal}}
+: A persistent socio-technical system over which services are delivered {{Mainwaringetal}},
 : A techno-social assemblage of devices, users, sensors, networks, routers, governance, administrators, operators and protocols
 : An emergent-process-driven thing that is born from the collections of the ASes that happen to be gathered together at any given time. The fact that they tend to interact at any given time means it is an emergent property that happens because they use the protocols defined at IETF.
 
@@ -571,7 +583,7 @@ While accessing the Internet through an intermediary, the user is forced to acce
 
 In some cases it also means that there is no other way for the edge-user to connect to the network of networks, and is thus forced into accepting the policies of a specific network, because it is not trivial for an edge-user to operate an AS and engage in peering relation with other ASes. This design, combined with the increased importance of the Internet to make use of basic services, forces edge-user to engage in association with a specific network eventhough the user does not consent to the policies of the network.
 
-This is also true for the Border Gateway Protocol - the protocol that selects the route for traffic over the Internet. Aside from significant security issues there is no transparency about the routes that packets have taken, and thus it is also unclear which ASes a packet has traversed.
+It can be noted also that there is no standard and deployed way for the edge-user to choose the routes her packets will go through. {{RFC0791}}, section 3.1, standardized "source routing" but it was never deployed, mostly because of serious security issues. There is not even a way for the edge-user to know about the routes that packets have actually taken, and which ASes a packet has traversed. {{RFC0791}}, section 3.1, standardized "record route" but it was never deployed. In practice, the user must accept policies of ASes he has no relationship with, and didn't choose. For instance, there is no way to direct the packets to avoid the Five Eyes, not even to know after the fact where the packet went. {{FiveEyes}} {{SchengenRouting}} (Traceroutes give you an idea but the path may change before and after the traceroute.) 
 
 Discussion: Protocols vs Platforms
 ==================================
