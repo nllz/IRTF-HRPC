@@ -47,13 +47,14 @@ informative:
    RFC0542:
    RFC0549:
    RFC0613:
+   RFC1097:
    RFC1958:
    RFC2026:
    RFC2804:
    RFC3552:
+   RFC3935:
    RFC5218:
    RFC6973:
-   RFC7258:
    RFC7704:
    RFC7776:
    RFC8280:
@@ -251,14 +252,14 @@ informative:
         - ins: J. Webster
       seriesinfo: "The social shaping of inter-organizational IT systems and data interchange, eds: I. McLougling &amp; D. Mason, European Commission PICT/COST A4"
 
-  Sisson:
+   Sisson:
      title: Standards and Protocols
      date: 2000
      author:
        - ins: D. Sisson
-    target: https://philosophe.com/design/standards/
+     target: https://philosophe.com/design/standards/
 
-  HagueHarrop:
+   HagueHarrop:
      title: "Comparative Government and Politics: An Introduction"
      date: 2013
      author:
@@ -266,9 +267,25 @@ informative:
       - ins: M. Harrop
      seriesinfo: "Macmillan International Higher Education. pp. 1–. ISBN 978-1-137-31786-5."
 
+   BijkerLaw:
+     title: "Shaping Technology/ Building Society: Studies in Sociotechnical Change"
+     date: 1992
+     author:
+      - ins: W. Bijker
+      - ins: J. Law
+     seriesinfo: "Cambridge, MA: MIT Press"
+
+   Bloor:
+     title: Knowledge and Social Imagery
+     date: 1976
+     author:
+      - ins: D. Bloor
+     seriesinfo: "London: Routeledge & Kegan Paul"
+
 --- abstract
 
 The IETF cannot ordain which standards or protocols are to be used on network, but the standards developing process in the IETF has a normative effect. Among other things the standardisation work at the IETF has implications on what is perceived as technologically possible and useful where networking technologies are being deployed, and its standards output reflect was is considered by the technical community as feasible and good practice. Because mediates many aspects of modern life, and therefore contributes to the ordering of societies and communities, the consideration of the politics and (potential) impact of protocols should be part of the standardization and development process.
+
 --- middle
 
 Introduction
@@ -355,44 +372,36 @@ In the previous section we gave an overview of the different existing positions 
 
 Standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work. The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard.
 
-
-
 The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents which is a record number, even among other comparable standard organisations {{Contreras}}.
 
 ## Competition and collaboration
 
 Standards exist for nearly everything: processes, technologies, safety, hiring, elections, and training. Standards provide blue-prints for how to accomplish a particular task in a similar way for others that are trying to accomplish the same thing, while reducing overhead and inefficiencies. Although there are different types and configurations of standards, they all enhance competition by allowing different entities to work from a commonly accepted baseline.
-## Why? Finish this thought in the conclusion.
 
 On the first types of standards than can be found are "informal" ones --agreed upon normal ways of interacting within a specific community. For example, the process through which greetings to a new acquaintance are expressed through a bow, a handshake or a kiss. On the other hand "formal" standards, are normally codified in writing. The next subsection will ----
 
 Within economy studies, _de facto_ standards arise in market situations where one entity is particularly dominant; downstream competitors are therefore tied to the dominant entity's technological solutions {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to restrict competition for downstream services in PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}.
 
-Even in international law, the World Trade Organisation (WTO) uses standards, although it recognises a difference between standards and technical regulations. The former are voluntary formal codes to which products or services may conform, while technical regulations are mandatory requirements to be fullfilled for a product to be accessible on one of the WTO country markets. These rules have implications for how nation states bounded by the WTO agreements can impose specific technical requirements on companies. Nonetheles, there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries.
-## Close with an extra paragraph on why all these different types of standards enhance competition and collaboration. No matter the form... bla bla. Otherwise the content doesn't make much sense in relation to the title.
+Even in international law, the World Trade Organisation (WTO) uses standards, although it recognises a difference between standards and technical regulations. The former are voluntary formal codes to which products or services may conform, while technical regulations are mandatory requirements to be fullfilled for a product to be accessible on one of the WTO country markets. These rules have implications for how nation states bounded by the WTO agreements can impose specific technical requirements on companies. Nonetheles, there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries. No matter what form, all standards enhance competition and collaboration because they define a common approach to a problem. This potentially allows different instances to interoperate or be evaluated according to the same indicators.
 
-## The development of standards
-## Why is this a subsection?
+The development of formal standards faces a number of economic and organisational challenges. Mainly, the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. In addition, deciding what the mutual goal is can also be a problem. These challenges may be described as inter-organisational costs. Even after a goal is decided upon, coordination of multiple entities requires time and money. One needs communication platforms, processes and a commitment to mutual investment in a higher good. They are not simple tasks, and the more different communities are affected by a particular standardisation process, the more difficult the organisational challenges become.
 
-The development of formal standards faces a number of economic and organisational challenges. Mainly, the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. In addition, deciding what the mutual goal is can also be a problem.
+## IETF standards setting externalities
 
-These challenges may be described as inter-organisational costs. Even after a goal is decided upon, coordination of multiple entities requires time and money. One needs communication platforms, processes and a commitment to mutual investment in a higher good. They are not simple tasks, and the more different communities are affected by a particular standardisation process, the more difficult the organisational challenges become.
+In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities.
 
-# The politics of standards in the IETF
-## I suggest a different title, more related to this so your intention is more clear. This entire section could also be about externalities.
-## I see four: 1) funding; 2) barriers; 3) interoperability has to be negotiated (and that takes skills, going to meetings, etc); 4 competition between layers. Make it all one big paragraph, the ideas are very connected.
+### Finance
+Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}). The IETF has faced three periods of decreased commitment from participants in funding its meetings in the past ten years, leading, naturally, to self-scrutiny, see for instance {{IAOC69}}, {{IAOC77}}, {{IAOC99}}.
 
-In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities. Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}). The IETF has faced three periods of decreased commitment from participants in funding its meetings in the past ten years, leading, naturally, to self-scrutiny, see for instance {{IAOC69}}, {{IAOC77}}, {{IAOC99}}.
-## This paragraph is really good, I even think the idea could be expanding: knowledge, financing and language barriers. DIGITAL COLONIALISM hahaha.
-## Make all this section one entire thing. Remember: it's just about logically connecting one paragraph with the other. Sometimes it might just even be one little sentence. Use words such as "likewise", "nonetheless", "also", etc.
+### Interoperability and backward compatability
 The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically mean it will be broadly adopted at a fast pace. Examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account a much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
 
+### Competition between layers
 There is a competition between layers, and even contestation about what the borders of different layers are. This leads to competition between layers and different solutions for similar problems on different layers, which in its turn leads to further ossification, which leads to more contestation.
 
-# How voluntary are open standards?
+## How voluntary are open standards?
 
 Coordinating transnational stakeholders in a process of negotiation and agreement through the development of common rules is a form of global governance {{Nadvi}}. Standards are among the mechanisms by which this governance is achieved. Conformance to certain standards is often a basic condition of participation in international trade and communication, so there are strong economic and political incentives to conform, even in the absence of legal requirements {{Russell}}. {{RogersEden}} argue:
-## I'm still confused about protocols and standards :( hahaha. Please make it clear above!!!! Urgent!!!! :) <3
 
    "As unequal participants compete to define standards, technological compromises emerge, which add complexity to standards. For instance, when working group participants propose competing solutions, it may be easier for them to agree on a standard that combines all the proposals rather than choosing any single proposal. This shifts the responsibility for selecting a solution onto those who implement the standard, which can lead to complex implementations that may not be interoperable. On its face this appears to be a failure of the standardization process, but this outcome may benefit certain participants— for example, by allowing an implementer with large market share to establish a de facto standard within the scope of the documented standard."
 
@@ -411,10 +420,9 @@ The risk of not doing this is threefold: (1) the IETF might make decisions which
 This does not mean the IETF does not have a position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are proof of this. Nonetheless, these are all examples of positions about the IETF's work processes or product. What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work.
 
 Conclusion
-========================
-## Ok, here's how to make a good conclusion: read everything again, and summarize BY HAND in a separate piece of paper 1) the introduction; 2) the research questions or objectives; 3) the two main sections and the main arguments in each. The conclusion MUST NEVER have new pieces of information, but rather round up everything that has been written before. Give it a try and if you want send it back, and I can give it another look.
-## Start with this -> What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work (paraphrased)
-## This is brilliant. Love it :)
+==========
+
+Economics, competition, collaboration, openness, and political impact have been an inherent part of the work of the IETF since its early beginnings, by its nature as standards developing organization, through the contributions of the members of the Internet community, and because the ordering effect the Internet has on society. Whereas there might not be agreement in the Internet community on what the specific political nature is of technological development, it is undispited that standards and protocols are both product of a political process, and they can also be used for political means. Whereas there is no need for a unified philosophy of Internet protocols, it is in the benefit of the IETF, the Internet and arguably society at large to take this into account in the standards development process.
 
 The way forward
 ===============
@@ -426,13 +434,13 @@ Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need
 Instead of splitting hairs about whether 'standards are political' {{Winner}} {{Woolgar}} we argue that we need to look at the politics of individual standards and invite document authors and reviewers to take these dynamics into account.
 
 Security Considerations
-========================
+=======================
 
 As this draft concerns a research document, there are no security considerations as described in {{RFC3552}}, which does not mean that not addressing the issues brought up in this draft will not impact the security of end-users or operators.
 
 
 IANA Considerations
-==========================
+===================
 
 This document has no actions for IANA.
 
@@ -440,7 +448,7 @@ This document has no actions for IANA.
 Acknowledgements
 ================
 
-Thanks to Andrew Sullivan, Brian Carpenter, Mark Perkins and all contributors and reviewers on the hrpc mailinglist.
+Thanks to Andrew Sullivan, Brian Carpenter, Mark Perkins and all contributors and reviewers on the hrpc mailinglist. Special thanks to Gisela Perez de Acha for some thorough editing rounds.
 
 Research Group Information
 ==========================
