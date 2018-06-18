@@ -1,7 +1,7 @@
 ---
 title: On the Politics of Standards
 abbrev: politix
-docname: draft-tenoever-hrpc-political-04
+docname: draft-tenoever-hrpc-political-05
 category: info
 
 ipr: trust200902
@@ -48,6 +48,7 @@ informative:
    RFC0549:
    RFC0613:
    RFC1958:
+   RFC2026:
    RFC2804:
    RFC3552:
    RFC5218:
@@ -250,11 +251,24 @@ informative:
         - ins: J. Webster
       seriesinfo: "The social shaping of inter-organizational IT systems and data interchange, eds: I. McLougling &amp; D. Mason, European Commission PICT/COST A4"
 
+  Sisson:
+     title: Standards and Protocols
+     date: 2000
+     author:
+       - ins: D. Sisson
+    target: https://philosophe.com/design/standards/
+
+  HagueHarrop:
+     title: "Comparative Government and Politics: An Introduction"
+     date: 2013
+     author:
+      - ins: R. Hague
+      - ins: M. Harrop
+     seriesinfo: "Macmillan International Higher Education. pp. 1–. ISBN 978-1-137-31786-5."
 
 --- abstract
 
-This document argues that the politics of standards need to be taken into account in the standards development process. We come to this conclusion by mapping different perspectives on the relation between standards and politics in the Internet community and by providing illustrations of the political aspects of standard development.
-
+The IETF cannot ordain which standards or protocols are to be used on network, but the standards developing process in the IETF has a normative effect. Among other things the standardisation work at the IETF has implications on what is perceived as technologically possible and useful where networking technologies are being deployed, and its standards output reflect was is considered by the technical community as feasible and good practice. Because mediates many aspects of modern life, and therefore contributes to the ordering of societies and communities, the consideration of the politics and (potential) impact of protocols should be part of the standardization and development process.
 --- middle
 
 Introduction
@@ -276,82 +290,109 @@ Vocabulary Used
 ===============
 
 Politics
-: (from Greek: Politiká: Politika, definition "affairs of the commons") is the process of making decisions applying to all members of a diverse group with conflicting interests. More narrowly, it refers to achieving and exercising positions of governance or organized control over a community. Furthermore, politics is the study or practice of the distribution of power and resources within a given community as well as the interrelationship(s) between communities. (adapted from )
+: (from Greek: Politiká: Politika, definition "affairs of the commons") is the process of making decisions applying to all members of a diverse group with conflicting interests. More narrowly, it refers to achieving and exercising positions of governance or organized control over a community. Furthermore, politics is the study or practice of the distribution of power and resources within a given community as well as the interrelationship(s) between communities. (adapted from {{HagueHarrop}})
+
+Affordances
+: The possibilities that are provided to an actors through the ordering of an environment by a technology.
+
+Protocols
+: 'Protocols are rules governing communication between devices or applications, and the creation or manipulation of any logical or communicative artifacts concomitant with such communication.' {{Sisson}}
+
+Standards
+: 'An Internet Standard is a specification that is stable and well-understood, is technically competent, has multiple, independent, and interoperable implementations with substantial operational experience, enjoys significant public support, and is recognizably useful in some or all parts of the Internet.' {{RFC2026}}
 
 
-Literature and Positions
-========================
+Research Question
+=================
 
-While discussing the impact of protocols on human rights different positions can be differentiated. Without judging them on their internal of external consistency they are represented here.
+Are protocols political? If so, should the politics of protocols need to be taken into account in their development process?
+
+Technology and Politics: a literature review
+============================================
+
+In 1993 the Computer Professionals for Social Responsibility stated that 'the Internet should meet public interest objectives', similarly {{RFC3935}} states that 'The Internet isn't value-neutral, and neither is the IETF.'. Ethics and the Internet was already a topic of an RFC by the IAB in 1989 {{RFC1097}}. Nonetheless there has been a recent uptick in discussions around the impact of Internet protocols on human rights {{RFC8280}} in the IETF and more general about the impact of technology on society in the public debate.
+
+This document aims to provide an overview of the spectrum of different positions that have been observed in the IETF and IRTF community, during participatory observation, through 39 interviews with members of the community, the Human Rights Protocol Considerations Research Group mailinglist and during and after the Technical Plenary on Protocols and Human Rights during IETF98.
+Without judging them on their internal of external consistency they are represented here, where possible we sought to engage with academic literature on this topic.
 
 ## Technology is value neutral
-This position starts from the premise that the technical and political are differentiated fields and that technology is 'value free'. This is also put more explicitly by Carey: "electronics is neither the arrival of apocalypse nor the dispensation of  grace.  Technology  is  technology;  it  is  a  means  for  communication  and  transportation  over  space, and nothing more." {{Carey}}
-In this view technology only become political when it is actually being used by humans. So the technology itself is not political, the use of the technology is. This view sees technology as instrument; "technologies  are  'tools' standing  ready  to  serve  the  purposes  of  their  users.  Technology  is  deemed  'neutral,' without valuative content of its own.'" {{Feenberg}}. Feenberg continues: "technology  is  not  inherently  good  or  bad,  and  can  be  used  to  whatever  political  or  social  ends  desired  by  the  person  or  institution  in  control.  Technology  is  a  ‘rational entity’ and universally applicable. One may make exceptions on moral grounds, but one must also understand that the "price for the achievement of environmental, ethical, or religious goals...is reduced efficiency." {{Feenberg}}
+This position starts from the premise that the technical and political are differentiated fields and that technology is 'value free'. This is also put more explicitly by Carey: "electronics is neither the arrival of apocalypse nor the dispensation of  grace.  Technology  is  technology;  it  is  a  means  for  communication  and  transportation  over  space, and nothing more." {{Carey}}. In this view protocols only become political when it is actually being used by humans. So the technology itself is not political, the use of the technology is. This view sees technology as instrument; "technologies  are  'tools' standing  ready  to  serve  the  purposes  of  their  users.  Technology  is  deemed  'neutral,' without valuative content of its own.'" {{Feenberg}}. Feenberg continues: "technology  is  not  inherently  good  or  bad,  and  can  be  used  to  whatever  political  or  social  ends  desired  by  the  person  or  institution  in  control.  Technology  is  a  ‘rational entity’ and universally applicable. One may make exceptions on moral grounds, but one must also understand that the "price for the achievement of environmental, ethical, or religious goals...is reduced efficiency." {{Feenberg}}.
 
 ## Some protocols are political some times
 This stance is a pragmatic approach to the problem. It states that some protocols under certain conditions can themselves have a political dimension.  This is different from the claim that a protocol might sometimes be used in a political way; that view is consistent with the idea of the technology being neutral (for the human action using the technology is where the politics lies).  Instead, this position requires that each protocol and use be evaluated for its political dimension, in order to understand the extent to which it is political.
 
 ## All protocols are political sometimes
-While not an absolutist standpoint it recognizes that all design decisions are subject to the law of unintended consequences. The system consisting of the Internet and its users is vastly too complex to be predictable; it is chaotic in nature; its emergent properties cannot be predicted.
+While not an absolutist standpoint it recognizes that all design decisions are subject to the law of unintended consequences. The system consisting of the Internet and its users is vastly too complex to be predictable; it is chaotic in nature; its emergent properties cannot be predicted. This concept strongly hinges on the general purpose aspect of information technology and its malleability. Whereas not all (potential) behaviours, affordances and impacts of protocols can possible be predicted, on could at least consider the impact of proposed implementations.
 
 ## The network has its own logic and values
-While humans create technologies, this does not mean that they are forever under human control.  A technology, once created, has its own logic that is independent of the human actors that either create or use the technology.
+While humans create technologies, this does not mean that they are forever under human control. A technology, once created, has its own logic that is independent of the human actors that either create or use the technology.
 
-Consider, for instance, the way that the very existence of the automobile imposes physical forms on the world different from those that come from the electric tram or the horse-cart.  The logic of the automobile means speed and the rapid covering of distance, which encourages suburban development and a tendency toward conurbation.  But even if that did not happen, widespread automobile use requires paved roads, and parking lots and structures. These are pressures that come from the automotive technology itself, and would not arise without that technology.
+From this perspective, technologies can shape the world. As Martin Heidegger says, "The hydroelectric plant is not built into the Rhine River as was the old wooden bridge that joined bank with bank for hundreds of years. Rather the river is dammed up into the power plant. What the river is now, namely, a water power supplier, derives from out of the essence of the power station." {{Heidegger}} (p 16)  The dam in the river changes the world in a way the bridge does not, because the dam alters the nature of the river.
 
-Certain kinds of technology shape the world in this sense.  As Martin Heidegger says, "The hydroelectric plant is not built into the Rhine River as was the old wooden bridge that joined bank with bank for hundreds of years. Rather the river is dammed up into the power plant. What the river is now, namely, a water power supplier, derives from out of the essence of the power station." {{Heidegger}} (p 16)  The dam in the river changes the world in a way the bridge does not, because the dam alters the nature of the river.
+In the same way --in another and more recent example-- the very existence automobiles impose physical forms on the world different from those that come from the electric tram or the horse-cart. The logic of the automobile means speed and the rapid covering of distance, which encourages suburban development and a tendency toward conurbation. But even if that did not happen, widespread automobile use requires paved roads, and parking lots and structures. These are pressures that come from the automotive technology itself, and would not arise without that technology.
 
-In much same way, then, networking technology once created makes its own demands. One of the most important conditions for protocol success is that the protocol is incremental deployability {{RFC5218}}.  This means that the network already deployed constrains what can be deployed into it.  Moreover, one interpretation of {{RFC7258}} is that pervasive monitoring is an "attack" precisely because of the network's need not to leak traces of online exchanges. A different network with a different design might not have been subject to this kind of attack.
+In much same way, then, networking technology, such as protocols, creates its own demands. One of the most important conditions for protocol success is its incremental deployability {{RFC5218}}.  This means that the network already contains constrains on what can be deployed into it. In this sense the network creates its own paths, but also has its own objective. According to this view the goal of the network is interconnection and connectivity; more connectivity is good for the network. Proponents of this positions also often describe the Internet as an organism with its own unique ecosystem.
+
+In this position it is not necessarily clear where the 'social' ends and the 'technical' begins, and it could be argued that the distinction itself is a social construction {{BijkerLaw}} or that a real-life distinction between the two is hard to be made {{Bloor}}.
 
 ## Protocols are inherently political
-On the other side of the spectrum there are the ones who insist that technology is non-neutral. This is for instance made explicit by Postman where he writes: 'the uses made of technology are largely determined by the structure of the technology itself' {{Postman}}. He states that the medium itself 'contains an ideological bias'. He continues to argue that technology is non-neutral:
+This position argues the opposite of 'technological neutrality'. This position can be illustrated with Postman where he writes: 'the uses made of technology are largely determined by the structure of the technology itself' {{Postman}}. He states that the medium itself 'contains an ideological bias'. He continues to argue that technology is non-neutral:
 
 (1) because of the symbolic forms in which information is encoded, different media have different intellectual and emotional biases;
 (2) because of the accessibility and speed of their information, different media have different political biases;
 (3) because of their physical form, different media have different sensory biases;
 (4) because of the conditions in which we attend to them, different media have different social biases;
-(5) because of their technical and economic structure, different media have different content biases. {{Postman}}
+(5) because of their technical and economic structure, different media have different content biases.
 
-More recent scholars of Internet infrastructure and governance have also pointed out that Internet processes and standards have become part and parcel of political processes and public policies: one only has to look at the IANA transition or global innovation policy for concrete examples {{DeNardis}}. Similarly one can look at the Raven process in which the IETF after a long discussion refused to standardize wiretapping (which resulted in {{RFC2804}}. That was an instance where the IETF took a position that was largely political, although driven by a technical argument.  It was similar to the process that led to {{RFC6973}}, in which something that occurred in the political space (Snowden disclosures) engendered the IETF to act. This is summarized in {{Abbate}} who says: "protocols are politics by other means". This emphasizes the interests that are at play in the process of designing standards. This position holds further that protocols can never be understood without their contextual embeddedness: protocols do not exist solely by themselves but always are to be understood in a more complex context -- the stack, hardware, or nation-state interests and their impact on civil rights. Finally, this view is that that protocols are political because they affect or sometimes effect the socio-technical ordering of reality. The latter observation leads Winner to conclude that the reality of technological progress has too often been a scenario where the innovation has dictated change for society. Those who had the power to introduce a new technology also had the power to create a consumer class  to  use  the  technology, ‘with new practices, relationships, and identities supplanting the old, ---and those who had the wherewithal to implement new technologies often molded society to match the needs of emerging technologies and organizations.’ {{Winner}}.
+Recent scholars of Internet infrastructure and governance have also pointed out that Internet processes and standards have become part and parcel of political processes and public policies. Several concrete examples are found within this approach, for instance, the IANA transition or global innovation policy {{DeNardis}}. The Raven process in which the IETF refused to standardize wiretapping --which resulted in {{RFC2804}}-- was an instance where an international governance body took a position that was largely political, although driven by a technical argument. The process that led to {{RFC6973}} is similar: the Snowden disclosures which occured in the political space, engendered the IETF to act. This is summarized in {{Abbate}} who says: "protocols are politics by other means", emphasizing the interests that are at play in the process of designing standards.
 
-Examples and approaches
-=======================
+This position further holds that protocols can never be understood without their contextual embeddedness: protocols do not exist solely by themselves but always are to be understood in a more complex context -- the stack, hardware, or nation-state interests and their impact on civil rights. Finally, this view is that that protocols are political because they affect or sometimes effect the socio-technical ordering of reality. The latter observation leads Winner to conclude that the reality of technological progress has too often been a scenario where the innovation has dictated change for society. Those who had the power to introduce a new technology also had the power to create a consumer class  to  use  the  technology ‘with new practices, relationships, and identities supplanting the old, ---and those who had the wherewithal to implement new technologies often molded society to match the needs of emerging technologies and organizations.’ {{Winner}}.
 
-# Competition and collaboration
+IETF: Protocols as Standards
+============================
 
-Standards exist for nearly everything: processes, technologies, safety, hiring, elections, and training. Standards provide blue-prints for how to accomplish a particular task in a similar way to others trying to accomplish the same thing, while reducing overhead and inefficiencies. Standards enhance competition by allowing different entities to work from a commonly accepted baseline. And they exist in many forms: there can be informal standards, that are just agreed upon normal ways of interacting within a specific community (i.e. the process through which greetings to a new acquaintance are expressed through a bow, a handshake or similar). There can be formal standards, that are normally codified in writing.
+In the previous section we gave an overview of the different existing positions of the impact of Internet protocols in the Internet community. In the following section we will consider the standards setting process and its consequences for the politics of protocols.
 
-And there can be de facto standards: standards that arise in market situations where one entity is particularly dominant, and downstream competitors are therefore tied to the dominant entity's technological solutions {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to be able to restrict competition for downstream services for PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}.
+Standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work. The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard.
 
-The World Trade Organisation (WTO) recognises a difference between standards and technical regulations, where standards are voluntary formal codes to which products or services may conform while technical regulations are mandatory requirements the fulfillment of which is required for a product to be accessible on one of the WTO country markets. The WTO rules have implications for how nation states, at least those that have signed on to the WTO agreements, may impose specific technical requirements on companies.
 
-But there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries.
-
-## Standards development
-
-The development of formal standards development faces a number of economic and organisational challenges. The cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. In addition, one faces the problem of deciding what the mutual goal is.
-
-These problems may be described as inter-organisational costs. Even after a goal is decided upon, coordination of multiple entities requires time and money. One needs communication platforms, processes and a commitment to mutual investment in a higher good. They are not simple tasks, and the more different communities are affected by a particular standardisation process, the more difficult the organisational challenges become.
-
-## Standards development in the IETF
-
-The standards enabling interoperating networks, what we think of today as the Internet, were created as open, formal and voluntary standards. A platform for internet standardisation, the Internet Engineering Task Force (IETF), was created in 1992 to enable the continuation of such standardisation work.
-
-The IETF has sought to make the standards process transparent (by ensuring everyone can access standards, mailing-lists and meetings), predictable (by having clear procedures and reviews) and of high quality (by having draft documents reviewed by members from its own epistemic community). This is all aimed at increasing the accountability of the process and the quality of the standard.
 
 The IETF implements what has been referred to as an "informal ex ante disclosure policy" for patents {{Contreras}}, which includes the possibility for participants to disclose the existence of a patent relevant for the standard, royalty-terms which would apply to the implementors of that standard should it enter into effect, as well as other licensing terms that may be interesting for implementors to know. The community ethos in the IETF seems to lead to 100% royalty-free disclosures of prior patents which is a record number, even among other comparable standard organisations {{Contreras}}.
 
+## Competition and collaboration
+
+Standards exist for nearly everything: processes, technologies, safety, hiring, elections, and training. Standards provide blue-prints for how to accomplish a particular task in a similar way for others that are trying to accomplish the same thing, while reducing overhead and inefficiencies. Although there are different types and configurations of standards, they all enhance competition by allowing different entities to work from a commonly accepted baseline.
+## Why? Finish this thought in the conclusion.
+
+On the first types of standards than can be found are "informal" ones --agreed upon normal ways of interacting within a specific community. For example, the process through which greetings to a new acquaintance are expressed through a bow, a handshake or a kiss. On the other hand "formal" standards, are normally codified in writing. The next subsection will ----
+
+Within economy studies, _de facto_ standards arise in market situations where one entity is particularly dominant; downstream competitors are therefore tied to the dominant entity's technological solutions {{Ahlborn}}. Under EU anti-trust law, de facto standards have been found to restrict competition for downstream services in PC software products {{CJEU2007}}, as well as downstream services dependent on health information {{CJEU2004}}.
+
+Even in international law, the World Trade Organisation (WTO) uses standards, although it recognises a difference between standards and technical regulations. The former are voluntary formal codes to which products or services may conform, while technical regulations are mandatory requirements to be fullfilled for a product to be accessible on one of the WTO country markets. These rules have implications for how nation states bounded by the WTO agreements can impose specific technical requirements on companies. Nonetheles, there are many standardisation groups that were originally launched by nation states or groups of nation states. ISO, BIS, CNIS, NIST, ABNT and ETSI are examples of institutions that are, wholly or partially, sponsored by public money in order to ensure smooth development of formal standards. Even if under WTO rules these organisations cannot create the equivalent of a technical regulation, they have important normative functions in their respective countries.
+## Close with an extra paragraph on why all these different types of standards enhance competition and collaboration. No matter the form... bla bla. Otherwise the content doesn't make much sense in relation to the title.
+
+## The development of standards
+## Why is this a subsection?
+
+The development of formal standards faces a number of economic and organisational challenges. Mainly, the cost and difficulty of organising many entities around a mutual goal, as well as the cost of research and development leading up to a mutually beneficial technological platform. In addition, deciding what the mutual goal is can also be a problem.
+
+These challenges may be described as inter-organisational costs. Even after a goal is decided upon, coordination of multiple entities requires time and money. One needs communication platforms, processes and a commitment to mutual investment in a higher good. They are not simple tasks, and the more different communities are affected by a particular standardisation process, the more difficult the organisational challenges become.
+
+# The politics of standards in the IETF
+## I suggest a different title, more related to this so your intention is more clear. This entire section could also be about externalities.
+## I see four: 1) funding; 2) barriers; 3) interoperability has to be negotiated (and that takes skills, going to meetings, etc); 4 competition between layers. Make it all one big paragraph, the ideas are very connected.
+
 In spite of a strong community ethos and transparent procedures, the IETF is not immune to externalities. Sponsorship to the IETF is varied, but is also of the nature that ongoing projects that are in the specific interest of one or some group of corporations may be given more funding than other projects (see {{draft-finance-thoughts}}). The IETF has faced three periods of decreased commitment from participants in funding its meetings in the past ten years, leading, naturally, to self-scrutiny, see for instance {{IAOC69}}, {{IAOC77}}, {{IAOC99}}.
+## This paragraph is really good, I even think the idea could be expanding: knowledge, financing and language barriers. DIGITAL COLONIALISM hahaha.
+## Make all this section one entire thing. Remember: it's just about logically connecting one paragraph with the other. Sometimes it might just even be one little sentence. Use words such as "likewise", "nonetheless", "also", etc.
+The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically mean it will be broadly adopted at a fast pace. Examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account a much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
 
-# More legacy, more politics?
-Roman engineers complained about inadequate legacy standards they needed to comply with, which hampered them in their engineering excellence. In that sense not much has changed in the last 2100 years. When starting from a tabula rasa, one does not need to take other systems, layers or standards into account. The need for interoperability, and backward compatability makes engineering work harder. And once a standard is designed, it does not automatically means it will be broadly adopted at as fast pace. Examples of this are IPv6, DNSSEC, DKIM, etc. The need for interoperability means that a new protocol needs to take into account a much more diverse environment than early protocols, and also be amendable to different needs: protocols needs to relate and negotiate in a busy agora, as do the protocol developers. This means that some might get priority, whereas others get dropped.
-
-# Layers of politics
 There is a competition between layers, and even contestation about what the borders of different layers are. This leads to competition between layers and different solutions for similar problems on different layers, which in its turn leads to further ossification, which leads to more contestation.
 
 # How voluntary are open standards?
 
 Coordinating transnational stakeholders in a process of negotiation and agreement through the development of common rules is a form of global governance {{Nadvi}}. Standards are among the mechanisms by which this governance is achieved. Conformance to certain standards is often a basic condition of participation in international trade and communication, so there are strong economic and political incentives to conform, even in the absence of legal requirements {{Russell}}. {{RogersEden}} argue:
+## I'm still confused about protocols and standards :( hahaha. Please make it clear above!!!! Urgent!!!! :) <3
 
    "As unequal participants compete to define standards, technological compromises emerge, which add complexity to standards. For instance, when working group participants propose competing solutions, it may be easier for them to agree on a standard that combines all the proposals rather than choosing any single proposal. This shifts the responsibility for selecting a solution onto those who implement the standard, which can lead to complex implementations that may not be interoperable. On its face this appears to be a failure of the standardization process, but this outcome may benefit certain participants— for example, by allowing an implementer with large market share to establish a de facto standard within the scope of the documented standard."
 
@@ -361,13 +402,19 @@ The need for a positioning
 
 It is indisputable that the Internet plays an increasingly important role in the lives of individuals.  The community that produces standards for the Internet therefore also has an impact on society, which it itself has recognised in a number of previously adopted documents {{RFC1958}}.
 
-The IETF cannot ordain what standards are to be used on the networks, and it specifically does not determine the laws of regions or countries where networks are being used, but it does set open standards for interoperability on the Internet, and has done so since the inception of the Internet. Because a standard is the blue-print for how to accomplish a particular task in a similar way to others, the standards adopted have a normative effect. The standardisation work at the IETF will have implications on what is perceived as technologically possible and useful where networking technologies are being deployed, and its standards output reflect was is considered by the technical community as feasible and good practice.
+The IETF cannot ordain which standards are to be used on the networks, and it specifically does not determine the laws of regions or countries where networks are being used, but it does set open standards for interoperability on the Internet, and has done so since the inception of the Internet. Because a standard is the blue-print for how to accomplish a particular task in a similar way to others, the standards adopted have a normative effect. The standardisation work at the IETF will have implications on what is perceived as technologically possible and useful where networking technologies are being deployed, and its standards output reflect was is considered by the technical community as feasible and good practice.
 
 This calls for providing a methodology in the IETF community to evaluate which routes forward should indeed be feasible, what constitutes the "good" in "good practice" and what trade-offs between different feasible features of technologies are useful and should therefore be made possible. Such an analysis should take societal implication into account.
 
 The risk of not doing this is threefold: (1) the IETF might make decisions which have a political impact that was not intended by the community, (2) other bodies or entities might make the decisions for the IETF because the IETF does not have an explicit stance, (3) other bodies that do take these issues into account might increase in importance to the detriment of the influence of the IETF.
 
-This does not mean the IETF does not have a position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are testament of this.  But these are all examples of positions about the IETF's work processes or product.  What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work.
+This does not mean the IETF does not have a position on particular political issues. The policies for open and diverse participation {{RFC7704}}, the anti-harassment policy {{RFC7776}}, as well as the Guidelines for Privacy Considerations {{RFC6973}} are proof of this. Nonetheless, these are all examples of positions about the IETF's work processes or product. What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work.
+
+Conclusion
+========================
+## Ok, here's how to make a good conclusion: read everything again, and summarize BY HAND in a separate piece of paper 1) the introduction; 2) the research questions or objectives; 3) the two main sections and the main arguments in each. The conclusion MUST NEVER have new pieces of information, but rather round up everything that has been written before. Give it a try and if you want send it back, and I can give it another look.
+## Start with this -> What is absent is a way for IETF participants to evaluate their role with respect to the wider implications of that IETF work (paraphrased)
+## This is brilliant. Love it :)
 
 The way forward
 ===============
