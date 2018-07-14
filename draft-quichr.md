@@ -24,7 +24,7 @@ author:
 
 -
        ins: B. Martini
-       name: Beatrici Martini
+       name: Beatrice Martini
        organization: Harvard University
        email: mail@beatricemartini.it
 
