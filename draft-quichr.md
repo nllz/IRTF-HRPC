@@ -51,24 +51,25 @@ informative:
 
 --- abstract
 
-Anonymity is less discussed in the IETF than for instance security {{RFC3552}} or privacy {{RFC6973}}. This can be attributed to the fact anonymity is a hard technical problem or that anonymizing user data is not of specific market interest. It remains a fact that 'most internet users would like to be anonymous online at least occasionally' {{Pew}}. 
-
-This document aims to break down the different meanings and implications of anonymity on a mediated computer network.
+Type smth here
 
 --- middle
-
 
 Introduction
 ============
 
+This is a review done within the framework of the Human Rights Review Team, it was done by Beatrice Martini and Niels ten Oever. The Human Rights Review Team aims to implement and improve the guidelines for human rights considerations provided in {{RFC8280}}, and seek to mitigate potentially adverse human rights impacts that IETF and IRTF documents might have.
+
+This review concerns the QUIC protocol in general and the following drafts in particular:
+draft-ietf-quic-transport, draft-ietf-quic-tls, draft-ietf-quic-invariants.
 
 
 Vocabulary Used
 ===============
 
 
-Hman Rights Review
-==================
+Hman Rights Considerations
+==========================
 
 ## Connectivity
 ## Privacy
@@ -93,6 +94,7 @@ Hman Rights Review
 
 Recommendations
 ===============
+
 
 Open Questions
 ==============
