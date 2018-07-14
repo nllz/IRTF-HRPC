@@ -70,6 +70,26 @@ Vocabulary Used
 Hman Rights Review
 ==================
 
+## Connectivity
+## Privacy
+## Content agnosticism
+## Security
+## Internationalization
+## Censorship resistance
+## Open Standards
+## Heterogeneity Support
+## Pseudonymity
+## Accessibility
+## Localization
+## Decentralization
+## Reliability
+## Confidentiality
+## Integrity
+## Authenticity
+## Adaptability
+## Outcome Transparency
+## Anonymity
+
 
 Recommendations
 ===============
