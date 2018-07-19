@@ -1,7 +1,7 @@
 ---
-title: On the Politics of Standards
+title: On Value Neutrality and the Politics of Standards
 abbrev: politix
-docname: draft-tenoever-hrpc-political-05
+docname: draft-tenoever-hrpc-political-06
 category: info
 
 ipr: trust200902
@@ -295,13 +295,17 @@ Introduction
        Thus technology both creates systems which close off other
        options and generate  novel, unpredictable and indeed
        previously unthinkable, option. The game of technology is
-       never finished, and its ramifications are endless.
+       never finished, and its ramifications are endless."
 
                                    - Michel Callon
 
+    "The Internet isn't value-neutral, and neither is the IETF."
+
+                                   -{{RFC3935}}
+
 The design of the Internet through protocols and standards is a technical issue with great political and economic impacts {{RFC0613}}. The early Internet community already realized that it needed to make decisions on political issues such as Intellectual Property, Internationalization {{BramanI}}, diversity, access {{RFC0101}} privacy and security {{RFC0049}}, and the military {{RFC0164}} {{RFC0316}}, governmental {{RFC0144}} {{RFC0286}} {{RFC0313}} {{RFC0542}} {{RFC0549}} and non-governmental {{RFC0196}} uses, which has been clearly pointed out by Braman {{BramanII}}.
 
-Recently there has been an increased discussion on the relation between Internet protocols and human rights {{RFC8280}} which spurred the discussion on the political nature of standards. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between standards and politics and seek to answer the question whether standards are political, and if so, how.
+Recently there has been an increased discussion on the relation between Internet protocols and human rights {{RFC8280}} which spurred the discussion on the the value neutrality and political nature of standards. The network infrastructure is on the one hand designed, described, developed, standardized and implemented by the Internet community, but the Internet community and Internet users are also shaped by the affordances of the technology. Companies, citizens, governments, standards developing bodies, public opinion and public interest groups all play a part in these discussions. In this document we aim to outline different views on the relation between standards and politics and seek to answer the question whether standards are political, and if so, how.
 
 Vocabulary Used
 ===============
@@ -422,14 +426,14 @@ This does not mean the IETF does not have a position on particular political iss
 Conclusion
 ==========
 
-Economics, competition, collaboration, openness, and political impact have been an inherent part of the work of the IETF since its early beginnings, by its nature as standards developing organization, through the contributions of the members of the Internet community, and because the ordering effect the Internet has on society. Whereas there might not be agreement in the Internet community on what the specific political nature is of technological development, it is undisputed that standards and protocols are both product of a political process, and they can also be used for political means. Whereas there is no need for a unified philosophy of Internet protocols, it is in the benefit of the IETF, the Internet and arguably society at large to take this into account in the standards development process.
+Economics, competition, collaboration, openness, and political impact have been an inherent part of the work of the IETF since its early beginnings, by its nature as standards developing organization, through the contributions of the members of the Internet community, and because the ordering effect the Internet has on society. Whereas there might not be agreement in the Internet community on what the specific political nature is of technological development, it is undisputed that standards and protocols are both product of a political process, and they can also be used for political means. Therefore protocols and standards are not value neutral. Whereas there is no need for a unified philosophy of Internet protocols, it is in the benefit of the IETF, the Internet and arguably society at large to take this into account in the standards development process.
 
 The way forward
 ===============
 
 There are instruments that can help the IETF develop an approach to address the politics of standards. Part of this can be found in {{RFC8280}} as well as the United National Guiding Principles for Business and Human Rights {{UNGP}}. But there is not a one-size-fits-all solution. The IETF is a particular organization, with a particular mandate, and even if a policy is in place, its success depends on the implementation of the policy by the community.
 
-Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need to live with the fact standards bodies have a political nature {{Webster}}. This does not need to be problematic as long as there are sufficient accountability and transparency mechanisms in place. The importance of these mechanisms increases with the importance of the standards and their implementations. The complexity of the work inscribes a requirement of competence in the work in the IETF, which forms an inherent barrier for end-user involvement. Even though this might not be intentional, it is a result of the interplay between the characteristics of the epistemic community in the IETF and the nature of the standard setting process.
+Since 'de facto standardization is reliant on market forces' {{Hanseth}} we need to live with the fact standards bodies have a political nature {{Webster}} and are not value neutral. This does not need to be problematic as long as there are sufficient accountability and transparency mechanisms in place. The importance of these mechanisms increases with the importance of the standards and their implementations. The complexity of the work inscribes a requirement of competence in the work in the IETF, which forms an inherent barrier for end-user involvement. Even though this might not be intentional, it is a result of the interplay between the characteristics of the epistemic community in the IETF and the nature of the standard setting process.
 
 Instead of splitting hairs about whether 'standards are political' {{Winner}} {{Woolgar}} we argue that we need to look at the politics of individual standards and invite document authors and reviewers to take these dynamics into account.
 
