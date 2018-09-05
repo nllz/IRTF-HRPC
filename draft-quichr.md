@@ -72,6 +72,9 @@ Hman Rights Considerations
 ==========================
 
 ## Connectivity
+
+The QUIC protocol aims to address issues related to ossification by building on UDP and adding encrypting information that was previously sent in the clear. 
+
 ## Privacy
 ## Content agnosticism
 ## Security
