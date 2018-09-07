@@ -1,7 +1,7 @@
 ---
 title: Guidelines for Human Rights Protocol Considerations
 abbrev: hrpcr
-docname: draft-irtf-hrpc-guidelines-00
+docname: draft-irtf-hrpc-guidelines-02
 category: info
 
 ipr: trust200902
@@ -24,7 +24,7 @@ author:
 -
        ins: N. ten Oever (editor)
        name: Niels ten Oever
-       organization: ARTICLE 19
+       organization: University of Amsterdam
        email: mail@nielstenoever.net
 
 
@@ -211,12 +211,14 @@ informative:
 
 --- abstract
 
-This document proposes guidelines for human rights considerations, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. This is an updated version of the guidelines for human rights considerations in {{RFC8280}}. 
+This document sets guidelines for human rights considerations in networking protocols, similar to the work done on the guidelines for privacy considerations {{RFC6973}}. This is an updated version of the guidelines for human rights considerations in {{RFC8280}}. 
 
 --- middle
 
 Introduction
 ============
+
+
 
 Vocabulary used
 ===============
@@ -234,9 +236,29 @@ Human rights threats on the Internet come in a myriad of forms. Protocols and st
 
 This section details several 'common' threats to human rights, indicating how each of these can lead to human rights violations/harms and present several examples of how these threats to human rights materialize on the Internet. This threat modeling is inspired by {{RFC6973}} Privacy Considerations for Internet Protocols, which is based on the security threat analysis. This method is by no means a perfect solution for assessing human rights risks in Internet protocols and systems; it is however the best approach currently available. Certain specific human rights threats are indirectly considered in Internet protocols as part of the security considerations {{BCP72}}, but privacy guidelines {{RFC6973}} or reviews, let alone human rights impact assessments of protocols are not standardized or implemented. 
 
-Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}: "The main source of the values of human rights is the International Bill of Human Rights that is composed of the Universal Declaration of Human Rights {{UDHR}} along with the International Covenant on Civil and Political Rights {{ICCPR}} and the International Covenant on Economic, Social and Cultural Rights {{ICESCR}}. In the light of several cases of Internet censorship, the Human Rights Council Resolution 20/8 was adopted in 2012 {{UNHRC2016}}, affirming “. . . that the same rights that people have offline must also be protected online. . . ” . In 2015, the Charter of Human Rights and Principles for the Internet {{IRP}} was developed and released. According to these documents, some examples of human rights relevant for ICT systems are human dignity (Art. 1 UDHR), non-discrimination (Art. 2), rights to life, liberty and security (Art. 3), freedom of opinion and expression (Art. 19), freedom of assembly and association (Art. 20), rights to equal protection, legal remedy, fair trial, due process, presumed innocent (Art. 7–11), appropriate social and international order (Art. 28), participation in public affairs (Art. 21), participation in cultural life, protection of the moral and material interests resulting from any scientific, literary or artistic production of which [they are] the author (Art. 27), and privacy (Art. 12)." A partial catalog of human rights related to Information and Communications technologies, including economic rights, can be found in {{Hill2014}}.
+Many threats, enablers and risks are linked to different rights. This is not unsurprising if one takes into account that human rights are interrelated, interdependent and indivisible. Here however we're not discussing all human rights because not all human rights are relevant to ICTs in general and protocols and standards in particular {{Bless}}: "The main source of the values of human rights is the International Bill of Human Rights that is composed of the Universal Declaration of Human Rights {{UDHR}} along with the International Covenant on Civil and Political Rights {{ICCPR}} and the International Covenant on Economic, Social and Cultural Rights {{ICESCR}}. In the light of several cases of Internet censorship, the Human Rights Council Resolution 20/8 was adopted in 2012 {{UNHRC2016}}, affirming “. . . that the same rights that people have offline must also be protected online. . . ” . In 2015, the Charter of Human Rights and Principles for the Internet {{IRP}} was developed and released. According to these documents, some examples of human rights relevant for ICT systems are human dignity (Art. 1 UDHR), non-discrimination (Art. 2), rights to life, liberty and security (Art. 3), freedom of opinion and expression (Art. 19), freedom of assembly and association (Art. 20), rights to equal protection, legal remedy, fair trial, due process, presumed innocent (Art. 7–11), appropriate social and international order (Art. 28), participation in public affairs (Art. 21), participation in cultural life, protection of the moral and material interests resulting from any scientific, literary or artistic production of which \[they are\] the author (Art. 27), and privacy (Art. 12)." A partial catalog of human rights related to Information and Communications technologies, including economic rights, can be found in {{Hill2014}}.
 
 This is by no means an attempt to exclude specific rights or prioritize some rights over others. If other rights seem relevant, please contact the authors.
+
+## Conducting human rights reviews
+Human rights reviews can take place in different parts of the development process of an Internet Draft. However generally speaking it is easier to influence the development of a technology at earlier stages than at later stages. This does not mean that reviews at last-call are not relevant, but they are less likely to result in significant changes in the reviewed document.
+
+Methods for analyzing technology for specific human rights impacts are still quite nascent. Currently three five methods have been explored by the Human Rights Review Team, often in conjunction with each other:
+
+### Analyzing drafts based on guidelines for human rights considerations model
+This analysis of Internet-Drafts uses the model as described below. The outlined categories and questions are used to review an Internet Draft an generally the review is also presented in that order. The advatange of this is that it provides a known overview, and document authors can go back to this document as well as {{RFC8280}} to understand the background and the context.
+
+### Analyzing drafts based on their perceived or speculated impact
+When reviewing an Internet-Draft specific human rights impacts might become apparent by doing a close reading of the draft and seeking to understand how it might provide a different ordering of the network or society. While less structured than the straight use of the human rights considerations model, this analysis might lead to new speculative understandings between human rights and protocols.
+
+### Expert interviews
+Interviews with document authors, active members of the Working Group, or experts in the field can help explore the characteristics of the protocol and their effects. There are two main advtanges to this approach; one the one hand it allows the reviewer to gain a deeper understanding of the (intended) workings of the protocol, on the other hand it also allows for the reviewer to start a discussion with an expert or even document author about certain aspects, which might help gain the review gain traction when it is published.
+
+### Interviews with impacted persons and communities
+Protcols impact users of the Internet. There it might help the review to understand how it impacts the people that use the protocol, and the people whose lives are impacted by the protocol. Since human rights should always be understood from the rightsholder, this approach will improve the understanding of the real world effects of the technology. At the same time it can be hard to attribute specific changes to a particular protocol, this is of course even harder when a protocol has not been (widely) deployed.
+
+### Tracing impacts of implementations
+When an Internet Draft is describing running code thas has already been implemented, the code could be analyzed either in an expirimental setting or on the Internet where its impact can be observed. Other than reviewing a draft, this allows the reviewer to understand how the document works in practice and potentially also what unknown or unexpected effects the technology might have.
 
 ## Guidelines for human rights considerations
 This section provides guidance for document authors in the form of a questionnaire about protocols and their (potential) impact. The questionnaire may be useful at any point in the design process, particularly after document authors have developed a high-level protocol model as described in {{RFC4101}}. These guidelines do not seek to replace any existing referenced specifications, but rather contribute to them and look at the design process from a human rights perspective. 
@@ -581,20 +603,11 @@ Impacts:
 
 ### Outcome Transparency
 
-Question(s): Are the effects of your protocol fully and easily
-comprehensible, including with respect to unintended consequences of
-protocol choices?
+Question(s): Are the effects of your protocol fully and easily comprehensible, including with respect to unintended consequences of protocol choices?
 
 Explanation: certain technical choice may have unintended consequences.
 
-Example: lack of authenticity may lead to lack of integrity and negative
-externalities, of which spam is an example. Lack of data that could be used
-for billing and accounting can lead to so-called "free" arrangements which
-obscure the actual costs and distribution of the costs, for example the
-barter arrangements that are commonly used for Internet interconnection; and
-the commercial exploitation of personal data for targeted advertising which
-is the most common funding model for the so-called "free" services such as
-search engines and social networks.
+Example: lack of authenticity may lead to lack of integrity and negative externalities, of which spam is an example. Lack of data that could be used for billing and accounting can lead to so-called "free" arrangements which obscure the actual costs and distribution of the costs, for example the barter arrangements that are commonly used for Internet interconnection; and the commercial exploitation of personal data for targeted advertising which is the most common funding model for the so-called "free" services such as search engines and social networks. Other unexpected outcomes might not be technical, but rather architectural, social or economical. 
 
 Impacts:
 - Freedom of expression
@@ -625,13 +638,16 @@ Impacts:
 Document Status
 ===============
 
+This RG document is currently documenting best practices and guidelines for human rights reviews of networking protocols and other Internet-Drafts and RFCs
+
+
 Acknowledgements
 ================
 
 Thanks to:
 - Corinne Cath for work on {{RFC8280}}. 
 - Theresa Engelhard and the hrpc list for suggestions.
-
+- The Human Rights Review Team for implementing the guidelines and helping them improve.
 
 Security Considerations
 =======================
