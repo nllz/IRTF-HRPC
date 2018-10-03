@@ -10,133 +10,129 @@ workgroup: Human Rights Protocol Considerations Research Group
 keyword: Internet-Draft
 stand_alone: yes
 pi:
-rfcedstyle: yes
-toc: yes
-tocindent: yes
-sortrefs: yes
-symrefs: yes
-strict: yes
-comments: yes
-inline: yes
-text-list-symbols: -o*+
+  rfcedstyle: yes
+  toc: yes
+  tocindent: yes
+  sortrefs: yes
+  symrefs: yes
+  strict: yes
+  comments: yes
+  inline: yes
+  text-list-symbols: -o*+
 
 author:
 
 -
-     ins: B. Martini
-     name: Beatrice Martini
-     organization: Harvard Kennedy School
-     email: mail@beatricemartini.it
+       ins: B. Martini
+       name: Beatrice Martini
+       organization: Harvard Kennedy School
+       email: mail@beatricemartini.it
 
 -
-     ins: N. ten Oever
-     name: Niels ten Oever
-     organization: University of Amsterdam
-     email: mail@nielstenoever.net
+       ins: N. ten Oever
+       name: Niels ten Oever
+       organization: University of Amsterdam
+       email: mail@nielstenoever.net
 
 normative:
- 
+  
 informative: 
 
- RFC2775:
- RFC3234:
- RFC3629:
- RFC3724:
- RFC4960:
- RFC7258:
- RFC7754:
- RFC8404:
- RFC8280:
+   RFC2775:
+   RFC3234:
+   RFC3629:
+   RFC3724:
+   RFC4960:
+   RFC7258:
+   RFC7754:
+   RFC8404:
+   RFC8280:
 
- draft-ietf-quic-transport-12:
-    title: QUIC: A UDP-Based Multiplexed and Secure Transport (working document)
-    author:
-       - ins: J. Iyengar
-       - ins: M. Thomson
-    target: https://datatracker.ietf.org/doc/draft-ietf-quic-transport
+   NETFLIX:
+      title: Identifying HTTPS-Protected Netflix Videos in Real-Time
+      date: 2017
+      author:
+         - ins: A. Reed
+         - ins: M. Kranch
+      target: https://www.mjkranch.com/docs/CODASPY17_Kranch_Reed_IdentifyingHTTPSNetflix.pdf
+      seriesinfo: "CODASPY '17 Proceedings of the Seventh ACM on Conference on Data and Application Security and Privacy, Pages 361-368"
 
- draft-ietf-quic-tls-12:
-    title: Using Transport Layer Security (TLS) to Secure QUIC (working document)
-    author:
-       - ins: M. Thomson
-       - ins: S. Turner
-    target: https://datatracker.ietf.org/doc/draft-ietf-quic-tls
+   draft-trammell-quic-spin-03:
+      title: The Addition of a Spin Bit to the QUIC Transport Protocol (working document)
+      author:
+         - ins: B. Trammell
+         - ins: P. De Vaere
+         - ins: R. Evem
+         - ins: G. Ficcola
+         - ins: T. Fossati
+         - ins: M. Ihlar
+         - ins: A. Morton
+         - ins: E. Stephan
+      date: 2018
+      target: https://tools.ietf.org/html/draft-trammell-quic-spin-03
 
- draft-ietf-quic-invariants-01:
-    title: Version-Independent Properties of QUIC (working document)
-    author:
-       - ins: M. Thomson
-    target: https://datatracker.ietf.org/doc/draft-ietf-quic-invariants
+   draft-huitema-quic-dnsoquic-05:
+      title: Specification of DNS over Dedicated QUIC Connections (working document)
+      author:
+         - ins: C. Huitema
+         - ins: M. Shore
+         - ins: A. Mankin
+         - ins: S. Dickinson
+         - ins: J. Iyengar
+      date: 2018
+      target: https://tools.ietf.org/html/draft-huitema-quic-dnsoquic-05
 
- draft-huitema-quic-dnsoquic-05:
-    title: Specification of DNS over Dedicated QUIC Connections (working document)
-    author:
-       - ins: C. Huitema
-       - ins: M. Shore
-       - ins: A. Mankin
-       - ins: S. Dickinson
-       - ins: J. Iyengar
-    target: https://tools.ietf.org/html/draft-huitema-quic-dnsoquic-05
+   draft-ietf-quic-manageability-02:
+      title: Manageability of the QUIC Transport Protocol (working document)
+      author:
+         - ins: M. Kuehlewind
+         - ins: B. Trammell
+      date: 2018
+      target: https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/
 
- NETFLIX:
-    title: Identifying HTTPS-Protected Netflix Videos in Real-Time
-    date: 2017
-    author:
-       - ins: A. Reed
-       - ins: M. Kranch
-    target: https://www.mjkranch.com/docs/CODASPY17_Kranch_Reed_IdentifyingHTTPSNetflix.pdf
-    seriesinfo: "CODASPY '17 Proceedings of the Seventh ACM on Conference on Data and Application Security and Privacy, Pages 361-368"
+   EFF:
+      title: "Verizon Injecting Perma-Cookies to Track Mobile Customers, Bypassing Privacy Controls"
+      author:
+         - ins: J. Hofman-Andrews
+      date: 2014
+      target: https://www.eff.org/deeplinks/2014/11/verizon-x-uidh
 
- draft-trammell-quic-spin-03:
-    title: The Addition of a Spin Bit to the QUIC Transport Protocol (working document)
-    author:
-       - ins: B. Trammell
-       - ins: P. De Vaere
-       - ins: R. Evem
-       - ins: G. Ficcola
-       - ins: T. Fossati
-       - ins: M. Ihlar
-       - ins: A. Morton
-       - ins: E. Stephan
-    target: https://tools.ietf.org/html/draft-trammell-quic-spin-03
+   Ruethetal:
+      title: A First Look at QUIC in the Wild
+      author:
+         - ins: J. Rueth
+         - ins: I. Poese
+         - ins: C. Dietzel
+         - ins: O. Hohlfeld
+      date: 2018
+      target: https://arxiv.org/abs/1801.05168
 
- draft-ietf-quic-manageability-02:
-    title: Manageability of the QUIC Transport Protocol (working document)
-    author:
-       - ins: M. Kuehlewind
-       - ins: B. Trammell
-    target: https://datatracker.ietf.org/doc/draft-ietf-quic-manageability/
+   draft-ietf-quic-transport-12:
+      title: "QUIC: A UDP-Based Multiplexed and Secure Transport (working document)"
+      author:
+         - ins: J. Iyengar
+         - ins: M. Thomson
+      date: 2018
+      target: https://tools.ietf.org/html/draft-ietf-quic-transport-12
 
- draft-huitema-quic-mpath-req-01:
-    title: A Comparison between SCTP and QUIC (working document)
-    author:
-       - ins: C. Huitema
-    target: https://datatracker.ietf.org/doc/draft-huitema-quic-mpath-req/
+   draft-huitema-quic-mpath-req-01:
+      title: QUIC Multipath Requirements (working document)
+      author:
+         - ins: C. Huitema
+      date: 2018
+      target: https://tools.ietf.org/html/draft-huitema-quic-mpath-req-01
 
- EFF:
-    title: Verizon Injecting Perma-Cookies to Track Mobile Customers, Bypassing Privacy Controls
-    author:
-       - ins: J. Hofman-Andrews
-    target: https://www.eff.org/deeplinks/2014/11/verizon-x-uidh
+   draft-joseph-quic-comparison-quic-sctp-00:
+      title: A Comparison between SCTP and QUIC (working document)
+      author:
+        - ins: A. Joseph
+        - ins: T. Li
+        - ins: Z. He
+        - ins: Y. Cui
+        - ins: L. Zhang
+      date: 2018
+      target: https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00
 
- Ruethetal:
-    title: A First Look at QUIC in the Wild
-    author:
-       - ins: J. Rueth
-       - ins: I. Poese
-       - ins: C. Dietzel
-       - ins: O. Hohlfeld
-    target: https://arxiv.org/abs/1801.05168
-
- draft-joseph-quic-comparison-quic-sctp-00:
-    title: QUIC Multipath Requirements (working document)
-    author:
-       - ins: A. Joseph
-       - ins: T. Li
-       - ins: Z. He
-       - ins: Y. Cui
-       - ins: L. Zhang
-    target: https://datatracker.ietf.org/doc/draft-joseph-quic-comparison-quic-sctp
 
 --- abstract
 
@@ -198,7 +194,7 @@ By establishing connection with multiple streams, QUIC creates higher opacity fo
 Comparing QUIC to TLS over TCP, QUIC significantly reduces the amount of information that an observer can acquire about communications they are looking at. In TCP, all of the information regarding the protocol flow at a transport layer is exposed, and can be used to identify active communications.
 An interesting example documenting the greater vulnerability has been recently provided by Andrew Reed and Michael Kranch in their paper "Identifying HTTPS-Protected Netflix Videos in Real-Time" {{NETFLIX}}. After Netflix had upgraded their infrastructure to provide HTTPS encryption of video stream in order to protect the privacy of their viewers, the researchers demonstrated that it was still possible to accurately identify Netflix videos from passive traffic capture in real time, and with very limited hardware requirements. What they did was developing a system that could report the Netflix video being delivered by a TCP connection using only the information provided by TCP/IP headers {{NETFLIX}}. With QUIC, this would not be possible.
 
-In essence, in QUIC it is possible to have an established connection with an end point and to run multiple streams over that connection. Consequently, an observer who is looking at someone's connection, would not be able to tell the difference between the streams. The observer can see that a user is talking, and how many packets are passed, but they cannot see addresses changes, usually the client's, in the case of the HTTP binding (see: {{raft-ietf-quic-transport-12}}).
+In essence, in QUIC it is possible to have an established connection with an end point and to run multiple streams over that connection. Consequently, an observer who is looking at someone's connection, would not be able to tell the difference between the streams. The observer can see that a user is talking, and how many packets are passed, but they cannot see addresses changes, usually the client's, in the case of the HTTP binding (see: {{draft-ietf-quic-transport-12}}).
 
 The client sets a connection ID in the initial client packet that will be used during the handshake. A new connection ID is then provided by the server during connection establishment: this will be used in the short header after the handshake. A server might also provide additional connection IDs that can the used by the client at any time during the connection. Therefore, if a flow changes one of its IP addresses, it may keep the same connection ID, or the connection ID may also change together with the IP address migration, thus avoiding linkability.
 
@@ -259,7 +255,7 @@ By encrypting all Internet traffic by default it is harder for researchers and n
 
 QUIC raises two issues in terms of internationalization.
 
-The first issues regards the fact that {{draft-ietf-quic-transport}} does not define human readable strings, except for where it states that the Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE frames "SHOULD be a UTF-8 encoded string {{RFC3629}}". The QUIC protocol demands that this SHOULD be an UTF-8 string, while UTF-8 is actually not required. Also, there is currently no space to declare the charset used. So it is recommended that this SHOULD becomes a MUST.
+The first issues regards the fact that {{draft-ietf-quic-transport-12}} does not define human readable strings, except for where it states that the Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE frames "SHOULD be a UTF-8 encoded string {{RFC3629}}". The QUIC protocol demands that this SHOULD be an UTF-8 string, while UTF-8 is actually not required. Also, there is currently no space to declare the charset used. So it is recommended that this SHOULD becomes a MUST.
 
 The second issue concerns the lackof availability of language tags. This would allow implementations to signal in which language Reason Phrases are rendered.
 
