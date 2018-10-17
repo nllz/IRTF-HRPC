@@ -118,6 +118,47 @@ informative:
          - ins: Bart Jansens
       target: https://www.drupal.org/project/project_issue_file_review/issues/343414#comment-1164514
      
+   Python:
+      title: "‘Master/Slave’ Terminology Was Removed from Python Programming Language"
+      date: 2018
+      author:
+         - ins: Daniel Oberhaus
+      target: https://motherboard.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language
+
+   Django:
+      title: "#22667 replaced occurrences of master/slave terminology with leader/follower #2692"
+      date: 2014
+      author:
+         - ins: fcurella
+      target: https://github.com/django/django/pull/2692
+
+   Django2:
+      title: "comment on #22667 replaced occurrences of master/slave terminology with leader/follower #2692"
+      date: 2014
+      author:
+         - ins: lynncyrin 
+      target: https://github.com/django/django/pull/2692#issuecomment-44221563
+
+   Wikipedia:
+      title: Slavery in the 21st century
+      date: 2018
+      author:
+         - org: Wikipedia
+      target: https://en.wikipedia.org/wiki/Talk:Slavery_in_the_21st_century
+
+   Drupal:
+      title: "Replace 'master/slave' terminology with 'primary/replica'"
+      date: 2014
+      author:
+         - ins: Xano
+      target: https://www.drupal.org/project/drupal/issues/2275877
+
+   Grewal:
+      title: "The 'Bad Is Black' Effect"
+      date: 2017
+      author:
+         - ins: D. Grewal
+      target: https://www.scientificamerican.com/article/the-bad-is-black-effect/
 
 --- abstract
 
@@ -146,11 +187,11 @@ What follow are specific alternative suggestions to "master/slave" and "white/bl
 
 ## Master/slave
 
-Master/slave is an offensive metaphor that will and should never become fully detached from history. Aside from being unprofessional and offensive it stifles participation according to Eglash: "If the master-slave metaphor affected these tough-minded engineers who had the gumption to make it through a technical career back in the days when they may have been the only black persons in their classes, what impact might it have on black students who are debating whether or not to enter science and technology careers at all?"
+Master/slave is an offensive metaphor that will and should never become fully detached from history. Aside from being unprofessional and offensive it stifles participation according to Eglash: "If the master-slave metaphor affected these tough-minded engineers who had the gumption to make it through a technical career back in the days when they may have been the only black persons in their classes, what impact might it have on black students who are debating whether or not to enter science and technology careers at all?" {{Eglash}}
 
-Aside from the arguably most important reason outlined above, the term set is becoming less used and therefore increasingly less compatible as more communities move away from its use [Python https://motherboard.vice.com/en_us/article/8x7akv/masterslave-terminology-was-removed-from-python-programming-language] [Drupal https://www.drupal.org/project/drupal/issues/2275877] [Django https://github.com/django/django/pull/2692]. The usage of 'master' and 'slave' in hardware and software has been halted by the Los Angeles County Office of Affirmative Action, the Django community, the Python community and several other programming languages. This was done because the language is offensive and hurts people in the community [https://github.com/django/django/pull/2692#issuecomment-44221563]. It is no longer in use at the IEEE.
+Aside from the arguably most important reason outlined above, the term set is becoming less used and therefore increasingly less compatible as more communities move away from its use (eg {{Python}}, {{Drupal}}, and {{Django}}. The usage of 'master' and 'slave' in hardware and software has been halted by the Los Angeles County Office of Affirmative Action, the Django community, the Python community and several other programming languages. This was done because the language is offensive and hurts people in the community {{Django2}}. It is also no longer in use at the IEEE.
 
-In addition to being inappropriate and arcane, the master/slave metaphor is both technically and historically inaccurate. For instance, in DNS the 'slave' is able to refuse zone transfers on the ground that it is malformed. The metaphor is incorrect historically given the most recent centuries during which "the role of the master was to abdicate and the role of the slave was to revolt" {{McClelland}}. Yet in another sense slavery is also not 'just an historic term', whereas freedom from slavery is a human-rights issue {{UDHR}}, it continues to exist in the present [see: https://en.wikipedia.org/wiki/Slavery_in_the_21st_century]. Furthermore, this term set wasn't revived until recently, after WWII, and after many of the technologies that adopted it were already in use with different terminology [Eglash].
+In addition to being inappropriate and arcane, the master/slave metaphor is both technically and historically inaccurate. For instance, in DNS the 'slave' is able to refuse zone transfers on the ground that it is malformed. The metaphor is incorrect historically given the most recent centuries during which "the role of the master was to abdicate and the role of the slave was to revolt" {{McClelland}}. Yet in another sense slavery is also not 'just an historic term', whereas freedom from slavery is a human-rights issue {{UDHR}}, it continues to exist in the present {{Wikipedia}}. Furthermore, this term set wasn't revived until recently, after WWII, and after many of the technologies that adopted it were already in use with different terminology {{Eglash}}.
 
 Lastly, we present not an additional rationale against their use, but an indicator of actual racism in the community that has been surfaced as a result of this larger debate among technologists, "I don't believe in PC (political correctness), mostly because the minorities constantly use it to get away with anything" {{Jansens}}. This illustrates the need to, as Graves is cited above as saying, continue to raise awareness within our community for eventual, lasting change on the continued front of struggle against the racists amongst us.
 
@@ -170,7 +211,7 @@ Since the use of master/slave is becoming less common in other technical communi
 
 ## Blacklist/whitelist
 
-Like master/slave, the metaphorical use of white/black to connote good/evil is offensive. While master/slave might seem like a more egregious example of racism, white/black is arguably worse because it is more pervasive and therefore more sinister. While recent headlines have decried the technical community's use of master/slave, there is far less discussion about white/black despite its importance. There is even a name for this pervasive language pitfall: the association of white with good and black with evil is known as the "bad is black effect" [https://www.scientificamerican.com/article/the-bad-is-black-effect].
+Like master/slave, the metaphorical use of white/black to connote good/evil is offensive. While master/slave might seem like a more egregious example of racism, white/black is arguably worse because it is more pervasive and therefore more sinister. While recent headlines have decried the technical community's use of master/slave, there is far less discussion about white/black despite its importance. There is even a name for this pervasive language pitfall: the association of white with good and black with evil is known as the "bad is black effect" {{Grewal}}.
 
 Indeed, there is an entire book on the subject, written by renowned authority on race, Franz Fanon. In his book "Black Skin, White Masks," Fanon makes several persuasive arguments that standard language encodes subconscious in-group, out-group preferences {{Fanon}}. 
 
@@ -206,7 +247,6 @@ To summarise this document, we have bulleted some very concrete action points th
  * That Authors be aware of their use of metaphors generally and always use the neutral "they" as the singular pronoun.
  * Steps be taken by Authors and developers to roll back technical hard coding of their code and protocols with the documented knowledge available online (see: https://deninet.com/blog/2018/09/09/even-tech-words-matter)
 
-
 ## References not cited above (yet)
 
 '‘Anyone can edit’, not everyone does: Wikipedia and the gender gap' by
@@ -216,3 +256,12 @@ Ford, Heather and Wajcman, Judy (2017) Social Studies of Science. ISSN
 Grant, Barbara M. "Master—slave dialogues in humanities supervision...https://doi.org/10.1177/1474022207084880
 
 Miller, Carolyn. "A Humanistic Rationale for Technical Writing"
+
+# Security Considerations
+
+As this document concerns a research document, there are no security considerations.
+
+# IANA Considerations
+
+This document has no actions for IANA.
+
