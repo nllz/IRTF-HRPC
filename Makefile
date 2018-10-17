@@ -1,4 +1,4 @@
-DRAFTS = glossary methodology research association anonymity political expression unrequested guidelines quichr
+DRAFTS = glossary methodology research association anonymity political expression unrequested guidelines quichr terminology
 OUTPUTS = $(foreach draft,$(DRAFTS),draft-${draft}.html draft-${draft}.xml draft-${draft}.txt)
 STAGING = staging.xml
 
