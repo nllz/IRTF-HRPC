@@ -2,11 +2,10 @@
 title: Terminology, Power and Offensive Language
 abbrev: Terminology
 docname: draft-knodel-terminology-00
-category: info
+category: bcp
 
 ipr: trust200902
 area: IETF
-workgroup: Networking WG
 keyword: Internet-Draft
 stand_alone: yes
 pi:
