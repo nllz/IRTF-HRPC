@@ -212,32 +212,32 @@ Lastly, we present not an additional rationale against their use, but an indicat
 
 There are also many other relationships that can be used as metaphors, Eglash's research calls into question the accuracy of the master-slave metaphor. Fortunately, there are ample alternatives for the master-slave relationship. Several options are suggested here and should be chosen based on the pairing that is most clear in context:
 
- * Primary/secondary
- * Leader/follower
- * Active/standby
- * Primary/replica
- * Writer/reader
- * Coordinator/worker
- * Parent/helper
+ * Primary-secondary
+ * Leader-follower
+ * Active-standby
+ * Primary-replica
+ * Writer-reader
+ * Coordinator-worker
+ * Parent-helper
 
 Since the use of master-slave is becoming less common in other technical communities, it is best to simply duplicate the metaphor being used by comparable or interoperable technologies. Likewise, the IETF can show positive leadership in the technical community by setting standards without using offensive metaphors.
 
 ## Blacklist-whitelist
 
-Like master-slave, the metaphorical use of white-black to connote good/evil is offensive. While master-slave might seem like a more egregious example of racism, white-black is arguably worse because it is more pervasive and therefore more sinister. While recent headlines have decried the technical community's use of master-slave, there is far less discussion about white-black despite its importance. There is even a name for this pervasive language pitfall: the association of white with good and black with evil is known as the "bad is black effect" {{Grewal}}.
+Like master-slave, the metaphorical use of white-black to connote good-evil is offensive. While master-slave might seem like a more egregious example of racism, white-black is arguably worse because it is more pervasive and therefore more sinister. While recent headlines have decried the technical community's use of master-slave, there is far less discussion about white-black despite its importance. There is even a name for this pervasive language pitfall: the association of white with good and black with evil is known as the "bad is black effect" {{Grewal}}.
 
 Indeed, there is an entire book on the subject, written by renowned authority on race, Franz Fanon. In his book "Black Skin, White Masks," Fanon makes several persuasive arguments that standard language encodes subconscious in-group, out-group preferences {{Fanon}}. 
 
-In the case of blacklist/whitelist in the technical documentation of the IETF/IRTF, it is entirely a term of art and an arbitrary metaphorical construct with no technical merit. There are scientific uses of black that are related to light-- blackholes are black because light cannot escape them; a spectrographic blackbox is used as a metaphor for things that cannot be seen (e.g., blackbox is really a riff on the metaphor for light as visibility). Blacklist/whitelist is not a metaphor for lightness or darkness, it is a good/evil metaphor and therefore entirely based in racism. This trope has significant impact on how people are seen and treated. As we've seen with metaphors, its use is pervasive and, though not necessarily conscious, perceptions do get promulgated through culture and repetition.
+In the case of blacklist-whitelist in the technical documentation of the IETF/IRTF, it is entirely a term of art and an arbitrary metaphorical construct with no technical merit. There are scientific uses of black that are related to light-- blackholes are black because light cannot escape them; a spectrographic blackbox is used as a metaphor for things that cannot be seen (e.g., blackbox is really a riff on the metaphor for light as visibility). Blacklist-whitelist is not a metaphor for lightness or darkness, it is a good-evil metaphor and therefore entirely based in racism. This trope has significant impact on how people are seen and treated. As we've seen with metaphors, its use is pervasive and, though not necessarily conscious, perceptions do get promulgated through culture and repetition.
 
-As with master-slave, we save our technical argument for last, referencing and presenting first the reasons for the use of non-offensive, alternative terminology for the sake of our humanity. Indeed, our technical argument is incredibly succinct: Why use a metaphor when a direct description is both succinct and clear? There can be absolutely no ambiguity if one uses the terms, as suggested below, allow/block rather than white-black.
+As with master-slave, we save our technical argument for last, referencing and presenting first the reasons for the use of non-offensive, alternative terminology for the sake of our humanity. Indeed, our technical argument is incredibly succinct: Why use a metaphor when a direct description is both succinct and clear? There can be absolutely no ambiguity if one uses the terms, as suggested below, allow-block rather than white-black.
 
 ### Suggested alternatives
 
 There are alternatives to this terminology set that vastly improve clarity because they are not even metaphors without adding a single additional character. The alternatives proposed here say exactly what they mean:
 
- * Blocklist/allowlist
- * Block/permit
+ * Blocklist-allowlist
+ * Block-permit
 
 ## Other considerations
 
@@ -249,13 +249,13 @@ Up until recently, strict English grammatists like Orwell decried the use of the
 
 Militarised metaphors are also a pervasive problem in language, perhaps even more so in technical communities because of the historical and actual relationship between technology and war. We welcome additional examples of terminology that might be avoided through more awareness and thoughtfulness.
 
-## Summary of recommendations
+# Summary of recommendations
 
 To summarise this document, we have bulleted some very concrete action points that can be taken by Editors, reviewers and Authors, both present and future.
 
 Authors SHOULD:
  * Replace the offensive term "master-slave" with more accurate alternatives, for instance from the list of <xref target="master-slave"/>.
- * Replace the offensive term "blacklist/whitelist" with more accurate alternative, for instance from the list of suggested alternatives at <xref target="blacklist-whitelist"/>.
+ * Replace the offensive term "blacklist-whitelist" with more accurate alternative, for instance from the list of suggested alternatives at <xref target="blacklist-whitelist"/>.
  * Reflect on  their use of metaphors generally and 
  * Use the neutral "they" as the singular pronoun.
  * Consider to roll back technical hard coding of their code and protocols with the documented knowledge available online {{socketwench}}
@@ -264,7 +264,7 @@ RFC Editor and Reviewers SHOULD:
  * Offer alternatives for offensive terminology as an important act of correcting larger editorial issues and clarifying technical concepts.
  * Suggest to authors that even when referencing other specifications that have not replaced offensive terminology they could provide another term with a note that the term is original and not being suggested by the author.
 
-## References not cited above (yet)
+# References not cited above (yet)
 
 '‘Anyone can edit’, not everyone does: Wikipedia and the gender gap' by
 Ford, Heather and Wajcman, Judy (2017) Social Studies of Science. ISSN
