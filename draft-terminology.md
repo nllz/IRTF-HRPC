@@ -182,7 +182,7 @@ The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "S
 
 The primary function of the IETF is to publish documents that are "readable, clear, consistent, and reasonably uniform" and one function of the RFC Editor is to "[c]orrect larger content/clarity issues; flag any unclear passages for author review {{RFC7322}}. Given the importance of communication at the IETF, it is worth considering the effects of terminology that has been identified as offensive, racist and sexist. Furthermore, we argue that certain obviously offensive terms be avoided and suggest alternatives. These sets of terms are "master-slave" and "white-blacklist" for their racist and race-based meanings.
 
-According to the work of scholar Heather Brodie Graves from 1993, "one goal of the application of rhetorical theory in the technical communication classroom is to assess the appropriateness of particular terms and to evaluate whether these terms will facilitate or hinder the readers’ understanding of the technical material" {{BrodieGravesGraves}}. This implies that in order to effectively communicate the content of RFCs to all readers, it is important for authors to consider the kinds of terms or language conventions that may inadvertently get in the way of effective communication. She continues, "complex and subtle configurations of sexist, racist, or ethnocentric language use in technical documents can derail or interfere with readers’ ability and desire to comprehend and follow important information."
+According to the work of scholar Heather Brodie Graves from 1993, "one goal of the application of rhetorical theory in the technical communication classroom is to assess the appropriateness of particular terms and to evaluate whether these terms will facilitate or hinder the readers’ understanding of the technical material" {{BrodieGravesGraves}}. This implies that in order to effectively communicate the content of RFCs to all readers, it is important for Authors to consider the kinds of terms or language conventions that may inadvertently get in the way of effective communication. She continues, "complex and subtle configurations of sexist, racist, or ethnocentric language use in technical documents can derail or interfere with readers’ ability and desire to comprehend and follow important information."
 
 Indeed, problems of language are problems of everyday speech. Racist and sexist language is rampant and similarly counter-productive in other sectors, notably social work {{Burgest}}. The terms "master-slave," treated in detail below are present in other realms of technology, notably "automotive clutch and brake systems, clocks, flip-flop circuits, computer drives, and radio transmitters" {{Eglash}}. And the ubiquitous word "robot" is the Czech word for "slave" {{Kurfess}}.
 
@@ -242,7 +242,7 @@ There are alternatives to this terminology set that vastly improve clarity becau
 
 As we have seen, the language used in technical documentation, like all written text, creates and reinforces expectations and stereotypes. We propose nothing more than additional care in the choice of language just as care is taken in defining standards and protocols themselves. The above two examples are not exhaustive, nor are they mere examples. However, we use this section to broaden the context of other offensive terminologies to encompass additional concerns.
 
-There are many other metaphors present in technical documentation that are "terms of art" but that have no technical basis whatsoever. That some of these metaphors are offensive leaves no excuses for their continued use. A term like "man-in-the-middle" is not technically useful. It is not a standard term, not as clear as its alternative "on-path attacker", and should therefore be avoided. When presented with the opportunity to employ the use of metaphors or to parrot terms of art that connote gender or race, Authors should simply find a better way to explain themselves. A fun read on the politics of colloquial speech by George Orwell should dissuade any clever Author from trotting out tired explanatory metaphors {{Orwell}}.
+There are many other metaphors present in technical documentation that are "terms of art" but that have no technical basis whatsoever. That some of these metaphors are offensive leaves no excuses for their continued use. A term like "man-in-the-middle" is not technically useful. It is not a standard term, not as clear as its alternative "on-path attacker", and should therefore be avoided. When presented with the opportunity to employ the use of metaphors or to parrot terms of art that connote gender or race, Authors should simply find a better way to explain themselves. A fun read on the politics of colloquial speech by George Orwell should dissuade any clever Author from using tired explanatory metaphors {{Orwell}}.
 
 Up until recently, strict English grammatists like Orwell decried the use of the neutral pronoun "they". Without a neutral singular pronoun, "he" is assumed as the default singular pronoun when the gender of the person is unknown or ambiguous. However, that has changed, and it is now widely accepted that "they" can be used as a neutral singular pronoun. Since it is unlikely that all implementers and infrastructure operators are of any particular gender, "he" should never be used to refer to a person in IETF/IRTF documents. An Author who uses male examples sets male-ness as a standard.
 
@@ -255,19 +255,17 @@ To summarise this document, we have bulleted some very concrete action points th
 Authors SHOULD:
  * Replace the offensive term "master-slave" with more accurate alternatives, for instance from the list of <xref target="master-slave"/>.
  * Replace the offensive term "blacklist-whitelist" with more accurate alternative, for instance from the list of suggested alternatives at <xref target="blacklist-whitelist"/>.
- * Reflect on  their use of metaphors generally and 
- * Use the neutral "they" as the singular pronoun.
- * Consider to roll back technical hard coding of their code and protocols with the documented knowledge available online {{socketwench}}
+ * Reflect on  their use of metaphors generally
+ * Use the neutral "they" as the singular pronoun and
+ * Consider to roll back technical hard coding of their code and protocols with the documented knowledge available online {{socketwench}}.
 
 RFC Editor and Reviewers SHOULD:
- * Offer alternatives for offensive terminology as an important act of correcting larger editorial issues and clarifying technical concepts.
- * Suggest to authors that even when referencing other specifications that have not replaced offensive terminology they could provide another term with a note that the term is original and not being suggested by the author.
+ * Offer alternatives for offensive terminology as an important act of correcting larger editorial issues and clarifying technical concepts and
+ * Suggest to Authors that even when referencing other specifications that have not replaced offensive terminology they could provide another term with a note that the term is original and not being suggested by the Author.
 
 # References not cited above (yet)
 
-'‘Anyone can edit’, not everyone does: Wikipedia and the gender gap' by
-Ford, Heather and Wajcman, Judy (2017) Social Studies of Science. ISSN
-0306-3127
+'‘Anyone can edit’, not everyone does: Wikipedia and the gender gap' by Ford, Heather and Wajcman, Judy (2017) Social Studies of Science. ISSN 0306-3127
 
 Grant, Barbara M. "Master—slave dialogues in humanities supervision...https://doi.org/10.1177/1474022207084880
 
