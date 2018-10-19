@@ -82,20 +82,6 @@ informative:
         org: United Nations General Assembly
      target: http://www.ohchr.org/EN/ProfessionalInterest/Pages/CCPR.aspx
 
-   draft-trammell-quic-spin-03:
-      title: The Addition of a Spin Bit to the QUIC Transport Protocol (working document)
-      author:
-         - ins: B. Trammell
-         - ins: P. De Vaere
-         - ins: R. Evem
-         - ins: G. Ficcola
-         - ins: T. Fossati
-         - ins: M. Ihlar
-         - ins: A. Morton
-         - ins: E. Stephan
-      date: 2018
-      target: https://tools.ietf.org/html/draft-trammell-quic-spin-03
-
    draft-huitema-quic-dnsoquic-05:
       title: Specification of DNS over Dedicated QUIC Connections (working document)
       author:
@@ -106,16 +92,6 @@ informative:
          - ins: J. Iyengar
       date: 2018
       target: https://tools.ietf.org/html/draft-huitema-quic-dnsoquic-05
-
-   Ruethetal:
-      title: A First Look at QUIC in the Wild
-      author:
-         - ins: J. Rueth
-         - ins: I. Poese
-         - ins: C. Dietzel
-         - ins: O. Hohlfeld
-      date: 2018
-      target: https://arxiv.org/abs/1801.05168
 
    draft-ietf-quic-transport-12:
       title: "QUIC: A UDP-Based Multiplexed and Secure Transport (working document)"
@@ -192,16 +168,6 @@ informative:
       date: 2017
       target: https://nsg.ee.ethz.ch/fileadmin/user_upload/CNSM_2017.pdf 
 
-   Ruethetal:
-      title: A First Look at QUIC in the Wild
-      author:
-         - ins: J. Rueth
-         - ins: I. Poese
-         - ins: C. Dietzel
-         - ins: O. Hohlfeld
-      date: 2018
-      target: https://arxiv.org/abs/1801.05168
-
    MolaviKakhkietal:
       title: Taking a Long Look at QUIC
       author:
@@ -238,9 +204,9 @@ informative:
 
 --- abstract
 
-QUIC (Quick UDP Internet Connections) is a new transport protocol that provides low-latency communication, security, and rapid deployment. QUIC’s key features include establishing connections faster, stream-based multiplexing, improved loss recovery, and no head-of-line blocking. QUIC is designed with mobility in mind, and supports migrating connections from WiFi to Cellular and back. {{Behretal}}
+QUIC (Quick UDP Internet Connections) is a new transport protocol that provides low-latency communication, security, and rapid deployment. QUIC’s key features include establishing connections faster, stream-based multiplexing, improved loss recovery, and no head-of-line blocking. 
 
-This document assesses the potential human rights implications emerging from the deployment of QUIC according to the methodology laid out in {{RFC8280}}.
+This document assesses the potential human rights implications emerging from the deployment of QUIC according to the methodology articulated in {{RFC8280}}.
 
 --- middle
 
@@ -309,19 +275,33 @@ Privacy
 : Privacy is a broad concept relating to the protection of individual or group autonomy and the relationship between an individual or group and society, including government, companies, and private individuals.  It is often summarized as "the right to be left alone", but it encompasses a wide range of rights, including protections from intrusions into family and home life, control of sexual and reproductive rights, and communications secrecy.  It is commonly recognized as a core right that underpins human dignity and other values such as freedom of association and freedom of speech. The right to privacy is also recognized in nearly every national constitution and in most international human rights treaties.  It has been adjudicated upon by both international and regional bodies.  The right to privacy is also legally protected at the national level through provisions in civil and/or criminal codes.
 
 Pseudonymity
-: Pseudonymity is the ability to use a persistent identifier that is not immediately linked to one's offline identity -- is an important feature for many end users, as it allows them different degrees of disguised identity and privacy online.
+: the ability to use a persistent identifier that is not immediately linked to one's offline identity -- is an important feature for many end users, as it allows them different degrees of disguised identity and privacy online. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}.
 
 : Pseudonymity means using a pseudonym instead of one's "real" name.  There are many reasons for users to use pseudonyms -- for instance, to hide their gender; protect themselves against harassment; protect their families' privacy; frankly discuss sexuality; or develop an artistic or journalistic persona without retribution from an employer, (potential) customers, or social surroundings {{geekfeminism}}.  The difference between anonymity and pseudonymity is that a pseudonym is often persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
 
+Review methodology and process
+==============================
+
+This section describes how the review was undertaken. We started our review by examining the Internet Drafts which were active on June 7, 2018 on the QUIC Working Group Datatracker (https://datatracker.ietf.org/wg/quic/documents).
+
+Inferential reading of the documents resulted in the decision to focus our efforts on three specific drafts: draft-ietf-quic-transport, draft-ietf-quic-tls, draft-ietf-quic-invariants.
+
+From the study of these documents through the perspective of the Guidelines for Human Rights Protocol Considerations outlined in {{RFC8280}}, we formulated a questionnaire, to be used as a tool to guide semi-structured interviews with QUIC Working Group chairs and document authors.
+
+We engaged in a total of seven semi-structured interviews, which took place during IETF102 (July 14-20, 2018). These were then transcribed and analyzed. The analysis focused on the identification of potential positive or negative impacts on human rights, and on the categorization of our findings according to the Guidelines for Human Rights Protocol Considerations outlined in {{RFC8280}}.
+
+One particular aspect that is critical to consider is the pace at which the QUIC Working Group operates, which is regarded across the IETF community as notably faster than usual. This means that while the general design that is outlined in the Internet-Drafts is fairly stable, numerous details are in constant change. When it comes to conducting an interview-based research, this also means that some of the expressed points of view might be overtaken by intervening changes. To address this specific characteristic of the work on the QUIC protocol, we decided to set a time point to examine active Internet Drafts and current Working Group discussions. The time point is June 7, 2018. In addition to that, we also kept discussing with the interviewees, reviewing notes from the following New York interim meeting (September 19-20), and following selected mailing list threads, until our final review of this very document, on October 17, 2018.
+
+The content examined until the set time point (June 7, 2018) is what should be considered the core subject of our examination. However, as we aim to helpfully contribute to the efforts of the QUIC Working Group, we also decided to monitor potential updates and emerging discussions which took place in the following months, with the aim to provide relevant and applicable feedback.
 
 Human Rights Considerations
 ===========================
 
-We analyzed all the drafts of the IETF QUIC Working Group which were active at the time of review (July 2018), and invited Working Group chairs and document authors for interviews during IETF102. Inferential reading of the drafts resulted in the baseline for a questionnaire, which was used to guide the interviews. The interviews were conducted as 60-90-minute discussions, which were then transcribed and analyzed. The analysis focused on the identification of potential positive or negative impacts on human rights, and the categorization of the same according to the Guidelines for Human Rights Protocol Considerations outlined in {{RFC8280}}.
+The Human Rights Protocols Considerations Research Group (HRPC) welcomes the drafts draft-ietf-quic-transport, draft-ietf-quic-tls, draft-ietf-quic-invariants.
 
-The Human Rights Protocols Considerations Research Group (HRPC) welcomes the drafts draft-ietf-quic-transport, draft-ietf-quic-tls, draft-ietf-quic-invariants. In particular, we welcome the efforts to improve connectivity on high latency, low bandwidth and high loss connections, and the application of end-to-end encryption by default. Final conclusions and recommendations can be found at the end of this document.
+In particular, we welcome the efforts to improve connectivity on high latency, low bandwidth and high loss connections, and the application of encryption by default. Conclusions and recommendations can be found at the end of this document.
 
-No implications for Accessibility ({{RFC8280}}, sec. 6.2.11), Localization ({{RFC8280}}, sec. 6.2.12), Decentralization ({{RFC8280}}, sec. 6.2.13), have been found.
+No implications for Accessibility ({{RFC8280}}, sec. 6.2.11), Localization ({{RFC8280}}, sec. 6.2.12), Decentralization ({{RFC8280}}, sec. 6.2.13), and Reliability ({{RFC8280}}, sec 6.2.14) have been found.
 
 ## Connectivity
 
@@ -335,11 +315,11 @@ One of the most important differences between TCP and QUIC connections is that i
 
 By allowing for Zero-Round Trip (0-RTT) resumption of connections, QUIC performs better than TCP on high latency and high loss connections. When a web client uses TCP and TLS, it requires two to three round trips with a server to establish a secure connection before the browser can send a request. With QUIC, if a client has communicated with a server before (within a specific time period), it can start sending data without any round trips, so that web pages will load faster. 
 
-An example of QUIC’s performance can be observed on a well-optimized site like Google Search, where connections are often pre-established, and QUIC’s faster connections can only speed up some requests. Still, QUIC improves mean page load time by 8% globally, and up to 13% in regions where latency is higher. {{Behretal}}
+An example of QUIC’s performance can be observed on a well-optimized site like Google Search, where connections are often per-established, and QUIC’s faster connections can only speed up some requests. Still, QUIC improves mean page load time by 8% globally, and up to 13% in regions where latency is higher. {{Behretal}}
 
 ### Congestion control and loss recovery
 
-QUIC’s congestion control is based on TCP NewReno {{RFC6582}}, a congestion window based congestion control. The signals QUIC provides for congestion control are generic and are designed to support different algorithms. In this way, QUIC can be configured to fit best in different contexts.
+QUIC’s congestion control is based on TCP New Reno {{RFC6582}}, a congestion window based congestion control. The signals QUIC provides for congestion control are generic and are designed to support different algorithms. In this way, QUIC can be configured to fit best in different contexts.
 
 Compared to TCP, QUIC offers more detailed feedback information for loss detection.
 For example, it uses a monotonically increasing packet number but does not retransmit on the packet-level. This allows QUIC to distinguish retransmissions from the originally sent packets, avoiding retransmission ambiguities.
@@ -352,9 +332,13 @@ HTTP/2 allows multiple objects to be fetched over the same connection, using mul
 
 In TCP, if a loss occurs in one stream, all streams stall while waiting for packet recovery. Differently, QUIC allows other streams to continue to exchange packets even if one stream is blocked due to a missing packet {{MolaviKakhkietal}}.
 
+### Resources
+
+One can observe that QUIC is relatively expensive to implement, in comparison to TCP, in terms of both code (size and complexity) and processing (including memory overheads). For limited devices, this could be a barrier to adoption and the benefits that come with that.
+
 ## Privacy
 
-### End-to-end encryption
+### Encryption
 
 QUIC incorporates the key negotiation features of TLS 1.3, requiring all connections to be encrypted.
 
@@ -404,7 +388,7 @@ As an explicit design goal, QUIC provides far less information about its operati
 
 Differently from previous transport protocols, QUIC splits the information it uses for its own operation from its wire image. As a consequence, QUIC's wire image currently does not expose any information that can be used for passive latency measurement techniques {{draft-ietf-quic-spin-exp-00}}.
 
-At the June 2017 interim meeting of the QUIC Working Group, a proposal was made to add a latency spin bit back into QUIC's wire image, in order to allow for passive measurability of RTT equivalent to TCP {{SpinBit}}.	
+At the June 2017 interim meeting of the QUIC Working Group, a proposal was made to add a latency spin bit to QUIC's wire image, in order to allow for passive measurability of RTT equivalent to TCP {{SpinBit}}.	
 
 The spin bit is an explicit signal for passive measurability of round-trip time. It causes one bit in the header to ‘spin’, generating one edge (a transition from 0 to 1 or from 1 to 0) once per end-to-end RTT.
 
@@ -418,13 +402,18 @@ The argument made by those who are not in favor of the addition of the spin bit 
 
 This would represent an infringement of the user privacy. Furthermore, from this perspective, QUIC’s efforts to elude the intrusive and ossifying grip of network middleware would be lost. {{https://blog.apnic.net/2018/03/28/just-one-quic-bit}}
 
+### Packet injection
+
+It is viable for network operators to add data to packets in order to do traffic monitoring and/or management.
+It is not uncommon for network operators to routinely tag packets as they enter the network for their own purposes, and simply erase the tag when they leave the network. Packet modification or injection cannot be prevented in QUIC. However, the protocol takes steps to ensure that its own state is not affected by this kind of activity.
+
 ## Content agnosticism
                
 The QUIC protocol itself is content agnostic. While it is currently being optimized for HTTP traffic, it can also be used with other application layer protocols (e.g. see {{draft-huitema-quic-dnsoquic-05}}).
 
 ## Security
 
-QUIC improves security by making end-to-end encryption an inherent part of the transport protocol, instead of adding it as a optional layer on top of it. This protects the integrity of the data by preventing tampering on the path, and ensures end-to-end confidentiality between the two communicating hosts. Furthermore, it ensure that no on-path party can emulate an endpoint.
+QUIC improves security by making encryption an inherent part of the transport protocol, instead of adding it as a optional layer on top of it. This protects the integrity of the data by preventing tampering on the path, and ensures end-to-end confidentiality between the two communicating hosts. Furthermore, it ensure that no on-path party can emulate an endpoint.
 
 By encrypting all Internet traffic by default it is harder for researchers and network operators to analyze network traffic. This is a specific design goal, but it also makes research into the promulgation of malware, cookies and other artefacts much harder, since in this case access to the stream needs to be provided by the end point.
 
@@ -438,7 +427,9 @@ The second issue concerns the lack of availability of language tags. This would 
 
 ## Censorship resistance
 
-End-to-end encryption makes monitoring and filtering of the traffic more complex, thus hindering fine-grained censorship. Furthermore, in QUIC it is also harder to terminate connections, since in the protocol the only parties that can terminate the connection are those actually involved in the connection once it exists. This means that a middlebox cannot reset a connection, but needs to continue to block it, keeping state. Considering this, it can be stated that QUIC makes censorship harder because it requires the censor to invest more resources and efforts.
+Encryption makes monitoring and filtering of the traffic more complex, thus hindering fine-grained censorship.
+
+Furthermore, in QUIC it is also harder to terminate connections, since in the protocol the only parties that can terminate the connection are those actually involved in the connection once it exists. This means that a middlebox cannot reset a connection, but needs to continue to block it, keeping state. Considering this, it can be stated that QUIC makes censorship harder because it requires the censor to invest more resources and efforts.
 
 QUIC is also providing protection against DDoS through observation of the handshake for connection confirmation, and through the need to validate new connections in case of a connection migration.
 
@@ -448,32 +439,23 @@ QUIC is published as open standard.
 
 ## Heterogeneity Support
 
-QUIC is currently optimized to use TLS1.3 and serve HTTP2 traffic. It is explicitly constructed in a modular manner and is designed to support other application layer protocols as well.
+The design of the QUIC transport protocol is currently specifically tailorded to be used with TLS1.3 and HTTP2. It is explicitly constructed in a modular manner and is designed to support other application layer protocols in the future as well.
 
 ## Anonymity
 
-Persistent static identitifiers are the 
+Persistent static identifiers, consistently linking to a particular person or small, well-defined group of people, are one of the main threats to anonymity. This is especially concerning when the identifier is used in repeatedly used in multiple contexts, thus raising an issue of linkability. 
 
-6.11.5.  Privacy Implications of Connection Migration
+In QUIC, linkability would occur in case a connection ID was used on multiple network paths. In order provide some protection against linkability in case of connection migration, QUIC uses different connection IDs when different local addresses are used. Furthermore, packet numbers are encrypted to ensure they are not used to establish a link different connection IDs.
 
-Using a stable connection ID on multiple network paths allows a passive observer to correlate activity between those paths.  An endpoint that moves between networks might not wish to have their activity correlated by any entity other than their peer, so different connection IDs are used when sending from different local addresses, as discussed in Section 6.1.  For this to be effective endpoints need to ensure that connections IDs they provide cannot be linked by any other entity.
-
-This eliminates the use of the connection ID for linking activity from the same connection on different networks.  Protection of packet numbers ensures that packet numbers cannot be used to correlate activity.  This does not prevent other properties of packets, such as timing and size, from being used to correlate activity. Clients MAY move to a new connection ID at any time based on implementation-specific concerns.  For example, after a period of network inactivity NAT rebinding might occur when the client begins sending data again.
-
-A client might wish to reduce linkability by employing a new connection ID and source UDP port when sending traffic after a period of inactivity.  Changing the UDP port from which it sends packets at the same time might cause the packet to appear as a connection migration.  This ensures that the mechanisms that support migration are exercised even for clients that don't experience NAT rebindings or genuine migrations.  Changing port number can cause a peer to reset its congestion state (see Section 6.11.4), so the port SHOULD only be changed in frequently.
-
-Endpoints that use connection IDs with length greater than zero could have their activity correlated if their peers keep using the same destination connection ID after migration.  Endpoints that receive packets with a previously unused Destination Connection ID SHOULD change to sending packets with a connection ID that has not been used on any other network path.  The goal here is to ensure that packets sent on different paths cannot be correlated.  To fulfill this privacy requirement, endpoints that initiate migration and use connection IDs with length greater than zero SHOULD provide their peers with new connection IDs before migration.
-
-Caution:  If both endpoints change connection ID in response to seeing a change in connection ID from their peer, then this can trigger an infinite sequence of changes.
+However, it is important to note that traffic analysis might still allow to correlate different streams.
 
 ## Pseudonymity
 
-ADD STUFF
+Keeping different identities isolated form each other is critical to protect and preserve pseudonymity. QUIC contributes to this by using different connections IDs for different local addresses.
 
 ## Confidentiality
 
-Through the use of cryptography, QUIC integrates security, confidentiality, authenticity, and integrity directly into the transport protocol rather than having them layered on top of it.
-Any network operator who will use QUIC to benefit from its latency improvements will automatically provide all the aforementioned attributes to their user.
+Through the use of cryptography, QUIC integrates security, confidentiality, authenticity, and integrity directly into the transport protocol rather than having them layered on top of it. Any server that offers QUIC to benefit from its latency improvements will automatically provide all the aforementioned attributes to their user.
 
 ## Integrity
 
@@ -490,17 +472,27 @@ QUIC has a modular approach, and is designed for adaptation. The only commitment
 
 By preventing the ossification of the protocol by middleboxes through the encryption of transport headers, QUIC enhances the adaptability of the architecture.
 
-As a transport protocol, QUIC tries to be agnostic for application layer protocols, even though it is currently optimized for HTTP2.
+As a transport protocol, QUIC tries to be agnostic for application layer protocols, even though it is currently tailored to work with HTTP/2.
 
 ## Outcome Transparency
 
-If QUIC will be successfully and widely deployed, as it seems to be the case {{Ruethetal}}, it will represent a remarkable evolution of the transport layer with equally significant impact on the Internet architecture. The following section will discuss the potential effects of QUIC on the wider protocol milieu, the Internet infrastructure and its users, and well as the key takeaways emerged during the review process in regards to the development of the protocol itself.
+Outcome transparency concerns the intelligibility of the effects of a protocol in relation to its users, protocol developers, and implementers, and its potential consequences (e.g. lack of authenticity may lead to lack of integrity and negative externalities){{RFC8280}}.
 
-The IETF has reached consensus on the fact that pervasive monitoring is an attack (see {{RFC7258}}), and that a response to mitigate this is represented by ubiquitous encryption, which would also reinforce the end-to-end nature of the network {{RFC2775}} {{RFC3724}} {{RFC7754}}. With the advent of QUIC, encryption becomes the default on the transport level. This has an impact on network operators that previously used visible parts of protocols to, among other things, manage, operate, and secure their networks {{RFC8404}}. At the same time, it also improves the integrity of the datastream, as QUIC allows to protect users against injections of ads by network operators.
+QUIC represents a remarkable evolution of the transport layer with significant impact on the Internet architecture and, most importantly, the service provided to users.
+
+### Encryption
+
+The IETF has reached consensus on the fact that pervasive monitoring is an attack (see {{RFC7258}}), and that a response to mitigate this is represented by ubiquitous encryption, which would also reinforce the end-to-end nature of the network {{RFC2775}} {{RFC3724}} {{RFC7754}}.
+
+With the advent of QUIC, encryption becomes the default on the transport level. This has a critical impact on the protection of user privacy.
+
+Furthermore, it has implications concerning network operators that had previously used visible parts of protocols to, among other things, manage, operate, and secure their networks {{RFC8404}}.
+
+Encryption also improves the integrity of the datastream, as QUIC allows to protect users against injections of ads by network operators.
 
 ### Permissionless innovation and its challenges
 
-As also stated by interviewees during the research phase of this review, the development of QUIC was partly inspired by the less pronounced uptake of SCTP (Stream Control Transmission Protocol), a protocol for transmitting multiple streams of data at the same time between two end points that have established a connection in a network, standardized in {{RFC4960}}.
+As suggested by interviewees during the research phase of this review, and to acquire a more contextualized understanding of protocol development efforts over time, it is relevant to pay attention to the history of SCTP (Stream Control Transmission Protocol). SCTP is a protocol for transmitting multiple streams of data at the same time between two end points that have established a connection in a network, standardized in {{RFC4960}}.
 
 As outlined in the comparison between SCTP and QUIC presented in {{draft-joseph-quic-comparison-quic-sctp-00}}, the deployment of SCTP is not particularly widespread. In-network devices, like NAT gateways for example, do not support SCTP well. NAT gateways need to be upgraded to be SCTP-aware, the modification of middleboxes is very expensive, and Internet service providers, focusing on the sustainability of their business, update the devices in accordance with the benefit that this can represent for their revenues.
 
@@ -513,9 +505,11 @@ While permissionless innovation still exists, the threshold and costs for innova
 
 Also, a look at the actors and dynamics involved in QUIC’s history should not underestimate the power of Google’s authority. A different developing actor might have been able to invest a similar amount of resources into the development of a protocol. Still, without an impressive user base and traffic stream as Google's, they might have received a less supportive response from network operators.
 
+Having said that, it is expected that QUIC will improve the current situation by providing a more capable transport which aims to overcome ossification and allow for changes in the protocol due to its modularity.
+
 ### Privacy, power and consolidation
 
-The most relevant privacy win provided by QUIC is for users who have different kinds of traffic relations with one end point. QUIC does not allow network providers to easily differentiate between, for instance, HTTP requests, DNS requests and real time voice packets, thus strengthening the user's right to privacy.
+The most relevant privacy advantage provided by QUIC is gained by users who have different kinds of traffic relations with one end point. In fact, QUIC does not allow network providers to easily differentiate between, for instance, HTTP requests, DNS requests and real time voice packets, thus strengthening user privacy, and also improving performance. It is important to note, though, that QUIC does not actually hide or attempt to hide the application protocol being used on a connection. The ALPN offered by the client is protected only by a key which can be calculated by any party who can work with the QUIC version in use.
 
 On the other hand, this creates a concentration of different kinds of traffic with one end point, thus giving the service provider access to more categories of privacy sensitive information.
 
@@ -525,7 +519,7 @@ In order to protect privacy and secure information, it is important that the use
 
 While ubiquitous encryption changes the relation between service providers and content operators, placing them at the same end of the spectrum, it remains to be seen whether if it can help users take and retain control within the overall power structures of Internet governance and economics.
 
-One of the problems with deploying fully encrypted protocols like QUIC is that deployment is far easier for organizations that already have integrated observability, traceability, and tooling in their backends, which not surprisingly happen to be the big players.
+One of the problems with deploying fully encrypted protocols like QUIC is that deployment is far easier for organizations that already have integrated observability, traceability, and tooling in their back-ends, which not surprisingly happen to be the big players.
 
 If there was any chance to make running a QUIC server relatively easy, thus enabling a greater diversification of end points, QUIC could contribute to a power shift in favor of the end user.
 
@@ -533,9 +527,9 @@ However, running a QUIC infrastructure is currently expected to be more demandin
 
 ### Transparency and IoT
 
-As discussed, end-to-end encryption on the transport layer makes monitoring and filtering of the traffic more complex, thus forcing network operators to adopt new and more onerous network management practices.
+As discussed, end-to-end encryption on the transport layer makes monitoring and filtering of the traffic more complex, which might lead to the adoption of other network manageer practics.
 
-This has implications also on the management of IoT (Internet of Things) devices. If an IoT device adopts QUIC, it will be harder for the company owning it to monitor what data is communicated with third parties. Moreover, also making research into the dissemination of cookies and malware might become more complex.
+This has implications also on the management of IoT (Internet of Things) devices. If an IoT device adopts QUIC, it will be harder for the user who owns the device to monitor what data is communicated with third parties. Moreover, also making research into the dissemination of cookies and malware might become more complex.
 
 Adequate tooling to protect the right to privacy of IoT users has not yet been developed.
 
@@ -544,29 +538,28 @@ Conclusions and Recommendations
 
 The QUIC protocol provides significant human rights improvements for end users.
 
-First of all, it dramatically improves connectivity for users on high-loss, high-latency connections, whose needs are not frequently enough addressed by protocol design. They will benefit from lower latencies and will not need to restart sessions as often. And in those cases in which they will need to restart a session, they will able to do so without having to re-do the initial handshake.
+First of all, it dramatically improves connectivity for users on high-loss, high-latency connections. Users will benefit from lower latencies and will not need to restart sessions as often. And in those cases in which they will need to restart a session, they will able to do so without having to re-do the initial handshake.
 
-Another key improvement is represented by the use of end-to-end encryption by default, which provides authentication, stream integrity, adaptability of the protocol by overcoming ossification, and improved protection from third party monitoring and metadata analysis.
+Another key improvement is represented by the use of encryption by default, which provides authentication, stream integrity, adaptability of the protocol by overcoming ossification, and improved protection from third party monitoring and metadata analysis.
 
 The following is a list of potential improvements that we invite the QUIC Working group to take into consideration, wishing for the protocol to have even greater positive implications for human rights.
 
-* Since the spin bit is supposed to be ruled either into the main spec or removed at IETF 103, we suggest to consider its removal, in light of the concerns raised in regards to its implications on the rights to privacy and access.
+* As the QUIC Working Group is expected to deliberate on the potential inclusion of the spin bit in the main specification of the protocol at the upcoming IETF103 (November 3-9,2018), we suggest to consider not to include it. Our recommendation is motivated by the concerns raised in regards to its implications on user privacy, as reported in this very document, and also shared by some of the interviewees.
 
-* Consider deploying IP header encryption on IPv6 networks, where NATs are not as widely deployed as on IPv4 networks, potentially as an optional extension.
+* Consider deploying IP header encryption as an optional extension.
 
-* Add language tagging and charset identification in the case of Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE.
+* Evaluate the addition of language tagging and charset identification in the case of Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE.
 
-* Translate the QUIC specification into other languages.
+* Examine the opportunity to translate the QUIC specification into other languages.
 
-* Make tooling for running QUIC servers openly available.
+* Discuss how it would be viable to make tooling for running QUIC servers openly available.
 
-* Recurrently monitor and discuss the implications of QUIC on the power relations between end user on one end of the spectrum, and network operators and service providers on the other one.
+* Observe and iteratively assess the implications of QUIC on the power relations between end user on one end of the spectrum, and network operators and service providers on the other one.
 
 Acknowledgements
 ================
 
-We would like to thank (in alphabetical order): Mike Bishop, dkg, Jana Iyengar, Mirja Kuehlewind, Mark Nottingham, Martin Thomson, and Brian Trammell for their contributions to this document (this document does not necessarily reflect their opinion, but solely that of the authors).
-
+We thank (in alphabetical order) Mike Bishop, dkg, Jana Iyengar, Mirja Kuehlewind, Mark Nottingham, Martin Thomson, and Brian Trammell for their generous contribution to our research and review. This document does not necessarily reflect their opinion, but solely that of the authors.
  
 Security Considerations
 ========================
@@ -583,9 +576,9 @@ This document has no actions for IANA.
 Research Group Information
 ==========================
 
-The discussion list for the IRTF Human Rights Protocol Considerations working group is located at the e-mail address <hrpc@ietf.org>. Information on the group and information on how to subscribe to the list is at
-<https://www.irtf.org/mailman/listinfo/hrpc>
+The discussion list for the Human Rights Review Team  is located at the e-mail address <hr-rt@irtf.org>. Information on the group and information on how to subscribe to the list is at
+<https://www.irtf.org/mailman/listinfo/hr-rt>
 
 Archives of the list can be found at:
-<https://www.irtf.org/mail-archive/web/hrpc/current/index.html>
+<https://www.irtf.org/mail-archive/web/hr-rt/current/index.html>
 
