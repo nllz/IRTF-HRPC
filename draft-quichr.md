@@ -119,13 +119,6 @@ informative:
       date: 2018
       target: https://tools.ietf.org/html/draft-joseph-quic-comparison-quic-sctp-00
 
-   geekfeminism:
-     title: Pseudonymity
-     date: 2015
-     author: 
-        - org: Geek Feminism Wiki 
-     target: http://geekfeminism.wikia.com/wiki/Pseudonymity
-
    FIArch:
      title: Future Internet Design Principles
      date: January 2012
@@ -202,6 +195,24 @@ informative:
       date: 2018
       target: https://trammell.ch/post/2018-03-29-and-yet-it-spins
 
+   Yongetal:
+      title: "Innovating Transport with QUIC: Design Approaches and Research Challenges"
+      author:
+         - ins: Yong Cui
+         - ins: Tianxiang Li
+         - ins: Cong Liu
+         - ins: Xingwei Wang
+         - ins: Mirja Kuehlewind
+      date: 2017
+      target: https://ieeexplore.ieee.org/document/7867726/authors#authors
+
+   Gratzer:
+      title: QUIC - Quick UDP Internet Connections
+      author:
+         - ins: F. Gratzer
+      date: 2016
+      target: https://www.net.in.tum.de/fileadmin/TUM/NET/NET-2016-09-1/NET-2016-09-1_06.pdf
+
 --- abstract
 
 QUIC (Quick UDP Internet Connections) is a new transport protocol that provides low-latency communication, security, and rapid deployment. QUIC’s key features include establishing connections faster, stream-based multiplexing, improved loss recovery, and no head-of-line blocking. 
@@ -277,14 +288,12 @@ Privacy
 Pseudonymity
 : the ability to use a persistent identifier that is not immediately linked to one's offline identity -- is an important feature for many end users, as it allows them different degrees of disguised identity and privacy online. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}.
 
-: Pseudonymity means using a pseudonym instead of one's "real" name.  There are many reasons for users to use pseudonyms -- for instance, to hide their gender; protect themselves against harassment; protect their families' privacy; frankly discuss sexuality; or develop an artistic or journalistic persona without retribution from an employer, (potential) customers, or social surroundings {{geekfeminism}}.  The difference between anonymity and pseudonymity is that a pseudonym is often persistent. "Pseudonymity is strengthened when less personal data can be linked to the pseudonym; when the same pseudonym is used less often and across fewer contexts; and when independently chosen pseudonyms are more frequently used for new actions (making them, from an observer's or attacker's perspective, unlinkable)." {{RFC6973}}
-
 Review methodology and process
 ==============================
 
 This section describes how the review was undertaken. We started our review by examining the Internet Drafts which were active on June 7, 2018 on the QUIC Working Group Datatracker (https://datatracker.ietf.org/wg/quic/documents).
 
-Inferential reading of the documents resulted in the decision to focus our efforts on three specific drafts: draft-ietf-quic-transport, draft-ietf-quic-tls, draft-ietf-quic-invariants.
+Inferential reading of the documents resulted in the decision to focus our efforts on three specific drafts: draft-ietf-quic-transport-12, draft-ietf-quic-tls-12, draft-ietf-quic-invariants-01.
 
 From the study of these documents through the perspective of the Guidelines for Human Rights Protocol Considerations outlined in {{RFC8280}}, we formulated a questionnaire, to be used as a tool to guide semi-structured interviews with QUIC Working Group chairs and document authors.
 
@@ -313,13 +322,13 @@ QUIC was designed as a new transport protocol to provide connections with lower 
 
 One of the most important differences between TCP and QUIC connections is that in QUIC connection establishment takes 0 RTTs when a server is known by a client and 1 RTT for the first connection to an unknown server.
 
-By allowing for Zero-Round Trip (0-RTT) resumption of connections, QUIC performs better than TCP on high latency and high loss connections. When a web client uses TCP and TLS, it requires two to three round trips with a server to establish a secure connection before the browser can send a request. With QUIC, if a client has communicated with a server before (within a specific time period), it can start sending data without any round trips, so that web pages will load faster. 
+By allowing for Zero-Round Trip Time (0-RTT) resumption of connections, QUIC performs better than TCP on high latency and high loss connections. When a web client uses TCP and TLS, it requires two to three round trips with a server to establish a secure connection before the browser can send a request. With QUIC, if a client has communicated with a server before (within a specific time period), it can start sending data without any round trips, so that web pages will load faster. 
 
 An example of QUIC’s performance can be observed on a well-optimized site like Google Search, where connections are often per-established, and QUIC’s faster connections can only speed up some requests. Still, QUIC improves mean page load time by 8% globally, and up to 13% in regions where latency is higher. {{Behretal}}
 
 ### Congestion control and loss recovery
 
-QUIC’s congestion control is based on TCP New Reno {{RFC6582}}, a congestion window based congestion control. The signals QUIC provides for congestion control are generic and are designed to support different algorithms. In this way, QUIC can be configured to fit best in different contexts.
+QUIC’s congestion control is based on TCP NewReno {{RFC6582}}, a congestion window based congestion control. The signals QUIC provides for congestion control are generic and are designed to support different algorithms. In this way, QUIC can be configured to fit best in different contexts.
 
 Compared to TCP, QUIC offers more detailed feedback information for loss detection.
 For example, it uses a monotonically increasing packet number but does not retransmit on the packet-level. This allows QUIC to distinguish retransmissions from the originally sent packets, avoiding retransmission ambiguities.
@@ -334,7 +343,7 @@ In TCP, if a loss occurs in one stream, all streams stall while waiting for pack
 
 ### Resources
 
-One can observe that QUIC is relatively expensive to implement, in comparison to TCP, in terms of both code (size and complexity) and processing (including memory overheads). For limited devices, this could be a barrier to adoption and the benefits that come with that.
+QUIC is relatively expensive to implement, both in terms of code (size and complexity) and processing (including memory overheads). This can represent a barrier to adoption and the benefits that come with that.
 
 ## Privacy
 
@@ -419,11 +428,9 @@ By encrypting all Internet traffic by default it is harder for researchers and n
 
 ## Internationalization
 
-QUIC raises two issues in terms of internationalization.
+{{draft-ietf-quic-transport-12}} does not define human readable strings, except for where it states that the Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE frames "SHOULD be a UTF-8 encoded string {{RFC3629}}". The QUIC protocol demands that this SHOULD be an UTF-8 string, while UTF-8 is actually not required. Also, there is currently no space to declare the charset used. So it is recommended that this SHOULD becomes a MUST.
 
-The first issues regards the fact that {{draft-ietf-quic-transport-12}} does not define human readable strings, except for where it states that the Reason Phrase in the CONNECTION_CLOSE and APPLICATION_CLOSE frames "SHOULD be a UTF-8 encoded string {{RFC3629}}". The QUIC protocol demands that this SHOULD be an UTF-8 string, while UTF-8 is actually not required. Also, there is currently no space to declare the charset used. So it is recommended that this SHOULD becomes a MUST.
-
-The second issue concerns the lack of availability of language tags. This would allow implementations to signal in which language Reason Phrases are rendered.
+{{draft-ietf-quic-transport-12}} does not allow for the use of language tags. If it would request these tags, it would allow implementations to signal in which language Reason Phrases are rendered.
 
 ## Censorship resistance
 
@@ -527,11 +534,12 @@ However, running a QUIC infrastructure is currently expected to be more demandin
 
 ### Transparency and IoT
 
-As discussed, end-to-end encryption on the transport layer makes monitoring and filtering of the traffic more complex, which might lead to the adoption of other network manageer practics.
+End-to-end encryption on the transport layer makes monitoring and filtering of the traffic more complex, and can lead to the adoption of other network management practices to obtain this information.
 
-This has implications also on the management of IoT (Internet of Things) devices. If an IoT device adopts QUIC, it will be harder for the user who owns the device to monitor what data is communicated with third parties. Moreover, also making research into the dissemination of cookies and malware might become more complex.
+This has implications on the management of IoT (Internet of Things) devices. If an IoT device adopts QUIC, it will be harder for the user who owns the device to monitor what data is communicated with third parties. It would also be more difficult to conduct research into the promulgation of malware, cookies and other artefacts.
 
 Adequate tooling to protect the right to privacy of IoT users has not yet been developed.
+
 
 Conclusions and Recommendations
 ===============================
@@ -552,28 +560,26 @@ The following is a list of potential improvements that we invite the QUIC Workin
 
 * Examine the opportunity to translate the QUIC specification into other languages.
 
-* Discuss how it would be viable to make tooling for running QUIC servers openly available.
+* Discuss the viability to make tooling for running QUIC servers openly available."
 
 * Observe and iteratively assess the implications of QUIC on the power relations between end user on one end of the spectrum, and network operators and service providers on the other one.
 
 Acknowledgements
 ================
 
-We thank (in alphabetical order) Mike Bishop, dkg, Jana Iyengar, Mirja Kuehlewind, Mark Nottingham, Martin Thomson, and Brian Trammell for their generous contribution to our research and review. This document does not necessarily reflect their opinion, but solely that of the authors.
+The authors thank (in alphabetical order) Mike Bishop, dkg, Jana Iyengar, Mirja Kuehlewind, Mark Nottingham, Martin Thomson, and Brian Trammell for their generous contribution to our research and review. This document does not necessarily reflect their opinion, but solely that of the authors.
  
 Security Considerations
 ========================
 
 As this draft concerns a research document, there are no security considerations.
 
-
 IANA Considerations
 ==========================
 
 This document has no actions for IANA.
 
-
-Research Group Information
+Review Team Information
 ==========================
 
 The discussion list for the Human Rights Review Team  is located at the e-mail address <hr-rt@irtf.org>. Information on the group and information on how to subscribe to the list is at
