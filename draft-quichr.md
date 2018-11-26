@@ -138,7 +138,7 @@ informative:
      title: Future Internet Design Principles
      date: 2012, January
      author:
-        - ins: Future Internet Architecture (FIArch) Group
+        - org: Future Internet Architecture (FIArch) Group
      target: https://pdfs.semanticscholar.org/0f33/5e6df68193367b0d0ea5430c043919477508.pdf
 
    draft-ietf-quic-spin-exp-00:
@@ -159,7 +159,7 @@ informative:
      target: https://tools.ietf.org/html/draft-hall-censorship-tech-01
 
    Behretal:
-      title: “Introducing QUIC Support for HTTPS Load Balancing”
+      title: Introducing QUIC Support for HTTPS Load Balancing
       author:
          - ins: M. Behr
          - ins: I. Swett
@@ -192,7 +192,7 @@ informative:
       target: https://david.choffnes.com/pubs/long-look-at-quic-imc17.pdf
 
    Wilketal:
-      title: “A QUIC Update on Google’s Experimental Transport”
+      title: A QUIC Update on Google’s Experimental Transport
       author:
          - ins: A. Wilk
          - ins: R.Hamilton
@@ -209,7 +209,7 @@ informative:
       target: https://blog.apnic.net/2018/05/11/explicit-passive-measurability-and-the-quic-spin-bit/
 
    Trammell02:
-      title: “And Yet, It Spins”
+      title: And Yet, It Spins
       author:
          - ins: B. Trammell
       date: 2018, March 29
@@ -256,7 +256,7 @@ This is a review done within the framework of the Human Rights Review Team, and 
 
 Human Rights Reviews are developed by a group of individuals in the IRTF and IETF. They work collaboratively and provide their knowledge and input to the assessments, in an effort to contribute to the IETF open review process. Human Rights Reviews are individual contributions. The authors hope that the comments will be taken into consideration by the draft authors, Working Groups and the IESG.
 
-This review concerns the QUIC protocol in general and the following drafts in particular:
+This review concerns the QUIC protocol in general, and the following drafts in particular:
 draft-ietf-quic-transport-12, draft-ietf-quic-tls-12, draft-ietf-quic-invariants-01.
 
 Vocabulary Used
@@ -277,7 +277,7 @@ Confidentiality
 Connectivity
 : The extent to which a device or network is able to reach other devices or networks to exchange data. The Internet is the tool for providing global connectivity {{RFC1958}}. Different types of connectivity are further specified in {{RFC4084}}.
 
-Content agnosticism: 
+Content agnosticism 
 : Treating network traffic identically regardless of content.
 
 Heterogeneity
@@ -415,7 +415,7 @@ QUIC (like HTTP/2 and TLS) offers a padding mechanism that can be used as a defe
 
 ### Lawful Intercept
 
-The lawful intercept of content in QUIC works similarly to TLS over TCP. Intercept can: force the acceptance of an alternate certificate; cooperate with or coerce the non-monitored endpoints to obtain session keys for decryption of traffic; exploit endpoint vulnerabilities to place monitoring devices directly on the endpoint on the other side of the crypto boundary. 
+The lawful intercept of content in QUIC works similarly to TLS over TCP. An intercept can: force the acceptance of an alternate certificate; cooperate with or coerce the non-monitored endpoints to obtain session keys for decryption of traffic; exploit endpoint vulnerabilities to place monitoring devices directly on the endpoint on the other side of the crypto boundary. 
 
 Forcing TLS 1.3 avoids some common exploit vectors in TLS 1.2 and strengthens the ciphersuites.
 
